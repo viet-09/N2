@@ -1,0 +1,428 @@
+{
+  "meta": {
+    "version": "1.0",
+    "source": "vnjpclub.com/somatome-n2",
+    "lastUpdated": "2026-08-05"
+  },
+  "categories": [
+    {
+      "id": "grammar",
+      "name": "Ngữ pháp",
+      "nameEn": "Grammar",
+      "weeks": [
+        {
+          "week": 1,
+          "lessons": [
+            {"id":"g1d1","day":1,"title":"熱っぽい","type":"grammar"},
+            {"id":"g1d2","day":2,"title":"空を飛びたいんものだ","type":"grammar"},
+            {"id":"g1d3","day":3,"title":"見た目はともかく","type":"grammar"},
+            {"id":"g1d4","day":4,"title":"かゆくてたまらない","type":"grammar"},
+            {"id":"g1d5","day":5,"title":"やめられないことはない","type":"grammar"},
+            {"id":"g1d6","day":6,"title":"見ていられない","type":"grammar"},
+            {"id":"g1d7","day":7,"title":"実戦問題 – N2_文法","type":"practice"}
+          ]
+        },
+        {
+          "week": 2,
+          "lessons": [
+            {"id":"g2d1","day":1,"title":"頑張ったかいがあって","type":"grammar"},
+            {"id":"g2d2","day":2,"title":"ありえない","type":"grammar"},
+            {"id":"g2d3","day":3,"title":"本日限り","type":"grammar"},
+            {"id":"g2d4","day":4,"title":"君さえいれば","type":"grammar"},
+            {"id":"g2d5","day":5,"title":"外国へいくとしたら","type":"grammar"},
+            {"id":"g2d6","day":6,"title":"高くなるにしたがって","type":"grammar"},
+            {"id":"g2d7","day":7,"title":"実戦問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 3,
+          "lessons": [
+            {"id":"g3d1","day":1,"title":"予報どおり","type":"grammar"},
+            {"id":"g3d2","day":2,"title":"太るわけだ","type":"grammar"},
+            {"id":"g3d3","day":3,"title":"かじったとたん","type":"grammar"},
+            {"id":"g3d4","day":4,"title":"お急ぎのところ","type":"grammar"},
+            {"id":"g3d5","day":5,"title":"ほこりだらけ","type":"grammar"},
+            {"id":"g3d6","day":6,"title":"あがる一方だ","type":"grammar"},
+            {"id":"g3d7","day":7,"title":"実戦問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 4,
+          "lessons": [
+            {"id":"g4d1","day":1,"title":"地図の上では","type":"grammar"},
+            {"id":"g4d2","day":2,"title":"子供向け","type":"grammar"},
+            {"id":"g4d3","day":3,"title":"期待にこたえて","type":"grammar"},
+            {"id":"g4d4","day":4,"title":"しりつつ","type":"grammar"},
+            {"id":"g4d5","day":5,"title":"せざるをえない","type":"grammar"},
+            {"id":"g4d6","day":6,"title":"使用にあたって","type":"grammar"},
+            {"id":"g4d7","day":7,"title":"実戦問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 5,
+          "lessons": [
+            {"id":"g5d1","day":1,"title":"信じがたい","type":"grammar"},
+            {"id":"g5d2","day":2,"title":"あの人のことだから","type":"grammar"},
+            {"id":"g5d3","day":3,"title":"あるだけましだ","type":"grammar"},
+            {"id":"g5d4","day":4,"title":"先週だっただけに","type":"grammar"},
+            {"id":"g5d5","day":5,"title":"かたづけようがない","type":"grammar"},
+            {"id":"g5d6","day":6,"title":"事実に基づいて","type":"grammar"},
+            {"id":"g5d7","day":7,"title":"実戦問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 6,
+          "lessons": [
+            {"id":"g6d1","day":1,"title":"決めた以上","type":"grammar"},
+            {"id":"g6d2","day":2,"title":"ぼくから見ると","type":"grammar"},
+            {"id":"g6d3","day":3,"title":"声の大きさにかけては","type":"grammar"},
+            {"id":"g6d4","day":4,"title":"行こうか行くまいか","type":"grammar"},
+            {"id":"g6d5","day":5,"title":"負けることに決まっている","type":"grammar"},
+            {"id":"g6d6","day":6,"title":"金メダルを巡って","type":"grammar"},
+            {"id":"g6d7","day":7,"title":"実戦問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 7,
+          "lessons": [
+            {"id":"g7d1","day":1,"title":"国籍を問わず","type":"grammar"},
+            {"id":"g7d2","day":2,"title":"クッキーもあればケーキもある","type":"grammar"},
+            {"id":"g7d3","day":3,"title":"勉強するものだ","type":"grammar"},
+            {"id":"g7d4","day":4,"title":"心をこめて","type":"grammar"},
+            {"id":"g7d5","day":5,"title":"すばらしいものがある","type":"grammar"},
+            {"id":"g7d6","day":6,"title":"失敗をもとに","type":"grammar"},
+            {"id":"g7d7","day":7,"title":"実戦問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 8,
+          "lessons": [
+            {"id":"g8d1","day":1,"title":"それなのに","type":"grammar"},
+            {"id":"g8d2","day":2,"title":"そういえば","type":"grammar"},
+            {"id":"g8d3","day":3,"title":"だって","type":"grammar"},
+            {"id":"g8d4","day":4,"title":"ということは","type":"grammar"},
+            {"id":"g8d5","day":5,"title":"もっとも","type":"grammar"},
+            {"id":"g8d6","day":6,"title":"おまけに","type":"grammar"},
+            {"id":"g8d7","day":7,"title":"実戦問題","type":"practice"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kanji",
+      "name": "Hán tự",
+      "nameEn": "Kanji",
+      "weeks": [
+        {
+          "week": 1,
+          "lessons": [
+            {"id":"k1d1","day":1,"title":"立札、注意書き","type":"kanji"},
+            {"id":"k1d2","day":2,"title":"駅の構内図","type":"kanji"},
+            {"id":"k1d3","day":3,"title":"防災マップ","type":"kanji"},
+            {"id":"k1d4","day":4,"title":"街の表示板","type":"kanji"},
+            {"id":"k1d5","day":5,"title":"公共の標識","type":"kanji"},
+            {"id":"k1d6","day":6,"title":"交通標識","type":"kanji"},
+            {"id":"k1d7","day":7,"title":"実戦問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 2,
+          "lessons": [
+            {"id":"k2d1","day":1,"title":"漢字の読み方①","type":"kanji"},
+            {"id":"k2d2","day":2,"title":"漢字の読み方②","type":"kanji"},
+            {"id":"k2d3","day":3,"title":"漢字の書き方①","type":"kanji"},
+            {"id":"k2d4","day":4,"title":"漢字の書き方②","type":"kanji"},
+            {"id":"k2d5","day":5,"title":"漢字の成り立ち","type":"kanji"},
+            {"id":"k2d6","day":6,"title":"漢字の意味①","type":"kanji"},
+            {"id":"k2d7","day":7,"title":"実戦問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 3,
+          "lessons": [
+            {"id":"k3d1","day":1,"title":"漢字の意味②","type":"kanji"},
+            {"id":"k3d2","day":2,"title":"漢字の意味③","type":"kanji"},
+            {"id":"k3d3","day":3,"title":"漢字の部首①","type":"kanji"},
+            {"id":"k3d4","day":4,"title":"漢字の部首②","type":"kanji"},
+            {"id":"k3d5","day":5,"title":"漢字の画数","type":"kanji"},
+            {"id":"k3d6","day":6,"title":"漢字の音読み①","type":"kanji"},
+            {"id":"k3d7","day":7,"title":"実戦問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 4,
+          "lessons": [
+            {"id":"k4d1","day":1,"title":"漢字の音読み②","type":"kanji"},
+            {"id":"k4d2","day":2,"title":"漢字の訓読み①","type":"kanji"},
+            {"id":"k4d3","day":3,"title":"漢字の訓読み②","type":"kanji"},
+            {"id":"k4d4","day":4,"title":"漢字の音訓混在","type":"kanji"},
+            {"id":"k4d5","day":5,"title":"漢字の同音異義語①","type":"kanji"},
+            {"id":"k4d6","day":6,"title":"漢字の同音異義語②","type":"kanji"},
+            {"id":"k4d7","day":7,"title":"実戦問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 5,
+          "lessons": [
+            {"id":"k5d1","day":1,"title":"漢字の同義語①","type":"kanji"},
+            {"id":"k5d2","day":2,"title":"漢字の同義語②","type":"kanji"},
+            {"id":"k5d3","day":3,"title":"漢字の対義語①","type":"kanji"},
+            {"id":"k5d4","day":4,"title":"漢字の対義語②","type":"kanji"},
+            {"id":"k5d5","day":5,"title":"漢字の慣用表現①","type":"kanji"},
+            {"id":"k5d6","day":6,"title":"漢字の慣用表現②","type":"kanji"},
+            {"id":"k5d7","day":7,"title":"実戦問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 6,
+          "lessons": [
+            {"id":"k6d1","day":1,"title":"漢字の慣用表現③","type":"kanji"},
+            {"id":"k6d2","day":2,"title":"漢字の四字熟語①","type":"kanji"},
+            {"id":"k6d3","day":3,"title":"漢字の四字熟語②","type":"kanji"},
+            {"id":"k6d4","day":4,"title":"漢字の成語①","type":"kanji"},
+            {"id":"k6d5","day":5,"title":"漢字の成語②","type":"kanji"},
+            {"id":"k6d6","day":6,"title":"漢字の総復習","type":"kanji"},
+            {"id":"k6d7","day":7,"title":"実戦問題","type":"practice"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "name": "Đọc hiểu",
+      "nameEn": "Reading",
+      "weeks": [
+        {
+          "week": 1,
+          "lessons": [
+            {"id":"r1d1","day":1,"title":"割引券・クーポン","type":"reading"},
+            {"id":"r1d2","day":2,"title":"ダイレクトメール","type":"reading"},
+            {"id":"r1d3","day":3,"title":"アルバイト情報","type":"reading"},
+            {"id":"r1d4","day":4,"title":"アパート・マンション情報","type":"reading"},
+            {"id":"r1d5","day":5,"title":"利用案内","type":"reading"},
+            {"id":"r1d6","day":6,"title":"レシピ","type":"reading"},
+            {"id":"r1d7","day":7,"title":"実戦問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 2,
+          "lessons": [
+            {"id":"r2d1","day":1,"title":"お知らせ①","type":"reading"},
+            {"id":"r2d2","day":2,"title":"お知らせ②","type":"reading"},
+            {"id":"r2d3","day":3,"title":"お知らせ③","type":"reading"},
+            {"id":"r2d4","day":4,"title":"通知①","type":"reading"},
+            {"id":"r2d5","day":5,"title":"通知②","type":"reading"},
+            {"id":"r2d6","day":6,"title":"通知③","type":"reading"},
+            {"id":"r2d7","day":7,"title":"実戦問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 3,
+          "lessons": [
+            {"id":"r3d1","day":1,"title":"意見文①","type":"reading"},
+            {"id":"r3d2","day":2,"title":"意見文②","type":"reading"},
+            {"id":"r3d3","day":3,"title":"意見文③","type":"reading"},
+            {"id":"r3d4","day":4,"title":"意見文④","type":"reading"},
+            {"id":"r3d5","day":5,"title":"説明文①","type":"reading"},
+            {"id":"r3d6","day":6,"title":"説明文②","type":"reading"},
+            {"id":"r3d7","day":7,"title":"実戦問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 4,
+          "lessons": [
+            {"id":"r4d1","day":1,"title":"エッセイ①","type":"reading"},
+            {"id":"r4d2","day":2,"title":"エッセイ②","type":"reading"},
+            {"id":"r4d3","day":3,"title":"エッセイ③","type":"reading"},
+            {"id":"r4d4","day":4,"title":"エッセイ④","type":"reading"},
+            {"id":"r4d5","day":5,"title":"小説①","type":"reading"},
+            {"id":"r4d6","day":6,"title":"小説②","type":"reading"},
+            {"id":"r4d7","day":7,"title":"実戦問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 5,
+          "lessons": [
+            {"id":"r5d1","day":1,"title":"見出し①","type":"reading"},
+            {"id":"r5d2","day":2,"title":"見出し②","type":"reading"},
+            {"id":"r5d3","day":3,"title":"記事","type":"reading"},
+            {"id":"r5d4","day":4,"title":"グラフ①","type":"reading"},
+            {"id":"r5d5","day":5,"title":"グラフ②","type":"reading"},
+            {"id":"r5d6","day":6,"title":"書評","type":"reading"},
+            {"id":"r5d7","day":7,"title":"実戦問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 6,
+          "lessons": [
+            {"id":"r6d1","day":1,"title":"言語に関する文章","type":"reading"},
+            {"id":"r6d2","day":2,"title":"化学に関する文章","type":"reading"},
+            {"id":"r6d3","day":3,"title":"生物に関する文章","type":"reading"},
+            {"id":"r6d4","day":4,"title":"物理に関する文章","type":"reading"},
+            {"id":"r6d5","day":5,"title":"医学に関する文章","type":"reading"},
+            {"id":"r6d6","day":6,"title":"数学に関する文章","type":"reading"},
+            {"id":"r6d7","day":7,"title":"実戦問題","type":"practice"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "listening",
+      "name": "Nghe hiểu",
+      "nameEn": "Listening",
+      "weeks": [
+        {
+          "week": 1,
+          "lessons": [
+            {"id":"l1d1","day":1,"title":"発音に関する聞き取り","type":"listening"},
+            {"id":"l1d2","day":2,"title":"文法に関する聞き取り①","type":"listening"},
+            {"id":"l1d3","day":3,"title":"文法に関する聞き取り②","type":"listening"},
+            {"id":"l1d4","day":4,"title":"会話表現","type":"listening"},
+            {"id":"l1d5","day":5,"title":"まとめ問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 2,
+          "lessons": [
+            {"id":"l2d1","day":1,"title":"どんな返事をしますか","type":"listening"},
+            {"id":"l2d2","day":2,"title":"これから何をしますか","type":"listening"},
+            {"id":"l2d3","day":3,"title":"どうしてですか","type":"listening"},
+            {"id":"l2d4","day":4,"title":"どんな内容ですか","type":"listening"},
+            {"id":"l2d5","day":5,"title":"どうすることにしますか","type":"listening"},
+            {"id":"l2d6","day":6,"title":"どれにしますか","type":"listening"},
+            {"id":"l2d7","day":7,"title":"まとめ問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 3,
+          "lessons": [
+            {"id":"l3d1","day":1,"title":"指示や説明を聞こう","type":"listening"},
+            {"id":"l3d2","day":2,"title":"会話を聞こう","type":"listening"},
+            {"id":"l3d3","day":3,"title":"電話の会話やメッセージを聞こう","type":"listening"},
+            {"id":"l3d4","day":4,"title":"意見や感想を聞こう","type":"listening"},
+            {"id":"l3d5","day":5,"title":"まとめ問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 4,
+          "lessons": [
+            {"id":"l4d1","day":1,"title":"町で","type":"listening"},
+            {"id":"l4d2","day":2,"title":"気象情報・交通情報","type":"listening"},
+            {"id":"l4d3","day":3,"title":"キャンパスで","type":"listening"},
+            {"id":"l4d4","day":4,"title":"いろいろな場面で","type":"listening"},
+            {"id":"l4d5","day":5,"title":"まとめ問題","type":"practice"}
+          ]
+        },
+        {
+          "week": 5,
+          "lessons": [
+            {"id":"l5d1","day":1,"title":"総まとめ問題","type":"practice"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocabulary",
+      "name": "Từ vựng",
+      "nameEn": "Vocabulary",
+      "weeks": [
+        {
+          "week": 1,
+          "lessons": [
+            {"id":"v1d1","day":1,"title":"アパートを探しています","type":"vocab"},
+            {"id":"v1d2","day":2,"title":"引っ越しは大変です","type":"vocab"},
+            {"id":"v1d3","day":3,"title":"友人を招きました","type":"vocab"},
+            {"id":"v1d4","day":4,"title":"家事、子育ては大変です","type":"vocab"},
+            {"id":"v1d5","day":5,"title":"夏休みを海で過ごしています","type":"vocab"},
+            {"id":"v1d6","day":6,"title":"お金を使いすぎました","type":"vocab"},
+            {"id":"v1d7","day":7,"title":"実戦問題 – N2_語彙","type":"practice"}
+          ]
+        },
+        {
+          "week": 2,
+          "lessons": [
+            {"id":"v2d1","day":1,"title":"仕事を探しています","type":"vocab"},
+            {"id":"v2d2","day":2,"title":"仕事をしています①","type":"vocab"},
+            {"id":"v2d3","day":3,"title":"仕事をしています②","type":"vocab"},
+            {"id":"v2d4","day":4,"title":"パソコンを使っています①","type":"vocab"},
+            {"id":"v2d5","day":5,"title":"パソコンを使っています②","type":"vocab"},
+            {"id":"v2d6","day":6,"title":"パソコンを使っています③","type":"vocab"},
+            {"id":"v2d7","day":7,"title":"実戦問題 – N2_語彙","type":"practice"}
+          ]
+        },
+        {
+          "week": 3,
+          "lessons": [
+            {"id":"v3d1","day":1,"title":"どんな人ですか","type":"vocab"},
+            {"id":"v3d2","day":2,"title":"どんな様子ですか","type":"vocab"},
+            {"id":"v3d3","day":3,"title":"どんな動作ですか","type":"vocab"},
+            {"id":"v3d4","day":4,"title":"どんな気持ち、態度ですか①","type":"vocab"},
+            {"id":"v3d5","day":5,"title":"どんな気持ち、態度ですか②","type":"vocab"},
+            {"id":"v3d6","day":6,"title":"体の具合はどうですか","type":"vocab"},
+            {"id":"v3d7","day":7,"title":"実戦問題 – N2_語彙","type":"practice"}
+          ]
+        },
+        {
+          "week": 4,
+          "lessons": [
+            {"id":"v4d1","day":1,"title":"なんとか覚えよう","type":"vocab"},
+            {"id":"v4d2","day":2,"title":"いずれ覚えられる","type":"vocab"},
+            {"id":"v4d3","day":3,"title":"せっせと覚えよう","type":"vocab"},
+            {"id":"v4d4","day":4,"title":"さらに覚えよう","type":"vocab"},
+            {"id":"v4d5","day":5,"title":"とりあえず覚えよう","type":"vocab"},
+            {"id":"v4d6","day":6,"title":"いったん覚えたら忘れない","type":"vocab"},
+            {"id":"v4d7","day":7,"title":"実戦問題 – N2_語彙","type":"practice"}
+          ]
+        },
+        {
+          "week": 5,
+          "lessons": [
+            {"id":"v5d1","day":1,"title":"物事、日中、年月","type":"vocab"},
+            {"id":"v5d2","day":2,"title":"夜中、世間、作業","type":"vocab"},
+            {"id":"v5d3","day":3,"title":"一生、用心、見事","type":"vocab"},
+            {"id":"v5d4","day":4,"title":"土地、苗字、発売","type":"vocab"},
+            {"id":"v5d5","day":5,"title":"手品、合図、強気","type":"vocab"},
+            {"id":"v5d6","day":6,"title":"本気、気楽、目安","type":"vocab"},
+            {"id":"v5d7","day":7,"title":"実戦問題 – N2_語彙","type":"practice"}
+          ]
+        },
+        {
+          "week": 6,
+          "lessons": [
+            {"id":"v6d1","day":1,"title":"カタカナで書く言葉①","type":"vocab"},
+            {"id":"v6d2","day":2,"title":"カタカナで書く言葉②","type":"vocab"},
+            {"id":"v6d3","day":3,"title":"カタカナで書く言葉③","type":"vocab"},
+            {"id":"v6d4","day":4,"title":"似ている言葉①","type":"vocab"},
+            {"id":"v6d5","day":5,"title":"似ている言葉②","type":"vocab"},
+            {"id":"v6d6","day":6,"title":"似ている言葉③","type":"vocab"},
+            {"id":"v6d7","day":7,"title":"実戦問題 – N2_語彙","type":"practice"}
+          ]
+        },
+        {
+          "week": 7,
+          "lessons": [
+            {"id":"v7d1","day":1,"title":"意味がたくさんある言葉①","type":"vocab"},
+            {"id":"v7d2","day":2,"title":"意味がたくさんある言葉②","type":"vocab"},
+            {"id":"v7d3","day":3,"title":"意味がたくさんある言葉③","type":"vocab"},
+            {"id":"v7d4","day":4,"title":"言葉の前につく語","type":"vocab"},
+            {"id":"v7d5","day":5,"title":"言葉の後ろにつく語①","type":"vocab"},
+            {"id":"v7d6","day":6,"title":"言葉の後ろにつく語②","type":"vocab"},
+            {"id":"v7d7","day":7,"title":"実戦問題 – N2_語彙","type":"practice"}
+          ]
+        },
+        {
+          "week": 8,
+          "lessons": [
+            {"id":"v8d1","day":1,"title":"組み合わせ言葉①","type":"vocab"},
+            {"id":"v8d2","day":2,"title":"組み合わせ言葉②","type":"vocab"},
+            {"id":"v8d3","day":3,"title":"よく使われる表現①","type":"vocab"},
+            {"id":"v8d4","day":4,"title":"よく使われる表現②","type":"vocab"},
+            {"id":"v8d5","day":5,"title":"よく使われる表現③","type":"vocab"},
+            {"id":"v8d6","day":6,"title":"よく使われる表現④","type":"vocab"},
+            {"id":"v8d7","day":7,"title":"実戦問題 – N2_語彙","type":"practice"}
+          ]
+        }
+      ]
+    }
+  ]
+}
