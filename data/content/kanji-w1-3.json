@@ -1,0 +1,663 @@
+{
+  "k1d1": {
+    "introVi": "Bài học tập hợp các Hán tự thường xuất hiện trên {立札|たてふだ} (biển báo dựng đứng) và các dòng {注意書|ちゅういが}き (chữ cảnh báo, chú ý) tại nơi công cộng ở Nhật — giúp bạn hiểu ngay nội dung cảnh báo, hướng dẫn khi ra đường.",
+    "items": [
+      {"kanji":"立","on":"リツ・リュウ","kun":"たつ・たてる","meaningVi":"dựng lên, đứng, thành lập","examples":[
+        {"jp":"{立札|たてふだ}","vi":"biển báo dựng đứng"},
+        {"jp":"{独立|どくりつ}","vi":"độc lập"}
+      ]},
+      {"kanji":"掲","on":"ケイ","kun":"かかげる","meaningVi":"treo lên, niêm yết, đăng (thông báo)","examples":[
+        {"jp":"{掲示|けいじ}","vi":"niêm yết, thông báo"},
+        {"jp":"{掲示板|けいじばん}","vi":"bảng thông báo"}
+      ]},
+      {"kanji":"示","on":"シ・ジ","kun":"しめす","meaningVi":"chỉ ra, biểu thị, hiển thị","examples":[
+        {"jp":"{表示|ひょうじ}","vi":"hiển thị"},
+        {"jp":"{指示|しじ}","vi":"chỉ dẫn, chỉ thị"}
+      ]},
+      {"kanji":"案","on":"アン","kun":"（なし）","meaningVi":"đề án, phương án, ý tưởng","examples":[
+        {"jp":"{案内|あんない}","vi":"hướng dẫn"},
+        {"jp":"{提案|ていあん}","vi":"đề xuất"}
+      ]},
+      {"kanji":"警","on":"ケイ","kun":"（なし）","meaningVi":"cảnh báo, cảnh giới, đề phòng","examples":[
+        {"jp":"{警告|けいこく}","vi":"cảnh cáo, cảnh báo"},
+        {"jp":"{警察|けいさつ}","vi":"cảnh sát"}
+      ]},
+      {"kanji":"告","on":"コク","kun":"つげる","meaningVi":"báo cho biết, thông báo","examples":[
+        {"jp":"{広告|こうこく}","vi":"quảng cáo"},
+        {"jp":"{告|つ}げる","vi":"báo cho, nói cho biết"}
+      ]},
+      {"kanji":"記","on":"キ","kun":"しるす","meaningVi":"ghi chép, ghi lại, ký","examples":[
+        {"jp":"{記載|きさい}","vi":"ghi chép, ghi vào giấy tờ"},
+        {"jp":"{表記|ひょうき}","vi":"cách viết, ký hiệu"}
+      ]},
+      {"kanji":"標","on":"ヒョウ","kun":"（なし）","meaningVi":"mốc, biển hiệu, tiêu chuẩn","examples":[
+        {"jp":"{標識|ひょうしき}","vi":"biển báo"},
+        {"jp":"{目標|もくひょう}","vi":"mục tiêu"}
+      ]}
+    ]
+  },
+  "k1d2": {
+    "introVi": "Các Hán tự thường gặp trong {駅|えき}の{構内図|こうないず} (sơ đồ trong khuôn viên nhà ga) tại Nhật: cửa soát vé, lối ra vào, và cách chuyển tuyến tàu điện.",
+    "items": [
+      {"kanji":"構","on":"コウ","kun":"かまえる・かまう","meaningVi":"cấu trúc, dựng lên, bố trí","examples":[
+        {"jp":"{構内|こうない}","vi":"trong khuôn viên (nhà ga, trường học...)"},
+        {"jp":"{構造|こうぞう}","vi":"cấu trúc"}
+      ]},
+      {"kanji":"内","on":"ナイ","kun":"うち","meaningVi":"bên trong, nội bộ","examples":[
+        {"jp":"{構内|こうない}","vi":"trong khuôn viên"},
+        {"jp":"{案内|あんない}","vi":"hướng dẫn"}
+      ]},
+      {"kanji":"改","on":"カイ","kun":"あらためる","meaningVi":"sửa đổi, đổi mới, kiểm tra lại","examples":[
+        {"jp":"{改札|かいさつ}","vi":"soát vé"},
+        {"jp":"{改善|かいぜん}","vi":"cải thiện"}
+      ]},
+      {"kanji":"札","on":"サツ","kun":"ふだ","meaningVi":"thẻ, biển, tờ tiền giấy","examples":[
+        {"jp":"{改札口|かいさつぐち}","vi":"cổng soát vé"},
+        {"jp":"{名札|なふだ}","vi":"thẻ tên"}
+      ]},
+      {"kanji":"乗","on":"ジョウ","kun":"のる・のせる","meaningVi":"lên (xe, tàu), chở, đi cùng","examples":[
+        {"jp":"{乗車|じょうしゃ}","vi":"lên tàu, xe"},
+        {"jp":"{乗|の}り{換|か}え","vi":"chuyển tuyến, đổi tàu"}
+      ]},
+      {"kanji":"換","on":"カン","kun":"かえる","meaningVi":"đổi, thay đổi, trao đổi","examples":[
+        {"jp":"{乗|の}り{換|か}え","vi":"chuyển tuyến, đổi tàu"},
+        {"jp":"{交換|こうかん}","vi":"trao đổi"}
+      ]},
+      {"kanji":"出","on":"シュツ","kun":"でる・だす","meaningVi":"ra, xuất, đưa ra","examples":[
+        {"jp":"{出口|でぐち}","vi":"cửa ra"},
+        {"jp":"{出発|しゅっぱつ}","vi":"xuất phát, khởi hành"}
+      ]},
+      {"kanji":"入","on":"ニュウ","kun":"いる・はいる","meaningVi":"vào, nhập vào","examples":[
+        {"jp":"{入口|いりぐち}","vi":"cửa vào"},
+        {"jp":"{入場|にゅうじょう}","vi":"vào cửa, nhập trường/hội trường"}
+      ]}
+    ]
+  },
+  "k1d3": {
+    "introVi": "Các Hán tự thường xuất hiện trên {防災|ぼうさい}マップ (bản đồ phòng chống thiên tai) — quan trọng để hiểu các cảnh báo về động đất, lũ lụt, và nơi lánh nạn khi có thiên tai.",
+    "items": [
+      {"kanji":"防","on":"ボウ","kun":"ふせぐ","meaningVi":"phòng ngừa, đề phòng","examples":[
+        {"jp":"{防災|ぼうさい}","vi":"phòng chống thiên tai"},
+        {"jp":"{予防|よぼう}","vi":"dự phòng, phòng ngừa"}
+      ]},
+      {"kanji":"災","on":"サイ","kun":"わざわい","meaningVi":"tai họa, thiên tai","examples":[
+        {"jp":"{火災|かさい}","vi":"hỏa hoạn"},
+        {"jp":"{災害|さいがい}","vi":"thiên tai"}
+      ]},
+      {"kanji":"避","on":"ヒ","kun":"さける","meaningVi":"tránh, lánh, né","examples":[
+        {"jp":"{避難|ひなん}","vi":"di tán, lánh nạn"},
+        {"jp":"{回避|かいひ}","vi":"tránh khỏi, né tránh"}
+      ]},
+      {"kanji":"難","on":"ナン","kun":"かたい・むずかしい","meaningVi":"khó, nạn, tai nạn","examples":[
+        {"jp":"{避難所|ひなんじょ}","vi":"nơi lánh nạn"},
+        {"jp":"{難民|なんみん}","vi":"người tị nạn"}
+      ]},
+      {"kanji":"震","on":"シン","kun":"ふるえる","meaningVi":"rung, chấn động (địa chấn)","examples":[
+        {"jp":"{地震|じしん}","vi":"động đất"},
+        {"jp":"{震度|しんど}","vi":"độ chấn động (địa chấn)"}
+      ]},
+      {"kanji":"洪","on":"コウ","kun":"（なし）","meaningVi":"lớn, lũ (thường ghép trong 洪水)","examples":[
+        {"jp":"{洪水|こうずい}","vi":"lũ lụt"},
+        {"jp":"{大洪水|だいこうずい}","vi":"trận lũ lụt lớn"}
+      ]},
+      {"kanji":"浸","on":"シン","kun":"ひたす・つかる","meaningVi":"ngấm, ngập nước, thẩm thấu","examples":[
+        {"jp":"{浸水|しんすい}","vi":"ngập nước"},
+        {"jp":"{浸透|しんとう}","vi":"thấm sâu, lan tỏa"}
+      ]},
+      {"kanji":"崩","on":"ホウ","kun":"くずれる","meaningVi":"sụp đổ, lở,崩壊","examples":[
+        {"jp":"{崩壊|ほうかい}","vi":"sụp đổ"},
+        {"jp":"{土砂|どしゃ}{崩|くず}れ","vi":"sạt lở đất"}
+      ]}
+    ]
+  },
+  "k1d4": {
+    "introVi": "Các Hán tự xuất hiện trên bảng {表示板|ひょうじばん} (bảng hiển thị) khắp {街|まち} (khu phố): tên đường, cơ sở công cộng, lối đi.",
+    "items": [
+      {"kanji":"街","on":"ガイ","kun":"まち","meaningVi":"phố, khu phố","examples":[
+        {"jp":"{街角|まちかど}","vi":"góc phố"},
+        {"jp":"{商店街|しょうてんがい}","vi":"khu phố buôn bán"}
+      ]},
+      {"kanji":"施","on":"シ","kun":"ほどこす","meaningVi":"thi hành, thực hiện, thi công","examples":[
+        {"jp":"{施設|しせつ}","vi":"cơ sở vật chất"},
+        {"jp":"{実施|じっし}","vi":"thực hiện, thi hành"}
+      ]},
+      {"kanji":"設","on":"セツ","kun":"もうける","meaningVi":"thiết lập, xây dựng, đặt ra","examples":[
+        {"jp":"{設置|せっち}","vi":"lắp đặt"},
+        {"jp":"{建設|けんせつ}","vi":"xây dựng"}
+      ]},
+      {"kanji":"通","on":"ツウ","kun":"とおる・とおす","meaningVi":"đi qua, thông suốt, thông thạo","examples":[
+        {"jp":"{通行|つうこう}","vi":"đi lại, thông hành"},
+        {"jp":"{交通|こうつう}","vi":"giao thông"}
+      ]},
+      {"kanji":"路","on":"ロ","kun":"（なし）","meaningVi":"đường, lối đi","examples":[
+        {"jp":"{道路|どうろ}","vi":"đường bộ"},
+        {"jp":"{通路|つうろ}","vi":"lối đi, hành lang"}
+      ]},
+      {"kanji":"標","on":"ヒョウ","kun":"（なし）","meaningVi":"mốc, biển hiệu, dấu hiệu","examples":[
+        {"jp":"{標識|ひょうしき}","vi":"biển báo"},
+        {"jp":"{標語|ひょうご}","vi":"khẩu hiệu, châm ngôn"}
+      ]},
+      {"kanji":"識","on":"シキ","kun":"（なし）","meaningVi":"nhận biết, hiểu biết, kiến thức","examples":[
+        {"jp":"{標識|ひょうしき}","vi":"biển báo"},
+        {"jp":"{知識|ちしき}","vi":"kiến thức"}
+      ]},
+      {"kanji":"示","on":"シ・ジ","kun":"しめす","meaningVi":"chỉ ra, hiển thị, trưng ra","examples":[
+        {"jp":"{表示|ひょうじ}","vi":"hiển thị"},
+        {"jp":"{展示|てんじ}","vi":"trưng bày"}
+      ]}
+    ]
+  },
+  "k1d5": {
+    "introVi": "Các Hán tự thường thấy trên {標識|ひょうしき} (biển báo) tại nơi {公共|こうきょう} (công cộng) như công viên, thư viện: những lời nhắc nhở, cấm đoán để giữ an toàn chung.",
+    "items": [
+      {"kanji":"公","on":"コウ","kun":"おおやけ","meaningVi":"công cộng, chung, nhà nước","examples":[
+        {"jp":"{公共|こうきょう}","vi":"công cộng"},
+        {"jp":"{公園|こうえん}","vi":"công viên"}
+      ]},
+      {"kanji":"共","on":"キョウ","kun":"とも","meaningVi":"cùng, chung","examples":[
+        {"jp":"{公共|こうきょう}","vi":"công cộng"},
+        {"jp":"{共同|きょうどう}","vi":"hợp tác chung"}
+      ]},
+      {"kanji":"禁","on":"キン","kun":"（なし）","meaningVi":"cấm, ngăn cấm","examples":[
+        {"jp":"{禁止|きんし}","vi":"cấm"},
+        {"jp":"{禁煙|きんえん}","vi":"cấm hút thuốc"}
+      ]},
+      {"kanji":"止","on":"シ","kun":"とめる・とまる","meaningVi":"dừng, ngăn chặn","examples":[
+        {"jp":"{立|た}ち{入|い}り{禁止|きんし}","vi":"cấm vào (khu vực cấm)"},
+        {"jp":"{中止|ちゅうし}","vi":"hủy bỏ, dừng lại"}
+      ]},
+      {"kanji":"注","on":"チュウ","kun":"そそぐ","meaningVi":"chú ý, đổ vào (nước, sự chú ý)","examples":[
+        {"jp":"{注意|ちゅうい}","vi":"chú ý"},
+        {"jp":"{注目|ちゅうもく}","vi":"chú mục, để mắt tới"}
+      ]},
+      {"kanji":"意","on":"イ","kun":"（なし）","meaningVi":"ý, ý nghĩa, ý định","examples":[
+        {"jp":"{注意|ちゅうい}","vi":"chú ý"},
+        {"jp":"{意味|いみ}","vi":"ý nghĩa"}
+      ]},
+      {"kanji":"危","on":"キ","kun":"あぶない・あやうい","meaningVi":"nguy hiểm","examples":[
+        {"jp":"{危険|きけん}","vi":"nguy hiểm"},
+        {"jp":"{危機|きき}","vi":"khủng hoảng, nguy cơ"}
+      ]},
+      {"kanji":"険","on":"ケン","kun":"けわしい","meaningVi":"hiểm trở, nguy hiểm","examples":[
+        {"jp":"{危険|きけん}","vi":"nguy hiểm"},
+        {"jp":"{保険|ほけん}","vi":"bảo hiểm"}
+      ]}
+    ]
+  },
+  "k1d6": {
+    "introVi": "Các Hán tự xuất hiện trên {交通標識|こうつうひょうしき} (biển báo giao thông) tại Nhật: tốc độ, hướng đi, chỗ dừng, chỗ sang đường — cần thiết khi đi xe hoặc lái xe.",
+    "items": [
+      {"kanji":"交","on":"コウ","kun":"まじる・かわす","meaningVi":"giao, qua lại, trao đổi","examples":[
+        {"jp":"{交通|こうつう}","vi":"giao thông"},
+        {"jp":"{交差点|こうさてん}","vi":"giao lộ, ngã tư"}
+      ]},
+      {"kanji":"通","on":"ツウ","kun":"とおる・とおす","meaningVi":"đi qua, thông suốt","examples":[
+        {"jp":"{通行|つうこう}","vi":"đi lại, thông hành"},
+        {"jp":"{通過|つうか}","vi":"đi qua"}
+      ]},
+      {"kanji":"速","on":"ソク","kun":"はやい","meaningVi":"nhanh, tốc độ","examples":[
+        {"jp":"{速度|そくど}","vi":"tốc độ"},
+        {"jp":"{高速道路|こうそくどうろ}","vi":"đường cao tốc"}
+      ]},
+      {"kanji":"度","on":"ド","kun":"たび","meaningVi":"độ, mức độ, lần","examples":[
+        {"jp":"{速度|そくど}","vi":"tốc độ"},
+        {"jp":"{制限|せいげん}{速度|そくど}","vi":"tốc độ giới hạn"}
+      ]},
+      {"kanji":"徐","on":"ジョ","kun":"（なし）","meaningVi":"chậm rãi, từ từ","examples":[
+        {"jp":"{徐行|じょこう}","vi":"đi chậm (biển báo)"},
+        {"jp":"{徐々|じょじょ}に","vi":"dần dần, từ từ"}
+      ]},
+      {"kanji":"横","on":"オウ","kun":"よこ","meaningVi":"ngang, chiều ngang, bên cạnh","examples":[
+        {"jp":"{横断|おうだん}","vi":"băng qua, cắt ngang"},
+        {"jp":"{横断歩道|おうだんほどう}","vi":"đường sang đường cho người đi bộ"}
+      ]},
+      {"kanji":"断","on":"ダン","kun":"たつ・ことわる","meaningVi":"cắt, quyết đoán, khước từ","examples":[
+        {"jp":"{横断|おうだん}","vi":"băng qua"},
+        {"jp":"{判断|はんだん}","vi":"phán đoán"}
+      ]},
+      {"kanji":"停","on":"テイ","kun":"（なし）","meaningVi":"dừng, ngừng","examples":[
+        {"jp":"{停止|ていし}","vi":"dừng lại"},
+        {"jp":"{停車|ていしゃ}","vi":"đỗ xe, dừng xe"}
+      ]}
+    ]
+  },
+  "k1d7": {
+    "introVi": "Bài {実戦問題|じっせんもんだい} ôn tập lại các Hán tự trọng tâm của tuần 1: biển báo, nhà ga, phòng chống thiên tai, khu phố, nơi công cộng và giao thông.",
+    "items": [
+      {"kanji":"札","on":"サツ","kun":"ふだ","meaningVi":"thẻ, biển, tờ tiền giấy (ôn: biển báo)","examples":[
+        {"jp":"{立札|たてふだ}","vi":"biển báo dựng đứng"},
+        {"jp":"{改札口|かいさつぐち}","vi":"cổng soát vé"}
+      ]},
+      {"kanji":"構","on":"コウ","kun":"かまえる","meaningVi":"cấu trúc, dựng lên, bố trí (ôn: nhà ga)","examples":[
+        {"jp":"{構内|こうない}","vi":"trong khuôn viên"},
+        {"jp":"{構造|こうぞう}","vi":"cấu trúc"}
+      ]},
+      {"kanji":"災","on":"サイ","kun":"わざわい","meaningVi":"tai họa, thiên tai (ôn: phòng chống thiên tai)","examples":[
+        {"jp":"{災害|さいがい}","vi":"thiên tai"},
+        {"jp":"{火災|かさい}","vi":"hỏa hoạn"}
+      ]},
+      {"kanji":"街","on":"ガイ","kun":"まち","meaningVi":"phố, khu phố (ôn: bảng hiển thị đường phố)","examples":[
+        {"jp":"{商店街|しょうてんがい}","vi":"khu phố buôn bán"},
+        {"jp":"{街角|まちかど}","vi":"góc phố"}
+      ]},
+      {"kanji":"公","on":"コウ","kun":"おおやけ","meaningVi":"công cộng, chung (ôn: nơi công cộng)","examples":[
+        {"jp":"{公共|こうきょう}","vi":"công cộng"},
+        {"jp":"{公園|こうえん}","vi":"công viên"}
+      ]},
+      {"kanji":"交","on":"コウ","kun":"まじる","meaningVi":"giao, qua lại (ôn: biển báo giao thông)","examples":[
+        {"jp":"{交通|こうつう}","vi":"giao thông"},
+        {"jp":"{交差点|こうさてん}","vi":"giao lộ, ngã tư"}
+      ]}
+    ]
+  },
+  "k2d1": {
+    "introVi": "Bài {漢字|かんじ}の{読|よ}み{方|かた}① tập trung vào những Hán tự có NHIỀU âm on hoặc kun khác nhau, thường gây nhầm lẫn cho người học N2 khi đọc từng ngữ cảnh khác nhau.",
+    "items": [
+      {"kanji":"行","on":"コウ・ギョウ・アン","kun":"いく・おこなう","meaningVi":"đi, thực hiện, hàng (dòng chữ)","examples":[
+        {"jp":"{旅行|りょこう}","vi":"du lịch"},
+        {"jp":"{行事|ぎょうじ}","vi":"sự kiện thường niên"}
+      ]},
+      {"kanji":"生","on":"セイ・ショウ","kun":"いきる・うまれる・なま","meaningVi":"sống, sinh ra, tươi sống","examples":[
+        {"jp":"{生活|せいかつ}","vi":"sinh hoạt"},
+        {"jp":"{一生|いっしょう}","vi":"cả đời"}
+      ]},
+      {"kanji":"上","on":"ジョウ・ショウ","kun":"うえ・あがる・のぼる","meaningVi":"trên, lên, đi lên","examples":[
+        {"jp":"{上司|じょうし}","vi":"cấp trên"},
+        {"jp":"{上京|じょうきょう}","vi":"lên (thủ đô) Tokyo"}
+      ]},
+      {"kanji":"下","on":"カ・ゲ","kun":"した・くだる・おりる","meaningVi":"dưới, xuống","examples":[
+        {"jp":"{下車|げしゃ}","vi":"xuống xe"},
+        {"jp":"{地下|ちか}","vi":"tầng hầm"}
+      ]},
+      {"kanji":"方","on":"ホウ","kun":"かた","meaningVi":"phía, hướng, cách (làm gì)","examples":[
+        {"jp":"{方法|ほうほう}","vi":"phương pháp"},
+        {"jp":"{使|つか}い{方|かた}","vi":"cách sử dụng"}
+      ]},
+      {"kanji":"分","on":"フン・ブ・ブン","kun":"わける・わかる","meaningVi":"phần, chia, phút, hiểu","examples":[
+        {"jp":"{分野|ぶんや}","vi":"lĩnh vực"},
+        {"jp":"{十分|じゅっぷん}","vi":"mười phút"}
+      ]},
+      {"kanji":"間","on":"カン・ケン","kun":"あいだ・ま","meaningVi":"khoảng, giữa, thời gian","examples":[
+        {"jp":"{時間|じかん}","vi":"thời gian"},
+        {"jp":"{間隔|かんかく}","vi":"khoảng cách"}
+      ]}
+    ]
+  },
+  "k2d2": {
+    "introVi": "Bài {漢字|かんじ}の{読|よ}み{方|かた}② tiếp tục luyện đọc các Hán tự thuộc nhóm động từ giao tiếp cơ bản (nghe, nói, đọc, viết) — mỗi chữ đều có on và kun riêng cần phân biệt rõ.",
+    "items": [
+      {"kanji":"見","on":"ケン","kun":"みる・みえる・みせる","meaningVi":"nhìn, thấy, cho xem","examples":[
+        {"jp":"{見学|けんがく}","vi":"tham quan học tập"},
+        {"jp":"{意見|いけん}","vi":"ý kiến"}
+      ]},
+      {"kanji":"聞","on":"ブン・モン","kun":"きく・きこえる","meaningVi":"nghe, nghe thấy","examples":[
+        {"jp":"{新聞|しんぶん}","vi":"báo (báo giấy)"},
+        {"jp":"{聴聞|ちょうもん}","vi":"nghe, điều trần"}
+      ]},
+      {"kanji":"言","on":"ゲン・ゴン","kun":"いう・こと","meaningVi":"nói, lời nói","examples":[
+        {"jp":"{言葉|ことば}","vi":"từ ngữ"},
+        {"jp":"{発言|はつげん}","vi":"phát biểu"}
+      ]},
+      {"kanji":"話","on":"ワ","kun":"はなす・はなし","meaningVi":"nói chuyện, câu chuyện","examples":[
+        {"jp":"{会話|かいわ}","vi":"hội thoại"},
+        {"jp":"{電話|でんわ}","vi":"điện thoại"}
+      ]},
+      {"kanji":"読","on":"ドク・トク","kun":"よむ","meaningVi":"đọc","examples":[
+        {"jp":"{読書|どくしょ}","vi":"đọc sách"},
+        {"jp":"{音読|おんどく}","vi":"đọc thành tiếng"}
+      ]},
+      {"kanji":"書","on":"ショ","kun":"かく","meaningVi":"viết, sách, văn bản","examples":[
+        {"jp":"{辞書|じしょ}","vi":"từ điển"},
+        {"jp":"{書類|しょるい}","vi":"tài liệu, giấy tờ"}
+      ]}
+    ]
+  },
+  "k2d3": {
+    "introVi": "Bài {漢字|かんじ}の{書|か}き{方|かた}① luyện phân biệt các Hán tự có HÌNH DẠNG gần giống nhau nhưng nghĩa khác hẳn — lỗi viết sai thường gặp khi luyện chữ N2.",
+    "items": [
+      {"kanji":"未","on":"ミ","kun":"いまだ","meaningVi":"chưa, chưa từng","examples":[
+        {"jp":"{未来|みらい}","vi":"tương lai"},
+        {"jp":"{未定|みてい}","vi":"chưa quyết định"}
+      ]},
+      {"kanji":"末","on":"マツ","kun":"すえ","meaningVi":"cuối, phần cuối","examples":[
+        {"jp":"{週末|しゅうまつ}","vi":"cuối tuần"},
+        {"jp":"{末端|まったん}","vi":"đầu mút, phần cuối cùng"}
+      ]},
+      {"kanji":"士","on":"シ","kun":"（なし）","meaningVi":"người có học vị/kỹ năng, võ sĩ","examples":[
+        {"jp":"{武士|ぶし}","vi":"võ sĩ"},
+        {"jp":"{士気|しき}","vi":"tinh thần, khí thế"}
+      ]},
+      {"kanji":"土","on":"ド・ト","kun":"つち","meaningVi":"đất","examples":[
+        {"jp":"{土地|とち}","vi":"đất đai"},
+        {"jp":"{土曜日|どようび}","vi":"thứ Bảy"}
+      ]},
+      {"kanji":"千","on":"セン","kun":"（なし）","meaningVi":"nghìn","examples":[
+        {"jp":"{千円|せんえん}","vi":"1000 yên"},
+        {"jp":"{千葉|ちば}","vi":"Chiba (tên địa danh)"}
+      ]},
+      {"kanji":"干","on":"カン","kun":"ほす・ひる","meaningVi":"khô, phơi khô","examples":[
+        {"jp":"{干物|ひもの}","vi":"đồ ăn khô (cá khô,...)"},
+        {"jp":"{干|ほ}す","vi":"phơi khô"}
+      ]}
+    ]
+  },
+  "k2d4": {
+    "introVi": "Bài {漢字|かんじ}の{書|か}き{方|かた}② tiếp tục với những Hán tự dễ nhầm bộ (như 扌 và 氵) khi viết, kèm cách phân biệt qua nghĩa và ví dụ.",
+    "items": [
+      {"kanji":"待","on":"タイ","kun":"まつ","meaningVi":"chờ đợi","examples":[
+        {"jp":"{期待|きたい}","vi":"kỳ vọng"},
+        {"jp":"{待合室|まちあいしつ}","vi":"phòng chờ"}
+      ]},
+      {"kanji":"持","on":"ジ","kun":"もつ","meaningVi":"cầm, giữ, mang","examples":[
+        {"jp":"{持参|じさん}","vi":"mang theo"},
+        {"jp":"{気持|きも}ち","vi":"tâm trạng"}
+      ]},
+      {"kanji":"住","on":"ジュウ","kun":"すむ","meaningVi":"sống, ở, cư trú","examples":[
+        {"jp":"{住所|じゅうしょ}","vi":"địa chỉ"},
+        {"jp":"{住民|じゅうみん}","vi":"cư dân"}
+      ]},
+      {"kanji":"注","on":"チュウ","kun":"そそぐ","meaningVi":"chú ý, đổ vào","examples":[
+        {"jp":"{注意|ちゅうい}","vi":"chú ý"},
+        {"jp":"{注文|ちゅうもん}","vi":"đặt hàng, gọi món"}
+      ]},
+      {"kanji":"休","on":"キュウ","kun":"やすむ","meaningVi":"nghỉ ngơi","examples":[
+        {"jp":"{休憩|きゅうけい}","vi":"nghỉ giải lao"},
+        {"jp":"{休日|きゅうじつ}","vi":"ngày nghỉ"}
+      ]},
+      {"kanji":"体","on":"タイ","kun":"からだ","meaningVi":"thân thể, cơ thể","examples":[
+        {"jp":"{体調|たいちょう}","vi":"tình trạng sức khỏe"},
+        {"jp":"{体育|たいいく}","vi":"thể dục"}
+      ]}
+    ]
+  },
+  "k2d5": {
+    "introVi": "Bài {漢字|かんじ}の{成|な}り{立|た}ち giải thích nguồn gốc hình thành của một số Hán tự cơ bản: từ chữ tượng hình (mô phỏng hình dạng sự vật) đến chữ hội ý (ghép nghĩa từ nhiều bộ phận).",
+    "items": [
+      {"kanji":"山","on":"サン","kun":"やま","meaningVi":"núi — chữ tượng hình mô phỏng hình dáng ba đỉnh núi","examples":[
+        {"jp":"{富士山|ふじさん}","vi":"núi Phú Sĩ"},
+        {"jp":"{山道|やまみち}","vi":"đường núi"}
+      ]},
+      {"kanji":"川","on":"セン","kun":"かわ","meaningVi":"sông — chữ tượng hình mô phỏng dòng nước chảy","examples":[
+        {"jp":"{川岸|かわぎし}","vi":"bờ sông"},
+        {"jp":"{河川|かせん}","vi":"sông ngòi"}
+      ]},
+      {"kanji":"林","on":"リン","kun":"はやし","meaningVi":"rừng nhỏ — chữ hội ý ghép hai chữ 木 (cây)","examples":[
+        {"jp":"{林業|りんぎょう}","vi":"nghề rừng"},
+        {"jp":"{森林|しんりん}","vi":"rừng núi"}
+      ]},
+      {"kanji":"森","on":"シン","kun":"もり","meaningVi":"rừng rậm — chữ hội ý ghép ba chữ 木, biểu thị rừng dày đặc hơn 林","examples":[
+        {"jp":"{森林|しんりん}","vi":"rừng"},
+        {"jp":"{森|もり}","vi":"khu rừng"}
+      ]},
+      {"kanji":"明","on":"メイ・ミョウ","kun":"あかるい・あける","meaningVi":"sáng, rõ — chữ hội ý ghép 日 (mặt trời) và 月 (mặt trăng), biểu thị ánh sáng","examples":[
+        {"jp":"{説明|せつめい}","vi":"giải thích"},
+        {"jp":"{明日|あした}","vi":"ngày mai"}
+      ]},
+      {"kanji":"休","on":"キュウ","kun":"やすむ","meaningVi":"nghỉ — chữ hội ý ghép 人 (người) đứng dựa vào 木 (cây)","examples":[
+        {"jp":"{休息|きゅうそく}","vi":"nghỉ ngơi"},
+        {"jp":"{休日|きゅうじつ}","vi":"ngày nghỉ"}
+      ]}
+    ]
+  },
+  "k2d6": {
+    "introVi": "Bài {漢字|かんじ}の{意味|いみ}① so sánh các cặp Hán tự gần nghĩa nhưng sắc thái khác nhau (nhanh về thời gian và nhanh về tốc độ, nặng-nhẹ, sâu-cạn) — hay bị dùng lẫn khi học N2.",
+    "items": [
+      {"kanji":"早","on":"ソウ","kun":"はやい","meaningVi":"sớm (về thời gian)","examples":[
+        {"jp":"{早朝|そうちょう}","vi":"sáng sớm"},
+        {"jp":"{早退|そうたい}","vi":"về sớm, ra sớm"}
+      ]},
+      {"kanji":"速","on":"ソク","kun":"はやい","meaningVi":"nhanh (về tốc độ)","examples":[
+        {"jp":"{速度|そくど}","vi":"tốc độ"},
+        {"jp":"{速達|そくたつ}","vi":"chuyển phát nhanh"}
+      ]},
+      {"kanji":"重","on":"ジュウ・チョウ","kun":"おもい・かさねる","meaningVi":"nặng, quan trọng","examples":[
+        {"jp":"{重要|じゅうよう}","vi":"quan trọng"},
+        {"jp":"{体重|たいじゅう}","vi":"trọng lượng cơ thể"}
+      ]},
+      {"kanji":"軽","on":"ケイ","kun":"かるい","meaningVi":"nhẹ","examples":[
+        {"jp":"{軽減|けいげん}","vi":"giảm nhẹ"},
+        {"jp":"{軽|かる}い","vi":"nhẹ"}
+      ]},
+      {"kanji":"深","on":"シン","kun":"ふかい","meaningVi":"sâu","examples":[
+        {"jp":"{深夜|しんや}","vi":"đêm khuya"},
+        {"jp":"{深刻|しんこく}","vi":"nghiêm trọng, sâu sắc"}
+      ]},
+      {"kanji":"浅","on":"セン","kun":"あさい","meaningVi":"cạn, nông","examples":[
+        {"jp":"{浅|あさ}い","vi":"cạn, nông"},
+        {"jp":"{浅瀬|あさせ}","vi":"chỗ nước cạn"}
+      ]}
+    ]
+  },
+  "k2d7": {
+    "introVi": "Bài {実戦問題|じっせんもんだい} ôn tập lại các Hán tự trọng tâm của tuần 2: cách đọc, cách viết, nguồn gốc chữ, và các cặp nghĩa gần giống.",
+    "items": [
+      {"kanji":"行","on":"コウ・ギョウ","kun":"いく・おこなう","meaningVi":"đi, thực hiện, hàng (ôn: đa âm đọc)","examples":[
+        {"jp":"{旅行|りょこう}","vi":"du lịch"},
+        {"jp":"{行事|ぎょうじ}","vi":"sự kiện thường niên"}
+      ]},
+      {"kanji":"見","on":"ケン","kun":"みる","meaningVi":"nhìn, thấy (ôn: động từ giao tiếp)","examples":[
+        {"jp":"{見学|けんがく}","vi":"tham quan học tập"},
+        {"jp":"{意見|いけん}","vi":"ý kiến"}
+      ]},
+      {"kanji":"末","on":"マツ","kun":"すえ","meaningVi":"cuối (ôn: chữ dễ nhầm hình dạng)","examples":[
+        {"jp":"{週末|しゅうまつ}","vi":"cuối tuần"},
+        {"jp":"{年末|ねんまつ}","vi":"cuối năm"}
+      ]},
+      {"kanji":"持","on":"ジ","kun":"もつ","meaningVi":"cầm, mang (ôn: chữ có bộ 扌)","examples":[
+        {"jp":"{気持|きも}ち","vi":"tâm trạng"},
+        {"jp":"{持参|じさん}","vi":"mang theo"}
+      ]},
+      {"kanji":"森","on":"シン","kun":"もり","meaningVi":"rừng (ôn: chữ hội ý)","examples":[
+        {"jp":"{森林|しんりん}","vi":"rừng"},
+        {"jp":"{森|もり}","vi":"khu rừng"}
+      ]},
+      {"kanji":"重","on":"ジュウ・チョウ","kun":"おもい","meaningVi":"nặng, quan trọng (ôn: cặp nghĩa gần giống)","examples":[
+        {"jp":"{重要|じゅうよう}","vi":"quan trọng"},
+        {"jp":"{体重|たいじゅう}","vi":"trọng lượng cơ thể"}
+      ]}
+    ]
+  },
+  "k3d1": {
+    "introVi": "Bài {漢字|かんじ}の{意味|いみ}② tiếp tục so sánh các cặp Hán tự trái nghĩa thường dùng: mở-đóng, bắt đầu-kết thúc, tăng-giảm.",
+    "items": [
+      {"kanji":"開","on":"カイ","kun":"あける・ひらく","meaningVi":"mở","examples":[
+        {"jp":"{開店|かいてん}","vi":"mở cửa hàng"},
+        {"jp":"{開催|かいさい}","vi":"tổ chức (sự kiện)"}
+      ]},
+      {"kanji":"閉","on":"ヘイ","kun":"とじる・しめる","meaningVi":"đóng","examples":[
+        {"jp":"{閉店|へいてん}","vi":"đóng cửa hàng"},
+        {"jp":"{閉鎖|へいさ}","vi":"đóng cửa, phong tỏa"}
+      ]},
+      {"kanji":"始","on":"シ","kun":"はじめる・はじまる","meaningVi":"bắt đầu","examples":[
+        {"jp":"{開始|かいし}","vi":"bắt đầu"},
+        {"jp":"{始発|しはつ}","vi":"chuyến đầu tiên (xe, tàu)"}
+      ]},
+      {"kanji":"終","on":"シュウ","kun":"おわる","meaningVi":"kết thúc","examples":[
+        {"jp":"{終了|しゅうりょう}","vi":"kết thúc"},
+        {"jp":"{最終|さいしゅう}","vi":"cuối cùng"}
+      ]},
+      {"kanji":"増","on":"ゾウ","kun":"ふえる・ます","meaningVi":"tăng","examples":[
+        {"jp":"{増加|ぞうか}","vi":"tăng lên"},
+        {"jp":"{増税|ぞうぜい}","vi":"tăng thuế"}
+      ]},
+      {"kanji":"減","on":"ゲン","kun":"へる・へらす","meaningVi":"giảm","examples":[
+        {"jp":"{減少|げんしょう}","vi":"giảm sút"},
+        {"jp":"{削減|さくげん}","vi":"cắt giảm"}
+      ]}
+    ]
+  },
+  "k3d2": {
+    "introVi": "Bài {漢字|かんじ}の{意味|いみ}③ tiếp tục với các cặp Hán tự trái nghĩa: tập hợp-phân tán, thắng-thua, lợi-thiệt.",
+    "items": [
+      {"kanji":"集","on":"シュウ","kun":"あつめる・あつまる","meaningVi":"tập hợp, tập trung","examples":[
+        {"jp":"{集合|しゅうごう}","vi":"tập hợp"},
+        {"jp":"{収集|しゅうしゅう}","vi":"thu thập"}
+      ]},
+      {"kanji":"散","on":"サン","kun":"ちる・ちらす","meaningVi":"phân tán, rải ra","examples":[
+        {"jp":"{散歩|さんぽ}","vi":"đi dạo"},
+        {"jp":"{分散|ぶんさん}","vi":"phân tán"}
+      ]},
+      {"kanji":"勝","on":"ショウ","kun":"かつ","meaningVi":"thắng","examples":[
+        {"jp":"{勝利|しょうり}","vi":"thắng lợi"},
+        {"jp":"{優勝|ゆうしょう}","vi":"vô địch"}
+      ]},
+      {"kanji":"負","on":"フ","kun":"まける・おう","meaningVi":"thua, gánh (trách nhiệm)","examples":[
+        {"jp":"{負担|ふたん}","vi":"gánh nặng"},
+        {"jp":"{勝負|しょうぶ}","vi":"thắng bại, cuộc thi đấu"}
+      ]},
+      {"kanji":"得","on":"トク","kun":"える","meaningVi":"được, thu được, có lợi","examples":[
+        {"jp":"{得意|とくい}","vi":"sở trường, giỏi"},
+        {"jp":"{説得|せっとく}","vi":"thuyết phục"}
+      ]},
+      {"kanji":"損","on":"ソン","kun":"そこなう","meaningVi":"tổn hại, thiệt hại","examples":[
+        {"jp":"{損失|そんしつ}","vi":"tổn thất"},
+        {"jp":"{破損|はそん}","vi":"hư hỏng"}
+      ]}
+    ]
+  },
+  "k3d3": {
+    "introVi": "Bài {漢字|かんじ}の{部首|ぶしゅ}① giới thiệu các bộ thủ phổ biến 氵(nước), 木(cây), 亻(người), 言(lời nói) — nhận biết bộ giúp đoán nghĩa và cách đọc chữ mới nhanh hơn.",
+    "items": [
+      {"kanji":"河","on":"カ","kun":"かわ","meaningVi":"sông (bộ 氵 thủy — liên quan đến nước)","examples":[
+        {"jp":"{河川|かせん}","vi":"sông ngòi"},
+        {"jp":"{運河|うんが}","vi":"kênh đào"}
+      ]},
+      {"kanji":"湖","on":"コ","kun":"みずうみ","meaningVi":"hồ (bộ 氵 thủy)","examples":[
+        {"jp":"{湖畔|こはん}","vi":"bên hồ"},
+        {"jp":"{湖水|こすい}","vi":"nước hồ"}
+      ]},
+      {"kanji":"林","on":"リン","kun":"はやし","meaningVi":"rừng (bộ 木 mộc)","examples":[
+        {"jp":"{林業|りんぎょう}","vi":"nghề rừng"},
+        {"jp":"{農林|のうりん}","vi":"nông lâm"}
+      ]},
+      {"kanji":"校","on":"コウ","kun":"（なし）","meaningVi":"trường học, hiệu đính (bộ 木 mộc)","examples":[
+        {"jp":"{学校|がっこう}","vi":"trường học"},
+        {"jp":"{校正|こうせい}","vi":"hiệu đính, sửa bản in"}
+      ]},
+      {"kanji":"体","on":"タイ","kun":"からだ","meaningVi":"thân thể (bộ 亻 nhân)","examples":[
+        {"jp":"{体調|たいちょう}","vi":"tình trạng sức khỏe"},
+        {"jp":"{全体|ぜんたい}","vi":"toàn thể"}
+      ]},
+      {"kanji":"語","on":"ゴ","kun":"かたる","meaningVi":"ngôn ngữ, kể chuyện (bộ 言 ngôn)","examples":[
+        {"jp":"{日本語|にほんご}","vi":"tiếng Nhật"},
+        {"jp":"{物語|ものがたり}","vi":"câu chuyện"}
+      ]}
+    ]
+  },
+  "k3d4": {
+    "introVi": "Bài {漢字|かんじ}の{部首|ぶしゅ}② tiếp tục với các bộ thủ 扌(tay), 忄(tâm - cảm xúc), 阝(khu vực), 艹(cỏ, cây) thường gặp trong Hán tự N2.",
+    "items": [
+      {"kanji":"打","on":"ダ","kun":"うつ","meaningVi":"đánh, gõ (bộ 扌 thủ)","examples":[
+        {"jp":"{打|う}つ","vi":"đánh, gõ"},
+        {"jp":"{打撃|だげき}","vi":"đòn giáng, tổn hại"}
+      ]},
+      {"kanji":"持","on":"ジ","kun":"もつ","meaningVi":"cầm, mang (bộ 扌 thủ)","examples":[
+        {"jp":"{持参|じさん}","vi":"mang theo"},
+        {"jp":"{支持|しじ}","vi":"hỗ trợ, ủng hộ"}
+      ]},
+      {"kanji":"忙","on":"ボウ","kun":"いそがしい","meaningVi":"bận rộn (bộ 忄 tâm)","examples":[
+        {"jp":"{忙|いそが}しい","vi":"bận rộn"},
+        {"jp":"{多忙|たぼう}","vi":"rất bận rộn"}
+      ]},
+      {"kanji":"快","on":"カイ","kun":"こころよい","meaningVi":"sảng khoái, vui vẻ (bộ 忄 tâm)","examples":[
+        {"jp":"{快適|かいてき}","vi":"thoải mái"},
+        {"jp":"{愉快|ゆかい}","vi":"vui vẻ"}
+      ]},
+      {"kanji":"都","on":"ト・ツ","kun":"（なし）","meaningVi":"đô thị, thủ đô (bộ 阝 ấp)","examples":[
+        {"jp":"{都市|とし}","vi":"thành phố"},
+        {"jp":"{都合|つごう}","vi":"sự thuận tiện, hoàn cảnh"}
+      ]},
+      {"kanji":"花","on":"カ","kun":"はな","meaningVi":"hoa (bộ 艹 thảo)","examples":[
+        {"jp":"{花見|はなみ}","vi":"ngắm hoa"},
+        {"jp":"{花瓶|かびん}","vi":"bình hoa"}
+      ]}
+    ]
+  },
+  "k3d5": {
+    "introVi": "Bài {漢字|かんじ}の{画数|かくすう} giới thiệu khái niệm số nét chữ Hán, từ những chữ chỉ có 2 nét đến những chữ phức tạp gần 20 nét, giúp tra từ điển Hán tự chính xác hơn.",
+    "items": [
+      {"kanji":"力","on":"リョク・リキ","kun":"ちから","meaningVi":"sức mạnh, lực (2 nét — kanji có số nét rất ít)","examples":[
+        {"jp":"{力|ちから}","vi":"sức lực"},
+        {"jp":"{努力|どりょく}","vi":"nỗ lực"}
+      ]},
+      {"kanji":"九","on":"キュウ・ク","kun":"ここのつ","meaningVi":"số chín (2 nét)","examples":[
+        {"jp":"{九月|くがつ}","vi":"tháng chín"},
+        {"jp":"{九州|きゅうしゅう}","vi":"đảo Kyushu"}
+      ]},
+      {"kanji":"水","on":"スイ","kun":"みず","meaningVi":"nước (4 nét)","examples":[
+        {"jp":"{水道|すいどう}","vi":"đường ống nước"},
+        {"jp":"{水曜日|すいようび}","vi":"thứ Tư"}
+      ]},
+      {"kanji":"道","on":"ドウ","kun":"みち","meaningVi":"đường, đạo (12 nét)","examples":[
+        {"jp":"{道路|どうろ}","vi":"đường bộ"},
+        {"jp":"{柔道|じゅうどう}","vi":"môn judo"}
+      ]},
+      {"kanji":"議","on":"ギ","kun":"（なし）","meaningVi":"bàn bạc, nghị (20 nét — kanji có nhiều nét)","examples":[
+        {"jp":"{会議|かいぎ}","vi":"cuộc họp"},
+        {"jp":"{議論|ぎろん}","vi":"tranh luận"}
+      ]},
+      {"kanji":"護","on":"ゴ","kun":"まもる","meaningVi":"bảo vệ, che chở (20 nét)","examples":[
+        {"jp":"{保護|ほご}","vi":"bảo hộ"},
+        {"jp":"{護衛|ごえい}","vi":"hộ vệ"}
+      ]}
+    ]
+  },
+  "k3d6": {
+    "introVi": "Bài {漢字|かんじ}の{音読|おんよ}み① giới thiệu nhóm Hán tự cùng chung âm on コウ — nhận ra các chữ đồng âm giúp đoán cách đọc từ mới nhanh hơn khi gặp trong bài đọc N2.",
+    "items": [
+      {"kanji":"校","on":"コウ","kun":"（なし）","meaningVi":"trường học","examples":[
+        {"jp":"{学校|がっこう}","vi":"trường học"},
+        {"jp":"{校長|こうちょう}","vi":"hiệu trưởng"}
+      ]},
+      {"kanji":"好","on":"コウ","kun":"すく","meaningVi":"yêu thích, tốt","examples":[
+        {"jp":"{好調|こうちょう}","vi":"tình trạng tốt, thuận lợi"},
+        {"jp":"{好|す}き","vi":"yêu thích, thích"}
+      ]},
+      {"kanji":"港","on":"コウ","kun":"みなと","meaningVi":"cảng","examples":[
+        {"jp":"{空港|くうこう}","vi":"sân bay"},
+        {"jp":"{港町|みなとまち}","vi":"thị trấn cảng"}
+      ]},
+      {"kanji":"考","on":"コウ","kun":"かんがえる","meaningVi":"suy nghĩ, xem xét","examples":[
+        {"jp":"{考|かんが}える","vi":"suy nghĩ, xem xét"},
+        {"jp":"{参考|さんこう}","vi":"tham khảo"}
+      ]},
+      {"kanji":"効","on":"コウ","kun":"きく","meaningVi":"hiệu quả, có tác dụng","examples":[
+        {"jp":"{効果|こうか}","vi":"hiệu quả"},
+        {"jp":"{有効|ゆうこう}","vi":"có hiệu lực"}
+      ]},
+      {"kanji":"交","on":"コウ","kun":"まじる","meaningVi":"giao, qua lại","examples":[
+        {"jp":"{交流|こうりゅう}","vi":"giao lưu"},
+        {"jp":"{交渉|こうしょう}","vi":"đàm phán"}
+      ]}
+    ]
+  },
+  "k3d7": {
+    "introVi": "Bài {実戦問題|じっせんもんだい} ôn tập lại các Hán tự trọng tâm của tuần 3: nghĩa trái ngược, bộ thủ, số nét chữ, và nhóm chữ đồng âm.",
+    "items": [
+      {"kanji":"開","on":"カイ","kun":"あける","meaningVi":"mở (ôn: cặp nghĩa trái ngược)","examples":[
+        {"jp":"{開始|かいし}","vi":"bắt đầu"},
+        {"jp":"{開催|かいさい}","vi":"tổ chức (sự kiện)"}
+      ]},
+      {"kanji":"勝","on":"ショウ","kun":"かつ","meaningVi":"thắng (ôn: cặp nghĩa trái ngược)","examples":[
+        {"jp":"{勝利|しょうり}","vi":"thắng lợi"},
+        {"jp":"{優勝|ゆうしょう}","vi":"vô địch"}
+      ]},
+      {"kanji":"河","on":"カ","kun":"かわ","meaningVi":"sông (ôn: bộ 氵 thủy)","examples":[
+        {"jp":"{河川|かせん}","vi":"sông ngòi"},
+        {"jp":"{運河|うんが}","vi":"kênh đào"}
+      ]},
+      {"kanji":"忙","on":"ボウ","kun":"いそがしい","meaningVi":"bận rộn (ôn: bộ 忄 tâm)","examples":[
+        {"jp":"{多忙|たぼう}","vi":"rất bận rộn"},
+        {"jp":"{忙|いそが}しい","vi":"bận rộn"}
+      ]},
+      {"kanji":"道","on":"ドウ","kun":"みち","meaningVi":"đường, đạo (ôn: số nét chữ)","examples":[
+        {"jp":"{道路|どうろ}","vi":"đường bộ"},
+        {"jp":"{柔道|じゅうどう}","vi":"môn judo"}
+      ]},
+      {"kanji":"好","on":"コウ","kun":"すく","meaningVi":"yêu thích, tốt (ôn: nhóm chữ đồng âm コウ)","examples":[
+        {"jp":"{好調|こうちょう}","vi":"tình trạng tốt"},
+        {"jp":"{好|す}き","vi":"yêu thích"}
+      ]}
+    ]
+  }
+}

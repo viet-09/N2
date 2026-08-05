@@ -1,0 +1,275 @@
+{
+  "v1d1": {
+    "introVi": "Từ vựng N2 thường gặp khi tìm và thuê nhà/căn hộ (アパート・マンション) tại Nhật: các loại phí, hợp đồng, và tiêu chí chọn nhà.",
+    "items": [
+      {"word": "賃貸", "reading": "ちんたい", "meaningVi": "cho thuê (nhà, phòng)", "example": {"jp": "{賃貸|ちんたい}マンションを{借|か}りたいです。", "vi": "Tôi muốn thuê một căn hộ chung cư."}},
+      {"word": "敷金", "reading": "しききん", "meaningVi": "tiền đặt cọc (khi thuê nhà)", "example": {"jp": "{敷金|しききん}は{家賃|やちん}の{二|に}か{月分|げつぶん}です。", "vi": "Tiền đặt cọc bằng hai tháng tiền nhà."}},
+      {"word": "礼金", "reading": "れいきん", "meaningVi": "tiền lễ (trả cho chủ nhà khi ký hợp đồng, không được hoàn lại)", "example": {"jp": "{礼金|れいきん}なしの{部屋|へや}を{探|さが}しています。", "vi": "Tôi đang tìm phòng không cần tiền lễ."}},
+      {"word": "仲介料", "reading": "ちゅうかいりょう", "meaningVi": "phí môi giới (nhà đất)", "example": {"jp": "{仲介料|ちゅうかいりょう}として{一|いっ}か{月分|げつぶん}の{家賃|やちん}を{払|はら}った。", "vi": "Tôi đã trả phí môi giới bằng một tháng tiền nhà."}},
+      {"word": "間取り", "reading": "まどり", "meaningVi": "cách bố trí phòng (sơ đồ mặt bằng)", "example": {"jp": "この{部屋|へや}の{間取|まど}りは2LDKです。", "vi": "Cách bố trí phòng này là kiểu 2LDK."}},
+      {"word": "立地", "reading": "りっち", "meaningVi": "vị trí địa lý của một địa điểm", "example": {"jp": "{駅|えき}に{近|ちか}くて{立地|りっち}がいい{物件|ぶっけん}を{選|えら}びたい。", "vi": "Tôi muốn chọn căn nhà có vị trí tốt, gần trạm tàu."}},
+      {"word": "築年数", "reading": "ちくねんすう", "meaningVi": "số năm đã xây (tuổi của công trình)", "example": {"jp": "{築年数|ちくねんすう}が{古|ふる}くても、{値段|ねだん}が{安|やす}ければいい。", "vi": "Dù đã xây lâu năm cũng được, chỉ cần giá rẻ."}},
+      {"word": "保証人", "reading": "ほしょうにん", "meaningVi": "người bảo lãnh (khi thuê nhà)", "example": {"jp": "{賃貸契約|ちんたいけいやく}には{保証人|ほしょうにん}が{必要|ひつよう}です。", "vi": "Hợp đồng thuê nhà cần có người bảo lãnh."}}
+    ]
+  },
+  "v1d2": {
+    "introVi": "Từ vựng N2 xung quanh việc chuyển nhà (引っ越し): chuẩn bị, vận chuyển, thủ tục và những vất vả thường gặp.",
+    "items": [
+      {"word": "運搬", "reading": "うんぱん", "meaningVi": "sự vận chuyển, chuyên chở (đồ đạc)", "example": {"jp": "{大型|おおがた}の{家具|かぐ}の{運搬|うんぱん}は{業者|ぎょうしゃ}に{頼|たの}んだ。", "vi": "Tôi đã nhờ công ty dịch vụ vận chuyển đồ nội thất cỡ lớn."}},
+      {"word": "梯子", "reading": "はしご", "meaningVi": "cái thang", "example": {"jp": "{梯子|はしご}を{使|つか}って2{階|かい}の{窓|まど}から{荷物|にもつ}を{運|はこ}んだ。", "vi": "Tôi đã dùng thang để chuyển đồ qua cửa sổ tầng hai."}},
+      {"word": "手続き", "reading": "てつづき", "meaningVi": "thủ tục", "example": {"jp": "{引|ひ}っ{越|こ}しの{手続|てつづ}きで{役所|やくしょ}に{何|なん}{度|ど}も{行|い}った。", "vi": "Tôi đã đến ủy ban nhiều lần vì thủ tục chuyển nhà."}},
+      {"word": "整理", "reading": "せいり", "meaningVi": "sự sắp xếp, dọn dẹp gọn gàng", "example": {"jp": "{引|ひ}っ{越|こ}し{前|まえ}に{荷物|にもつ}の{整理|せいり}をしなければならない。", "vi": "Trước khi chuyển nhà phải sắp xếp lại đồ đạc."}},
+      {"word": "処分", "reading": "しょぶん", "meaningVi": "sự xử lý, thanh lý (bỏ đi)", "example": {"jp": "{使|つか}わない{家具|かぐ}は{処分|しょぶん}することにした。", "vi": "Tôi quyết định thanh lý những đồ nội thất không dùng."}},
+      {"word": "梱包", "reading": "こんぽう", "meaningVi": "sự đóng gói", "example": {"jp": "ガラス{製品|せいひん}は{丁寧|ていねい}に{梱包|こんぽう}してください。", "vi": "Xin hãy đóng gói cẩn thận các sản phẩm bằng thủy tinh."}},
+      {"word": "近隣", "reading": "きんりん", "meaningVi": "khu vực lân cận, láng giềng", "example": {"jp": "{近隣|きんりん}の{住民|じゅうみん}に{引|ひ}っ{越|こ}しの{挨拶|あいさつ}をした。", "vi": "Tôi đã chào hỏi hàng xóm lân cận khi chuyển nhà."}},
+      {"word": "疲れ果てる", "reading": "つかれはてる", "meaningVi": "mệt lử, mệt rã rời", "example": {"jp": "{一日中|いちにちじゅう}{荷物|にもつ}を{運|はこ}んで{疲|つか}れ{果|は}てた。", "vi": "Tôi đã mệt lử vì khuân đồ suốt cả ngày."}}
+    ]
+  },
+  "v1d3": {
+    "introVi": "Từ vựng N2 về việc mời khách và tiếp đón bạn bè, người thân tại nhà (招く・もてなす).",
+    "items": [
+      {"word": "招く", "reading": "まねく", "meaningVi": "mời (khách), triệu tập", "example": {"jp": "{誕生日|たんじょうび}パーティーに{友人|ゆうじん}を{招|まね}いた。", "vi": "Tôi đã mời bạn bè đến tiệc sinh nhật."}},
+      {"word": "もてなす", "reading": "もてなす", "meaningVi": "tiếp đón, đãi khách", "example": {"jp": "{手料理|てりょうり}でお{客|きゃく}さんを{もてな}した。", "vi": "Tôi đã tiếp đón khách bằng những món tự nấu."}},
+      {"word": "気配り", "reading": "きくばり", "meaningVi": "sự quan tâm, để ý chu đáo", "example": {"jp": "{彼女|かのじょ}は{客|きゃく}への{気配|きくば}りが{行|い}き{届|とど}いている。", "vi": "Cô ấy quan tâm chu đáo đến khách."}},
+      {"word": "手土産", "reading": "てみやげ", "meaningVi": "món quà nhỏ mang theo khi đến thăm nhà ai", "example": {"jp": "{訪問|ほうもん}するときは{手土産|てみやげ}を{持|も}っていく。", "vi": "Khi đi thăm nhà ai đó tôi thường mang theo món quà nhỏ."}},
+      {"word": "接待", "reading": "せったい", "meaningVi": "sự tiếp đãi (khách hàng, đối tác)", "example": {"jp": "{取引先|とりひきさき}を{接待|せったい}するために{高級|こうきゅう}レストランを{予約|よやく}した。", "vi": "Tôi đã đặt nhà hàng cao cấp để tiếp đãi đối tác."}},
+      {"word": "盛り付け", "reading": "もりつけ", "meaningVi": "cách trình bày món ăn", "example": {"jp": "{料理|りょうり}の{盛|も}り{付|つ}けにも{気|き}を{配|くば}った。", "vi": "Tôi cũng chú ý đến cách trình bày món ăn."}},
+      {"word": "心地よい", "reading": "ここちよい", "meaningVi": "thoải mái, dễ chịu", "example": {"jp": "{客|きゃく}が{心地|ここち}よく{過|す}ごせるように{部屋|へや}を{整|ととの}えた。", "vi": "Tôi đã dọn phòng để khách có thể ở thoải mái."}},
+      {"word": "見送る", "reading": "みおくる", "meaningVi": "tiễn (khách), đưa đi", "example": {"jp": "{玄関|げんかん}まで{客|きゃく}を{見送|みおく}った。", "vi": "Tôi đã tiễn khách ra tới cửa."}}
+    ]
+  },
+  "v1d4": {
+    "introVi": "Từ vựng N2 về việc nhà và nuôi dạy con nhỏ (家事・子育て), những khó khăn và công việc hằng ngày.",
+    "items": [
+      {"word": "育児", "reading": "いくじ", "meaningVi": "việc nuôi dạy trẻ nhỏ", "example": {"jp": "{育児|いくじ}と{仕事|しごと}を{両立|りょうりつ}させるのは{難|むずか}しい。", "vi": "Việc vừa nuôi con vừa đi làm rất khó."}},
+      {"word": "負担", "reading": "ふたん", "meaningVi": "gánh nặng, trách nhiệm phải chịu", "example": {"jp": "{家事|かじ}の{負担|ふたん}が{妻|つま}に{集中|しゅうちゅう}している。", "vi": "Gánh nặng việc nhà đang tập trung vào người vợ."}},
+      {"word": "分担", "reading": "ぶんたん", "meaningVi": "sự phân chia (công việc, trách nhiệm)", "example": {"jp": "{夫婦|ふうふ}で{家事|かじ}を{分担|ぶんたん}している。", "vi": "Hai vợ chồng phân chia việc nhà cho nhau."}},
+      {"word": "しつける", "reading": "しつける", "meaningVi": "dạy dỗ, uốn nắn (con trẻ)", "example": {"jp": "{小|ちい}さい{頃|ころ}から{礼儀|れいぎ}をしつけるようにしている。", "vi": "Tôi cố gắng dạy dỗ về lễ nghĩa từ khi con còn nhỏ."}},
+      {"word": "手が離せない", "reading": "てがはなせない", "meaningVi": "không rời tay ra được, bận không dứt ra được", "example": {"jp": "{子供|こども}が{小|ちい}さいうちは{手|て}が{離|はな}せない。", "vi": "Khi con còn nhỏ thì không thể rời tay được."}},
+      {"word": "疲労", "reading": "ひろう", "meaningVi": "sự mệt mỏi", "example": {"jp": "{毎日|まいにち}の{育児|いくじ}で{疲労|ひろう}がたまっている。", "vi": "Sự mệt mỏi tích tụ do việc nuôi con hằng ngày."}},
+      {"word": "保育園", "reading": "ほいくえん", "meaningVi": "nhà trẻ", "example": {"jp": "{子供|こども}を{保育園|ほいくえん}に{預|あず}けて{働|はたら}いている。", "vi": "Tôi gửi con ở nhà trẻ để đi làm."}},
+      {"word": "支え合う", "reading": "ささえあう", "meaningVi": "hỗ trợ, giúp đỡ lẫn nhau", "example": {"jp": "{夫婦|ふうふ}で{支|ささ}え{合|あ}いながら{育児|いくじ}をしている。", "vi": "Hai vợ chồng đang hỗ trợ nhau nuôi con."}}
+    ]
+  },
+  "v1d5": {
+    "introVi": "Từ vựng N2 về kỳ nghỉ hè bên biển (夏休み・海): hoạt động, cảm giác và cảnh vật mùa hè.",
+    "items": [
+      {"word": "日焼け", "reading": "ひやけ", "meaningVi": "sự cháy nắng, rám nắng", "example": {"jp": "{海|うみ}で{一日|いちにち}{泳|およ}いだら{日焼|ひや}けした。", "vi": "Bơi ở biển cả ngày nên tôi bị cháy nắng."}},
+      {"word": "波", "reading": "なみ", "meaningVi": "sóng (biển)", "example": {"jp": "{今日|きょう}は{波|なみ}が{高|たか}くて{危険|きけん}です。", "vi": "Hôm nay sóng lớn nên rất nguy hiểm."}},
+      {"word": "潮風", "reading": "しおかぜ", "meaningVi": "gió biển (mang mùi mặn)", "example": {"jp": "{潮風|しおかぜ}に{当|あ}たりながら{散歩|さんぽ}した。", "vi": "Tôi đã đi dạo trong khi hứng gió biển."}},
+      {"word": "混雑", "reading": "こんざつ", "meaningVi": "sự đông đúc, chen chúc", "example": {"jp": "{夏休|なつやす}みの{海|うみ}はいつも{混雑|こんざつ}している。", "vi": "Biển vào kỳ nghỉ hè lúc nào cũng đông đúc."}},
+      {"word": "解放感", "reading": "かいほうかん", "meaningVi": "cảm giác được giải thoát, tự do", "example": {"jp": "{広|ひろ}い{海|うみ}を{見|み}ると{解放感|かいほうかん}を{感|かん}じる。", "vi": "Khi nhìn biển rộng, tôi cảm thấy được tự do giải thoát."}},
+      {"word": "浮き輪", "reading": "うきわ", "meaningVi": "phao bơi", "example": {"jp": "{子供|こども}に{浮|う}き{輪|わ}をつけさせて{泳|およ}がせた。", "vi": "Tôi đã cho con đeo phao bơi để tập bơi."}},
+      {"word": "満喫する", "reading": "まんきつする", "meaningVi": "hưởng thụ đầy đủ, thỏa thích", "example": {"jp": "{家族|かぞく}で{夏休|なつやす}みを{満喫|まんきつ}した。", "vi": "Cả nhà đã thỏa thích hưởng thụ kỳ nghỉ hè."}},
+      {"word": "帰省", "reading": "きせい", "meaningVi": "sự về quê (thăm nhà)", "example": {"jp": "{夏休|なつやす}みに{実家|じっか}へ{帰省|きせい}する{予定|よてい}です。", "vi": "Tôi dự định về quê thăm nhà vào kỳ nghỉ hè."}}
+    ]
+  },
+  "v1d6": {
+    "introVi": "Từ vựng N2 về việc chi tiêu quá mức và quản lý tiền bạc (お金の使いすぎ・節約).",
+    "items": [
+      {"word": "無駄遣い", "reading": "むだづかい", "meaningVi": "sự lãng phí tiền bạc", "example": {"jp": "{最近|さいきん}、{無駄遣|むだづか}いが{多|おお}くて{困|こま}っている。", "vi": "Gần đây tôi tiêu tiền lãng phí nhiều nên khá lo lắng."}},
+      {"word": "節約", "reading": "せつやく", "meaningVi": "sự tiết kiệm", "example": {"jp": "{来月|らいげつ}から{節約|せつやく}{生活|せいかつ}を{始|はじ}めるつもりだ。", "vi": "Tôi định bắt đầu cuộc sống tiết kiệm từ tháng sau."}},
+      {"word": "借金", "reading": "しゃっきん", "meaningVi": "nợ, số tiền vay mượn", "example": {"jp": "カードの{使|つか}いすぎで{借金|しゃっきん}ができてしまった。", "vi": "Vì dùng thẻ quá nhiều nên tôi đã mắc nợ."}},
+      {"word": "衝動買い", "reading": "しょうどうがい", "meaningVi": "việc mua sắm bột phát, theo cảm tính", "example": {"jp": "セールを{見|み}ると{衝動買|しょうどうが}いをしてしまう。", "vi": "Hễ thấy giảm giá là tôi lại mua sắm theo cảm tính."}},
+      {"word": "収支", "reading": "しゅうし", "meaningVi": "thu chi", "example": {"jp": "{毎月|まいつき}の{収支|しゅうし}を{記録|きろく}するようにしている。", "vi": "Tôi cố gắng ghi lại thu chi hằng tháng."}},
+      {"word": "貯蓄", "reading": "ちょちく", "meaningVi": "tiền tiết kiệm, sự dành dụm", "example": {"jp": "{将来|しょうらい}のために{貯蓄|ちょちく}をしておくべきだ。", "vi": "Nên dành dụm tiền tiết kiệm cho tương lai."}},
+      {"word": "破産", "reading": "はさん", "meaningVi": "sự vỡ nợ, phá sản", "example": {"jp": "{使|つか}いすぎると{破産|はさん}する{恐|おそ}れがある。", "vi": "Nếu tiêu xài quá mức có nguy cơ bị vỡ nợ."}},
+      {"word": "計画的", "reading": "けいかくてき", "meaningVi": "có tính toán, có kế hoạch", "example": {"jp": "お{金|かね}は{計画的|けいかくてき}に{使|つか}うべきだ。", "vi": "Nên tiêu tiền một cách có kế hoạch."}}
+    ]
+  },
+  "v1d7": {
+    "introVi": "Ôn tập từ vựng N2 tuần 1: nhà thuê, chuyển nhà, tiếp khách, việc nhà/con cái, kỳ nghỉ hè và chi tiêu tiền bạc.",
+    "items": [
+      {"word": "賃貸", "reading": "ちんたい", "meaningVi": "cho thuê (nhà, phòng)", "example": {"jp": "{賃貸|ちんたい}{住宅|じゅうたく}の{契約|けいやく}を{更新|こうしん}した。", "vi": "Tôi đã gia hạn hợp đồng nhà thuê."}},
+      {"word": "処分", "reading": "しょぶん", "meaningVi": "sự xử lý, thanh lý", "example": {"jp": "{引|ひ}っ{越|こ}しの{前|まえ}に{不要|ふよう}な{物|もの}を{処分|しょぶん}した。", "vi": "Trước khi chuyển nhà, tôi đã thanh lý những đồ không cần."}},
+      {"word": "もてなす", "reading": "もてなす", "meaningVi": "tiếp đón, đãi khách", "example": {"jp": "{久|ひさ}しぶりに{来|き}た{友人|ゆうじん}を{手料理|てりょうり}で{もてな}した。", "vi": "Tôi đã đãi món tự nấu cho người bạn lâu ngày mới đến."}},
+      {"word": "分担", "reading": "ぶんたん", "meaningVi": "sự phân chia (công việc)", "example": {"jp": "{家事|かじ}は{夫婦|ふうふ}で{分担|ぶんたん}するべきだ。", "vi": "Việc nhà nên được vợ chồng phân chia cho nhau."}},
+      {"word": "満喫する", "reading": "まんきつする", "meaningVi": "hưởng thụ đầy đủ, thỏa thích", "example": {"jp": "{海|うみ}で{夏休|なつやす}みを{満喫|まんきつ}した。", "vi": "Tôi đã thỏa thích hưởng thụ kỳ nghỉ hè ở biển."}},
+      {"word": "無駄遣い", "reading": "むだづかい", "meaningVi": "sự lãng phí tiền bạc", "example": {"jp": "{無駄遣|むだづか}いをやめて{貯蓄|ちょちく}を{増|ふ}やしたい。", "vi": "Tôi muốn bỏ việc tiêu xài lãng phí và tăng tiền tiết kiệm."}},
+      {"word": "気配り", "reading": "きくばり", "meaningVi": "sự quan tâm, để ý chu đáo", "example": {"jp": "{接待|せったい}では{気配|きくば}りが{大切|たいせつ}だ。", "vi": "Trong việc tiếp đãi khách, sự quan tâm chu đáo rất quan trọng."}},
+      {"word": "疲労", "reading": "ひろう", "meaningVi": "sự mệt mỏi", "example": {"jp": "{引|ひ}っ{越|こ}し{作業|さぎょう}で{疲労|ひろう}を{感|かん}じた。", "vi": "Tôi cảm thấy mệt mỏi vì công việc chuyển nhà."}}
+    ]
+  },
+  "v2d1": {
+    "introVi": "Từ vựng N2 về việc tìm việc làm (仕事探し): tuyển dụng, hồ sơ, phỏng vấn.",
+    "items": [
+      {"word": "求人", "reading": "きゅうじん", "meaningVi": "sự tuyển dụng, tin tuyển người", "example": {"jp": "インターネットで{求人|きゅうじん}{情報|じょうほう}を{探|さが}している。", "vi": "Tôi đang tìm thông tin tuyển dụng trên mạng."}},
+      {"word": "履歴書", "reading": "りれきしょ", "meaningVi": "sơ yếu lý lịch", "example": {"jp": "{履歴書|りれきしょ}を{書|か}いて{会社|かいしゃ}に{送|おく}った。", "vi": "Tôi đã viết sơ yếu lý lịch và gửi đến công ty."}},
+      {"word": "面接", "reading": "めんせつ", "meaningVi": "buổi phỏng vấn", "example": {"jp": "{来週|らいしゅう}、{面接|めんせつ}を{受|う}けることになった。", "vi": "Tuần sau tôi sẽ tham gia buổi phỏng vấn."}},
+      {"word": "採用", "reading": "さいよう", "meaningVi": "sự tuyển dụng, được nhận vào làm", "example": {"jp": "{面接|めんせつ}の{結果|けっか}、{採用|さいよう}が{決|き}まった。", "vi": "Kết quả phỏng vấn là tôi đã được nhận vào làm."}},
+      {"word": "待遇", "reading": "たいぐう", "meaningVi": "điều kiện đãi ngộ (lương, phúc lợi)", "example": {"jp": "{待遇|たいぐう}がいい{会社|かいしゃ}を{選|えら}びたい。", "vi": "Tôi muốn chọn công ty có đãi ngộ tốt."}},
+      {"word": "経歴", "reading": "けいれき", "meaningVi": "kinh nghiệm làm việc, quá trình công tác", "example": {"jp": "これまでの{経歴|けいれき}について{説明|せつめい}した。", "vi": "Tôi đã giải thích về quá trình công tác từ trước đến nay."}},
+      {"word": "資格", "reading": "しかく", "meaningVi": "chứng chỉ, bằng cấp", "example": {"jp": "この{仕事|しごと}には{特別|とくべつ}な{資格|しかく}が{必要|ひつよう}だ。", "vi": "Công việc này cần có chứng chỉ đặc biệt."}},
+      {"word": "転職", "reading": "てんしょく", "meaningVi": "sự chuyển việc, đổi công ty", "example": {"jp": "もっと{良|よ}い{条件|じょうけん}を{求|もと}めて{転職|てんしょく}した。", "vi": "Tôi đã chuyển việc để tìm điều kiện tốt hơn."}}
+    ]
+  },
+  "v2d2": {
+    "introVi": "Từ vựng N2 về công việc hằng ngày ở công ty (仕事①): nhiệm vụ, tổ chức và quan hệ trong công việc.",
+    "items": [
+      {"word": "業務", "reading": "ぎょうむ", "meaningVi": "công việc, nghiệp vụ", "example": {"jp": "{毎日|まいにち}の{業務|ぎょうむ}は{忙|いそが}しい。", "vi": "Công việc hằng ngày rất bận rộn."}},
+      {"word": "担当", "reading": "たんとう", "meaningVi": "người phụ trách, việc phụ trách", "example": {"jp": "この{件|けん}は{私|わたし}が{担当|たんとう}しています。", "vi": "Việc này do tôi phụ trách."}},
+      {"word": "打ち合わせ", "reading": "うちあわせ", "meaningVi": "cuộc họp trao đổi công việc", "example": {"jp": "{午後|ごご}、{取引先|とりひきさき}と{打|う}ち{合|あ}わせがある。", "vi": "Buổi chiều có cuộc họp trao đổi với đối tác."}},
+      {"word": "報告", "reading": "ほうこく", "meaningVi": "sự báo cáo", "example": {"jp": "{上司|じょうし}に{結果|けっか}を{報告|ほうこく}した。", "vi": "Tôi đã báo cáo kết quả với cấp trên."}},
+      {"word": "残業", "reading": "ざんぎょう", "meaningVi": "làm việc ngoài giờ, tăng ca", "example": {"jp": "{今日|きょう}は{残業|ざんぎょう}しなければならない。", "vi": "Hôm nay tôi phải làm tăng ca."}},
+      {"word": "効率", "reading": "こうりつ", "meaningVi": "hiệu suất, hiệu quả", "example": {"jp": "{作業|さぎょう}の{効率|こうりつ}を{上|あ}げる{方法|ほうほう}を{考|かんが}えている。", "vi": "Tôi đang suy nghĩ cách nâng cao hiệu suất công việc."}},
+      {"word": "取引先", "reading": "とりひきさき", "meaningVi": "đối tác kinh doanh, khách hàng giao dịch", "example": {"jp": "{新|あたら}しい{取引先|とりひきさき}を{開拓|かいたく}した。", "vi": "Tôi đã khai thác được đối tác kinh doanh mới."}},
+      {"word": "締め切り", "reading": "しめきり", "meaningVi": "hạn nộp, thời hạn cuối", "example": {"jp": "{企画書|きかくしょ}の{締|し}め{切|き}りは{明日|あした}だ。", "vi": "Hạn nộp bản kế hoạch là ngày mai."}}
+    ]
+  },
+  "v2d3": {
+    "introVi": "Từ vựng N2 về công việc ở công ty (仕事②): thăng chức, đánh giá và mối quan hệ đồng nghiệp.",
+    "items": [
+      {"word": "昇進", "reading": "しょうしん", "meaningVi": "sự thăng chức", "example": {"jp": "{今年|こんねん}、{課長|かちょう}に{昇進|しょうしん}した。", "vi": "Năm nay tôi được thăng chức làm trưởng phòng."}},
+      {"word": "評価", "reading": "ひょうか", "meaningVi": "sự đánh giá", "example": {"jp": "{上司|じょうし}からの{評価|ひょうか}が{高|たか}かった。", "vi": "Tôi được cấp trên đánh giá cao."}},
+      {"word": "責任", "reading": "せきにん", "meaningVi": "trách nhiệm", "example": {"jp": "この{仕事|しごと}には{大|おお}きな{責任|せきにん}が{伴|ともな}う。", "vi": "Công việc này đi kèm trách nhiệm lớn."}},
+      {"word": "指示", "reading": "しじ", "meaningVi": "sự chỉ đạo, chỉ thị", "example": {"jp": "{上司|じょうし}の{指示|しじ}に{従|したが}って{作業|さぎょう}を{進|すす}めた。", "vi": "Tôi đã tiến hành công việc theo chỉ đạo của cấp trên."}},
+      {"word": "協力", "reading": "きょうりょく", "meaningVi": "sự hợp tác, hỗ trợ", "example": {"jp": "{同僚|どうりょう}と{協力|きょうりょく}してプロジェクトを{完成|かんせい}させた。", "vi": "Tôi đã hợp tác với đồng nghiệp để hoàn thành dự án."}},
+      {"word": "異動", "reading": "いどう", "meaningVi": "sự điều chuyển (bộ phận, chi nhánh)", "example": {"jp": "{来月|らいげつ}から{別|べつ}の{部署|ぶしょ}へ{異動|いどう}することになった。", "vi": "Từ tháng sau tôi sẽ được điều chuyển sang bộ phận khác."}},
+      {"word": "成果", "reading": "せいか", "meaningVi": "thành quả, kết quả đạt được", "example": {"jp": "この1{年|ねん}の{努力|どりょく}の{成果|せいか}が{出|で}た。", "vi": "Thành quả nỗ lực của một năm đã được thể hiện."}},
+      {"word": "板挟み", "reading": "いたばさみ", "meaningVi": "tình trạng bị kẹt giữa hai bên, khó xử", "example": {"jp": "{上司|じょうし}と{部下|ぶか}の{間|あいだ}で{板挟|いたばさ}みになった。", "vi": "Tôi bị kẹt khó xử giữa cấp trên và cấp dưới."}}
+    ]
+  },
+  "v2d4": {
+    "introVi": "Từ vựng N2 về sử dụng máy tính (パソコン①): thao tác cơ bản, phần cứng và lỗi thường gặp.",
+    "items": [
+      {"word": "起動", "reading": "きどう", "meaningVi": "sự khởi động (máy)", "example": {"jp": "パソコンの{起動|きどう}に{時間|じかん}がかかる。", "vi": "Máy tính tốn nhiều thời gian để khởi động."}},
+      {"word": "保存", "reading": "ほぞん", "meaningVi": "sự lưu (dữ liệu)", "example": {"jp": "データを{保存|ほぞん}する{前|まえ}に{確認|かくにん}してください。", "vi": "Hãy kiểm tra trước khi lưu dữ liệu."}},
+      {"word": "接続", "reading": "せつぞく", "meaningVi": "sự kết nối", "example": {"jp": "インターネットの{接続|せつぞく}が{不安定|ふあんてい}だ。", "vi": "Kết nối internet không ổn định."}},
+      {"word": "故障", "reading": "こしょう", "meaningVi": "sự hỏng hóc, trục trặc", "example": {"jp": "パソコンが{故障|こしょう}して{修理|しゅうり}に{出|だ}した。", "vi": "Máy tính bị hỏng nên tôi đã mang đi sửa."}},
+      {"word": "操作", "reading": "そうさ", "meaningVi": "sự vận hành, thao tác", "example": {"jp": "この{機械|きかい}の{操作|そうさ}は{簡単|かんたん}だ。", "vi": "Thao tác với cái máy này rất đơn giản."}},
+      {"word": "更新", "reading": "こうしん", "meaningVi": "sự cập nhật", "example": {"jp": "ソフトの{更新|こうしん}を{行|おこな}う{必要|ひつよう}がある。", "vi": "Cần thực hiện việc cập nhật phần mềm."}},
+      {"word": "画面", "reading": "がめん", "meaningVi": "màn hình", "example": {"jp": "{画面|がめん}が{固|かた}まってしまった。", "vi": "Màn hình bị treo cứng rồi."}},
+      {"word": "設定", "reading": "せってい", "meaningVi": "sự thiết lập, cài đặt", "example": {"jp": "パソコンの{設定|せってい}を{変更|へんこう}した。", "vi": "Tôi đã thay đổi cài đặt máy tính."}}
+    ]
+  },
+  "v2d5": {
+    "introVi": "Từ vựng N2 về sử dụng máy tính (パソコン②): xử lý dữ liệu, phần mềm và an toàn thông tin.",
+    "items": [
+      {"word": "入力", "reading": "にゅうりょく", "meaningVi": "sự nhập (dữ liệu)", "example": {"jp": "パスワードを{正確|せいかく}に{入力|にゅうりょく}してください。", "vi": "Hãy nhập chính xác mật khẩu."}},
+      {"word": "削除", "reading": "さくじょ", "meaningVi": "sự xóa (dữ liệu, tập tin)", "example": {"jp": "{不要|ふよう}なファイルを{削除|さくじょ}した。", "vi": "Tôi đã xóa những tập tin không cần thiết."}},
+      {"word": "検索", "reading": "けんさく", "meaningVi": "sự tra cứu, tìm kiếm", "example": {"jp": "インターネットで{検索|けんさく}すればすぐ{分|わ}かる。", "vi": "Chỉ cần tra cứu trên internet là biết ngay."}},
+      {"word": "添付", "reading": "てんぷ", "meaningVi": "sự đính kèm (file, tài liệu)", "example": {"jp": "ファイルを{添付|てんぷ}してメールを{送|おく}った。", "vi": "Tôi đã đính kèm tập tin và gửi email."}},
+      {"word": "漏洩", "reading": "ろうえい", "meaningVi": "sự rò rỉ, lộ (thông tin)", "example": {"jp": "{個人情報|こじんじょうほう}の{漏洩|ろうえい}に{気|き}をつけている。", "vi": "Tôi luôn cẩn thận với việc rò rỉ thông tin cá nhân."}},
+      {"word": "復旧", "reading": "ふっきゅう", "meaningVi": "sự phục hồi (hệ thống, dữ liệu)", "example": {"jp": "システムの{復旧|ふっきゅう}に3{時間|じかん}かかった。", "vi": "Việc phục hồi hệ thống mất 3 giờ."}},
+      {"word": "処理", "reading": "しょり", "meaningVi": "sự xử lý", "example": {"jp": "データの{処理|しょり}を{自動化|じどうか}した。", "vi": "Tôi đã tự động hóa việc xử lý dữ liệu."}},
+      {"word": "誤作動", "reading": "ごさどう", "meaningVi": "sự hoạt động sai, trục trặc bất thường", "example": {"jp": "ソフトが{誤作動|ごさどう}を{起|お}こした。", "vi": "Phần mềm đã bị hoạt động sai."}}
+    ]
+  },
+  "v2d6": {
+    "introVi": "Từ vựng N2 về sử dụng máy tính (パソコン③): mạng, thiết bị ngoại vi và làm việc trực tuyến.",
+    "items": [
+      {"word": "端末", "reading": "たんまつ", "meaningVi": "thiết bị đầu cuối (máy tính, điện thoại)", "example": {"jp": "どの{端末|たんまつ}からでもデータを{確認|かくにん}できる。", "vi": "Có thể kiểm tra dữ liệu từ bất kỳ thiết bị đầu cuối nào."}},
+      {"word": "遠隔", "reading": "えんかく", "meaningVi": "từ xa", "example": {"jp": "{遠隔|えんかく}{操作|そうさ}でパソコンを{修理|しゅうり}してもらった。", "vi": "Tôi đã được sửa máy tính bằng cách điều khiển từ xa."}},
+      {"word": "共有", "reading": "きょうゆう", "meaningVi": "sự chia sẻ (chung)", "example": {"jp": "ファイルをチームで{共有|きょうゆう}している。", "vi": "Cả nhóm đang chia sẻ tập tin với nhau."}},
+      {"word": "回線", "reading": "かいせん", "meaningVi": "đường truyền (mạng)", "example": {"jp": "この{地域|ちいき}はインターネットの{回線|かいせん}が{弱|よわ}い。", "vi": "Đường truyền internet ở khu vực này yếu."}},
+      {"word": "同期", "reading": "どうき", "meaningVi": "sự đồng bộ (hóa)", "example": {"jp": "スマホとパソコンのデータを{同期|どうき}させた。", "vi": "Tôi đã đồng bộ dữ liệu giữa điện thoại và máy tính."}},
+      {"word": "互換性", "reading": "ごかんせい", "meaningVi": "tính tương thích", "example": {"jp": "このソフトは{古|ふる}いパソコンとの{互換性|ごかんせい}がない。", "vi": "Phần mềm này không tương thích với máy tính cũ."}},
+      {"word": "在宅勤務", "reading": "ざいたくきんむ", "meaningVi": "làm việc từ nhà", "example": {"jp": "{在宅勤務|ざいたくきんむ}にはパソコンとネット{環境|かんきょう}が{必要|ひつよう}だ。", "vi": "Làm việc từ nhà cần có máy tính và môi trường mạng."}},
+      {"word": "普及", "reading": "ふきゅう", "meaningVi": "sự phổ cập, phổ biến", "example": {"jp": "パソコンの{普及|ふきゅう}によって{生活|せいかつ}が{変|か}わった。", "vi": "Đời sống đã thay đổi nhờ sự phổ cập của máy tính."}}
+    ]
+  },
+  "v2d7": {
+    "introVi": "Ôn tập từ vựng N2 tuần 2: tìm việc, công việc công ty và sử dụng máy tính trong công việc.",
+    "items": [
+      {"word": "求人", "reading": "きゅうじん", "meaningVi": "sự tuyển dụng, tin tuyển người", "example": {"jp": "{求人|きゅうじん}サイトで{新|あたら}しい{仕事|しごと}を{探|さが}した。", "vi": "Tôi đã tìm việc mới trên trang tuyển dụng."}},
+      {"word": "業務", "reading": "ぎょうむ", "meaningVi": "công việc, nghiệp vụ", "example": {"jp": "{新|あたら}しい{部署|ぶしょ}の{業務|ぎょうむ}に{慣|な}れてきた。", "vi": "Tôi đã dần quen với công việc ở bộ phận mới."}},
+      {"word": "昇進", "reading": "しょうしん", "meaningVi": "sự thăng chức", "example": {"jp": "{努力|どりょく}の{結果|けっか}、{昇進|しょうしん}できた。", "vi": "Nhờ nỗ lực, tôi đã được thăng chức."}},
+      {"word": "故障", "reading": "こしょう", "meaningVi": "sự hỏng hóc, trục trặc", "example": {"jp": "パソコンの{故障|こしょう}で{仕事|しごと}が{止|と}まった。", "vi": "Công việc bị đình trệ vì máy tính hỏng."}},
+      {"word": "共有", "reading": "きょうゆう", "meaningVi": "sự chia sẻ (chung)", "example": {"jp": "{資料|しりょう}をチームで{共有|きょうゆう}した。", "vi": "Tôi đã chia sẻ tài liệu với cả nhóm."}},
+      {"word": "漏洩", "reading": "ろうえい", "meaningVi": "sự rò rỉ, lộ (thông tin)", "example": {"jp": "{情報|じょうほう}の{漏洩|ろうえい}を{防|ふせ}ぐ{対策|たいさく}をとった。", "vi": "Tôi đã áp dụng biện pháp phòng chống rò rỉ thông tin."}},
+      {"word": "在宅勤務", "reading": "ざいたくきんむ", "meaningVi": "làm việc từ nhà", "example": {"jp": "{在宅勤務|ざいたくきんむ}の{日|ひ}はパソコンでずっと{作業|さぎょう}する。", "vi": "Vào ngày làm việc từ nhà, tôi làm việc suốt với máy tính."}},
+      {"word": "締め切り", "reading": "しめきり", "meaningVi": "hạn nộp, thời hạn cuối", "example": {"jp": "{報告書|ほうこくしょ}の{締|し}め{切|き}りに{間|ま}に{合|あ}った。", "vi": "Tôi đã kịp hạn nộp báo cáo."}}
+    ]
+  },
+  "v3d1": {
+    "introVi": "Từ vựng N2 mô tả tính cách con người (どんな人ですか): các nét tính cách tích cực và tiêu cực.",
+    "items": [
+      {"word": "気さく", "reading": "きさく", "meaningVi": "cởi mở, dễ gần, thân thiện", "example": {"jp": "{彼|かれ}は{気|き}さくな{人|ひと}で、すぐに{仲良|なかよ}くなれる。", "vi": "Anh ấy là người cởi mở, dễ trở nên thân thiết ngay."}},
+      {"word": "頑固", "reading": "がんこ", "meaningVi": "cứng đầu, bảo thủ", "example": {"jp": "{父|ちち}は{頑固|がんこ}で、{意見|いけん}を{変|か}えない。", "vi": "Bố tôi cứng đầu, không thay đổi ý kiến."}},
+      {"word": "謙虚", "reading": "けんきょ", "meaningVi": "khiêm tốn", "example": {"jp": "{成功|せいこう}しても{謙虚|けんきょ}な{態度|たいど}を{忘|わす}れない{人|ひと}だ。", "vi": "Anh ấy là người dù thành công vẫn không quên giữ thái độ khiêm tốn."}},
+      {"word": "図太い", "reading": "ずぶとい", "meaningVi": "lỳ lợm, mặt dày, không biết ngại", "example": {"jp": "{彼|かれ}は{図太|ずぶと}くて、{何|なに}を{言|い}われても{気|き}にしない。", "vi": "Anh ấy khá lỳ lợm, bị nói gì cũng không để tâm."}},
+      {"word": "せっかち", "reading": "せっかち", "meaningVi": "vội vàng, nóng vội (tính cách)", "example": {"jp": "{彼女|かのじょ}はせっかちで、{待|ま}つのが{苦手|にがて}だ。", "vi": "Cô ấy là người nóng vội, không giỏi việc chờ đợi."}},
+      {"word": "慎重", "reading": "しんちょう", "meaningVi": "cẩn trọng, thận trọng", "example": {"jp": "{彼|かれ}は{何|なに}をするにも{慎重|しんちょう}だ。", "vi": "Anh ấy làm gì cũng thận trọng."}},
+      {"word": "自己中心的", "reading": "じこちゅうしんてき", "meaningVi": "vị kỷ, chỉ nghĩ đến bản thân", "example": {"jp": "{自己中心的|じこちゅうしんてき}な{人|ひと}とは{付|つ}き{合|あ}いたくない。", "vi": "Tôi không muốn chơi với người chỉ nghĩ đến bản thân."}},
+      {"word": "面倒見がいい", "reading": "めんどうみがいい", "meaningVi": "tận tâm chăm sóc người khác", "example": {"jp": "{先輩|せんぱい}は{面倒見|めんどうみ}がいいので{後輩|こうはい}に{人気|にんき}がある。", "vi": "Anh khóa trên rất tận tâm chăm sóc nên được các em khóa dưới yêu thích."}}
+    ]
+  },
+  "v3d2": {
+    "introVi": "Từ vựng N2 mô tả trạng thái, tình huống, dáng vẻ của sự việc (どんな様子ですか).",
+    "items": [
+      {"word": "深刻", "reading": "しんこく", "meaningVi": "nghiêm trọng, sâu sắc (tình trạng)", "example": {"jp": "{問題|もんだい}は{思|おも}った{以上|いじょう}に{深刻|しんこく}だった。", "vi": "Vấn đề nghiêm trọng hơn tôi nghĩ."}},
+      {"word": "曖昧", "reading": "あいまい", "meaningVi": "mơ hồ, không rõ ràng", "example": {"jp": "{彼|かれ}の{返事|へんじ}は{曖昧|あいまい}で{よく分|わ}からなかった。", "vi": "Câu trả lời của anh ấy mơ hồ, tôi không hiểu rõ."}},
+      {"word": "順調", "reading": "じゅんちょう", "meaningVi": "thuận lợi, suôn sẻ", "example": {"jp": "プロジェクトは{順調|じゅんちょう}に{進|すす}んでいる。", "vi": "Dự án đang tiến triển thuận lợi."}},
+      {"word": "混乱", "reading": "こんらん", "meaningVi": "sự hỗn loạn", "example": {"jp": "{事故|じこ}の{ため|ため}、{現場|げんば}は{混乱|こんらん}していた。", "vi": "Do tai nạn nên hiện trường đã hỗn loạn."}},
+      {"word": "深まる", "reading": "ふかまる", "meaningVi": "trở nên sâu sắc hơn (mối quan hệ, sự hiểu biết)", "example": {"jp": "{留学|りゅうがく}を{通|とお}して{文化|ぶんか}への{理解|りかい}が{深|ふか}まった。", "vi": "Qua việc du học, sự hiểu biết về văn hóa đã trở nên sâu sắc hơn."}},
+      {"word": "微妙", "reading": "びみょう", "meaningVi": "vi diệu, tinh tế, khó nói rõ", "example": {"jp": "{二人|ふたり}の{関係|かんけい}は{微妙|びみょう}な{状態|じょうたい}だ。", "vi": "Mối quan hệ của hai người đang trong tình trạng khó nói rõ."}},
+      {"word": "緊迫", "reading": "きんぱく", "meaningVi": "sự căng thẳng, cấp bách", "example": {"jp": "{会議|かいぎ}は{緊迫|きんぱく}した{空気|くうき}の{中|なか}で{行|おこな}われた。", "vi": "Cuộc họp diễn ra trong không khí căng thẳng."}},
+      {"word": "安定", "reading": "あんてい", "meaningVi": "sự ổn định", "example": {"jp": "{最近|さいきん}、{天気|てんき}が{安定|あんてい}している。", "vi": "Gần đây thời tiết ổn định."}}
+    ]
+  },
+  "v3d3": {
+    "introVi": "Từ vựng N2 mô tả hành động, động tác của con người (どんな動作ですか).",
+    "items": [
+      {"word": "見つめる", "reading": "みつめる", "meaningVi": "nhìn chăm chú, đăm đăm", "example": {"jp": "{彼女|かのじょ}は{写真|しゃしん}をじっと{見|み}つめていた。", "vi": "Cô ấy đã nhìn tấm ảnh một cách chăm chú."}},
+      {"word": "うなずく", "reading": "うなずく", "meaningVi": "gật đầu", "example": {"jp": "{説明|せつめい}を{聞|き}いて、みんなうなずいた。", "vi": "Nghe giải thích xong, mọi người đều gật đầu."}},
+      {"word": "つぶやく", "reading": "つぶやく", "meaningVi": "lẩm bẩm, nói nhỏ một mình", "example": {"jp": "{彼|かれ}は{何|なに}かをつぶやいて、そのまま{歩|あ}き{去|さ}った。", "vi": "Anh ấy lẩm bẩm điều gì đó rồi bước đi."}},
+      {"word": "抱える", "reading": "かかえる", "meaningVi": "bế, ôm, gánh (đồ vật, vấn đề)", "example": {"jp": "{大|おお}きな{荷物|にもつ}を{抱|かか}えて{歩|ある}いている。", "vi": "Anh ấy đang ôm một cái túi lớn và đi bộ."}},
+      {"word": "見回す", "reading": "みまわす", "meaningVi": "nhìn quanh, đảo mắt nhìn xung quanh", "example": {"jp": "{部屋|へや}に{入|はい}って{周|まわ}りを{見回|みまわ}した。", "vi": "Bước vào phòng, tôi đã nhìn quanh."}},
+      {"word": "しゃがむ", "reading": "しゃがむ", "meaningVi": "ngồi xổm, cúi xuống", "example": {"jp": "{子供|こども}の{前|まえ}でしゃがんで{話|はな}しかけた。", "vi": "Tôi đã ngồi xổm trước mặt đứa bé để nói chuyện."}},
+      {"word": "振り返る", "reading": "ふりかえる", "meaningVi": "quay đầu lại nhìn, nhìn lại", "example": {"jp": "{名前|なまえ}を{呼|よ}ばれて{振|ふ}り{返|かえ}った。", "vi": "Bị gọi tên nên tôi đã quay đầu lại nhìn."}},
+      {"word": "つまずく", "reading": "つまずく", "meaningVi": "vấp (chân), suýt ngã", "example": {"jp": "{段差|だんさ}につまずいて{転|ころ}びそうになった。", "vi": "Tôi vấp phải bậc thang và suýt bị ngã."}}
+    ]
+  },
+  "v3d4": {
+    "introVi": "Từ vựng N2 mô tả tâm trạng, cảm xúc, thái độ (どんな気持ち、態度ですか①).",
+    "items": [
+      {"word": "戸惑う", "reading": "とまどう", "meaningVi": "bối rối, lúng túng", "example": {"jp": "{急|きゅう}に{質問|しつもん}されて{戸惑|とまど}った。", "vi": "Bị hỏi bất ngờ nên tôi đã bối rối."}},
+      {"word": "落ち込む", "reading": "おちこむ", "meaningVi": "buồn bã, chán nản, sa sút tâm trạng", "example": {"jp": "テストに{失敗|しっぱい}して{落|お}ち{込|こ}んでいる。", "vi": "Tôi đang buồn bã vì thi thất bại."}},
+      {"word": "苛立つ", "reading": "いらだつ", "meaningVi": "bực bội, khó chịu", "example": {"jp": "{電車|でんしゃ}が{遅|おく}れて{苛立|いらだ}った。", "vi": "Tàu điện đến muộn khiến tôi bực bội."}},
+      {"word": "安堵する", "reading": "あんどする", "meaningVi": "yên tâm, nhẹ nhõm", "example": {"jp": "{試験|しけん}に{合格|ごうかく}して{安堵|あんど}した。", "vi": "Tôi đã cảm thấy nhẹ nhõm vì thi đậu."}},
+      {"word": "誇る", "reading": "ほこる", "meaningVi": "tự hào", "example": {"jp": "{自分|じぶん}の{仕事|しごと}に{誇|ほこ}りを{持|も}っている。", "vi": "Tôi tự hào về công việc của mình."}},
+      {"word": "遠慮", "reading": "えんりょ", "meaningVi": "sự dè dặt, khách sáo, ngại ngùng", "example": {"jp": "{遠慮|えんりょ}なく{意見|いけん}を{言|い}ってください。", "vi": "Xin hãy nói ý kiến, đừng ngại."}},
+      {"word": "納得", "reading": "なっとく", "meaningVi": "sự hiểu và chấp nhận, thỏa mãn (về lý lẽ)", "example": {"jp": "{説明|せつめい}を{聞|き}いて{納得|なっとく}した。", "vi": "Nghe giải thích xong tôi đã hiểu và chấp nhận."}},
+      {"word": "後ろめたい", "reading": "うしろめたい", "meaningVi": "cảm thấy có lỗi, cắn rắn (lương tâm)", "example": {"jp": "{嘘|うそ}をついたことが{後|うし}ろめたい。", "vi": "Tôi cảm thấy có lỗi vì đã nói dối."}}
+    ]
+  },
+  "v3d5": {
+    "introVi": "Từ vựng N2 mô tả tâm trạng, cảm xúc, thái độ (どんな気持ち、態度ですか②).",
+    "items": [
+      {"word": "うんざりする", "reading": "うんざりする", "meaningVi": "chán ngán, ngán ngẩm", "example": {"jp": "{毎日|まいにち}の{残業|ざんぎょう}にうんざりしている。", "vi": "Tôi ngán ngẩm vì phải tăng ca mỗi ngày."}},
+      {"word": "熱心", "reading": "ねっしん", "meaningVi": "nhiệt tình, hăng hái", "example": {"jp": "{彼|かれ}は{仕事|しごと}に{熱心|ねっしん}に{取|と}り{組|く}んでいる。", "vi": "Anh ấy đang làm việc rất hăng hái."}},
+      {"word": "無関心", "reading": "むかんしん", "meaningVi": "sự thờ ơ, không quan tâm", "example": {"jp": "{政治|せいじ}に{無関心|むかんしん}な{若者|わかもの}が{増|ふ}えている。", "vi": "Số lượng người trẻ thờ ơ với chính trị đang tăng lên."}},
+      {"word": "気が引ける", "reading": "きがひける", "meaningVi": "cảm thấy ngại, e dè khi làm việc gì", "example": {"jp": "みんなが{忙|いそが}しい{時|とき}に{休|やす}むのは{気|き}が{引|ひ}ける。", "vi": "Tôi cảm thấy ngại khi nghỉ trong lúc mọi người đang bận."}},
+      {"word": "動揺", "reading": "どうよう", "meaningVi": "sự dao động, hoảng loạn tâm lý", "example": {"jp": "{悪|わる}い{知|し}らせを{聞|き}いて{動揺|どうよう}した。", "vi": "Nghe tin xấu tôi đã bị dao động tâm lý."}},
+      {"word": "投げやり", "reading": "なげやり", "meaningVi": "buông xuôi, thái độ hời hợt bỏ bê", "example": {"jp": "{疲|つか}れて{仕事|しごと}が{投|な}げやりになってしまった。", "vi": "Vì mệt nên tôi đã làm việc một cách hời hợt buông xuôi."}},
+      {"word": "気を遣う", "reading": "きをつかう", "meaningVi": "quan tâm, để ý đến người khác", "example": {"jp": "{上司|じょうし}に{気|き}を{遣|つか}いすぎて{疲|つか}れる。", "vi": "Tôi mệt vì quá để ý đến cấp trên."}},
+      {"word": "腹立たしい", "reading": "はらだたしい", "meaningVi": "bực tức, giận dữ", "example": {"jp": "{一方的|いっぽうてき}な{言|い}い{方|かた}が{腹立|はらだ}たしい。", "vi": "Cách nói một chiều đó khiến tôi bực tức."}}
+    ]
+  },
+  "v3d6": {
+    "introVi": "Từ vựng N2 mô tả trạng thái sức khỏe, cơ thể (体の具合はどうですか).",
+    "items": [
+      {"word": "だるい", "reading": "だるい", "meaningVi": "mệt mỏi, rã người, uể oải", "example": {"jp": "{風邪|かぜ}の{ため|ため}、{体|からだ}がだるい。", "vi": "Vì bị cảm nên người tôi mệt mỏi uể oải."}},
+      {"word": "めまい", "reading": "めまい", "meaningVi": "chóng mặt", "example": {"jp": "{立|た}ち{上|あ}がったら、めまいがした。", "vi": "Khi đứng lên tôi bị chóng mặt."}},
+      {"word": "食欲不振", "reading": "しょくよくふしん", "meaningVi": "chứng chán ăn, kém ăn", "example": {"jp": "ストレスで{食欲不振|しょくよくふしん}になった。", "vi": "Tôi bị chán ăn do stress."}},
+      {"word": "回復", "reading": "かいふく", "meaningVi": "sự hồi phục", "example": {"jp": "{病気|びょうき}はだんだん{回復|かいふく}している。", "vi": "Bệnh tình đang dần hồi phục."}},
+      {"word": "悪化", "reading": "あっか", "meaningVi": "sự trở nặng, xấu đi", "example": {"jp": "{無理|むり}をしたら{症状|しょうじょう}が{悪化|あっか}した。", "vi": "Vì gắng sức quá nên triệu chứng đã trở nặng."}},
+      {"word": "しびれる", "reading": "しびれる", "meaningVi": "bị tê (tay chân)", "example": {"jp": "{長時間|ちょうじかん}{座|すわ}っていて{足|あし}がしびれた。", "vi": "Ngồi lâu quá nên chân tôi bị tê."}},
+      {"word": "体調を崩す", "reading": "たいちょうをくずす", "meaningVi": "bị suy nhược, đổ bệnh (mất sức khỏe)", "example": {"jp": "{無理|むり}な{ダイエット|だいえっと}で{体調|たいちょう}を{崩|くず}した。", "vi": "Tôi bị suy nhược sức khỏe vì ăn kiêng quá mức."}},
+      {"word": "違和感", "reading": "いわかん", "meaningVi": "cảm giác khác lạ, bất thường (trong cơ thể)", "example": {"jp": "{胃|い}に{違和感|いわかん}を{感|かん}じて{病院|びょういん}に{行|い}った。", "vi": "Tôi cảm thấy dạ dày khác lạ nên đã đi khám bệnh."}}
+    ]
+  },
+  "v3d7": {
+    "introVi": "Ôn tập từ vựng N2 tuần 3: tính cách, trạng thái sự việc, hành động, tâm trạng/thái độ và tình trạng sức khỏe.",
+    "items": [
+      {"word": "気さく", "reading": "きさく", "meaningVi": "cởi mở, dễ gần, thân thiện", "example": {"jp": "{彼女|かのじょ}は{気|き}さくで、{誰|だれ}とでもすぐ{話|はな}せる。", "vi": "Cô ấy cởi mở, có thể nói chuyện ngay với bất kỳ ai."}},
+      {"word": "曖昧", "reading": "あいまい", "meaningVi": "mơ hồ, không rõ ràng", "example": {"jp": "{曖昧|あいまい}な{返事|へんじ}をされて{困|こま}った。", "vi": "Tôi đã gặp khó khi bị trả lời một cách mơ hồ."}},
+      {"word": "見つめる", "reading": "みつめる", "meaningVi": "nhìn chăm chú, đăm đăm", "example": {"jp": "{相手|あいて}の{目|め}をじっと{見|み}つめて{話|はな}した。", "vi": "Tôi đã nói chuyện trong khi nhìn chăm chú vào mắt đối phương."}},
+      {"word": "落ち込む", "reading": "おちこむ", "meaningVi": "buồn bã, chán nản, sa sút tâm trạng", "example": {"jp": "{失敗|しっぱい}して{少|すこ}し{落|お}ち{込|こ}んでいる。", "vi": "Tôi đang có chút buồn bã vì thất bại."}},
+      {"word": "安堵する", "reading": "あんどする", "meaningVi": "yên tâm, nhẹ nhõm", "example": {"jp": "{無事|むじ}に{着|つ}いたと{聞|き}いて{安堵|あんど}した。", "vi": "Nghe tin đến nơi an toàn tôi đã nhẹ nhõm."}},
+      {"word": "動揺", "reading": "どうよう", "meaningVi": "sự dao động, hoảng loạn tâm lý", "example": {"jp": "その{知|し}らせに{動揺|どうよう}を{隠|かく}せなかった。", "vi": "Tôi không thể giấu được sự dao động khi nghe tin đó."}},
+      {"word": "回復", "reading": "かいふく", "meaningVi": "sự hồi phục", "example": {"jp": "けがからの{回復|かいふく}に{時間|じかん}がかかっている。", "vi": "Việc hồi phục sau chấn thương đang mất nhiều thời gian."}},
+      {"word": "体調を崩す", "reading": "たいちょうをくずす", "meaningVi": "bị suy nhược, đổ bệnh (mất sức khỏe)", "example": {"jp": "{寝不足|ねぶそく}で{体調|たいちょう}を{崩|くず}してしまった。", "vi": "Tôi đã bị suy nhược sức khỏe vì thiếu ngủ."}}
+    ]
+  }
+}

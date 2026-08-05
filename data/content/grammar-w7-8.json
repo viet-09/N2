@@ -1,0 +1,200 @@
+{
+  "g7d1": {
+    "pattern": "〜を{問|と}わず",
+    "meaningVi": "không kể, bất kể, không phân biệt... (dùng cho các yếu tố như quốc tịch, tuổi tác, giới tính, thời tiết...)",
+    "formation": "Danh từ + を{問|と}わず",
+    "explanationVi": "「〜を問わず」diễn tả việc không phân biệt, không kể đến yếu tố nào đó khi xét đến một sự việc/quy định. Thường đi với các danh từ mang tính đối lập hoặc phạm vi rộng như 国籍、年齢、性別、天候. Mẫu này mang tính khách quan, trang trọng, hay xuất hiện trong văn viết, thông báo, quảng cáo tuyển dụng.",
+    "examples": [
+      {"jp": "{国籍|こくせき}を{問|と}わず、{誰|だれ}でもこの{大会|たいかい}に{参加|さんか}できる。", "vi": "Không kể quốc tịch, bất kỳ ai cũng có thể tham gia giải đấu này."},
+      {"jp": "{年齢|ねんれい}や{性別|せいべつ}を{問|と}わず、{採用|さいよう}{試験|しけん}を{受|う}けることができる。", "vi": "Không phân biệt tuổi tác hay giới tính, ai cũng có thể tham gia thi tuyển."},
+      {"jp": "{経験|けいけん}の{有無|ゆうむ}を{問|と}わず、{意欲|いよく}のある{人|ひと}を{募集|ぼしゅう}しています。", "vi": "Không kể có kinh nghiệm hay không, chúng tôi đang tuyển người có nhiệt huyết."},
+      {"jp": "{天候|てんこう}を{問|と}わず、イベントは{予定|よてい}どおり{行|おこな}われる。", "vi": "Bất kể thời tiết thế nào, sự kiện vẫn được tổ chức theo đúng kế hoạch."},
+      {"jp": "{学歴|がくれき}を{問|と}わず、{実力|じつりょく}{次第|しだい}で{昇進|しょうしん}できる{会社|かいしゃ}だ。", "vi": "Đây là công ty mà bất kể học vấn, chỉ cần có năng lực là có thể thăng tiến."}
+    ],
+    "notes": "So sánh với 「〜にかかわらず」(cũng mang nghĩa bất kể, nhiều khi thay thế được cho nhau); dạng 「〜を問わない」đứng trước danh từ để bổ nghĩa trực tiếp, ví dụ 「国籍を問わない仕事」."
+  },
+  "g7d2": {
+    "pattern": "〜もあれば〜もある",
+    "meaningVi": "có... cũng có..., có cái thì... có cái thì... (liệt kê sự đa dạng, tồn tại song song của nhiều loại sự vật/sự việc)",
+    "formation": "Danh từ1 + もあれば + Danh từ2 + もある （chủ thể là người/động vật dùng 〜もいれば〜もいる）",
+    "explanationVi": "Cấu trúc dùng để liệt kê song song hai (hoặc nhiều) loại sự vật, sự việc khác nhau, thường mang tính đối lập, nhằm nhấn mạnh sự đa dạng, không đồng nhất của một phạm trù nào đó. Mang tính khách quan, không thiên vị bên nào.",
+    "examples": [
+      {"jp": "この{店|みせ}には{甘|あま}いクッキーもあれば、しょっぱいケーキもある。", "vi": "Ở quán này có bánh quy ngọt, cũng có bánh ngọt vị mặn."},
+      {"jp": "{社員|しゃいん}の{中|なか}には{英語|えいご}が{得意|とくい}な{人|ひと}もいれば、{苦手|にがて}な{人|ひと}もいる。", "vi": "Trong số nhân viên, có người giỏi tiếng Anh, cũng có người không giỏi."},
+      {"jp": "{人生|じんせい}には{楽|たの}しいこともあれば、{辛|つら}いこともある。", "vi": "Trong cuộc đời, có lúc vui cũng có lúc buồn."},
+      {"jp": "{旅行先|りょこうさき}には{静|しず}かな{村|むら}もあれば、{賑|にぎ}やかな{都市|とし}もある。", "vi": "Điểm du lịch có làng quê yên tĩnh, cũng có thành phố nhộn nhịp."},
+      {"jp": "{同|おな}じ{商品|しょうひん}でも、{安|やす}い{店|みせ}もあれば、{高|たか}い{店|みせ}もある。", "vi": "Dù là cùng một sản phẩm nhưng có cửa hàng bán rẻ, cũng có cửa hàng bán đắt."}
+    ],
+    "notes": "Khác với 「〜も〜し、〜も〜」dùng để liệt kê lý do liên tiếp; 「〜もあれば〜もある」nhấn mạnh tính đa dạng/tồn tại song song hơn là quan hệ nhân quả."
+  },
+  "g7d3": {
+    "pattern": "〜ものだ",
+    "meaningVi": "đáng lẽ phải..., theo lẽ thường thì... (diễn tả chân lý, quy luật tự nhiên/xã hội, hoặc lời khuyên mang tính đạo lý, giáo huấn)",
+    "formation": "Động từ thể từ điển／ない + ものだ; Tính từ + ものだ",
+    "explanationVi": "「〜ものだ」đi sau động từ thể từ điển diễn tả điều được xem là lẽ thường, quy luật chung mà mọi người đều công nhận, thường dùng để đưa ra lời khuyên hoặc giáo huấn mang tính khái quát, đúng cho nhiều trường hợp tương tự. Ở thể phủ định 「〜ものではない」mang nghĩa cảnh báo, khuyên không nên làm điều gì đó.",
+    "examples": [
+      {"jp": "{学生|がくせい}は{若|わか}いうちに{一生懸命|いっしょうけんめい}{勉強|べんきょう}するものだ。", "vi": "Học sinh thì nên chăm chỉ học tập khi còn trẻ, đó là lẽ thường."},
+      {"jp": "{人|ひと}は{誰|だれ}でも{年|とし}を{取|と}れば、{昔|むかし}のことを{懐|なつ}かしく{思|おも}うものだ。", "vi": "Ai rồi cũng vậy, khi có tuổi thì thường hay nhớ về những chuyện xưa."},
+      {"jp": "{親|おや}に{対|たい}してそんな{失礼|しつれい}な{言葉|ことば}を{使|つか}うものではない。", "vi": "Không nên dùng những lời lẽ bất kính như vậy với cha mẹ."},
+      {"jp": "{子供|こども}のうちは{何|なん}でも{吸収|きゅうしゅう}が{早|はや}いものだ。", "vi": "Trẻ con thì cái gì cũng tiếp thu nhanh, đó là điều tự nhiên."},
+      {"jp": "{約束|やくそく}は{必|かなら}ず{守|まも}るものだ。", "vi": "Đã hứa thì phải giữ lời, đó là điều nên làm."}
+    ],
+    "notes": "Phân biệt với 「〜ことだ」(lời khuyên cụ thể cho một tình huống) và 「〜べきだ」(nên làm vì nghĩa vụ/trách nhiệm cụ thể); 「ものだ」mang tính khái quát, thường dùng khi hồi tưởng hoặc răn dạy chung."
+  },
+  "g7d4": {
+    "pattern": "〜を{込|こ}めて",
+    "meaningVi": "gửi gắm..., chứa đựng..., với tất cả... (làm gì đó kèm theo một loại tình cảm/tâm huyết cụ thể)",
+    "formation": "Danh từ (chỉ tình cảm, tâm trạng) + を{込|こ}めて",
+    "explanationVi": "Diễn tả hành động được thực hiện với sự gửi gắm, chứa đựng một cảm xúc hoặc tâm huyết cụ thể, thường là 心、愛情、感謝、力. Bổ nghĩa cho động từ đi sau, nhấn mạnh sự chân thành, tận tâm khi thực hiện hành động đó. Có thể chuyển thành dạng bổ nghĩa danh từ 「〜を込めた + danh từ」.",
+    "examples": [
+      {"jp": "{心|こころ}をこめて{手紙|てがみ}を{書|か}きました。", "vi": "Tôi đã viết thư với tất cả tấm lòng."},
+      {"jp": "{感謝|かんしゃ}の{気持|きも}ちをこめて、プレゼントを{渡|わた}した。", "vi": "Tôi đã trao tặng quà với lòng biết ơn."},
+      {"jp": "{力|ちから}をこめてロープを{引|ひ}いた。", "vi": "Tôi đã dồn hết sức kéo dây."},
+      {"jp": "{愛情|あいじょう}をこめて{育|そだ}てた{野菜|やさい}です。", "vi": "Đây là rau được trồng bằng cả tình yêu thương."},
+      {"jp": "{祈|いの}りをこめて、{両手|りょうて}を{合|あ}わせた。", "vi": "Tôi chắp hai tay lại và gửi gắm lời cầu nguyện."}
+    ],
+    "notes": "Có thể dùng ở dạng bổ nghĩa danh từ trực tiếp, ví dụ 「{心|こころ}をこめた{手紙|てがみ}」(bức thư chứa đựng tâm tình)."
+  },
+  "g7d5": {
+    "pattern": "〜ものがある",
+    "meaningVi": "có cái gì đó..., quả thực có... (cảm nhận chủ quan rằng sự vật/sự việc có một đặc điểm/giá trị đáng được công nhận)",
+    "formation": "Tính từ thể ngắn／Động từ thể ngắn + ものがある",
+    "explanationVi": "Diễn tả một ấn tượng, cảm nhận mạnh mẽ nhưng khó diễn đạt cụ thể của người nói về đối tượng nào đó, thường mang sắc thái khen ngợi hoặc đánh giá tinh tế, gián tiếp. Hay xuất hiện trong văn viết, bài phê bình, nhận xét mang tính trang trọng.",
+    "examples": [
+      {"jp": "{彼|かれ}の{演技|えんぎ}にはすばらしいものがある。", "vi": "Diễn xuất của anh ấy quả thực có gì đó tuyệt vời."},
+      {"jp": "この{絵|え}には、{何|なに}か{人|ひと}の{心|こころ}を{打|う}つものがある。", "vi": "Bức tranh này có gì đó chạm đến lòng người."},
+      {"jp": "{若|わか}いのに、{彼女|かのじょ}の{考|かんが}え{方|かた}にはしっかりしたものがある。", "vi": "Còn trẻ mà cách suy nghĩ của cô ấy quả thực chắc chắn."},
+      {"jp": "あの{選手|せんしゅ}の{集中力|しゅうちゅうりょく}には{驚|おどろ}くべきものがある。", "vi": "Khả năng tập trung của vận động viên đó quả thực đáng kinh ngạc."},
+      {"jp": "{先生|せんせい}の{話|はな}し{方|かた}には、{人|ひと}を{惹|ひ}きつけるものがある。", "vi": "Cách nói chuyện của thầy có gì đó thu hút người khác."}
+    ],
+    "notes": "Cần phân biệt với 「〜ことがある」(diễn tả việc thỉnh thoảng xảy ra) — dù hình thức gần giống nhưng ý nghĩa hoàn toàn khác nhau."
+  },
+  "g7d6": {
+    "pattern": "〜をもとに（して）",
+    "meaningVi": "dựa trên..., lấy... làm nền tảng/cơ sở",
+    "formation": "Danh từ + をもとに（して）",
+    "explanationVi": "Diễn tả việc lấy một thông tin, kinh nghiệm, tư liệu nào đó làm cơ sở, nền tảng để thực hiện một hành động khác như sáng tác, phân tích, cải tiến. Thường đi với các danh từ như データ、経験、資料、失敗、実話.",
+    "examples": [
+      {"jp": "{今回|こんかい}の{失敗|しっぱい}をもとに、{計画|けいかく}を{立|た}て{直|なお}した。", "vi": "Dựa trên thất bại lần này, tôi đã lập lại kế hoạch."},
+      {"jp": "この{映画|えいが}は{実話|じつわ}をもとにして{作|つく}られた。", "vi": "Bộ phim này được làm dựa trên câu chuyện có thật."},
+      {"jp": "アンケートの{結果|けっか}をもとに、{新|あたら}しい{商品|しょうひん}を{開発|かいはつ}する。", "vi": "Dựa trên kết quả khảo sát, chúng tôi phát triển sản phẩm mới."},
+      {"jp": "{先輩|せんぱい}の{経験|けいけん}をもとに、アドバイスをもらった。", "vi": "Tôi đã nhận được lời khuyên dựa trên kinh nghiệm của anh chị đi trước."},
+      {"jp": "{過去|かこ}のデータをもとに、{将来|しょうらい}の{需要|じゅよう}を{予測|よそく}する。", "vi": "Dựa trên dữ liệu quá khứ, dự đoán nhu cầu trong tương lai."}
+    ],
+    "notes": "Phân biệt với 「〜に{基|もと}づいて」(cũng nghĩa gần giống nhưng thường dùng cho căn cứ mang tính chính thức, khách quan như luật, quy định); 「をもとに」linh hoạt hơn, dùng được cả cho tư liệu sáng tạo."
+  },
+  "g7d7": {
+    "pattern": "Tổng hợp tuần 7: 〜を{問|と}わず／〜もあれば〜もある／〜ものだ／〜を{込|こ}めて／〜ものがある／〜をもとに",
+    "meaningVi": "Bài ôn tập tổng hợp 6 mẫu ngữ pháp đã học trong tuần 7: bất kể (を問わず), liệt kê đa dạng (もあれば〜もある), lẽ thường/giáo huấn (ものだ), gửi gắm tình cảm (をこめて), cảm nhận chủ quan (ものがある), dựa trên (をもとに).",
+    "formation": "Danh từ+を問わず ｜ Danh từ+もあれば+Danh từ+もある ｜ Động từ từ điển/ない+ものだ ｜ Danh từ(tình cảm)+をこめて ｜ Tính từ/Động từ thể ngắn+ものがある ｜ Danh từ+をもとに",
+    "explanationVi": "Đây là bài luyện tập tổng hợp giúp ôn lại 6 mẫu ngữ pháp N2 đã học trong tuần, tập trung vào việc nhận diện đúng cấu trúc và ngữ cảnh sử dụng của mỗi mẫu. Khi làm bài, cần chú ý phân biệt các mẫu có hình thức dễ nhầm lẫn như 「ものだ」và「ものがある」, hoặc 「をもとに」và 「を問わず」đều đi sau danh từ nhưng ý nghĩa hoàn toàn khác nhau.",
+    "examples": [
+      {"jp": "{性別|せいべつ}を{問|と}わず、{誰|だれ}でも{応募|おうぼ}できます。", "vi": "Không phân biệt giới tính, ai cũng có thể ứng tuyển."},
+      {"jp": "クラスには{真面目|まじめ}な{学生|がくせい}もいれば、{遊|あそ}び{好|ず}きな{学生|がくせい}もいる。", "vi": "Trong lớp có học sinh chăm chỉ, cũng có học sinh thích chơi."},
+      {"jp": "{若|わか}いうちは{苦労|くろう}するものだ。", "vi": "Khi còn trẻ thì phải chịu khó khăn, đó là lẽ thường."},
+      {"jp": "{感謝|かんしゃ}の{気持|きも}ちをこめて、お{礼|れい}の{品|しな}を{送|おく}った。", "vi": "Tôi đã gửi món quà cảm ơn với tất cả lòng biết ơn."},
+      {"jp": "{彼|かれ}の{文章|ぶんしょう}には{独特|どくとく}なものがある。", "vi": "Văn chương của anh ấy quả thực có nét độc đáo riêng."},
+      {"jp": "アンケート{調査|ちょうさ}をもとに、{改善案|かいぜんあん}を{作成|さくせい}した。", "vi": "Dựa trên khảo sát, tôi đã soạn ra phương án cải thiện."}
+    ],
+    "notes": "Bài ôn tập không giới thiệu mẫu ngữ pháp mới; hãy quay lại các mục g7d1〜g7d6 nếu cần xem lại chi tiết cách dùng và ví dụ của từng mẫu."
+  },
+  "g8d1": {
+    "pattern": "それなのに",
+    "meaningVi": "dù vậy mà, thế mà, vậy mà (biểu thị sự bất ngờ, không hài lòng khi kết quả trái ngược với điều vừa nêu)",
+    "formation": "Câu 1 (nêu sự việc/điều kiện) + それなのに + Câu 2 (kết quả trái ngược, thường mang tính bất ngờ hoặc bất mãn)",
+    "explanationVi": "「それなのに」là liên từ nối hai câu, diễn tả một kết quả ngược lại hoàn toàn với điều được kỳ vọng một cách logic từ câu trước, thường kèm theo cảm xúc ngạc nhiên, thất vọng hoặc bất mãn của người nói. Sắc thái chủ quan mạnh hơn so với 「しかし」hay「だが」.",
+    "examples": [
+      {"jp": "{彼|かれ}は{頑張|がんば}って{勉強|べんきょう}した。それなのに、テストの{結果|けっか}はよくなかった。", "vi": "Anh ấy đã chăm chỉ học tập. Vậy mà kết quả bài kiểm tra vẫn không tốt."},
+      {"jp": "{天気予報|てんきよほう}では{晴|は}れると{言|い}っていた。それなのに、{朝|あさ}から{雨|あめ}が{降|ふ}っている。", "vi": "Dự báo thời tiết nói sẽ nắng. Thế mà từ sáng đã mưa."},
+      {"jp": "{何度|なんど}も{注意|ちゅうい}した。それなのに、{彼|かれ}はまた{同|おな}じ{間違|まちが}いをした。", "vi": "Tôi đã nhắc nhở nhiều lần. Vậy mà anh ấy vẫn lại mắc lỗi tương tự."},
+      {"jp": "{彼女|かのじょ}に{優|やさ}しくしてあげた。それなのに、{感謝|かんしゃ}の{言葉|ことば}一つもない。", "vi": "Tôi đã đối xử tốt với cô ấy. Thế mà chẳng có một lời cảm ơn."},
+      {"jp": "{約束|やくそく}の{時間|じかん}を{守|まも}って{早|はや}く{来|き}た。それなのに、{相手|あいて}は{一時間|いちじかん}も{遅|おく}れて{来|き}た。", "vi": "Tôi đã giữ đúng giờ hẹn và đến sớm. Vậy mà đối phương lại đến muộn cả một giờ."}
+    ],
+    "notes": "So sánh với 「それでも」(dù vậy vẫn tiếp tục làm/vẫn kiên trì), còn 「それなのに」nhấn mạnh sự trái ngược bất ngờ, khó chấp nhận với kết quả."
+  },
+  "g8d2": {
+    "pattern": "そういえば",
+    "meaningVi": "nói đến chuyện đó thì..., à, nhắc mới nhớ...",
+    "formation": "そういえば + câu liên tưởng (chuyển sang một chủ đề mới liên quan đến điều vừa được nói hoặc vừa nhớ ra)",
+    "explanationVi": "「そういえば」dùng để chuyển chủ đề hội thoại một cách tự nhiên khi người nói bất chợt nhớ ra hoặc liên tưởng đến một điều liên quan đến câu chuyện đang diễn ra. Thường đặt ở đầu câu, phổ biến trong văn nói và hội thoại thân mật, không dùng trong văn viết trang trọng.",
+    "examples": [
+      {"jp": "{今日|きょう}は{寒|さむ}いね。そういえば、{明日|あした}から{雪|ゆき}が{降|ふ}るらしいよ。", "vi": "Hôm nay lạnh nhỉ. À nói mới nhớ, nghe nói từ ngày mai sẽ có tuyết."},
+      {"jp": "そういえば、{田中|たなか}さんは{最近|さいきん}、{見|み}かけませんね。", "vi": "Nói đến chuyện đó, gần đây không thấy anh Tanaka đâu nhỉ."},
+      {"jp": "{旅行|りょこう}の{話|はなし}をしていたら、そういえば{来月|らいげつ}パスポートの{期限|きげん}が{切|き}れることを{思|おも}い{出|だ}した。", "vi": "Đang nói về chuyện du lịch, tôi mới nhớ ra tháng sau hộ chiếu của mình sẽ hết hạn."},
+      {"jp": "そういえば、あの{映画|えいが}、もう{公開|こうかい}されたんですか。", "vi": "À nhắc mới nhớ, bộ phim đó đã công chiếu chưa nhỉ."},
+      {"jp": "{会議|かいぎ}の{準備|じゅんび}をしていて、そういえば{資料|しりょう}のコピーがまだだったと{気|き}づいた。", "vi": "Đang chuẩn bị cho cuộc họp, tôi mới nhớ ra là chưa photo tài liệu."}
+    ],
+    "notes": "Chức năng chính là chuyển đề tài hoặc nhắc lại điều bất chợt nhớ ra; rất hay xuất hiện trong phần nghe hiểu N2."
+  },
+  "g8d3": {
+    "pattern": "だって",
+    "meaningVi": "(1) vì..., tại vì... (giải thích lý do/biện hộ, mang tính thân mật, hơi trẻ con); (2) cho dù... cũng, dù là... cũng (nhấn mạnh không ngoại lệ, đi sau danh từ)",
+    "formation": "(1) だって + lý do, đặt đầu câu trả lời để biện hộ; (2) Danh từ + だって + vị ngữ",
+    "explanationVi": "Ở nghĩa (1), 「だって」đứng đầu câu trả lời, dùng để đưa ra lý do biện minh cho hành động hoặc lời nói trước đó, mang sắc thái hờn dỗi hoặc trẻ con, chỉ dùng trong hội thoại thân mật. Ở nghĩa (2), 「だって」đi sau danh từ, gần nghĩa với 「〜でも」, nhấn mạnh rằng ngay cả đối tượng đó cũng không phải ngoại lệ.",
+    "examples": [
+      {"jp": "どうして{遅刻|ちこく}したの？—だって、バスが{来|こ}なかったんだもん。", "vi": "Sao lại đi muộn thế?—Tại vì xe buýt không đến mà."},
+      {"jp": "なぜ{食|た}べないの？—だって、もうお{腹|なか}いっぱいなんだよ。", "vi": "Sao không ăn?—Vì tớ đã no bụng rồi mà."},
+      {"jp": "{子供|こども}だって、{自分|じぶん}の{意見|いけん}を{持|も}っている。", "vi": "Ngay cả trẻ con cũng có ý kiến riêng của mình."},
+      {"jp": "{先生|せんせい}だって、{間違|まちが}えることはある。", "vi": "Cả giáo viên cũng có lúc mắc sai lầm."},
+      {"jp": "どんなに{忙|いそが}しくても、{休日|きゅうじつ}だって{仕事|しごと}をしなければならないこともある。", "vi": "Dù có bận đến đâu, ngay cả ngày nghỉ đôi khi cũng phải làm việc."}
+    ],
+    "notes": "Ở nghĩa (1), 「だって」mang tính hội thoại, không dùng trong văn viết trang trọng. Ở nghĩa (2), có thể thay bằng「でも」nhưng「だって」nhấn mạnh hơn."
+  },
+  "g8d4": {
+    "pattern": "ということは",
+    "meaningVi": "nghĩa là..., như vậy có nghĩa là... (suy luận, rút ra kết luận logic từ thông tin đã biết)",
+    "formation": "Câu/mệnh đề (thông tin đã biết) + ということは + kết luận suy ra (thường kết thúc bằng 〜ということだ／〜わけだ／〜んですね)",
+    "explanationVi": "「ということは」dùng để dẫn vào một kết luận mà người nói suy luận ra được từ thông tin vừa nghe hoặc vừa biết, thể hiện quá trình xử lý thông tin và xác nhận lại suy luận đó với người nghe. Rất phổ biến trong hội thoại xác nhận, tổng hợp thông tin.",
+    "examples": [
+      {"jp": "{今日|きょう}は8{月|がつ}5{日|にち}か。ということは、あと{一週間|いっしゅうかん}で{夏休|なつやす}みが{終|お}わるね。", "vi": "Hôm nay là ngày 5 tháng 8 rồi. Nghĩa là còn một tuần nữa là hết kỳ nghỉ hè."},
+      {"jp": "{彼|かれ}はまだ{来|き}ていない。ということは、{電車|でんしゃ}が{遅|おく}れているのかもしれない。", "vi": "Anh ấy vẫn chưa đến. Như vậy có thể là tàu điện đang bị chậm."},
+      {"jp": "{値段|ねだん}が{上|あ}がった。ということは、{原材料|げんざいりょう}のコストも{上|あ}がったということだ。", "vi": "Giá đã tăng lên. Điều đó nghĩa là chi phí nguyên liệu cũng đã tăng."},
+      {"jp": "{鍵|かぎ}がかかっている。ということは、{誰|だれ}もいないということですね。", "vi": "Cửa đang bị khóa. Vậy nghĩa là không có ai ở nhà đúng không."},
+      {"jp": "テストの{範囲|はんい}が{広|ひろ}いらしい。ということは、しっかり{準備|じゅんび}しないといけない。", "vi": "Nghe nói phạm vi kiểm tra rất rộng. Như vậy có nghĩa là phải chuẩn bị kỹ càng."}
+    ],
+    "notes": "Có thể coi là cách nói tắt của 「そう{考|かんが}えると」; khác với 「つまり」dùng để tóm tắt/diễn đạt lại nội dung theo cách khác chứ không nhất thiết là suy luận."
+  },
+  "g8d5": {
+    "pattern": "もっとも",
+    "meaningVi": "tuy nhiên, nhưng mà, có điều là... (bổ sung một ngoại lệ/điều kiện nhỏ để điều chỉnh lại nội dung câu trước)",
+    "formation": "Câu 1 (khẳng định chính) + もっとも、+ Câu 2 (bổ sung ngoại lệ, điều kiện, hoặc lời biện hộ nhẹ)",
+    "explanationVi": "「もっとも」đứng đầu câu thứ hai, dùng để bổ sung thêm một chi tiết mang tính ngoại lệ hoặc điều kiện, nhằm giảm nhẹ mức độ khẳng định tuyệt đối của câu trước, giúp lời nói trở nên khách quan và thận trọng hơn. Gần nghĩa với 「ただし」nhưng mang sắc thái nhẹ nhàng hơn, như một lời tự đính chính của người nói.",
+    "examples": [
+      {"jp": "{彼|かれ}は{約束|やくそく}の{時間|じかん}に{来|き}なかった。もっとも、{渋滞|じゅうたい}のせいだったらしいが。", "vi": "Anh ấy không đến đúng giờ hẹn. Tuy nhiên, nghe nói là do bị tắc đường."},
+      {"jp": "この{仕事|しごと}は{誰|だれ}にでもできる。もっとも、{経験|けいけん}があれば{もっと}{早|はや}くできるだろう。", "vi": "Công việc này ai cũng làm được. Có điều, nếu có kinh nghiệm thì sẽ làm nhanh hơn."},
+      {"jp": "{今年|こんねん}の{夏|なつ}は{涼|すず}しいと{思|おも}う。もっとも、まだ7{月|がつ}なので、これから{暑|あつ}くなるかもしれない。", "vi": "Tôi nghĩ hè năm nay mát. Tuy nhiên, mới tháng 7 nên có thể sẽ nóng lên."},
+      {"jp": "{彼女|かのじょ}の{意見|いけん}に{賛成|さんせい}だ。もっとも、{一部|いちぶ}{納得|なっとく}できない{点|てん}もある。", "vi": "Tôi đồng ý với ý kiến của cô ấy. Tuy vậy, cũng có một số điểm tôi chưa thấy thỏa đáng."},
+      {"jp": "この{計画|けいかく}で{問題|もんだい}はないはずだ。もっとも、{予算|よさん}が{足|た}りるかどうかは{分|わ}からない。", "vi": "Kế hoạch này chắc sẽ không có vấn đề gì. Tuy nhiên, không rõ ngân sách có đủ hay không."}
+    ],
+    "notes": "Cần phân biệt với tính từ 「{最|もっと}も」(nhất, most) — viết giống về mặt âm đọc nhưng nghĩa khác hoàn toàn; liên từ 「もっとも」thường viết bằng hiragana để tránh nhầm lẫn."
+  },
+  "g8d6": {
+    "pattern": "おまけに",
+    "meaningVi": "hơn nữa, thêm vào đó, đã vậy còn... (bổ sung thêm một yếu tố cùng chiều, thường làm tăng mức độ tiêu cực hoặc tích cực)",
+    "formation": "Câu 1 (nêu tình huống/đặc điểm) + おまけに、+ Câu 2 (bổ sung thêm yếu tố cùng loại, khiến tình huống thêm nghiêm trọng hoặc thêm thuận lợi)",
+    "explanationVi": "「おまけに」dùng để thêm vào một thông tin, sự việc cùng tính chất với câu trước (thường cùng tiêu cực hoặc cùng tích cực), nhấn mạnh mức độ «không chỉ vậy mà còn». Có nguồn gốc từ おまけ (tặng thêm, kèm thêm), mang sắc thái hội thoại, thân mật.",
+    "examples": [
+      {"jp": "{今日|きょう}は{仕事|しごと}で{疲|つか}れた。おまけに、{電車|でんしゃ}も{止|と}まってしまった。", "vi": "Hôm nay tôi mệt vì công việc. Thêm vào đó, tàu điện còn bị dừng."},
+      {"jp": "この{部屋|へや}は{狭|ひろ}いし、おまけに{日当|ひあ}たりも{悪|わる}い。", "vi": "Phòng này vừa chật, đã vậy còn không có ánh sáng mặt trời."},
+      {"jp": "{試験|しけん}に{落|お}ちてしまった。おまけに、かばんもなくしてしまった。", "vi": "Tôi đã trượt kỳ thi. Thêm vào đó còn làm mất cả cặp."},
+      {"jp": "{彼|かれ}は{頭|あたま}がいいし、おまけにスポーツも{得意|とくい}だ。", "vi": "Anh ấy vừa thông minh, hơn nữa còn giỏi cả thể thao."},
+      {"jp": "{旅行|りょこう}は{楽|たの}しかった。おまけに、{天気|てんき}にも{恵|めぐ}まれた。", "vi": "Chuyến du lịch rất vui. Hơn nữa còn gặp được thời tiết thuận lợi."}
+    ],
+    "notes": "So sánh với 「しかも」(cũng nghĩa hơn nữa, trung tính hơn, dùng được cả trong văn viết) và 「それに」(nghĩa gần giống, phổ biến trong văn nói); 「おまけに」mang tính hội thoại và thường nhấn mạnh rõ yếu tố tệ hơn hoặc tốt hơn nữa."
+  },
+  "g8d7": {
+    "pattern": "Tổng hợp tuần 8: それなのに／そういえば／だって／ということは／もっとも／おまけに",
+    "meaningVi": "Bài ôn tập tổng hợp 6 liên từ/trợ từ hội thoại đã học trong tuần 8: kết quả trái ngược bất ngờ (それなのに), chuyển đề tài (そういえば), giải thích lý do thân mật (だって), suy luận kết luận (ということは), bổ sung ngoại lệ (もっとも), thêm yếu tố cùng chiều (おまけに).",
+    "formation": "それなのに: Câu1+それなのに+Câu2 ｜ そういえば: そういえば+câu liên tưởng ｜ だって: だって+lý do (hoặc Danh từ+だって) ｜ ということは: Câu1+ということは+kết luận ｜ もっとも: Câu1+もっとも、+Câu2 ｜ おまけに: Câu1+おまけに、+Câu2",
+    "explanationVi": "Đây là bài luyện tập tổng hợp giúp ôn lại 6 liên từ/trợ từ hội thoại N2 đã học trong tuần, tất cả đều thường xuất hiện trong hội thoại tự nhiên và phần nghe hiểu. Khi làm bài cần chú ý phân biệt sắc thái: それなのに mang tính bất mãn/bất ngờ, もっとも mang tính điều chỉnh/giảm nhẹ, còn おまけに chỉ đơn giản là bổ sung thêm cùng chiều.",
+    "examples": [
+      {"jp": "{一生懸命|いっしょうけんめい}{練習|れんしゅう}した。それなのに、{試合|しあい}に{負|ま}けてしまった。", "vi": "Tôi đã luyện tập chăm chỉ. Vậy mà vẫn thua trận đấu."},
+      {"jp": "そういえば、{来週|らいしゅう}から{新|あたら}しい{同僚|どうりょう}が{来|く}るらしいね。", "vi": "À nói mới nhớ, nghe nói từ tuần sau có đồng nghiệp mới đến."},
+      {"jp": "どうして{謝|あやま}らないの？—だって、{私|わたし}は{悪|わる}くないもん。", "vi": "Sao không xin lỗi?—Vì tớ có làm gì sai đâu."},
+      {"jp": "{荷物|にもつ}が{届|とど}いていない。ということは、まだ{発送|はっそう}されていないのかもしれない。", "vi": "Hàng chưa đến. Nghĩa là có thể vẫn chưa được gửi đi."},
+      {"jp": "{彼|かれ}の{説明|せつめい}は{分|わ}かりやすい。もっとも、{専門用語|せんもんようご}が{多|おお}いのは{気|き}になるが。", "vi": "Giải thích của anh ấy dễ hiểu. Tuy nhiên tôi vẫn thấy hơi bận tâm vì có nhiều thuật ngữ chuyên môn."},
+      {"jp": "{道|みち}が{混|こ}んでいた。おまけに、{雨|あめ}まで{降|ふ}り{出|だ}した。", "vi": "Đường bị tắc. Thêm vào đó trời còn bắt đầu mưa."}
+    ],
+    "notes": "Bài ôn tập không giới thiệu mẫu mới; hãy xem lại g8d1〜g8d6 để nắm chi tiết cách dùng và sắc thái của từng liên từ."
+  }
+}

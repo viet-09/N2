@@ -1,0 +1,771 @@
+{
+  "k4d1": {
+    "introVi": "Bài 2 về 音読み (âm On): tiếp tục làm quen với các Hán tự N2 thường đọc theo âm Hán - Nhật trong từ ghép. Nắm chắc âm On giúp bạn đoán nghĩa và đọc đúng các từ vựng N2 dễ dàng hơn.",
+    "items": [
+      {"kanji":"案","on":"アン","kun":"（なし）","meaningVi":"kế hoạch, đề xuất, ý tưởng (thường xuất hiện trong từ ghép âm On)","examples":[
+        {"jp":"{案内|あんない}","vi":"hướng dẫn, chỉ dẫn"},
+        {"jp":"{提案|ていあん}する","vi":"đề xuất, đề nghị"}
+      ]},
+      {"kanji":"検","on":"ケン","kun":"（なし）","meaningVi":"kiểm tra, xem xét, điều tra","examples":[
+        {"jp":"{検査|けんさ}をする","vi":"kiểm tra"},
+        {"jp":"{検討|けんとう}する","vi":"xem xét, nghiên cứu (trước khi quyết định)"}
+      ]},
+      {"kanji":"済","on":"サイ","kun":"すむ・すます","meaningVi":"xong, giải quyết, cứu giúp","examples":[
+        {"jp":"{経済|けいざい}","vi":"kinh tế"},
+        {"jp":"{救済|きゅうさい}する","vi":"cứu trợ, cứu giúp"}
+      ]},
+      {"kanji":"熱","on":"ネツ","kun":"あつい","meaningVi":"nóng, sốt, nhiệt tình","examples":[
+        {"jp":"{熱心|ねっしん}に{勉強|べんきょう}する","vi":"học tập nhiệt tình, chăm chỉ"},
+        {"jp":"{熱中|ねっちゅう}する","vi":"mê mải, say mê"}
+      ]},
+      {"kanji":"観","on":"カン","kun":"（なし）","meaningVi":"nhìn, quan sát, quan điểm","examples":[
+        {"jp":"{観光|かんこう}する","vi":"đi du lịch, tham quan"},
+        {"jp":"{観察|かんさつ}する","vi":"quan sát"}
+      ]},
+      {"kanji":"質","on":"シツ・シチ","kun":"（なし）","meaningVi":"chất lượng, bản chất, vật thế chấp","examples":[
+        {"jp":"{質問|しつもん}する","vi":"đặt câu hỏi"},
+        {"jp":"{品質|ひんしつ}がいい","vi":"chất lượng tốt"}
+      ]},
+      {"kanji":"製","on":"セイ","kun":"（なし）","meaningVi":"chế tạo, sản xuất","examples":[
+        {"jp":"{製品|せいひん}","vi":"sản phẩm"},
+        {"jp":"{製造|せいぞう}する","vi":"chế tạo, sản xuất"}
+      ]},
+      {"kanji":"残","on":"ザン","kun":"のこる・のこす","meaningVi":"còn lại, tàn, sót lại","examples":[
+        {"jp":"{残業|ざんぎょう}する","vi":"làm thêm giờ"},
+        {"jp":"{残念|ざんねん}です","vi":"thật đáng tiếc"}
+      ]}
+    ]
+  },
+  "k4d2": {
+    "introVi": "Bài 1 về 訓読み (âm Kun): các Hán tự N2 thường đứng một mình hoặc đứng trước okurigana (phần hiragana theo sau), đọc theo âm thuần Nhật. Hãy học kỹ cách đọc Kun đi kèm với nghĩa gốc của chữ.",
+    "items": [
+      {"kanji":"思","on":"シ","kun":"おもう","meaningVi":"nghĩ, suy nghĩ, nhớ","examples":[
+        {"jp":"{思|おも}う","vi":"nghĩ, suy nghĩ"},
+        {"jp":"{思|おも}い{出|で}","vi":"kỷ niệm"}
+      ]},
+      {"kanji":"働","on":"ドウ","kun":"はたらく","meaningVi":"làm việc, hoạt động","examples":[
+        {"jp":"{働|はたら}く","vi":"làm việc"},
+        {"jp":"{働|はたら}き{者|もの}","vi":"người chăm chỉ, người chịu khó"}
+      ]},
+      {"kanji":"建","on":"ケン","kun":"たてる・たつ","meaningVi":"xây dựng, dựng lên","examples":[
+        {"jp":"{家|いえ}を{建|た}てる","vi":"xây nhà"},
+        {"jp":"{建物|たてもの}","vi":"tòa nhà, công trình xây dựng"}
+      ]},
+      {"kanji":"渡","on":"ト","kun":"わたる・わたす","meaningVi":"băng qua, trao cho","examples":[
+        {"jp":"{橋|はし}を{渡|わた}る","vi":"băng qua cầu"},
+        {"jp":"{書類|しょるい}を{渡|わた}す","vi":"đưa, giao tài liệu"}
+      ]},
+      {"kanji":"押","on":"オウ","kun":"おす・おさえる","meaningVi":"đẩy, ấn, giữ chặt","examples":[
+        {"jp":"ボタンを{押|お}す","vi":"nhấn nút"},
+        {"jp":"{押|お}し{入|い}れ","vi":"tủ âm tường (để đồ)"}
+      ]},
+      {"kanji":"消","on":"ショウ","kun":"けす・きえる","meaningVi":"tắt, xóa, tan biến","examples":[
+        {"jp":"{消|け}しゴム","vi":"cục tẩy"},
+        {"jp":"{火|ひ}が{消|き}える","vi":"lửa tắt"}
+      ]},
+      {"kanji":"届","on":"カイ","kun":"とどける・とどく","meaningVi":"gửi tới, chuyển tới, trình báo","examples":[
+        {"jp":"{手紙|てがみ}が{届|とど}く","vi":"thư được gửi tới"},
+        {"jp":"{届|とど}けを{出|だ}す","vi":"nộp đơn, trình báo (lên cơ quan)"}
+      ]},
+      {"kanji":"困","on":"コン","kun":"こまる","meaningVi":"khó khăn, lúng túng, phiền toái","examples":[
+        {"jp":"{困|こま}ったことがある","vi":"có chuyện phiền phức"},
+        {"jp":"{困|こま}った{人|ひと}を{助|たす}ける","vi":"giúp đỡ người gặp khó khăn"}
+      ]}
+    ]
+  },
+  "k4d3": {
+    "introVi": "Bài 2 về 訓読み (âm Kun): tiếp tục học các Hán tự N2 đọc theo âm Kun, thường là động từ và tính từ gốc Nhật. Chú ý các chữ vừa có Kun nhiều nét vừa có cách dùng quen thuộc trong đời sống.",
+    "items": [
+      {"kanji":"逃","on":"トウ","kun":"にげる・のがす・のがれる","meaningVi":"chạy trốn, bỏ lỡ, thoát khỏi","examples":[
+        {"jp":"{逃|に}げる","vi":"chạy trốn"},
+        {"jp":"{見逃|みのが}す","vi":"bỏ sót, bỏ lỡ (không chú ý thấy)"}
+      ]},
+      {"kanji":"眠","on":"ミン","kun":"ねむる・ねむい","meaningVi":"ngủ, buồn ngủ","examples":[
+        {"jp":"ぐっすり{眠|ねむ}る","vi":"ngủ say"},
+        {"jp":"{眠気|ねむけ}がする","vi":"buồn ngủ"}
+      ]},
+      {"kanji":"騒","on":"ソウ","kun":"さわぐ","meaningVi":"ồn ào, náo động, làm ầm lên","examples":[
+        {"jp":"{騒|さわ}ぐ","vi":"làm ồn, la hét"},
+        {"jp":"{騒|さわ}がしい{町|まち}","vi":"thành phố ồn ào"}
+      ]},
+      {"kanji":"壊","on":"カイ","kun":"こわす・こわれる","meaningVi":"làm vỡ, làm hỏng; bị hỏng","examples":[
+        {"jp":"{機械|きかい}が{壊|こわ}れる","vi":"máy móc bị hỏng"},
+        {"jp":"{壊|こわ}れた{時計|とけい}","vi":"đồng hồ bị hỏng"}
+      ]},
+      {"kanji":"盗","on":"トウ","kun":"ぬすむ","meaningVi":"trộm cắp","examples":[
+        {"jp":"{盗|ぬす}む","vi":"trộm, lấy cắp"},
+        {"jp":"{盗難|とうなん}に{遭|あ}う","vi":"bị trộm cắp, mất trộm"}
+      ]},
+      {"kanji":"訪","on":"ホウ","kun":"おとずれる・たずねる","meaningVi":"thăm viếng, ghé thăm","examples":[
+        {"jp":"{春|はる}が{訪|おとず}れる","vi":"mùa xuân ghé đến"},
+        {"jp":"{友達|ともだち}を{訪|たず}ねる","vi":"đến thăm bạn"}
+      ]},
+      {"kanji":"驚","on":"キョウ","kun":"おどろく","meaningVi":"ngạc nhiên, kinh ngạc, giật mình","examples":[
+        {"jp":"{驚|おどろ}く","vi":"ngạc nhiên"},
+        {"jp":"{驚|おどろ}かす","vi":"làm ai giật mình, làm ai ngạc nhiên"}
+      ]},
+      {"kanji":"抱","on":"ホウ","kun":"だく・いだく・かかえる","meaningVi":"ôm, bế, ấp ủ, gánh vác","examples":[
+        {"jp":"{子|こ}どもを{抱|だ}く","vi":"bế em bé"},
+        {"jp":"{荷物|にもつ}を{抱|かか}える","vi":"ôm đồ đạc (gánh vác công việc)"}
+      ]}
+    ]
+  },
+  "k4d4": {
+    "introVi": "音訓混在: các từ ghép Hán tự trong đó một chữ đọc theo âm On, một chữ đọc theo âm Kun. Nếu On đứng trước + Kun đứng sau gọi là 重箱読み (じゅうばこよみ), Kun trước + On sau gọi là 湯桶読み (ゆとうよみ). Học thuộc nhóm từ này để tránh đọc nhầm.",
+    "items": [
+      {"kanji":"合図","on":"ズ（図）","kun":"あい（合）","meaningVi":"ra hiệu, ám hiệu — 湯桶読み: 合 (kun: あい) + 図 (on: ズ)","examples":[
+        {"jp":"{合図|あいず}を{送|おく}る","vi":"ra hiệu"},
+        {"jp":"{目|め}で{合図|あいず}する","vi":"ra hiệu bằng ánh mắt"}
+      ]},
+      {"kanji":"見本","on":"ホン（本）","kun":"み（見）","meaningVi":"mẫu, hàng mẫu — 湯桶読み: 見 (kun: み) + 本 (on: ホン)","examples":[
+        {"jp":"{見本|みほん}を{見|み}る","vi":"xem hàng mẫu"},
+        {"jp":"{見本|みほん}を{送|おく}る","vi":"gửi mẫu"}
+      ]},
+      {"kanji":"台所","on":"ダイ（台）","kun":"ところ（所）","meaningVi":"nhà bếp — 重箱読み: 台 (on: ダイ) + 所 (kun: ところ)","examples":[
+        {"jp":"{台所|だいどころ}で{料理|りょうり}する","vi":"nấu ăn trong bếp"},
+        {"jp":"{台所|だいどころ}が{狭|せま}い","vi":"nhà bếp chật hẹp"}
+      ]},
+      {"kanji":"毎朝","on":"マイ（毎）","kun":"あさ（朝）","meaningVi":"mỗi buổi sáng — 重箱読み: 毎 (on: マイ) + 朝 (kun: あさ)","examples":[
+        {"jp":"{毎朝|まいあさ}ジョギングする","vi":"mỗi sáng đều chạy bộ"},
+        {"jp":"{毎朝|まいあさ}7{時|じ}に{起|お}きる","vi":"mỗi sáng dậy lúc 7 giờ"}
+      ]},
+      {"kanji":"役割","on":"ヤク（役）","kun":"わり（割）","meaningVi":"vai trò, nhiệm vụ — 重箱読み: 役 (on: ヤク) + 割 (kun: わり)","examples":[
+        {"jp":"{役割|やくわり}を{果|は}たす","vi":"hoàn thành vai trò"},
+        {"jp":"{役割|やくわり}を{分担|ぶんたん}する","vi":"phân chia vai trò"}
+      ]},
+      {"kanji":"手帳","on":"チョウ（帳）","kun":"て（手）","meaningVi":"sổ tay — 湯桶読み: 手 (kun: て) + 帳 (on: チョウ)","examples":[
+        {"jp":"{手帳|てちょう}に{書|か}く","vi":"ghi vào sổ tay"},
+        {"jp":"{手帳|てちょう}を{見|み}る","vi":"xem sổ tay"}
+      ]},
+      {"kanji":"場所","on":"ジョウ（場）","kun":"ところ（所）","meaningVi":"nơi, chỗ, địa điểm — 重箱読み: 場 (on: ジョウ) + 所 (kun: ところ)","examples":[
+        {"jp":"{場所|ばしょ}を{予約|よやく}する","vi":"đặt chỗ"},
+        {"jp":"{駐車|ちゅうしゃ}する{場所|ばしょ}","vi":"nơi đỗ xe"}
+      ]},
+      {"kanji":"家賃","on":"チン（賃）","kun":"や（家）","meaningVi":"tiền thuê nhà — 湯桶読み: 家 (kun: や) + 賃 (on: チン)","examples":[
+        {"jp":"{家賃|やちん}を{払|はら}う","vi":"trả tiền thuê nhà"},
+        {"jp":"{家賃|やちん}が{安|やす}い","vi":"tiền thuê nhà rẻ"}
+      ]}
+    ]
+  },
+  "k4d5": {
+    "introVi": "同音異義語 bài 1: những cặp từ viết khác chữ Hán nhưng đọc hoàn toàn giống nhau (âm On). Trong bài thi N2, phải dựa vào ngữ cảnh và mặt chữ để phân biệt nghĩa.",
+    "items": [
+      {"kanji":"性格・正確","on":"セイカク","kun":"（なし）","meaningVi":"tính cách / chính xác — cặp từ đồng âm せいかく","examples":[
+        {"jp":"{性格|せいかく}が{明|あか}るい","vi":"tính cách vui vẻ, sáng sủa"},
+        {"jp":"{正確|せいかく}な{情報|じょうほう}","vi":"thông tin chính xác"}
+      ]},
+      {"kanji":"観光・刊行","on":"カンコウ","kun":"（なし）","meaningVi":"du lịch, tham quan / xuất bản (sách, tạp chí) — đồng âm かんこう","examples":[
+        {"jp":"{観光|かんこう}バス","vi":"xe buýt du lịch"},
+        {"jp":"{雑誌|ざっし}を{刊行|かんこう}する","vi":"xuất bản tạp chí"}
+      ]},
+      {"kanji":"公園・講演","on":"コウエン","kun":"（なし）","meaningVi":"công viên / buổi diễn thuyết — đồng âm こうえん","examples":[
+        {"jp":"{公園|こうえん}で{散歩|さんぽ}する","vi":"đi dạo trong công viên"},
+        {"jp":"{講演|こうえん}を{聞|き}く","vi":"nghe buổi diễn thuyết"}
+      ]},
+      {"kanji":"教科・強化","on":"キョウカ","kun":"（なし）","meaningVi":"môn học / tăng cường, củng cố — đồng âm きょうか","examples":[
+        {"jp":"{教科|きょうか}ごとに{勉強|べんきょう}する","vi":"học theo từng môn"},
+        {"jp":"{体力|たいりょく}を{強化|きょうか}する","vi":"tăng cường thể lực"}
+      ]},
+      {"kanji":"科学・化学","on":"カガク","kun":"（なし）","meaningVi":"khoa học / hóa học — đồng âm かがく","examples":[
+        {"jp":"{科学|かがく}の{進歩|しんぽ}","vi":"sự tiến bộ của khoa học"},
+        {"jp":"{化学|かがく}の{実験|じっけん}","vi":"thí nghiệm hóa học"}
+      ]},
+      {"kanji":"会場・海上","on":"カイジョウ","kun":"（なし）","meaningVi":"hội trường, địa điểm tổ chức / trên biển — đồng âm かいじょう","examples":[
+        {"jp":"{会場|かいじょう}に{入|はい}る","vi":"vào hội trường"},
+        {"jp":"{海上|かいじょう}を{飛|と}ぶ","vi":"bay trên biển"}
+      ]},
+      {"kanji":"医療・衣料","on":"イリョウ","kun":"（なし）","meaningVi":"y tế, chữa bệnh / vải vóc, quần áo — đồng âm いりょう","examples":[
+        {"jp":"{医療|いりょう}センター","vi":"trung tâm y tế"},
+        {"jp":"{衣料|いりょう}コーナー","vi":"khu vực hàng may mặc"}
+      ]}
+    ]
+  },
+  "k4d6": {
+    "introVi": "同音異義語 bài 2: tiếp tục với các cặp từ đồng âm khác nghĩa hay xuất hiện trong đề thi N2. Ghi nhớ mặt chữ Hán kèm nghĩa từng từ để không nhầm lẫn khi nghe hoặc đọc.",
+    "items": [
+      {"kanji":"選択・洗濯","on":"センタク","kun":"（なし）","meaningVi":"lựa chọn / giặt giũ — cặp từ đồng âm せんたく nổi tiếng","examples":[
+        {"jp":"{進路|しんろ}を{選択|せんたく}する","vi":"lựa chọn hướng đi, con đường"},
+        {"jp":"{洗濯|せんたく}を{干|ほ}す","vi":"phơi quần áo vừa giặt"}
+      ]},
+      {"kanji":"使用・仕様","on":"シヨウ","kun":"（なし）","meaningVi":"sử dụng / quy cách, thông số kỹ thuật — đồng âm しよう","examples":[
+        {"jp":"{新|あたら}しいソフトを{使用|しよう}する","vi":"sử dụng phần mềm mới"},
+        {"jp":"{製品|せいひん}の{仕様|しよう}を{変|か}える","vi":"thay đổi quy cách sản phẩm"}
+      ]},
+      {"kanji":"進行・信仰","on":"シンコウ","kun":"（なし）","meaningVi":"tiến hành, tiến triển / tín ngưỡng, sự tin theo — đồng âm しんこう","examples":[
+        {"jp":"{工事|こうじ}が{進行|しんこう}している","vi":"công trình đang được tiến hành"},
+        {"jp":"{信仰|しんこう}の{自由|じゆう}","vi":"tự do tín ngưỡng"}
+      ]},
+      {"kanji":"競技・協議","on":"キョウギ","kun":"（なし）","meaningVi":"môn thi đấu, thi đấu / hội nghị bàn bạc — đồng âm きょうぎ","examples":[
+        {"jp":"{競技|きょうぎ}に{出場|しゅつじょう}する","vi":"tham gia thi đấu"},
+        {"jp":"{会社|かいしゃ}で{協議|きょうぎ}する","vi":"bàn bạc tại công ty"}
+      ]},
+      {"kanji":"会議・懐疑","on":"カイギ","kun":"（なし）","meaningVi":"cuộc họp / sự hoài nghi, nghi ngờ — đồng âm かいぎ","examples":[
+        {"jp":"{会議|かいぎ}を{開|ひら}く","vi":"mở cuộc họp"},
+        {"jp":"{懐疑|かいぎ}的{意見|いけん}","vi":"ý kiến mang tính hoài nghi"}
+      ]},
+      {"kanji":"機会・機械","on":"キカイ","kun":"（なし）","meaningVi":"cơ hội / máy móc — đồng âm きかい","examples":[
+        {"jp":"{機会|きかい}を{逃|のが}す","vi":"bỏ lỡ cơ hội"},
+        {"jp":"{機械|きかい}を{動|うご}かす","vi":"vận hành máy móc"}
+      ]},
+      {"kanji":"期待・気体","on":"キタイ","kun":"（なし）","meaningVi":"kỳ vọng, mong đợi / thể khí — đồng âm きたい","examples":[
+        {"jp":"{期待|きたい}を{裏切|うらぎ}る","vi":"phụ lòng mong đợi"},
+        {"jp":"{気体|きたい}から{液体|えきたい}に{変|か}わる","vi":"chuyển từ thể khí sang thể lỏng"}
+      ]},
+      {"kanji":"回答・解凍","on":"カイトウ","kun":"（なし）","meaningVi":"trả lời, đáp / rã đông — đồng âm かいとう","examples":[
+        {"jp":"{質問|しつもん}に{回答|かいとう}する","vi":"trả lời câu hỏi"},
+        {"jp":"お{肉|にく}を{解凍|かいとう}する","vi":"rã đông thịt"}
+      ]}
+    ]
+  },
+  "k4d7": {
+    "introVi": "Bài ôn tập tổng hợp tuần 4: ôn lại âm On, âm Kun, từ ghép trộn âm On - Kun (音訓混在) và các cặp từ đồng âm khác nghĩa (同音異義語) đã học.",
+    "items": [
+      {"kanji":"検","on":"ケン","kun":"（なし）","meaningVi":"kiểm tra, xem xét — âm On","examples":[
+        {"jp":"{検査|けんさ}をする","vi":"kiểm tra"},
+        {"jp":"{検討|けんとう}する","vi":"xem xét, nghiên cứu"}
+      ]},
+      {"kanji":"届","on":"カイ","kun":"とどける・とどく","meaningVi":"gửi tới, chuyển tới — âm Kun","examples":[
+        {"jp":"{手紙|てがみ}が{届|とど}く","vi":"thư được gửi tới"},
+        {"jp":"{届|とど}けを{出|だ}す","vi":"nộp đơn, trình báo"}
+      ]},
+      {"kanji":"場所","on":"ジョウ（場）","kun":"ところ（所）","meaningVi":"nơi, chỗ — 重箱読み: On + Kun","examples":[
+        {"jp":"{場所|ばしょ}を{予約|よやく}する","vi":"đặt chỗ"},
+        {"jp":"{場所|ばしょ}を{確認|かくにん}する","vi":"xác nhận địa điểm"}
+      ]},
+      {"kanji":"性格・正確","on":"セイカク","kun":"（なし）","meaningVi":"tính cách / chính xác — từ đồng âm","examples":[
+        {"jp":"{性格|せいかく}がいい","vi":"tính cách tốt"},
+        {"jp":"{正確|せいかく}な{答|こた}え","vi":"câu trả lời chính xác"}
+      ]},
+      {"kanji":"壊","on":"カイ","kun":"こわす・こわれる","meaningVi":"làm hỏng; bị hỏng — âm Kun","examples":[
+        {"jp":"おもちゃが{壊|こわ}れる","vi":"đồ chơi bị hỏng"},
+        {"jp":"{機械|きかい}を{壊|こわ}す","vi":"làm hỏng máy móc"}
+      ]},
+      {"kanji":"観","on":"カン","kun":"（なし）","meaningVi":"nhìn, quan sát — âm On","examples":[
+        {"jp":"{観光|かんこう}する","vi":"đi du lịch"},
+        {"jp":"{観察|かんさつ}する","vi":"quan sát"}
+      ]},
+      {"kanji":"手帳","on":"チョウ（帳）","kun":"て（手）","meaningVi":"sổ tay — 湯桶読み: Kun + On","examples":[
+        {"jp":"{手帳|てちょう}を{持|も}つ","vi":"mang theo sổ tay"},
+        {"jp":"{手帳|てちょう}にメモする","vi":"ghi chú vào sổ tay"}
+      ]},
+      {"kanji":"会議・懐疑","on":"カイギ","kun":"（なし）","meaningVi":"cuộc họp / hoài nghi — từ đồng âm","examples":[
+        {"jp":"{会議|かいぎ}に{出|で}る","vi":"đi họp"},
+        {"jp":"{懐疑|かいぎ}的{態度|たいど}","vi":"thái độ hoài nghi"}
+      ]}
+    ]
+  },
+  "k5d1": {
+    "introVi": "同義語 bài 1: các cặp từ đồng nghĩa, trong đó từ thường dùng trong văn nói (âm Kun, gốc Nhật) và từ trang trọng hơn trong văn viết (âm On, từ ghép Hán - Việt kiểu Nhật). Khi học, hãy ghép cặp để nhớ nghĩa chung.",
+    "items": [
+      {"kanji":"難しい","on":"（なし）","kun":"むずかしい","meaningVi":"khó, khó khăn — đồng nghĩa với 困難 (こんなん)","examples":[
+        {"jp":"{難|むずか}しい{問題|もんだい}","vi":"bài tập khó"},
+        {"jp":"{困難|こんなん}に{直面|ちょくめん}する","vi":"đối mặt với khó khăn"}
+      ]},
+      {"kanji":"正しい","on":"（なし）","kun":"ただしい","meaningVi":"đúng, chính xác — đồng nghĩa với 正確 (せいかく)","examples":[
+        {"jp":"{正|ただ}しい{答|こた}え","vi":"câu trả lời đúng"},
+        {"jp":"{正確|せいかく}な{時間|じかん}","vi":"thời gian chính xác"}
+      ]},
+      {"kanji":"探す","on":"（なし）","kun":"さがす","meaningVi":"tìm kiếm — đồng nghĩa với 捜す (さがす), gốc On là 捜索 (そうさく)","examples":[
+        {"jp":"{仕事|しごと}を{探|さが}す","vi":"tìm việc"},
+        {"jp":"{行方不明|ゆくえふめい}の{人|ひと}を{捜|さが}す","vi":"tìm người mất tích"}
+      ]},
+      {"kanji":"変える","on":"（なし）","kun":"かえる","meaningVi":"thay đổi — đồng nghĩa với 変更 (へんこう)","examples":[
+        {"jp":"{予定|よてい}を{変|か}える","vi":"thay đổi kế hoạch"},
+        {"jp":"{日程|にってい}を{変更|へんこう}する","vi":"thay đổi lịch trình"}
+      ]},
+      {"kanji":"減る","on":"（なし）","kun":"へる","meaningVi":"giảm, bớt — đồng nghĩa với 減少 (げんしょう)","examples":[
+        {"jp":"{人口|じんこう}が{減|へ}る","vi":"dân số giảm"},
+        {"jp":"{売上|うりあげ}が{減少|げんしょう}する","vi":"doanh số giảm"}
+      ]},
+      {"kanji":"増える","on":"（なし）","kun":"ふえる","meaningVi":"tăng lên — đồng nghĩa với 増加 (ぞうか)","examples":[
+        {"jp":"{収入|しゅうにゅう}が{増|ふ}える","vi":"thu nhập tăng"},
+        {"jp":"{人口|じんこう}の{増加|ぞうか}","vi":"sự gia tăng dân số"}
+      ]},
+      {"kanji":"望む","on":"（なし）","kun":"のぞむ","meaningVi":"mong muốn — đồng nghĩa với 希望 (きぼう)","examples":[
+        {"jp":"{平和|へいわ}を{望|のぞ}む","vi":"mong muốn hòa bình"},
+        {"jp":"{希望|きぼう}の{大学|だいがく}に{合格|ごうかく}する","vi":"đỗ vào trường đại học mơ ước"}
+      ]},
+      {"kanji":"比べる","on":"（なし）","kun":"くらべる","meaningVi":"so sánh — đồng nghĩa với 比較 (ひかく)","examples":[
+        {"jp":"{値段|ねだん}を{比|くら}べる","vi":"so sánh giá cả"},
+        {"jp":"{比較|ひかく}する","vi":"so sánh"}
+      ]}
+    ]
+  },
+  "k5d2": {
+    "introVi": "同義語 bài 2: tiếp tục ghép cặp từ đồng nghĩa theo kiểu 「từ Kun (văn nói) - từ ghép On (văn viết, trang trọng)」. Đây là mẹo quan trọng giúp tăng vốn từ N2 nhanh chóng.",
+    "items": [
+      {"kanji":"聞く","on":"（なし）","kun":"きく","meaningVi":"nghe — 聴く (きく) chỉ việc nghe có chủ ý, đồng nghĩa với 聴取 (ちょうしゅ)","examples":[
+        {"jp":"{音楽|おんがく}を{聞|き}く","vi":"nghe nhạc"},
+        {"jp":"{講義|こうぎ}を{聴|き}く","vi":"nghe giảng bài"}
+      ]},
+      {"kanji":"買う","on":"（なし）","kun":"かう","meaningVi":"mua — đồng nghĩa với 購入 (こうにゅう)","examples":[
+        {"jp":"{本|ほん}を{買|か}う","vi":"mua sách"},
+        {"jp":"ネットで{購入|こうにゅう}する","vi":"mua hàng qua mạng"}
+      ]},
+      {"kanji":"売る","on":"（なし）","kun":"うる","meaningVi":"bán — đồng nghĩa với 販売 (はんばい)","examples":[
+        {"jp":"{車|くるま}を{売|う}る","vi":"bán xe"},
+        {"jp":"ネットで{販売|はんばい}する","vi":"bán hàng qua mạng"}
+      ]},
+      {"kanji":"始める","on":"（なし）","kun":"はじめる","meaningVi":"bắt đầu — đồng nghĩa với 開始 (かいし)","examples":[
+        {"jp":"{勉強|べんきょう}を{始|はじ}める","vi":"bắt đầu học"},
+        {"jp":"{会議|かいぎ}が{開始|かいし}する","vi":"cuộc họp bắt đầu"}
+      ]},
+      {"kanji":"終わる","on":"（なし）","kun":"おわる","meaningVi":"kết thúc — đồng nghĩa với 終了 (しゅうりょう)","examples":[
+        {"jp":"{仕事|しごと}が{終|お}わる","vi":"công việc kết thúc"},
+        {"jp":"{番組|ばんぐみ}が{終了|しゅうりょう}する","vi":"chương trình kết thúc"}
+      ]},
+      {"kanji":"助ける","on":"（なし）","kun":"たすける","meaningVi":"giúp đỡ, cứu — đồng nghĩa với 救助 (きゅうじょ)","examples":[
+        {"jp":"{人|ひと}を{助|たす}ける","vi":"cứu giúp người khác"},
+        {"jp":"{救助|きゅうじょ}に{向|む}かう","vi":"đi đến nơi cứu nạn"}
+      ]},
+      {"kanji":"急ぐ","on":"（なし）","kun":"いそぐ","meaningVi":"vội, gấp — đồng nghĩa với 緊急 (きんきゅう)","examples":[
+        {"jp":"{急|いそ}いで{行|い}く","vi":"vội vã đi"},
+        {"jp":"{緊急|きんきゅう}の{知|し}らせ","vi":"thông báo khẩn cấp"}
+      ]},
+      {"kanji":"眠る","on":"（なし）","kun":"ねむる","meaningVi":"ngủ — đồng nghĩa với 睡眠 (すいみん)","examples":[
+        {"jp":"ぐっすり{眠|ねむ}る","vi":"ngủ say"},
+        {"jp":"{睡眠|すいみん}が{足|た}りない","vi":"ngủ không đủ giấc"}
+      ]}
+    ]
+  },
+  "k5d3": {
+    "introVi": "対義語 bài 1: các cặp từ trái nghĩa cơ bản nhất trong N2, chủ yếu là tính từ và động từ gốc Nhật (âm Kun). Học theo cặp để ghi nhớ nhanh và phản xạ tốt khi gặp trong đề thi.",
+    "items": [
+      {"kanji":"増える・減える","on":"（なし）","kun":"ふえる・へる","meaningVi":"tăng – giảm (cặp từ trái nghĩa)","examples":[
+        {"jp":"{収入|しゅうにゅう}が{増|ふ}える","vi":"thu nhập tăng lên"},
+        {"jp":"{客|きゃく}が{減|へ}る","vi":"khách giảm đi"}
+      ]},
+      {"kanji":"始まる・終わる","on":"（なし）","kun":"はじまる・おわる","meaningVi":"bắt đầu – kết thúc (cặp từ trái nghĩa)","examples":[
+        {"jp":"{授業|じゅぎょう}が{始|はじ}まる","vi":"giờ học bắt đầu"},
+        {"jp":"{会|かい}が{終|お}わる","vi":"buổi họp kết thúc"}
+      ]},
+      {"kanji":"買う・売る","on":"（なし）","kun":"かう・うる","meaningVi":"mua – bán (cặp từ trái nghĩa)","examples":[
+        {"jp":"{服|ふく}を{買|か}う","vi":"mua quần áo"},
+        {"jp":"{店|みせ}で{売|う}る","vi":"bán ở cửa hàng"}
+      ]},
+      {"kanji":"明るい・暗い","on":"（なし）","kun":"あかるい・くらい","meaningVi":"sáng – tối (cặp từ trái nghĩa)","examples":[
+        {"jp":"{明|あか}るい{部屋|へや}","vi":"căn phòng sáng sủa"},
+        {"jp":"{暗|くら}い{夜道|よみち}","vi":"con đường đêm tối"}
+      ]},
+      {"kanji":"強い・弱い","on":"（なし）","kun":"つよい・よわい","meaningVi":"mạnh – yếu (cặp từ trái nghĩa)","examples":[
+        {"jp":"{体|からだ}が{強|つよ}い","vi":"cơ thể khỏe mạnh"},
+        {"jp":"{目|め}が{弱|よわ}い","vi":"mắt yếu"}
+      ]},
+      {"kanji":"広い・狭い","on":"（なし）","kun":"ひろい・せまい","meaningVi":"rộng – hẹp (cặp từ trái nghĩa)","examples":[
+        {"jp":"{広|ひろ}い{庭|にわ}","vi":"sân vườn rộng"},
+        {"jp":"{狭|せま}い{道|みち}","vi":"con đường hẹp"}
+      ]},
+      {"kanji":"太い・細い","on":"（なし）","kun":"ふとい・ほそい","meaningVi":"to, dày – nhỏ, mảnh (cặp từ trái nghĩa)","examples":[
+        {"jp":"{太|ふと}い{木|き}","vi":"cây to"},
+        {"jp":"{細|ほそ}い{指|ゆび}","vi":"ngón tay thon nhỏ"}
+      ]},
+      {"kanji":"早い・遅い","on":"（なし）","kun":"はやい・おそい","meaningVi":"sớm, nhanh – muộn, chậm (cặp từ trái nghĩa)","examples":[
+        {"jp":"{朝|あさ}が{早|はや}い","vi":"dậy sớm (buổi sáng sớm)"},
+        {"jp":"{帰|かえ}りが{遅|おそ}い","vi":"về muộn"}
+      ]}
+    ]
+  },
+  "k5d4": {
+    "introVi": "対義語 bài 2: các cặp từ trái nghĩa xuất hiện nhiều trong bài thi N2, gồm cả từ ghép âm On trang trọng và từ gốc Nhật. Học theo cặp kèm ví dụ để phân biệt rõ nghĩa.",
+    "items": [
+      {"kanji":"勝つ・負ける","on":"（なし）","kun":"かつ・まける","meaningVi":"thắng – thua (cặp từ trái nghĩa)","examples":[
+        {"jp":"{試合|しあい}に{勝|か}つ","vi":"thắng trận đấu"},
+        {"jp":"{試合|しあい}に{負|ま}ける","vi":"thua trận đấu"}
+      ]},
+      {"kanji":"褒める・叱る","on":"（なし）","kun":"ほめる・しかる","meaningVi":"khen – mắng (cặp từ trái nghĩa)","examples":[
+        {"jp":"{子|こ}どもを{褒|ほ}める","vi":"khen con trẻ"},
+        {"jp":"{子|こ}どもを{叱|しか}る","vi":"mắng con trẻ"}
+      ]},
+      {"kanji":"上げる・下げる","on":"（なし）","kun":"あげる・さげる","meaningVi":"nâng lên – hạ xuống (cặp từ trái nghĩa)","examples":[
+        {"jp":"{値段|ねだん}を{上|あ}げる","vi":"tăng giá"},
+        {"jp":"{値段|ねだん}を{下|さ}げる","vi":"giảm giá"}
+      ]},
+      {"kanji":"成功・失敗","on":"セイコウ・シッパイ","kun":"（なし）","meaningVi":"thành công – thất bại (cặp từ trái nghĩa)","examples":[
+        {"jp":"{成功|せいこう}を{収|おさ}める","vi":"đạt được thành công"},
+        {"jp":"{失敗|しっぱい}から{学|まな}ぶ","vi":"học hỏi từ thất bại"}
+      ]},
+      {"kanji":"安全・危険","on":"アンゼン・キケン","kun":"（なし）","meaningVi":"an toàn – nguy hiểm (cặp từ trái nghĩa)","examples":[
+        {"jp":"{安全|あんぜん}な{場所|ばしょ}","vi":"nơi an toàn"},
+        {"jp":"{危険|きけん}な{場所|ばしょ}","vi":"nơi nguy hiểm"}
+      ]},
+      {"kanji":"利益・損失","on":"リエキ・ソンシツ","kun":"（なし）","meaningVi":"lợi nhuận – tổn thất (cặp từ trái nghĩa)","examples":[
+        {"jp":"{利益|りえき}を{上|あ}げる","vi":"tạo ra lợi nhuận"},
+        {"jp":"{損失|そんしつ}が{出|で}る","vi":"phát sinh tổn thất"}
+      ]},
+      {"kanji":"簡単・複雑","on":"カンタン・フクザツ","kun":"（なし）","meaningVi":"đơn giản – phức tạp (cặp từ trái nghĩa)","examples":[
+        {"jp":"{簡単|かんたん}な{問題|もんだい}","vi":"bài tập đơn giản"},
+        {"jp":"{複雑|ふくざつ}な{構造|こうぞう}","vi":"cấu trúc phức tạp"}
+      ]},
+      {"kanji":"進む・退く","on":"（なし）","kun":"すすむ・しりぞく","meaningVi":"tiến lên – lùi lại (cặp từ trái nghĩa)","examples":[
+        {"jp":"{前|まえ}に{進|すす}む","vi":"tiến lên phía trước"},
+        {"jp":"{後|うし}ろに{退|しりぞ}く","vi":"lùi về phía sau"}
+      ]}
+    ]
+  },
+  "k5d5": {
+    "introVi": "慣用表現 bài 1: các cụm từ quán dụng (idioms) kết hợp từ bộ phận cơ thể người. Nghĩa của cả cụm thường khác hẳn nghĩa từng chữ, nên phải học thuộc cả cụm và ngữ cảnh dùng.",
+    "items": [
+      {"kanji":"頭が上がらない","on":"（なし）","kun":"あたまが あがらない","meaningVi":"mang ơn, nể phục ai đến mức không thể ngẩng mặt lên được","examples":[
+        {"jp":"{先輩|せんぱい}に{頭|あたま}が{上|あ}がらない","vi":"Nể phục tiền bối đến mức không dám ngẩng mặt"},
+        {"jp":"{借金|しゃっきん}があって、{頭|あたま}が{上|あ}がらない","vi":"Mang nợ nên không dám ngẩng mặt (với ai)"}
+      ]},
+      {"kanji":"顔が広い","on":"（なし）","kun":"かおが ひろい","meaningVi":"quen biết rộng, có nhiều mối quan hệ","examples":[
+        {"jp":"{彼|かれ}は{顔|かお}が{広|ひろ}い","vi":"Anh ấy quen biết rộng"},
+        {"jp":"{顔|かお}の{広|ひろ}い{人|ひと}に{頼|たの}む","vi":"Nhờ người quen biết rộng"}
+      ]},
+      {"kanji":"目が高い","on":"（なし）","kun":"めが たかい","meaningVi":"mắt tinh đời, biết nhìn người nhìn hàng","examples":[
+        {"jp":"{彼女|かのじょ}は{目|め}が{高|たか}い","vi":"Cô ấy có mắt nhìn tinh đời"},
+        {"jp":"{目|め}の{高|たか}いお{客|きゃく}","vi":"vị khách tinh mắt"}
+      ]},
+      {"kanji":"耳が痛い","on":"（なし）","kun":"みみが いたい","meaningVi":"nhức tai — nghe lời chê trách đúng vào mình, khó chịu","examples":[
+        {"jp":"{先輩|せんぱい}の{言葉|ことば}が{耳|みみ}が{痛|いた}い","vi":"Lời của anh ấy nghe nhức tai (đúng vào khuyết điểm)"},
+        {"jp":"{耳|みみ}が{痛|いた}くなる{話|はなし}","vi":"câu chuyện nghe mà nhức tai"}
+      ]},
+      {"kanji":"口が堅い","on":"（なし）","kun":"くちが かたい","meaningVi":"kín miệng, giữ được bí mật","examples":[
+        {"jp":"{彼|かれ}は{口|くち}が{堅|かた}い","vi":"Anh ấy kín miệng"},
+        {"jp":"{口|くち}の{堅|かた}い{人|ひと}に{相談|そうだん}する","vi":"Bàn bạc với người kín miệng"}
+      ]},
+      {"kanji":"手が空く","on":"（なし）","kun":"てが あく","meaningVi":"rảnh tay, rảnh rỗi","examples":[
+        {"jp":"{手|て}が{空|あ}いたら{手伝|てつだ}ってください","vi":"Khi nào rảnh xin hãy giúp một tay"},
+        {"jp":"{午後|ごご}は{手|て}が{空|あ}く","vi":"Buổi chiều tôi rảnh"}
+      ]},
+      {"kanji":"足が速い","on":"（なし）","kun":"あしが はやい","meaningVi":"nhanh chân, chạy nhanh; (đồ ăn) mau hỏng, (hàng) bán rất chạy","examples":[
+        {"jp":"{彼|かれ}は{足|あし}が{速|はや}い","vi":"Anh ấy chạy nhanh"},
+        {"jp":"{生|なま}ものは{足|あし}が{速|はや}い","vi":"Đồ tươi sống mau hỏng"}
+      ]},
+      {"kanji":"肩が凝る","on":"（なし）","kun":"かたが こる","meaningVi":"mỏi vai, đau vai (do căng thẳng, làm việc nhiều)","examples":[
+        {"jp":"{肩|かた}が{凝|こ}った","vi":"Tôi bị mỏi vai"},
+        {"jp":"{肩|かた}の{凝|こ}る{仕事|しごと}","vi":"công việc dễ bị mỏi vai (căng thẳng)"}
+      ]}
+    ]
+  },
+  "k5d6": {
+    "introVi": "慣用表現 bài 2: tiếp tục các cụm từ quán dụng với bộ phận cơ thể. Hãy học cả cụm kèm ngữ cảnh thực tế, tránh dịch từng chữ một vì nghĩa sẽ sai.",
+    "items": [
+      {"kanji":"目がない","on":"（なし）","kun":"めが ない","meaningVi":"mê mẩn, thích vô cùng (cái gì đó)","examples":[
+        {"jp":"お{菓子|かし}に{目|め}がない","vi":"Mê mẩn bánh kẹo"},
+        {"jp":"{彼|かれ}はお{酒|さけ}に{目|め}がない","vi":"Anh ấy mê rượu lắm"}
+      ]},
+      {"kanji":"耳が早い","on":"（なし）","kun":"みみが はやい","meaningVi":"tai thính, biết tin tức rất nhanh","examples":[
+        {"jp":"{彼|かれ}は{耳|みみ}が{早|はや}くて、{情報|じょうほう}がすぐに{入|はい}る","vi":"Anh ấy tai thính nên tin tức vào rất nhanh"},
+        {"jp":"{彼女|かのじょ}は{耳|みみ}が{早|はや}い","vi":"Cô ấy biết tin rất nhanh"}
+      ]},
+      {"kanji":"鼻が高い","on":"（なし）","kun":"はなが たかい","meaningVi":"hãnh diện, tự hào","examples":[
+        {"jp":"{息子|むすこ}が{合格|ごうかく}して{鼻|はな}が{高|たか}い","vi":"Con trai đỗ khiến tôi hãnh diện"},
+        {"jp":"{自慢|じまん}の{子|こ}どもで{鼻|はな}が{高|たか}い","vi":"Tự hào về đứa con đáng tự hào"}
+      ]},
+      {"kanji":"口がうまい","on":"（なし）","kun":"くちが うまい","meaningVi":"khéo nói, nói ngọt (thường hàm ý không thật lòng)","examples":[
+        {"jp":"{彼|かれ}は{口|くち}がうまい","vi":"Anh ấy rất khéo nói"},
+        {"jp":"{口|くち}のうまい{人|ひと}に{気|き}をつける","vi":"Cẩn thận với người khéo nói"}
+      ]},
+      {"kanji":"手を貸す","on":"（なし）","kun":"てを かす","meaningVi":"giúp đỡ, ra tay giúp","examples":[
+        {"jp":"{手|て}を{貸|か}してください","vi":"Xin hãy giúp tôi một tay"},
+        {"jp":"{隣|となり}の{人|ひと}に{手|て}を{貸|か}す","vi":"Giúp đỡ người hàng xóm"}
+      ]},
+      {"kanji":"足を運ぶ","on":"（なし）","kun":"あしを はこぶ","meaningVi":"đích thân đến, đến tận nơi","examples":[
+        {"jp":"その{店|みせ}によく{足|あし}を{運|はこ}ぶ","vi":"Tôi thường ghé qua cửa hàng đó"},
+        {"jp":"わざわざ{足|あし}を{運|はこ}んでくれた","vi":"Anh ấy đã đích thân đến tận nơi"}
+      ]},
+      {"kanji":"頭を下げる","on":"（なし）","kun":"あたまを さげる","meaningVi":"cúi đầu (xin lỗi, cảm ơn, nhờ vả)","examples":[
+        {"jp":"{謝|あやま}って{頭|あたま}を{下|さ}げる","vi":"Cúi đầu xin lỗi"},
+        {"jp":"{お礼|れい}に{頭|あたま}を{下|さ}げる","vi":"Cúi đầu cảm ơn"}
+      ]},
+      {"kanji":"顔を出す","on":"（なし）","kun":"かおを だす","meaningVi":"ghé qua, xuất hiện, ló mặt","examples":[
+        {"jp":"{会|かい}に{顔|かお}を{出|だ}す","vi":"Ghé qua buổi họp"},
+        {"jp":"たまに{実家|じっか}に{顔|かお}を{出|だ}す","vi":"Thỉnh thoảng về thăm nhà (bố mẹ)"}
+      ]}
+    ]
+  },
+  "k5d7": {
+    "introVi": "Bài ôn tập tổng hợp tuần 5 (実戦問題): ôn lại toàn bộ các nhóm đã học trong tuần — 同義語 (từ đồng nghĩa), 対義語 (từ trái nghĩa) và 慣用表現 (quán dụng ngữ). Kiểm tra lại từng nhóm một lần nữa trước khi bước vào bài tổng hợp cuối khóa.",
+    "items": [
+      {"kanji":"変える","on":"（なし）","kun":"かえる","meaningVi":"thay đổi — đồng nghĩa với 変更 (へんこう) (ôn tập 同義語)","examples":[
+        {"jp":"{住所|じゅうしょ}を{変|か}える","vi":"Đổi địa chỉ"},
+        {"jp":"{予約|よやく}を{変更|へんこう}する","vi":"Thay đổi việc đặt chỗ"}
+      ]},
+      {"kanji":"増える・減える","on":"（なし）","kun":"ふえる・へる","meaningVi":"tăng – giảm — cặp từ trái nghĩa (ôn tập 対義語)","examples":[
+        {"jp":"{車|くるま}の{台数|だいすう}が{増|ふ}える","vi":"Số lượng xe tăng lên"},
+        {"jp":"{出費|しゅっぴ}が{減|へ}る","vi":"Khoản chi tiêu giảm bớt"}
+      ]},
+      {"kanji":"顔が広い","on":"（なし）","kun":"かおが ひろい","meaningVi":"quen biết rộng, có nhiều mối quan hệ — quán dụng ngữ (ôn tập 慣用表現)","examples":[
+        {"jp":"{営業|えいぎょう}の{人|ひと}は{顔|かお}が{広|ひろ}い","vi":"Người làm kinh doanh quen biết rất rộng"},
+        {"jp":"{顔|かお}の{広|ひろ}い{友達|ともだち}に{紹介|しょうかい}してもらう","vi":"Nhờ người bạn quen biết rộng giới thiệu"}
+      ]},
+      {"kanji":"望む","on":"（なし）","kun":"のぞむ","meaningVi":"mong muốn — đồng nghĩa với 希望 (きぼう) (ôn tập 同義語)","examples":[
+        {"jp":"{両親|りょうしん}の{望|のぞ}みに{応|こた}える","vi":"Đáp ứng mong muốn của bố mẹ"},
+        {"jp":"{希望|きぼう}の{職種|しょくしゅ}に{就|つ}く","vi":"Có được công việc mơ ước"}
+      ]},
+      {"kanji":"安全・危険","on":"アンゼン・キケン","kun":"（なし）","meaningVi":"an toàn – nguy hiểm — cặp từ trái nghĩa (ôn tập 対義語)","examples":[
+        {"jp":"{安全|あんぜん}を{確|たし}かめる","vi":"Xác nhận sự an toàn"},
+        {"jp":"{危険|きけん}を{避|さ}ける","vi":"Tránh nguy hiểm"}
+      ]},
+      {"kanji":"頭を下げる","on":"（なし）","kun":"あたまを さげる","meaningVi":"cúi đầu (xin lỗi, cảm ơn, nhờ vả) — quán dụng ngữ (ôn tập 慣用表現)","examples":[
+        {"jp":"おわびの{気持|きも}ちを{込|こ}めて{頭|あたま}を{下|さ}げる","vi":"Cúi đầu xin lỗi với tất cả thành ý"},
+        {"jp":"{頭|あたま}を{下|さ}げて{頼|たの}む","vi":"Cúi đầu van nài nhờ vả"}
+      ]},
+      {"kanji":"助ける","on":"（なし）","kun":"たすける","meaningVi":"giúp đỡ, cứu — đồng nghĩa với 救助 (きゅうじょ) (ôn tập 同義語)","examples":[
+        {"jp":"{溺|おぼ}れている{人|ひと}を{助|たす}ける","vi":"Cứu người đang chết đuối"},
+        {"jp":"{救助|きゅうじょ}タイが{到着|とうちゃく}する","vi":"Đội cứu hộ đã đến nơi"}
+      ]}
+    ]
+  },
+  "k6d1": {
+    "introVi": "慣用表現 bài 3: các cụm từ quán dụng kết hợp với tâm (心), khí (気), bụng (腹), xương (骨), vai (肩), lưng (背中). Đây là nhóm idiom N2 rất hay gặp trong đề thi và giao tiếp.",
+    "items": [
+      {"kanji":"気が短い","on":"（なし）","kun":"きが みじかい","meaningVi":"nóng tính, nóng vội","examples":[
+        {"jp":"{彼|かれ}は{気|き}が{短|みじか}い","vi":"Anh ấy nóng tính"},
+        {"jp":"{気|き}の{短|みじか}い{人|ひと}と{付|つ}き{合|あ}う","vi":"Chơi với người nóng tính"}
+      ]},
+      {"kanji":"気が合う","on":"（なし）","kun":"きが あう","meaningVi":"hợp ý, tâm đầu ý hợp","examples":[
+        {"jp":"{彼|かれ}とは{気|き}が{合|あ}う","vi":"Tôi và anh ấy rất hợp nhau"},
+        {"jp":"{気|き}の{合|あ}う{友達|ともだち}","vi":"người bạn hợp ý"}
+      ]},
+      {"kanji":"気にする","on":"（なし）","kun":"きに する","meaningVi":"để bụng, lo lắng, quan tâm","examples":[
+        {"jp":"{何|なに}も{気|き}にしないでください","vi":"Xin đừng để bụng chuyện gì"},
+        {"jp":"うわさを{気|き}にする","vi":"Để bụng chuyện đồn thổi"}
+      ]},
+      {"kanji":"心が広い","on":"（なし）","kun":"こころが ひろい","meaningVi":"tấm lòng rộng rãi, độ lượng","examples":[
+        {"jp":"{彼女|かのじょ}は{心|こころ}が{広|ひろ}い","vi":"Cô ấy có tấm lòng rộng rãi"},
+        {"jp":"{心|こころ}の{広|ひろ}い{人|ひと}","vi":"người độ lượng"}
+      ]},
+      {"kanji":"腹が立つ","on":"（なし）","kun":"はらが たつ","meaningVi":"nổi giận, bực bội","examples":[
+        {"jp":"その{話|はなし}を{聞|き}いて{腹|はら}が{立|た}った","vi":"Nghe chuyện đó tôi nổi giận"},
+        {"jp":"{腹|はら}の{立|た}つ{出来事|できごと}","vi":"chuyện khiến người ta bực bội"}
+      ]},
+      {"kanji":"骨を折る","on":"（なし）","kun":"ほねを おる","meaningVi":"bỏ công sức, vất vả vì việc gì","examples":[
+        {"jp":"{彼|かれ}は{骨|ほね}を{折|お}って{世話|せわ}をしてくれた","vi":"Anh ấy đã bỏ công sức giúp đỡ tôi"},
+        {"jp":"{骨|ほね}を{折|お}って{得|え}た{成果|せいか}","vi":"thành quả đạt được sau bao vất vả"}
+      ]},
+      {"kanji":"肩を持つ","on":"（なし）","kun":"かたを もつ","meaningVi":"bênh vực, đứng về phía ai","examples":[
+        {"jp":"いつも{彼|かれ}の{肩|かた}を{持|も}つ","vi":"Lúc nào cũng bênh anh ấy"},
+        {"jp":"{味方|みかた}の{肩|かた}を{持|も}つ","vi":"Bênh vực phe mình"}
+      ]},
+      {"kanji":"背中を押す","on":"（なし）","kun":"せなかを おす","meaningVi":"động viên, thúc đẩy ai làm việc gì","examples":[
+        {"jp":"{彼|かれ}の{言葉|ことば}が{背中|せなか}を{押|お}した","vi":"Lời anh ấy nói đã thúc đẩy tôi"},
+        {"jp":"{決心|けっしん}の{背中|せなか}を{押|お}す","vi":"Động viên để quyết tâm"}
+      ]}
+    ]
+  },
+  "k6d2": {
+    "introVi": "四字熟語 bài 1: thành ngữ bốn chữ Hán. Mỗi cụm mang một nghĩa đặc biệt, thường bắt nguồn từ điển cố Trung Quốc. Học cả cụm kèm nghĩa và cách dùng trong câu.",
+    "items": [
+      {"kanji":"一石二鳥","on":"イッセキニチョウ","kun":"（なし）","meaningVi":"nhất tiễn hạ nhị điểu — một mũi tên trúng hai con chim, làm một việc được hai lợi","examples":[
+        {"jp":"{運動|うんどう}と{節約|せつやく}、{一石二鳥|いっせきにちょう}だ","vi":"Vừa tập thể dục vừa tiết kiệm, một công đôi việc"},
+        {"jp":"{一石二鳥|いっせきにちょう}の{方法|ほうほう}","vi":"cách làm một công đôi việc"}
+      ]},
+      {"kanji":"一日千秋","on":"イチジツセンシュウ","kun":"（なし）","meaningVi":"một ngày dài như nghìn năm — mong ngóng, đợi chờ rất nóng lòng","examples":[
+        {"jp":"{一日千秋|いちじつせんしゅう}の{思|おも}いで{待|ま}つ","vi":"Mong ngóng chờ đợi trong nôn nóng"},
+        {"jp":"{会|あ}える{日|ひ}を{一日千秋|いちじつせんしゅう}の{思|おも}いで{待|ま}つ","vi":"Nôn nóng chờ ngày gặp nhau"}
+      ]},
+      {"kanji":"十人十色","on":"ジュウニントイロ","kun":"（なし）","meaningVi":"mỗi người một ý, mỗi người một vẻ khác nhau","examples":[
+        {"jp":"{好|この}みは{十人十色|じゅうにんといろ}だ","vi":"Sở thích mỗi người mỗi khác"},
+        {"jp":"{意見|いけん}は{十人十色|じゅうにんといろ}","vi":"Ý kiến mỗi người một kiểu"}
+      ]},
+      {"kanji":"一期一会","on":"イチゴイチエ","kun":"（なし）","meaningVi":"duyên gặp gỡ chỉ một lần trong đời — trân trọng từng cuộc gặp","examples":[
+        {"jp":"{一期一会|いちごいちえ}の{出会|であ}い","vi":"cuộc gặp gỡ chỉ một lần trong đời"},
+        {"jp":"{一期一会|いちごいちえ}を{大切|たいせつ}にする","vi":"Trân trọng từng cuộc gặp gỡ"}
+      ]},
+      {"kanji":"以心伝心","on":"イシンデンシン","kun":"（なし）","meaningVi":"ý hợp tâm đầu — hiểu nhau không cần nói thành lời","examples":[
+        {"jp":"{以心伝心|いしんでんしん}で{分|わ}かり{合|あ}える","vi":"Hiểu nhau không cần nói nhiều"},
+        {"jp":"{以心伝心|いしんでんしん}の{仲|なか}","vi":"mối quan hệ ý hợp tâm đầu"}
+      ]},
+      {"kanji":"起死回生","on":"キシカイセイ","kun":"（なし）","meaningVi":"cải tử hoàn sinh — cứu vãn tình thế nguy khốn, lật ngược thế cờ","examples":[
+        {"jp":"{起死回生|きしかいせい}を{図|はか}る","vi":"Tìm cách lật ngược tình thế"},
+        {"jp":"{起死回生|きしかいせい}の{一発|いっぱつ}","vi":"cú đánh quyết định lật ngược thế cờ"}
+      ]},
+      {"kanji":"温故知新","on":"オンコチシン","kun":"（なし）","meaningVi":"ôn cố tri tân — ôn lại điều cũ để hiểu biết điều mới","examples":[
+        {"jp":"{温故知新|おんこちしん}の{教|おし}え","vi":"bài học ôn cố tri tân"},
+        {"jp":"{歴史|れきし}から{学|まな}ぶのは{温故知新|おんこちしん}だ","vi":"Học từ lịch sử chính là ôn cố tri tân"}
+      ]},
+      {"kanji":"自給自足","on":"ジキュウジソク","kun":"（なし）","meaningVi":"tự cung tự cấp — tự sản xuất, tự đáp ứng nhu cầu","examples":[
+        {"jp":"{自給自足|じきゅうじそく}の{生活|せいかつ}","vi":"cuộc sống tự cung tự cấp"},
+        {"jp":"{野菜|やさい}を{作|つく}って{自給自足|じきゅうじそく}する","vi":"Tự trồng rau để tự cung tự cấp"}
+      ]}
+    ]
+  },
+  "k6d3": {
+    "introVi": "四字熟語 bài 2: các thành ngữ bốn chữ thông dụng trong đời sống và bài thi N2. Chú ý cách đọc âm On của từng chữ trong cụm.",
+    "items": [
+      {"kanji":"一挙両得","on":"イッキョリョウトク","kun":"（なし）","meaningVi":"nhất cử lưỡng đắc — một việc làm thu được hai kết quả tốt","examples":[
+        {"jp":"{通勤|つうきん}しながら{勉強|べんきょう}して、{一挙両得|いっきょりょうとく}だ","vi":"Vừa đi làm vừa học, thật nhất cử lưỡng đắc"},
+        {"jp":"{一挙両得|いっきょりょうとく}になる","vi":"thành việc một công đôi việc"}
+      ]},
+      {"kanji":"油断大敵","on":"ユダンタイテキ","kun":"（なし）","meaningVi":"lơ là là kẻ thù lớn nhất — đừng bao giờ chủ quan","examples":[
+        {"jp":"{油断大敵|ゆだんたいてき}、{気|き}をつけてください","vi":"Chớ chủ quan, hãy cẩn thận"},
+        {"jp":"{車|くるま}の{運転|うんてん}は{油断大敵|ゆだんたいてき}だ","vi":"Lái xe mà lơ là là kẻ thù lớn"}
+      ]},
+      {"kanji":"異口同音","on":"イクドウオン","kun":"（なし）","meaningVi":"đồng thanh đồng loạt, nhất trí như một (nói như nhau)","examples":[
+        {"jp":"{異口同音|いくどうおん}に{反対|はんたい}する","vi":"Đồng loạt phản đối"},
+        {"jp":"{異口同音|いくどうおん}に{賞|ほ}める","vi":"Ai cũng khen như một"}
+      ]},
+      {"kanji":"三日坊主","on":"ミッカボウズ","kun":"（なし）","meaningVi":"làm được ba ngày rồi bỏ — người chóng nản, thiếu kiên trì","examples":[
+        {"jp":"ダイエットはいつも{三日坊主|みっかぼうず}だ","vi":"Ăn kiêng lần nào cũng được ba ngày là bỏ"},
+        {"jp":"{三日坊主|みっかぼうず}で{終|お}わる","vi":"Kết thúc chỉ sau ba ngày"}
+      ]},
+      {"kanji":"本末転倒","on":"ホンマツテントウ","kun":"（なし）","meaningVi":"đảo lộn gốc ngọn, lấy cái phụ làm cái chính","examples":[
+        {"jp":"{本末転倒|ほんまつてんとう}な{考|かんが}え{方|かた}","vi":"cách nghĩ đảo lộn gốc ngọn"},
+        {"jp":"{体|からだ}を{壊|こわ}してまで{働|はたら}くのは{本末転倒|ほんまつてんとう}だ","vi":"Làm việc đến hỏng sức khỏe là đảo lộn gốc ngọn"}
+      ]},
+      {"kanji":"電光石火","on":"デンコウセッカ","kun":"（なし）","meaningVi":"nhanh như chớp giật, cực kỳ nhanh nhẹn","examples":[
+        {"jp":"{電光石火|でんこうせっか}の{速|はや}さ","vi":"tốc độ nhanh như chớp"},
+        {"jp":"{電光石火|でんこうせっか}の{うち|内}に{答|こた}える","vi":"Trả lời trong nháy mắt"}
+      ]},
+      {"kanji":"危機一髪","on":"キキイッパツ","kun":"（なし）","meaningVi":"nguy hiểm trong gang tấc, thập tử nhất sinh","examples":[
+        {"jp":"{危機一髪|ききいっぱつ}で{助|たす}かった","vi":"Thoát nạn trong gang tấc"},
+        {"jp":"{危機一髪|ききいっぱつ}の{ところ|所}だった","vi":"Suýt nữa thì nguy hiểm"}
+      ]},
+      {"kanji":"五里霧中","on":"ゴリムチュウ","kun":"（なし）","meaningVi":"mù mịt trong sương — không biết đường nào, không có hướng giải quyết","examples":[
+        {"jp":"{五里霧中|ごりむちゅう}の{状態|じょうたい}","vi":"tình trạng mù mịt không lối thoát"},
+        {"jp":"{五里霧中|ごりむちゅう}で{迷|まよ}っている","vi":"Đang mù mịt chẳng biết làm sao"}
+      ]}
+    ]
+  },
+  "k6d4": {
+    "introVi": "成語 bài 1: các thành ngữ bắt nguồn từ điển cố, câu chuyện xưa của Trung Quốc và Nhật Bản. Mỗi từ là một câu chuyện — hãy nhớ câu chuyện gốc để nhớ nghĩa lâu.",
+    "items": [
+      {"kanji":"矛盾","on":"ムジュン","kun":"（なし）","meaningVi":"mâu thuẫn — từ điển cố người bán giáo và thuẫn (khiên) ở nước Sở","examples":[
+        {"jp":"{言|い}うことが{矛盾|むじゅん}している","vi":"Lời nói mâu thuẫn với nhau"},
+        {"jp":"{話|はなし}が{矛盾|むじゅん}する","vi":"Câu chuyện mâu thuẫn (không nhất quán)"}
+      ]},
+      {"kanji":"蛇足","on":"ダソク","kun":"（なし）","meaningVi":"rắn thêm chân — phần thừa thãi, làm thêm việc vô ích (điển cố vẽ rắn thêm chân)","examples":[
+        {"jp":"{説明|せつめい}が{蛇足|だそく}だった","vi":"Phần giải thích thừa thãi"},
+        {"jp":"{蛇足|だそく}を{加|くわ}える","vi":"Thêm phần thừa thãi vô ích"}
+      ]},
+      {"kanji":"杞憂","on":"キユウ","kun":"（なし）","meaningVi":"lo bò trắng chân — lo lắng những điều không xảy ra (điển cố người nước Khởi lo trời sập)","examples":[
+        {"jp":"{心配|しんぱい}は{杞憂|きゆう}だった","vi":"Nỗi lo hóa ra là lo bò trắng chân"},
+        {"jp":"{杞憂|きゆう}に{終|お}わる","vi":"Kết thúc chỉ là lo thừa"}
+      ]},
+      {"kanji":"完璧","on":"カンペキ","kun":"（なし）","meaningVi":"hoàn mỹ, hoàn hảo — từ điển cố viên ngọc bích Bích hoàn chỉnh trả về nước Triệu","examples":[
+        {"jp":"{完璧|かんぺき}な{答|こた}え","vi":"câu trả lời hoàn hảo"},
+        {"jp":"{完璧|かんぺき}に{覚|おぼ}える","vi":"Học thuộc một cách hoàn hảo"}
+      ]},
+      {"kanji":"漁夫の利","on":"ギョフノリ","kun":"（なし）","meaningVi":"ngư ông đắc lợi — hai bên tranh nhau, người thứ ba hưởng lợi","examples":[
+        {"jp":"{漁夫の利|ぎょふのり}を{得|え}る","vi":"Ngư ông đắc lợi"},
+        {"jp":"{争|あらそ}いで{漁夫の利|ぎょふのり}を{与|あた}える","vi":"Tranh nhau mà để người khác hưởng lợi"}
+      ]},
+      {"kanji":"助長","on":"ジョチョウ","kun":"（なし）","meaningVi":"làm trầm trọng thêm, tiếp tay; (điển cố) kéo mạ mọc nhanh làm cây chết — ép dồn khiến phản tác dụng","examples":[
+        {"jp":"{悪|あく}を{助長|じょちょう}する","vi":"Tiếp tay cho điều xấu"},
+        {"jp":"{焦|あせ}りが{失敗|しっぱい}を{助長|じょちょう}する","vi":"Nóng vội khiến thất bại thêm trầm trọng"}
+      ]},
+      {"kanji":"一網打尽","on":"イチモウダジン","kun":"（なし）","meaningVi":"một mẻ lưới vớt hết — bắt trọn tất cả trong một lần","examples":[
+        {"jp":"{犯人|はんにん}を{一網打尽|いちもうだじん}に{捕|と}らえた","vi":"Bắt trọn bọn tội phạm trong một mẻ lưới"},
+        {"jp":"{一網打尽|いちもうだじん}の{捜査|そうさ}","vi":"cuộc truy bắt gọn cả băng"}
+      ]},
+      {"kanji":"逆鱗","on":"ゲキリン","kun":"（なし）","meaningVi":"vảy ngược của rồng — chọc giận người có quyền thế, cấp trên (逆鱗に触れる: chọc giận)","examples":[
+        {"jp":"{上司|じょうし}の{逆鱗|げきりん}に{触|ふ}れる","vi":"Chọc giận sếp"},
+        {"jp":"{逆鱗|げきりん}に{触|ふ}れて{怒|おこ}られた","vi":"Bị mắng vì chạm vào chỗ nhạy cảm"}
+      ]}
+    ]
+  },
+  "k6d5": {
+    "introVi": "成語 bài 2: các thành ngữ bắt nguồn từ sách cổ, chiến tích và câu chuyện nổi tiếng. Học kèm câu chuyện gốc để phân biệt với 四字熟語 thông thường.",
+    "items": [
+      {"kanji":"四面楚歌","on":"シメンソカ","kun":"（なし）","meaningVi":"tứ diện sở ca — bị bao vây tứ phía, thế cùng lực kiệt, bị cô lập hoàn toàn (điển cố Hạng Vũ)","examples":[
+        {"jp":"{四面楚歌|しめんそか}の{状態|じょうたい}","vi":"tình trạng bị cô lập tứ phía"},
+        {"jp":"{四面楚歌|しめんそか}の{うち|内}に{退|しりぞ}く","vi":"Rút lui trong thế cùng lực kiệt"}
+      ]},
+      {"kanji":"水魚の交わり","on":"スイギョノマジワリ","kun":"（なし）","meaningVi":"tình giao hữu như cá với nước — quan hệ mật thiết khăng khít (điển cố Lưu Bị - Gia Cát Lượng)","examples":[
+        {"jp":"{水魚|すいぎょ}の{交|まじ}わりを{結|むす}ぶ","vi":"Kết tình thâm giao như cá với nước"},
+        {"jp":"{二人|ふたり}は{水魚|すいぎょ}の{交|まじ}わりだ","vi":"Hai người gắn bó như cá với nước"}
+      ]},
+      {"kanji":"馬耳東風","on":"バジトウフウ","kun":"（なし）","meaningVi":"gió đông thổi qua tai ngựa — lời khuyên như nước đổ đầu vịt, không vào tai","examples":[
+        {"jp":"{注意|ちゅうい}を{馬耳東風|ばじとうふう}と{聞|き}き{流|なが}した","vi":"Nghe lời khuyên như nước đổ đầu vịt"},
+        {"jp":"{忠告|ちゅうこく}も{馬耳東風|ばじとうふう}だ","vi":"Lời khuyên nhủ cũng vô ích"}
+      ]},
+      {"kanji":"塞翁が馬","on":"サイオウガウマ","kun":"（なし）","meaningVi":"tái ông thất mã — họa phúc khôn lường, việc tưởng họa hóa ra phúc và ngược lại","examples":[
+        {"jp":"{人生|じんせい}は{塞翁|さいおう}が{馬|うま}のようなものだ","vi":"Cuộc đời như tái ông thất mã, họa phúc khó lường"},
+        {"jp":"{失敗|しっぱい}も{塞翁|さいおう}が{馬|うま}だ","vi":"Thất bại cũng có khi lại là may"}
+      ]},
+      {"kanji":"巻土重来","on":"ケンドチョウライ","kun":"（なし）","meaningVi":"quyển thổ trùng lai — thất bại rồi quay lại mạnh hơn, làm lại từ đầu","examples":[
+        {"jp":"{巻土重来|けんどちょうらい}を{期|き}す","vi":"Chờ ngày làm lại, tái chiếm"},
+        {"jp":"{今度|こんど}こそ{巻土重来|けんどちょうらい}だ","vi":"Lần này nhất định làm lại từ đầu"}
+      ]},
+      {"kanji":"雲散霧消","on":"ウンサンムショウ","kun":"（なし）","meaningVi":"tan biến như mây khói, biến mất không còn dấu vết","examples":[
+        {"jp":"{不安|ふあん}が{雲散霧消|うんさんむしょう}した","vi":"Nỗi lo tan biến như mây khói"},
+        {"jp":"{疑|うたが}いが{雲散霧消|うんさんむしょう}する","vi":"Sự nghi ngờ tan biến hết"}
+      ]},
+      {"kanji":"単刀直入","on":"タントウチョクニュウ","kun":"（なし）","meaningVi":"vào thẳng vấn đề, nói thẳng không vòng vo","examples":[
+        {"jp":"{単刀直入|たんとうちょくにゅう}に{言|い}うと","vi":"Nói thẳng ra thì"},
+        {"jp":"{単刀直入|たんとうちょくにゅう}に{質問|しつもん}する","vi":"Hỏi thẳng vào vấn đề"}
+      ]},
+      {"kanji":"玉石混交","on":"ギョクセキコンコウ","kun":"（なし）","meaningVi":"ngọc lẫn với đá — cái tốt xấu lẫn lộn không phân biệt được","examples":[
+        {"jp":"{玉石混交|ぎょくせきこんこう}の{情報|じょうほう}","vi":"thông tin tốt xấu lẫn lộn"},
+        {"jp":"ネットの{情報|じょうほう}は{玉石混交|ぎょくせきこんこう}だ","vi":"Thông tin trên mạng ngọc lẫn với đá"}
+      ]}
+    ]
+  },
+  "k6d6": {
+    "introVi": "Tổng ôn tập toàn bộ kiến thức Hán tự tuần 4 đến tuần 6: âm On, âm Kun, từ ghép trộn âm, từ đồng âm, từ đồng nghĩa - trái nghĩa, quán dụng ngữ và thành ngữ. Kiểm tra lại từng nhóm một lần nữa trước khi bước vào bài tổng hợp.",
+    "items": [
+      {"kanji":"観光","on":"カンコウ","kun":"（なし）","meaningVi":"du lịch, tham quan — từ ghép âm On (ôn tập 音読み)","examples":[
+        {"jp":"{観光|かんこう}バス","vi":"xe buýt du lịch"},
+        {"jp":"{観光|かんこう}で{人気|にんき}の{場所|ばしょ}","vi":"địa điểm du lịch nổi tiếng"}
+      ]},
+      {"kanji":"壊れる","on":"カイ","kun":"こわれる","meaningVi":"bị hỏng, bị vỡ — âm Kun (ôn tập 訓読み)","examples":[
+        {"jp":"{機械|きかい}が{壊|こわ}れる","vi":"Máy móc bị hỏng"},
+        {"jp":"{壊|こわ}れた{時計|とけい}","vi":"Đồng hồ hỏng"}
+      ]},
+      {"kanji":"台所","on":"ダイ（台）","kun":"ところ（所）","meaningVi":"nhà bếp — 重箱読み On + Kun (ôn tập 音訓混在)","examples":[
+        {"jp":"{台所|だいどころ}で{洗|あら}い{物|もの}をする","vi":"Rửa bát trong bếp"},
+        {"jp":"{台所|だいどころ}の{掃除|そうじ}","vi":"dọn dẹp nhà bếp"}
+      ]},
+      {"kanji":"選択・洗濯","on":"センタク","kun":"（なし）","meaningVi":"lựa chọn / giặt giũ — từ đồng âm (ôn tập 同音異義語)","examples":[
+        {"jp":"{進路|しんろ}を{選択|せんたく}する","vi":"Lựa chọn hướng đi"},
+        {"jp":"{洗濯|せんたく}を{干|ほ}す","vi":"Phơi quần áo"}
+      ]},
+      {"kanji":"難しい","on":"（なし）","kun":"むずかしい","meaningVi":"khó khăn — đồng nghĩa với 困難 (ôn tập 同義語)","examples":[
+        {"jp":"{難|むずか}しい{課題|かだい}","vi":"bài tập khó"},
+        {"jp":"{困難|こんなん}を{乗|の}り{越|こ}える","vi":"Vượt qua khó khăn"}
+      ]},
+      {"kanji":"勝つ・負ける","on":"（なし）","kun":"かつ・まける","meaningVi":"thắng – thua — cặp từ trái nghĩa (ôn tập 対義語)","examples":[
+        {"jp":"{試合|しあい}に{勝|か}つ","vi":"Thắng trận"},
+        {"jp":"ゲームに{負|ま}ける","vi":"Thua trò chơi"}
+      ]},
+      {"kanji":"目がない","on":"（なし）","kun":"めが ない","meaningVi":"mê mẩn, thích vô cùng — quán dụng ngữ (ôn tập 慣用表現)","examples":[
+        {"jp":"ケーキに{目|め}がない","vi":"Mê mẩn bánh ngọt"},
+        {"jp":"{彼|かれ}はお{酒|さけ}に{目|め}がない","vi":"Anh ấy mê rượu lắm"}
+      ]},
+      {"kanji":"一石二鳥","on":"イッセキニチョウ","kun":"（なし）","meaningVi":"một mũi tên trúng hai con chim — thành ngữ bốn chữ (ôn tập 四字熟語)","examples":[
+        {"jp":"{一石二鳥|いっせきにちょう}の{方法|ほうほう}","vi":"cách làm một công đôi việc"},
+        {"jp":"{通勤|つうきん}しながら{勉強|べんきょう}するのは{一石二鳥|いっせきにちょう}だ","vi":"Vừa đi làm vừa học thật là nhất cử lưỡng đắc"}
+      ]}
+    ]
+  },
+  "k6d7": {
+    "introVi": "Bài ôn tập tổng hợp cuối khóa Hán tự: tổng hợp đầy đủ các nhóm đã học từ tuần 4 đến tuần 6 — âm On, âm Kun, từ ghép trộn âm, từ đồng âm, đồng nghĩa - trái nghĩa, quán dụng ngữ, tứ tự thành ngữ và thành ngữ điển cố.",
+    "items": [
+      {"kanji":"残","on":"ザン","kun":"のこる・のこす","meaningVi":"còn lại, tàn, sót lại — âm On thường gặp","examples":[
+        {"jp":"{残業|ざんぎょう}する","vi":"Làm thêm giờ"},
+        {"jp":"{残念|ざんねん}です","vi":"Thật đáng tiếc"}
+      ]},
+      {"kanji":"逃げる","on":"トウ","kun":"にげる","meaningVi":"chạy trốn, trốn thoát — âm Kun","examples":[
+        {"jp":"{危険|きけん}から{逃|に}げる","vi":"Chạy trốn khỏi nguy hiểm"},
+        {"jp":"{問題|もんだい}から{逃|に}げない","vi":"Không trốn tránh vấn đề"}
+      ]},
+      {"kanji":"毎朝","on":"マイ（毎）","kun":"あさ（朝）","meaningVi":"mỗi buổi sáng — 重箱読み (ôn tập 音訓混在)","examples":[
+        {"jp":"{毎朝|まいあさ}コーヒーを{飲|の}む","vi":"Mỗi sáng đều uống cà phê"},
+        {"jp":"{毎朝|まいあさ}30{分|ふん}{走|はし}る","vi":"Mỗi sáng chạy bộ 30 phút"}
+      ]},
+      {"kanji":"医療・衣料","on":"イリョウ","kun":"（なし）","meaningVi":"y tế / hàng may mặc — từ đồng âm (ôn tập 同音異義語)","examples":[
+        {"jp":"{医療|いりょう}センター","vi":"Trung tâm y tế"},
+        {"jp":"{衣料|いりょう}コーナー","vi":"Khu vực may mặc"}
+      ]},
+      {"kanji":"買う・売る","on":"（なし）","kun":"かう・うる","meaningVi":"mua – bán — cặp từ trái nghĩa (ôn tập 対義語)","examples":[
+        {"jp":"{株|かぶ}を{買|か}う","vi":"Mua cổ phiếu"},
+        {"jp":"{株|かぶ}を{売|う}る","vi":"Bán cổ phiếu"}
+      ]},
+      {"kanji":"骨を折る","on":"（なし）","kun":"ほねを おる","meaningVi":"bỏ công sức, vất vả — quán dụng ngữ (ôn tập 慣用表現)","examples":[
+        {"jp":"{彼|かれ}は{骨|ほね}を{折|お}ってくれた","vi":"Anh ấy đã bỏ công sức giúp tôi"},
+        {"jp":"{骨|ほね}を{折|お}って{や}った{仕事|しごと}","vi":"công việc đã đổ bao công sức"}
+      ]},
+      {"kanji":"十人十色","on":"ジュウニントイロ","kun":"（なし）","meaningVi":"mỗi người một ý — thành ngữ bốn chữ (ôn tập 四字熟語)","examples":[
+        {"jp":"{意見|いけん}は{十人十色|じゅうにんといろ}だ","vi":"Ý kiến mỗi người mỗi khác"},
+        {"jp":"{考|かんが}え{方|かた}は{十人十色|じゅうにんといろ}","vi":"Cách nghĩ mỗi người một kiểu"}
+      ]},
+      {"kanji":"矛盾","on":"ムジュン","kun":"（なし）","meaningVi":"mâu thuẫn — thành ngữ điển cố (ôn tập 成語)","examples":[
+        {"jp":"{言|い}うことが{矛盾|むじゅん}している","vi":"Lời nói mâu thuẫn"},
+        {"jp":"{行動|こうどう}と{言動|げんどう}が{矛盾|むじゅん}する","vi":"Hành động mâu thuẫn với lời nói"}
+      ]}
+    ]
+  }
+}

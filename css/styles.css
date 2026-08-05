@@ -1,0 +1,1722 @@
+/* ==========================================================================
+   N2 Study Journal — styles.css
+   TYPOGRAPHY FIRST design system: ink on warm paper, one vivid vermillion
+   accent, dramatic type scale, editorial rhythm, restrained snappy motion.
+   Fonts: Fraunces (display/serif), Space Grotesk (UI/sans), Zen Kaku Gothic
+   New (Japanese). See docs/DESIGN_TYPO.md for the full spec this implements.
+   ========================================================================== */
+
+/* ---------- Design tokens ---------- */
+:root {
+    --bg-page: #F6F3EC;
+    --bg-card: #FCFBF7;
+    --paper-2: #EEE9DD;
+    --text-primary: #141210;
+    --text-muted: #6C665B;
+    --accent-red: #E4322B;
+    --accent-red-bg: #FBE9E6;
+    --accent-gold: #141210;
+    --border-color: #E3DCCB;
+    --border-dark: #141210;
+    --danger: #B3261E;
+
+    --accent-green: #1E7A4D;
+    --accent-green-bg: #E9F1EA;
+    --accent-green-border: #9DBCA6;
+
+    /* category accents */
+    --cat-grammar: #E4322B;
+    --cat-vocabulary: #1F5FD0;
+    --cat-kanji: #7A3CC0;
+    --cat-reading: #1E7A4D;
+    --cat-listening: #C2751A;
+
+    --font-display: 'Fraunces', 'Zen Kaku Gothic New', Georgia, serif;
+    --font-serif: 'Fraunces', 'Zen Kaku Gothic New', Georgia, serif;
+    --font-jp: 'Zen Kaku Gothic New', 'Fraunces', sans-serif;
+    --font-sans: 'Space Grotesk', 'Zen Kaku Gothic New', system-ui, sans-serif;
+
+    --shadow-subtle: 0 1px 0 var(--border-color);
+    --shadow-card: 0 2px 0 var(--border-color);
+
+    --radius: 3px;
+    --radius-lg: 4px;
+    --bottom-nav-height: 76px;
+}
+
+/* ---------- Reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background: var(--bg-page);
+    color: var(--text-primary);
+    font-family: var(--font-serif);
+    font-optical-sizing: auto;
+    font-size: 18px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: calc(var(--bottom-nav-height) + env(safe-area-inset-bottom, 0));
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+img, svg {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    font-family: inherit;
+    color: inherit;
+}
+
+a {
+    color: var(--accent-red);
+}
+
+::selection {
+    background: var(--accent-red);
+    color: #FCFBF7;
+}
+
+:focus-visible {
+    outline: 2px solid var(--accent-red);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* ---------- Layout ---------- */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==========================================================================
+   Masthead
+   ========================================================================== */
+.masthead {
+    padding: 28px 0 26px;
+    border-bottom: 3px solid var(--border-dark);
+    margin-bottom: 30px;
+}
+
+.masthead-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 20px;
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    flex-wrap: wrap;
+}
+
+.masthead-title {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(2.8rem, 10vw, 6rem);
+    line-height: 1.02;
+    letter-spacing: -0.015em;
+    margin-bottom: 12px;
+}
+
+.mt-jp {
+    font-family: var(--font-jp);
+    font-weight: 900;
+    color: var(--text-primary);
+}
+
+.mt-n2 {
+    font-family: var(--font-display);
+    font-weight: 900;
+    color: var(--accent-red);
+}
+
+.masthead-sub {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 640px;
+}
+
+.masthead-tools {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 18px;
+}
+
+.settings-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 10px 18px;
+    background: transparent;
+    border: 1px solid var(--border-dark);
+    border-radius: 999px;
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.14s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.settings-btn:hover {
+    background: var(--text-primary);
+    color: var(--bg-card);
+}
+
+.settings-btn:active {
+    transform: translateY(1px);
+}
+
+/* ==========================================================================
+   Editorial stats bar (dashboard)
+   ========================================================================== */
+.stats-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    margin-bottom: 32px;
+}
+
+.stat-item {
+    padding: 22px 20px;
+    border-right: 1px solid var(--border-color);
+}
+
+.stat-item:last-child {
+    border-right: none;
+}
+
+.stat-value {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(1.6rem, 4.5vw, 2.6rem);
+    line-height: 1.05;
+    font-variant-numeric: lining-nums;
+    margin-bottom: 6px;
+}
+
+.stat-label {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 3px;
+    background: var(--border-color);
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: var(--text-primary);
+    width: 0%;
+    transition: width 0.4s ease;
+}
+
+/* ---------- Category filter tabs ---------- */
+.category-tabs {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.category-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.tab-btn {
+    background: none;
+    border: 1px solid var(--border-color);
+    padding: 10px 16px;
+    min-height: 44px;
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.14s cubic-bezier(0.2, 0.7, 0.2, 1);
+    color: var(--text-primary);
+    flex-shrink: 0;
+    border-radius: var(--radius);
+}
+
+.tab-btn:active {
+    transform: translateY(1px);
+}
+
+.tab-btn.active {
+    background: var(--text-primary);
+    color: var(--bg-card);
+    border-color: var(--text-primary);
+}
+
+.tab-btn[data-cat="grammar"].active { background: var(--cat-grammar); border-color: var(--cat-grammar); color: #fff; }
+.tab-btn[data-cat="vocabulary"].active { background: var(--cat-vocabulary); border-color: var(--cat-vocabulary); color: #fff; }
+.tab-btn[data-cat="kanji"].active { background: var(--cat-kanji); border-color: var(--cat-kanji); color: #fff; }
+.tab-btn[data-cat="reading"].active { background: var(--cat-reading); border-color: var(--cat-reading); color: #fff; }
+.tab-btn[data-cat="listening"].active { background: var(--cat-listening); border-color: var(--cat-listening); color: #fff; }
+
+/* ---------- Category / week / lesson list ---------- */
+.category-block {
+    margin-bottom: 48px;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 3px solid var(--text-primary);
+    padding-bottom: 12px;
+    margin-bottom: 18px;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.category-header h3 {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.category-progress-text {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.category-block[data-cat-id="grammar"] .category-header { border-bottom-color: var(--cat-grammar); }
+.category-block[data-cat-id="grammar"] .category-header h3 { color: var(--cat-grammar); }
+.category-block[data-cat-id="vocabulary"] .category-header { border-bottom-color: var(--cat-vocabulary); }
+.category-block[data-cat-id="vocabulary"] .category-header h3 { color: var(--cat-vocabulary); }
+.category-block[data-cat-id="kanji"] .category-header { border-bottom-color: var(--cat-kanji); }
+.category-block[data-cat-id="kanji"] .category-header h3 { color: var(--cat-kanji); }
+.category-block[data-cat-id="reading"] .category-header { border-bottom-color: var(--cat-reading); }
+.category-block[data-cat-id="reading"] .category-header h3 { color: var(--cat-reading); }
+.category-block[data-cat-id="listening"] .category-header { border-bottom-color: var(--cat-listening); }
+.category-block[data-cat-id="listening"] .category-header h3 { color: var(--cat-listening); }
+
+.weeks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.week-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+}
+
+.week-title {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-red);
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 10px;
+}
+
+.week-count {
+    color: var(--text-muted);
+}
+
+.lessons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+}
+
+.lesson-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-page);
+    transition: all 0.14s cubic-bezier(0.2, 0.7, 0.2, 1);
+    cursor: pointer;
+    border-radius: var(--radius);
+    min-height: 44px;
+}
+
+.lesson-item:active {
+    transform: translateY(1px);
+}
+
+.lesson-item.completed {
+    background: var(--paper-2);
+    border-color: var(--text-primary);
+}
+
+.lesson-item.completed .lesson-title {
+    text-decoration: line-through;
+    color: var(--text-muted);
+}
+
+.custom-checkbox {
+    width: 22px;
+    height: 22px;
+    border: 2px solid var(--text-primary);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-card);
+    border-radius: 2px;
+    transition: all 0.14s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.lesson-item.completed .custom-checkbox {
+    background: var(--text-primary);
+    border-color: var(--text-primary);
+}
+
+.custom-checkbox::after {
+    content: '✓';
+    color: var(--bg-card);
+    font-size: 13px;
+    font-weight: bold;
+    display: none;
+}
+
+.lesson-item.completed .custom-checkbox::after {
+    display: block;
+}
+
+.lesson-content {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.lesson-meta {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    margin-bottom: 3px;
+}
+
+.lesson-title {
+    font-family: var(--font-serif);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.study-btn {
+    background: none;
+    border: 1px solid var(--border-dark);
+    padding: 8px 14px;
+    min-height: 44px;
+    min-width: 44px;
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-primary);
+    border-radius: var(--radius);
+    flex-shrink: 0;
+    cursor: pointer;
+    background-image: linear-gradient(var(--accent-red), var(--accent-red));
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 0 2px;
+    transition: background-size 0.14s cubic-bezier(0.2, 0.7, 0.2, 1), color 0.14s ease;
+}
+
+.study-btn:hover {
+    background-size: 100% 2px;
+    color: var(--accent-red);
+}
+
+.study-btn:active {
+    transform: translateY(1px);
+}
+
+.study-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ==========================================================================
+   Generic back / round icon buttons
+   ========================================================================== */
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 44px;
+    padding: 8px 6px;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: color 0.14s ease;
+}
+
+.back-btn:hover,
+.back-btn:active {
+    color: var(--accent-red);
+}
+
+.tts-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 6px 10px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-page);
+    border-radius: 50%;
+    font-size: 15px;
+    cursor: pointer;
+    color: var(--text-primary);
+    flex-shrink: 0;
+    transition: all 0.14s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.tts-btn:active {
+    transform: scale(0.92);
+    background: var(--text-primary);
+    color: var(--bg-card);
+    border-color: var(--text-primary);
+}
+
+/* back-btn used together with .tts-btn (voice back) needs round removed */
+.tts-btn.back-btn {
+    border-radius: var(--radius);
+    background: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    min-width: auto;
+    padding: 8px 12px;
+}
+
+/* ==========================================================================
+   Loading / error / empty states
+   ========================================================================== */
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--border-color);
+    border-top-color: var(--accent-red);
+    border-radius: 50%;
+    animation: n2-spin 0.8s linear infinite;
+    flex-shrink: 0;
+}
+
+@keyframes n2-spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes n2-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(228, 50, 43, 0.45); }
+    50% { box-shadow: 0 0 0 12px rgba(228, 50, 43, 0); }
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* ==========================================================================
+   Bottom navigation
+   ========================================================================== */
+.bottom-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 900;
+    display: flex;
+    background: var(--bg-card);
+    border-top: 1px solid var(--border-color);
+    padding-bottom: env(safe-area-inset-bottom, 0);
+    min-height: var(--bottom-nav-height);
+}
+
+.nav-btn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    min-height: var(--bottom-nav-height);
+    background: none;
+    border: none;
+    border-top: 3px solid transparent;
+    cursor: pointer;
+    color: var(--text-muted);
+    font-family: var(--font-sans);
+    padding: 8px 4px;
+    transition: color 0.14s ease, border-color 0.14s ease;
+}
+
+.nav-btn .nav-btn-jp {
+    font-family: var(--font-jp);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.nav-btn .nav-btn-vi {
+    font-family: var(--font-sans);
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: inherit;
+    opacity: 0.85;
+}
+
+.nav-btn.active {
+    color: var(--accent-red);
+    border-top-color: var(--accent-red);
+}
+
+/* ==========================================================================
+   Furigana / ruby
+   ========================================================================== */
+ruby {
+    ruby-position: over;
+}
+
+ruby rt {
+    font-family: var(--font-sans);
+    font-size: .55em;
+    color: var(--text-muted);
+    user-select: none;
+}
+
+body.furigana-off rt {
+    display: none;
+}
+
+/* ==========================================================================
+   Lesson page
+   ========================================================================== */
+.lesson-page {
+    padding-bottom: 24px;
+}
+
+.lesson-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.lesson-toolbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.furigana-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--border-dark);
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    font-family: var(--font-jp);
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--text-primary);
+    transition: all 0.14s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.furigana-toggle-btn[aria-pressed="true"] {
+    background: var(--text-primary);
+    color: var(--bg-card);
+}
+
+.furigana-toggle-btn:active {
+    transform: translateY(1px);
+}
+
+.complete-toggle-btn {
+    min-height: 44px;
+    padding: 10px 18px;
+    border: 1px solid var(--accent-red);
+    background: var(--accent-red);
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all 0.14s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.complete-toggle-btn:active {
+    transform: translateY(1px);
+}
+
+.complete-toggle-btn.is-done {
+    background: transparent;
+    color: var(--text-muted);
+    border-color: var(--border-color);
+}
+
+.lesson-header {
+    margin-bottom: 28px;
+}
+
+.lesson-header-meta {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-red);
+    margin-bottom: 8px;
+}
+
+.lesson-header-title {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(1.9rem, 6vw, 3.2rem);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+}
+
+.lesson-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-left: 3px solid var(--border-color);
+    padding: 24px;
+}
+
+.content-section.grammar-section { border-left-color: var(--cat-grammar); }
+.content-section.vocab-section { border-left-color: var(--cat-vocabulary); }
+.content-section.kanji-section { border-left-color: var(--cat-kanji); }
+.content-section.reading-section { border-left-color: var(--cat-reading); }
+.content-section.listening-section { border-left-color: var(--cat-listening); }
+
+.section-heading {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(1.4rem, 4vw, 1.9rem);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid var(--text-primary);
+}
+
+.subheading {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-primary);
+    margin: 22px 0 12px;
+}
+
+.section-intro {
+    color: var(--text-muted);
+    margin-bottom: 14px;
+    font-style: italic;
+}
+
+/* ---------- Grammar ---------- */
+.grammar-point {
+    border-left: 4px solid var(--accent-red);
+    padding-left: 18px;
+    margin-bottom: 8px;
+}
+
+.grammar-title {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.grammar-meaning {
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.grammar-formation {
+    margin-bottom: 10px;
+}
+
+.grammar-explain {
+    margin-bottom: 4px;
+}
+
+.lesson-notes {
+    margin-top: 16px;
+    padding: 12px 14px;
+    background: var(--paper-2);
+    border-left: 3px solid var(--border-dark);
+    font-size: 15px;
+}
+
+/* ---------- Example / JP sentence blocks ---------- */
+.example-box {
+    background: var(--paper-2);
+    padding: 14px 16px;
+    margin-top: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+}
+
+.jp-sentence {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.jp-text {
+    font-family: var(--font-serif);
+}
+
+.vi-sentence {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* ---------- Vocabulary ---------- */
+.vocab-item {
+    padding: 16px 18px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-page);
+    border-radius: var(--radius);
+    margin-bottom: 12px;
+}
+
+.vocab-item:last-child {
+    margin-bottom: 0;
+}
+
+.vocab-word {
+    font-family: var(--font-serif);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.vocab-meaning {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+/* ---------- Kanji ---------- */
+.kanji-item {
+    padding: 18px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-page);
+    border-radius: var(--radius);
+    margin-bottom: 12px;
+}
+
+.kanji-item:last-child {
+    margin-bottom: 0;
+}
+
+.kanji-char {
+    font-family: var(--font-jp);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.kanji-readings {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.kanji-on,
+.kanji-kun {
+    display: inline-block;
+    padding: 3px 10px;
+    font-family: var(--font-sans);
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    color: var(--text-muted);
+    background: var(--bg-card);
+}
+
+.kanji-on {
+    border-color: var(--cat-kanji);
+    color: var(--cat-kanji);
+}
+
+.kanji-meaning {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+/* ---------- Reading / listening ---------- */
+.passage-title {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.passage-block,
+.transcript-block {
+    margin-bottom: 18px;
+}
+
+.reading-vocab {
+    margin-bottom: 18px;
+}
+
+.reading-vocab-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.reading-vocab-list li {
+    padding: 8px 12px;
+    background: var(--paper-2);
+    border-radius: var(--radius);
+    font-size: 15px;
+}
+
+/* ---------- Quiz ---------- */
+.quiz-block {
+    margin-top: 8px;
+}
+
+.quiz-question {
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.quiz-question:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.quiz-q-text {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.quiz-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    min-height: 44px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-page);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 15px;
+    text-align: left;
+    transition: all 0.14s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.quiz-option:hover:not(:disabled) {
+    border-color: var(--text-primary);
+}
+
+.quiz-option:disabled {
+    cursor: default;
+}
+
+/* .is-answered is a logic-gating class added by lesson.js on the question
+   container once an answer is picked; it needs no dedicated styling because
+   the option states (:disabled, .is-correct, .is-incorrect) carry the look. */
+.quiz-question.is-answered .quiz-q-text {
+    color: var(--text-muted);
+}
+
+.quiz-option.is-correct {
+    border-color: var(--accent-green-border);
+    background: var(--accent-green-bg);
+    color: var(--accent-green);
+    font-weight: 600;
+}
+
+.quiz-option.is-incorrect {
+    border-color: var(--accent-red);
+    background: var(--accent-red-bg);
+    color: var(--danger);
+}
+
+.quiz-explain {
+    margin-top: 10px;
+    padding: 12px 14px;
+    background: var(--paper-2);
+    border-left: 3px solid var(--accent-red);
+    font-size: 14px;
+}
+
+.quiz-explain[hidden] {
+    display: none;
+}
+
+.quiz-answer {
+    margin-bottom: 6px;
+}
+
+.quiz-explain-vi {
+    color: var(--text-muted);
+}
+
+/* ---------- Empty / loading / error / AI generate ---------- */
+.dash-empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+    font-family: var(--font-sans);
+}
+
+.lesson-empty-state {
+    text-align: center;
+    padding: 48px 20px;
+}
+
+.lesson-empty-state p {
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+.lesson-loading {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+}
+
+.lesson-error {
+    color: var(--danger);
+    background: var(--accent-red-bg);
+    border: 1px solid var(--accent-red);
+    padding: 12px 16px;
+    border-radius: var(--radius);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 12px 0;
+}
+
+.ai-generate-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 48px;
+    padding: 14px 26px;
+    background: var(--accent-red);
+    color: #fff;
+    border: none;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all 0.14s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.ai-generate-btn:hover {
+    background: var(--text-primary);
+}
+
+.ai-generate-btn:active {
+    transform: translateY(1px);
+}
+
+.lesson-not-found {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.lesson-not-found p {
+    margin-bottom: 20px;
+    color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Chat UI (tutor.js / voice.js text conversation)
+   ========================================================================== */
+.chat-wrap {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 220px);
+    min-height: 360px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.chat-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--paper-2);
+    flex-wrap: wrap;
+}
+
+.chat-clear-btn,
+.chat-settings-btn {
+    min-height: 44px;
+    padding: 8px 14px;
+    border: 1px solid var(--border-dark);
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    color: var(--text-primary);
+    transition: all 0.14s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.chat-clear-btn:hover,
+.chat-settings-btn:hover {
+    background: var(--text-primary);
+    color: var(--bg-card);
+}
+
+.chat-clear-btn:disabled,
+.chat-settings-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.chat-msg {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.chat-msg.user {
+    justify-content: flex-end;
+}
+
+.chat-msg-row {
+    display: flex;
+    align-items: flex-end;
+    max-width: 85%;
+}
+
+.chat-msg-bubble {
+    padding: 12px 16px;
+    font-size: 15px;
+    line-height: 1.55;
+    word-break: break-word;
+    border-radius: var(--radius-lg);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-left: 3px solid var(--accent-red);
+}
+
+.chat-msg.user .chat-msg-bubble {
+    background: var(--text-primary);
+    color: var(--bg-card);
+    border: 1px solid var(--text-primary);
+    border-left: 1px solid var(--text-primary);
+}
+
+.chat-msg .tts-btn {
+    margin-left: 6px;
+    min-width: 32px;
+    min-height: 32px;
+}
+
+.chat-msg.model.chat-loading .chat-msg-bubble,
+.chat-loading {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.chat-msg.model.chat-error .chat-msg-bubble,
+.chat-error {
+    background: var(--accent-red-bg);
+    border-color: var(--accent-red);
+    border-left-color: var(--accent-red);
+    color: var(--text-primary);
+}
+
+.chat-empty {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 14px;
+    padding: 24px 0;
+}
+
+.chat-input-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    border-top: 1px solid var(--border-color);
+    background: var(--paper-2);
+    flex-wrap: wrap;
+}
+
+.chat-input-row input[type="text"] {
+    flex: 1 1 160px;
+    min-height: 44px;
+    padding: 0 14px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    background: var(--bg-card);
+    font-family: var(--font-serif);
+    font-size: 16px;
+    color: var(--text-primary);
+}
+
+.chat-input-row input[type="text"]:focus {
+    outline: none;
+    border-color: var(--accent-red);
+}
+
+.chat-send-btn {
+    flex-shrink: 0;
+    min-height: 44px;
+    min-width: 44px;
+    padding: 10px 20px;
+    border: none;
+    background: var(--accent-red);
+    color: #fff;
+    border-radius: var(--radius);
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.14s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.chat-send-btn:hover {
+    background: var(--text-primary);
+}
+
+.chat-send-btn:active {
+    transform: translateY(1px);
+}
+
+.chat-send-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ==========================================================================
+   Voice trainer
+   ========================================================================== */
+.voice-page {
+    padding-bottom: 24px;
+}
+
+/* voice.js reuses .chat-wrap/.chat-msg as a bare scrollable message list
+   (no nested .chat-messages/.chat-msg-bubble like tutor.js has), so give
+   the bubble chrome directly to .chat-msg when scoped under .voice-page. */
+.voice-page .chat-wrap {
+    padding: 16px;
+    gap: 12px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.voice-page .chat-msg {
+    display: block;
+    max-width: 85%;
+    padding: 12px 16px;
+    border-radius: var(--radius-lg);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-left: 3px solid var(--accent-red);
+}
+
+.voice-page .chat-msg.model,
+.voice-page .chat-msg.chat-loading {
+    align-self: flex-start;
+}
+
+.voice-page .chat-msg.user {
+    align-self: flex-end;
+    background: var(--text-primary);
+    color: var(--bg-card);
+    border: 1px solid var(--text-primary);
+    border-left: 1px solid var(--text-primary);
+}
+
+.voice-page .chat-msg.user .vi-sentence {
+    color: rgba(252, 251, 247, 0.7);
+}
+
+.section-title {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(1.7rem, 5vw, 2.4rem);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin-bottom: 10px;
+}
+
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.voice-topic-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 16px 18px;
+    min-height: 44px;
+    text-align: left;
+    white-space: normal;
+    transition: all 0.14s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.voice-topic-btn:hover {
+    border-color: var(--accent-red);
+    color: var(--accent-red);
+}
+
+.voice-topic-label {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.voice-topic-jp {
+    display: block;
+    font-family: var(--font-jp);
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    opacity: 0.75;
+}
+
+.lesson-meta {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+}
+
+.record-btn {
+    width: 64px;
+    height: 64px;
+    min-height: 64px !important;
+    min-width: 64px !important;
+    border-radius: 50%;
+    border: none;
+    background: var(--accent-red);
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.14s cubic-bezier(0.2, 0.7, 0.2, 1);
+    padding: 0;
+}
+
+.record-btn.recording {
+    background: var(--danger);
+    animation: n2-pulse 1.2s ease-in-out infinite;
+}
+
+.record-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.voice-note {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.voice-end-btn {
+    width: 100%;
+    margin-top: 16px;
+    background: var(--text-primary);
+    color: var(--bg-card);
+    border-color: var(--text-primary);
+}
+
+.review-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 26px;
+    margin-bottom: 20px;
+}
+
+.review-card h3 {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: -0.01em;
+    margin-bottom: 12px;
+}
+
+.review-card h4 {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.review-card p {
+    margin-bottom: 4px;
+}
+
+.review-score {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 2.4rem;
+    font-variant-numeric: lining-nums;
+    color: var(--accent-red);
+    margin: 4px 0 14px;
+    line-height: 1;
+}
+
+.review-score-max {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+.review-grammar-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.review-grammar-list .quiz-option {
+    cursor: default;
+}
+
+.correction-original {
+    text-decoration: line-through;
+    color: var(--text-muted);
+}
+
+.correction-fixed {
+    color: var(--accent-green);
+    font-weight: 600;
+}
+
+.review-encouragement {
+    margin-top: 16px;
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+.review-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   Modal (shared shell reused by study modal AND settings modal)
+   ========================================================================== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(20, 18, 16, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 16px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.14s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-card {
+    background: var(--bg-card);
+    border: 2px solid var(--border-dark);
+    width: 100%;
+    max-width: 620px;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.modal-header {
+    padding: 18px 22px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--paper-2);
+    gap: 12px;
+}
+
+.modal-header h3 {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-primary);
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: var(--text-primary);
+    line-height: 1;
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: color 0.14s ease;
+}
+
+.modal-close:hover {
+    color: var(--accent-red);
+}
+
+.modal-body {
+    padding: 22px;
+    overflow-y: auto;
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.modal-footer {
+    padding: 16px 22px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--paper-2);
+    gap: 12px;
+}
+
+.complete-modal-btn {
+    background: var(--accent-red);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    min-height: 44px;
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    border-radius: var(--radius);
+    transition: all 0.14s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.complete-modal-btn:hover {
+    background: var(--text-primary);
+}
+
+.complete-modal-btn:active {
+    transform: translateY(1px);
+}
+
+/* Settings modal field basics (gemini.js injects most of its own field CSS
+   via var() so it inherits the tokens above; this covers the shared shell
+   and any label/input it renders without its own inline <style>). */
+.settings-modal .modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* ==========================================================================
+   Mobile specific optimizations
+   ========================================================================== */
+@media (max-width: 600px) {
+    .container { padding: 0 14px; }
+    .masthead-title { font-size: clamp(2.2rem, 12vw, 3rem); }
+    .stats-bar { grid-template-columns: 1fr; }
+    .stat-item { border-right: none; border-bottom: 1px solid var(--border-color); }
+    .stat-item:last-child { border-bottom: none; }
+    .lessons-grid { grid-template-columns: 1fr; }
+    .modal-card { max-height: 92vh; margin: 0; }
+
+    .nav-btn .nav-btn-jp { font-size: 13px; }
+    .nav-btn .nav-btn-vi { font-size: 9px; }
+
+    .chat-wrap { height: calc(100vh - 180px); min-height: 320px; }
+    .chat-msg-row { max-width: 92%; }
+    .chat-msg-bubble { font-size: 14px; }
+
+    .lesson-toolbar { flex-direction: column; align-items: flex-start; }
+    .content-section { padding: 18px; }
+
+    .topic-grid { grid-template-columns: 1fr; }
+
+    .review-score { font-size: 2rem; }
+}

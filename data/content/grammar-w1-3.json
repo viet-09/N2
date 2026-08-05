@@ -1,0 +1,296 @@
+{
+  "g1d1": {
+    "pattern": "〜っぽい",
+    "meaningVi": "trông có vẻ..., ra vẻ..., mang tính..., kiểu... (gắn sau danh từ hoặc thân tính từ, diễn tả ấn tượng, khuynh hướng của sự vật, sự việc)",
+    "formation": "{名詞|めいし}＋っぽい／い{形容詞|けいようし}の{語幹|ごかん}＋っぽい → い{形容詞|けいようし}として{使|つか}う",
+    "explanationVi": "「〜っぽい」gắn sau danh từ hoặc thân tính từ để tạo thành tính từ đuôi い, diễn tả ấn tượng chủ quan «giống như», «có vẻ» hoặc khuynh hướng nổi bật của chủ thể. Thường mang sắc thái nhận xét hơi tiêu cực hoặc bông đùa, hay dùng trong văn nói. 「{熱|ねつ}っぽい」được dùng khi cảm thấy người hơi nóng như sắp sốt, là cách nói giảm nhẹ trạng thái sức khỏe không rõ ràng. So với 「〜{気味|きみ}」, 「っぽい」thiên về ấn tượng bề ngoài, chủ quan, còn 「気味」thiên về khuynh hướng đang thực sự diễn ra.",
+    "examples": [
+      {"jp": "{今朝|けさ}から{何|なん}だか{熱|ねつ}っぽくて、{少|すこ}し{休|やす}もうと{思|お}う。", "vi": "Từ sáng giờ người tôi cứ nóng ran như sắp sốt, nên tôi định nghỉ một chút."},
+      {"jp": "あの{人|ひと}はいつも{子供|こども}っぽいことを{言|い}う。", "vi": "Người đó lúc nào cũng nói những điều trẻ con."},
+      {"jp": "この{文章|ぶんしょう}は{論文|ろんぶん}っぽくて、{読|よ}みにくい。", "vi": "Bài văn này viết như luận văn nên khó đọc."},
+      {"jp": "{彼|かれ}の{話|はなし}は{嘘|うそ}っぽくて{信|しん}じられない。", "vi": "Lời anh ấy nói nghe như nói dối, không thể tin được."},
+      {"jp": "{安|やす}っぽい{服|ふく}はすぐ{色褪|いろあ}せる。", "vi": "Quần áo rẻ tiền (trông kém chất lượng) nhanh phai màu."}
+    ],
+    "notes": "{熱|ねつ}っぽい (người hơi nóng, sắp sốt) và {風邪気味|かぜぎみ} (có khuynh hướng bị cảm) đều là cách nói mơ hồ, giảm nhẹ khi chưa muốn khẳng định chắc chắn tình trạng sức khỏe. 「〜っぽい」có sắc thái hơi tiêu cực, nên tránh dùng để khen trực tiếp người khác."
+  },
+  "g1d2": {
+    "pattern": "〜たいものだ",
+    "meaningVi": "thật muốn... biết bao, giá mà... (ước muốn, nguyện vọng tha thiết, mang cảm xúc mạnh của người nói)",
+    "formation": "{動詞|どうし}ます{形|けい}（ますを{取|と}る）＋たいものだ",
+    "explanationVi": "Kết hợp 「〜たい」 với 「ものだ」 để diễn tả ước muốn tha thiết, thường kèm cảm thán, mơ mộng hoặc nuối tiếc, khác với 「〜たい」đơn thuần vốn chỉ nêu mong muốn một cách bình thường. Câu thường đứng độc lập, người nói bộc lộ khát khao của riêng mình. 「ものだ」ở đây chỉ làm tăng sắc thái cảm xúc, không mang nghĩa «lẽ thường» như các mẫu 「〜ものだ」khác.",
+    "examples": [
+      {"jp": "{空|そら}を{自由|じゆう}に{飛|と}びたいものだ。", "vi": "Thật muốn bay tự do trên bầu trời biết bao."},
+      {"jp": "{一度|いちど}は{海外|かいがい}で{暮|く}らしてみたいものだ。", "vi": "Thật muốn thử sống ở nước ngoài một lần."},
+      {"jp": "いつか{自分|じぶん}の{店|みせ}を{持|も}ちたいものだ。", "vi": "Ước gì có ngày tôi có được cửa hàng của riêng mình."},
+      {"jp": "{若|わか}い{頃|ころ}に{戻|もど}って、もう{一度|いちど}{勉強|べんきょう}したいものだ。", "vi": "Giá mà trở lại thời trẻ, tôi muốn học thêm lần nữa."},
+      {"jp": "{老後|ろうご}は{静|しず}かな{田舎|いなか}でのんびり{暮|く}したいものだ。", "vi": "Lúc về già, thật muốn sống thong thả ở một vùng quê yên tĩnh."}
+    ],
+    "notes": "Nếu chỉ nói 「〜たい」thì thiếu cảm xúc; thêm 「ものだ」tạo sắc thái khao khát, mơ mộng. Không dùng 「〜たいものだ」cho người thứ ba hay trong câu mệnh lệnh. Đừng nhầm với 「〜ものだ」diễn tả quy luật, lẽ thường."
+  },
+  "g1d3": {
+    "pattern": "〜はともかく（として）",
+    "meaningVi": "chưa nói đến..., tạm gác... sang một bên, không bàn đến... (rồi chuyển sang vấn đề quan trọng hơn)",
+    "formation": "{名詞|めいし}＋はともかく（として）／{名詞|めいし}＋のことはともかく",
+    "explanationVi": "Dùng để tạm gác vấn đề nêu trước, không đánh giá hay bàn sâu về nó, để nhấn mạnh vấn đề theo sau — vế sau thường là điểm quan trọng, đáng nói hơn. Gần nghĩa với 「〜は{別|べつ}として」, nhưng 「はともかく」thừa nhận vế trước ở mức tối thiểu rồi mới so sánh sang vế sau. Hay dùng khi đánh giá khách quan: ngoại hình, giá cả, tuổi tác không quan trọng bằng thực chất.",
+    "examples": [
+      {"jp": "{見|み}た{目|め}はともかく、{味|あじ}はとてもおいしい。", "vi": "Chưa nói đến hình thức, chứ vị thì rất ngon."},
+      {"jp": "{値段|ねだん}はともかく、{品質|ひんしつ}は{間違|まちが}いなくいい。", "vi": "Tạm không bàn giá cả, chất lượng chắc chắn là tốt."},
+      {"jp": "{結果|けっか}はともかく、{一生懸命|いっしょうけんめい}やったことに{意味|いみ}がある。", "vi": "Kết quả ra sao chưa nói, việc đã cố gắng hết mình mới là điều có ý nghĩa."},
+      {"jp": "{天気|てんき}のことはともかく、まず{予定|よてい}どおり{出発|しゅっぱつ}しよう。", "vi": "Thời tiết thế nào chưa bàn, trước hết hãy xuất phát theo kế hoạch."},
+      {"jp": "{若|わか}い{頃|ころ}のことはともかく、{今|いま}は{健康|けんこう}が{第一|だいいち}だ。", "vi": "Chuyện hồi trẻ không bàn nữa, bây giờ sức khỏe là trên hết."}
+    ],
+    "notes": "Khác với 「〜は{別|べつ}として」dùng khi tách hẳn vấn đề ra khỏi phạm vi nói, 「〜はともかく」ngụ ý «vế trước dù sao cũng vậy, vế sau mới quan trọng» — thường kèm sự đối lập, so sánh giữa hai vế."
+  },
+  "g1d4": {
+    "pattern": "〜てたまらない",
+    "meaningVi": "... không chịu nổi, ... cực kỳ, ... vô cùng (cảm giác, cảm xúc mạnh đến mức không kìm được)",
+    "formation": "い{形容詞|けいようし}（くて）＋たまらない／な{形容詞|けいようし}（で）＋たまらない／{動詞|どうし}て{形|けい}＋たまらない（※{一部|いちぶ}の{感情|かんじょう}{動詞|どうし}に{使|つか}う）",
+    "explanationVi": "Gắn sau tính từ hoặc một số động từ diễn tả cảm giác, cảm xúc để nhấn mạnh trạng thái đó mạnh đến mức không chịu đựng, không kiềm chế nổi. Chủ thể cảm nhận thường là người nói (ngôi thứ nhất), không dùng cho cảm xúc của người khác khi chưa được xác nhận. Hay dùng trong văn nói với các cảm giác như ngứa, đói, vui, buồn, lo lắng.",
+    "examples": [
+      {"jp": "{虫|むし}に{刺|さ}されたところがかゆくてたまらない。", "vi": "Chỗ bị côn trùng đốt ngứa không chịu nổi."},
+      {"jp": "{朝|あさ}から{何|なに}も{食|た}べていないので、お{腹|なか}が{空|す}いてたまらない。", "vi": "Từ sáng chưa ăn gì nên đói cồn cào."},
+      {"jp": "{久|ひさ}しぶりに{故郷|こきょう}に{帰|かえ}れるので、うれしくてたまらない。", "vi": "Lâu rồi mới được về quê nên vui không tả nổi."},
+      {"jp": "{試験|しけん}の{結果|けっか}が{気|き}になってたまらない。", "vi": "Tôi cứ lo lắng mãi về kết quả thi."},
+      {"jp": "{隣|となり}の{部屋|へや}の{音|おと}がうるさくてたまらない。", "vi": "Tiếng ồn từ phòng bên cạnh làm tôi khó chịu không chịu nổi."}
+    ],
+    "notes": "Phân biệt với 「〜てならない」(cảm xúc tự trào ra không kìm được, thường với cảm xúc trừu tượng) và 「〜てしょうがない／〜てしかたがない」(văn nói, thông dụng). 「〜てたまらない」mang cảm giác thể chất rõ rệt, mạnh mẽ nhất trong ba mẫu."
+  },
+  "g1d5": {
+    "pattern": "〜ないことはない",
+    "meaningVi": "không phải là không... (thừa nhận một cách dè dặt rằng có thể làm hoặc xảy ra, kèm điều kiện)",
+    "formation": "{動詞|どうし}ない{形|けい}＋ことはない／い{形容詞|けいようし}（くない）＋ことはない／な{形容詞|けいようし}（ではない）＋ことはない",
+    "explanationVi": "Phủ định kép, diễn tả «cũng có thể», «không phải là hoàn toàn không», thường dùng để trả lời hoặc nhận xét một cách dè dặt, kèm điều kiện hoặc khó khăn ở vế sau (が／けど). Mang sắc thái khiêm tốn, tránh khẳng định tuyệt đối, rất thông dụng trong hội thoại trình độ N2.",
+    "examples": [
+      {"jp": "{今|いま}すぐたばこをやめられないことはないが、かなり{難|むずか}しい。", "vi": "Không phải là không thể bỏ thuốc ngay, nhưng khá khó."},
+      {"jp": "{時間|じかん}があれば、{行|い}けないことはない。", "vi": "Nếu có thời gian thì không phải là không đi được."},
+      {"jp": "その{本|ほん}は{高|たか}いけど、{買|か}えないことはない。", "vi": "Cuốn sách đó đắt nhưng không phải là không mua được."},
+      {"jp": "{毎日|まいにち}{練習|れんしゅう}すれば、{合格|ごうかく}できないことはないだろう。", "vi": "Nếu luyện tập mỗi ngày thì không phải là không thể đỗ."},
+      {"jp": "この{仕事|しごと}は{大変|たいへん}だが、{面白|おもしろ}くないことはない。", "vi": "Công việc này vất vả nhưng không phải là không thú vị."}
+    ],
+    "notes": "Vế sau thường kèm が／けど để nêu điều kiện hoặc khó khăn, nhờ đó sắc thái «thừa nhận có khả năng nhưng không dễ dàng» càng rõ. So với 「〜ないものでもない」(khả năng xảy ra thấp hơn, hiếm dùng), 「〜ないことはない」thông dụng hơn nhiều."
+  },
+  "g1d6": {
+    "pattern": "〜ていられない",
+    "meaningVi": "không thể cứ... mãi được, không thể tiếp tục... (do tình trạng quá đau lòng, khó chịu hoặc hoàn cảnh thúc ép)",
+    "formation": "{動詞|どうし}て{形|けい}＋いられない（＝「いる」の{可能|かのう}{否定|ひてい}{形|けい}）",
+    "explanationVi": "Là thể khả năng phủ định của 「〜ている」, diễn tả không thể duy trì trạng thái, hành động đang diễn ra vì lý do tâm lý (xót xa, xấu hổ, khó chịu) hoặc hoàn cảnh không cho phép. 「{見|み}ていられない」được dùng rất phổ biến khi cảnh tượng quá bi thảm, đau lòng đến mức không nỡ nhìn. Cũng dùng với các động từ như {座|すわ}る、{黙|だま}る、{待|ま}つ để nói «không thể cứ ngồi im, im lặng, chờ đợi mãi được».",
+    "examples": [
+      {"jp": "あまりにも{痛|いた}ましい{光景|こうけい}で、{見|み}ていられない。", "vi": "Cảnh tượng quá bi thảm, không thể nhìn tiếp được."},
+      {"jp": "{彼|かれ}が{一人|ひとり}で{苦労|くろう}しているのを、{見|み}ていられない。", "vi": "Không thể cứ đứng nhìn anh ấy một mình vất vả như vậy."},
+      {"jp": "そんなに{忙|いそが}しいなら、ゆっくり{休|やす}んでいられない。", "vi": "Nếu bận như vậy thì không thể cứ nghỉ ngơi thong thả được."},
+      {"jp": "{恥|は}ずかしくて、その{場|ば}にじっとしていられなかった。", "vi": "Xấu hổ quá, tôi không thể cứ đứng im ở đó được."},
+      {"jp": "{早|はや}く{原因|げんいん}を{知|し}りたくて、じっとしていられない。", "vi": "Muốn biết nguyên nhân ngay nên không thể cứ ngồi yên được."}
+    ],
+    "notes": "Phân biệt với 「〜てはいられない」— cùng nghĩa, là cách nói đầy đủ hơn. Trong bài thi hay kết hợp với 「{見|み}る」diễn tả sự xót xa, không nỡ nhìn."
+  },
+  "g1d7": {
+    "pattern": "実戦問題 – Ôn tập tổng hợp tuần 1 (6 mẫu ngữ pháp N2)",
+    "meaningVi": "Tổng hợp và luyện tập 6 mẫu ngữ pháp tuần 1: 〜っぽい、〜たいものだ、〜はともかく、〜てたまらない、〜ないことはない、〜ていられない",
+    "formation": "Xem lại cách kết hợp riêng của từng mẫu ở các bài trước trong tuần; bài thực chiến tập trung phân biệt sắc thái cảm xúc, mức độ khẳng định và ngữ cảnh hội thoại của 6 mẫu.",
+    "explanationVi": "Bài luyện tập tổng hợp tuần 1 ôn 6 mẫu ngữ pháp: 「〜っぽい」(ấn tượng bề ngoài, khuynh hướng), 「〜たいものだ」(ước muốn tha thiết), 「〜はともかく」(tạm gác vấn đề), 「〜てたまらない」(cảm giác không kìm nổi), 「〜ないことはない」(thừa nhận dè dặt), 「〜ていられない」(không thể duy trì trạng thái). Khi làm bài cần chú ý: chủ thể của 「てたまらない」và 「ていられない」phải là người cảm nhận trực tiếp; 「ないことはない」thường kèm điều kiện ở vế sau; 「はともかく」đòi hỏi vế sau là trọng tâm của câu.",
+    "examples": [
+      {"jp": "{熱|ねつ}っぽい{気|き}がするので、{薬|くすり}を{飲|の}んで{様子|ようす}を{見|み}ることにした。", "vi": "Người thấy nóng như sắp sốt nên tôi uống thuốc rồi theo dõi tình hình."},
+      {"jp": "{若|わか}いうちに{世界|せかい}を{見|み}て{歩|ある}きたいものだ。", "vi": "Thật muốn đi khắp thế giới khi còn trẻ."},
+      {"jp": "{値段|ねだん}はともかく、{味|あじ}は{評判|ひょうばん}どおりだった。", "vi": "Giá cả không bàn, vị thì đúng như lời đồn."},
+      {"jp": "テストの{結果|けっか}が{気|き}になってたまらない。", "vi": "Kết quả bài kiểm tra làm tôi lo không chịu nổi."},
+      {"jp": "{時間|じかん}さえあれば、できないことはない。", "vi": "Chỉ cần có thời gian thì không phải là không làm được."}
+    ],
+    "notes": "Điểm dễ nhầm trong tuần: 「〜っぽい」(chủ quan, bề ngoài) với 「〜{気味|きみ}」(khuynh hướng thực tế); 「〜てたまらない」(cảm giác thể chất mạnh) với 「〜てならない」(cảm xúc trừu tượng); 「〜ないことはない」cần vế nhượng bộ theo sau để câu tự nhiên."
+  },
+  "g2d1": {
+    "pattern": "〜{甲斐|かい}がある／〜た{甲斐|かい}があって",
+    "meaningVi": "có công có sức, đáng công, bõ công (kết quả nhận được tương xứng với công sức đã bỏ ra)",
+    "formation": "{動詞|どうし}た{形|けい}＋かいがある／かいがあって／かいがない",
+    "explanationVi": "「{甲斐|かい}」nghĩa là công sức, giá trị của việc làm; mẫu diễn tả kết quả nhận được xứng đáng với công sức đã bỏ ra. 「〜たかいがあって」đứng đầu câu, vế sau nêu kết quả tốt; 「〜かいがない」ngược lại, nói công sức đổ sông đổ bể. Thường đi với các động từ như {頑張|がんば}る、{努力|どりょく}する、{練習|れんしゅう}する、{苦労|くろう}する.",
+    "examples": [
+      {"jp": "{頑張|がんば}ったかいがあって、{希望|きぼう}の{会社|かいしゃ}に{受|う}かった。", "vi": "Bõ công cố gắng, tôi đã đỗ vào công ty mơ ước."},
+      {"jp": "この{本|ほん}は{読|よ}むかいがある。", "vi": "Cuốn sách này đáng đọc."},
+      {"jp": "{練習|れんしゅう}したかいがあって、{試合|しあい}に{勝|か}てた。", "vi": "Bõ công luyện tập, chúng tôi đã thắng trận đấu."},
+      {"jp": "わざわざ{行|い}ったかいがなかった。", "vi": "Đi một chuyến công cốc, chẳng được gì."},
+      {"jp": "{苦労|くろう}したかいがあって、{夢|ゆめ}を{実現|じつげん}できた。", "vi": "Bõ công vất vả, tôi đã hiện thực hóa được ước mơ."}
+    ],
+    "notes": "Thường viết bằng kana 「かい」; nếu viết kanji là 「{甲斐|かい}」. Phân biệt 「〜かいがある」(đáng công, kết quả tốt — đánh giá của người trải qua) với 「〜{価値|かち}がある」(có giá trị — nhận định khách quan hơn)."
+  },
+  "g2d2": {
+    "pattern": "{有|あ}り{得|え}ない／〜（という）ことはありえない",
+    "meaningVi": "không thể có chuyện, không thể xảy ra, phi lý (phủ nhận mạnh mẽ một khả năng)",
+    "formation": "{動詞|どうし}の{辞書形|じしょけい}＋（という）ことはありえない／{名詞|めいし}＋（で）ありえない",
+    "explanationVi": "「あり得ない」là thể phủ định của 「あり得る」(có thể có, có thể xảy ra), diễn tả sự phủ nhận tuyệt đối một khả năng, thường bộc lộ sự ngạc nhiên, phản đối, hoài nghi của người nói. Trong hội thoại thân mật, chỉ cần nói 「ありえない！」đã đủ truyền đạt ý «không đời nào!». Vế trước thường là mệnh đề người khác nói hoặc dự đoán chung.",
+    "examples": [
+      {"jp": "そんな{無茶|むちゃ}な{計画|けいかく}が{成功|せいこう}するなんて、ありえない。", "vi": "Một kế hoạch liều như vậy mà thành công thì không thể nào."},
+      {"jp": "{彼|かれ}が{嘘|うそ}をつくことはありえない。{私|わたし}は{彼|かれ}を{信用|しんよう}している。", "vi": "Anh ấy không thể nói dối được. Tôi tin tưởng con người anh ấy."},
+      {"jp": "1メートルも{積|つ}もった{雪|ゆき}が{一晩|ひとばん}でとけるなんてありえない。", "vi": "Tuyết dày cả mét mà tan trong một đêm thì không thể nào."},
+      {"jp": "あの{大人|おとな}しい{彼|かれ}が{怒鳴|どな}るなんてありえない。", "vi": "Người trầm tính như anh ấy mà quát tháo thì không đời nào."},
+      {"jp": "{人間|にんげん}が{空|そら}を{飛|と}ぶのは{昔|むかし}、ありえないと{思|おも}われていた。", "vi": "Ngày xưa người ta cho rằng con người không thể bay trên trời."}
+    ],
+    "notes": "Đối lập với 「あり得る」(có thể xảy ra). Trong bài thi hay đi cùng 「〜なんて／〜とは」để nêu sự việc bị phủ nhận. Sắc thái mạnh, chủ quan — không dùng trong văn phong trang trọng khi cần thể hiện sự dè dặt."
+  },
+  "g2d3": {
+    "pattern": "{名詞|めいし}＋{限|かぎ}り（{本日限|ほんじつかぎ}り／{今月限|こんげつかぎ}り）",
+    "meaningVi": "chỉ trong..., có thời hạn đến... (giới hạn thời gian; trong quảng cáo: «chỉ hôm nay»)",
+    "formation": "{期間|きかん}を{表|あらわ}す{名詞|めいし}＋限り（{本日|ほんじつ}{限|かぎ}り、{今週限|こんしゅうかぎ}りなど）",
+    "explanationVi": "「〜限り」gắn sau danh từ chỉ thời gian để diễn tả phạm vi, giới hạn: «chỉ trong khoảng thời gian đó». 「{本日限|ほんじつかぎ}り」rất hay gặp trong quảng cáo, thông báo giảm giá với nghĩa «chỉ áp dụng hôm nay», tạo cảm giác khẩn cấp thôi thúc mua. Cần phân biệt với 「〜限り」diễn tả điều kiện (「{動詞|どうし}ない{形|けい}＋限り」= trừ khi..., 「{動詞|どうし}の{辞書形|じしょけい}＋限り」= chừng nào còn...) — nghĩa hoàn toàn khác.",
+    "examples": [
+      {"jp": "セールは{本日限|ほんじつかぎ}りです。お{早|はや}めにどうぞ。", "vi": "Giảm giá chỉ có hôm nay. Xin mời đến sớm."},
+      {"jp": "このクーポンは{今月限|こんげつかぎ}りで{使|つか}えなくなります。", "vi": "Phiếu này hết hạn vào cuối tháng này."},
+      {"jp": "{応募|おうぼ}は{今週限|こんしゅうかぎ}りだから、{急|いそ}がないと。", "vi": "Hạn nộp đơn chỉ đến tuần này thôi, phải nhanh lên."},
+      {"jp": "{今日限|きょうかぎ}りの{特別|とくべつ}プライスでご{提供|ていきょう}します。", "vi": "Chúng tôi xin cung cấp mức giá đặc biệt chỉ trong hôm nay."},
+      {"jp": "この{席|せき}は{先着順|せんちゃくじゅん}で、{本日限|ほんじつかぎ}りの{受付|うけつけ}です。", "vi": "Chỗ ngồi này xử lý theo thứ tự đến trước, chỉ nhận đăng ký trong hôm nay."}
+    ],
+    "notes": "Trong tiếng Nhật, 「本日限り」「限定」tạo cảm giác khẩn cấp nên rất hay xuất hiện ở quảng cáo. Phân biệt nghĩa: {期間|きかん}＋限り (chỉ trong thời gian đó), 動詞ない形＋限り (trừ khi), 動詞辞書形＋限り (chừng nào còn)."
+  },
+  "g2d4": {
+    "pattern": "〜さえ〜ば",
+    "meaningVi": "chỉ cần... là... (điều kiện tối thiểu duy nhất; hễ điều kiện đó thỏa mãn thì mọi thứ khác đều ổn)",
+    "formation": "{名詞|めいし}＋さえ＋〜ば／い{形容詞|けいようし}（く）＋さえあれば／な{形容詞|けいようし}＋でさえあれば／{動詞|どうし}ます{形|けい}＋さえ＋すれば",
+    "explanationVi": "Dùng để nêu điều kiện tối thiểu, duy nhất: hễ điều kiện đó thỏa mãn thì sự việc vế sau sẽ xảy ra hoặc đạt được kết quả tốt. Vế sau thường là kết quả khẳng định, tích cực. Có thể kết hợp 「〜ばいい」để nhấn mạnh «chỉ cần... là đủ». Là mẫu quan trọng trong bài thi N2, hay đi cùng 「さえ…ば」đảo trật tự vế câu.",
+    "examples": [
+      {"jp": "{君|きみ}さえいれば、{他|ほか}に{何|なに}もいらない。", "vi": "Chỉ cần có em là tôi không cần gì khác nữa."},
+      {"jp": "{時間|じかん}さえあれば、{世界|せかい}のどこへでも{行|い}ける。", "vi": "Chỉ cần có thời gian là đi được bất cứ đâu trên thế giới."},
+      {"jp": "{薬|くすり}を{飲|の}みさえすれば、この{病気|びょうき}は{治|なお}る。", "vi": "Chỉ cần uống thuốc là bệnh này sẽ khỏi."},
+      {"jp": "{静|しず}かでさえあれば、{狭|せま}くても{我慢|がまん}できる。", "vi": "Chỉ cần yên tĩnh thì chật một chút cũng chịu được."},
+      {"jp": "{天気|てんき}さえよければ、{運動会|うんどうかい}は{予定|よてい}どおり{行|おこな}われる。", "vi": "Chỉ cần thời tiết đẹp là lễ hội thể thao sẽ diễn ra đúng kế hoạch."}
+    ],
+    "notes": "Nhấn mạnh «chỉ cần đúng một điều kiện đó» — nếu cần nhiều điều kiện thì không dùng. 「{動詞|どうし}ます{形|けい}＋さえ＋すれば」là dạng gắn trực tiếp vào động từ. Vế sau thường là kết quả tích cực hoặc khả năng đạt được."
+  },
+  "g2d5": {
+    "pattern": "〜としたら",
+    "meaningVi": "nếu giả sử..., giả định là... (nêu giả thiết, từ đó suy luận hoặc đưa ra dự định)",
+    "formation": "{動詞|どうし}の{辞書形|じしょけい}／た{形|けい}＋としたら／い{形容詞|けいようし}＋としたら／{名詞|めいし}＋だとしたら",
+    "explanationVi": "Diễn tả giả định, giả thiết về một việc (có thể chưa xảy ra hoặc không xảy ra), vế sau nêu suy luận, dự định, câu hỏi dựa trên giả thiết đó. 「〜とすると」thiên về suy luận khách quan từ sự kiện đã biết; 「〜とすれば」gần với 「としたら」nhưng hơi trang trọng và giữ khoảng cách với giả thiết hơn. Vế sau thường là câu hỏi, ý định, mong muốn.",
+    "examples": [
+      {"jp": "{外国|がいこく}へ{行|い}くとしたら、どこがいいだろう。", "vi": "Nếu giả sử đi nước ngoài thì đâu là nơi tốt nhỉ."},
+      {"jp": "{今|いま}すぐ{出発|しゅっぱつ}できるとしたら、あなたはどうする？", "vi": "Nếu có thể xuất phát ngay bây giờ, bạn sẽ làm gì?"},
+      {"jp": "{買|か}うとしたら、この{店|みせ}で{買|か}いたい。", "vi": "Nếu mua thì tôi muốn mua ở cửa hàng này."},
+      {"jp": "もし{私|わたし}が{鳥|とり}だとしたら、{自由|じゆう}に{空|そら}を{飛|と}びたい。", "vi": "Giả sử tôi là chim thì tôi muốn bay tự do trên trời."},
+      {"jp": "{彼|かれ}が{来|こ}ないとしたら、どうしようか。", "vi": "Giả sử anh ấy không đến thì phải làm sao đây."}
+    ],
+    "notes": "Với mẫu này, vế sau thường KHÔNG phải sự việc đã xảy ra mà là suy đoán, dự định, đề nghị. Khi giả định đối lập với thực tế, dùng 「〜とすれば」thể hiện rõ khoảng cách với thực tế hơn."
+  },
+  "g2d6": {
+    "pattern": "〜にしたがって",
+    "meaningVi": "càng... càng... (thay đổi theo một quá trình tiến triển); theo, làm theo (chỉ dẫn, quy định)",
+    "formation": "{動詞|どうし}の{辞書形|じしょけい}＋にしたがって／{名詞|めいし}＋にしたがって",
+    "explanationVi": "Hai nghĩa chính: (1) diễn tả sự thay đổi của vế sau đi kèm, song song với sự tiến triển của vế trước — «càng... càng...»; (2) «theo như, tuân theo» quy định, chỉ dẫn (例：{指示|しじ}にしたがう). Ở nghĩa (1) thường đi với động từ chỉ quá trình như {進|すす}む、{上|あ}がる、{高|たか}くなる、{慣|な}れる、{増|ふ}える. Không dùng với sự thay đổi tức thời hay với mong muốn, mệnh lệnh.",
+    "examples": [
+      {"jp": "{高|たか}くなるにしたがって、{売|う}れ{行|ゆ}きが{悪|わる}くなった。", "vi": "Giá càng tăng thì doanh số càng giảm."},
+      {"jp": "{日本語|にほんご}を{勉強|べんきょう}するにしたがって、{日本|にほん}の{文化|ぶんか}に{興味|きょうみ}が{出|で}てきた。", "vi": "Càng học tiếng Nhật, tôi càng hứng thú với văn hóa Nhật."},
+      {"jp": "{山|やま}を{登|のぼ}るにしたがって、{空気|くうき}が{薄|うす}くなってくる。", "vi": "Càng lên núi, không khí càng loãng."},
+      {"jp": "{説明書|せつめいしょ}にしたがって、{機械|きかい}を{操作|そうさ}してください。", "vi": "Hãy vận hành máy theo đúng hướng dẫn sử dụng."},
+      {"jp": "{年|とし}をとるにしたがって、{朝|あさ}{起|お}きるのが{早|はや}くなった。", "vi": "Càng có tuổi, tôi càng dậy sớm hơn."}
+    ],
+    "notes": "Phân biệt ba mẫu «càng... càng»: 「〜につれて」(thay đổi tự nhiên, song song, thường không chủ đích), 「〜にしたがって」(theo quá trình, có thể có chủ đích, còn có nghĩa «tuân theo»), 「〜に{伴|ともな}って」(sự kiện lớn xảy ra đồng thời). 「〜につれて」không có nghĩa «tuân theo»."
+  },
+  "g2d7": {
+    "pattern": "実戦問題 – Ôn tập tổng hợp tuần 2 (6 mẫu ngữ pháp N2)",
+    "meaningVi": "Tổng hợp và luyện tập 6 mẫu ngữ pháp tuần 2: 〜かいがある、ありえない、〜限り（期間）、〜さえ〜ば、〜としたら、〜にしたがって",
+    "formation": "Xem lại cách kết hợp riêng của từng mẫu ở các bài trước trong tuần; bài thực chiến tập trung phân biệt giả định, điều kiện và giới hạn thời gian.",
+    "explanationVi": "Bài luyện tập tổng hợp tuần 2 ôn 6 mẫu: 「〜かいがある」(bõ công), 「ありえない」(phủ nhận tuyệt đối), 「〜限り」(giới hạn thời gian — chỉ hôm nay), 「〜さえ〜ば」(điều kiện tối thiểu), 「〜としたら」(giả định), 「〜にしたがって」(càng... càng... / làm theo). Khi làm bài cần chú ý: 「ありえない」bộc lộ cảm xúc chủ quan mạnh; 「さえ〜ば」chỉ một điều kiện duy nhất; 「期間＋限り」khác hẳn 「〜ない限り」.",
+    "examples": [
+      {"jp": "{練習|れんしゅう}したかいがあって、{試合|しあい}に{勝|か}てた。", "vi": "Bõ công luyện tập, chúng tôi đã thắng trận đấu."},
+      {"jp": "あの{人|ひと}がそんなことをするなんて、ありえない。", "vi": "Người đó mà làm chuyện như vậy thì không đời nào."},
+      {"jp": "このクーポンは{本日限|ほんじつかぎ}りで、{明日|あした}からは{使|つか}えません。", "vi": "Phiếu này chỉ dùng được hôm nay, từ mai không dùng nữa."},
+      {"jp": "{彼|かれ}さえ{来|く}れば、パーティーは{成功|せいこう}するだろう。", "vi": "Chỉ cần anh ấy đến thì buổi tiệc sẽ thành công."},
+      {"jp": "{行|い}くとしたら、{電車|でんしゃ}で{行|い}くのがいいと{思|おも}う。", "vi": "Nếu đi thì tôi nghĩ đi tàu điện là tốt."}
+    ],
+    "notes": "Điểm dễ nhầm trong tuần: 「〜にしたがって」với 「〜につれて」(cả hai đều «càng... càng» nhưng 「にしたがって»còn mang nghĩa tuân theo); 「〜としたら」với 「〜とすると」(suy luận từ sự kiện đã biết); 「〜限り」phân biệt 3 nghĩa theo dạng từ đi trước."
+  },
+  "g3d1": {
+    "pattern": "〜どおり（に）",
+    "meaningVi": "đúng như..., theo như... (kết quả, hành động khớp với dự kiến, kế hoạch, lời nói)",
+    "formation": "{名詞|めいし}＋どおり／{動詞|どうし}た{形|けい}＋とおり",
+    "explanationVi": "Gắn sau danh từ hoặc thể た của động từ để diễn tả «đúng như» lời dự báo, kế hoạch, chỉ dẫn, suy nghĩ. Khi gắn sau động từ, dùng 「〜たとおり」diễn tả «đúng như việc đã làm» — ví dụ 「{言|い}ったとおり」(đúng như tôi đã nói). 「{予報|よほう}どおり」「{計画|けいかく}どおり」「{説明書|せつめいしょ}どおり」là các cách dùng rất phổ biến. Trước trợ từ に (どおりに) khi bổ nghĩa cho động từ.",
+    "examples": [
+      {"jp": "{予報|よほう}どおり、{午後|ごご}から{雨|あめ}が{降|ふ}り{出|だ}した。", "vi": "Đúng như dự báo, từ chiều trời bắt đầu mưa."},
+      {"jp": "{計画|けいかく}どおりに{進|すす}めば、{来月|らいげつ}には{完成|かんせい}するはずだ。", "vi": "Nếu tiến hành đúng kế hoạch thì hết tháng sau sẽ hoàn thành."},
+      {"jp": "{説明書|せつめいしょ}どおりに{組|く}み{立|た}てたら、うまくできた。", "vi": "Lắp ráp theo đúng hướng dẫn thì đã làm tốt."},
+      {"jp": "{先生|せんせい}の{言|い}ったとおりに{練習|れんしゅう}したら、{上達|じょうたつ}した。", "vi": "Luyện tập đúng như lời thầy dặn thì đã tiến bộ."},
+      {"jp": "{思|おも}ったとおりの{結果|けっか}にはならなかった。", "vi": "Kết quả không được như tôi nghĩ."}
+    ],
+    "notes": "Phân biệt cách kết hợp: {名詞|めいし}＋どおり (予報どおり) và {動詞|どうし}た{形|けい}＋とおり (言ったとおり). Hai dạng này đều có nghĩa «đúng như», chỉ khác từ loại đi trước."
+  },
+  "g3d2": {
+    "pattern": "〜わけだ",
+    "meaningVi": "hóa ra là..., thảo nào..., vậy nên... mới..., tức là... (giải thích lẽ tự nhiên, suy luận hợp lý)",
+    "formation": "{動詞|どうし}の{普通形|ふつうけい}＋わけだ／い{形容詞|けいようし}＋わけだ／{名詞|めいし}＋なわけだ",
+    "explanationVi": "Dùng khi người nói nhận ra, giải thích một sự việc là tất yếu, hợp lẽ: «vì vậy nên như thế là đương nhiên». Hai cách dùng chính: (1) suy luận từ sự việc quan sát được để rút ra kết luận — «thảo nào, hóa ra»; (2) nêu lý do khiến việc nhắc trước đó trở nên dễ hiểu, hợp lý. 「{太|ふと}るわけだ」= ăn nhiều như vậy thì béo là phải rồi.",
+    "examples": [
+      {"jp": "こんなに{食|た}べていたら、{太|ふと}るわけだ。", "vi": "Ăn như vậy thì béo là phải rồi."},
+      {"jp": "たくさん{練習|れんしゅう}したから、うまくなるわけだ。", "vi": "Vì luyện tập nhiều nên giỏi là đương nhiên."},
+      {"jp": "{店|みせ}が{閉|しま}っている。{今日|きょう}は{定休日|ていきゅうび}なわけだ。", "vi": "Cửa hàng đóng cửa. Hóa ra hôm nay là ngày nghỉ cố định."},
+      {"jp": "{上司|じょうし}が{厳|きび}しいから、{部下|ぶか}が{辞|や}めるわけだ。", "vi": "Vì cấp trên khó tính nên cấp dưới bỏ việc là phải."},
+      {"jp": "3{年|ねん}も{日本語|にほんご}を{勉強|べんきょう}していれば、{話|はな}せるわけだ。", "vi": "Học tiếng Nhật 3 năm rồi thì nói được là đương nhiên."}
+    ],
+    "notes": "Phân biệt ba mẫu «わけ»: 「〜わけがない」(không thể nào, hoàn toàn không có lý), 「〜わけにはいかない」(không thể làm vì đạo lý, trách nhiệm), 「〜ないわけにはいかない」(buộc phải làm). 「わけだ」chỉ suy luận hợp lý, trái ngược với 「わけがない」là phủ định khả năng đó."
+  },
+  "g3d3": {
+    "pattern": "〜とたん（に）",
+    "meaningVi": "vừa mới... thì ngay lập tức..., ngay khi vừa... thì (sự việc xảy ra bất ngờ, tức khắc)",
+    "formation": "{動詞|どうし}た{形|けい}＋とたん（に）",
+    "explanationVi": "Diễn tả ngay tại thời điểm vừa kết thúc hành động ở vế trước thì vế sau xảy ra một cách bất ngờ, đột ngột. Vế sau là sự kiện xảy ra thực tế, KHÔNG dùng với mệnh lệnh, ý chí, đề nghị hay suy đoán của người nói (〜たい、〜つもり、〜てください). Thêm に (とたんに) nhấn mạnh tính tức thì của sự việc.",
+    "examples": [
+      {"jp": "{食|た}べたとたん、お{腹|なか}が{痛|いた}くなった。", "vi": "Vừa ăn xong thì bụng đau ngay."},
+      {"jp": "{扉|とびら}を{開|あ}けたとたん、{猫|ねこ}が{飛|と}び{出|だ}した。", "vi": "Vừa mở cửa ra thì con mèo nhảy ra ngay."},
+      {"jp": "{電車|でんしゃ}が{出|で}たとたん、{傘|かさ}を{忘|わす}れたことに{気|き}づいた。", "vi": "Vừa khi tàu chạy thì tôi chợt nhận ra mình để quên ô."},
+      {"jp": "{言|い}い{終|お}わったとたんに、みんなが{笑|わら}い{出|だ}した。", "vi": "Vừa nói xong thì mọi người cười ồ lên."},
+      {"jp": "{顔|かお}を{洗|あら}ったとたん、{電話|でんわ}が{鳴|な}った。", "vi": "Vừa rửa mặt xong thì điện thoại reo."}
+    ],
+    "notes": "「かじったとたん」trong tiêu đề nghĩa là «vừa mới cắn thử một miếng thì...». Không dùng vế sau là ý chí, mệnh lệnh; nếu muốn vế sau có ý chí thì dùng 「〜{瞬間|しゅんかん}」. Đây là mẫu phân biệt hay gặp trong đề thi."
+  },
+  "g3d4": {
+    "pattern": "お＋ます{形|けい}＋のところ／お{忙|いそが}しいところ",
+    "meaningVi": "giữa lúc (bạn) đang... (bận rộn, gấp gáp) — dùng khi xin lỗi hoặc cảm ơn vì làm phiền ai đó lúc họ đang bận",
+    "formation": "お＋{動詞|どうし}ます{形|けい}＋のところ／い{形容詞|けいようし}＋ところ（お{忙|いそが}しいところ）",
+    "explanationVi": "Dùng ở đầu câu xin lỗi hoặc cảm ơn, thể hiện sự tôn trọng thời gian của đối phương: «đang lúc ông bà bận như thế này mà...». 「お{急|いそ}ぎのところ」= đang lúc anh chị đang vội. Đây là cách nói kính ngữ ({敬語|けいご}), rất thường gặp trong email công việc, điện thoại, thông báo. Dạng 「〜ところを」cũng dùng với nghĩa «đang lúc... thì» trong câu xin lỗi: 「お{忙|いそが}しいところを{申|もう}し{訳|わけ}ございません」.",
+    "examples": [
+      {"jp": "お{急|いそ}ぎのところ、{申|もう}し{訳|わけ}ございません。", "vi": "Xin lỗi vì đã làm phiền lúc anh đang vội."},
+      {"jp": "お{忙|いそが}しいところ、お{時間|じかん}を{頂|いただ}きありがとうございます。", "vi": "Cảm ơn anh chị đã dành thời gian dù đang rất bận."},
+      {"jp": "お{休|やす}みのところ、すみません。お{願|ねが}いがあります。", "vi": "Xin lỗi vì quấy rầy lúc anh đang nghỉ, tôi có một điều muốn nhờ."},
+      {"jp": "お{忙|いそが}しいところを、わざわざお{越|こ}しいただき、ありがとうございます。", "vi": "Cảm ơn anh chị đã đích thân đến dù đang bận."},
+      {"jp": "お{急|いそ}ぎのところ{申|もう}し{訳|わけ}ありませんが、{明日|あした}までにご{返信|へんしん}いただけますか。", "vi": "Xin lỗi vì phiền lúc anh đang vội, nhưng anh có thể phản hồi giúp tôi trước ngày mai được không?"}
+    ],
+    "notes": "Đây là cụm kính ngữ cố định thuộc nhóm 「お〜のところ」; chủ yếu dùng với các từ như {忙|いそが}しい、{急|いそ}ぐ、{休|やす}む. Khi xin lỗi thường dùng 「ところを」, khi cảm ơn thường dùng 「のに／ところ」— chú ý ngữ cảnh trong bài thi."
+  },
+  "g3d5": {
+    "pattern": "〜だらけ",
+    "meaningVi": "đầy..., phủ kín..., toàn là... (số lượng nhiều, phủ khắp, thường mang sắc thái tiêu cực)",
+    "formation": "{名詞|めいし}＋だらけ",
+    "explanationVi": "Gắn sau danh từ để diễn tả trạng thái bị thứ gì đó bao phủ, lấp đầy khắp nơi với số lượng nhiều, thường mang ấn tượng bẩn, xấu, không mong muốn (ほこりだらけ、{間違|まちが}いだらけ、{傷|きず}だらけ). Dùng được cho những thứ rời rạc, đếm được; không dùng cho chất lỏng hay trạng thái tích cực.",
+    "examples": [
+      {"jp": "{引|ひ}っ{越|こ}しの{後|あと}、{部屋|へや}はほこりだらけになった。", "vi": "Sau khi chuyển nhà, căn phòng phủ kín bụi."},
+      {"jp": "この{作文|さくぶん}は{間違|まちが}いだらけだ。", "vi": "Bài văn này sai sót đầy rẫy."},
+      {"jp": "{泥|どろ}だらけの{靴|くつ}で{家|いえ}に{入|はい}らないでください。", "vi": "Đừng vào nhà với đôi giày lấm lem bùn đất."},
+      {"jp": "あの{子|こ}はいつも{傷|きず}だらけで{帰|かえ}ってくる。", "vi": "Đứa trẻ đó lúc nào về nhà cũng đầy vết xước."},
+      {"jp": "{彼|かれ}の{机|つくえ}は{書類|しょるい}だらけで、{使|つか}う{場所|ばしょ}がない。", "vi": "Bàn làm việc của anh ấy phủ kín giấy tờ, không còn chỗ để dùng."}
+    ],
+    "notes": "Phân biệt: 「〜だらけ」(vật rời rạc bao phủ — ほこり、{間違|まちが}い、{傷|きず}), 「〜まみれ」(chất bẩn dính bám — あせ? 汗まみれ、{泥|どろ}まみれ), 「〜ずくめ」(toàn là thứ tốt, tích cực — いいことずくめ). 「だらけ」luôn mang sắc thái không mong muốn."
+  },
+  "g3d6": {
+    "pattern": "〜{一方|いっぽう}だ",
+    "meaningVi": "cứ tiếp tục... không ngừng, ngày càng... (xu hướng biến đổi theo một chiều, thường là tăng)",
+    "formation": "{動詞|どうし}の{辞書形|じしょけい}＋{一方|いっぽう}だ",
+    "explanationVi": "Diễn tả xu hướng thay đổi chỉ theo một chiều, không dừng lại, thường dùng với các động từ chỉ tăng, giảm như {増|ふ}える、{減|へ}る、{高|たか}くなる、{悪|わる}くなる. Hay dùng khi nói về số liệu, tin kinh tế, môi trường — mang tính báo cáo khách quan. Gần nghĩa với 「〜ばかりだ」nhưng 「〜一方だ」khách quan, trang trọng hơn.",
+    "examples": [
+      {"jp": "{物価|ぶっか}は{上|あ}がる{一方|いっぽう}だ。", "vi": "Giá cả cứ tăng không ngừng."},
+      {"jp": "{事故|じこ}の{数|かず}は{増|ふ}える{一方|いっぽう}だ。", "vi": "Số vụ tai nạn cứ tăng mãi."},
+      {"jp": "この{町|まち}の{人口|じんこう}は{減|へ}る{一方|いっぽう}だ。", "vi": "Dân số thị trấn này cứ giảm dần đều."},
+      {"jp": "{彼|かれ}の{病状|びょうじょう}は{悪|わる}くなる{一方|いっぽう}だ。", "vi": "Tình trạng bệnh của anh ấy ngày càng xấu đi."},
+      {"jp": "ゴミの{量|りょう}は{増|ふ}える{一方|いっぽう}で、{処理|しょり}が{追|お}いつかない。", "vi": "Lượng rác cứ tăng không ngừng nên việc xử lý không theo kịp."}
+    ],
+    "notes": "Phân biệt với 「〜ばかりだ」— gần nghĩa nhưng dùng nhiều trong văn nói, sắc thái phàn nàn. Lưu ý 「〜{一方|いっぽう}で（は）」là mẫu khác: «mặt khác, trong khi đó» — nêu hai khía cạnh đối lập, không phải xu hướng."
+  },
+  "g3d7": {
+    "pattern": "実戦問題 – Ôn tập tổng hợp tuần 3 (6 mẫu ngữ pháp N2)",
+    "meaningVi": "Tổng hợp và luyện tập 6 mẫu ngữ pháp tuần 3: 〜どおり、〜わけだ、〜とたん（に）、お〜のところ、〜だらけ、〜一方だ",
+    "formation": "Xem lại cách kết hợp riêng của từng mẫu ở các bài trước trong tuần; bài thực chiến tập trung nhận diện mẫu qua ngữ cảnh hội thoại và văn viết, phân biệt sắc thái.",
+    "explanationVi": "Bài luyện tập tổng hợp tuần 3 ôn 6 mẫu: 「〜どおり」(đúng như dự kiến), 「〜わけだ」(suy luận hợp lẽ — thảo nào), 「〜とたん（に）」(ngay khi vừa... thì), 「お〜のところ」(lúc bạn đang bận — kính ngữ), 「〜だらけ」(phủ đầy, tiêu cực), 「〜{一方|いっぽう}だ」(xu hướng một chiều). Khi làm bài cần chú ý: vế sau của 「とたん」không thể là ý chí; 「だらけ」mang sắc thái không mong muốn; 「一方だ」chỉ xu hướng tiếp diễn, không phải hai mặt đối lập.",
+    "examples": [
+      {"jp": "{予報|よほう}どおり、{明日|あした}は{雨|あめ}らしい。", "vi": "Đúng như dự báo, nghe nói ngày mai trời mưa."},
+      {"jp": "こんなに{寒|さむ}ければ、{雪|ゆき}が{降|ふ}るわけだ。", "vi": "Trời lạnh thế này thì tuyết rơi là phải."},
+      {"jp": "{布団|ふとん}を{敷|し}いたとたん、{眠|ねむ}くなった。", "vi": "Vừa trải chăn đệm ra thì buồn ngủ ngay."},
+      {"jp": "お{忙|いそが}しいところ、ありがとうございました。", "vi": "Cảm ơn anh chị dù đang rất bận."},
+      {"jp": "{間違|まちが}いだらけのレポートを{出|だ}してしまった。", "vi": "Tôi đã nộp bài báo cáo sai sót đầy rẫy."}
+    ],
+    "notes": "Điểm dễ nhầm tuần này: 「〜わけだ」(hợp lẽ) với 「〜わけがない」(không đời nào) và 「〜わけにはいかない」(không thể làm vì trách nhiệm); 「〜とたん」vế sau không dùng ý chí; 「お急ぎのところ」là kính ngữ cố định, không tự ý biến đổi."
+  }
+}

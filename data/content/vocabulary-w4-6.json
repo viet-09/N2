@@ -1,0 +1,254 @@
+{
+  "v4d1": {
+    "introVi": "Nhóm phó từ N2 diễn tả sự cố gắng xoay xở để đạt được điều gì đó \"bằng cách nào đó\": なんとか, どうにか, なんとなく, ともかく, ひとまず, せめて, まさか. Đây là các từ rất hay gặp trong hội thoại và bài đọc N2 khi nói về việc ứng biến, xử lý tình huống khó khăn.",
+    "items": [
+      {"word": "なんとか", "reading": "なんとか", "meaningVi": "bằng cách nào đó, cố xoay xở được", "example": {"jp": "{締め切り|しめきり}までに{何とか|なんとか}{資料|しりょう}を{仕上げた|しあげた}。", "vi": "Tôi đã cố xoay xở để hoàn thành tài liệu trước hạn."}},
+      {"word": "どうにか", "reading": "どうにか", "meaningVi": "cách nào đó, rốt cuộc cũng được", "example": {"jp": "{予算|よさん}が{少なかった|すくなかった}が、どうにか{旅行|りょこう}に{行けた|いけた}。", "vi": "Ngân sách ít nhưng cuối cùng tôi cũng đi du lịch được."}},
+      {"word": "なんとなく", "reading": "なんとなく", "meaningVi": "một cách mơ hồ, không rõ lý do", "example": {"jp": "なんとなく{今日|きょう}は{嫌な|いやな}{予感|よかん}がする。", "vi": "Không biết vì sao hôm nay tôi có cảm giác không lành."}},
+      {"word": "ともかく", "reading": "ともかく", "meaningVi": "dù sao thì, bất luận thế nào", "example": {"jp": "{理由|りゆう}はともかく、{結果|けっか}を{報告して|ほうこくして}ください。", "vi": "Bất luận lý do là gì, hãy báo cáo kết quả."}},
+      {"word": "ひとまず", "reading": "ひとまず", "meaningVi": "trước mắt, tạm thời", "example": {"jp": "ひとまず{今日|きょう}の{作業|さぎょう}はここまでにしましょう。", "vi": "Trước mắt hãy dừng công việc hôm nay ở đây."}},
+      {"word": "せめて", "reading": "せめて", "meaningVi": "ít nhất là", "example": {"jp": "せめて{一言|ひとこと}{挨拶|あいさつ}してから{帰る|かえる}べきだ。", "vi": "Ít nhất cũng nên chào một câu rồi về."}},
+      {"word": "まさか", "reading": "まさか", "meaningVi": "không lẽ, không ngờ", "example": {"jp": "まさか{彼|かれ}が{試験|しけん}に{落ちる|おちる}とは{思わなかった|おもわなかった}。", "vi": "Tôi không ngờ anh ấy lại trượt kỳ thi."}}
+    ]
+  },
+  "v4d2": {
+    "introVi": "Nhóm phó từ chỉ thời điểm chưa xác định trong tương lai, mang nghĩa \"sớm hay muộn, rồi sẽ\": いずれ, そのうち, やがて, いつか, まもなく, そろそろ, いよいよ. Cần phân biệt sắc thái gần - xa và mức độ chắc chắn của từng từ.",
+    "items": [
+      {"word": "いずれ", "reading": "いずれ", "meaningVi": "sớm hay muộn, rồi sẽ", "example": {"jp": "いずれ{真実|しんじつ}は{明らかに|あきらかに}なるだろう。", "vi": "Sớm hay muộn sự thật cũng sẽ được sáng tỏ."}},
+      {"word": "そのうち", "reading": "そのうち", "meaningVi": "chẳng bao lâu nữa", "example": {"jp": "そのうち{慣れる|なれる}から{心配|しんぱい}しなくていい。", "vi": "Chẳng bao lâu nữa sẽ quen nên không cần lo."}},
+      {"word": "やがて", "reading": "やがて", "meaningVi": "rồi thì, chẳng mấy chốc", "example": {"jp": "{子供|こども}たちはやがて{大人|おとな}になる。", "vi": "Những đứa trẻ rồi sẽ trở thành người lớn."}},
+      {"word": "いつか", "reading": "いつか", "meaningVi": "một ngày nào đó", "example": {"jp": "いつか{海外|かいがい}で{働きたい|はたらきたい}と{思って|おもって}いる。", "vi": "Tôi nghĩ một ngày nào đó muốn làm việc ở nước ngoài."}},
+      {"word": "まもなく", "reading": "まもなく", "meaningVi": "chẳng lâu nữa, sắp", "example": {"jp": "{電車|でんしゃ}はまもなく{到着します|とうちゃくします}。", "vi": "Tàu điện sắp đến rồi."}},
+      {"word": "そろそろ", "reading": "そろそろ", "meaningVi": "cũng đã đến lúc", "example": {"jp": "そろそろ{出発|しゅっぱつ}したほうがいいですね。", "vi": "Cũng đến lúc nên xuất phát rồi."}},
+      {"word": "いよいよ", "reading": "いよいよ", "meaningVi": "cuối cùng thì, càng ngày càng", "example": {"jp": "いよいよ{明日|あす}から{新しい|あたらしい}{生活|せいかつ}が{始まる|はじまる}。", "vi": "Cuối cùng từ ngày mai cuộc sống mới sẽ bắt đầu."}}
+    ]
+  },
+  "v4d3": {
+    "introVi": "Nhóm phó từ chỉ cách thức làm việc chăm chỉ, bền bỉ: せっせと, こつこつ, 着々と, 地道に, 真剣に, 熱心に, 一心に. Thường dùng để miêu tả thái độ nỗ lực trong học tập và công việc.",
+    "items": [
+      {"word": "せっせと", "reading": "せっせと", "meaningVi": "chăm chỉ, cần cù không nghỉ", "example": {"jp": "{毎日|まいにち}せっせと{漢字|かんじ}を{練習して|れんしゅうして}いる。", "vi": "Mỗi ngày tôi chăm chỉ luyện tập chữ Hán không ngừng."}},
+      {"word": "こつこつ", "reading": "こつこつ", "meaningVi": "kiên trì từng chút một", "example": {"jp": "こつこつ{勉強|べんきょう}を{続ければ|つづければ}きっと{合格できる|ごうかくできる}。", "vi": "Nếu kiên trì học từng chút thì chắc chắn sẽ đỗ."}},
+      {"word": "着々と", "reading": "ちゃくちゃくと", "meaningVi": "đều đặn, từng bước chắc chắn", "example": {"jp": "{計画|けいかく}は{着々と|ちゃくちゃくと}{進んで|すすんで}いる。", "vi": "Kế hoạch đang tiến triển đều đặn."}},
+      {"word": "地道に", "reading": "じみちに", "meaningVi": "một cách chân chất, kiên trì bền bỉ", "example": {"jp": "{地道に|じみちに}{努力を|どりょくを}{続けた|つづけた}{結果|けっか}、{成功した|せいこうした}。", "vi": "Kết quả của việc kiên trì nỗ lực bền bỉ là đã thành công."}},
+      {"word": "真剣に", "reading": "しんけんに", "meaningVi": "một cách nghiêm túc", "example": {"jp": "{真剣に|しんけんに}{将来|しょうらい}について{考えて|かんがえて}みた。", "vi": "Tôi đã suy nghĩ nghiêm túc về tương lai."}},
+      {"word": "熱心に", "reading": "ねっしんに", "meaningVi": "một cách nhiệt tình, hăng say", "example": {"jp": "{学生|がくせい}たちは{熱心に|ねっしんに}{授業|じゅぎょう}を{受けて|うけて}いる。", "vi": "Các học sinh đang tham gia bài học một cách hăng say."}},
+      {"word": "一心に", "reading": "いっしんに", "meaningVi": "một lòng một dạ, tập trung toàn tâm", "example": {"jp": "{子|こ}のために{一心に|いっしんに}{働いて|はたらいて}きた。", "vi": "Vì con mà tôi đã làm việc một lòng một dạ."}}
+    ]
+  },
+  "v4d4": {
+    "introVi": "Nhóm phó từ chỉ mức độ tăng thêm: さらに, いっそう, なおさら, ますます, 一段と, より一層, それ以上に. Các từ này dùng để nhấn mạnh sự gia tăng của trạng thái hoặc hành động.",
+    "items": [
+      {"word": "さらに", "reading": "さらに", "meaningVi": "hơn nữa, thêm nữa", "example": {"jp": "{値段|ねだん}はさらに{上がる|あがる}{見込み|みこみ}だ。", "vi": "Giá cả có khả năng sẽ tăng thêm nữa."}},
+      {"word": "いっそう", "reading": "いっそう", "meaningVi": "càng thêm, hơn hẳn", "example": {"jp": "{練習|れんしゅう}すればいっそう{上手に|じょうずに}なる。", "vi": "Nếu luyện tập thì sẽ giỏi hơn hẳn."}},
+      {"word": "なおさら", "reading": "なおさら", "meaningVi": "càng ~ hơn nữa (nhấn mạnh so sánh)", "example": {"jp": "{弟|おとうと}が{怒られた|おこられた}ので、なおさら{緊張した|きんちょうした}。", "vi": "Vì em trai bị mắng nên tôi càng thêm căng thẳng."}},
+      {"word": "ますます", "reading": "ますます", "meaningVi": "ngày càng", "example": {"jp": "{人口|じんこう}はますます{減少して|げんしょうして}いる。", "vi": "Dân số ngày càng giảm."}},
+      {"word": "一段と", "reading": "いちだんと", "meaningVi": "hơn một bậc, càng thêm rõ rệt", "example": {"jp": "{今年|こんねん}の{夏|なつ}は{一段と|いちだんと}{暑い|あつい}。", "vi": "Mùa hè năm nay nóng hơn hẳn."}},
+      {"word": "より一層", "reading": "よりいっそう", "meaningVi": "càng thêm, hơn nữa (nhấn mạnh)", "example": {"jp": "これから{より一層|よりいっそう}の{努力|どりょく}が{必要だ|ひつようだ}。", "vi": "Từ nay cần nỗ lực hơn nữa."}},
+      {"word": "それ以上に", "reading": "それいじょうに", "meaningVi": "hơn cả mức đó", "example": {"jp": "{期待して|きたいして}いたが、それ以上に{良い|よい}{結果|けっか}が{出た|でた}。", "vi": "Tôi đã kỳ vọng nhưng kết quả ra còn tốt hơn cả mong đợi."}}
+    ]
+  },
+  "v4d5": {
+    "introVi": "Nhóm phó từ chỉ sự ưu tiên tạm thời, làm trước mắt: とりあえず, さしあたり, まずは, 一応, 当面, 暫定的に, ともあれ. Thường dùng khi chưa có giải pháp lâu dài nhưng cần xử lý ngay.",
+    "items": [
+      {"word": "とりあえず", "reading": "とりあえず", "meaningVi": "trước hết, tạm thời", "example": {"jp": "とりあえず{荷物|にもつ}を{置いて|おいて}から{話しましょう|はなしましょう}。", "vi": "Trước hết hãy đặt hành lý xuống rồi nói chuyện."}},
+      {"word": "さしあたり", "reading": "さしあたり", "meaningVi": "hiện tại, trước mắt", "example": {"jp": "さしあたり{問題|もんだい}はない。", "vi": "Trước mắt không có vấn đề gì."}},
+      {"word": "まずは", "reading": "まずは", "meaningVi": "trước tiên là", "example": {"jp": "まずは{自己紹介|じこしょうかい}から{始めましょう|はじめましょう}。", "vi": "Trước tiên hãy bắt đầu bằng việc tự giới thiệu."}},
+      {"word": "一応", "reading": "いちおう", "meaningVi": "tạm coi như, đại khái là", "example": {"jp": "{資料|しりょう}は{一応|いちおう}{準備して|じゅんびして}おいた。", "vi": "Tôi đã chuẩn bị tài liệu tạm coi như xong."}},
+      {"word": "当面", "reading": "とうめん", "meaningVi": "trước mắt, hiện thời", "example": {"jp": "{当面|とうめん}は{現状|げんじょう}を{維持する|いじする}{方針だ|ほうしんだ}。", "vi": "Trước mắt chủ trương là duy trì hiện trạng."}},
+      {"word": "暫定的に", "reading": "ざんていてきに", "meaningVi": "một cách tạm thời", "example": {"jp": "{新しい|あたらしい}{規則|きそく}は{暫定的に|ざんていてきに}{導入された|どうにゅうされた}。", "vi": "Quy định mới đã được áp dụng một cách tạm thời."}},
+      {"word": "ともあれ", "reading": "ともあれ", "meaningVi": "dù sao cũng, bất luận", "example": {"jp": "ともあれ、{無事に|むじに}{終わって|おわって}よかった。", "vi": "Dù sao thì kết thúc an toàn cũng là điều tốt."}}
+    ]
+  },
+  "v4d6": {
+    "introVi": "Nhóm phó từ mang tính \"kết luận, một khi đã...\": いったん, ひとたび, ついに, とうとう, 結局, 最終的に, 一度. Dùng để diễn tả một mốc thời gian mang tính quyết định hoặc kết quả sau cùng.",
+    "items": [
+      {"word": "いったん", "reading": "いったん", "meaningVi": "một khi đã, tạm thời", "example": {"jp": "いったん{決めたら|きめたら}{最後まで|さいごまで}やり{抜く|ぬく}べきだ。", "vi": "Một khi đã quyết định thì nên làm đến cùng."}},
+      {"word": "ひとたび", "reading": "ひとたび", "meaningVi": "một khi (văn viết, trang trọng)", "example": {"jp": "ひとたび{事故|じこ}が{起きれば|おきれば}{大きな|おおきな}{被害|ひがい}が{出る|でる}。", "vi": "Một khi tai nạn xảy ra thì thiệt hại sẽ rất lớn."}},
+      {"word": "ついに", "reading": "ついに", "meaningVi": "cuối cùng thì (đã đạt được)", "example": {"jp": "{長い|ながい}{努力|どりょく}の{末|すえ}、ついに{夢|ゆめ}が{叶った|かなった}。", "vi": "Sau nỗ lực dài lâu, cuối cùng ước mơ đã thành hiện thực."}},
+      {"word": "とうとう", "reading": "とうとう", "meaningVi": "rốt cuộc thì (thường mang sắc thái chờ đợi lâu)", "example": {"jp": "{雨|あめ}はとうとう{止まなかった|やまなかった}。", "vi": "Cuối cùng mưa vẫn không ngừng."}},
+      {"word": "結局", "reading": "けっきょく", "meaningVi": "rốt cuộc, cuối cùng", "example": {"jp": "{結局|けっきょく}どちらの{案|あん}を{選んだ|えらんだ}のですか。", "vi": "Rốt cuộc bạn đã chọn phương án nào?"}},
+      {"word": "最終的に", "reading": "さいしゅうてきに", "meaningVi": "cuối cùng, sau cùng", "example": {"jp": "{最終的に|さいしゅうてきに}{全員が|ぜんいんが}{賛成した|さんせいした}。", "vi": "Cuối cùng tất cả mọi người đã đồng ý."}},
+      {"word": "一度", "reading": "いちど", "meaningVi": "một lần, một khi (thường dùng với ～たら)", "example": {"jp": "{一度|いちど}{覚えた|おぼえた}ことは{忘れない|わすれない}ようにしたい。", "vi": "Tôi muốn những gì đã học một lần thì sẽ không quên."}}
+    ]
+  },
+  "v4d7": {
+    "introVi": "Bộ ôn tập tổng hợp các phó từ N2 đã học trong tuần 4: nhóm diễn tả sự xoay xở (なんとか), thời điểm chưa xác định (いずれ), sự chăm chỉ (こつこつ), mức độ tăng thêm (ますます), ưu tiên tạm thời (とりあえず) và kết luận (結局, いったん).",
+    "items": [
+      {"word": "なんとか", "reading": "なんとか", "meaningVi": "bằng cách nào đó, cố xoay xở được", "example": {"jp": "{一人で|ひとりで}なんとか{解決した|かいけつした}。", "vi": "Tôi đã tự mình xoay xở giải quyết được."}},
+      {"word": "いずれ", "reading": "いずれ", "meaningVi": "sớm hay muộn, rồi sẽ", "example": {"jp": "いずれこの{技術|ぎじゅつ}は{普及する|ふきゅうする}だろう。", "vi": "Sớm hay muộn công nghệ này rồi sẽ phổ biến."}},
+      {"word": "こつこつ", "reading": "こつこつ", "meaningVi": "kiên trì từng chút một", "example": {"jp": "こつこつ{貯金して|ちょきんして}{家を|いえを}{買った|かった}。", "vi": "Tôi đã kiên trì tiết kiệm từng chút và mua được nhà."}},
+      {"word": "ますます", "reading": "ますます", "meaningVi": "ngày càng", "example": {"jp": "{雨|あめ}はますます{強くなって|つよくなって}きた。", "vi": "Mưa ngày càng mạnh hơn."}},
+      {"word": "とりあえず", "reading": "とりあえず", "meaningVi": "trước hết, tạm thời", "example": {"jp": "とりあえず{今日|きょう}はここまでにしましょう。", "vi": "Trước hết hôm nay hãy dừng ở đây."}},
+      {"word": "結局", "reading": "けっきょく", "meaningVi": "rốt cuộc, cuối cùng", "example": {"jp": "{結局|けっきょく}{予定|よてい}は{変わらなかった|かわらなかった}。", "vi": "Rốt cuộc kế hoạch vẫn không thay đổi."}},
+      {"word": "いったん", "reading": "いったん", "meaningVi": "một khi đã, tạm thời", "example": {"jp": "いったん{休憩して|きゅうけいして}から{続けよう|つづけよう}。", "vi": "Hãy nghỉ một lúc rồi tiếp tục."}}
+    ]
+  },
+  "v5d1": {
+    "introVi": "Nhóm danh từ N2 chỉ khái niệm tổng quát về sự việc và thời gian: 物事, 日中, 年月, 日々, 月日, 年中, 出来事. Đây là các từ Hán-Nhật thường gặp trong văn viết và bài đọc hiểu N2.",
+    "items": [
+      {"word": "物事", "reading": "ものごと", "meaningVi": "mọi sự việc, vạn vật", "example": {"jp": "{物事|ものごと}には{必ず|かならず}{原因|げんいん}と{結果|けっか}がある。", "vi": "Mọi sự việc đều có nguyên nhân và kết quả."}},
+      {"word": "日中", "reading": "にっちゅう", "meaningVi": "ban ngày, giữa ngày", "example": {"jp": "{日中|にっちゅう}は{気温|きおん}が{高くなる|たかくなる}でしょう。", "vi": "Ban ngày nhiệt độ có thể sẽ tăng cao."}},
+      {"word": "年月", "reading": "ねんげつ", "meaningVi": "năm tháng, thời gian dài", "example": {"jp": "{長い|ながい}{年月|ねんげつ}をかけて{完成させた|かんせいさせた}{作品|さくひん}だ。", "vi": "Đây là tác phẩm được hoàn thành qua nhiều năm tháng."}},
+      {"word": "日々", "reading": "ひび", "meaningVi": "ngày ngày, mỗi ngày", "example": {"jp": "{日々|ひび}の{努力|どりょく}が{将来|しょうらい}につながる。", "vi": "Nỗ lực mỗi ngày sẽ dẫn đến tương lai."}},
+      {"word": "月日", "reading": "つきひ", "meaningVi": "ngày tháng, thời gian trôi qua", "example": {"jp": "{月日|つきひ}が{経つ|たつ}のは{早い|はやい}。", "vi": "Thời gian trôi qua thật nhanh."}},
+      {"word": "年中", "reading": "ねんじゅう", "meaningVi": "suốt năm, quanh năm", "example": {"jp": "この{店|みせ}は{年中|ねんじゅう}{無休だ|むきゅうだ}。", "vi": "Quán này mở suốt năm không nghỉ."}},
+      {"word": "出来事", "reading": "できごと", "meaningVi": "sự việc xảy ra, sự kiện", "example": {"jp": "{今日|きょう}{起きた|おきた}{出来事|できごと}を{日記|にっき}に{書いた|かいた}。", "vi": "Tôi đã viết vào nhật ký sự việc xảy ra hôm nay."}}
+    ]
+  },
+  "v5d2": {
+    "introVi": "Nhóm danh từ chỉ thời gian, xã hội và công việc: 夜中, 世間, 作業, 世の中, 真夜中, 作業場, 世間話. Các từ này thường xuất hiện trong hội thoại đời thường lẫn văn viết trang trọng.",
+    "items": [
+      {"word": "夜中", "reading": "よなか", "meaningVi": "giữa đêm, lúc nửa đêm", "example": {"jp": "{夜中|よなか}に{地震|じしん}で{起きた|おきた}。", "vi": "Tôi đã bị tỉnh giấc lúc nửa đêm vì động đất."}},
+      {"word": "世間", "reading": "せけん", "meaningVi": "xã hội, thế gian, người đời", "example": {"jp": "{世間|せけん}の{目|め}を{気にしすぎる|きにしすぎる}のはよくない。", "vi": "Quá để tâm đến ánh nhìn của người đời là không tốt."}},
+      {"word": "作業", "reading": "さぎょう", "meaningVi": "công việc, tác vụ", "example": {"jp": "{危険な|きけんな}{作業|さぎょう}には{十分な|じゅうぶんな}{注意|ちゅうい}が{必要だ|ひつようだ}。", "vi": "Công việc nguy hiểm cần sự chú ý đầy đủ."}},
+      {"word": "世の中", "reading": "よのなか", "meaningVi": "thế gian, xã hội", "example": {"jp": "{世の中|よのなか}は{変わり|かわり}{続けて|つづけて}いる。", "vi": "Thế gian vẫn không ngừng thay đổi."}},
+      {"word": "真夜中", "reading": "まよなか", "meaningVi": "nửa đêm, đêm khuya", "example": {"jp": "{真夜中|まよなか}まで{仕事|しごと}をしていた。", "vi": "Tôi làm việc đến tận đêm khuya."}},
+      {"word": "作業場", "reading": "さぎょうば", "meaningVi": "công trường, nơi làm việc", "example": {"jp": "{作業場|さぎょうば}には{関係者|かんけいしゃ}しか{入れない|はいれない}。", "vi": "Chỉ người liên quan mới được vào công trường."}},
+      {"word": "世間話", "reading": "せけんばなし", "meaningVi": "chuyện phiếm, chuyện đời thường", "example": {"jp": "{近所|きんじょ}の{人|ひと}と{世間話|せけんばなし}をした。", "vi": "Tôi đã nói chuyện phiếm với người hàng xóm."}}
+    ]
+  },
+  "v5d3": {
+    "introVi": "Nhóm danh từ/tính từ chỉ cả cuộc đời, sự cẩn trọng và sự xuất sắc: 一生, 用心, 見事, 一生懸命, 用心深い, 見事に, 生涯.",
+    "items": [
+      {"word": "一生", "reading": "いっしょう", "meaningVi": "cả đời, một kiếp người", "example": {"jp": "{一生|いっしょう}{忘れられない|わすれられない}{思い出|おもいで}になった。", "vi": "Đó trở thành một kỷ niệm không thể quên suốt đời."}},
+      {"word": "用心", "reading": "ようじん", "meaningVi": "cẩn trọng, đề phòng", "example": {"jp": "{夜道|よみち}は{用心して|ようじんして}{歩いた|あるいた}ほうがいい。", "vi": "Nên đi cẩn thận khi đi đường vào ban đêm."}},
+      {"word": "見事", "reading": "みごと", "meaningVi": "xuất sắc, tuyệt vời", "example": {"jp": "{彼女|かのじょ}は{見事な|みごとな}{演奏|えんそう}を{披露した|ひろうした}。", "vi": "Cô ấy đã trình diễn một bản nhạc tuyệt vời."}},
+      {"word": "一生懸命", "reading": "いっしょうけんめい", "meaningVi": "hết mình, dốc toàn lực", "example": {"jp": "{試験|しけん}に{向けて|むけて}{一生懸命|いっしょうけんめい}{勉強した|べんきょうした}。", "vi": "Tôi đã học hết mình hướng tới kỳ thi."}},
+      {"word": "用心深い", "reading": "ようじんぶかい", "meaningVi": "rất cẩn trọng, thận trọng", "example": {"jp": "{彼|かれ}は{用心深い|ようじんぶかい}{性格|せいかく}をしている。", "vi": "Anh ấy có tính cách rất thận trọng."}},
+      {"word": "見事に", "reading": "みごとに", "meaningVi": "một cách xuất sắc", "example": {"jp": "{計画|けいかく}は{見事に|みごとに}{成功した|せいこうした}。", "vi": "Kế hoạch đã thành công một cách xuất sắc."}},
+      {"word": "生涯", "reading": "しょうがい", "meaningVi": "suốt đời, cả cuộc đời", "example": {"jp": "{彼|かれ}は{生涯|しょうがい}{独身|どくしん}だった。", "vi": "Ông ấy sống độc thân suốt đời."}}
+    ]
+  },
+  "v5d4": {
+    "introVi": "Nhóm danh từ liên quan đến đất đai, tên họ và việc phát hành sản phẩm: 土地, 苗字, 発売, 地元, 名字, 発売日, 敷地.",
+    "items": [
+      {"word": "土地", "reading": "とち", "meaningVi": "đất đai, mảnh đất", "example": {"jp": "この{土地|とち}に{家を|いえを}{建てる|たてる}{予定だ|よていだ}。", "vi": "Dự định xây nhà trên mảnh đất này."}},
+      {"word": "苗字", "reading": "みょうじ", "meaningVi": "họ (tên họ)", "example": {"jp": "{日本人|にほんじん}の{苗字|みょうじ}には{地名|ちめい}に{由来する|ゆらいする}ものが{多い|おおい}。", "vi": "Nhiều họ của người Nhật có nguồn gốc từ địa danh."}},
+      {"word": "発売", "reading": "はつばい", "meaningVi": "phát hành, mở bán", "example": {"jp": "{新製品|しんせいひん}は{来月|らいげつ}{発売される|はつばいされる}。", "vi": "Sản phẩm mới sẽ được phát hành vào tháng sau."}},
+      {"word": "地元", "reading": "じもと", "meaningVi": "địa phương, quê nhà", "example": {"jp": "{地元|じもと}の{食材|しょくざい}を{使った|つかった}{料理|りょうり}が{人気だ|にんきだ}。", "vi": "Món ăn sử dụng nguyên liệu địa phương rất được ưa chuộng."}},
+      {"word": "名字", "reading": "みょうじ", "meaningVi": "họ (cách viết khác)", "example": {"jp": "{結婚|けっこん}して{名字|みょうじ}が{変わった|かわった}。", "vi": "Sau khi kết hôn, họ của tôi đã thay đổi."}},
+      {"word": "発売日", "reading": "はつばいび", "meaningVi": "ngày phát hành", "example": {"jp": "{発売日|はつばいび}に{お店|おみせ}に{並んだ|ならんだ}。", "vi": "Tôi đã xếp hàng ở cửa hàng vào ngày phát hành."}},
+      {"word": "敷地", "reading": "しきち", "meaningVi": "khu đất, mặt bằng", "example": {"jp": "{工場|こうじょう}の{敷地|しきち}は{とても|とても}{広い|ひろい}。", "vi": "Khu đất của nhà máy rất rộng."}}
+    ]
+  },
+  "v5d5": {
+    "introVi": "Nhóm danh từ liên quan đến ảo thuật, dấu hiệu và thái độ: 手品, 合図, 強気, 手品師, 目印, 弱気, 身振り.",
+    "items": [
+      {"word": "手品", "reading": "てじな", "meaningVi": "ảo thuật", "example": {"jp": "{子供|こども}たちに{手品|てじな}を{見せた|みせた}。", "vi": "Tôi đã biểu diễn ảo thuật cho các em nhỏ xem."}},
+      {"word": "合図", "reading": "あいず", "meaningVi": "dấu hiệu, ra hiệu", "example": {"jp": "{先生|せんせい}の{合図|あいず}で{全員が|ぜんいんが}{立ち上がった|たちあがった}。", "vi": "Theo hiệu lệnh của giáo viên, tất cả đã đứng lên."}},
+      {"word": "強気", "reading": "つよき", "meaningVi": "thái độ mạnh mẽ, cứng rắn", "example": {"jp": "{交渉|こうしょう}では{強気な|つよきな}{姿勢|しせい}を{見せた|みせた}。", "vi": "Trong đàm phán, anh ấy đã thể hiện thái độ cứng rắn."}},
+      {"word": "手品師", "reading": "てじなし", "meaningVi": "nhà ảo thuật", "example": {"jp": "{手品師|てじなし}は{見事な|みごとな}トリックを{披露した|ひろうした}。", "vi": "Nhà ảo thuật đã trình diễn một trò ảo thuật xuất sắc."}},
+      {"word": "目印", "reading": "めじるし", "meaningVi": "dấu hiệu để nhận biết", "example": {"jp": "{待ち合わせ|まちあわせ}の{目印|めじるし}として{赤い|あかい}{傘|かさ}を{持って|もって}いた。", "vi": "Tôi mang một chiếc dù màu đỏ làm dấu hiệu để hẹn gặp."}},
+      {"word": "弱気", "reading": "よわき", "meaningVi": "yếu thế, nhu nhược", "example": {"jp": "そんな{弱気な|よわきな}{発言|はつげん}はやめてください。", "vi": "Xin hãy dừng những lời nói yếu thế như vậy."}},
+      {"word": "身振り", "reading": "みぶり", "meaningVi": "cử chỉ, điệu bộ", "example": {"jp": "{身振り|みぶり}を{使って|つかって}{説明した|せつめいした}。", "vi": "Tôi đã giải thích bằng cách sử dụng cử chỉ."}}
+    ]
+  },
+  "v5d6": {
+    "introVi": "Nhóm danh từ/tính từ liên quan đến sự nghiêm túc, thoải mái và tiêu chuẩn tham khảo: 本気, 気楽, 目安, 本気で, 気軽に, 見込み, 基準.",
+    "items": [
+      {"word": "本気", "reading": "ほんき", "meaningVi": "nghiêm túc, thật lòng", "example": {"jp": "{本気|ほんき}で{留学|りゅうがく}を{考えて|かんがえて}いる。", "vi": "Tôi đang nghiêm túc suy nghĩ về việc đi du học."}},
+      {"word": "気楽", "reading": "きらく", "meaningVi": "thư thái, thoải mái", "example": {"jp": "もっと{気楽に|きらくに}{考えれば|かんがえれば}いい。", "vi": "Cứ nghĩ thoải mái hơn thì tốt."}},
+      {"word": "目安", "reading": "めやす", "meaningVi": "mức chuẩn, tiêu chí tham khảo", "example": {"jp": "{予算|よさん}の{目安|めやす}は{十万円|じゅうまんえん}だ。", "vi": "Mức tham khảo cho ngân sách là 100 nghìn yên."}},
+      {"word": "本気で", "reading": "ほんきで", "meaningVi": "một cách nghiêm túc, thật sự", "example": {"jp": "{本気で|ほんきで}{謝れば|あやまれば}きっと{許して|ゆるして}くれる。", "vi": "Nếu xin lỗi một cách thật lòng thì chắc chắn sẽ được tha thứ."}},
+      {"word": "気軽に", "reading": "きがるに", "meaningVi": "một cách nhẹ nhàng, thoải mái", "example": {"jp": "{何でも|なんでも}{気軽に|きがるに}{相談して|そうだんして}ください。", "vi": "Hãy thoải mái tham khảo ý kiến về bất cứ điều gì."}},
+      {"word": "見込み", "reading": "みこみ", "meaningVi": "dự đoán, khả năng", "example": {"jp": "{合格|ごうかく}の{見込み|みこみ}は{十分に|じゅうぶんに}ある。", "vi": "Khả năng đỗ là hoàn toàn có."}},
+      {"word": "基準", "reading": "きじゅん", "meaningVi": "tiêu chuẩn, chuẩn mực", "example": {"jp": "{評価|ひょうか}の{基準|きじゅん}を{明確に|めいかくに}する{必要が|ひつようが}ある。", "vi": "Cần làm rõ tiêu chuẩn đánh giá."}}
+    ]
+  },
+  "v5d7": {
+    "introVi": "Bộ ôn tập tổng hợp danh từ N2 đã học trong tuần 5: các từ chỉ khái niệm tổng quát (物事), xã hội (世間), cả cuộc đời (一生), việc phát hành (発売), dấu hiệu (合図) và sự nghiêm túc, tiêu chuẩn (本気, 目安).",
+    "items": [
+      {"word": "物事", "reading": "ものごと", "meaningVi": "mọi sự việc, vạn vật", "example": {"jp": "{物事|ものごと}を{冷静に|れいせいに}{判断する|はんだんする}ことが{大切だ|たいせつだ}。", "vi": "Việc phán đoán mọi sự việc một cách bình tĩnh là điều quan trọng."}},
+      {"word": "世間", "reading": "せけん", "meaningVi": "xã hội, thế gian, người đời", "example": {"jp": "{世間|せけん}で{話題|わだい}になっているニュースだ。", "vi": "Đó là tin tức đang trở thành đề tài trong xã hội."}},
+      {"word": "一生", "reading": "いっしょう", "meaningVi": "cả đời, một kiếp người", "example": {"jp": "{一生|いっしょう}に{一度|いちど}の{経験|けいけん}だった。", "vi": "Đó là một trải nghiệm chỉ có một lần trong đời."}},
+      {"word": "発売", "reading": "はつばい", "meaningVi": "phát hành, mở bán", "example": {"jp": "その{本|ほん}は{今週|こんしゅう}{発売された|はつばいされた}。", "vi": "Cuốn sách đó đã được phát hành trong tuần này."}},
+      {"word": "合図", "reading": "あいず", "meaningVi": "dấu hiệu, ra hiệu", "example": {"jp": "{手で|てで}{合図|あいず}を{送った|おくった}。", "vi": "Tôi đã ra hiệu bằng tay."}},
+      {"word": "本気", "reading": "ほんき", "meaningVi": "nghiêm túc, thật lòng", "example": {"jp": "{今度|こんど}こそ{本気|ほんき}だ。", "vi": "Lần này tôi thực sự nghiêm túc."}},
+      {"word": "目安", "reading": "めやす", "meaningVi": "mức chuẩn, tiêu chí tham khảo", "example": {"jp": "この{数字|すうじ}を{目安|めやす}にして{計画|けいかく}を{立てた|たてた}。", "vi": "Tôi đã lập kế hoạch dựa trên con số này làm mức tham khảo."}}
+    ]
+  },
+  "v6d1": {
+    "introVi": "Nhóm từ mượn viết bằng katakana thường dùng trong môi trường công việc, văn phòng: データ, プロジェクト, スケジュール, システム, マニュアル, トラブル, レベル.",
+    "items": [
+      {"word": "データ", "reading": "データ", "meaningVi": "dữ liệu", "example": {"jp": "{会議|かいぎ}の{前に|まえに}データを{整理した|せいりした}。", "vi": "Trước cuộc họp tôi đã sắp xếp dữ liệu."}},
+      {"word": "プロジェクト", "reading": "プロジェクト", "meaningVi": "dự án", "example": {"jp": "{新しい|あたらしい}プロジェクトが{始まった|はじまった}。", "vi": "Một dự án mới đã bắt đầu."}},
+      {"word": "スケジュール", "reading": "スケジュール", "meaningVi": "lịch trình", "example": {"jp": "{来週|らいしゅう}のスケジュールを{確認して|かくにんして}ください。", "vi": "Hãy xác nhận lịch trình của tuần sau."}},
+      {"word": "システム", "reading": "システム", "meaningVi": "hệ thống", "example": {"jp": "{新しい|あたらしい}システムを{導入する|どうにゅうする}{予定だ|よていだ}。", "vi": "Dự định sẽ áp dụng hệ thống mới."}},
+      {"word": "マニュアル", "reading": "マニュアル", "meaningVi": "hướng dẫn sử dụng, sổ tay", "example": {"jp": "マニュアルに{従って|したがって}{操作して|そうさして}ください。", "vi": "Hãy vận hành theo hướng dẫn sử dụng."}},
+      {"word": "トラブル", "reading": "トラブル", "meaningVi": "rắc rối, vấn đề", "example": {"jp": "システムにトラブルが{発生した|はっせいした}。", "vi": "Hệ thống đã xảy ra sự cố."}},
+      {"word": "レベル", "reading": "レベル", "meaningVi": "mức độ, cấp độ", "example": {"jp": "{日本語|にほんご}のレベルが{上がった|あがった}。", "vi": "Trình độ tiếng Nhật đã được nâng lên."}}
+    ]
+  },
+  "v6d2": {
+    "introVi": "Nhóm từ mượn katakana thường dùng trong đời sống hằng ngày: バランス, イメージ, ストレス, チャンス, パターン, リズム, ペース.",
+    "items": [
+      {"word": "バランス", "reading": "バランス", "meaningVi": "sự cân bằng", "example": {"jp": "{食事|しょくじ}のバランスを{考えて|かんがえて}{生活する|せいかつする}。", "vi": "Sống có tính đến sự cân bằng trong ăn uống."}},
+      {"word": "イメージ", "reading": "イメージ", "meaningVi": "hình ảnh, ấn tượng", "example": {"jp": "{会社|かいしゃ}のイメージを{良くする|よくする}{工夫|くふう}が{必要だ|ひつようだ}。", "vi": "Cần có sự sáng tạo để cải thiện hình ảnh công ty."}},
+      {"word": "ストレス", "reading": "ストレス", "meaningVi": "căng thẳng", "example": {"jp": "{仕事|しごと}のストレスで{体調|たいちょう}を{崩した|くずした}。", "vi": "Tôi đã bị suy nhược sức khỏe do căng thẳng công việc."}},
+      {"word": "チャンス", "reading": "チャンス", "meaningVi": "cơ hội", "example": {"jp": "このチャンスを{生かす|いかす}べきだ。", "vi": "Nên tận dụng cơ hội này."}},
+      {"word": "パターン", "reading": "パターン", "meaningVi": "kiểu mẫu, mô hình", "example": {"jp": "{失敗|しっぱい}のパターンを{分析した|ぶんせきした}。", "vi": "Tôi đã phân tích mô hình thất bại."}},
+      {"word": "リズム", "reading": "リズム", "meaningVi": "nhịp điệu", "example": {"jp": "{生活|せいかつ}のリズムを{整える|ととのえる}ことが{大切だ|たいせつだ}。", "vi": "Việc điều chỉnh nhịp sống là điều quan trọng."}},
+      {"word": "ペース", "reading": "ペース", "meaningVi": "tốc độ, nhịp độ", "example": {"jp": "{自分|じぶん}のペースで{勉強を|べんきょうを}{進める|すすめる}。", "vi": "Tiến hành học tập theo nhịp độ của riêng mình."}}
+    ]
+  },
+  "v6d3": {
+    "introVi": "Nhóm từ mượn katakana về công nghệ và xã hội: インターネット, コミュニケーション, サービス, アイデア, エネルギー, マイナス, プラス.",
+    "items": [
+      {"word": "インターネット", "reading": "インターネット", "meaningVi": "internet", "example": {"jp": "インターネットで{情報を|じょうほうを}{検索した|けんさくした}。", "vi": "Tôi đã tìm kiếm thông tin trên internet."}},
+      {"word": "コミュニケーション", "reading": "コミュニケーション", "meaningVi": "giao tiếp", "example": {"jp": "{職場|しょくば}でのコミュニケーションが{重要だ|じゅうようだ}。", "vi": "Giao tiếp tại nơi làm việc rất quan trọng."}},
+      {"word": "サービス", "reading": "サービス", "meaningVi": "dịch vụ", "example": {"jp": "この{店|みせ}のサービスは{素晴らしい|すばらしい}。", "vi": "Dịch vụ của quán này thật tuyệt vời."}},
+      {"word": "アイデア", "reading": "アイデア", "meaningVi": "ý tưởng", "example": {"jp": "{新しい|あたらしい}アイデアを{提案した|ていあんした}。", "vi": "Tôi đã đề xuất một ý tưởng mới."}},
+      {"word": "エネルギー", "reading": "エネルギー", "meaningVi": "năng lượng", "example": {"jp": "{再生可能|さいせいかのう}エネルギーが{注目されて|ちゅうもくされて}いる。", "vi": "Năng lượng tái tạo đang được chú ý."}},
+      {"word": "マイナス", "reading": "マイナス", "meaningVi": "âm, tiêu cực, bất lợi", "example": {"jp": "{今回|こんかい}の{決定|けってい}は{会社に|かいしゃに}マイナスだった。", "vi": "Quyết định lần này gây bất lợi cho công ty."}},
+      {"word": "プラス", "reading": "プラス", "meaningVi": "dương, tích cực, có lợi", "example": {"jp": "{経験|けいけん}はきっとプラスになる。", "vi": "Kinh nghiệm chắc chắn sẽ có lợi."}}
+    ]
+  },
+  "v6d4": {
+    "introVi": "Nhóm động từ dễ nhầm lẫn do đồng âm hoặc gần nghĩa: 上げる・挙げる (nâng lên / giơ lên, đưa ra), 生かす・活かす (tận dụng), 治る・直る (khỏi bệnh / được sửa).",
+    "items": [
+      {"word": "上げる", "reading": "あげる", "meaningVi": "nâng lên, tăng lên (vật cụ thể, mức độ)", "example": {"jp": "{荷物|にもつ}を{上げる|あげる}のを{手伝った|てつだった}。", "vi": "Tôi đã giúp nâng hành lý lên."}},
+      {"word": "挙げる", "reading": "あげる", "meaningVi": "giơ lên, đưa ra (ví dụ, tay)", "example": {"jp": "{質問|しつもん}がある{人|ひと}は{手を|てを}{挙げて|あげて}ください。", "vi": "Ai có câu hỏi thì hãy giơ tay."}},
+      {"word": "生かす", "reading": "いかす", "meaningVi": "phát huy, tận dụng (kinh nghiệm, sinh mạng)", "example": {"jp": "{経験|けいけん}を{生かして|いかして}{新しい|あたらしい}{仕事に|しごとに}{取り組む|とりくむ}。", "vi": "Tận dụng kinh nghiệm để bắt tay vào công việc mới."}},
+      {"word": "活かす", "reading": "いかす", "meaningVi": "tận dụng, phát huy (tài năng, cách viết khác)", "example": {"jp": "{自分|じぶん}の{強み|つよみ}を{活かして|いかして}{活動する|かつどうする}。", "vi": "Hoạt động bằng cách phát huy điểm mạnh của bản thân."}},
+      {"word": "治る", "reading": "なおる", "meaningVi": "khỏi bệnh, lành (vết thương)", "example": {"jp": "{風邪|かぜ}が{治った|なおった}。", "vi": "Cảm đã khỏi."}},
+      {"word": "直る", "reading": "なおる", "meaningVi": "được sửa (đồ vật, lỗi)", "example": {"jp": "{故障|こしょう}していた{機械|きかい}が{直った|なおった}。", "vi": "Chiếc máy bị hỏng đã được sửa xong."}},
+      {"word": "覚える", "reading": "おぼえる", "meaningVi": "nhớ, học thuộc", "example": {"jp": "{新しい|あたらしい}{言葉を|ことばを}{覚える|おぼえる}のは{楽しい|たのしい}。", "vi": "Học từ mới thật vui."}}
+    ]
+  },
+  "v6d5": {
+    "introVi": "Nhóm từ dễ nhầm lẫn tiếp theo: 気が付く・気にする (nhận ra / lo lắng), 効く・聞く (đồng âm きく nhưng nghĩa khác), 変わる・替わる・変える (thay đổi tự thân / thay thế / làm thay đổi).",
+    "items": [
+      {"word": "気が付く", "reading": "きがつく", "meaningVi": "để ý, nhận ra", "example": {"jp": "{間違い|まちがい}に{気が付いた|きがついた}。", "vi": "Tôi đã để ý thấy lỗi sai."}},
+      {"word": "気にする", "reading": "きにする", "meaningVi": "lo lắng, để tâm", "example": {"jp": "{細かい|こまかい}ことを{気にしない|きにしない}ほうがいい。", "vi": "Không nên để tâm những chuyện nhỏ nhặt."}},
+      {"word": "効く", "reading": "きく", "meaningVi": "có hiệu quả (thuốc, phương pháp)", "example": {"jp": "この{薬|くすり}はよく{効く|きく}。", "vi": "Thuốc này rất hiệu quả."}},
+      {"word": "聞く", "reading": "きく", "meaningVi": "nghe, hỏi", "example": {"jp": "{先生|せんせい}に{質問を|しつもんを}{聞いた|きいた}。", "vi": "Tôi đã hỏi giáo viên một câu hỏi."}},
+      {"word": "変わる", "reading": "かわる", "meaningVi": "thay đổi (tự thân, tự nhiên)", "example": {"jp": "{天気|てんき}が{急に|きゅうに}{変わった|かわった}。", "vi": "Thời tiết đã thay đổi đột ngột."}},
+      {"word": "替わる", "reading": "かわる", "meaningVi": "thay thế, đổi phiên", "example": {"jp": "{担当者が|たんとうしゃが}{替わった|かわった}。", "vi": "Người phụ trách đã được thay đổi."}},
+      {"word": "変える", "reading": "かえる", "meaningVi": "thay đổi (tác động lên cái gì đó)", "example": {"jp": "{予定を|よていを}{変える|かえる}ことにした。", "vi": "Tôi đã quyết định thay đổi lịch trình."}}
+    ]
+  },
+  "v6d6": {
+    "introVi": "Nhóm từ dễ nhầm lẫn tiếp theo về khả năng nhìn/nghe/hiểu: 見える・見られる (nhìn thấy tự nhiên / có thể xem được), 聞こえる (nghe thấy tự nhiên), 分かる・知る (hiểu / biết), 慣れる・馴れる (trở nên quen).",
+    "items": [
+      {"word": "見える", "reading": "みえる", "meaningVi": "nhìn thấy được (một cách tự nhiên)", "example": {"jp": "{窓|まど}から{山が|やまが}{見える|みえる}。", "vi": "Từ cửa sổ có thể nhìn thấy núi."}},
+      {"word": "見られる", "reading": "みられる", "meaningVi": "có thể xem/nhìn được (chủ động, khả năng)", "example": {"jp": "この{映画は|えいがは}{今週まで|こんしゅうまで}{見られる|みられる}。", "vi": "Bộ phim này có thể xem được đến hết tuần này."}},
+      {"word": "聞こえる", "reading": "きこえる", "meaningVi": "nghe thấy được (một cách tự nhiên)", "example": {"jp": "{隣の|となりの}{部屋から|へやから}{音楽が|おんがくが}{聞こえる|きこえる}。", "vi": "Có thể nghe thấy âm nhạc từ phòng bên cạnh."}},
+      {"word": "分かる", "reading": "わかる", "meaningVi": "hiểu, biết rõ", "example": {"jp": "{説明を|せつめいを}{聞いて|きいて}{意味が|いみが}{分かった|わかった}。", "vi": "Nghe giải thích xong tôi đã hiểu ý nghĩa."}},
+      {"word": "知る", "reading": "しる", "meaningVi": "biết (thông tin, sự việc)", "example": {"jp": "そのニュースを{知って|しって}{驚いた|おどろいた}。", "vi": "Tôi đã ngạc nhiên khi biết tin đó."}},
+      {"word": "慣れる", "reading": "なれる", "meaningVi": "trở nên quen thuộc (với môi trường, công việc)", "example": {"jp": "{新しい|あたらしい}{環境に|かんきょうに}{慣れて|なれて}きた。", "vi": "Tôi đã bắt đầu quen với môi trường mới."}},
+      {"word": "馴れる", "reading": "なれる", "meaningVi": "trở nên thân thiết, dạn dĩ (với người, động vật)", "example": {"jp": "{野良猫が|のらねこが}{人に|ひとに}{馴れて|なれて}きた。", "vi": "Con mèo hoang đã trở nên thân thiết với người."}}
+    ]
+  },
+  "v6d7": {
+    "introVi": "Bộ ôn tập tổng hợp tuần 6: kết hợp từ mượn katakana (データ, ストレス, サービス) và các cặp từ dễ nhầm lẫn (挙げる, 気にする, 見える, 慣れる) đã học trong tuần.",
+    "items": [
+      {"word": "データ", "reading": "データ", "meaningVi": "dữ liệu", "example": {"jp": "テストの{前に|まえに}データを{保存した|ほぞんした}。", "vi": "Trước khi kiểm tra tôi đã lưu dữ liệu."}},
+      {"word": "ストレス", "reading": "ストレス", "meaningVi": "căng thẳng", "example": {"jp": "ストレスを{減らす|へらす}{方法|ほうほう}を{探して|さがして}いる。", "vi": "Tôi đang tìm cách để giảm căng thẳng."}},
+      {"word": "サービス", "reading": "サービス", "meaningVi": "dịch vụ", "example": {"jp": "{新しい|あたらしい}サービスが{始まった|はじまった}。", "vi": "Một dịch vụ mới đã được bắt đầu."}},
+      {"word": "挙げる", "reading": "あげる", "meaningVi": "giơ lên, đưa ra (ví dụ, tay)", "example": {"jp": "{例を|れいを}{三つ|みっつ}{挙げて|あげて}ください。", "vi": "Hãy đưa ra ba ví dụ."}},
+      {"word": "気にする", "reading": "きにする", "meaningVi": "lo lắng, để tâm", "example": {"jp": "そんなに{気にする|きにする}{必要は|ひつようは}ない。", "vi": "Không cần phải lo lắng đến vậy."}},
+      {"word": "見える", "reading": "みえる", "meaningVi": "nhìn thấy được (một cách tự nhiên)", "example": {"jp": "ここから{海が|うみが}{見える|みえる}。", "vi": "Từ đây có thể nhìn thấy biển."}},
+      {"word": "慣れる", "reading": "なれる", "meaningVi": "trở nên quen thuộc", "example": {"jp": "{一人暮らしに|ひとりぐらしに}{慣れて|なれて}きた。", "vi": "Tôi đã bắt đầu quen với việc sống một mình."}}
+    ]
+  }
+}

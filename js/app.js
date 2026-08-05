@@ -1,0 +1,80 @@
+// js/app.js — application bootstrap
+// Loads lesson data, wires the header/nav controls, and starts the hash router.
+
+import { setLessons } from './store.js';
+import { initRouter, navigate } from './router.js';
+import { initFuriganaToggle } from './furigana.js';
+import { openSettings } from './gemini.js';
+import { renderDashboard } from './dashboard.js';
+import { renderLesson } from './lesson.js';
+import { renderTutor } from './tutor.js';
+import { renderVoice } from './voice.js';
+
+function setCurrentDate() {
+    const el = document.getElementById('current-date');
+    if (!el) return;
+    try {
+        const formatted = new Date().toLocaleDateString('en-US', {
+            day: '2-digit',
+            month: 'long',
+            year: 'numeric',
+        });
+        el.textContent = formatted.toUpperCase();
+    } catch (err) {
+        // Non-fatal: leave the date blank if Intl/date formatting fails.
+    }
+}
+
+function wireSettingsButton() {
+    const btn = document.getElementById('btn-settings');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+        openSettings();
+    });
+}
+
+function wireBottomNav() {
+    const buttons = document.querySelectorAll('.bottom-nav .nav-btn');
+    buttons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            const route = btn.getAttribute('data-route');
+            if (route === 'dashboard') navigate('#/');
+            else if (route === 'tutor') navigate('#/tutor');
+            else if (route === 'voice') navigate('#/voice');
+        });
+    });
+}
+
+async function loadLessons() {
+    try {
+        const res = await fetch('data/lessons.json');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        setLessons(data);
+    } catch (err) {
+        console.error('Không thể nạp data/lessons.json:', err);
+        setLessons(null);
+    }
+}
+
+async function bootstrap() {
+    setCurrentDate();
+    initFuriganaToggle();
+    wireSettingsButton();
+    wireBottomNav();
+
+    await loadLessons();
+
+    const rootEl = document.getElementById('app');
+    initRouter(
+        {
+            dashboard: renderDashboard,
+            lesson: renderLesson,
+            tutor: renderTutor,
+            voice: renderVoice,
+        },
+        rootEl
+    );
+}
+
+document.addEventListener('DOMContentLoaded', bootstrap);

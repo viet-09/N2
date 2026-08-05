@@ -1,0 +1,954 @@
+{
+  "v7d1": {
+    "introVi": "Tuần này chúng ta học các động từ tiếng Nhật có nhiều nghĩa (đa nghĩa/đồng âm) thường gặp trong đề thi N2. Phần 1 giới thiệu nhóm từ きく, たつ, とる, かける, でる, あがる, つく — mỗi từ có thể viết bằng nhiều kanji khác nhau tương ứng với các nghĩa khác nhau, cần dựa vào văn cảnh để chọn nghĩa đúng.",
+    "items": [
+      {
+        "word": "きく",
+        "reading": "きく",
+        "meaningVi": "Từ đồng âm đa nghĩa: 聞く (nghe, hỏi) và 効く (có hiệu quả, công hiệu). Phân biệt bằng kanji và văn cảnh.",
+        "example": {
+          "jp": "この{薬|くすり}は{頭痛|ずつう}によく{効|き}く。",
+          "vi": "Loại thuốc này rất hiệu quả với chứng đau đầu."
+        }
+      },
+      {
+        "word": "たつ",
+        "reading": "たつ",
+        "meaningVi": "立つ (đứng, xảy ra), 経つ (thời gian trôi qua), 建つ (được xây dựng lên) — ba kanji khác nhau cho ba nghĩa.",
+        "example": {
+          "jp": "{卒業|そつぎょう}してから{三年|さんねん}が{経|た}った。",
+          "vi": "Đã ba năm trôi qua kể từ khi tôi tốt nghiệp."
+        }
+      },
+      {
+        "word": "とる",
+        "reading": "とる",
+        "meaningVi": "取る (lấy, cầm), 撮る (chụp ảnh), 採る (tuyển dụng, thu hoạch) — cùng âm đọc nhưng kanji và nghĩa khác nhau.",
+        "example": {
+          "jp": "{景色|けしき}がきれいなので{写真|しゃしん}を{撮|と}った。",
+          "vi": "Vì cảnh đẹp nên tôi đã chụp ảnh."
+        }
+      },
+      {
+        "word": "かける",
+        "reading": "かける",
+        "meaningVi": "掛ける (treo lên, gọi điện, tốn kém) và 欠ける (thiếu, khuyết) — cần chú ý kanji để hiểu đúng nghĩa.",
+        "example": {
+          "jp": "{友人|ゆうじん}に{電話|でんわ}を{掛|か}けた。",
+          "vi": "Tôi đã gọi điện cho người bạn."
+        }
+      },
+      {
+        "word": "でる",
+        "reading": "でる",
+        "meaningVi": "出る mang nhiều nghĩa: ra khỏi (nơi nào), tham gia (cuộc họp, kỳ thi), xuất hiện (kết quả, tin tức).",
+        "example": {
+          "jp": "{来週|らいしゅう}の{会議|かいぎ}に{出|で}ることになった。",
+          "vi": "Tôi sẽ tham gia cuộc họp tuần sau."
+        }
+      },
+      {
+        "word": "あがる",
+        "reading": "あがる",
+        "meaningVi": "上がる (lên cao, tăng lên) và 揚がる (được chiên, được kéo lên) — phân biệt theo kanji.",
+        "example": {
+          "jp": "{今年|こんねん}は{物価|ぶっか}がかなり{上|あ}がった。",
+          "vi": "Năm nay giá cả đã tăng lên đáng kể."
+        }
+      },
+      {
+        "word": "つく",
+        "reading": "つく",
+        "meaningVi": "着く (đến nơi), 付く (dính vào, đi kèm theo), 就く (đảm nhiệm chức vụ, bắt đầu công việc).",
+        "example": {
+          "jp": "{駅|えき}に{着|つ}いたら{電話|でんわ}してください。",
+          "vi": "Khi đến nhà ga rồi thì hãy gọi điện cho tôi."
+        }
+      }
+    ]
+  },
+  "v7d2": {
+    "introVi": "Phần 2 của chủ đề từ đa nghĩa, giới thiệu tiếp nhóm động từ もつ, うつ, かかる, あう, きる, のる, はる. Đây là những động từ cơ bản nhưng có nhiều nghĩa và cách viết kanji khác nhau, rất dễ gây nhầm lẫn khi làm bài thi từ vựng N2.",
+    "items": [
+      {
+        "word": "もつ",
+        "reading": "もつ",
+        "meaningVi": "持つ mang nghĩa cầm/giữ vật gì, nhưng cũng có nghĩa 'giữ được, bền' khi nói về đồ vật, thực phẩm.",
+        "example": {
+          "jp": "{冷蔵庫|れいぞうこ}に{入|い}れれば、この{食品|しょくひん}は{一週間|いっしゅうかん}は{持|も}つ。",
+          "vi": "Nếu để trong tủ lạnh, thực phẩm này có thể giữ được một tuần."
+        }
+      },
+      {
+        "word": "うつ",
+        "reading": "うつ",
+        "meaningVi": "打つ (đánh, gõ, đập) và 撃つ (bắn, nổ súng) — khác kanji ứng với hành động khác nhau.",
+        "example": {
+          "jp": "{彼|かれ}は{キーボード|キーボード}を{速|はや}く{打|う}つ。",
+          "vi": "Anh ấy gõ bàn phím rất nhanh."
+        }
+      },
+      {
+        "word": "かかる",
+        "reading": "かかる",
+        "meaningVi": "掛かる (mất thời gian/tiền bạc, được treo lên) và 罹る (bị mắc bệnh) — chọn nghĩa theo văn cảnh.",
+        "example": {
+          "jp": "この{仕事|しごと}には{時間|じかん}が{掛|か}かる。",
+          "vi": "Công việc này mất nhiều thời gian."
+        }
+      },
+      {
+        "word": "あう",
+        "reading": "あう",
+        "meaningVi": "会う (gặp mặt người khác) và 合う (hợp, vừa, khớp với nhau) — hai kanji hai nghĩa hoàn toàn khác.",
+        "example": {
+          "jp": "この{服|ふく}は{私|わたし}にサイズが{合|あ}わない。",
+          "vi": "Bộ quần áo này không vừa cỡ với tôi."
+        }
+      },
+      {
+        "word": "きる",
+        "reading": "きる",
+        "meaningVi": "切る (cắt) và 着る (mặc quần áo) — cùng đọc きる nhưng nghĩa và kanji hoàn toàn khác nhau.",
+        "example": {
+          "jp": "{寒|さむ}いので{厚|あつ}いコートを{着|き}る。",
+          "vi": "Vì lạnh nên tôi mặc áo khoác dày."
+        }
+      },
+      {
+        "word": "のる",
+        "reading": "のる",
+        "meaningVi": "乗る (lên xe, tham gia vào việc gì) và 載る (được đăng tải trên báo, tạp chí).",
+        "example": {
+          "jp": "{新聞|しんぶん}に{記事|きじ}が{載|の}った。",
+          "vi": "Bài báo đã được đăng trên tờ báo."
+        }
+      },
+      {
+        "word": "はる",
+        "reading": "はる",
+        "meaningVi": "張る (căng ra, giăng lên, cứng lại) và 貼る (dán lên) — chú ý phân biệt theo kanji đi kèm.",
+        "example": {
+          "jp": "{壁|かべ}に{ポスター|ポスター}を{貼|は}った。",
+          "vi": "Tôi đã dán tấm poster lên tường."
+        }
+      }
+    ]
+  },
+  "v7d3": {
+    "introVi": "Phần 3 tiếp tục học các từ đa nghĩa quan trọng: おちる, あける, しめる, まわる, のこす, たまる, つとめる. Nhóm từ này thường xuất hiện trong đề thi 語彙 (từ vựng) N2 dưới dạng câu hỏi chọn nghĩa đúng theo văn cảnh.",
+    "items": [
+      {
+        "word": "おちる",
+        "reading": "おちる",
+        "meaningVi": "落ちる vừa mang nghĩa vật lý 'rơi, rớt xuống' vừa mang nghĩa 'thi trượt, không đạt'.",
+        "example": {
+          "jp": "{今年|こんねん}の{試験|しけん}に{落|お}ちてしまった。",
+          "vi": "Tôi đã thi trượt kỳ thi năm nay."
+        }
+      },
+      {
+        "word": "あける",
+        "reading": "あける",
+        "meaningVi": "開ける (mở cửa, mở nắp) và 明ける (trời rạng sáng, kết thúc một khoảng thời gian như năm mới, mùa mưa).",
+        "example": {
+          "jp": "{夜|よる}が{明|あ}けるまで{働|はたら}いた。",
+          "vi": "Tôi đã làm việc cho đến khi trời sáng."
+        }
+      },
+      {
+        "word": "しめる",
+        "reading": "しめる",
+        "meaningVi": "閉める (đóng lại) và 占める (chiếm giữ một tỉ lệ, vị trí nào đó).",
+        "example": {
+          "jp": "{会場|かいじょう}の{半分|はんぶん}を{学生|がくせい}が{占|し}めていた。",
+          "vi": "Học sinh chiếm một nửa số người trong hội trường."
+        }
+      },
+      {
+        "word": "まわる",
+        "reading": "まわる",
+        "meaningVi": "回る mang nghĩa 'quay tròn' và cũng có nghĩa 'đi vòng quanh, đi qua nhiều nơi'.",
+        "example": {
+          "jp": "{観光|かんこう}バスで{市内|しない}を{回|まわ}った。",
+          "vi": "Tôi đã đi vòng quanh thành phố bằng xe buýt du lịch."
+        }
+      },
+      {
+        "word": "のこす",
+        "reading": "のこす",
+        "meaningVi": "残す nghĩa là 'để lại, chưa dùng hết', dùng cho cả đồ vật, thời gian và thành quả.",
+        "example": {
+          "jp": "{時間|じかん}がなくて{食事|しょくじ}を{半分|はんぶん}{残|のこ}してしまった。",
+          "vi": "Vì không có thời gian nên tôi đã để lại một nửa bữa ăn."
+        }
+      },
+      {
+        "word": "たまる",
+        "reading": "たまる",
+        "meaningVi": "溜まる nghĩa là 'tích tụ, dồn lại' — dùng cho tiền bạc, công việc, sự mệt mỏi, căng thẳng.",
+        "example": {
+          "jp": "{最近|さいきん}、ストレスが{溜|た}まっている。",
+          "vi": "Gần đây căng thẳng của tôi đang tích tụ lại."
+        }
+      },
+      {
+        "word": "つとめる",
+        "reading": "つとめる",
+        "meaningVi": "勤める (làm việc tại một nơi) và 努める (cố gắng, gắng sức làm điều gì đó).",
+        "example": {
+          "jp": "{彼|かれ}は{節約|せつやく}に{努|つと}めている。",
+          "vi": "Anh ấy đang cố gắng tiết kiệm."
+        }
+      }
+    ]
+  },
+  "v7d4": {
+    "introVi": "Chủ đề hôm nay là các tiếp đầu ngữ (接頭語) — những âm hán đứng trước danh từ/tính từ để tạo ra từ mới với nghĩa phủ định, nhấn mạnh hoặc chỉ số lượng. Nắm vững nhóm tiếp đầu ngữ 不・無・未・非・過・超・各 giúp đoán nghĩa từ mới nhanh hơn trong bài đọc N2.",
+    "items": [
+      {
+        "word": "不",
+        "reading": "ふ",
+        "meaningVi": "Tiếp đầu ngữ mang nghĩa phủ định 'không, bất' đứng trước danh từ/tính từ Hán Nhật, ví dụ 不安, 不便.",
+        "example": {
+          "jp": "{将来|しょうらい}に{不安|ふあん}を{感|かん}じることがある。",
+          "vi": "Đôi khi tôi cảm thấy bất an về tương lai."
+        }
+      },
+      {
+        "word": "無",
+        "reading": "む",
+        "meaningVi": "Tiếp đầu ngữ mang nghĩa 'không có, vô' đứng trước danh từ, ví dụ 無料, 無関心.",
+        "example": {
+          "jp": "この{美術館|びじゅつかん}は{入場|にゅうじょう}が{無料|むりょう}だ。",
+          "vi": "Bảo tàng nghệ thuật này miễn phí vào cửa."
+        }
+      },
+      {
+        "word": "未",
+        "reading": "み",
+        "meaningVi": "Tiếp đầu ngữ mang nghĩa 'chưa' đứng trước danh từ, chỉ trạng thái chưa xảy ra hoặc chưa hoàn thành, ví dụ 未定, 未成年.",
+        "example": {
+          "jp": "{開催|かいさい}{日|び}はまだ{未定|みてい}だ。",
+          "vi": "Ngày tổ chức vẫn chưa được ấn định."
+        }
+      },
+      {
+        "word": "非",
+        "reading": "ひ",
+        "meaningVi": "Tiếp đầu ngữ mang nghĩa 'phi, không phải' đứng trước danh từ Hán Nhật, ví dụ 非常, 非公開.",
+        "example": {
+          "jp": "{地震|じしん}の{時|とき}は{非常|ひじょう}{口|こう}から{避難|ひなん}してください。",
+          "vi": "Khi có động đất, hãy sơ tán qua cửa thoát hiểm."
+        }
+      },
+      {
+        "word": "過",
+        "reading": "か",
+        "meaningVi": "Tiếp đầu ngữ mang nghĩa 'quá, vượt quá' đứng trước danh từ, ví dụ 過去, 過剰.",
+        "example": {
+          "jp": "{過去|かこ}の{失敗|しっぱい}を{気|き}にしすぎないほうがいい。",
+          "vi": "Không nên quá bận tâm về những thất bại trong quá khứ."
+        }
+      },
+      {
+        "word": "超",
+        "reading": "ちょう",
+        "meaningVi": "Tiếp đầu ngữ mang nghĩa 'siêu, vượt trội' đứng trước danh từ hoặc tính từ, ví dụ 超高層, 超一流.",
+        "example": {
+          "jp": "{都心|としん}には{超|ちょう}{高層|こうそう}ビルが{立|た}ち{並|なら}んでいる。",
+          "vi": "Ở trung tâm thành phố, các tòa nhà siêu cao tầng mọc lên san sát."
+        }
+      },
+      {
+        "word": "各",
+        "reading": "かく",
+        "meaningVi": "Tiếp đầu ngữ mang nghĩa 'mỗi, từng' đứng trước danh từ chỉ đơn vị, ví dụ 各地, 各国.",
+        "example": {
+          "jp": "{各|かく}{地|ち}から{観光客|かんこうきゃく}が{集|あつ}まってきた。",
+          "vi": "Khách du lịch đã tập trung đến từ mỗi vùng."
+        }
+      }
+    ]
+  },
+  "v7d5": {
+    "introVi": "Chủ đề hôm nay là tiếp vĩ ngữ (接尾語) phần 1 — những âm Hán đứng sau danh từ để tạo thành từ mới mang nghĩa tính chất, trạng thái hoặc khả năng. Nhóm 的・化・性・感・力・型・風 xuất hiện rất nhiều trong bài đọc và phần từ vựng của N2.",
+    "items": [
+      {
+        "word": "的",
+        "reading": "てき",
+        "meaningVi": "Tiếp vĩ ngữ đứng sau danh từ tạo thành tính từ mang nghĩa 'mang tính chất...', ví dụ 現実的, 積極的.",
+        "example": {
+          "jp": "この{計画|けいかく}は{現実|げんじつ}{的|てき}ではない。",
+          "vi": "Kế hoạch này không mang tính hiện thực."
+        }
+      },
+      {
+        "word": "化",
+        "reading": "か",
+        "meaningVi": "Tiếp vĩ ngữ mang nghĩa 'hóa, chuyển biến thành' đứng sau danh từ, ví dụ 国際化, 高齢化.",
+        "example": {
+          "jp": "{社会|しゃかい}の{国際|こくさい}{化|か}が{進|すす}んでいる。",
+          "vi": "Quá trình quốc tế hóa xã hội đang tiến triển."
+        }
+      },
+      {
+        "word": "性",
+        "reading": "せい",
+        "meaningVi": "Tiếp vĩ ngữ mang nghĩa 'tính chất' đứng sau danh từ, ví dụ 通気性, 可能性.",
+        "example": {
+          "jp": "この{薄|うす}い{布|ふ}は{通気|つうき}{性|せい}が{良|よ}い。",
+          "vi": "Loại vải mỏng này có độ thoáng khí tốt."
+        }
+      },
+      {
+        "word": "感",
+        "reading": "かん",
+        "meaningVi": "Tiếp vĩ ngữ mang nghĩa 'cảm giác' đứng sau danh từ, ví dụ 達成感, 責任感.",
+        "example": {
+          "jp": "{仕事|しごと}を{終|お}えて{達成|たっせい}{感|かん}を{味|あじ}わった。",
+          "vi": "Sau khi hoàn thành công việc, tôi đã cảm nhận được cảm giác thành tựu."
+        }
+      },
+      {
+        "word": "力",
+        "reading": "りょく",
+        "meaningVi": "Tiếp vĩ ngữ mang nghĩa 'khả năng, sức mạnh' đứng sau danh từ, ví dụ 読解力, 集中力.",
+        "example": {
+          "jp": "{外国語|がいこくご}の{読解|どっかい}{力|りょく}を{高|たか}めたい。",
+          "vi": "Tôi muốn nâng cao khả năng đọc hiểu ngoại ngữ."
+        }
+      },
+      {
+        "word": "型",
+        "reading": "がた",
+        "meaningVi": "Tiếp vĩ ngữ mang nghĩa 'kiểu, loại' đứng sau danh từ, ví dụ 新型, 大型.",
+        "example": {
+          "jp": "この{車|くるま}は{新|しん}{型|がた}のエンジンを{採用|さいよう}している。",
+          "vi": "Chiếc xe này áp dụng loại động cơ mới."
+        }
+      },
+      {
+        "word": "風",
+        "reading": "ふう",
+        "meaningVi": "Tiếp vĩ ngữ mang nghĩa 'kiểu, phong cách' đứng sau danh từ, ví dụ 和風, 洋風.",
+        "example": {
+          "jp": "{和|わ}{風|ふう}の{部屋|へや}に{泊|とま}りたい。",
+          "vi": "Tôi muốn ở trong phòng kiểu Nhật."
+        }
+      }
+    ]
+  },
+  "v7d6": {
+    "introVi": "Tiếp tục phần tiếp vĩ ngữ (接尾語) với nhóm 者・家・界・費・料・制・観 — chuyên dùng để chỉ người, giới, chi phí, chế độ, quan điểm. Đây là nhóm tiếp vĩ ngữ rất hữu ích để đoán nghĩa từ mới khi đọc báo hoặc tài liệu chuyên ngành ở trình độ N2.",
+    "items": [
+      {
+        "word": "者",
+        "reading": "しゃ",
+        "meaningVi": "Tiếp vĩ ngữ chỉ 'người' đứng sau danh từ, ví dụ 専門者, 参加者.",
+        "example": {
+          "jp": "この{研究|けんきゅう}{分野|ぶんや}の{専門|せんもん}{者|しゃ}に{相談|そうだん}した。",
+          "vi": "Tôi đã tham khảo ý kiến của chuyên gia trong lĩnh vực nghiên cứu này."
+        }
+      },
+      {
+        "word": "家",
+        "reading": "か",
+        "meaningVi": "Tiếp vĩ ngữ chỉ người có chuyên môn hoặc tài năng đặc biệt trong một lĩnh vực, ví dụ 画家, 専門家.",
+        "example": {
+          "jp": "{彼|かれ}は{有名|ゆうめい}な{画|が}{家|か}だ。",
+          "vi": "Anh ấy là một họa sĩ nổi tiếng."
+        }
+      },
+      {
+        "word": "界",
+        "reading": "かい",
+        "meaningVi": "Tiếp vĩ ngữ chỉ 'giới, lĩnh vực' đứng sau danh từ, ví dụ 政治界, 経済界.",
+        "example": {
+          "jp": "{政治|せいじ}{界|かい}には{様々|さまざま}な{意見|いけん}がある。",
+          "vi": "Trong giới chính trị có nhiều ý kiến khác nhau."
+        }
+      },
+      {
+        "word": "費",
+        "reading": "ひ",
+        "meaningVi": "Tiếp vĩ ngữ chỉ 'chi phí' đứng sau danh từ, ví dụ 生活費, 交通費.",
+        "example": {
+          "jp": "{今月|こんげつ}は{生活|せいかつ}{費|ひ}が{増|ふ}えた。",
+          "vi": "Tháng này chi phí sinh hoạt đã tăng lên."
+        }
+      },
+      {
+        "word": "料",
+        "reading": "りょう",
+        "meaningVi": "Tiếp vĩ ngữ chỉ 'phí, lệ phí' hoặc 'nguyên liệu' đứng sau danh từ, ví dụ 利用料, 材料.",
+        "example": {
+          "jp": "この{施設|しせつ}の{利用|りよう}{料|りょう}は{無料|むりょう}だ。",
+          "vi": "Phí sử dụng cơ sở này là miễn phí."
+        }
+      },
+      {
+        "word": "制",
+        "reading": "せい",
+        "meaningVi": "Tiếp vĩ ngữ chỉ 'chế độ, hệ thống' đứng sau danh từ, ví dụ 年功制, 予約制.",
+        "example": {
+          "jp": "この{会社|かいしゃ}は{年功|ねんこう}{制|せい}を{採用|さいよう}している。",
+          "vi": "Công ty này áp dụng chế độ thâm niên."
+        }
+      },
+      {
+        "word": "観",
+        "reading": "かん",
+        "meaningVi": "Tiếp vĩ ngữ chỉ 'quan điểm, cách nhìn' đứng sau danh từ, ví dụ 価値観, 人生観.",
+        "example": {
+          "jp": "{人|ひと}によって{価値|かち}{観|かん}は{違|ちが}う。",
+          "vi": "Giá trị quan khác nhau tùy theo từng người."
+        }
+      }
+    ]
+  },
+  "v7d7": {
+    "introVi": "Bài ôn tập tổng hợp cuối tuần 7, tổng kết lại các từ đa nghĩa và các tiếp đầu ngữ/tiếp vĩ ngữ quan trọng đã học trong tuần: きく・とる・たつ, 不, 化, 型 và 観. Hãy đọc lại nghĩa và ví dụ để chuẩn bị cho phần luyện tập thực chiến (実戦問題) về từ vựng N2.",
+    "items": [
+      {
+        "word": "きく",
+        "reading": "きく",
+        "meaningVi": "Ôn tập: 聞く (nghe, hỏi) / 効く (có hiệu quả) — chọn nghĩa dựa vào văn cảnh câu.",
+        "example": {
+          "jp": "この{方法|ほうほう}は{思|おも}ったより{効|き}いた。",
+          "vi": "Phương pháp này hiệu quả hơn tôi tưởng."
+        }
+      },
+      {
+        "word": "とる",
+        "reading": "とる",
+        "meaningVi": "Ôn tập: 取る (lấy) / 撮る (chụp) / 採る (tuyển dụng) — chú ý chọn kanji theo nghĩa của câu.",
+        "example": {
+          "jp": "{会社|かいしゃ}が{新入|しんにゅう}{社員|しゃいん}を{十人|じゅうにん}{採|と}った。",
+          "vi": "Công ty đã tuyển dụng mười nhân viên mới."
+        }
+      },
+      {
+        "word": "たつ",
+        "reading": "たつ",
+        "meaningVi": "Ôn tập: 立つ (đứng, xảy ra) / 経つ (thời gian trôi qua) / 建つ (được xây dựng) — phân biệt theo văn cảnh.",
+        "example": {
+          "jp": "{駅前|えきまえ}に{新|あたら}しいビルが{建|た}った。",
+          "vi": "Một tòa nhà mới đã được xây lên trước nhà ga."
+        }
+      },
+      {
+        "word": "不",
+        "reading": "ふ",
+        "meaningVi": "Ôn tập tiếp đầu ngữ 不: mang nghĩa phủ định 'không, bất' đứng trước danh từ/tính từ.",
+        "example": {
+          "jp": "{道|どう}が{混|こ}んでいて{不便|ふべん}を{感|かん}じた。",
+          "vi": "Tôi cảm thấy bất tiện vì đường đông."
+        }
+      },
+      {
+        "word": "化",
+        "reading": "か",
+        "meaningVi": "Ôn tập tiếp vĩ ngữ 化: mang nghĩa 'hóa, chuyển biến thành' đứng sau danh từ.",
+        "example": {
+          "jp": "この{地域|ちいき}では{高齢|こうれい}{化|か}が{進|すす}んでいる。",
+          "vi": "Tình trạng già hóa dân số ở khu vực này đang tiến triển."
+        }
+      },
+      {
+        "word": "型",
+        "reading": "がた",
+        "meaningVi": "Ôn tập tiếp vĩ ngữ 型: mang nghĩa 'kiểu, loại' đứng sau danh từ.",
+        "example": {
+          "jp": "この{製品|せいひん}は{小|こ}{型|がた}で{持|も}ち{運|はこ}びやすい。",
+          "vi": "Sản phẩm này có kích thước nhỏ nên dễ mang theo."
+        }
+      },
+      {
+        "word": "観",
+        "reading": "かん",
+        "meaningVi": "Ôn tập tiếp vĩ ngữ 観: mang nghĩa 'quan điểm, cách nhìn' đứng sau danh từ.",
+        "example": {
+          "jp": "{世界|せかい}{観|かん}が{変|か}わるような{経験|けいけん}をした。",
+          "vi": "Tôi đã có một trải nghiệm làm thay đổi thế giới quan của mình."
+        }
+      }
+    ]
+  },
+  "v8d1": {
+    "introVi": "Chủ đề tuần 8 là các từ ghép (組み合わせ言葉) — động từ được tạo thành từ hai động từ kết hợp lại, mang nghĩa mới. Phần 1 giới thiệu nhóm 話し合う, 見つける, 立ち止まる, 呼び掛ける, 待ち合わせる, 引き出す, 取り組む thường gặp trong văn viết N2.",
+    "items": [
+      {
+        "word": "話し合う",
+        "reading": "はなしあう",
+        "meaningVi": "Thảo luận, trao đổi ý kiến qua lại với nhau về một vấn đề.",
+        "example": {
+          "jp": "{問題|もんだい}について{皆|みんな}で{話|はな}し{合|あ}った。",
+          "vi": "Mọi người đã cùng thảo luận về vấn đề đó."
+        }
+      },
+      {
+        "word": "見つける",
+        "reading": "みつける",
+        "meaningVi": "Tìm ra, phát hiện ra thứ gì đó sau khi tìm kiếm.",
+        "example": {
+          "jp": "{探|さが}していた{本|ほん}をやっと{見|み}つけた。",
+          "vi": "Cuối cùng tôi đã tìm được cuốn sách mà mình đang tìm."
+        }
+      },
+      {
+        "word": "立ち止まる",
+        "reading": "たちどまる",
+        "meaningVi": "Đứng lại, dừng bước khi đang đi.",
+        "example": {
+          "jp": "{彼|かれ}は{道|みち}の{途中|とちゅう}で{立|た}ち{止|ど}まった。",
+          "vi": "Anh ấy đã đứng lại giữa đường."
+        }
+      },
+      {
+        "word": "呼び掛ける",
+        "reading": "よびかける",
+        "meaningVi": "Kêu gọi, lên tiếng đề nghị mọi người hành động điều gì.",
+        "example": {
+          "jp": "{市長|しちょう}は{省エネ|しょうエネ}を{呼|よ}び{掛|か}けた。",
+          "vi": "Thị trưởng đã kêu gọi tiết kiệm năng lượng."
+        }
+      },
+      {
+        "word": "待ち合わせる",
+        "reading": "まちあわせる",
+        "meaningVi": "Hẹn gặp nhau ở một địa điểm và thời gian đã định trước.",
+        "example": {
+          "jp": "{駅|えき}{前|まえ}で{友人|ゆうじん}と{待|ま}ち{合|あ}わせた。",
+          "vi": "Tôi đã hẹn gặp bạn mình ở trước nhà ga."
+        }
+      },
+      {
+        "word": "引き出す",
+        "reading": "ひきだす",
+        "meaningVi": "Rút ra, kéo ra; nghĩa bóng: khơi dậy (tiềm năng, ý kiến).",
+        "example": {
+          "jp": "{銀行|ぎんこう}でお{金|かね}を{引|ひ}き{出|だ}した。",
+          "vi": "Tôi đã rút tiền ở ngân hàng."
+        }
+      },
+      {
+        "word": "取り組む",
+        "reading": "とりくむ",
+        "meaningVi": "Bắt tay vào, dồn sức giải quyết một vấn đề hay công việc.",
+        "example": {
+          "jp": "{新|あたら}しい{課題|かだい}に{取|と}り{組|く}んでいる。",
+          "vi": "Tôi đang bắt tay giải quyết một vấn đề mới."
+        }
+      }
+    ]
+  },
+  "v8d2": {
+    "introVi": "Phần 2 của chủ đề từ ghép, tiếp tục với nhóm 追いつく, 打ち合わせ, 乗り越える, 見直す, 差し引く, 押し付ける, 振り返る. Đây là các động từ ghép quen thuộc trong hội thoại công việc và bài đọc N2.",
+    "items": [
+      {
+        "word": "追いつく",
+        "reading": "おいつく",
+        "meaningVi": "Đuổi kịp, bắt kịp người/vật đang ở phía trước hoặc tiến độ đã bị bỏ lại.",
+        "example": {
+          "jp": "{前|まえ}を{走|はし}る{選手|せんしゅ}に{追|お}いついた。",
+          "vi": "Tôi đã đuổi kịp vận động viên đang chạy phía trước."
+        }
+      },
+      {
+        "word": "打ち合わせ",
+        "reading": "うちあわせ",
+        "meaningVi": "Buổi họp trao đổi, thống nhất trước về nội dung, kế hoạch công việc.",
+        "example": {
+          "jp": "{明日|あした}の{会議|かいぎ}について{打|う}ち{合|あ}わせをした。",
+          "vi": "Chúng tôi đã họp trao đổi trước về cuộc họp ngày mai."
+        }
+      },
+      {
+        "word": "乗り越える",
+        "reading": "のりこえる",
+        "meaningVi": "Vượt qua khó khăn, trở ngại để tiến lên phía trước.",
+        "example": {
+          "jp": "{困難|こんなん}を{乗|の}り{越|こ}えて{成功|せいこう}した。",
+          "vi": "Anh ấy đã vượt qua khó khăn và đạt được thành công."
+        }
+      },
+      {
+        "word": "見直す",
+        "reading": "みなおす",
+        "meaningVi": "Xem lại, đánh giá lại một việc gì đó để kiểm tra hoặc cải thiện.",
+        "example": {
+          "jp": "{計画|けいかく}をもう{一度|いちど}{見|み}{直|なお}した。",
+          "vi": "Tôi đã xem lại kế hoạch một lần nữa."
+        }
+      },
+      {
+        "word": "差し引く",
+        "reading": "さしひく",
+        "meaningVi": "Trừ đi một khoản nào đó khỏi tổng số.",
+        "example": {
+          "jp": "{税金|ぜいきん}を{差|さ}し{引|ひ}いた{給料|きゅうりょう}が{支払|しはら}われる。",
+          "vi": "Lương được trả sau khi đã trừ thuế."
+        }
+      },
+      {
+        "word": "押し付ける",
+        "reading": "おしつける",
+        "meaningVi": "Áp đặt, ép buộc ý kiến hoặc việc gì đó lên người khác.",
+        "example": {
+          "jp": "{自分|じぶん}の{考|かんが}えを{他人|たにん}に{押|お}し{付|つ}けてはいけない。",
+          "vi": "Không nên áp đặt suy nghĩ của mình lên người khác."
+        }
+      },
+      {
+        "word": "振り返る",
+        "reading": "ふりかえる",
+        "meaningVi": "Ngoảnh lại nhìn phía sau; nghĩa bóng: nhìn lại quá khứ, hồi tưởng lại.",
+        "example": {
+          "jp": "{過去|かこ}を{振|ふ}り{返|かえ}ってみると{成長|せいちょう}を{感|かん}じる。",
+          "vi": "Nhìn lại quá khứ, tôi cảm nhận được sự trưởng thành của bản thân."
+        }
+      }
+    ]
+  },
+  "v8d3": {
+    "introVi": "Chủ đề hôm nay là các cách diễn đạt thường dùng (よく使われる表現) sử dụng bộ phận cơ thể mang nghĩa bóng — phần 1 gồm 気が済む, 目に浮かぶ, 腹が立つ, 手が空く, 心を込める, 口を出す, 頭が痛い. Đây là các thành ngữ N2 rất hay xuất hiện trong hội thoại và văn viết.",
+    "items": [
+      {
+        "word": "気が済む",
+        "reading": "きがすむ",
+        "meaningVi": "Cảm thấy hài lòng, thỏa lòng sau khi làm hoặc nói được điều mình muốn.",
+        "example": {
+          "jp": "{謝罪|しゃざい}してやっと{気|き}が{済|す}んだ。",
+          "vi": "Sau khi xin lỗi, tôi mới thấy nhẹ lòng."
+        }
+      },
+      {
+        "word": "目に浮かぶ",
+        "reading": "めにうかぶ",
+        "meaningVi": "Hình ảnh nào đó hiện lên rõ ràng trong tâm trí, như đang nhìn thấy trước mắt.",
+        "example": {
+          "jp": "{故郷|こきょう}の{風景|ふうけい}が{目|め}に{浮|う}かぶ。",
+          "vi": "Cảnh quê hương hiện lên rõ ràng trong tâm trí tôi."
+        }
+      },
+      {
+        "word": "腹が立つ",
+        "reading": "はらがたつ",
+        "meaningVi": "Nổi giận, cảm thấy tức giận trước một việc gì đó.",
+        "example": {
+          "jp": "{失礼|しつれい}な{態度|たいど}に{腹|はら}が{立|た}った。",
+          "vi": "Tôi đã nổi giận trước thái độ vô lễ đó."
+        }
+      },
+      {
+        "word": "手が空く",
+        "reading": "てがあく",
+        "meaningVi": "Có thời gian rảnh, không bận việc gì để có thể làm chuyện khác.",
+        "example": {
+          "jp": "{今|いま}{手|て}が{空|あ}いているので{手伝|てつだ}えます。",
+          "vi": "Bây giờ tôi đang rảnh nên có thể giúp được."
+        }
+      },
+      {
+        "word": "心を込める",
+        "reading": "こころをこめる",
+        "meaningVi": "Dồn hết tâm huyết, tình cảm vào việc mình đang làm.",
+        "example": {
+          "jp": "{心|こころ}を{込|こ}めて{手紙|てがみ}を{書|か}いた。",
+          "vi": "Tôi đã viết thư bằng tất cả tâm huyết của mình."
+        }
+      },
+      {
+        "word": "口を出す",
+        "reading": "くちをだす",
+        "meaningVi": "Xen vào, chen lời góp ý vào việc không phải của mình.",
+        "example": {
+          "jp": "{人|ひと}の{問題|もんだい}に{口|くち}を{出|だ}さないでほしい。",
+          "vi": "Tôi mong bạn không xen vào chuyện của người khác."
+        }
+      },
+      {
+        "word": "頭が痛い",
+        "reading": "あたまがいたい",
+        "meaningVi": "Đau đầu, cả nghĩa đen (bệnh) và nghĩa bóng (lo lắng, khó xử vì vấn đề nào đó).",
+        "example": {
+          "jp": "{資金|しきん}{不足|ぶそく}で{頭|あたま}が{痛|いた}い。",
+          "vi": "Tôi đau đầu vì thiếu vốn."
+        }
+      }
+    ]
+  },
+  "v8d4": {
+    "introVi": "Tiếp tục nhóm thành ngữ dùng bộ phận cơ thể phần 2: 顔をしかめる, 息を呑む, 肩を落とす, 胸を張る, 涙をこらえる, 耳を傾ける, 舌を鳴らす. Nhóm này thường diễn tả cảm xúc, trạng thái tâm lý trong văn miêu tả nhân vật.",
+    "items": [
+      {
+        "word": "顔をしかめる",
+        "reading": "かおをしかめる",
+        "meaningVi": "Nhăn mặt lại vì đau, khó chịu hoặc không hài lòng.",
+        "example": {
+          "jp": "{苦|にが}い{薬|くすり}を{飲|の}んで{顔|かお}をしかめた。",
+          "vi": "Anh ấy đã nhăn mặt khi uống thuốc đắng."
+        }
+      },
+      {
+        "word": "息を呑む",
+        "reading": "いきをのむ",
+        "meaningVi": "Nín thở, sững sờ trước điều gì đó bất ngờ hoặc đẹp đẽ.",
+        "example": {
+          "jp": "{美|うつく}しい{景色|けしき}に{息|いき}を{呑|の}んだ。",
+          "vi": "Tôi đã nín thở trước cảnh đẹp đó."
+        }
+      },
+      {
+        "word": "肩を落とす",
+        "reading": "かたをおとす",
+        "meaningVi": "Rũ vai xuống, thể hiện sự thất vọng, chán nản.",
+        "example": {
+          "jp": "{試験|しけん}に{落|お}ちて{肩|かた}を{落|お}とした。",
+          "vi": "Anh ấy đã rũ vai thất vọng vì thi trượt."
+        }
+      },
+      {
+        "word": "胸を張る",
+        "reading": "むねをはる",
+        "meaningVi": "Ngẩng cao đầu, tự hào thể hiện thành quả của mình.",
+        "example": {
+          "jp": "{結果|けっか}を{胸|むね}を{張|は}って{報告|ほうこく}した。",
+          "vi": "Anh ấy đã tự hào báo cáo kết quả."
+        }
+      },
+      {
+        "word": "涙をこらえる",
+        "reading": "なみだをこらえる",
+        "meaningVi": "Cố nén nước mắt, không để mình bật khóc.",
+        "example": {
+          "jp": "{悲|かな}しい{知|し}らせに{涙|なみだ}をこらえた。",
+          "vi": "Cô ấy đã cố nén nước mắt khi nhận tin buồn."
+        }
+      },
+      {
+        "word": "耳を傾ける",
+        "reading": "みみをかたむける",
+        "meaningVi": "Lắng tai nghe một cách chăm chú, chú tâm.",
+        "example": {
+          "jp": "{先生|せんせい}の{話|はなし}に{耳|みみ}を{傾|かたむ}けた。",
+          "vi": "Tôi đã lắng nghe chăm chú lời thầy nói."
+        }
+      },
+      {
+        "word": "舌を鳴らす",
+        "reading": "したをならす",
+        "meaningVi": "Chép miệng, thể hiện sự tiếc nuối hoặc khó chịu.",
+        "example": {
+          "jp": "{失敗|しっぱい}に{舌|した}を{鳴|な}らした。",
+          "vi": "Anh ấy chép miệng tiếc nuối vì thất bại."
+        }
+      }
+    ]
+  },
+  "v8d5": {
+    "introVi": "Nhóm thành ngữ dùng bộ phận cơ thể phần 3: 目を光らせる, 気を配る, 手を抜く, 骨を折る, 腰を据える, 頭を抱える, 息を切らす. Nhóm này thường xuất hiện khi miêu tả thái độ làm việc, sự nỗ lực hoặc lo lắng.",
+    "items": [
+      {
+        "word": "目を光らせる",
+        "reading": "めをひからせる",
+        "meaningVi": "Cảnh giác cao độ, để mắt theo dõi sát sao một việc gì đó.",
+        "example": {
+          "jp": "{警察|けいさつ}が{周辺|しゅうへん}に{目|め}を{光|ひか}らせている。",
+          "vi": "Cảnh sát đang để mắt theo dõi sát khu vực xung quanh."
+        }
+      },
+      {
+        "word": "気を配る",
+        "reading": "きをくばる",
+        "meaningVi": "Quan tâm, chú ý một cách chu đáo đến mọi việc xung quanh.",
+        "example": {
+          "jp": "お{客様|きゃくさま}に{気|き}を{配|くば}って{接客|せっきゃく}する。",
+          "vi": "Chăm sóc khách hàng một cách chu đáo."
+        }
+      },
+      {
+        "word": "手を抜く",
+        "reading": "てをぬく",
+        "meaningVi": "Làm ẩu, làm qua loa, không dồn hết công sức vào việc gì.",
+        "example": {
+          "jp": "{仕事|しごと}で{手|て}を{抜|ぬ}いてはいけない。",
+          "vi": "Không nên làm việc một cách qua loa."
+        }
+      },
+      {
+        "word": "骨を折る",
+        "reading": "ほねをおる",
+        "meaningVi": "Nỗ lực hết mình, chịu vất vả để hoàn thành một việc gì đó.",
+        "example": {
+          "jp": "{計画|けいかく}の{実現|じつげん}に{骨|ほね}を{折|お}った。",
+          "vi": "Anh ấy đã nỗ lực hết mình để thực hiện kế hoạch."
+        }
+      },
+      {
+        "word": "腰を据える",
+        "reading": "こしをすえる",
+        "meaningVi": "Dồn sức, tập trung lâu dài và bền bỉ vào một việc gì đó.",
+        "example": {
+          "jp": "{腰|こし}を{据|す}えて{研究|けんきゅう}に{取|と}り{組|く}む。",
+          "vi": "Tôi tập trung dồn sức lâu dài vào việc nghiên cứu."
+        }
+      },
+      {
+        "word": "頭を抱える",
+        "reading": "あたまをかかえる",
+        "meaningVi": "Ôm đầu, thể hiện sự lo lắng, bối rối trước một vấn đề khó giải quyết.",
+        "example": {
+          "jp": "{借金|しゃっきん}のことで{頭|あたま}を{抱|かか}えている。",
+          "vi": "Anh ấy đang ôm đầu lo lắng vì chuyện nợ nần."
+        }
+      },
+      {
+        "word": "息を切らす",
+        "reading": "いきをきらす",
+        "meaningVi": "Thở hổn hển do vận động mạnh hoặc gắng sức.",
+        "example": {
+          "jp": "{階段|かいだん}を{走|はし}って{息|いき}を{切|き}らした。",
+          "vi": "Tôi đã thở hổn hển vì chạy lên cầu thang."
+        }
+      }
+    ]
+  },
+  "v8d6": {
+    "introVi": "Nhóm thành ngữ dùng bộ phận cơ thể phần 4, khép lại chuỗi biểu hiện thường dùng của tuần 8: 足を運ぶ, 声を掛ける, 息をつく, 手を貸す, 目をつぶる, 腹をくくる, 心を打つ.",
+    "items": [
+      {
+        "word": "足を運ぶ",
+        "reading": "あしをはこぶ",
+        "meaningVi": "Đến tận nơi, tự mình đi đến một địa điểm nào đó.",
+        "example": {
+          "jp": "{何度|なんど}も{現場|げんば}に{足|あし}を{運|はこ}んだ。",
+          "vi": "Tôi đã đến hiện trường nhiều lần."
+        }
+      },
+      {
+        "word": "声を掛ける",
+        "reading": "こえをかける",
+        "meaningVi": "Bắt chuyện, lên tiếng gọi hoặc mời ai đó.",
+        "example": {
+          "jp": "{困|こま}っている{人|ひと}に{声|こえ}を{掛|か}けた。",
+          "vi": "Tôi đã bắt chuyện với người đang gặp khó khăn."
+        }
+      },
+      {
+        "word": "息をつく",
+        "reading": "いきをつく",
+        "meaningVi": "Thở phào, nghỉ hơi sau khi hoàn thành hoặc thoát khỏi việc căng thẳng.",
+        "example": {
+          "jp": "{仕事|しごと}を{終|お}えてほっと{息|いき}をついた。",
+          "vi": "Sau khi hoàn thành công việc, tôi đã thở phào nhẹ nhõm."
+        }
+      },
+      {
+        "word": "手を貸す",
+        "reading": "てをかす",
+        "meaningVi": "Giúp một tay, hỗ trợ ai đó làm việc gì.",
+        "example": {
+          "jp": "{引|ひ}っ{越|こ}しの{時|とき}、{友人|ゆうじん}が{手|て}を{貸|か}してくれた。",
+          "vi": "Khi tôi chuyển nhà, bạn tôi đã giúp một tay."
+        }
+      },
+      {
+        "word": "目をつぶる",
+        "reading": "めをつぶる",
+        "meaningVi": "Nhắm mắt cho qua, làm ngơ trước lỗi lầm nhỏ của ai đó.",
+        "example": {
+          "jp": "{小|しょう}さな{ミス|ミス}には{目|め}をつぶることにした。",
+          "vi": "Tôi quyết định làm ngơ trước lỗi nhỏ đó."
+        }
+      },
+      {
+        "word": "腹をくくる",
+        "reading": "はらをくくる",
+        "meaningVi": "Quyết tâm, quyết định dứt khoát dù biết có rủi ro.",
+        "example": {
+          "jp": "{腹|はら}をくくって{挑戦|ちょうせん}することにした。",
+          "vi": "Tôi đã quyết tâm thử thách bản thân."
+        }
+      },
+      {
+        "word": "心を打つ",
+        "reading": "こころをうつ",
+        "meaningVi": "Chạm đến trái tim, gây xúc động mạnh cho người khác.",
+        "example": {
+          "jp": "{彼|かれ}の{演説|えんぜつ}は{人々|ひとびと}の{心|こころ}を{打|う}った。",
+          "vi": "Bài phát biểu của anh ấy đã chạm đến trái tim mọi người."
+        }
+      }
+    ]
+  },
+  "v8d7": {
+    "introVi": "Bài ôn tập tổng hợp cuối tuần 8, tổng kết các từ ghép và thành ngữ dùng bộ phận cơ thể quan trọng đã học: 話し合う, 取り組む, 気を配る, 手を貸す, 心を打つ, 腰を据える, 声を掛ける. Ôn lại kỹ trước khi làm phần luyện tập thực chiến (実戦問題) về từ vựng N2.",
+    "items": [
+      {
+        "word": "話し合う",
+        "reading": "はなしあう",
+        "meaningVi": "Ôn tập: thảo luận, trao đổi ý kiến qua lại với nhau về một vấn đề.",
+        "example": {
+          "jp": "{両親|りょうしん}と{将来|しょうらい}のことについて{話|はな}し{合|あ}った。",
+          "vi": "Tôi đã thảo luận với cha mẹ về chuyện tương lai."
+        }
+      },
+      {
+        "word": "取り組む",
+        "reading": "とりくむ",
+        "meaningVi": "Ôn tập: bắt tay vào, dồn sức giải quyết một vấn đề hay công việc.",
+        "example": {
+          "jp": "{環境|かんきょう}{問題|もんだい}に{真剣|しんけん}に{取|と}り{組|く}む{必要|ひつよう}がある。",
+          "vi": "Cần phải bắt tay giải quyết vấn đề môi trường một cách nghiêm túc."
+        }
+      },
+      {
+        "word": "気を配る",
+        "reading": "きをくばる",
+        "meaningVi": "Ôn tập: quan tâm, chú ý một cách chu đáo đến mọi việc xung quanh.",
+        "example": {
+          "jp": "{周囲|しゅうい}の{人|ひと}に{気|き}を{配|くば}りながら{行動|こうどう}する。",
+          "vi": "Hành động trong khi vẫn quan tâm chu đáo đến những người xung quanh."
+        }
+      },
+      {
+        "word": "手を貸す",
+        "reading": "てをかす",
+        "meaningVi": "Ôn tập: giúp một tay, hỗ trợ ai đó làm việc gì.",
+        "example": {
+          "jp": "{荷物|にもつ}が{多|おお}かったので{手|て}を{貸|か}してもらった。",
+          "vi": "Vì hành lý nhiều nên tôi đã được giúp một tay."
+        }
+      },
+      {
+        "word": "心を打つ",
+        "reading": "こころをうつ",
+        "meaningVi": "Ôn tập: chạm đến trái tim, gây xúc động mạnh cho người khác.",
+        "example": {
+          "jp": "その{映画|えいが}は{多|おお}くの{人|ひと}の{心|こころ}を{打|う}った。",
+          "vi": "Bộ phim đó đã chạm đến trái tim của rất nhiều người."
+        }
+      },
+      {
+        "word": "腰を据える",
+        "reading": "こしをすえる",
+        "meaningVi": "Ôn tập: dồn sức, tập trung lâu dài và bền bỉ vào một việc gì đó.",
+        "example": {
+          "jp": "{腰|こし}を{据|す}えて{勉強|べんきょう}に{取|と}り{組|く}むことにした。",
+          "vi": "Tôi quyết định tập trung dồn sức lâu dài vào việc học."
+        }
+      },
+      {
+        "word": "声を掛ける",
+        "reading": "こえをかける",
+        "meaningVi": "Ôn tập: bắt chuyện, lên tiếng gọi hoặc mời ai đó.",
+        "example": {
+          "jp": "{新|あたら}しく{来|き}た{社員|しゃいん}に{優|やさ}しく{声|こえ}を{掛|か}けた。",
+          "vi": "Tôi đã lên tiếng bắt chuyện với nhân viên mới đến một cách nhẹ nhàng."
+        }
+      }
+    ]
+  }
+}

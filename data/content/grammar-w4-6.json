@@ -1,0 +1,295 @@
+{
+  "g4d1": {
+    "pattern": "〜の{上|うえ}では",
+    "meaningVi": "về mặt..., trên phương diện... thì (chỉ giới hạn trong một khía cạnh nhất định như bản đồ, số liệu, giấy tờ, lý thuyết, thường đối lập với thực tế)",
+    "formation": "Danh từ + の{上|うえ}では",
+    "explanationVi": "「〜の上では」dùng để giới hạn phạm vi nhận định trong một khía cạnh cụ thể (bản đồ, số liệu, giấy tờ, lý thuyết...), ngụ ý rằng thực tế có thể khác với những gì thấy trên phương diện đó. Câu sau thường xuất hiện sự đối lập bằng が、しかし、けれども. Đây là cách diễn đạt trang trọng, hay dùng trong văn viết, báo cáo, phân tích.",
+    "examples": [
+      {"jp": "{地図|ちず}の{上|うえ}では{近|ちか}いが、{実際|じっさい}に{歩|あるい}てみるとかなり{遠|とお}い。", "vi": "Trên bản đồ thì gần, nhưng thực tế đi bộ thì khá xa."},
+      {"jp": "{計算|けいさん}の{上|うえ}では{利益|りえき}が{出|で}るはずだったが、{現実|げんじつ}はそう{甘|あま}くなかった。", "vi": "Về mặt tính toán thì lẽ ra có lợi nhuận, nhưng thực tế không dễ dàng như vậy."},
+      {"jp": "{書類|しょるい}の{上|うえ}では{手続|てつづ}きは{完了|かんりょう}している。", "vi": "Trên giấy tờ thì thủ tục đã hoàn tất."},
+      {"jp": "{理論|りろん}の{上|うえ}では{可能|かのう}だが、{実行|じっこう}するのは{難|むずか}しい。", "vi": "Về mặt lý thuyết thì có thể, nhưng thực hiện thì khó."},
+      {"jp": "{数字|すうじ}の{上|うえ}では{景気|けいき}が{回復|かいふく}しているように{見|み}える。", "vi": "Về mặt số liệu thì trông có vẻ kinh tế đang hồi phục."}
+    ],
+    "notes": "So sánh với 「〜{上|うえ}は」(mang nghĩa \"đã như vậy thì bắt buộc phải...\", mẫu điều kiện/quyết tâm) — dù viết gần giống nhưng nghĩa hoàn toàn khác. 「〜の上では」luôn cần trợ từ の trước 上 và では sau đó để nhấn mạnh việc giới hạn phạm vi."
+  },
+  "g4d2": {
+    "pattern": "〜{向|む}け",
+    "meaningVi": "dành cho, hướng đến (đối tượng cụ thể)",
+    "formation": "Danh từ + {向|む}け（の／に）",
+    "explanationVi": "「〜向け」gắn sau danh từ chỉ đối tượng, diễn tả sản phẩm, dịch vụ, nội dung được thiết kế/sản xuất một cách chủ động để phù hợp với đối tượng đó. Khác với 「〜{向|む}き」(chỉ sự phù hợp tự nhiên, không hẳn do ai chủ động thiết kế), 「〜向け」nhấn mạnh tính có chủ đích khi tạo ra sản phẩm/nội dung.",
+    "examples": [
+      {"jp": "{子供|こども}{向|む}けのアニメは{内容|ないよう}が{分|わ}かりやすい。", "vi": "Phim hoạt hình dành cho trẻ em có nội dung dễ hiểu."},
+      {"jp": "この{雑誌|ざっし}は{女性|じょせい}{向|む}けに{作|つく}られている。", "vi": "Tạp chí này được làm dành cho nữ giới."},
+      {"jp": "{初心者|しょしんしゃ}{向|む}けのパソコン{講座|こうざ}に{参加|さんか}した。", "vi": "Tôi đã tham gia khóa học máy tính dành cho người mới bắt đầu."},
+      {"jp": "{海外|かいがい}{向|む}けの{製品|せいひん}は{国内|こくない}{向|む}けと{規格|きかく}が{違|ちが}う。", "vi": "Sản phẩm dành cho nước ngoài có quy cách khác với sản phẩm dành cho nội địa."},
+      {"jp": "この{住宅|じゅうたく}は{高齢者|こうれいしゃ}{向|む}けに{設計|せっけい}されている。", "vi": "Ngôi nhà này được thiết kế dành cho người cao tuổi."}
+    ],
+    "notes": "Phân biệt 「〜向け」(được tạo ra/điều chỉnh chủ động cho một đối tượng) và 「〜向き」(vốn tự nhiên phù hợp với đối tượng, ví dụ 「{女性|じょせい}{向|む}きの{仕事|しごと}」= công việc tự nhiên hợp với phụ nữ, không phải do thiết kế riêng)."
+  },
+  "g4d3": {
+    "pattern": "〜にこたえて",
+    "meaningVi": "đáp lại, hồi đáp lại (kỳ vọng, mong muốn, yêu cầu...)",
+    "formation": "Danh từ + にこたえて",
+    "explanationVi": "「〜にこたえて」diễn tả hành động được thực hiện để đáp lại một kỳ vọng, lời yêu cầu, hoặc nguyện vọng nào đó từ người khác. Thường đi cùng danh từ như {期待|きたい}、{要望|ようぼう}、{声|こえ}、リクエスト、{声援|せいえん}. Mang sắc thái tích cực, trang trọng, hay dùng trong văn viết, phát biểu, bài báo.",
+    "examples": [
+      {"jp": "{観客|かんきゃく}の{声援|せいえん}にこたえて、{選手|せんしゅ}たちは{最後|さいご}まで{全力|ぜんりょく}で{走|はし}った。", "vi": "Đáp lại sự cổ vũ của khán giả, các vận động viên đã chạy hết mình đến cuối."},
+      {"jp": "{皆様|みなさま}の{期待|きたい}にこたえて、{新製品|しんせいひん}を{開発|かいはつ}しました。", "vi": "Để đáp lại sự kỳ vọng của mọi người, chúng tôi đã phát triển sản phẩm mới."},
+      {"jp": "{お客様|おきゃくさま}の{要望|ようぼう}にこたえて、{営業時間|えいぎょうじかん}を{延長|えんちょう}することにした。", "vi": "Đáp lại yêu cầu của khách hàng, chúng tôi quyết định kéo dài giờ mở cửa."},
+      {"jp": "ファンのリクエストにこたえて、{再結成|さいけっせい}コンサートが{開催|かいさい}された。", "vi": "Đáp lại yêu cầu của người hâm mộ, buổi hòa nhạc tái hợp đã được tổ chức."},
+      {"jp": "{地域|ちいき}の{声|こえ}にこたえて、{新|あたら}しい{図書館|としょかん}が{建|た}てられた。", "vi": "Đáp lại tiếng nói của cộng đồng, thư viện mới đã được xây dựng."}
+    ],
+    "notes": "Thường xuất hiện trong câu bị động hoặc văn phong trang trọng. Phân biệt với 「〜に{応|おう}じて」(điều chỉnh linh hoạt tùy theo mức độ/tình huống) — 「にこたえて」nhấn mạnh việc đáp lại một nguyện vọng cụ thể đã được nêu ra, mang tính chủ động và tích cực hơn."
+  },
+  "g4d4": {
+    "pattern": "〜つつ（も）",
+    "meaningVi": "mặc dù biết/làm... nhưng vẫn... (nghĩa nhượng bộ); hoặc vừa... vừa... (đồng thời, giống ながら)",
+    "formation": "Động từ thể ます (bỏ ます) + つつ（も）",
+    "explanationVi": "「〜つつ」là mẫu ngữ pháp trang trọng, mang hai chức năng chính: (1) diễn tả hai hành động xảy ra đồng thời, gần nghĩa với 「〜ながら」nhưng thiên về văn viết; (2) khi đi với động từ nhận thức như {知|し}る、{分|わ}かる、{思|おも}う thường mang nghĩa nhượng bộ \"biết rõ là... nhưng vẫn...\", nhấn mạnh mâu thuẫn giữa nhận thức và hành động thực tế. Thêm も (つつも) làm tăng sắc thái nhượng bộ, nhấn mạnh sự trái ngược.",
+    "examples": [
+      {"jp": "{体|からだ}に{悪|わる}いと{知|し}りつつ、タバコをやめられない。", "vi": "Biết rõ là có hại cho sức khỏe nhưng vẫn không bỏ thuốc được."},
+      {"jp": "{間違|まちが}っていると{分|わ}かりつつも、{謝|あやま}ることができなかった。", "vi": "Mặc dù biết mình sai nhưng tôi không thể xin lỗi được."},
+      {"jp": "{景色|けいしき}を{楽|たの}しみつつ、ゆっくりと{山道|やまみち}を{歩|ある}いた。", "vi": "Vừa thưởng thức cảnh vật vừa đi chậm trên đường núi."},
+      {"jp": "{失敗|しっぱい}するかもしれないと{思|おも}いつつ、{挑戦|ちょうせん}してみた。", "vi": "Mặc dù nghĩ có thể sẽ thất bại nhưng tôi vẫn thử thách."},
+      {"jp": "{忙|いそが}しいと{知|し}りつつ、{友人|ゆうじん}に{頼|たの}んでしまった。", "vi": "Biết rõ là bạn đang bận nhưng tôi vẫn nhờ vả."}
+    ],
+    "notes": "Khi mang nghĩa nhượng bộ, 「〜つつ」rất gần với 「〜ながらも」và hay đi kèm động từ nhận thức (知る, 分かる, 思う). Khi mang nghĩa đồng thời, gần với 「〜ながら」nhưng trang trọng hơn, thường dùng trong văn viết, ít dùng trong văn nói thân mật."
+  },
+  "g4d5": {
+    "pattern": "〜ざるを{得|え}ない",
+    "meaningVi": "không thể không..., buộc phải... (dù không muốn nhưng vì hoàn cảnh, đạo lý mà phải làm)",
+    "formation": "Động từ thể ない (bỏ ない) + ざるを{得|え}ない　※する → せざるを{得|え}ない (ngoại lệ)",
+    "explanationVi": "「〜ざるを得ない」diễn tả hành động mà người nói/chủ thể không muốn làm nhưng do hoàn cảnh, quy tắc, hoặc đạo lý xã hội ép buộc nên đành phải làm. Đây là cách nói trang trọng, hay dùng trong văn viết, phát biểu chính thức. Lưu ý động từ する biến đổi thành せざるを得ない (không phải しざる).",
+    "examples": [
+      {"jp": "{台風|たいふう}のため、イベントを{中止|ちゅうし}せざるを{得|え}ない。", "vi": "Vì bão nên buộc phải hủy sự kiện."},
+      {"jp": "{会社|かいしゃ}の{方針|ほうしん}なので、その{提案|ていあん}を{受|う}け{入|い}れざるを{得|え}ない。", "vi": "Vì đó là chính sách của công ty nên tôi buộc phải chấp nhận đề xuất đó."},
+      {"jp": "{証拠|しょうこ}がそろっている{以上|いじょう}、{事実|じじつ}を{認|みと}めざるを{得|え}ない。", "vi": "Vì bằng chứng đã đầy đủ nên buộc phải nhận sự thật."},
+      {"jp": "{給料|きゅうりょう}が{下|さ}がったので、{生活|せいかつ}を{見直|みなお}さざるを{得|え}ない。", "vi": "Vì lương bị giảm nên buộc phải xem lại cách sinh hoạt."},
+      {"jp": "{上司|じょうし}の{指示|しじ}だから、{残業|ざんぎょう}せざるを{得|え}ない。", "vi": "Vì là chỉ thị của cấp trên nên buộc phải làm thêm giờ."}
+    ],
+    "notes": "Mang sắc thái tiêu cực, bị ép buộc, khác với 「〜なければならない」(nghĩa vụ khách quan, trung tính hơn, không nhất thiết có sự miễn cưỡng). 「する」→「せざるを得ない」là ngoại lệ đặc biệt cần nhớ kỹ khi ôn thi."
+  },
+  "g4d6": {
+    "pattern": "〜にあたって",
+    "meaningVi": "khi, vào lúc, trước khi (làm việc gì quan trọng, mang tính trang trọng, nghi thức)",
+    "formation": "Danh từ／Động từ thể từ điển + にあたって",
+    "explanationVi": "「〜にあたって」dùng để chỉ thời điểm trước hoặc ngay khi bắt đầu một việc quan trọng, mang tính trang trọng, nghi thức. Thường xuất hiện trong văn viết, phát biểu, hướng dẫn sử dụng, lễ khai giảng, khai mạc. Gần nghĩa với 「〜に{際|さい}して」nhưng 「にあたって」nhấn mạnh hơn vào sự chuẩn bị tâm thế/tinh thần trước sự việc quan trọng đó.",
+    "examples": [
+      {"jp": "この{機械|きかい}をご{使用|しよう}にあたって、まず{説明書|せつめいしょ}をお{読|よ}みください。", "vi": "Khi sử dụng máy này, trước tiên xin hãy đọc hướng dẫn sử dụng."},
+      {"jp": "{新入生|しんにゅうせい}を{迎|むか}えるにあたって、{学校|がっこう}は{準備|じゅんび}を{進|すす}めている。", "vi": "Trước khi chào đón học sinh mới, nhà trường đang tiến hành chuẩn bị."},
+      {"jp": "{結婚|けっこん}するにあたって、{両家|りょうけ}の{両親|りょうしん}に{挨拶|あいさつ}をした。", "vi": "Trước khi kết hôn, chúng tôi đã đến chào hỏi cha mẹ hai bên."},
+      {"jp": "{新規|しんき}プロジェクトを{開始|かいし}するにあたって、{目標|もくひょう}を{明確|めいかく}にする{必要|ひつよう}がある。", "vi": "Khi bắt đầu dự án mới, cần phải làm rõ mục tiêu."},
+      {"jp": "{大会|たいかい}に{出場|しゅつじょう}するにあたって、{選手|せんしゅ}たちは{特別|とくべつ}な{練習|れんしゅう}を{行|おこな}った。", "vi": "Trước khi tham gia giải đấu, các vận động viên đã tập luyện đặc biệt."}
+    ],
+    "notes": "So sánh với 「〜に{際|さい}して」: cả hai đều trang trọng và chỉ mốc thời điểm quan trọng, nhưng 「にあたって」thường nhấn mạnh việc cần chuẩn bị/lưu ý gì đó trước sự việc, còn 「に際して」trung hòa hơn, chỉ đơn thuần chỉ thời điểm xảy ra."
+  },
+  "g4d7": {
+    "pattern": "{実戦問題|じっせんもんだい} – Ôn tập tuần 4 (6 mẫu ngữ pháp N2)",
+    "meaningVi": "Tổng hợp và luyện tập 6 mẫu ngữ pháp đã học trong tuần 4: 〜の上では、〜向け、〜にこたえて、〜つつ、〜ざるを得ない、〜にあたって",
+    "formation": "Xem lại cách kết hợp riêng của từng mẫu ở các bài trước trong tuần; bài thực chiến này tập trung vào việc phân biệt sắc thái và kết hợp nhiều mẫu trong một câu/đoạn văn",
+    "explanationVi": "Bài luyện tập tổng hợp tuần 4 giúp ôn lại 6 mẫu ngữ pháp: 「〜の上では」(giới hạn phạm vi nhận định, thường đối lập với thực tế), 「〜向け」(dành cho một đối tượng cụ thể), 「〜にこたえて」(đáp lại kỳ vọng/yêu cầu), 「〜つつ」(đồng thời hoặc nhượng bộ khi biết rõ điều gì đó), 「〜ざるを得ない」(buộc phải làm dù không muốn), 「〜にあたって」(vào lúc làm việc quan trọng, mang tính trang trọng). Khi làm bài thi thực chiến, cần chú ý phân biệt sắc thái nhượng bộ/bắt buộc/trang trọng của từng mẫu để chọn đáp án phù hợp với ngữ cảnh câu.",
+    "examples": [
+      {"jp": "{地図|ちず}の{上|うえ}では{近|ちか}く{見|み}えるが、{実際|じっさい}に{歩|あるい}てみると{遠|とお}かった。", "vi": "Trên bản đồ thì trông gần, nhưng thực tế đi bộ thì lại xa."},
+      {"jp": "この{辞書|じしょ}は{初心者|しょしんしゃ}{向|む}けに{作|つく}られている。", "vi": "Cuốn từ điển này được làm dành cho người mới bắt đầu."},
+      {"jp": "{お客様|おきゃくさま}の{要望|ようぼう}にこたえて、サービスを{改善|かいぜん}した。", "vi": "Đáp lại yêu cầu của khách hàng, chúng tôi đã cải thiện dịch vụ."},
+      {"jp": "{機械|きかい}の{使用|しよう}にあたって、{危険|きけん}だと{知|し}りつつも{注意|ちゅうい}{事項|じこう}を{確認|かくにん}せざるを{得|え}ない。", "vi": "Trước khi sử dụng máy, mặc dù biết là nguy hiểm nhưng vẫn buộc phải kiểm tra các lưu ý."}
+    ],
+    "notes": "Bài thực chiến tuần 4 nhấn mạnh việc phân biệt các mẫu dễ gây nhầm lẫn: 「〜の上では」(giới hạn phạm vi, khác hoàn toàn với 「〜上は」mang nghĩa điều kiện/quyết tâm dù viết gần giống); và phân biệt 「〜ざるを得ない」(bị ép buộc, mang sắc thái tiêu cực) với 「〜なければならない」(nghĩa vụ khách quan, trung tính)."
+  },
+  "g5d1": {
+    "pattern": "〜がたい",
+    "meaningVi": "khó có thể..., khó mà... (diễn tả việc khó thực hiện về mặt tâm lý/tình cảm/đạo lý hơn là khó khăn kỹ thuật)",
+    "formation": "Động từ thể ます (bỏ ます) + がたい　※chỉ đi được với một số động từ cố định như {信|しん}じる、{理解|りかい}する、{忘|わす}れる、{許|ゆる}す、{言|い}う",
+    "explanationVi": "「〜がたい」gắn sau thân động từ, diễn tả việc rất khó, gần như không thể thực hiện được, thường mang tính chủ quan, liên quan đến cảm xúc, tâm lý, đạo lý hơn là khó khăn về kỹ thuật hoặc vật lý. Khác với 「〜にくい」(khó về mặt khách quan, kỹ thuật, thói quen sử dụng), 「〜がたい」mang tính văn viết, trang trọng và chỉ kết hợp được với một số động từ cố định giới hạn.",
+    "examples": [
+      {"jp": "{彼|かれ}がそんなことをしたとは{信|しん}じがたい。", "vi": "Thật khó tin là anh ấy đã làm việc như vậy."},
+      {"jp": "あの{日|ひ}の{出来事|できごと}は{忘|わす}れがたい。", "vi": "Sự việc ngày đó thật khó quên."},
+      {"jp": "{彼女|かのじょ}の{行動|こうどう}は{理解|りかい}しがたい。", "vi": "Hành động của cô ấy thật khó hiểu."},
+      {"jp": "{人|ひと}を{裏切|うらぎ}った{彼|かれ}を{許|ゆる}しがたい。", "vi": "Thật khó tha thứ cho anh ấy vì đã phản bội người khác."},
+      {"jp": "これは{言|い}いがたいことですが、{正直|しょうじき}に{伝|つた}えます。", "vi": "Đây là điều khó nói, nhưng tôi sẽ nói thật."}
+    ],
+    "notes": "So sánh với 「〜にくい」: 「{読|よ}みにくい{字|じ}」(chữ khó đọc — khó khăn khách quan về kỹ thuật) khác với 「{信|しん}じがたい{話|はなし}」(chuyện khó tin — khó khăn về mặt tâm lý, cảm xúc). 「〜がたい」chỉ dùng với một số động từ hạn chế, mang tính văn viết, trang trọng hơn 「〜にくい」."
+  },
+  "g5d2": {
+    "pattern": "〜ことだから",
+    "meaningVi": "vì là... (người/việc như vậy) nên chắc là... (suy đoán dựa trên đặc điểm/tính cách đã biết rõ về đối tượng)",
+    "formation": "Danh từ (chỉ người) + の + ことだから",
+    "explanationVi": "「〜ことだから」dùng để đưa ra suy đoán, phán đoán về việc sẽ xảy ra dựa trên những gì người nói đã biết rõ về tính cách, thói quen, đặc điểm của người/đối tượng được nhắc đến trước đó. Thường theo sau là mệnh đề diễn tả sự tin tưởng, suy đoán như きっと、たぶん、に{違|ちが}いない.",
+    "examples": [
+      {"jp": "{真面目|まじめ}な{彼|かれ}のことだから、{約束|やくそく}の{時間|じかん}に{必|かなら}ず{来|く}るだろう。", "vi": "Vì là anh ấy - người nghiêm túc như vậy nên chắc chắn sẽ đến đúng giờ hẹn."},
+      {"jp": "{優|やさ}しい{彼女|かのじょ}のことだから、きっと{許|ゆる}してくれるはずだ。", "vi": "Vì là cô ấy - người dịu dàng như vậy nên chắc là sẽ tha thứ cho tôi."},
+      {"jp": "{慎重|しんちょう}な{田中|たなか}さんのことだから、もう{一度|いちど}{確認|かくにん}してから{提出|ていしゅつ}するでしょう。", "vi": "Vì là anh Tanaka - người cẩn trọng như vậy nên chắc anh ấy sẽ kiểm tra lại lần nữa trước khi nộp."},
+      {"jp": "{子供|こども}のことだから、すぐに{飽|あ}きてしまうだろう。", "vi": "Vì là trẻ con nên chắc là sẽ nhanh chán ngay thôi."},
+      {"jp": "あの{人|ひと}のことだから、また{遅刻|ちこく}するに{違|ちが}いない。", "vi": "Vì là người đó (với tính cách như vậy) nên chắc chắn lại sẽ đến muộn."}
+    ],
+    "notes": "Bắt buộc phải có ngữ cảnh trước đó về đặc điểm/tính cách của người được nói tới thì câu mới có nghĩa; người nghe và người nói cần cùng biết rõ về đối tượng đó, nếu không câu sẽ khó hiểu."
+  },
+  "g5d3": {
+    "pattern": "〜だけましだ",
+    "meaningVi": "chỉ riêng việc... còn tốt hơn/đỡ hơn (so với trường hợp xấu hơn có thể xảy ra)",
+    "formation": "Động từ／Tính từ thể thường + だけましだ",
+    "explanationVi": "「〜だけましだ」dùng để đánh giá một tình huống không tốt nhưng vẫn còn có một điểm tích cực nào đó, khiến nó đỡ tệ hơn so với tình huống xấu hơn có thể xảy ra. 「まし」nghĩa là \"đỡ hơn, khá hơn một chút\", mang sắc thái so sánh ngầm với trường hợp tệ hơn không được nói ra trực tiếp.",
+    "examples": [
+      {"jp": "{給料|きゅうりょう}は{安|やす}いが、{仕事|しごと}があるだけましだ。", "vi": "Lương thấp nhưng có việc để làm còn đỡ hơn."},
+      {"jp": "{雨|あめ}が{降|ふ}っているが、{風|かぜ}がないだけましだ。", "vi": "Trời đang mưa nhưng không có gió còn đỡ hơn."},
+      {"jp": "{事故|じこ}に{遭|あ}ったが、{命|いのち}があるだけましだ。", "vi": "Đã gặp tai nạn nhưng còn sống là còn may."},
+      {"jp": "{試験|しけん}に{落|お}ちたが、もう{一度|いちど}{受|う}けられるだけましだ。", "vi": "Thi rớt nhưng còn có thể thi lại là còn đỡ hơn."},
+      {"jp": "{狭|せま}い{部屋|へや}だが、{駅|えき}から{近|ちか}いだけましだ。", "vi": "Phòng chật nhưng gần trạm tàu vẫn còn đỡ hơn."}
+    ],
+    "notes": "「まし」là tính từ đuôi な, có thể chia thành 「ましな」「ましだ」「ましだった」. Cấu trúc luôn ngầm so sánh với một tình huống tệ hơn (không nói ra) để làm nổi bật điểm tích cực còn sót lại trong tình huống hiện tại."
+  },
+  "g5d4": {
+    "pattern": "〜だけに",
+    "meaningVi": "chính vì... (nên) mà càng...; đúng là vì... nên (nhấn mạnh nguyên nhân-kết quả tương xứng hoặc trái ngược, bất ngờ)",
+    "formation": "Danh từ／Tính từ／Động từ thể thường (có thể ở thì quá khứ) + だけに",
+    "explanationVi": "「〜だけに」dùng để nhấn mạnh lý do khiến kết quả hoặc cảm xúc ở mệnh đề sau trở nên mạnh mẽ, tương xứng hơn (theo hướng tăng cường), hoặc để nhấn mạnh sự trái ngược, bất ngờ so với những gì lẽ ra phải xảy ra. Mệnh đề sau thường mang cảm xúc như tiếc nuối, ngạc nhiên, thất vọng, khâm phục.",
+    "examples": [
+      {"jp": "{大事|だいじ}な{試験|しけん}が{先週|せんしゅう}だっただけに、{今週|こんしゅう}はゆっくり{休|やす}みたい。", "vi": "Chính vì kỳ thi quan trọng đã diễn ra vào tuần trước nên tuần này tôi muốn nghỉ ngơi thật thoải mái."},
+      {"jp": "{長|なが}い{間|あいだ}{努力|どりょく}してきただけに、{合格|ごうかく}できなかったことが{悔|くや}しい。", "vi": "Chính vì đã cố gắng trong thời gian dài nên việc không đỗ càng khiến tôi tiếc nuối."},
+      {"jp": "{人気|にんき}の{店|みせ}だけに、{開店|かいてん}{前|まえ}からもう{行列|ぎょうれつ}ができている。", "vi": "Chính vì là quán nổi tiếng nên đã có hàng dài người xếp hàng trước cả khi mở cửa."},
+      {"jp": "{期待|きたい}していただけに、{結果|けっか}にがっかりした。", "vi": "Chính vì đã kỳ vọng nhiều nên tôi thất vọng với kết quả."},
+      {"jp": "{経験|けいけん}が{豊富|ほうふ}なだけに、{彼|かれ}の{判断|はんだん}は{的確|てきかく}だ。", "vi": "Chính vì có nhiều kinh nghiệm nên nhận định của anh ấy rất chính xác."}
+    ],
+    "notes": "「だけに」khác với 「〜だけあって」(cũng nhấn mạnh nguyên nhân-kết quả tương xứng nhưng nghiêng về khách quan, khen ngợi); 「だけに」có thể dùng cho cả kết quả tích cực lẫn kết quả trái ngược/thất vọng."
+  },
+  "g5d5": {
+    "pattern": "〜ようがない",
+    "meaningVi": "không có cách nào để..., không thể... được (dù muốn làm cũng không tìm ra phương pháp)",
+    "formation": "Động từ thể ます (bỏ ます) + ようがない",
+    "explanationVi": "「〜ようがない」diễn tả việc hoàn toàn không có phương pháp, cách thức nào để thực hiện hành động đó, dù người nói có muốn làm cũng không thể. Nhấn mạnh sự bất khả thi về mặt phương tiện/cách thức, thường do hoàn cảnh quá đặc biệt hoặc thiếu điều kiện cần thiết để thực hiện.",
+    "examples": [
+      {"jp": "こんなに{散|ち}らかっていたら、{片付|かたづ}けようがない。", "vi": "Bừa bộn thế này thì không có cách nào dọn dẹp được."},
+      {"jp": "{連絡先|れんらくさき}が{分|わ}からないので、{確認|かくにん}しようがない。", "vi": "Vì không biết thông tin liên hệ nên không có cách nào xác nhận được."},
+      {"jp": "データがすべて{消|き}えてしまい、{復元|ふくげん}しようがない。", "vi": "Dữ liệu đã bị xóa hết nên không có cách nào phục hồi."},
+      {"jp": "{原因|げんいん}が{分|わ}からないのだから、{直|なお}しようがない。", "vi": "Vì không biết nguyên nhân nên không có cách nào sửa được."},
+      {"jp": "{証拠|しょうこ}がなければ、{証明|しょうめい}しようがない。", "vi": "Nếu không có bằng chứng thì không có cách nào chứng minh được."}
+    ],
+    "notes": "Khác với 「〜のは{難|むずか}しい」(chỉ diễn tả sự khó khăn, không hẳn là bất khả), 「〜ようがない」nhấn mạnh sự tuyệt đối bất khả thi vì thiếu điều kiện/phương tiện, thường mang sắc thái bất lực, than thở."
+  },
+  "g5d6": {
+    "pattern": "〜に{基|もと}づいて",
+    "meaningVi": "dựa trên, căn cứ vào (cơ sở, nền tảng là...)",
+    "formation": "Danh từ + に{基|もと}づいて",
+    "explanationVi": "「〜に基づいて」dùng để chỉ ra căn cứ, cơ sở, nền tảng mà một hành động, quyết định, hoặc tác phẩm được xây dựng dựa trên đó. Thường đi với danh từ chỉ dữ liệu, sự thật, quy tắc, kinh nghiệm, luật pháp, mang tính khách quan, trang trọng, hay dùng trong văn viết học thuật, báo cáo, luật.",
+    "examples": [
+      {"jp": "この{小説|しょうせつ}は{実際|じっさい}にあった{事実|じじつ}に{基|もと}づいて{書|か}かれている。", "vi": "Cuốn tiểu thuyết này được viết dựa trên sự thật đã thực sự xảy ra."},
+      {"jp": "{調査|ちょうさ}の{結果|けっか}に{基|もと}づいて、{新|あたら}しい{政策|せいさく}が{決|き}められた。", "vi": "Dựa trên kết quả điều tra, chính sách mới đã được quyết định."},
+      {"jp": "{法律|ほうりつ}に{基|もと}づいて、{公平|こうへい}に{判断|はんだん}しなければならない。", "vi": "Phải phán đoán một cách công bằng dựa trên luật pháp."},
+      {"jp": "{自分|じぶん}の{経験|けいけん}に{基|もと}づいて、アドバイスをしている。", "vi": "Tôi đưa ra lời khuyên dựa trên kinh nghiệm của bản thân."},
+      {"jp": "このデータは{最新|さいしん}の{統計|とうけい}に{基|もと}づいている。", "vi": "Dữ liệu này dựa trên số liệu thống kê mới nhất."}
+    ],
+    "notes": "So sánh với 「〜に{基|もと}づく」(dạng đứng trước danh từ làm định ngữ, ví dụ 「{事実|じじつ}に{基|もと}づく{物語|ものがたり}」= câu chuyện dựa trên sự thật) và 「〜に{基|もと}づいた」cũng dùng tương tự khi bổ nghĩa cho danh từ đứng sau."
+  },
+  "g5d7": {
+    "pattern": "{実戦問題|じっせんもんだい} – Ôn tập tuần 5 (6 mẫu ngữ pháp N2)",
+    "meaningVi": "Tổng hợp và luyện tập 6 mẫu ngữ pháp đã học trong tuần 5: 〜がたい、〜ことだから、〜だけましだ、〜だけに、〜ようがない、〜に基づいて",
+    "formation": "Xem lại cách kết hợp riêng của từng mẫu ở các bài trước trong tuần; bài thực chiến này tập trung vào việc phân biệt sắc thái khó khăn/bất khả và nguyên nhân-kết quả",
+    "explanationVi": "Bài luyện tập tổng hợp tuần 5 giúp ôn lại 6 mẫu ngữ pháp: 「〜がたい」(khó về mặt tâm lý, chỉ đi với vài động từ cố định), 「〜ことだから」(suy đoán dựa trên đặc điểm đã biết về người/việc), 「〜だけましだ」(vẫn còn đỡ hơn so với trường hợp tệ hơn), 「〜だけに」(nhấn mạnh nguyên nhân làm tăng cảm xúc/kết quả), 「〜ようがない」(hoàn toàn không có cách nào làm được), 「〜に基づいて」(dựa trên căn cứ khách quan). Khi luyện đề, cần phân biệt kỹ 「だけに」và 「だけましだ」vì cả hai đều liên quan đến so sánh nhưng bản chất khác nhau.",
+    "examples": [
+      {"jp": "{彼|かれ}の{話|はなし}は{信|しん}じがたいが、{証拠|しょうこ}に{基|もと}づいて{判断|はんだん}するしかない。", "vi": "Lời anh ấy nói thật khó tin, nhưng chỉ có thể phán đoán dựa trên bằng chứng."},
+      {"jp": "{親切|しんせつ}な{彼女|かのじょ}のことだから、きっと{手伝|てつだ}ってくれるだろう。", "vi": "Vì là cô ấy - người tốt bụng như vậy nên chắc là sẽ giúp tôi."},
+      {"jp": "{給料|きゅうりょう}は{安|やす}いが、{仕事|しごと}があるだけましだ。", "vi": "Lương thấp nhưng có việc để làm còn đỡ hơn."},
+      {"jp": "{重要|じゅうよう}な{会議|かいぎ}が{先週|せんしゅう}だっただけに、{今週|こんしゅう}は{気|き}が{抜|ぬ}けてしまう。", "vi": "Chính vì cuộc họp quan trọng đã diễn ra vào tuần trước nên tuần này tôi thấy mất hết tinh thần."},
+      {"jp": "こんなに{散|ち}らかっていたら、{片付|かたづ}けようがない。", "vi": "Bừa bộn thế này thì không có cách nào dọn dẹp được."}
+    ],
+    "notes": "Tuần 5 tập trung vào các mẫu diễn tả mức độ khó khăn/bất khả (がたい、ようがない) và các mẫu nhấn mạnh nguyên nhân-kết quả hoặc suy đoán dựa trên đặc điểm đã biết (ことだから、だけに、だけましだ). Chú ý 「だけに」nhấn mạnh nguyên nhân làm tăng cảm xúc/kết quả, còn 「だけましだ」nhấn mạnh điểm tích cực còn sót lại dù tình huống không tốt."
+  },
+  "g6d1": {
+    "pattern": "〜{以上|いじょう}（は）",
+    "meaningVi": "đã... thì (phải)..., một khi đã... thì...",
+    "formation": "Động từ thể thường (hiện tại/quá khứ)／Danh từ + である + {以上|いじょう}（は）",
+    "explanationVi": "「〜以上」dùng để diễn tả rằng vì một sự việc/tình huống nào đó đã xảy ra hoặc đã được xác định là sự thật không thể thay đổi, nên người nói cho rằng cần phải/tất nhiên phải hành động tương ứng ở mệnh đề sau, thường mang tính quyết tâm, trách nhiệm hoặc đạo lý. Mệnh đề sau hay dùng ~なければならない、~べきだ、~つもりだ.",
+    "examples": [
+      {"jp": "{自分|じぶん}で{決|き}めた{以上|いじょう}、{最後|さいご}まで{やり遂|とげ}げるつもりだ。", "vi": "Một khi đã tự mình quyết định thì tôi định sẽ làm đến cùng."},
+      {"jp": "{日本|にほん}に{住|す}む{以上|いじょう}は、{日本|にほん}のルールを{守|まも}らなければならない。", "vi": "Một khi đã sống ở Nhật thì phải tuân thủ quy tắc của Nhật."},
+      {"jp": "{引|ひ}き{受|う}けた{以上|いじょう}は、{責任|せきにん}を{持|も}って{最後|さいご}まで{行|おこな}うべきだ。", "vi": "Một khi đã nhận việc thì phải chịu trách nhiệm làm đến cùng."},
+      {"jp": "{試合|しあい}に{出|で}る{以上|いじょう}は、{全力|ぜんりょく}を{出|だ}さなければ{意味|いみ}がない。", "vi": "Một khi đã tham gia thi đấu thì phải cố gắng hết mình mới có ý nghĩa."},
+      {"jp": "{結婚|けっこん}した{以上|いじょう}、{家族|かぞく}のことを{第一|だいいち}に{考|かんが}えるべきだ。", "vi": "Một khi đã kết hôn thì nên đặt gia đình lên hàng đầu."}
+    ],
+    "notes": "Gần nghĩa với 「〜からには」nhưng 「〜以上」nghiêng về văn viết/trang trọng và nhấn mạnh sự việc đã xác định là tiền đề logic không thể thay đổi, còn 「〜からには」mang cảm xúc quyết tâm cá nhân rõ hơn, thường dùng trong văn nói."
+  },
+  "g6d2": {
+    "pattern": "〜から{見|み}ると／{見|み}れば／{見|み}て",
+    "meaningVi": "nhìn từ góc độ của..., theo quan điểm của... thì",
+    "formation": "Danh từ (chỉ người/vị trí) + から{見|み}ると／{見|み}れば／{見|み}て",
+    "explanationVi": "「〜から見ると」dùng để đưa ra một nhận định, đánh giá dựa trên góc nhìn, quan điểm, vị trí của một người/đối tượng cụ thể. Nhấn mạnh rằng đây chỉ là cách nhìn từ một phía nhất định, có thể khác với góc nhìn khác. Thường theo sau bằng nhận xét, phán đoán, cảm nhận mang tính chủ quan của người/đối tượng đó.",
+    "examples": [
+      {"jp": "{僕|ぼく}から{見|み}ると、この{問題|もんだい}はそんなに{難|むずか}しくない。", "vi": "Nhìn từ góc độ của tôi thì vấn đề này không khó lắm."},
+      {"jp": "{子供|こども}から{見|み}れば、{大人|おとな}の{世界|せかい}は{複雑|ふくざつ}に{見|み}えるだろう。", "vi": "Nhìn từ góc độ trẻ em thì thế giới người lớn có lẽ trông có vẻ phức tạp."},
+      {"jp": "{外国人|がいこくじん}から{見|み}ると、{日本|にほん}の{電車|でんしゃ}はとても{正確|せいかく}だ。", "vi": "Nhìn từ góc độ người nước ngoài thì tàu điện Nhật rất chính xác về giờ giấc."},
+      {"jp": "{専門家|せんもんか}から{見|み}て、この{建物|たてもの}の{設計|せっけい}には{問題|もんだい}がある。", "vi": "Nhìn từ góc độ chuyên gia thì thiết kế của tòa nhà này có vấn đề."},
+      {"jp": "{私|わたし}から{見|み}ると、{彼|かれ}のやり{方|かた}はちょっと{無理|むり}があると{思|おも}う。", "vi": "Nhìn từ góc độ của tôi thì tôi nghĩ cách làm của anh ấy có phần vô lý."}
+    ],
+    "notes": "「〜から見ると」và 「〜から見れば」có thể dùng thay nhau; 「〜から見て」thường dùng để nối tiếp câu tự nhiên hơn. Phân biệt với 「〜にとって」(đứng trên góc độ lợi ích/ảnh hưởng đến ai đó) — 「から見ると」nhấn mạnh góc nhìn/nhận định, còn 「にとって」nhấn mạnh mức độ quan trọng/ảnh hưởng."
+  },
+  "g6d3": {
+    "pattern": "〜にかけては",
+    "meaningVi": "về mặt..., về khoản... (thì không ai bằng, thì rất tự tin/giỏi)",
+    "formation": "Danh từ + にかけては",
+    "explanationVi": "「〜にかけては」dùng để nhấn mạnh một lĩnh vực, khía cạnh cụ thể mà chủ thể có năng lực, tự tin vượt trội hơn người khác. Mệnh đề sau thường đi kèm cách diễn đạt khẳng định về sự xuất sắc như {自信|じしん}がある、だれにも{負|ま}けない、{一番|いちばん}だ. Mang sắc thái tự hào, khẳng định thế mạnh riêng biệt của chủ thể.",
+    "examples": [
+      {"jp": "{声|こえ}の{大|おお}きさにかけては、{彼|かれ}はだれにも{負|ま}けない。", "vi": "Về khoản giọng to thì anh ấy không thua ai cả."},
+      {"jp": "{料理|りょうり}の{腕|うで}にかけては、{母|はは}が{家族|かぞく}の{中|なか}で{一番|いちばん}だ。", "vi": "Về tài nấu ăn thì mẹ là số một trong nhà."},
+      {"jp": "{記憶力|きおくりょく}にかけては、{彼女|かのじょ}はクラスで{一番|いちばん}だ。", "vi": "Về khả năng ghi nhớ thì cô ấy là số một trong lớp."},
+      {"jp": "パソコンの{知識|ちしき}にかけては、{彼|かれ}に{自信|じしん}がある。", "vi": "Về kiến thức máy tính thì anh ấy rất tự tin."},
+      {"jp": "{足|あし}の{速|はや}さにかけては、この{学校|がっこう}で{誰|だれ}にも{負|ま}けない。", "vi": "Về tốc độ chạy thì ở trường này không ai thua kém."}
+    ],
+    "notes": "「〜にかけては」luôn mang nghĩa tích cực, khẳng định điểm mạnh, khác với 「〜にとって」hay 「〜において」mang tính trung hòa hơn. Thường dùng trong cả văn nói và văn viết khi muốn khẳng định thế mạnh riêng biệt của một người."
+  },
+  "g6d4": {
+    "pattern": "〜うか〜まいか",
+    "meaningVi": "có nên... hay không, ...hay không... (diễn tả sự do dự, lưỡng lự giữa làm và không làm)",
+    "formation": "Động từ thể ý chí (よう／おう) + か + cùng động từ + まい + か　※する → しようか するまいか",
+    "explanationVi": "「〜うか〜まいか」dùng để diễn tả tâm trạng do dự, lưỡng lự của người nói giữa hai lựa chọn: làm hay không làm một hành động. 「まい」là trợ động từ cổ mang nghĩa phủ định ý chí (tương đương ~ないだろう／~ないつもり trong văn nói hiện đại). Cấu trúc mang tính văn viết, trang trọng, thể hiện sự trăn trở nội tâm của người nói.",
+    "examples": [
+      {"jp": "{留学|りゅうがく}に{行|い}こうか{行|い}くまいか、まだ{迷|まよ}っている。", "vi": "Tôi vẫn còn đang lưỡng lự có nên đi du học hay không."},
+      {"jp": "{彼|かれ}に{本当|ほんとう}のことを{言|い}おうか{言|い}うまいか、ずっと{悩|なや}んでいる。", "vi": "Tôi vẫn cứ băn khoăn có nên nói sự thật với anh ấy hay không."},
+      {"jp": "この{仕事|しごと}を{受|う}けようか{受|う}けまいか、まだ{決|き}められない。", "vi": "Tôi vẫn chưa thể quyết định có nên nhận công việc này hay không."},
+      {"jp": "{旅行|りょこう}に{参加|さんか}しようか{参加|さんか}するまいか、{友達|ともだち}と{相談|そうだん}してから{決|き}めたい。", "vi": "Tôi muốn bàn với bạn rồi mới quyết định có nên tham gia chuyến du lịch hay không."},
+      {"jp": "{転職|てんしょく}しようか{転職|てんしょく}するまいか、{何度|なんど}も{考|かんが}え{直|なお}した。", "vi": "Tôi đã suy nghĩ lại nhiều lần về việc có nên chuyển việc hay không."}
+    ],
+    "notes": "Với động từ nhóm III (する), dạng まい có thể là 「するまい」nhưng trong cấu trúc này 「するまいか」là thông dụng nhất. Đây là mẫu câu văn viết/trang trọng, ít dùng trong văn nói thường ngày (văn nói hay dùng dạng đơn giản hơn 「〜か〜ないか」)."
+  },
+  "g6d5": {
+    "pattern": "〜に{決|き}まっている",
+    "meaningVi": "chắc chắn là..., đương nhiên là... (khẳng định mạnh mẽ dựa trên suy luận logic/lẽ thường)",
+    "formation": "Động từ／Tính từ thể thường、Danh từ + に{決|き}まっている",
+    "explanationVi": "「〜に決まっている」dùng để khẳng định một cách chắc chắn, dứt khoát rằng điều gì đó tất nhiên sẽ xảy ra hoặc đúng như vậy, dựa trên suy luận logic, kinh nghiệm hoặc lẽ thường mà người nói tin tưởng tuyệt đối. Mang sắc thái chủ quan, đôi khi hơi áp đặt ý kiến cá nhân, thường dùng phổ biến trong văn nói khi tranh luận hoặc bày tỏ quan điểm mạnh.",
+    "examples": [
+      {"jp": "こんな{準備|じゅんび}{不足|ぶそく}では、{試合|しあい}に{負|ま}けることに{決|き}まっている。", "vi": "Chuẩn bị thiếu sót như thế này thì chắc chắn sẽ thua trận đấu."},
+      {"jp": "{練習|れんしゅう}もしないで、{上手|じょうず}になれるわけがない。{下手|へた}に{決|き}まっている。", "vi": "Không luyện tập mà giỏi lên được thì vô lý. Chắc chắn sẽ dở."},
+      {"jp": "あんなに{高|たか}い{店|みせ}は、おいしいに{決|き}まっている。", "vi": "Quán ăn đắt như vậy chắc chắn là ngon."},
+      {"jp": "{嘘|うそ}をつけば、いつかばれるに{決|き}まっている。", "vi": "Nếu nói dối thì chắc chắn có ngày sẽ bị phát hiện."},
+      {"jp": "{子供|こども}にそんな{難|むずか}しい{本|ほん}を{読|よ}ませても、{分|わ}からないに{決|き}まっている。", "vi": "Có cho trẻ con đọc sách khó như vậy thì chắc chắn cũng không hiểu."}
+    ],
+    "notes": "So sánh với 「〜はずだ」(suy luận dựa trên căn cứ khách quan, ít mang cảm tính) — 「〜に決まっている」mang tính khẳng định chủ quan, đôi khi cứng nhắc, thường dùng trong văn nói khi tranh luận, thể hiện thái độ chắc chắn tuyệt đối của người nói."
+  },
+  "g6d6": {
+    "pattern": "〜を{巡|めぐ}って",
+    "meaningVi": "xoay quanh, liên quan đến (vấn đề, tranh chấp, tranh luận về...)",
+    "formation": "Danh từ + を{巡|めぐ}って",
+    "explanationVi": "「〜を巡って」dùng để chỉ một vấn đề, chủ đề cụ thể là trung tâm của một cuộc tranh luận, tranh chấp, đối lập ý kiến giữa nhiều người/bên liên quan. Thường theo sau bằng các động từ như {争|あらそ}う、{対立|たいりつ}する、{議論|ぎろん}する、{話|はな}し{合|あ}う, mang tính trang trọng, hay dùng trong văn viết báo chí, tin tức, bài phân tích xã hội.",
+    "examples": [
+      {"jp": "{金|きん}メダルを{巡|めぐ}って、2{人|にん}の{選手|せんしゅ}が{激|はげ}しく{競|きそ}い{合|あ}った。", "vi": "Xoay quanh chiếc huy chương vàng, hai vận động viên đã cạnh tranh gay gắt với nhau."},
+      {"jp": "{土地|とち}の{所有権|しょゆうけん}を{巡|めぐ}って、{兄弟|きょうだい}の{間|あいだ}で{争|あらそ}いが{起|お}きた。", "vi": "Xoay quanh quyền sở hữu đất đai, đã xảy ra tranh chấp giữa các anh em."},
+      {"jp": "{新|あたら}しい{法律|ほうりつ}を{巡|めぐ}って、{国会|こっかい}で{議論|ぎろん}が{続|つづ}いている。", "vi": "Xoay quanh luật mới, cuộc tranh luận vẫn tiếp diễn tại quốc hội."},
+      {"jp": "{遺産|いさん}の{分配|ぶんぱい}を{巡|めぐ}って、{家族|かぞく}がもめている。", "vi": "Xoay quanh việc phân chia tài sản, gia đình đang có xung đột."},
+      {"jp": "その{政策|せいさく}を{巡|めぐ}って、{賛成|さんせい}と{反対|はんたい}の{意見|いけん}が{分|わ}かれている。", "vi": "Xoay quanh chính sách đó, ý kiến ủng hộ và phản đối đang chia rẽ."}
+    ],
+    "notes": "So sánh với 「〜について」(trung hòa, chỉ đơn giản là \"về việc...\") — 「〜を巡って」luôn ngụ ý có tranh chấp/đối lập/tranh luận xoay quanh vấn đề đó, mang tính động và căng thẳng hơn."
+  },
+  "g6d7": {
+    "pattern": "{実戦問題|じっせんもんだい} – Ôn tập tuần 6 (6 mẫu ngữ pháp N2)",
+    "meaningVi": "Tổng hợp và luyện tập 6 mẫu ngữ pháp đã học trong tuần 6: 〜以上、〜から見ると、〜にかけては、〜うか〜まいか、〜に決まっている、〜を巡って",
+    "formation": "Xem lại cách kết hợp riêng của từng mẫu ở các bài trước trong tuần; bài thực chiến này tập trung vào việc phân biệt lập trường/góc nhìn, quyết tâm, do dự và khẳng định chắc chắn",
+    "explanationVi": "Bài luyện tập tổng hợp tuần 6 giúp ôn lại 6 mẫu ngữ pháp: 「〜以上」(một khi đã... thì phải..., nhấn mạnh tiền đề logic không đổi), 「〜から見ると」(nhìn từ góc độ của ai đó), 「〜にかけては」(khẳng định thế mạnh vượt trội về một khía cạnh), 「〜うか〜まいか」(do dự giữa làm và không làm), 「〜に決まっている」(khẳng định chắc chắn theo lẽ thường, mang tính chủ quan), 「〜を巡って」(chỉ vấn đề trung tâm của một cuộc tranh luận/tranh chấp). Khi luyện đề, cần phân biệt 「〜に決まっている」với 「〜に{違|ちが}いない」(suy luận có căn cứ khách quan hơn, ít chủ quan hơn).",
+    "examples": [
+      {"jp": "{自分|じぶん}で{決|き}めた{以上|いじょう}は、{最後|さいご}まで{頑張|がんば}るつもりだ。", "vi": "Một khi đã tự mình quyết định thì tôi định sẽ cố gắng đến cùng."},
+      {"jp": "{僕|ぼく}から{見|み}ると、この{計画|けいかく}には{無理|むり}があると{思|おも}う。", "vi": "Nhìn từ góc độ của tôi thì tôi nghĩ kế hoạch này có phần vô lý."},
+      {"jp": "{声|こえ}の{大|おお}きさにかけては、{彼|かれ}はだれにも{負|ま}けない。", "vi": "Về khoản giọng to thì anh ấy không thua ai cả."},
+      {"jp": "{留学|りゅうがく}に{行|い}こうか{行|い}くまいか、まだ{迷|まよ}っている。", "vi": "Tôi vẫn còn đang lưỡng lự có nên đi du học hay không."},
+      {"jp": "{練習|れんしゅう}もしないで{試合|しあい}に{出|で}れば、{負|ま}けることに{決|き}まっている。その{結果|けっか}を{巡|めぐ}って、チーム{内|ない}で{議論|ぎろん}になった。", "vi": "Nếu thi đấu mà không luyện tập thì chắc chắn sẽ thua. Xoay quanh kết quả đó, trong nhóm đã nảy ra tranh luận."}
+    ],
+    "notes": "Tuần 6 gồm các mẫu diễn tả lập trường/góc nhìn (から見ると、にかけては), quyết tâm sau khi đã quyết định (以上), do dự giữa hai lựa chọn (うか〜まいか), khẳng định chắc chắn theo lẽ thường (に決まっている) và chỉ vấn đề trung tâm của tranh luận (を巡って). Cần phân biệt 「に決まっている」(khẳng định chủ quan, cứng nhắc) với 「に違いない」(suy luận có căn cứ khách quan hơn)."
+  }
+}
