@@ -1,5 +1,7 @@
 # N2 Japanese Learning Web App — Specification
 
+> **Trạng thái: đặc tả lịch sử, đã được thay thế.** Tài liệu này mô tả hướng React/PWA ban đầu và không còn là danh sách task hiện hành. Bản vanilla v2 dùng `docs/FEATURE_PLAN.md` làm product authority, `docs/EXTRACT_SPEC.md` cho dữ liệu sách, `docs/DESIGN_TYPO.md` cho giao diện và `docs/BUILD_SPEC.md` cho contract nền.
+
 ## 1. Project Overview
 
 **Name:** N2 Web  

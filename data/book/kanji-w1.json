@@ -1,0 +1,2569 @@
+{
+  "k1d1": {
+    "title": "{立|た}て{札|ふだ}・{注意|ちゅうい}{書|が}き",
+    "titleEn": "Notices and Warnings",
+    "kanji": [
+      {
+        "char": "禁",
+        "strokes": 13,
+        "on": "キン",
+        "kun": "",
+        "words": [
+          {
+            "jp": "禁止",
+            "reading": "きんし",
+            "en": "prohibition"
+          }
+        ]
+      },
+      {
+        "char": "煙",
+        "strokes": 13,
+        "on": "エン",
+        "kun": "けむり",
+        "words": [
+          {
+            "jp": "禁煙",
+            "reading": "きんえん",
+            "en": "no smoking"
+          },
+          {
+            "jp": "煙",
+            "reading": "けむり",
+            "en": "smoke"
+          }
+        ]
+      },
+      {
+        "char": "静",
+        "strokes": 14,
+        "on": "セイ",
+        "kun": "しず・か、しず・まる",
+        "words": [
+          {
+            "jp": "安静(な)",
+            "reading": "あんせい",
+            "en": "quietly"
+          },
+          {
+            "jp": "静か(な)",
+            "reading": "しずか",
+            "en": "quiet"
+          },
+          {
+            "jp": "静まる",
+            "reading": "しずまる",
+            "en": "become quiet"
+          }
+        ]
+      },
+      {
+        "char": "危",
+        "strokes": 6,
+        "on": "キ",
+        "kun": "あぶ・ない、あや・うい",
+        "words": [
+          {
+            "jp": "危機",
+            "reading": "きき",
+            "en": "a crisis"
+          },
+          {
+            "jp": "危ない",
+            "reading": "あぶない",
+            "en": "dangerous"
+          },
+          {
+            "jp": "危うい",
+            "reading": "あやうい",
+            "en": "dangerous / narrow"
+          }
+        ]
+      },
+      {
+        "char": "険",
+        "strokes": 11,
+        "on": "ケン",
+        "kun": "けわ・しい",
+        "words": [
+          {
+            "jp": "危険(な)",
+            "reading": "きけん",
+            "en": "danger"
+          },
+          {
+            "jp": "険しい",
+            "reading": "けわしい",
+            "en": "steep"
+          }
+        ]
+      },
+      {
+        "char": "関",
+        "strokes": 14,
+        "on": "カン",
+        "kun": "かか・わる",
+        "words": [
+          {
+            "jp": "関心",
+            "reading": "かんしん",
+            "en": "an interest"
+          },
+          {
+            "jp": "関わる",
+            "reading": "かかわる",
+            "en": "have to do with"
+          },
+          {
+            "jp": "(〜に)関する",
+            "reading": "かんする",
+            "en": "related to"
+          }
+        ]
+      },
+      {
+        "char": "係",
+        "strokes": 9,
+        "on": "ケイ",
+        "kun": "かかり",
+        "words": [
+          {
+            "jp": "関係",
+            "reading": "かんけい",
+            "en": "a relation / connection"
+          },
+          {
+            "jp": "係",
+            "reading": "かかり",
+            "en": "charge / a person in charge"
+          },
+          {
+            "jp": "係員",
+            "reading": "かかりいん",
+            "en": "a person in charge"
+          }
+        ]
+      },
+      {
+        "char": "落",
+        "strokes": 12,
+        "on": "ラク",
+        "kun": "お・ちる、お・とす",
+        "words": [
+          {
+            "jp": "転落",
+            "reading": "てんらく",
+            "en": "a fall"
+          },
+          {
+            "jp": "落ちる",
+            "reading": "おちる",
+            "en": "fall"
+          },
+          {
+            "jp": "落第",
+            "reading": "らくだい",
+            "en": "failing / repeating a course"
+          },
+          {
+            "jp": "落とす",
+            "reading": "おとす",
+            "en": "drop"
+          }
+        ]
+      },
+      {
+        "char": "石",
+        "strokes": 5,
+        "on": "セキ、シャク",
+        "kun": "いし",
+        "words": [
+          {
+            "jp": "落石",
+            "reading": "らくせき",
+            "en": "falling rocks"
+          },
+          {
+            "jp": "石",
+            "reading": "いし",
+            "en": "a stone"
+          },
+          {
+            "jp": "磁石",
+            "reading": "じしゃく",
+            "en": "a magnet / compass"
+          }
+        ]
+      },
+      {
+        "char": "飛",
+        "strokes": 9,
+        "on": "ヒ",
+        "kun": "と・ぶ、と・ばす",
+        "words": [
+          {
+            "jp": "飛行場",
+            "reading": "ひこうじょう",
+            "en": "an airport"
+          },
+          {
+            "jp": "飛ぶ",
+            "reading": "とぶ",
+            "en": "fly"
+          },
+          {
+            "jp": "飛び出す",
+            "reading": "とびだす",
+            "en": "run out suddenly"
+          }
+        ]
+      },
+      {
+        "char": "駐",
+        "strokes": 15,
+        "on": "チュウ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "駐車場",
+            "reading": "ちゅうしゃじょう",
+            "en": "a parking lot"
+          },
+          {
+            "jp": "駐車",
+            "reading": "ちゅうしゃ",
+            "en": "parking"
+          }
+        ]
+      },
+      {
+        "char": "捨",
+        "strokes": 11,
+        "on": "シャ",
+        "kun": "す・てる",
+        "words": [
+          {
+            "jp": "四捨五入",
+            "reading": "ししゃごにゅう",
+            "en": "round to the nearest (e.g. decimal place)"
+          },
+          {
+            "jp": "捨てる",
+            "reading": "すてる",
+            "en": "throw away"
+          }
+        ]
+      },
+      {
+        "char": "遊",
+        "strokes": 12,
+        "on": "ユウ",
+        "kun": "あそ・ぶ",
+        "words": [
+          {
+            "jp": "遊泳",
+            "reading": "ゆうえい",
+            "en": "swimming"
+          },
+          {
+            "jp": "遊ぶ",
+            "reading": "あそぶ",
+            "en": "play"
+          }
+        ]
+      },
+      {
+        "char": "泳",
+        "strokes": 8,
+        "on": "エイ",
+        "kun": "およ・ぐ",
+        "words": [
+          {
+            "jp": "水泳",
+            "reading": "すいえい",
+            "en": "swimming"
+          },
+          {
+            "jp": "泳ぐ",
+            "reading": "およぐ",
+            "en": "swim"
+          }
+        ]
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "「関係者以外立ち入り禁止」＝関係者でない人は（　）",
+        "options": [
+          "入らなければならない",
+          "入ってはいけない"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "「お静かに」＝（　）",
+        "options": [
+          "静かにしてください",
+          "静かにしてはいけません"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "「（　）ですから、下がってください。」",
+        "options": [
+          "危うい",
+          "危ない"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "「スピード落とせ」＝スピードを（　）",
+        "options": [
+          "上げろ",
+          "おそくしろ"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "「遊泳禁止」＝（　）",
+        "options": [
+          "ここで遊ぶべきだ",
+          "ここで泳いではいけない"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "「落石注意」＝（　）",
+        "options": [
+          "石が落ちてくるかもしれない",
+          "石を落としてはいけない"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "「駐車禁止」＝（　）",
+        "options": [
+          "駐車場がない",
+          "車を止めてはいけない"
+        ],
+        "answerIndex": 1
+      }
+    ]
+  },
+  "k1d2": {
+    "title": "{建物|たてもの}の{中|なか}でよく{見|み}る{表示|ひょうじ}",
+    "titleEn": "Signs Often Seen Inside Buildings",
+    "kanji": [
+      {
+        "char": "喫",
+        "strokes": 12,
+        "on": "キツ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "喫茶店",
+            "reading": "きっさてん",
+            "en": "a coffee shop"
+          },
+          {
+            "jp": "喫煙所",
+            "reading": "きつえんじょ",
+            "en": "a smoking area"
+          }
+        ]
+      },
+      {
+        "char": "非",
+        "strokes": 8,
+        "on": "ヒ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "非〜",
+            "reading": "ひ",
+            "en": "non- / anti- / dis-"
+          },
+          {
+            "jp": "非常に",
+            "reading": "ひじょうに",
+            "en": "extremely"
+          },
+          {
+            "jp": "非常口",
+            "reading": "ひじょうぐち",
+            "en": "an emergency exit"
+          }
+        ]
+      },
+      {
+        "char": "御",
+        "strokes": 12,
+        "on": "ゴ",
+        "kun": "おん、《お》",
+        "words": [
+          {
+            "jp": "御〜／御〜",
+            "reading": "",
+            "en": "(honorific form)"
+          },
+          {
+            "jp": "御中",
+            "reading": "おんちゅう",
+            "en": "(written on letters addressed to an organization / rather than an individual within the organization)"
+          },
+          {
+            "jp": "御手洗い",
+            "reading": "おてあらい",
+            "en": "a toilet"
+          }
+        ]
+      },
+      {
+        "char": "常",
+        "strokes": 11,
+        "on": "ジョウ",
+        "kun": "つね",
+        "words": [
+          {
+            "jp": "日常",
+            "reading": "にちじょう",
+            "en": "usual / everyday"
+          },
+          {
+            "jp": "常に",
+            "reading": "つねに",
+            "en": "always"
+          },
+          {
+            "jp": "常識",
+            "reading": "じょうしき",
+            "en": "common sense"
+          }
+        ]
+      },
+      {
+        "char": "受",
+        "strokes": 8,
+        "on": "ジュ",
+        "kun": "う・ける",
+        "words": [
+          {
+            "jp": "受験",
+            "reading": "じゅけん",
+            "en": "taking an examination"
+          },
+          {
+            "jp": "受ける",
+            "reading": "うける",
+            "en": "receive"
+          }
+        ]
+      },
+      {
+        "char": "付",
+        "strokes": 5,
+        "on": "フ",
+        "kun": "つ・ける、つ・く",
+        "words": [
+          {
+            "jp": "付近",
+            "reading": "ふきん",
+            "en": "vicinity"
+          },
+          {
+            "jp": "受付",
+            "reading": "うけつけ",
+            "en": "a reception"
+          },
+          {
+            "jp": "〜付き",
+            "reading": "つき",
+            "en": "attached / with"
+          },
+          {
+            "jp": "日付",
+            "reading": "ひづけ",
+            "en": "date"
+          }
+        ]
+      },
+      {
+        "char": "案",
+        "strokes": 10,
+        "on": "アン",
+        "kun": "",
+        "words": [
+          {
+            "jp": "案内",
+            "reading": "あんない",
+            "en": "information"
+          },
+          {
+            "jp": "案",
+            "reading": "あん",
+            "en": "a suggestion / proposal / plan"
+          }
+        ]
+      },
+      {
+        "char": "内",
+        "strokes": 4,
+        "on": "ナイ",
+        "kun": "うち",
+        "words": [
+          {
+            "jp": "以内",
+            "reading": "いない",
+            "en": "within"
+          },
+          {
+            "jp": "〜内",
+            "reading": "うち",
+            "en": "inside / within"
+          },
+          {
+            "jp": "社内",
+            "reading": "しゃない",
+            "en": "within the company"
+          },
+          {
+            "jp": "内",
+            "reading": "うち",
+            "en": "the inside"
+          }
+        ]
+      },
+      {
+        "char": "議",
+        "strokes": 20,
+        "on": "ギ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "会議室",
+            "reading": "かいぎしつ",
+            "en": "a meeting room"
+          },
+          {
+            "jp": "議論",
+            "reading": "ぎろん",
+            "en": "argument / discussion / debate"
+          },
+          {
+            "jp": "不思議(な)",
+            "reading": "ふしぎ",
+            "en": "wonderful / strange"
+          },
+          {
+            "jp": "議員",
+            "reading": "ぎいん",
+            "en": "an assembly member"
+          }
+        ]
+      },
+      {
+        "char": "化",
+        "strokes": 4,
+        "on": "カ、ケ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "文化",
+            "reading": "ぶんか",
+            "en": "culture"
+          },
+          {
+            "jp": "〜化",
+            "reading": "か",
+            "en": "-ization (changing something into something else)"
+          },
+          {
+            "jp": "化学",
+            "reading": "かがく",
+            "en": "chemistry"
+          },
+          {
+            "jp": "化粧室",
+            "reading": "けしょうしつ",
+            "en": "a powder room / a toilet"
+          }
+        ]
+      },
+      {
+        "char": "階",
+        "strokes": 12,
+        "on": "カイ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "階段",
+            "reading": "かいだん",
+            "en": "stairs"
+          },
+          {
+            "jp": "段階",
+            "reading": "だんかい",
+            "en": "level"
+          },
+          {
+            "jp": "〜階",
+            "reading": "かい",
+            "en": "the ... floor"
+          }
+        ]
+      },
+      {
+        "char": "段",
+        "strokes": 9,
+        "on": "ダン",
+        "kun": "",
+        "words": [
+          {
+            "jp": "段",
+            "reading": "だん",
+            "en": "a step"
+          },
+          {
+            "jp": "一段と",
+            "reading": "いちだんと",
+            "en": "even more"
+          },
+          {
+            "jp": "手段",
+            "reading": "しゅだん",
+            "en": "a means / way"
+          },
+          {
+            "jp": "石段",
+            "reading": "いしだん",
+            "en": "a stone step"
+          }
+        ]
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "タバコを吸う所＝（　）",
+        "options": [
+          "禁煙席",
+          "喫煙所"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "「この（　）に喫茶店はありませんか。」",
+        "options": [
+          "付近",
+          "日付"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "「日本語は（　）会話ならできます。」",
+        "options": [
+          "日常",
+          "非常"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "あの人は（　）がない。",
+        "options": [
+          "常識",
+          "御中"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "A「すみません、化粧室はどこですか。」B「はい、（　）は、あちらでございます。」",
+        "options": [
+          "お手洗い",
+          "案内所"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "A「会議室はどこですか。」B「（　）を上って、すぐ右です。」",
+        "options": [
+          "段階",
+          "階段"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "「このごろ（　）寒くなってきましたね。」",
+        "options": [
+          "一段と",
+          "石段と"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "ベストセラーになった小説が映画（　）された。",
+        "options": [
+          "化",
+          "案"
+        ],
+        "answerIndex": 0
+      }
+    ]
+  },
+  "k1d3": {
+    "title": "{建物|たてもの}の{内外|ないがい}でよく{見|み}る{表示|ひょうじ}",
+    "titleEn": "Signs Often Seen Inside and Outside Buildings",
+    "kanji": [
+      {
+        "char": "営",
+        "strokes": 12,
+        "on": "エイ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "営業",
+            "reading": "えいぎょう",
+            "en": "business"
+          }
+        ]
+      },
+      {
+        "char": "放",
+        "strokes": 8,
+        "on": "ホウ",
+        "kun": "はな・す、はな・れる",
+        "words": [
+          {
+            "jp": "放送",
+            "reading": "ほうそう",
+            "en": "a broadcast"
+          },
+          {
+            "jp": "開放厳禁",
+            "reading": "かいほうげんきん",
+            "en": "don't leave ... open (strictly prohibited)"
+          },
+          {
+            "jp": "開放",
+            "reading": "かいほう",
+            "en": "opening"
+          },
+          {
+            "jp": "放す",
+            "reading": "はなす",
+            "en": "let go"
+          }
+        ]
+      },
+      {
+        "char": "押",
+        "strokes": 8,
+        "on": "",
+        "kun": "お・す、お・さえる",
+        "words": [
+          {
+            "jp": "押す",
+            "reading": "おす",
+            "en": "push"
+          },
+          {
+            "jp": "押さえる",
+            "reading": "おさえる",
+            "en": "hold down"
+          },
+          {
+            "jp": "押し入れ",
+            "reading": "おしいれ",
+            "en": "a closet"
+          }
+        ]
+      },
+      {
+        "char": "準",
+        "strokes": 13,
+        "on": "ジュン",
+        "kun": "",
+        "words": [
+          {
+            "jp": "準備",
+            "reading": "じゅんび",
+            "en": "preparation"
+          },
+          {
+            "jp": "準急",
+            "reading": "じゅんきゅう",
+            "en": "a semi-express train"
+          },
+          {
+            "jp": "水準",
+            "reading": "すいじゅん",
+            "en": "a standard"
+          },
+          {
+            "jp": "準決勝",
+            "reading": "じゅんけっしょう",
+            "en": "semifinals"
+          }
+        ]
+      },
+      {
+        "char": "備",
+        "strokes": 12,
+        "on": "ビ",
+        "kun": "そな・える",
+        "words": [
+          {
+            "jp": "備品",
+            "reading": "びひん",
+            "en": "an equipment"
+          },
+          {
+            "jp": "備える",
+            "reading": "そなえる",
+            "en": "prepare"
+          },
+          {
+            "jp": "備え付け(の)",
+            "reading": "そなえつけ",
+            "en": "furnished with / built-in"
+          }
+        ]
+      },
+      {
+        "char": "定",
+        "strokes": 8,
+        "on": "テイ、ジョウ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "定員",
+            "reading": "ていいん",
+            "en": "capacity / allowed number of people"
+          },
+          {
+            "jp": "定食",
+            "reading": "ていしょく",
+            "en": "a set meal"
+          },
+          {
+            "jp": "定休日",
+            "reading": "ていきゅうび",
+            "en": "set / regular holiday"
+          },
+          {
+            "jp": "定規",
+            "reading": "じょうぎ",
+            "en": "a ruler (for measuring)"
+          }
+        ]
+      },
+      {
+        "char": "流",
+        "strokes": 10,
+        "on": "リュウ",
+        "kun": "なが・れる、なが・す",
+        "words": [
+          {
+            "jp": "流行",
+            "reading": "りゅうこう",
+            "en": "fashion"
+          },
+          {
+            "jp": "流れる",
+            "reading": "ながれる",
+            "en": "flow"
+          },
+          {
+            "jp": "流す",
+            "reading": "ながす",
+            "en": "let flow (water, etc.)"
+          }
+        ]
+      },
+      {
+        "char": "清",
+        "strokes": 11,
+        "on": "セイ",
+        "kun": "きよ・い",
+        "words": [
+          {
+            "jp": "清書",
+            "reading": "せいしょ",
+            "en": "a clean copy"
+          },
+          {
+            "jp": "清い",
+            "reading": "きよい",
+            "en": "clean / pure"
+          },
+          {
+            "jp": "清流",
+            "reading": "せいりゅう",
+            "en": "a clear stream"
+          }
+        ]
+      },
+      {
+        "char": "掃",
+        "strokes": 11,
+        "on": "ソウ",
+        "kun": "は・く",
+        "words": [
+          {
+            "jp": "清掃",
+            "reading": "せいそう",
+            "en": "cleaning"
+          },
+          {
+            "jp": "掃く",
+            "reading": "はく",
+            "en": "sweep"
+          }
+        ]
+      },
+      {
+        "char": "閉",
+        "strokes": 11,
+        "on": "ヘイ",
+        "kun": "と・じる、し・める、し・まる",
+        "words": [
+          {
+            "jp": "閉会",
+            "reading": "へいかい",
+            "en": "closing of a meeting"
+          },
+          {
+            "jp": "閉まる",
+            "reading": "しまる",
+            "en": "shut / close"
+          },
+          {
+            "jp": "閉める",
+            "reading": "しめる",
+            "en": "shut / close ..."
+          },
+          {
+            "jp": "閉店",
+            "reading": "へいてん",
+            "en": "closing of a store"
+          },
+          {
+            "jp": "(口・目・本を)閉じる",
+            "reading": "とじる",
+            "en": "shut / close ..."
+          }
+        ]
+      },
+      {
+        "char": "点",
+        "strokes": 9,
+        "on": "テン",
+        "kun": "",
+        "words": [
+          {
+            "jp": "点",
+            "reading": "てん",
+            "en": "a point"
+          },
+          {
+            "jp": "欠点",
+            "reading": "けってん",
+            "en": "a shortcoming"
+          },
+          {
+            "jp": "〜点",
+            "reading": "てん",
+            "en": "... points"
+          }
+        ]
+      },
+      {
+        "char": "検",
+        "strokes": 12,
+        "on": "ケン",
+        "kun": "",
+        "words": [
+          {
+            "jp": "点検",
+            "reading": "てんけん",
+            "en": "a check / an inspection"
+          },
+          {
+            "jp": "検問",
+            "reading": "けんもん",
+            "en": "an inspection"
+          }
+        ]
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "「あ、（　）だ、まだ早いんだね。また後で来よう。」",
+        "options": [
+          "準備中",
+          "定休日"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "「開放厳禁」＝（　）",
+        "options": [
+          "開けてはいけない",
+          "開けておいてはいけない"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "A「何にする?」B「安くて早いから（　）がいいよ。」",
+        "options": [
+          "定食",
+          "洋食"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "うちのチームは（　）まで勝ち進んだ。",
+        "options": [
+          "準急",
+          "準決勝"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "「備え付けの紙以外、流さないでください。」＝トイレットペーパー（　）使えない。",
+        "options": [
+          "しか",
+          "だけ"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "「テストをしますから、本を（　）ください。」",
+        "options": [
+          "閉めて",
+          "閉じて"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "「エレベーターは（　）ですから、階段を使ってください。」",
+        "options": [
+          "点検中",
+          "検問中"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "（　）セールを行う。",
+        "options": [
+          "閉店",
+          "閉会"
+        ],
+        "answerIndex": 0
+      }
+    ]
+  },
+  "k1d4": {
+    "title": "{駅|えき}でよく{見|み}る{表示|ひょうじ}",
+    "titleEn": "Signs Often Seen at the Station",
+    "kanji": [
+      {
+        "char": "鉄",
+        "strokes": 13,
+        "on": "テツ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "地下鉄",
+            "reading": "ちかてつ",
+            "en": "the subway"
+          },
+          {
+            "jp": "私鉄",
+            "reading": "してつ",
+            "en": "a private railway"
+          }
+        ]
+      },
+      {
+        "char": "窓",
+        "strokes": 11,
+        "on": "ソウ",
+        "kun": "まど",
+        "words": [
+          {
+            "jp": "同窓会",
+            "reading": "どうそうかい",
+            "en": "a school reunion"
+          },
+          {
+            "jp": "窓",
+            "reading": "まど",
+            "en": "a window"
+          },
+          {
+            "jp": "窓口",
+            "reading": "まどぐち",
+            "en": "a (service) window"
+          }
+        ]
+      },
+      {
+        "char": "符",
+        "strokes": 11,
+        "on": "フ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "切符",
+            "reading": "きっぷ",
+            "en": "a ticket"
+          }
+        ]
+      },
+      {
+        "char": "精",
+        "strokes": 14,
+        "on": "セイ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "精算",
+            "reading": "せいさん",
+            "en": "a (fare) adjustment"
+          },
+          {
+            "jp": "精神",
+            "reading": "せいしん",
+            "en": "spirit / mind"
+          }
+        ]
+      },
+      {
+        "char": "算",
+        "strokes": 14,
+        "on": "サン",
+        "kun": "",
+        "words": [
+          {
+            "jp": "計算",
+            "reading": "けいさん",
+            "en": "calculation"
+          },
+          {
+            "jp": "足し算",
+            "reading": "たしざん",
+            "en": "addition"
+          },
+          {
+            "jp": "引き算",
+            "reading": "ひきざん",
+            "en": "subtraction"
+          }
+        ]
+      },
+      {
+        "char": "改",
+        "strokes": 7,
+        "on": "カイ",
+        "kun": "あらた・める、あらた・まる",
+        "words": [
+          {
+            "jp": "改正",
+            "reading": "かいせい",
+            "en": "an amendment"
+          },
+          {
+            "jp": "改める",
+            "reading": "あらためる",
+            "en": "① change  ② check"
+          }
+        ]
+      },
+      {
+        "char": "札",
+        "strokes": 5,
+        "on": "サツ",
+        "kun": "ふだ",
+        "words": [
+          {
+            "jp": "改札口",
+            "reading": "かいさつぐち",
+            "en": "a ticket gate"
+          },
+          {
+            "jp": "札",
+            "reading": "ふだ",
+            "en": "a card"
+          },
+          {
+            "jp": "1万円札",
+            "reading": "いちまんえんさつ",
+            "en": "a 10,000 yen note"
+          }
+        ]
+      },
+      {
+        "char": "線",
+        "strokes": 15,
+        "on": "セン",
+        "kun": "",
+        "words": [
+          {
+            "jp": "下線",
+            "reading": "かせん",
+            "en": "an underline"
+          },
+          {
+            "jp": "新幹線",
+            "reading": "しんかんせん",
+            "en": "a bullet train"
+          },
+          {
+            "jp": "線路",
+            "reading": "せんろ",
+            "en": "a railway track"
+          }
+        ]
+      },
+      {
+        "char": "刻",
+        "strokes": 8,
+        "on": "コク",
+        "kun": "きざ・む",
+        "words": [
+          {
+            "jp": "時刻",
+            "reading": "じこく",
+            "en": "time"
+          },
+          {
+            "jp": "刻む",
+            "reading": "きざむ",
+            "en": "engrave"
+          }
+        ]
+      },
+      {
+        "char": "番",
+        "strokes": 12,
+        "on": "バン",
+        "kun": "",
+        "words": [
+          {
+            "jp": "番号",
+            "reading": "ばんごう",
+            "en": "number"
+          },
+          {
+            "jp": "〜番線",
+            "reading": "ばんせん",
+            "en": "line (platform) number ..."
+          }
+        ]
+      },
+      {
+        "char": "号",
+        "strokes": 5,
+        "on": "ゴウ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "符号",
+            "reading": "ふごう",
+            "en": "a symbol / sign"
+          },
+          {
+            "jp": "信号",
+            "reading": "しんごう",
+            "en": "a signal"
+          },
+          {
+            "jp": "〜号車",
+            "reading": "ごうしゃ",
+            "en": "carriage number ..."
+          }
+        ]
+      },
+      {
+        "char": "快",
+        "strokes": 7,
+        "on": "カイ",
+        "kun": "こころよ・い",
+        "words": [
+          {
+            "jp": "快速",
+            "reading": "かいそく",
+            "en": "high speed"
+          },
+          {
+            "jp": "快い",
+            "reading": "こころよい",
+            "en": "pleasant"
+          }
+        ]
+      },
+      {
+        "char": "速",
+        "strokes": 10,
+        "on": "ソク",
+        "kun": "はや・い",
+        "words": [
+          {
+            "jp": "時速",
+            "reading": "じそく",
+            "en": "speed (per hour)"
+          },
+          {
+            "jp": "速い",
+            "reading": "はやい",
+            "en": "fast"
+          },
+          {
+            "jp": "早速",
+            "reading": "さっそく",
+            "en": "at once"
+          }
+        ]
+      },
+      {
+        "char": "路",
+        "strokes": 13,
+        "on": "ロ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "道路",
+            "reading": "どうろ",
+            "en": "a road"
+          },
+          {
+            "jp": "通路",
+            "reading": "つうろ",
+            "en": "an aisle"
+          }
+        ]
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "足りない料金を払うところ＝（　）",
+        "options": [
+          "精算所",
+          "清算所"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "「その切符では（　）は通れませんから、駅員のいるほうを通ってください。」",
+        "options": [
+          "改札口",
+          "自動改札"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "「わからないことは駅の（　）で聞いてください。」",
+        "options": [
+          "窓口",
+          "受付"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "「今度の快速は（　）から発車します。」",
+        "options": [
+          "3番線",
+          "3号車"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "「4月から電車の時刻が（　）されます。」",
+        "options": [
+          "改正",
+          "改刻"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "「（　）に物を落としたときは、駅係員にお知らせください。」",
+        "options": [
+          "線路内",
+          "道路内"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "○○君は足が（　）。",
+        "options": [
+          "快い",
+          "速い"
+        ],
+        "answerIndex": 1
+      }
+    ]
+  },
+  "k1d5": {
+    "title": "{乗|の}り{物|もの}でよく{見|み}る{表示|ひょうじ}",
+    "titleEn": "Signs Often Seen on Buses, Trains, etc.",
+    "kanji": [
+      {
+        "char": "港",
+        "strokes": 12,
+        "on": "コウ",
+        "kun": "みなと",
+        "words": [
+          {
+            "jp": "空港",
+            "reading": "くうこう",
+            "en": "an airport"
+          },
+          {
+            "jp": "港",
+            "reading": "みなと",
+            "en": "a port"
+          }
+        ]
+      },
+      {
+        "char": "由",
+        "strokes": 5,
+        "on": "ユウ、ユ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "理由",
+            "reading": "りゆう",
+            "en": "a reason"
+          },
+          {
+            "jp": "経由",
+            "reading": "けいゆ",
+            "en": "via"
+          },
+          {
+            "jp": "不自由(な)",
+            "reading": "ふじゆう",
+            "en": "disability / inconvenience"
+          }
+        ]
+      },
+      {
+        "char": "深",
+        "strokes": 11,
+        "on": "シン",
+        "kun": "ふか・い",
+        "words": [
+          {
+            "jp": "深夜",
+            "reading": "しんや",
+            "en": "midnight"
+          },
+          {
+            "jp": "深い",
+            "reading": "ふかい",
+            "en": "deep"
+          },
+          {
+            "jp": "深刻(な)",
+            "reading": "しんこく",
+            "en": "serious"
+          }
+        ]
+      },
+      {
+        "char": "降",
+        "strokes": 10,
+        "on": "コウ",
+        "kun": "お・りる、お・ろす、ふ・る",
+        "words": [
+          {
+            "jp": "降車口",
+            "reading": "こうしゃぐち",
+            "en": "an exit (for getting off)"
+          },
+          {
+            "jp": "降りる",
+            "reading": "おりる",
+            "en": "get off"
+          },
+          {
+            "jp": "下降",
+            "reading": "かこう",
+            "en": "descent / fall"
+          },
+          {
+            "jp": "降る",
+            "reading": "ふる",
+            "en": "fall"
+          }
+        ]
+      },
+      {
+        "char": "両",
+        "strokes": 6,
+        "on": "リョウ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "両親",
+            "reading": "りょうしん",
+            "en": "parents"
+          },
+          {
+            "jp": "両〜",
+            "reading": "りょう",
+            "en": "both ..."
+          },
+          {
+            "jp": "両方",
+            "reading": "りょうほう",
+            "en": "both"
+          },
+          {
+            "jp": "〜両目",
+            "reading": "りょうめ",
+            "en": "first / second ... car"
+          }
+        ]
+      },
+      {
+        "char": "替",
+        "strokes": 12,
+        "on": "",
+        "kun": "か・える、か・わる",
+        "words": [
+          {
+            "jp": "両替",
+            "reading": "りょうがえ",
+            "en": "exchange of money"
+          },
+          {
+            "jp": "為替",
+            "reading": "かわせ",
+            "en": "exchange / a money order"
+          },
+          {
+            "jp": "着替える",
+            "reading": "きがえる",
+            "en": "change one's clothes"
+          }
+        ]
+      },
+      {
+        "char": "賃",
+        "strokes": 13,
+        "on": "チン",
+        "kun": "",
+        "words": [
+          {
+            "jp": "家賃",
+            "reading": "やちん",
+            "en": "rent"
+          },
+          {
+            "jp": "運賃",
+            "reading": "うんちん",
+            "en": "fare"
+          }
+        ]
+      },
+      {
+        "char": "割",
+        "strokes": 12,
+        "on": "カツ",
+        "kun": "わ・る、わ・れる、わり",
+        "words": [
+          {
+            "jp": "分割",
+            "reading": "ぶんかつ",
+            "en": "a split / separation"
+          },
+          {
+            "jp": "割引",
+            "reading": "わりびき",
+            "en": "a discount"
+          },
+          {
+            "jp": "割れる",
+            "reading": "われる",
+            "en": "crack / cleave"
+          },
+          {
+            "jp": "時間割",
+            "reading": "じかんわり",
+            "en": "school timetable"
+          }
+        ]
+      },
+      {
+        "char": "増",
+        "strokes": 14,
+        "on": "ゾウ",
+        "kun": "ふ・える、ふ・やす、ま・す",
+        "words": [
+          {
+            "jp": "増加",
+            "reading": "ぞうか",
+            "en": "an increase"
+          },
+          {
+            "jp": "増える",
+            "reading": "ふえる",
+            "en": "increase"
+          },
+          {
+            "jp": "割増",
+            "reading": "わりまし",
+            "en": "an extra (proportional increase)"
+          }
+        ]
+      },
+      {
+        "char": "優",
+        "strokes": 17,
+        "on": "ユウ",
+        "kun": "やさ・しい、すぐ・れる",
+        "words": [
+          {
+            "jp": "優先",
+            "reading": "ゆうせん",
+            "en": "priority"
+          },
+          {
+            "jp": "優しい",
+            "reading": "やさしい",
+            "en": "kind"
+          },
+          {
+            "jp": "優れる",
+            "reading": "すぐれる",
+            "en": "excel"
+          }
+        ]
+      },
+      {
+        "char": "席",
+        "strokes": 10,
+        "on": "セキ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "席",
+            "reading": "せき",
+            "en": "a seat"
+          },
+          {
+            "jp": "指定席",
+            "reading": "していせき",
+            "en": "a reserved seat"
+          },
+          {
+            "jp": "出席",
+            "reading": "しゅっせき",
+            "en": "attendance"
+          }
+        ]
+      },
+      {
+        "char": "側",
+        "strokes": 11,
+        "on": "ソク",
+        "kun": "かわ",
+        "words": [
+          {
+            "jp": "側面",
+            "reading": "そくめん",
+            "en": "the side / flank"
+          },
+          {
+            "jp": "両側",
+            "reading": "りょうがわ",
+            "en": "both sides"
+          },
+          {
+            "jp": "〜側",
+            "reading": "がわ",
+            "en": "the side of ..."
+          }
+        ]
+      },
+      {
+        "char": "座",
+        "strokes": 10,
+        "on": "ザ",
+        "kun": "すわ・る",
+        "words": [
+          {
+            "jp": "座席",
+            "reading": "ざせき",
+            "en": "a seat"
+          },
+          {
+            "jp": "座る",
+            "reading": "すわる",
+            "en": "sit"
+          },
+          {
+            "jp": "銀行口座",
+            "reading": "ぎんこうこうざ",
+            "en": "a bank account"
+          }
+        ]
+      },
+      {
+        "char": "寄",
+        "strokes": 11,
+        "on": "キ",
+        "kun": "よ・る、よ・せる",
+        "words": [
+          {
+            "jp": "寄付",
+            "reading": "きふ",
+            "en": "a donation"
+          },
+          {
+            "jp": "立ち寄る",
+            "reading": "たちよる",
+            "en": "drop in"
+          },
+          {
+            "jp": "取り寄せる",
+            "reading": "とりよせる",
+            "en": "order ..."
+          },
+          {
+            "jp": "年寄り",
+            "reading": "としより",
+            "en": "an old person"
+          }
+        ]
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "バスなどのおりるほう＝（　）",
+        "options": [
+          "降車口",
+          "乗車口"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "お金を細かくしたいときは（　）します。",
+        "options": [
+          "両替",
+          "運賃"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "○町を通って△駅へ行く＝○町（　）△駅行き",
+        "options": [
+          "経由",
+          "回送"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "（　）バスで田舎へ帰る。",
+        "options": [
+          "深刻",
+          "深夜"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "ここはお年寄りや体の不自由な方のための（　）です。",
+        "options": [
+          "優先席",
+          "自由席"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "深夜はタクシーの運賃が（　）になります。",
+        "options": [
+          "割増",
+          "割引"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "（　）の座席は出たり入ったりしやすい。",
+        "options": [
+          "窓側",
+          "通路側"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "これは安全性に（　）車です。",
+        "options": [
+          "優れた",
+          "優しい"
+        ],
+        "answerIndex": 0
+      }
+    ]
+  },
+  "k1d6": {
+    "title": "{郵便局|ゆうびんきょく}・{病院|びょういん}で{見|み}る{表示|ひょうじ}",
+    "titleEn": "Signs Seen at the Post Office or Hospital",
+    "kanji": [
+      {
+        "char": "郵",
+        "strokes": 11,
+        "on": "ユウ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "郵便",
+            "reading": "ゆうびん",
+            "en": "mail (service)"
+          },
+          {
+            "jp": "郵送",
+            "reading": "ゆうそう",
+            "en": "sending by post"
+          }
+        ]
+      },
+      {
+        "char": "局",
+        "strokes": 7,
+        "on": "キョク",
+        "kun": "",
+        "words": [
+          {
+            "jp": "郵便局",
+            "reading": "ゆうびんきょく",
+            "en": "a post office"
+          },
+          {
+            "jp": "放送局",
+            "reading": "ほうそうきょく",
+            "en": "a broadcasting station"
+          },
+          {
+            "jp": "薬局",
+            "reading": "やっきょく",
+            "en": "a drugstore"
+          }
+        ]
+      },
+      {
+        "char": "貯",
+        "strokes": 12,
+        "on": "チョ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "貯金",
+            "reading": "ちょきん",
+            "en": "savings"
+          }
+        ]
+      },
+      {
+        "char": "包",
+        "strokes": 5,
+        "on": "ホウ",
+        "kun": "つつ・む、つつ・み",
+        "words": [
+          {
+            "jp": "包帯",
+            "reading": "ほうたい",
+            "en": "a bandage"
+          },
+          {
+            "jp": "包む",
+            "reading": "つつむ",
+            "en": "wrap"
+          },
+          {
+            "jp": "小包",
+            "reading": "こづつみ",
+            "en": "a parcel"
+          }
+        ]
+      },
+      {
+        "char": "達",
+        "strokes": 12,
+        "on": "タツ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "発達",
+            "reading": "はったつ",
+            "en": "development"
+          },
+          {
+            "jp": "友達",
+            "reading": "ともだち",
+            "en": "a friend"
+          },
+          {
+            "jp": "速達",
+            "reading": "そくたつ",
+            "en": "a special delivery"
+          }
+        ]
+      },
+      {
+        "char": "際",
+        "strokes": 14,
+        "on": "サイ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "国際",
+            "reading": "こくさい",
+            "en": "international"
+          },
+          {
+            "jp": "実際に",
+            "reading": "じっさいに",
+            "en": "actually"
+          },
+          {
+            "jp": "〜の際",
+            "reading": "さい",
+            "en": "at the time of ..."
+          }
+        ]
+      },
+      {
+        "char": "初",
+        "strokes": 7,
+        "on": "ショ",
+        "kun": "はじ・め、はじ・めて、はつ",
+        "words": [
+          {
+            "jp": "初診",
+            "reading": "しょしん",
+            "en": "the first medical consultation"
+          },
+          {
+            "jp": "初恋",
+            "reading": "はつこい",
+            "en": "one's first love"
+          },
+          {
+            "jp": "初めて",
+            "reading": "はじめて",
+            "en": "for the first time"
+          },
+          {
+            "jp": "初雪",
+            "reading": "はつゆき",
+            "en": "the first snow of the season"
+          }
+        ]
+      },
+      {
+        "char": "再",
+        "strokes": 6,
+        "on": "サイ、サ",
+        "kun": "ふたた・び",
+        "words": [
+          {
+            "jp": "再診",
+            "reading": "さいしん",
+            "en": "a follow-up medical consultation"
+          },
+          {
+            "jp": "再来年",
+            "reading": "さらいねん",
+            "en": "the year after next"
+          },
+          {
+            "jp": "再生",
+            "reading": "さいせい",
+            "en": "regeneration / recycling"
+          },
+          {
+            "jp": "再び",
+            "reading": "ふたたび",
+            "en": "again"
+          }
+        ]
+      },
+      {
+        "char": "療",
+        "strokes": 17,
+        "on": "リョウ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "診療",
+            "reading": "しんりょう",
+            "en": "medical examination and treatment"
+          },
+          {
+            "jp": "医療",
+            "reading": "いりょう",
+            "en": "medical treatment / service"
+          },
+          {
+            "jp": "治療",
+            "reading": "ちりょう",
+            "en": "(medical) treatment"
+          }
+        ]
+      },
+      {
+        "char": "科",
+        "strokes": 9,
+        "on": "カ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "科学",
+            "reading": "かがく",
+            "en": "science"
+          },
+          {
+            "jp": "内科",
+            "reading": "ないか",
+            "en": "internal medicine department"
+          },
+          {
+            "jp": "外科",
+            "reading": "げか",
+            "en": "a surgery department"
+          }
+        ]
+      },
+      {
+        "char": "婦",
+        "strokes": 11,
+        "on": "フ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "産婦人科",
+            "reading": "さんふじんか",
+            "en": "obstetrics and gynecology department"
+          },
+          {
+            "jp": "婦人",
+            "reading": "ふじん",
+            "en": "a woman"
+          },
+          {
+            "jp": "主婦",
+            "reading": "しゅふ",
+            "en": "a housewife"
+          }
+        ]
+      },
+      {
+        "char": "皮",
+        "strokes": 5,
+        "on": "ヒ",
+        "kun": "かわ",
+        "words": [
+          {
+            "jp": "皮肉(な)",
+            "reading": "ひにく",
+            "en": "irony / sarcasm"
+          },
+          {
+            "jp": "皮",
+            "reading": "かわ",
+            "en": "skin / peel / bark"
+          }
+        ]
+      },
+      {
+        "char": "膚",
+        "strokes": 15,
+        "on": "フ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "皮膚",
+            "reading": "ひふ",
+            "en": "the skin"
+          }
+        ]
+      },
+      {
+        "char": "救",
+        "strokes": 11,
+        "on": "キュウ",
+        "kun": "すく・う",
+        "words": [
+          {
+            "jp": "救急",
+            "reading": "きゅうきゅう",
+            "en": "first aid"
+          },
+          {
+            "jp": "救う",
+            "reading": "すくう",
+            "en": "save"
+          }
+        ]
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "急ぎの手紙を（　）で送る。",
+        "options": [
+          "小包",
+          "速達"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "国際郵便＝（　）へ送る郵便",
+        "options": [
+          "海外",
+          "国内"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "郵便貯金＝郵便局（　）",
+        "options": [
+          "からお金を送る",
+          "にお金を預ける"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "この紙を（　）に持って行って、薬をもらってください。",
+        "options": [
+          "薬局",
+          "包帯"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "急病人のために、夜でも開いている入口＝（　）",
+        "options": [
+          "夜間救急入口",
+          "非常口"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "初めて診察を受けに来た人は（　）受付へ行く。",
+        "options": [
+          "初診",
+          "再診"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "（　）の一つです。",
+        "options": [
+          "科学は化学",
+          "化学は科学"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "手術は（　）で行います。",
+        "options": [
+          "内科",
+          "外科"
+        ],
+        "answerIndex": 1
+      }
+    ]
+  },
+  "k1d7": {
+    "title": "{実戦問題|じっせんもんだい}",
+    "titleEn": "Practice Exercise",
+    "kanji": [
+      {
+        "char": "看",
+        "strokes": 9,
+        "on": "カン",
+        "kun": "",
+        "words": [
+          {
+            "jp": "看板",
+            "reading": "かんばん",
+            "en": "a signboard"
+          },
+          {
+            "jp": "看護師",
+            "reading": "かんごし",
+            "en": "a nurse"
+          },
+          {
+            "jp": "看病",
+            "reading": "かんびょう",
+            "en": "nursing"
+          }
+        ]
+      },
+      {
+        "char": "板",
+        "strokes": 8,
+        "on": "バン",
+        "kun": "いた",
+        "words": [
+          {
+            "jp": "黒板",
+            "reading": "こくばん",
+            "en": "a blackboard"
+          },
+          {
+            "jp": "板",
+            "reading": "いた",
+            "en": "a board"
+          },
+          {
+            "jp": "案内板",
+            "reading": "あんないばん",
+            "en": "a notice board"
+          }
+        ]
+      },
+      {
+        "char": "羽",
+        "strokes": 6,
+        "on": "ウ",
+        "kun": "はね、は",
+        "words": [
+          {
+            "jp": "羽毛",
+            "reading": "うもう",
+            "en": "feathering / down"
+          },
+          {
+            "jp": "羽",
+            "reading": "は",
+            "en": "a feather"
+          },
+          {
+            "jp": "羽根",
+            "reading": "はね",
+            "en": "a shuttlecock"
+          }
+        ]
+      },
+      {
+        "char": "成",
+        "strokes": 6,
+        "on": "セイ",
+        "kun": "な・る",
+        "words": [
+          {
+            "jp": "成分",
+            "reading": "せいぶん",
+            "en": "an ingredient / a constituent"
+          },
+          {
+            "jp": "成人式",
+            "reading": "せいじんしき",
+            "en": "a coming-of-age ceremony"
+          }
+        ]
+      },
+      {
+        "char": "第",
+        "strokes": 11,
+        "on": "ダイ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "第〜",
+            "reading": "だい",
+            "en": "number ..."
+          }
+        ]
+      },
+      {
+        "char": "総",
+        "strokes": 14,
+        "on": "ソウ",
+        "kun": "",
+        "words": [
+          {
+            "jp": "総合病院",
+            "reading": "そうごうびょういん",
+            "en": "a general hospital"
+          },
+          {
+            "jp": "総計",
+            "reading": "そうけい",
+            "en": "the total"
+          }
+        ]
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "ここは【駐車】禁止です。",
+        "options": [
+          "じゅうしゃ",
+          "ちょうしゃ",
+          "ちゅうしゃ",
+          "じょうしゃ"
+        ],
+        "answerIndex": 2
+      },
+      {
+        "prompt": "チューインガムは紙に【包んで】捨てましょう。",
+        "options": [
+          "はさんで",
+          "つつんで",
+          "たたんで",
+          "すすんで"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "外国【為替】の窓口は2階です。",
+        "options": [
+          "きがえ",
+          "ためせ",
+          "かわせ",
+          "りょうがえ"
+        ],
+        "answerIndex": 2
+      },
+      {
+        "prompt": "【喫煙席】はあちらです。",
+        "options": [
+          "きんねんせ",
+          "きんえんせき",
+          "きっえんせき",
+          "きつえんせき"
+        ],
+        "answerIndex": 3
+      },
+      {
+        "prompt": "食堂はまだ【準備】中です。",
+        "options": [
+          "せいび",
+          "えいぎょう",
+          "きゅうぎょう",
+          "じゅんび"
+        ],
+        "answerIndex": 3
+      },
+      {
+        "prompt": "デパートの【閉店】セールに行く。",
+        "options": [
+          "へいてん",
+          "かいてん",
+          "さいてん",
+          "せいてん"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "【医療】関係の仕事をする。",
+        "options": [
+          "ちりょう",
+          "いりょう",
+          "ひりょう",
+          "しんりょう"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "【救急】車をよぶときは119に電話します。",
+        "options": [
+          "きゅうきゅう",
+          "きょうきゅう",
+          "きゅうきょう",
+          "きょうきょう"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "富士山に【初雪】が降りました。",
+        "options": [
+          "はじゆき",
+          "はつゆき",
+          "しょゆき",
+          "しょせつ"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "機械でも【精算】できます。",
+        "options": [
+          "しょうさん",
+          "かいさん",
+          "せいさん",
+          "けいさん"
+        ],
+        "answerIndex": 2
+      },
+      {
+        "prompt": "このエレベーターは【ていいん】9名です。",
+        "options": [
+          "係員",
+          "乗員",
+          "店員",
+          "定員"
+        ],
+        "answerIndex": 3
+      },
+      {
+        "prompt": "御手洗いは【せいそう】中です。",
+        "options": [
+          "清帰",
+          "清掃",
+          "精掃",
+          "精帰"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "地デジ【ほうそう】というのは何ですか。",
+        "options": [
+          "郵送",
+          "包送",
+          "放送",
+          "発送"
+        ],
+        "answerIndex": 2
+      },
+      {
+        "prompt": "この手紙は【そくたつ】でおねがいします。",
+        "options": [
+          "速達",
+          "配達",
+          "発達",
+          "友達"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "【くうこう】までリムジンバスで行きました。",
+        "options": [
+          "空港",
+          "航空",
+          "港口",
+          "高校"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "一万円（　）を両替してくれませんか。",
+        "options": [
+          "符",
+          "札",
+          "付",
+          "段"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "日本からの海外旅行は1964年に自由（　）されました。",
+        "options": [
+          "科",
+          "化",
+          "案",
+          "席"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "（　）入国手続きをする。",
+        "options": [
+          "改",
+          "際",
+          "御",
+          "再"
+        ],
+        "answerIndex": 3
+      },
+      {
+        "prompt": "このバスは運（　）を先にはらいます。",
+        "options": [
+          "代",
+          "料",
+          "賃",
+          "貸"
+        ],
+        "answerIndex": 2
+      },
+      {
+        "prompt": "1（　）車は禁煙車です。",
+        "options": [
+          "号",
+          "両",
+          "番",
+          "階"
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "読み終えた新聞などは、デパートの（　）紙やトイレットペーパーなどに…（下の語群から選ぶ）",
+        "options": [
+          "ふえて",
+          "さいせい",
+          "つつみ",
+          "すてない",
+          "りゅうこうして",
+          "つねに",
+          "とじない"
+        ],
+        "answerIndex": 2
+      },
+      {
+        "prompt": "…トイレットペーパーなどに（　）されます。（下の語群から選ぶ）",
+        "options": [
+          "ふえて",
+          "さいせい",
+          "つつみ",
+          "すてない",
+          "りゅうこうして",
+          "つねに",
+          "とじない"
+        ],
+        "answerIndex": 1
+      },
+      {
+        "prompt": "ゴミとして（　）で、リサイクルするように…（下の語群から選ぶ）",
+        "options": [
+          "ふえて",
+          "さいせい",
+          "つつみ",
+          "すてない",
+          "りゅうこうして",
+          "つねに",
+          "とじない"
+        ],
+        "answerIndex": 3
+      },
+      {
+        "prompt": "リサイクルするように（　）気をつけているという人が…（下の語群から選ぶ）",
+        "options": [
+          "ふえて",
+          "さいせい",
+          "つつみ",
+          "すてない",
+          "りゅうこうして",
+          "つねに",
+          "とじない"
+        ],
+        "answerIndex": 5
+      },
+      {
+        "prompt": "…気をつけているという人が（　）います。（下の語群から選ぶ）",
+        "options": [
+          "ふえて",
+          "さいせい",
+          "つつみ",
+          "すてない",
+          "りゅうこうして",
+          "つねに",
+          "とじない"
+        ],
+        "answerIndex": 0
+      }
+    ]
+  }
+}

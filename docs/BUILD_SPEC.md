@@ -43,7 +43,7 @@ export const STORAGE = {
 };
 export const GEMINI_BASE = 'https://generativelanguage.googleapis.com/v1beta/models';
 export const DEFAULT_SETTINGS = {
-  apiKey: 'AIzaSyClT0ycQbwGqCgAnow06aodNvpdRbTItd4',
+  apiKey: 'AQ.Ab8RN6K1cLf4xNITs3NCQbkUkTrOR0QfEo0SuHWJq65DHp4Wmw',
   model: 'gemini-3.5-flash-lite',
   furigana: true,
 };

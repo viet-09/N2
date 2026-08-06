@@ -3,9 +3,22 @@
 // drives Gemini through gemini.js, and renders Japanese via furigana.js.
 
 import { TUTOR_SYSTEM_PROMPT } from './config.js';
-import { getTutorHistory, setTutorHistory, clearTutorHistory } from './store.js';
+import {
+  getTutorHistory,
+  setTutorHistory,
+  clearTutorHistory,
+  getTutorContext,
+  setTutorContext,
+  getTutorMemory,
+  setTutorMemory,
+} from './store.js';
+import { getProfile } from './profile.js';
 import { renderFurigana } from './furigana.js';
 import { askText, openSettings } from './gemini.js';
+
+// How many new chat turns (user+model) pass between background memory refreshes.
+const MEMORY_REFRESH_EVERY = 6;
+let memoryRefreshInFlight = false;
 
 const FIRST_CHALLENGE_PROMPT = '始めましょう。最初の課題をください。';
 
@@ -14,26 +27,81 @@ let rootEl = null;
 let history = [];
 let isLoading = false;
 let errorText = null;
+let lessonContext = null;
+let mountToken = 0;
+
+function systemPrompt() {
+  let prompt = TUTOR_SYSTEM_PROMPT;
+
+  const name = (getProfile()?.name || '').trim();
+  if (name) {
+    prompt += `\n\nTên người học: ${name}. Hãy chào hỏi và xưng hô với người học bằng tên này một cách tự nhiên, thân thiện — không cần lặp lại ở mọi câu.`;
+  }
+
+  const memory = getTutorMemory().trim();
+  if (memory) {
+    prompt += `\n\nGhi nhớ về người học từ các buổi học trước (thói quen, lỗi thường gặp, chủ đề quan tâm, cách trò chuyện họ thích) — áp dụng một cách tự nhiên khi phù hợp, không đọc lại nguyên văn: ${memory}`;
+  }
+
+  if (lessonContext) {
+    prompt += `\n\nNgữ cảnh bài học đang mở (nội dung nguồn sách, không được thay thế hoặc bịa thêm):\nDanh mục: ${lessonContext.category || ''}\nTiêu đề: ${lessonContext.title || ''}\nTiêu đề tiếng Anh: ${lessonContext.titleEn || ''}\nDữ liệu: ${lessonContext.content || ''}\nHãy tập trung câu hỏi và giải thích vào đúng bài này.`;
+  }
+
+  return prompt;
+}
+
+// Best-effort, silent background summary of the learner's habits/style so future
+// sessions (and other lesson-seeded chats) can pick up where this one left off.
+// Never blocks the visible conversation and never surfaces its own errors.
+async function maybeRefreshMemory() {
+  if (memoryRefreshInFlight) return;
+  if (history.length < MEMORY_REFRESH_EVERY || history.length % MEMORY_REFRESH_EVERY !== 0) return;
+  memoryRefreshInFlight = true;
+  try {
+    const priorMemory = getTutorMemory().trim();
+    const recent = history.slice(-MEMORY_REFRESH_EVERY * 2);
+    const transcript = recent.map((m) => `${m.role === 'user' ? 'Học viên' : 'Gia sư'}: ${m.text}`).join('\n');
+    const summary = await askText({
+      system: 'Bạn là trợ lý tổng hợp hồ sơ học viên. Chỉ trả về một đoạn ghi chú ngắn (dưới 500 ký tự), tiếng Việt, không chào hỏi, không lặp lại hội thoại — mô tả thói quen học, lỗi thường lặp lại, chủ đề quan tâm, và cách trò chuyện học viên có vẻ thích. Nếu có ghi chú cũ, hãy cập nhật/hợp nhất thay vì viết lại từ đầu.',
+      history: [],
+      user: `Ghi chú cũ (nếu có): ${priorMemory || '(chưa có)'}\n\nĐoạn hội thoại gần đây:\n${transcript}`,
+    });
+    setTutorMemory(summary);
+  } catch {
+    // Silent — this is a nice-to-have, never worth surfacing an error for.
+  } finally {
+    memoryRefreshInFlight = false;
+  }
+}
 
 /**
  * Render the tutor chat UI into `root`.
  * @param {HTMLElement} root
  */
 export function renderTutor(root) {
+  const token = ++mountToken;
   rootEl = root;
   isLoading = false;
   errorText = null;
   history = getTutorHistory();
+  lessonContext = getTutorContext();
 
   root.innerHTML = shellTemplate();
   bindShellEvents();
   paintMessages();
 
   if (history.length === 0) {
-    fetchFirstChallenge();
+    fetchFirstChallenge(token);
   } else {
     scrollToBottom();
   }
+
+  return {
+    cleanup() {
+      if (mountToken === token) mountToken += 1;
+      if (typeof window !== 'undefined') window.speechSynthesis?.cancel();
+    },
+  };
 }
 
 // ---------------------------------------------------------------------------
@@ -43,6 +111,8 @@ export function renderTutor(root) {
 function shellTemplate() {
   return `
     <div class="chat-wrap">
+      <h1 class="sr-only" data-route-heading>Gia sư AI</h1>
+      ${lessonContext ? `<aside class="tutor-context-banner" aria-label="Ngữ cảnh bài học"><strong>Đang học:</strong> <span lang="ja">${renderFurigana(lessonContext.title || '')}</span><button type="button" id="tutor-context-clear" aria-label="Bỏ ngữ cảnh bài học">×</button></aside>` : ''}
       <div class="chat-toolbar">
         <button type="button" id="tutor-clear-btn" class="chat-clear-btn">
           🗑️ Xóa hội thoại
@@ -51,8 +121,9 @@ function shellTemplate() {
           ⚙ Cài đặt
         </button>
       </div>
-      <div class="chat-messages" id="tutor-messages"></div>
+      <div class="chat-messages" id="tutor-messages" role="log" aria-live="polite" aria-relevant="additions text"></div>
       <form class="chat-input-row" id="tutor-form">
+        <label for="tutor-input" class="sr-only">Câu trả lời hoặc câu hỏi cho gia sư</label>
         <input
           type="text"
           id="tutor-input"
@@ -76,6 +147,7 @@ function bindShellEvents() {
   const form = rootEl.querySelector('#tutor-form');
   const clearBtn = rootEl.querySelector('#tutor-clear-btn');
   const settingsBtn = rootEl.querySelector('#tutor-settings-btn');
+  const contextClearBtn = rootEl.querySelector('#tutor-context-clear');
   const messagesEl = rootEl.querySelector('#tutor-messages');
 
   if (form) {
@@ -96,9 +168,17 @@ function bindShellEvents() {
       history = [];
       errorText = null;
       paintMessages();
-      fetchFirstChallenge();
+      fetchFirstChallenge(mountToken);
     });
   }
+
+  contextClearBtn?.addEventListener('click', () => {
+    setTutorContext(null);
+    lessonContext = null;
+    rootEl.innerHTML = shellTemplate();
+    bindShellEvents();
+    paintMessages();
+  });
 
   if (settingsBtn) {
     settingsBtn.addEventListener('click', () => {
@@ -123,18 +203,23 @@ function bindShellEvents() {
 // Message flow
 // ---------------------------------------------------------------------------
 
-async function fetchFirstChallenge() {
+async function fetchFirstChallenge(token = mountToken) {
   isLoading = true;
   errorText = null;
   paintMessages();
   setFormDisabled(true);
 
   try {
-    const reply = await askText({ system: TUTOR_SYSTEM_PROMPT, history: [], user: FIRST_CHALLENGE_PROMPT });
+    const prompt = lessonContext
+      ? 'Hãy bắt đầu bằng một câu hỏi hoặc thử thách ngắn dựa đúng vào bài học trong ngữ cảnh.'
+      : FIRST_CHALLENGE_PROMPT;
+    const reply = await askText({ system: systemPrompt(), history: [], user: prompt });
+    if (token !== mountToken) return;
     history = [{ role: 'model', text: reply }];
     setTutorHistory(history);
     isLoading = false;
   } catch (err) {
+    if (token !== mountToken) return;
     isLoading = false;
     errorText = messageFromError(err);
   }
@@ -157,12 +242,16 @@ async function handleSend(rawText) {
   setFormDisabled(true);
   scrollToBottom();
 
+  const token = mountToken;
   try {
-    const reply = await askText({ system: TUTOR_SYSTEM_PROMPT, history: priorHistory, user: text });
+    const reply = await askText({ system: systemPrompt(), history: priorHistory, user: text });
+    if (token !== mountToken) return;
     history = [...history, { role: 'model', text: reply }];
     setTutorHistory(history);
     isLoading = false;
+    maybeRefreshMemory();
   } catch (err) {
+    if (token !== mountToken) return;
     isLoading = false;
     errorText = messageFromError(err);
   }
@@ -227,7 +316,7 @@ function renderMessage(msg, idx) {
 
 function loadingBubble() {
   return `
-    <div class="chat-msg model chat-loading">
+    <div class="chat-msg model chat-loading" role="status">
       <div class="chat-msg-bubble">
         Đang soạn câu trả lời…
       </div>
@@ -237,7 +326,7 @@ function loadingBubble() {
 
 function errorBubble(message) {
   return `
-    <div class="chat-msg model chat-error">
+    <div class="chat-msg model chat-error" role="alert">
       <div class="chat-msg-bubble">
         ⚠️ Rất tiếc, đã có lỗi xảy ra: ${escapeHtml(message)}<br>
         Vui lòng kiểm tra API key trong phần cài đặt (⚙) rồi thử lại.

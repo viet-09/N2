@@ -27,12 +27,21 @@ function writeJSON(key, value) {
   }
 }
 
-function todayStr() {
+function localDateString(date = new Date()) {
   try {
-    return new Date().toISOString().slice(0, 10);
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
   } catch (err) {
     return '';
   }
+}
+
+function previousLocalDateString() {
+  const date = new Date();
+  date.setDate(date.getDate() - 1);
+  return localDateString(date);
 }
 
 // ---------------------------------------------------------------------------
@@ -40,6 +49,7 @@ function todayStr() {
 // ---------------------------------------------------------------------------
 
 let _lessons = null;
+const _bookById = new Map();
 
 export function setLessons(data) {
   _lessons = data && typeof data === 'object' ? data : null;
@@ -49,9 +59,48 @@ export function getLessons() {
   return _lessons;
 }
 
+/** Clear book content before a fresh manifest load. */
+export function resetBookContent() {
+  _bookById.clear();
+}
+
+/**
+ * Merge one extracted book JSON payload into the in-memory lesson index.
+ * Supported payloads are `{ lessonId: content }`, `{ lessons: [...] }`, or an array
+ * whose entries contain an `id` field.
+ */
+export function mergeBookContent(payload) {
+  if (!payload || typeof payload !== 'object') return;
+
+  const add = (id, content) => {
+    if (typeof id !== 'string' || !id || !content || typeof content !== 'object') return;
+    _bookById.set(id, content);
+  };
+
+  if (Array.isArray(payload)) {
+    payload.forEach((entry) => add(entry && entry.id, entry));
+    return;
+  }
+
+  if (Array.isArray(payload.lessons)) {
+    payload.lessons.forEach((entry) => add(entry && entry.id, entry));
+    return;
+  }
+
+  Object.entries(payload).forEach(([id, content]) => add(id, content));
+}
+
+export function getBookContent(id) {
+  return _bookById.get(String(id || '')) || null;
+}
+
+export function getBookContentCount() {
+  return _bookById.size;
+}
+
 /**
  * Search every category/week for a lesson id.
- * @returns {{lesson:object, category:object, week:number}|null}
+ * @returns {{lesson:object, category:object, week:object}|null}
  */
 export function findLesson(id) {
   try {
@@ -61,7 +110,7 @@ export function findLesson(id) {
       for (const week of category.weeks) {
         if (!week || !Array.isArray(week.lessons)) continue;
         const lesson = week.lessons.find((l) => l && l.id === id);
-        if (lesson) return { lesson, category, week: week.week };
+        if (lesson) return { lesson, category, week };
       }
     }
     return null;
@@ -192,11 +241,11 @@ function readStreak() {
  */
 export function touchStreak() {
   try {
-    const today = todayStr();
+    const today = localDateString();
     const current = readStreak();
     if (!today || current.lastDate === today) return;
 
-    const yesterday = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+    const yesterday = previousLocalDateString();
     const next = {
       streak: current.lastDate === yesterday ? current.streak + 1 : 1,
       lastDate: today,
@@ -208,7 +257,13 @@ export function touchStreak() {
 }
 
 export function getStreak() {
-  return readStreak();
+  const current = readStreak();
+  const today = localDateString();
+  const yesterday = previousLocalDateString();
+  if (!current.lastDate || (current.lastDate !== today && current.lastDate !== yesterday)) {
+    return { streak: 0, lastDate: current.lastDate };
+  }
+  return current;
 }
 
 // ---------------------------------------------------------------------------
@@ -254,6 +309,57 @@ export function setTutorHistory(arr) {
 
 export function clearTutorHistory() {
   writeJSON(STORAGE.tutor, []);
+}
+
+export function getTutorContext() {
+  const value = readJSON(STORAGE.tutorContext, null);
+  return value && typeof value === 'object' ? value : null;
+}
+
+export function setTutorContext(context) {
+  if (context && typeof context === 'object') writeJSON(STORAGE.tutorContext, context);
+  else writeJSON(STORAGE.tutorContext, null);
+}
+
+// Short rolling note on the learner's habits/mistakes/preferred conversational style,
+// refreshed periodically by tutor.js so future sessions can pick up where they left off.
+export function getTutorMemory() {
+  const value = readJSON(STORAGE.tutorMemory, '');
+  return typeof value === 'string' ? value : '';
+}
+
+export function setTutorMemory(note) {
+  writeJSON(STORAGE.tutorMemory, typeof note === 'string' ? note.trim().slice(0, 600) : '');
+}
+
+// ---------------------------------------------------------------------------
+// Voice transcript + tap-kanji explanation cache
+// ---------------------------------------------------------------------------
+
+export function getVoiceTranscript() {
+  const value = readJSON(STORAGE.voice, []);
+  return Array.isArray(value) ? value : [];
+}
+
+export function setVoiceTranscript(messages) {
+  writeJSON(STORAGE.voice, Array.isArray(messages) ? messages.slice(-200) : []);
+}
+
+export function clearVoiceTranscript() {
+  writeJSON(STORAGE.voice, []);
+}
+
+export function getKanjiGloss(key) {
+  const map = readJSON(STORAGE.kanjiGloss, {});
+  return map && typeof map === 'object' ? map[String(key || '')] || null : null;
+}
+
+export function setKanjiGloss(key, value) {
+  if (!key || !value) return;
+  const map = readJSON(STORAGE.kanjiGloss, {});
+  const safeMap = map && typeof map === 'object' ? map : {};
+  safeMap[String(key)] = value;
+  writeJSON(STORAGE.kanjiGloss, safeMap);
 }
 
 // ---------------------------------------------------------------------------

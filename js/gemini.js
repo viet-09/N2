@@ -195,95 +195,15 @@ export async function askAudio({ system, history = [], audioBase64, mimeType, pr
 // ---------------------------------------------------------------------------
 
 const MODAL_ID = 'gemini-settings-overlay';
-const STYLE_ID = 'gemini-settings-styles';
 
 const MODEL_SUGGESTIONS = [
   'gemini-3.5-flash-lite',
   'gemini-3.5-flash',
-  'gemini-3.6-flash',
-  'gemini-3.5-flash',
-  'gemini-3.5-pro',
-  'gemini-3.0-flash',
-  'gemini-3.0-flash-lite',
 ];
-
-/** Inject the settings-modal CSS once (self-contained; reuses existing tokens). */
-function ensureSettingsStyles() {
-  if (document.getElementById(STYLE_ID)) return;
-  const style = document.createElement('style');
-  style.id = STYLE_ID;
-  style.textContent = `
-.settings-modal .modal-body { display: flex; flex-direction: column; gap: 6px; }
-.settings-modal .settings-help {
-  font-family: var(--font-sans, sans-serif);
-  font-size: 13px;
-  line-height: 1.5;
-  color: var(--text-muted, #6B7280);
-  margin-bottom: 12px;
-}
-.settings-modal .settings-help a { color: var(--accent-red, #C84B31); text-decoration: underline; }
-.settings-modal label {
-  font-family: var(--font-sans, sans-serif);
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-primary, #1F2421);
-  margin-top: 10px;
-  margin-bottom: 6px;
-  display: block;
-}
-.settings-modal input[type="password"],
-.settings-modal input[type="text"] {
-  width: 100%;
-  min-height: 44px;
-  padding: 10px 12px;
-  font-family: var(--font-sans, sans-serif);
-  font-size: 15px;
-  border: 1px solid var(--border-color, #E5E0D8);
-  border-radius: 4px;
-  background: var(--bg-page, #FAF8F5);
-  color: var(--text-primary, #1F2421);
-  box-sizing: border-box;
-}
-.settings-modal input[type="password"]:focus,
-.settings-modal input[type="text"]:focus {
-  outline: 2px solid var(--accent-gold, #D4AF37);
-  outline-offset: 1px;
-}
-.settings-modal .settings-toggle-key {
-  margin-top: 6px;
-  background: none;
-  border: none;
-  color: var(--text-muted, #6B7280);
-  font-family: var(--font-sans, sans-serif);
-  font-size: 12px;
-  text-decoration: underline;
-  cursor: pointer;
-  min-height: 44px;
-  padding: 0;
-  align-self: flex-start;
-}
-.settings-modal .modal-close {
-  min-width: 44px;
-  min-height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.settings-modal .complete-modal-btn {
-  min-height: 44px;
-  min-width: 44px;
-}
-.settings-modal .settings-status {
-  font-family: var(--font-sans, sans-serif);
-  font-size: 12px;
-  color: var(--text-muted, #6B7280);
-}
-.settings-modal .settings-status.ok { color: #4a7a4a; }
-`;
-  document.head.appendChild(style);
-}
+const LIVE_MODEL_SUGGESTIONS = [
+  'gemini-3.1-flash-live-preview',
+  'gemini-2.5-flash-native-audio-latest',
+];
 
 function closeExistingSettingsModal() {
   const existing = document.getElementById(MODAL_ID);
@@ -297,23 +217,28 @@ function closeExistingSettingsModal() {
  * button.
  */
 export function openSettings() {
-  ensureSettingsStyles();
   closeExistingSettingsModal();
 
   const current = getSettings();
+  const returnFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
 
   const overlay = document.createElement('div');
   overlay.className = 'modal-overlay settings-modal active';
   overlay.id = MODAL_ID;
 
-  const card = document.createElement('div');
+  const card = document.createElement('section');
   card.className = 'modal-card';
+  card.setAttribute('role', 'dialog');
+  card.setAttribute('aria-modal', 'true');
+  card.setAttribute('aria-labelledby', 'gemini-settings-title');
+  card.setAttribute('aria-describedby', 'gemini-settings-warning');
 
   // Header ------------------------------------------------------------
   const header = document.createElement('div');
   header.className = 'modal-header';
 
-  const title = document.createElement('h3');
+  const title = document.createElement('h2');
+  title.id = 'gemini-settings-title';
   title.textContent = '⚙ Cài đặt Gemini AI';
 
   const closeBtn = document.createElement('button');
@@ -330,8 +255,26 @@ export function openSettings() {
   body.className = 'modal-body';
 
   const help = document.createElement('p');
-  help.className = 'settings-help';
-  help.textContent = 'API key Gemini đã được cấu hình sẵn — bạn không cần nhập gì để dùng gia sư AI, tạo bài học và luyện hội thoại. Nếu model báo lỗi, bạn có thể đổi model bên dưới.';
+  help.className = 'settings-warning';
+  help.id = 'gemini-settings-warning';
+  help.textContent = 'Cảnh báo: API key dùng trong ứng dụng tĩnh và WebSocket đều công khai cho người truy cập. Hãy giới hạn key theo API/referrer, hoặc tự host riêng nếu cần bảo mật.';
+
+  const keyLabel = document.createElement('label');
+  keyLabel.setAttribute('for', 'gemini-settings-key');
+  keyLabel.textContent = 'Gemini API key';
+
+  const keyInput = document.createElement('input');
+  keyInput.type = 'password';
+  keyInput.id = 'gemini-settings-key';
+  keyInput.autocomplete = 'off';
+  keyInput.spellcheck = false;
+  keyInput.value = current.apiKey || '';
+
+  const toggleKey = document.createElement('button');
+  toggleKey.type = 'button';
+  toggleKey.className = 'settings-toggle-key';
+  toggleKey.textContent = 'Hiện key';
+  toggleKey.setAttribute('aria-controls', keyInput.id);
 
   const modelLabel = document.createElement('label');
   modelLabel.setAttribute('for', 'gemini-settings-model');
@@ -354,10 +297,37 @@ export function openSettings() {
     datalist.appendChild(opt);
   }
 
+  const liveLabel = document.createElement('label');
+  liveLabel.setAttribute('for', 'gemini-settings-live-model');
+  liveLabel.textContent = 'Live model';
+
+  const liveInput = document.createElement('input');
+  liveInput.type = 'text';
+  liveInput.id = 'gemini-settings-live-model';
+  liveInput.setAttribute('list', 'gemini-settings-live-model-options');
+  liveInput.autocomplete = 'off';
+  liveInput.spellcheck = false;
+  liveInput.placeholder = LIVE_MODEL_SUGGESTIONS[0];
+  liveInput.value = current.liveModel || '';
+
+  const liveDatalist = document.createElement('datalist');
+  liveDatalist.id = 'gemini-settings-live-model-options';
+  LIVE_MODEL_SUGGESTIONS.forEach((model) => {
+    const option = document.createElement('option');
+    option.value = model;
+    liveDatalist.appendChild(option);
+  });
+
   body.appendChild(help);
+  body.appendChild(keyLabel);
+  body.appendChild(keyInput);
+  body.appendChild(toggleKey);
   body.appendChild(modelLabel);
   body.appendChild(modelInput);
   body.appendChild(datalist);
+  body.appendChild(liveLabel);
+  body.appendChild(liveInput);
+  body.appendChild(liveDatalist);
 
   // Footer ----------------------------------------------------------------
   const footer = document.createElement('div');
@@ -381,13 +351,30 @@ export function openSettings() {
   document.body.appendChild(overlay);
 
   function onKeydown(e) {
-    if (e.key === 'Escape') close();
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      close();
+      return;
+    }
+    if (e.key !== 'Tab') return;
+    const focusable = [...card.querySelectorAll('button:not([disabled]), input:not([disabled]), [href], [tabindex]:not([tabindex="-1"])')];
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
   }
 
   function close() {
     overlay.removeEventListener('click', onOverlayClick);
     document.removeEventListener('keydown', onKeydown);
     overlay.remove();
+    returnFocus?.focus?.();
   }
 
   function onOverlayClick(e) {
@@ -398,9 +385,17 @@ export function openSettings() {
   closeBtn.addEventListener('click', close);
   document.addEventListener('keydown', onKeydown);
 
+  toggleKey.addEventListener('click', () => {
+    const visible = keyInput.type === 'text';
+    keyInput.type = visible ? 'password' : 'text';
+    toggleKey.textContent = visible ? 'Hiện key' : 'Ẩn key';
+    toggleKey.setAttribute('aria-pressed', String(!visible));
+  });
+
   saveBtn.addEventListener('click', () => {
     const nextModel = modelInput.value.trim() || current.model;
-    setSettings({ model: nextModel });
+    const nextLiveModel = liveInput.value.trim() || current.liveModel;
+    setSettings({ apiKey: keyInput.value.trim(), model: nextModel, liveModel: nextLiveModel });
     status.textContent = 'Đã lưu!';
     status.classList.add('ok');
     setTimeout(close, 600);

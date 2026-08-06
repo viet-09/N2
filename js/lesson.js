@@ -1,569 +1,442 @@
-// js/lesson.js — dedicated lesson page: content render + furigana + AI generate + TTS
-import { findLesson, getContent, setContent, isDone, toggleDone } from './store.js';
-import { navigate } from './router.js';
+// js/lesson.js — book-backed lesson renderer, quizzes, TTS, tutor context,
+// and cached Vietnamese explanations for tappable Japanese headwords.
+import {
+  findLesson,
+  getBookContent,
+  getKanjiGloss,
+  setKanjiGloss,
+  setTutorContext,
+  clearTutorHistory,
+  isDone,
+  toggleDone,
+} from './store.js';
+import { navigate, getCurrentRoute, isRouteActive } from './router.js';
 import { renderFurigana, setFurigana, getFurigana } from './furigana.js';
-import { askJSON } from './gemini.js';
-
-const AI_SYSTEM_PROMPT =
-  'Bạn là một giáo viên tiếng Nhật chuyên nghiệp, soạn giáo trình JLPT N2 chuẩn xác. ' +
-  'Chỉ trả về JSON hợp lệ đúng theo schema được yêu cầu, không thêm bất kỳ chữ nào khác ngoài JSON.';
-
-/* ---------------------------------------------------------------------- */
-/* small utils                                                            */
-/* ---------------------------------------------------------------------- */
+import { askText } from './gemini.js';
+import { renderTutor } from './tutor.js';
 
 function escapeHtml(value) {
-  return String(value ?? '')
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;');
+  return String(value ?? '').replace(/[&<>"']/g, (char) => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+  }[char]));
 }
 
-function sectionHeading(defaultLabel, practiceLabel, isPractice) {
-  return isPractice ? practiceLabel : defaultLabel;
+function plainJapanese(value) {
+  return String(value ?? '').replace(/\{([^{}|]*)\|([^{}]*)\}/g, '$1').trim();
 }
 
-function resolveCorrectIndex(options, answer) {
-  const list = Array.isArray(options) ? options : [];
-  const target = String(answer ?? '').trim();
-  const exact = list.findIndex((opt) => String(opt ?? '').trim() === target);
-  if (exact !== -1) return exact;
-  const n = Number(target);
-  if (Number.isInteger(n)) {
-    if (n >= 0 && n < list.length) return n;
-    if (n >= 1 && n <= list.length) return n - 1;
-  }
-  return -1;
+// Grammar `form`/`connection` fields transcribe the book's own conjugation-grouping
+// notation, including a literal <s>…</s> strikethrough mark for the part that's dropped
+// (e.g. "V<s>ます</s>がち"). renderFurigana HTML-escapes everything, so re-open just that
+// one known-safe tag pair afterward — never re-open anything else.
+function renderGrammarNotation(value) {
+  return renderFurigana(value)
+    .replace(/&lt;s&gt;/g, '<s>')
+    .replace(/&lt;\/s&gt;/g, '</s>');
 }
 
-/* ---------------------------------------------------------------------- */
-/* text-to-speech                                                         */
-/* ---------------------------------------------------------------------- */
-
-let jaVoicesCache = [];
-
+let voices = [];
 function refreshVoices() {
-  if (typeof window === 'undefined' || !window.speechSynthesis) return;
-  const list = window.speechSynthesis.getVoices();
-  if (list && list.length) jaVoicesCache = list;
+  if (typeof speechSynthesis !== 'undefined') voices = speechSynthesis.getVoices() || [];
 }
-
-if (typeof window !== 'undefined' && window.speechSynthesis) {
+if (typeof speechSynthesis !== 'undefined') {
   refreshVoices();
-  window.speechSynthesis.addEventListener?.('voiceschanged', refreshVoices);
-}
-
-function pickJaVoice() {
-  if (!jaVoicesCache.length) refreshVoices();
-  return jaVoicesCache.find((v) => v.lang && v.lang.toLowerCase().startsWith('ja')) || null;
-}
-
-function stripFuriganaForSpeech(text) {
-  return String(text ?? '')
-    .replace(/\{([^{}|]*)\|([^{}]*)\}/g, '$1')
-    .trim();
+  speechSynthesis.addEventListener?.('voiceschanged', refreshVoices);
 }
 
 function speak(text) {
-  if (typeof window === 'undefined' || !window.speechSynthesis) return;
-  const clean = stripFuriganaForSpeech(text);
+  if (typeof speechSynthesis === 'undefined') return;
+  const clean = plainJapanese(text);
   if (!clean) return;
-  window.speechSynthesis.cancel();
-  const utter = new SpeechSynthesisUtterance(clean);
-  utter.lang = 'ja-JP';
-  const voice = pickJaVoice();
-  if (voice) utter.voice = voice;
-  window.speechSynthesis.speak(utter);
+  speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(clean);
+  utterance.lang = 'ja-JP';
+  utterance.voice = voices.find((voice) => /^ja(?:-|$)/i.test(voice.lang || '')) || null;
+  speechSynthesis.speak(utterance);
 }
 
-function ttsButton(jpText) {
-  const raw = jpText == null ? '' : String(jpText);
-  if (!raw.trim()) return '';
-  return `<button type="button" class="tts-btn" data-action="speak" data-jp="${escapeHtml(raw)}" aria-label="Nghe phát âm">🔊</button>`;
+function ttsButton(text) {
+  if (!String(text || '').trim()) return '';
+  return `<button type="button" class="tts-btn" data-action="speak" data-jp="${escapeHtml(text)}" aria-label="Nghe phát âm tiếng Nhật">🔊</button>`;
 }
 
-/* ---------------------------------------------------------------------- */
-/* shared content fragments                                               */
-/* ---------------------------------------------------------------------- */
-
-function renderJpLine(line) {
-  return `<div class="jp-sentence"><span class="jp-text">${renderFurigana(line)}</span>${ttsButton(line)}</div>`;
+function wordButton(word, reading = '', label = null) {
+  const display = label || (reading && reading !== word ? `{${word}|${reading}}` : word);
+  return `<button type="button" class="explain-word-btn" data-action="explain-word" data-word="${escapeHtml(word)}" data-reading="${escapeHtml(reading)}" lang="ja">${renderFurigana(display)}</button>`;
 }
 
-function renderJpLines(text) {
-  const lines = String(text ?? '')
-    .split(/\n+/)
-    .map((l) => l.trim())
-    .filter(Boolean);
-  if (!lines.length) return '<p class="text-muted">Chưa có nội dung.</p>';
-  return lines.map(renderJpLine).join('');
+function renderJapaneseLine(text, className = 'jp-sentence') {
+  return `<div class="${className}" lang="ja"><button type="button" class="jp-text explain-word-btn" data-action="explain-sentence" data-jp="${escapeHtml(text || '')}" aria-label="Dịch câu này sang tiếng Việt">${renderFurigana(text || '')}</button>${ttsButton(text)}</div>`;
 }
 
-function renderExampleBox(ex) {
-  if (!ex) return '';
-  const jp = ex.jp || '';
-  return `
-    <div class="example-box">
-      <div class="jp-sentence"><span class="jp-text">${renderFurigana(jp)}</span>${ttsButton(jp)}</div>
-      <div class="vi-sentence">${escapeHtml(ex.vi || '')}</div>
-    </div>`;
+function answerIndex(question) {
+  const index = Number(question?.answerIndex);
+  return Number.isInteger(index) ? index : -1;
 }
 
-function renderVocabList(vocabulary) {
-  if (!Array.isArray(vocabulary) || !vocabulary.length) return '';
-  const rows = vocabulary
-    .map((v) => `<li>${renderFurigana(v?.word || '')} — ${escapeHtml(v?.vi || '')}</li>`)
-    .join('');
-  return `
-    <div class="reading-vocab">
-      <h3 class="subheading">Từ vựng cần biết</h3>
-      <ul class="reading-vocab-list">${rows}</ul>
-    </div>`;
-}
-
-function renderQuestion(q, index) {
-  if (!q) return '';
-  const options = Array.isArray(q.options) ? q.options : [];
-  const correctIdx = resolveCorrectIndex(options, q.answer);
-  const optionsHtml = options
-    .map(
-      (opt, idx) =>
-        `<button type="button" class="quiz-option" data-action="quiz-option" data-idx="${idx}">${renderFurigana(opt)}</button>`
-    )
-    .join('');
-  return `
-    <div class="quiz-question" data-correct-idx="${correctIdx}">
-      <div class="quiz-q-text">Câu ${index + 1}: ${renderFurigana(q.q || '')}</div>
-      <div class="quiz-options">${optionsHtml}</div>
-      <div class="quiz-explain" hidden>
-        <div class="quiz-answer">Đáp án đúng: <strong>${renderFurigana(String(q.answer ?? ''))}</strong></div>
-        ${q.explainVi ? `<div class="quiz-explain-vi">${escapeHtml(q.explainVi)}</div>` : ''}
-      </div>
-    </div>`;
-}
-
-function renderQuestions(questions) {
+function renderQuestions(questions, title = 'Luyện tập') {
   if (!Array.isArray(questions) || !questions.length) return '';
   return `
-    <div class="quiz-block">
-      <h3 class="subheading">Câu hỏi luyện tập</h3>
-      ${questions.map(renderQuestion).join('')}
-    </div>`;
-}
-
-/* ---------------------------------------------------------------------- */
-/* per-category content renderers                                         */
-/* ---------------------------------------------------------------------- */
-
-function renderGrammarContent(content, isPractice) {
-  const heading = sectionHeading('Ngữ pháp', 'Đề luyện tập ngữ pháp', isPractice);
-  const examples = Array.isArray(content.examples) ? content.examples : [];
-  return `
-    <section class="content-section grammar-section">
-      <h2 class="section-heading">${escapeHtml(heading)}</h2>
-      <div class="grammar-point">
-        ${content.pattern ? `<div class="grammar-title">${renderFurigana(content.pattern)}</div>` : ''}
-        ${content.meaningVi ? `<div class="grammar-meaning">${escapeHtml(content.meaningVi)}</div>` : ''}
-        ${content.formation ? `<div class="grammar-formation"><strong>Cấu trúc:</strong> ${renderFurigana(content.formation)}</div>` : ''}
-        ${content.explanationVi ? `<p class="grammar-explain">${escapeHtml(content.explanationVi)}</p>` : ''}
-      </div>
-      ${examples.length ? `<h3 class="subheading">Ví dụ</h3>${examples.map(renderExampleBox).join('')}` : ''}
-      ${content.notes ? `<div class="lesson-notes"><strong>Ghi chú:</strong> ${escapeHtml(content.notes)}</div>` : ''}
+    <section class="quiz-block" aria-labelledby="quiz-heading">
+      <h3 class="subheading" id="quiz-heading">${escapeHtml(title)}</h3>
+      ${questions.map((question, questionIndex) => {
+        const options = Array.isArray(question?.options) ? question.options : [];
+        const correct = answerIndex(question);
+        return `
+          <div class="quiz-question" data-correct-idx="${correct}">
+            <div class="quiz-q-text" lang="ja">${questionIndex + 1}. ${renderFurigana(question?.prompt || question?.q || '')}</div>
+            <div class="quiz-options">
+              ${options.map((option, optionIndex) => `<button type="button" class="quiz-option" data-action="quiz-option" data-idx="${optionIndex}" lang="ja">${renderFurigana(option)}</button>`).join('')}
+            </div>
+            <div class="quiz-explain" role="status" hidden></div>
+          </div>`;
+      }).join('')}
     </section>`;
 }
 
-function renderVocabItem(item) {
-  if (!item) return '';
-  const word = item.word || '';
-  const reading = item.reading || '';
-  const headText = reading && reading !== word ? `{${word}|${reading}}` : word;
-  return `
-    <div class="vocab-item">
-      <div class="vocab-word">${renderFurigana(headText)}</div>
-      ${item.meaningVi ? `<div class="vocab-meaning">${escapeHtml(item.meaningVi)}</div>` : ''}
-      ${item.example ? renderExampleBox(item.example) : ''}
-    </div>`;
-}
-
-function renderVocabContent(content, isPractice) {
-  const heading = sectionHeading('Từ vựng', 'Đề luyện tập từ vựng', isPractice);
-  const items = Array.isArray(content.items) ? content.items : [];
-  return `
-    <section class="content-section vocab-section">
-      <h2 class="section-heading">${escapeHtml(heading)}</h2>
-      ${content.introVi ? `<p class="section-intro">${escapeHtml(content.introVi)}</p>` : ''}
-      ${items.map(renderVocabItem).join('')}
-    </section>`;
-}
-
-function renderKanjiItem(item) {
-  if (!item) return '';
-  const examples = Array.isArray(item.examples) ? item.examples : [];
-  return `
-    <div class="kanji-item">
-      <div class="kanji-char">${escapeHtml(item.kanji || '')}</div>
-      <div class="kanji-readings">
-        ${item.on ? `<span class="kanji-on">Âm On: ${escapeHtml(item.on)}</span>` : ''}
-        ${item.kun ? `<span class="kanji-kun">Âm Kun: ${escapeHtml(item.kun)}</span>` : ''}
+function renderKanji(content) {
+  const cards = (Array.isArray(content.kanji) ? content.kanji : []).map((item) => `
+    <article class="kanji-item">
+      <div class="kanji-char">${wordButton(item?.char || '', [item?.on, item?.kun].filter(Boolean).join(' / '))}</div>
+      <div class="kanji-readings" lang="ja">
+        ${item?.on ? `<span class="kanji-on">音: ${escapeHtml(item.on)}</span>` : ''}
+        ${item?.kun ? `<span class="kanji-kun">訓: ${escapeHtml(item.kun)}</span>` : ''}
+        ${Number.isFinite(Number(item?.strokes)) ? `<span>${escapeHtml(item.strokes)} nét</span>` : ''}
       </div>
-      ${item.meaningVi ? `<div class="kanji-meaning">${escapeHtml(item.meaningVi)}</div>` : ''}
-      ${examples.map(renderExampleBox).join('')}
-    </div>`;
-}
-
-function renderKanjiContent(content, isPractice) {
-  const heading = sectionHeading('Hán tự', 'Đề luyện tập Hán tự', isPractice);
-  const items = Array.isArray(content.items) ? content.items : [];
+      <ul class="kanji-word-list">
+        ${(Array.isArray(item?.words) ? item.words : []).map((word) => `<li>${wordButton(word?.jp || '', word?.reading || '')}<span class="book-meaning" lang="en">${escapeHtml(word?.en || '')}</span></li>`).join('')}
+      </ul>
+    </article>`).join('');
+  const review = Array.isArray(content.reviewKanji) ? content.reviewKanji : [];
   return `
     <section class="content-section kanji-section">
-      <h2 class="section-heading">${escapeHtml(heading)}</h2>
-      ${content.introVi ? `<p class="section-intro">${escapeHtml(content.introVi)}</p>` : ''}
-      ${items.map(renderKanjiItem).join('')}
+      <h2 class="section-heading">Hán tự</h2>
+      <div class="kanji-grid">${cards || '<p class="text-muted">Không có mục Hán tự trong bài này.</p>'}</div>
+      ${review.length ? `<section class="review-kanji"><h3 class="subheading" lang="ja">よめるかな？</h3><div class="review-kanji-list">${review.map((item) => wordButton(item?.char || '', [item?.on, item?.kun].filter(Boolean).join(' / '))).join('')}</div></section>` : ''}
+      ${renderQuestions(content.practice, '練習 · Luyện tập')}
     </section>`;
 }
 
-function renderReadingContent(content, isPractice) {
-  const heading = sectionHeading('Đọc hiểu', 'Đề luyện tập đọc hiểu', isPractice);
+function renderVocabulary(content) {
+  const sections = (Array.isArray(content.sections) ? content.sections : []).map((section) => `
+    <section class="vocab-book-section">
+      ${section?.heading ? `<h3 class="subheading" lang="ja">${renderFurigana(section.heading)}</h3>` : ''}
+      <div class="vocab-list">
+        ${(Array.isArray(section?.words) ? section.words : []).map((word) => `
+          <article class="vocab-item">
+            <div class="vocab-word">${wordButton(word?.jp || '', word?.reading || '')}</div>
+            <div class="vocab-meaning" lang="en">${escapeHtml(word?.en || '')}</div>
+            ${word?.note ? `<div class="lesson-notes" lang="en">${escapeHtml(word.note)}</div>` : ''}
+          </article>`).join('')}
+      </div>
+    </section>`).join('');
+  return `<section class="content-section vocab-section"><h2 class="section-heading">Từ vựng</h2>${sections}${renderQuestions(content.practice, '練習 · Luyện tập')}</section>`;
+}
+
+function renderGrammar(content) {
+  const patterns = (Array.isArray(content.patterns) ? content.patterns : []).map((pattern) => `
+    <article class="grammar-point">
+      <h3 class="grammar-title" lang="ja">${renderGrammarNotation(pattern?.form || '')}</h3>
+      ${pattern?.meaningEn ? `<p class="grammar-meaning" lang="en">${escapeHtml(pattern.meaningEn)}</p>` : ''}
+      ${pattern?.connection ? `<p class="grammar-formation"><strong>Kết nối:</strong> <span lang="ja">${renderGrammarNotation(pattern.connection)}</span></p>` : ''}
+      ${(Array.isArray(pattern?.examples) ? pattern.examples : []).map((example) => `
+        <div class="example-box">
+          ${renderJapaneseLine(example?.jp || '')}
+          ${example?.en ? `<div class="vi-sentence" lang="en">${escapeHtml(example.en)}</div>` : ''}
+        </div>`).join('')}
+    </article>`).join('');
+  return `<section class="content-section grammar-section"><h2 class="section-heading">Ngữ pháp</h2>${patterns}${renderQuestions(content.practice, '練習 · Luyện tập')}</section>`;
+}
+
+function renderReading(content) {
+  const passages = (Array.isArray(content.passages) ? content.passages : []).map((passage) => `
+    <article class="passage-block">
+      ${passage?.heading ? `<h3 class="passage-title" lang="ja">${renderFurigana(passage.heading)}</h3>` : ''}
+      ${String(passage?.text || '').split(/\n+/).filter(Boolean).map((line) => renderJapaneseLine(line)).join('')}
+    </article>`).join('');
   return `
     <section class="content-section reading-section">
-      <h2 class="section-heading">${escapeHtml(heading)}</h2>
-      ${content.title ? `<h3 class="passage-title">${renderFurigana(content.title)}</h3>` : ''}
-      <div class="passage-block">${renderJpLines(content.passage)}</div>
-      ${renderVocabList(content.vocabulary)}
-      ${renderQuestions(content.questions)}
+      <h2 class="section-heading">Đọc hiểu</h2>
+      ${content.intro ? `<p class="section-intro" lang="ja">${renderFurigana(content.intro)}</p>` : ''}
+      ${passages}
+      ${renderQuestions(content.questions, 'Câu hỏi đọc hiểu')}
     </section>`;
 }
 
-function renderListeningContent(content, isPractice) {
-  const heading = sectionHeading('Nghe hiểu', 'Đề luyện tập nghe hiểu', isPractice);
+function renderListening(content) {
+  const script = String(content.script || '').split(/\n+/).filter(Boolean).map((line) => renderJapaneseLine(line, 'transcript-line')).join('');
+  const audioTracks = Array.isArray(content.audioTracks) ? content.audioTracks : [];
+  const introTracks = Array.isArray(content.introTracks) ? content.introTracks : [];
+  const coverage = content.audioCoverage && typeof content.audioCoverage === 'object'
+    ? content.audioCoverage
+    : null;
+  const trackMarkup = audioTracks.length
+    ? `<div class="lesson-audio-list">${audioTracks.map((track) => `
+        <figure class="lesson-audio-track">
+          <figcaption>${escapeHtml(track?.label || 'Audio')}</figcaption>
+          <audio controls preload="metadata" src="${escapeHtml(track?.src || '')}">Trình duyệt không hỗ trợ phát âm thanh.</audio>
+        </figure>`).join('')}</div>`
+    : content.audio
+      ? `<audio class="lesson-audio" controls preload="metadata" src="${escapeHtml(content.audio)}">Trình duyệt không hỗ trợ phát âm thanh.</audio>`
+      : '<p class="text-muted">Bản ghi bài tập của bài này chưa có trong bộ nguồn cục bộ.</p>';
+  const coverageMarkup = coverage
+    ? `<p class="audio-coverage audio-coverage--${escapeHtml(coverage.status || 'missing')}" role="status">Audio bài tập: ${escapeHtml(coverage.present ?? 0)}/${escapeHtml(coverage.required ?? 0)} track cục bộ${Number(coverage.missing) > 0 ? ` · thiếu ${escapeHtml(coverage.missing)}` : ' · đủ bộ'}.</p>`
+    : '';
+  const introMarkup = introTracks.length
+    ? `<details class="lesson-audio-intros"><summary>Audio giới thiệu chương (${introTracks.length})</summary>${introTracks.map((track) => `
+        <figure class="lesson-audio-track">
+          <figcaption>${escapeHtml(track?.label || 'Intro')}</figcaption>
+          <audio controls preload="metadata" src="${escapeHtml(track?.src || '')}">Trình duyệt không hỗ trợ phát âm thanh.</audio>
+        </figure>`).join('')}</details>`
+    : '';
   return `
     <section class="content-section listening-section">
-      <h2 class="section-heading">${escapeHtml(heading)}</h2>
-      ${content.scenario ? `<p class="section-intro">${escapeHtml(content.scenario)}</p>` : ''}
-      <div class="transcript-block">${renderJpLines(content.transcript)}</div>
-      ${renderVocabList(content.vocabulary)}
-      ${renderQuestions(content.questions)}
+      <h2 class="section-heading">Nghe hiểu</h2>
+      ${coverageMarkup}${trackMarkup}${introMarkup}
+      ${script ? `<div class="transcript-block">${script}</div>` : ''}
+      ${renderQuestions(content.questions, 'Câu hỏi nghe hiểu')}
     </section>`;
 }
 
-function renderContentByCategory(categoryId, content, isPractice) {
-  const safeContent = content && typeof content === 'object' ? content : {};
-  switch (categoryId) {
-    case 'grammar':
-      return renderGrammarContent(safeContent, isPractice);
-    case 'vocabulary':
-      return renderVocabContent(safeContent, isPractice);
-    case 'kanji':
-      return renderKanjiContent(safeContent, isPractice);
-    case 'reading':
-      return renderReadingContent(safeContent, isPractice);
-    case 'listening':
-      return renderListeningContent(safeContent, isPractice);
-    default:
-      return '<p class="text-muted">Không có nội dung hiển thị cho danh mục này.</p>';
-  }
+function renderBookContent(categoryId, content) {
+  if (!content || typeof content !== 'object') return `
+    <div class="lesson-empty-state" role="status">
+      <p>Nội dung sách của bài này chưa được trích xuất và xác minh.</p>
+      <p class="text-muted">Ứng dụng không tự sáng tác nội dung thay cho sách.</p>
+    </div>`;
+  if (categoryId === 'kanji') return renderKanji(content);
+  if (categoryId === 'vocabulary') return renderVocabulary(content);
+  if (categoryId === 'grammar') return renderGrammar(content);
+  if (categoryId === 'reading') return renderReading(content);
+  if (categoryId === 'listening') return renderListening(content);
+  return '<p class="text-muted">Không có renderer cho danh mục này.</p>';
 }
 
-/* ---------------------------------------------------------------------- */
-/* AI generation: prompt + schema per category                            */
-/* ---------------------------------------------------------------------- */
-
-function buildPrompt(categoryId, lesson) {
-  const title = lesson.title || '';
-  const practiceNote =
-    lesson.type === 'practice'
-      ? ' Đây là bài luyện tập tổng hợp (thực chiến), hãy tạo nội dung ôn tập tổng hợp phù hợp trình độ N2.'
-      : '';
-  const furiganaNote = 'Trong mọi câu/từ tiếng Nhật, chú furigana theo dạng {漢字|かんじ} cho mỗi từ có kanji.';
-
-  switch (categoryId) {
-    case 'grammar':
-      return `Bạn là giáo viên tiếng Nhật. Tạo bài học N2 cho mẫu ngữ pháp "${title}".${practiceNote} Trả về JSON: {pattern, meaningVi, formation, explanationVi, examples:[{jp,vi}](4-5 câu), notes}. ${furiganaNote}`;
-    case 'vocabulary':
-      return `Bạn là giáo viên tiếng Nhật. Tạo bài học từ vựng N2 theo chủ đề "${title}".${practiceNote} Trả về JSON: {introVi, items:[{word, reading, meaningVi, example:{jp,vi}}] (6-8 từ)}. ${furiganaNote}`;
-    case 'kanji':
-      return `Bạn là giáo viên tiếng Nhật. Tạo bài học Hán tự N2 theo chủ đề "${title}".${practiceNote} Trả về JSON: {introVi, items:[{kanji, on, kun, meaningVi, examples:[{jp,vi}] (2 câu mỗi kanji)}] (5-8 kanji)}. ${furiganaNote}`;
-    case 'reading':
-      return `Bạn là giáo viên tiếng Nhật. Tạo bài đọc hiểu N2 theo chủ đề "${title}".${practiceNote} Trả về JSON: {title, passage (đoạn văn 150-250 chữ, mỗi câu 1 dòng), vocabulary:[{word,vi}] (5-8 từ khó), questions:[{q, options:[4 lựa chọn], answer, explainVi}] (3-4 câu hỏi)}. ${furiganaNote}`;
-    case 'listening':
-      return `Bạn là giáo viên tiếng Nhật. Tạo bài luyện nghe N2 theo chủ đề "${title}".${practiceNote} Trả về JSON: {scenario, transcript (đoạn hội thoại/độc thoại có gắn tên người nói, mỗi câu 1 dòng), vocabulary:[{word,vi}] (5-8 từ khó), questions:[{q, options:[4 lựa chọn], answer, explainVi}] (3-4 câu hỏi)}. ${furiganaNote}`;
-    default:
-      return `Tạo nội dung học tiếng Nhật N2 cho bài "${title}". Trả về JSON hợp lệ. ${furiganaNote}`;
-  }
-}
-
-function schemaFor(categoryId) {
-  const STR = { type: 'STRING' };
-  const jpViPair = {
-    type: 'OBJECT',
-    properties: { jp: STR, vi: STR },
-    required: ['jp', 'vi'],
-  };
-  const wordViPair = {
-    type: 'OBJECT',
-    properties: { word: STR, vi: STR },
-    required: ['word', 'vi'],
-  };
-  const questionSchema = {
-    type: 'OBJECT',
-    properties: {
-      q: STR,
-      options: { type: 'ARRAY', items: STR },
-      answer: STR,
-      explainVi: STR,
-    },
-    required: ['q', 'options', 'answer', 'explainVi'],
-  };
-
-  switch (categoryId) {
-    case 'grammar':
-      return {
-        type: 'OBJECT',
-        properties: {
-          pattern: STR,
-          meaningVi: STR,
-          formation: STR,
-          explanationVi: STR,
-          examples: { type: 'ARRAY', items: jpViPair },
-          notes: STR,
-        },
-        required: ['pattern', 'meaningVi', 'formation', 'explanationVi', 'examples'],
-      };
-    case 'vocabulary':
-      return {
-        type: 'OBJECT',
-        properties: {
-          introVi: STR,
-          items: {
-            type: 'ARRAY',
-            items: {
-              type: 'OBJECT',
-              properties: { word: STR, reading: STR, meaningVi: STR, example: jpViPair },
-              required: ['word', 'reading', 'meaningVi', 'example'],
-            },
-          },
-        },
-        required: ['introVi', 'items'],
-      };
-    case 'kanji':
-      return {
-        type: 'OBJECT',
-        properties: {
-          introVi: STR,
-          items: {
-            type: 'ARRAY',
-            items: {
-              type: 'OBJECT',
-              properties: {
-                kanji: STR,
-                on: STR,
-                kun: STR,
-                meaningVi: STR,
-                examples: { type: 'ARRAY', items: jpViPair },
-              },
-              required: ['kanji', 'meaningVi', 'examples'],
-            },
-          },
-        },
-        required: ['introVi', 'items'],
-      };
-    case 'reading':
-      return {
-        type: 'OBJECT',
-        properties: {
-          title: STR,
-          passage: STR,
-          vocabulary: { type: 'ARRAY', items: wordViPair },
-          questions: { type: 'ARRAY', items: questionSchema },
-        },
-        required: ['title', 'passage', 'questions'],
-      };
-    case 'listening':
-      return {
-        type: 'OBJECT',
-        properties: {
-          scenario: STR,
-          transcript: STR,
-          vocabulary: { type: 'ARRAY', items: wordViPair },
-          questions: { type: 'ARRAY', items: questionSchema },
-        },
-        required: ['scenario', 'transcript', 'questions'],
-      };
-    default:
-      return undefined;
-  }
-}
-
-/* ---------------------------------------------------------------------- */
-/* page chrome                                                            */
-/* ---------------------------------------------------------------------- */
-
-function renderToolbar(furiganaOn, done) {
+function renderToolbar(done) {
   return `
     <div class="lesson-toolbar">
-      <button type="button" class="back-btn" data-action="back" aria-label="Quay lại trang tổng quan">← Quay lại</button>
+      <button type="button" class="back-btn" data-action="back">← Quay lại</button>
       <div class="lesson-toolbar-actions">
-        <button type="button" class="furigana-toggle-btn" data-action="toggle-furigana" aria-pressed="${furiganaOn ? 'true' : 'false'}" title="Bật/tắt furigana">${furiganaOn ? 'あ' : 'ア'}</button>
-        <button type="button" class="complete-toggle-btn${done ? ' is-done' : ''}" data-action="toggle-complete">${done ? 'Bỏ đánh dấu' : 'Đánh dấu đã học'}</button>
+        <button type="button" class="furigana-toggle-btn" data-action="toggle-furigana" aria-pressed="${getFurigana()}">${getFurigana() ? 'あ' : 'ア'}<span class="sr-only">Furigana</span></button>
+        <button type="button" class="complete-toggle-btn${done ? ' is-done' : ''}" data-action="toggle-complete" aria-pressed="${done}">${done ? 'Bỏ đánh dấu' : 'Đánh dấu đã học'}</button>
       </div>
     </div>`;
 }
 
-function renderHeader(lesson, category, week) {
-  const typeLabel = lesson.type === 'practice' ? 'Thực chiến' : 'Bài học';
-  const metaParts = [
-    category?.name ? escapeHtml(category.name) : '',
-    week?.week != null ? `Tuần ${escapeHtml(String(week.week))}` : '',
-    lesson.day != null ? `Ngày ${escapeHtml(String(lesson.day))}` : '',
-    escapeHtml(typeLabel),
-  ].filter(Boolean);
+function pageHtml(found, content) {
+  const { lesson, category, week } = found;
+  const unit = category?.id === 'listening' ? 'Chương' : 'Tuần';
+  const title = content?.title || lesson.title || '';
+  const titleEn = content?.titleEn || lesson.titleEn || '';
   return `
-    <header class="lesson-header">
-      <div class="lesson-header-meta">${metaParts.join(' • ')}</div>
-      <h1 class="lesson-header-title">${renderFurigana(lesson.title || '')}</h1>
-    </header>`;
+    <article class="lesson-page">
+      ${renderToolbar(isDone(lesson.id))}
+      <header class="lesson-header">
+        <div class="lesson-header-meta">${escapeHtml(category?.name || '')} • ${unit} ${escapeHtml(week?.week ?? '')} • Ngày ${escapeHtml(lesson.day ?? '')}</div>
+        <h1 class="lesson-header-title" data-route-heading lang="ja">${renderFurigana(title)}</h1>
+        ${titleEn ? `<p class="lesson-title-en" lang="en">${escapeHtml(titleEn)}</p>` : ''}
+      </header>
+      <div class="lesson-body">${renderBookContent(category?.id, content)}</div>
+      <div class="lesson-footer-actions">
+        <button type="button" class="tutor-lesson-btn" data-action="ask-tutor">🎓 Hỏi gia sư AI</button>
+        <button type="button" class="back-btn back-btn-bottom" data-action="back">← Quay lại tổng quan</button>
+      </div>
+    </article>`;
 }
 
-function renderEmptyState(generating, genError) {
-  if (generating) {
-    return `
-      <div class="lesson-empty-state">
-        <p class="lesson-loading">⏳ Đang tạo bài học bằng AI, vui lòng chờ...</p>
-      </div>`;
-  }
-  return `
-    <div class="lesson-empty-state">
-      <p>Bài học này chưa có nội dung.</p>
-      ${genError ? `<p class="lesson-error">⚠️ ${escapeHtml(genError)}</p>` : ''}
-      <button type="button" class="ai-generate-btn" data-action="generate">✨ Tạo bài học bằng AI</button>
-    </div>`;
-}
-
-function notFoundHtml() {
-  return `
-    <div class="lesson-page lesson-not-found">
-      <p>Không tìm thấy bài học.</p>
-      <button type="button" class="back-btn" data-action="back">← Quay lại</button>
-    </div>`;
-}
-
-function pageHtml(lesson, category, week, content, generating, genError) {
-  const furiganaOn = getFurigana();
-  const done = isDone(lesson.id);
-  const isPractice = lesson.type === 'practice';
-  const bodyHtml = content
-    ? renderContentByCategory(category?.id, content, isPractice)
-    : renderEmptyState(generating, genError);
-  return `
-    <div class="lesson-page">
-      ${renderToolbar(furiganaOn, done)}
-      ${renderHeader(lesson, category, week)}
-      <div class="lesson-body">${bodyHtml}</div>
-    </div>`;
-}
-
-/* ---------------------------------------------------------------------- */
-/* quiz interaction (pure DOM, no re-render needed)                       */
-/* ---------------------------------------------------------------------- */
-
-function handleQuizOptionClick(btn) {
-  const container = btn.closest('.quiz-question');
+function handleQuiz(button) {
+  const container = button.closest('.quiz-question');
   if (!container || container.classList.contains('is-answered')) return;
   container.classList.add('is-answered');
-
-  const correctIdx = Number(container.dataset.correctIdx);
-  const clickedIdx = Number(btn.dataset.idx);
-
-  container.querySelectorAll('.quiz-option').forEach((optBtn) => {
-    optBtn.disabled = true;
-    const idx = Number(optBtn.dataset.idx);
-    if (!Number.isNaN(correctIdx) && idx === correctIdx) {
-      optBtn.classList.add('is-correct');
-    } else if (idx === clickedIdx) {
-      optBtn.classList.add('is-incorrect');
-    }
+  const correct = Number(container.dataset.correctIdx);
+  const selected = Number(button.dataset.idx);
+  const options = [...container.querySelectorAll('.quiz-option')];
+  options.forEach((option) => {
+    option.disabled = true;
+    const index = Number(option.dataset.idx);
+    if (correct >= 0 && index === correct) option.classList.add('is-correct');
+    else if (index === selected) option.classList.add(correct < 0 ? 'is-unverified' : 'is-incorrect');
   });
-
-  const explain = container.querySelector('.quiz-explain');
-  if (explain) explain.hidden = false;
+  const status = container.querySelector('.quiz-explain');
+  if (status) {
+    status.hidden = false;
+    status.textContent = correct >= 0 && options[correct]
+      ? `Đáp án: ${options[correct].textContent.trim()}`
+      : 'Đáp án của câu này chưa được xác minh.';
+  }
 }
 
-/* ---------------------------------------------------------------------- */
-/* main export                                                            */
-/* ---------------------------------------------------------------------- */
+function lessonContext(found, content) {
+  const compact = JSON.stringify(content || {}).slice(0, 10000);
+  return {
+    lessonId: found.lesson.id,
+    category: found.category?.name || found.category?.id || '',
+    title: plainJapanese(content?.title || found.lesson.title || ''),
+    titleEn: content?.titleEn || found.lesson.titleEn || '',
+    content: compact,
+  };
+}
 
 export function renderLesson(root, id) {
-  // remove any click listener bound by a previous renderLesson() call so we
-  // never stack duplicate handlers on the shared #app root across navigations
-  if (root.__lessonClickHandler) {
-    root.removeEventListener('click', root.__lessonClickHandler);
-    root.__lessonClickHandler = null;
-  }
+  let popup = null;
+  let popupTrigger = null;
+  let tutorModal = null;
+  let tutorController = null;
+  let tutorTrigger = null;
 
-  let generating = false;
-  let genError = '';
+  const closePopup = () => {
+    if (!popup) return;
+    popup.remove();
+    popup = null;
+    popupTrigger?.focus?.();
+    popupTrigger = null;
+  };
 
-  function paint() {
+  const closeTutorModal = () => {
+    if (!tutorModal) return;
+    tutorController?.cleanup?.();
+    tutorController = null;
+    tutorModal.remove();
+    tutorModal = null;
+    tutorTrigger?.focus?.();
+    tutorTrigger = null;
+  };
+
+  const onKeyDown = (event) => {
+    if (event.key === 'Escape') { closePopup(); closeTutorModal(); }
+    else if (event.key === 'Tab' && popup) {
+      event.preventDefault();
+      popup.querySelector('[data-popup-close]')?.focus();
+    }
+  };
+
+  const paint = () => {
     const found = findLesson(id);
     if (!found) {
-      root.innerHTML = notFoundHtml();
+      root.innerHTML = '<div class="lesson-page lesson-not-found"><p role="alert">Không tìm thấy bài học.</p><button type="button" class="back-btn" data-action="back">← Quay lại</button></div>';
       return;
     }
-    const { lesson, category, week } = found;
-    const content = lesson.content || getContent(id) || null;
-    root.innerHTML = pageHtml(lesson, category, week, content, generating, genError);
-  }
+    root.innerHTML = pageHtml(found, getBookContent(id));
+  };
 
-  async function handleGenerate() {
-    const found = findLesson(id);
-    if (!found || !found.category) return;
-    const { lesson, category } = found;
+  // Shared popup lifecycle for both tap-a-word (definition) and tap-a-sentence
+  // (translation) explanations — same backdrop/cache/error handling, different prompt.
+  const showExplanationPopup = async ({ trigger, titleHtml, cacheKey, buildPrompt }) => {
+    closePopup();
+    popupTrigger = trigger;
+    const cached = getKanjiGloss(cacheKey);
+    const dialog = document.createElement('div');
+    dialog.className = 'word-popup-backdrop';
+    dialog.innerHTML = `
+      <section class="word-popup" role="dialog" aria-modal="true" aria-labelledby="word-popup-title">
+        <button type="button" class="word-popup-close" data-popup-close aria-label="Đóng giải thích">×</button>
+        <h2 id="word-popup-title" lang="ja">${titleHtml}</h2>
+        <div class="word-popup-body" role="status" aria-live="polite">${cached ? renderFurigana(cached) : 'Đang hỏi Gemini…'}</div>
+      </section>`;
+    document.body.appendChild(dialog);
+    popup = dialog;
+    dialog.querySelector('[data-popup-close]')?.addEventListener('click', closePopup);
+    dialog.addEventListener('click', (event) => { if (event.target === dialog) closePopup(); });
+    dialog.querySelector('[data-popup-close]')?.focus();
+    if (cached) return;
 
-    generating = true;
-    genError = '';
-    paint();
-
+    const epoch = getCurrentRoute().epoch;
     try {
-      const prompt = buildPrompt(category.id, lesson);
-      const schema = schemaFor(category.id);
-      const obj = await askJSON({ system: AI_SYSTEM_PROMPT, user: prompt, schema });
-      if (!obj || typeof obj !== 'object') {
-        throw new Error('Phản hồi AI không hợp lệ, vui lòng thử lại.');
-      }
-      setContent(id, obj);
-    } catch (err) {
-      genError = err && err.message ? err.message : 'Không thể tạo bài học. Vui lòng thử lại.';
-    } finally {
-      generating = false;
-      paint();
+      const result = await askText(buildPrompt());
+      if (!isRouteActive('lesson', id, epoch)) return;
+      setKanjiGloss(cacheKey, result);
+      const body = popup?.querySelector('.word-popup-body');
+      if (body) body.innerHTML = renderFurigana(result);
+    } catch (error) {
+      const body = popup?.querySelector('.word-popup-body');
+      if (body) body.textContent = `Không thể tải giải thích: ${error?.message || 'lỗi không xác định'}`;
     }
-  }
+  };
 
-  function handleClick(e) {
-    const btn = e.target.closest('[data-action]');
-    if (!btn) return;
-    const action = btn.dataset.action;
-    if (action === 'back') {
-      navigate('#/');
-    } else if (action === 'toggle-furigana') {
-      setFurigana(!getFurigana());
-      paint();
-    } else if (action === 'toggle-complete') {
-      toggleDone(id);
-      paint();
-    } else if (action === 'generate') {
-      handleGenerate();
-    } else if (action === 'speak') {
-      speak(btn.dataset.jp || '');
-    } else if (action === 'quiz-option') {
-      handleQuizOptionClick(btn);
-    }
-  }
+  const openExplanation = (button) => {
+    const word = button.dataset.word || '';
+    const reading = button.dataset.reading || '';
+    if (!word) return;
+    const found = findLesson(id);
+    const lessonTitle = plainJapanese(getBookContent(id)?.title || found?.lesson?.title || '');
+    const context = button.closest('.kanji-item, .vocab-item, .example-box, .quiz-question, .transcript-line')
+      ?.textContent?.replace(/\s+/g, ' ').trim().slice(0, 320) || '';
+    return showExplanationPopup({
+      trigger: button,
+      titleHtml: `${escapeHtml(word)}${reading ? `（${escapeHtml(reading)}）` : ''}`,
+      cacheKey: `${id}|word|${word}|${reading}|${context}`,
+      buildPrompt: () => ({
+        system: 'Bạn là giáo viên tiếng Nhật N2. Trả lời ngắn gọn bằng tiếng Việt, không dùng HTML.',
+        user: `Người học vừa bấm vào 「${word}」${reading ? `(${reading})` : ''} trong bài "${lessonTitle}"${context ? `, ngữ cảnh: "${context}"` : ''}. Hãy giải thích ngắn gọn bằng tiếng Việt nghĩa phù hợp ngữ cảnh và cách dùng. Kèm 1 ví dụ ngắn có furigana {漢字|かな}.`,
+      }),
+    });
+  };
 
-  root.__lessonClickHandler = handleClick;
-  root.addEventListener('click', handleClick);
+  const openSentenceExplanation = (button) => {
+    const jp = plainJapanese(button.dataset.jp || '');
+    if (!jp) return;
+    const found = findLesson(id);
+    const lessonTitle = plainJapanese(getBookContent(id)?.title || found?.lesson?.title || '');
+    return showExplanationPopup({
+      trigger: button,
+      titleHtml: 'Dịch sang tiếng Việt',
+      cacheKey: `${id}|sentence|${jp}`,
+      buildPrompt: () => ({
+        system: 'Bạn là giáo viên tiếng Nhật N2. Trả lời ngắn gọn bằng tiếng Việt, không dùng HTML.',
+        user: `Người học vừa bấm vào câu tiếng Nhật sau trong bài "${lessonTitle}": "${jp}". Hãy dịch câu này sang tiếng Việt, và nếu có điểm ngữ pháp hoặc từ vựng đáng chú ý thì giải thích thật ngắn gọn.`,
+      }),
+    });
+  };
 
+  const onClick = (event) => {
+    const button = event.target.closest('[data-action]');
+    if (!button) return;
+    const action = button.dataset.action;
+    if (action === 'back') navigate('#/');
+    else if (action === 'toggle-furigana') { setFurigana(!getFurigana()); paint(); }
+    else if (action === 'toggle-complete') { toggleDone(id); paint(); }
+    else if (action === 'speak') speak(button.dataset.jp || '');
+    else if (action === 'quiz-option') handleQuiz(button);
+    else if (action === 'explain-word') openExplanation(button);
+    else if (action === 'explain-sentence') openSentenceExplanation(button);
+    else if (action === 'ask-tutor') openTutorModal(button);
+  };
+
+  const openTutorModal = (trigger) => {
+    const found = findLesson(id);
+    if (!found) return;
+    closeTutorModal();
+    clearTutorHistory();
+    setTutorContext(lessonContext(found, getBookContent(id)));
+    tutorTrigger = trigger;
+    const dialog = document.createElement('div');
+    dialog.className = 'modal-overlay active tutor-modal-overlay';
+    dialog.innerHTML = `
+      <div class="modal-card tutor-modal-card" role="dialog" aria-modal="true" aria-labelledby="tutor-modal-title">
+        <div class="modal-header">
+          <h3 id="tutor-modal-title">🎓 Hỏi gia sư AI</h3>
+          <button type="button" class="modal-close" data-tutor-modal-close aria-label="Đóng gia sư AI">×</button>
+        </div>
+        <div class="modal-body tutor-modal-body"></div>
+      </div>`;
+    document.body.appendChild(dialog);
+    tutorModal = dialog;
+    dialog.querySelector('[data-tutor-modal-close]')?.addEventListener('click', closeTutorModal);
+    dialog.addEventListener('click', (event) => { if (event.target === dialog) closeTutorModal(); });
+    tutorController = renderTutor(dialog.querySelector('.tutor-modal-body'));
+  };
+
+  root.addEventListener('click', onClick);
+  document.addEventListener('keydown', onKeyDown);
   paint();
+
+  return {
+    cleanup() {
+      root.removeEventListener('click', onClick);
+      document.removeEventListener('keydown', onKeyDown);
+      closePopup();
+      closeTutorModal();
+      if (typeof speechSynthesis !== 'undefined') speechSynthesis.cancel();
+    },
+  };
 }

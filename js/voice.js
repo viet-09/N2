@@ -4,6 +4,13 @@
 import { VOICE_TOPICS } from './config.js';
 import { renderFurigana } from './furigana.js';
 import { askJSON, askAudio } from './gemini.js';
+import {
+  getSettings,
+  getVoiceTranscript,
+  setVoiceTranscript,
+  clearVoiceTranscript,
+} from './store.js';
+import { createLiveSession, getLiveSupport } from './live.js';
 
 // ---------------------------------------------------------------------------
 // Gemini response schemas
@@ -69,6 +76,19 @@ let rootEl = null;
 let mediaRecorder = null;
 let mediaChunks = [];
 let activeStream = null;
+let liveSession = null;
+let mountToken = 0;
+let liveInputCaption = '';
+let liveOutputCaption = '';
+let liveCommittedSequence = 0;
+let liveCommittedTurnCount = 0;
+let liveObservedTurnCount = 0;
+let liveHighestRequestedTurn = 0;
+let liveTranscriptSessionId = '';
+let liveSeenTranscriptSequences = new Set();
+let liveCurrentLearnerTurn = 0;
+let liveTextPending = false;
+let liveTextTargetTurn = 0;
 
 const state = {
   view: 'topics', // 'topics' | 'conversation' | 'review'
@@ -82,6 +102,10 @@ const state = {
   review: null,
   reviewPending: false,
   reviewError: '',
+  transport: 'live', // 'live' | 'fallback'
+  liveActive: false,
+  liveStatus: '',
+  fallbackNotice: '',
 };
 
 // ---------------------------------------------------------------------------
@@ -114,6 +138,28 @@ function buildTranscriptText(transcript) {
   return transcript
     .map((t) => `${t.speaker === 'learner' ? 'Học viên' : 'Đối tác'}: ${stripFurigana(t.jpPlain || t.jp || '')}`)
     .join('\n');
+}
+
+function persistTranscript() {
+  const topicId = state.topic?.id || '';
+  setVoiceTranscript(state.transcript.map((turn) => ({ ...turn, topicId })));
+}
+
+function appendTranscript(turn) {
+  if (!turn || !turn.jp) return;
+  state.transcript.push(turn);
+  persistTranscript();
+}
+
+async function stopLive(reason = 'client-stop') {
+  const session = liveSession;
+  liveSession = null;
+  state.liveActive = false;
+  liveInputCaption = '';
+  liveOutputCaption = '';
+  if (session) {
+    try { await session.stop({ reason }); } catch (error) { /* teardown is best effort */ }
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -177,6 +223,7 @@ function blobToBase64(blob) {
 function releaseMic() {
   if (mediaRecorder && mediaRecorder.state !== 'inactive') {
     try {
+      mediaRecorder.removeEventListener('stop', onRecordingStop);
       mediaRecorder.stop();
     } catch (e) {
       // ignore
@@ -197,8 +244,13 @@ async function startRecording() {
     renderView();
     return;
   }
+  const token = mountToken;
   try {
     const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    if (token !== mountToken || state.view !== 'conversation') {
+      stream.getTracks().forEach((track) => track.stop());
+      return;
+    }
     activeStream = stream;
     const mimeType = pickMimeType();
     mediaRecorder = mimeType ? new MediaRecorder(stream, { mimeType }) : new MediaRecorder(stream);
@@ -237,6 +289,7 @@ function toggleRecording() {
 }
 
 async function onRecordingStop() {
+  const token = mountToken;
   const actualMimeType = (mediaRecorder && mediaRecorder.mimeType) || 'audio/webm';
   const blob = new Blob(mediaChunks, { type: actualMimeType });
   mediaChunks = [];
@@ -266,12 +319,16 @@ async function onRecordingStop() {
       promptText,
       schema: TURN_SCHEMA,
     });
+    if (token !== mountToken) return;
     applyAudioTurnResult(data);
   } catch (err) {
+    if (token !== mountToken) return;
     state.error = describeError(err);
   } finally {
-    state.pending = false;
-    renderView();
+    if (token === mountToken) {
+      state.pending = false;
+      renderView();
+    }
   }
 }
 
@@ -281,12 +338,305 @@ function applyAudioTurnResult(data) {
   const replyPlain = (data && data.reply) || stripFurigana(replyFurigana);
   const vi = (data && data.vi) || '';
   if (heard) {
-    state.transcript.push({ speaker: 'learner', jp: heard, jpPlain: heard, vi: '' });
+    appendTranscript({ speaker: 'learner', jp: heard, jpPlain: heard, vi: '' });
     state.history.push({ role: 'user', text: heard });
   }
-  state.transcript.push({ speaker: 'partner', jp: replyFurigana, jpPlain: replyPlain, vi });
+  appendTranscript({ speaker: 'partner', jp: replyFurigana, jpPlain: replyPlain, vi });
   state.history.push({ role: 'model', text: replyPlain });
   speak(replyPlain);
+}
+
+// ---------------------------------------------------------------------------
+// Gemini Live transport with automatic record→send fallback
+// ---------------------------------------------------------------------------
+
+function mergeCaption(current, incoming) {
+  const next = String(incoming || '');
+  if (!next) return current;
+  if (!current || next.startsWith(current)) return next;
+  if (current.endsWith(next)) return current;
+  const overlapLimit = Math.min(current.length, next.length);
+  for (let size = overlapLimit; size > 0; size -= 1) {
+    if (current.endsWith(next.slice(0, size))) return current + next.slice(size);
+  }
+  return current + next;
+}
+
+function updateLiveCaptionDom() {
+  const input = rootEl?.querySelector('#live-input-caption');
+  const output = rootEl?.querySelector('#live-output-caption');
+  if (input) input.textContent = liveInputCaption;
+  if (output) output.textContent = liveOutputCaption;
+}
+
+function rebuildHistoryFromTranscript() {
+  state.history = state.transcript
+    .filter((turn) => turn && (turn.speaker === 'learner' || turn.speaker === 'partner'))
+    .map((turn) => ({
+      role: turn.speaker === 'partner' ? 'model' : 'user',
+      text: stripFurigana(turn.jpPlain || turn.jp || '').trim(),
+    }))
+    .filter((turn) => turn.text);
+}
+
+function liveEntryKey(turn, direction) {
+  return `${liveTranscriptSessionId}:${turn}:${direction}`;
+}
+
+function allocateLiveLearnerTurn() {
+  if (liveCurrentLearnerTurn <= liveObservedTurnCount) {
+    liveCurrentLearnerTurn = Math.max(
+      liveObservedTurnCount + 1,
+      liveHighestRequestedTurn + 1
+    );
+    liveHighestRequestedTurn = liveCurrentLearnerTurn;
+  }
+  return liveCurrentLearnerTurn;
+}
+
+function upsertLiveTranscript({ direction, text, sequence }) {
+  const value = String(text || '');
+  const numericSequence = Number(sequence) || 0;
+  if (!value || (numericSequence && liveSeenTranscriptSequences.has(numericSequence))) return;
+  if (numericSequence) liveSeenTranscriptSequences.add(numericSequence);
+
+  const pendingTurn = liveObservedTurnCount + 1;
+  // Local speech/text starts establish the client turn before either transcript
+  // direction arrives, so reordered and post-turnComplete fragments remain on
+  // the correct logical turn.
+  const turnNumber = direction === 'input'
+    ? (liveCurrentLearnerTurn || allocateLiveLearnerTurn())
+    : liveCurrentLearnerTurn > liveObservedTurnCount
+      ? liveCurrentLearnerTurn
+      : (liveObservedTurnCount || Math.max(1, liveHighestRequestedTurn));
+  const key = liveEntryKey(turnNumber, direction);
+  const speaker = direction === 'input' ? 'learner' : 'partner';
+  let index = state.transcript.findIndex((turn) => turn.liveKey === key);
+  if (index < 0) {
+    const entry = {
+      speaker,
+      jp: value,
+      jpPlain: value,
+      vi: '',
+      liveKey: key,
+      liveTurn: turnNumber,
+      liveDirection: direction,
+      livePending: turnNumber > liveCommittedTurnCount,
+    };
+    if (direction === 'input') {
+      const outputIndex = state.transcript.findIndex(
+        (turn) => turn.liveKey === liveEntryKey(turnNumber, 'output')
+      );
+      if (outputIndex >= 0) state.transcript.splice(outputIndex, 0, entry);
+      else state.transcript.push(entry);
+    } else {
+      state.transcript.push(entry);
+    }
+    index = state.transcript.findIndex((turn) => turn.liveKey === key);
+  } else {
+    const merged = mergeCaption(state.transcript[index].jpPlain || '', value);
+    state.transcript[index] = { ...state.transcript[index], jp: merged, jpPlain: merged };
+  }
+
+  rebuildHistoryFromTranscript();
+  persistTranscript();
+}
+
+function appendLiveTextInput(text) {
+  const turnNumber = allocateLiveLearnerTurn();
+  const key = liveEntryKey(turnNumber, 'input');
+  const existing = state.transcript.findIndex((turn) => turn.liveKey === key);
+  if (existing >= 0) {
+    const merged = mergeCaption(state.transcript[existing].jpPlain || '', text);
+    state.transcript[existing] = { ...state.transcript[existing], jp: merged, jpPlain: merged };
+  } else {
+    state.transcript.push({
+      speaker: 'learner',
+      jp: text,
+      jpPlain: text,
+      vi: '',
+      liveKey: key,
+      liveTurn: turnNumber,
+      liveDirection: 'input',
+      livePending: true,
+    });
+  }
+  rebuildHistoryFromTranscript();
+  persistTranscript();
+}
+
+function settleLiveTranscript(snapshot) {
+  if (!snapshot) return;
+  const turnCompleteCount = Number(snapshot.turnCompleteCount) || 0;
+  const sequence = Number(snapshot.sequence) || 0;
+  if (turnCompleteCount > liveCommittedTurnCount) {
+    for (const turn of state.transcript) {
+      if (turn.liveKey?.startsWith(`${liveTranscriptSessionId}:`)
+          && Number(turn.liveTurn) <= turnCompleteCount) {
+        turn.livePending = false;
+      }
+    }
+    liveCommittedTurnCount = turnCompleteCount;
+    liveInputCaption = '';
+    liveOutputCaption = '';
+    rebuildHistoryFromTranscript();
+    persistTranscript();
+    renderView();
+  } else if (sequence > liveCommittedSequence
+      && liveCurrentLearnerTurn <= liveCommittedTurnCount) {
+    // A final late fragment for an already completed turn should not leave the
+    // live-caption panel populated forever.
+    liveInputCaption = '';
+    liveOutputCaption = '';
+    updateLiveCaptionDom();
+  }
+  liveCommittedSequence = Math.max(liveCommittedSequence, sequence);
+}
+
+let fallbackStarting = false;
+
+async function startFallbackOpening(error = null) {
+  if (fallbackStarting || state.view !== 'conversation') return;
+  fallbackStarting = true;
+  const token = mountToken;
+  await stopLive('fallback');
+  state.transport = 'fallback';
+  state.fallbackNotice = error
+    ? `Gemini Live không khả dụng (${error.message || error}). Đã chuyển sang chế độ ghi rồi gửi.`
+    : 'Đang dùng chế độ ghi rồi gửi.';
+  state.liveStatus = '';
+  state.pending = true;
+  renderView();
+  try {
+    const data = await askJSON({
+      system: buildSystemPrompt(state.topic),
+      history: state.history,
+      user: state.history.length
+        ? '前の流れから会話を続け、質問を一つしてください。'
+        : '会話を始めましょう。',
+      schema: OPENING_SCHEMA,
+    });
+    if (token !== mountToken || state.view !== 'conversation') return;
+    const replyFurigana = (data && (data.replyFurigana || data.reply)) || '';
+    const replyPlain = (data && data.reply) || stripFurigana(replyFurigana);
+    const vi = (data && data.vi) || '';
+    state.history.push({ role: 'model', text: replyPlain });
+    appendTranscript({ speaker: 'partner', jp: replyFurigana, jpPlain: replyPlain, vi });
+    speak(replyPlain);
+  } catch (fallbackError) {
+    if (token === mountToken) state.error = describeError(fallbackError);
+  } finally {
+    fallbackStarting = false;
+    if (token === mountToken) {
+      state.pending = false;
+      renderView();
+    }
+  }
+}
+
+async function startLiveConversation() {
+  const token = mountToken;
+  const support = getLiveSupport();
+  if (!support.supported) {
+    await startFallbackOpening(new Error('trình duyệt không hỗ trợ WebSocket/Web Audio/microphone'));
+    return;
+  }
+
+  const settings = getSettings();
+  state.transport = 'live';
+  state.liveStatus = 'Đang kết nối Gemini Live…';
+  state.fallbackNotice = '';
+  state.pending = true;
+  liveCommittedSequence = 0;
+  liveCommittedTurnCount = 0;
+  liveObservedTurnCount = 0;
+  liveHighestRequestedTurn = 1;
+  liveTranscriptSessionId = `live-${Date.now()}`;
+  liveSeenTranscriptSequences = new Set();
+  liveCurrentLearnerTurn = 0;
+  liveTextPending = false;
+  liveTextTargetTurn = 0;
+  renderView();
+
+  const session = createLiveSession({
+    apiKey: settings.apiKey,
+    model: settings.liveModel,
+    systemInstruction: `${buildSystemPrompt(state.topic)} Trò chuyện bằng âm thanh tự nhiên. Không đọc bản dịch tiếng Việt thành tiếng.`,
+    contextWindowCompression: { slidingWindow: {} },
+    callbacks: {
+      onInputTranscript: ({ text }) => {
+        if (token !== mountToken) return;
+        liveInputCaption = mergeCaption(liveInputCaption, text);
+        updateLiveCaptionDom();
+      },
+      onOutputTranscript: ({ text }) => {
+        if (token !== mountToken) return;
+        liveOutputCaption = mergeCaption(liveOutputCaption, text);
+        updateLiveCaptionDom();
+      },
+      onTranscript: (fragment) => {
+        if (token === mountToken) upsertLiveTranscript(fragment);
+      },
+      onTranscriptSettled: ({ snapshot }) => {
+        if (token === mountToken) settleLiveTranscript(snapshot);
+      },
+      onActivityStart: () => {
+        if (token !== mountToken) return;
+        allocateLiveLearnerTurn();
+      },
+      onTurnComplete: ({ transcriptSnapshot } = {}) => {
+        if (token !== mountToken) return;
+        const observed = Number(transcriptSnapshot?.turnCompleteCount) || 0;
+        liveObservedTurnCount = Math.max(liveObservedTurnCount, observed);
+        liveHighestRequestedTurn = Math.max(liveHighestRequestedTurn, liveObservedTurnCount);
+        if (liveTextPending && liveObservedTurnCount >= liveTextTargetTurn) {
+          liveTextPending = false;
+          liveTextTargetTurn = 0;
+          state.pending = false;
+          renderView();
+        }
+      },
+      onInterruption: () => {
+        if (token === mountToken) {
+          state.liveStatus = 'Đã ngắt lời — đang nghe bạn…';
+          const status = rootEl?.querySelector('#live-call-status');
+          if (status) status.textContent = state.liveStatus;
+        }
+      },
+      onMicrophoneState: ({ active }) => {
+        if (token !== mountToken) return;
+        state.liveStatus = active ? 'Đang nghe liên tục · có thể ngắt lời AI' : 'Microphone đã dừng';
+        const status = rootEl?.querySelector('#live-call-status');
+        if (status) status.textContent = state.liveStatus;
+      },
+      onFallback: ({ error }) => {
+        if (token === mountToken) void startFallbackOpening(error);
+      },
+    },
+  });
+  liveSession = session;
+
+  try {
+    await session.start();
+    if (token !== mountToken || state.view !== 'conversation') {
+      await session.stop({ reason: 'stale-route' });
+      return;
+    }
+    state.liveActive = true;
+    state.pending = false;
+    state.liveStatus = 'Đang nghe liên tục · có thể ngắt lời AI';
+    renderView();
+    if (state.history.length) {
+      session.sendClientContent(state.history.map((turn) => ({
+        role: turn.role === 'model' ? 'model' : 'user',
+        parts: [{ text: turn.text }],
+      })), { turnComplete: true });
+    } else {
+      session.sendText('会話を始めましょう。');
+    }
+  } catch (error) {
+    if (token === mountToken) await startFallbackOpening(error);
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -296,45 +646,79 @@ function applyAudioTurnResult(data) {
 async function startConversation(topicId) {
   const topic = VOICE_TOPICS.find((t) => t.id === topicId) || VOICE_TOPICS[0];
   releaseMic();
+  await stopLive('new-topic');
   state.view = 'conversation';
   state.topic = topic;
   state.history = [];
   state.transcript = [];
+  clearVoiceTranscript();
   state.error = '';
   state.micDenied = false;
   state.recording = false;
   state.review = null;
   state.reviewError = '';
-  state.pending = true;
-  renderView();
-  try {
-    const data = await askJSON({
-      system: buildSystemPrompt(topic),
-      history: [],
-      user: '会話を始めましょう。',
-      schema: OPENING_SCHEMA,
-    });
-    const replyFurigana = (data && (data.replyFurigana || data.reply)) || '';
-    const replyPlain = (data && data.reply) || stripFurigana(replyFurigana);
-    const vi = (data && data.vi) || '';
-    state.history.push({ role: 'model', text: replyPlain });
-    state.transcript.push({ speaker: 'partner', jp: replyFurigana, jpPlain: replyPlain, vi });
-    speak(replyPlain);
-  } catch (err) {
-    state.error = describeError(err);
-  } finally {
-    state.pending = false;
-    renderView();
-  }
+  state.transport = 'live';
+  state.liveActive = false;
+  state.liveStatus = '';
+  state.fallbackNotice = '';
+  liveInputCaption = '';
+  liveOutputCaption = '';
+  liveCommittedSequence = 0;
+  liveCommittedTurnCount = 0;
+  liveObservedTurnCount = 0;
+  liveHighestRequestedTurn = 0;
+  liveTranscriptSessionId = '';
+  liveSeenTranscriptSequences = new Set();
+  liveCurrentLearnerTurn = 0;
+  liveTextPending = false;
+  liveTextTargetTurn = 0;
+  await startLiveConversation();
+}
+
+async function resumeConversation() {
+  if (!state.transcript.length) return;
+  const topicId = state.transcript.find((turn) => turn.topicId)?.topicId;
+  state.topic = VOICE_TOPICS.find((topic) => topic.id === topicId) || state.topic || VOICE_TOPICS[0];
+  state.history = state.transcript.map((turn) => ({
+    role: turn.speaker === 'partner' ? 'model' : 'user',
+    text: stripFurigana(turn.jpPlain || turn.jp || ''),
+  })).filter((turn) => turn.text);
+  state.view = 'conversation';
+  state.error = '';
+  state.review = null;
+  state.reviewError = '';
+  state.transport = 'live';
+  state.fallbackNotice = '';
+  await startLiveConversation();
 }
 
 async function sendTextTurn(rawText) {
   const trimmed = (rawText || '').trim();
   if (!trimmed || state.pending) return;
-  state.transcript.push({ speaker: 'learner', jp: trimmed, jpPlain: trimmed, vi: '' });
+
+  if (state.transport === 'live' && liveSession?.ready) {
+    appendLiveTextInput(trimmed);
+    state.error = '';
+    state.pending = true;
+    liveTextPending = true;
+    liveTextTargetTurn = liveCurrentLearnerTurn;
+    try {
+      liveSession.sendText(trimmed);
+      renderView();
+    } catch (error) {
+      state.pending = false;
+      liveTextPending = false;
+      liveTextTargetTurn = 0;
+      await startFallbackOpening(error);
+    }
+    return;
+  }
+
+  appendTranscript({ speaker: 'learner', jp: trimmed, jpPlain: trimmed, vi: '' });
   state.error = '';
   state.pending = true;
   renderView();
+  const token = mountToken;
   try {
     const data = await askJSON({
       system: buildSystemPrompt(state.topic),
@@ -342,18 +726,22 @@ async function sendTextTurn(rawText) {
       user: trimmed,
       schema: OPENING_SCHEMA,
     });
+    if (token !== mountToken) return;
     const replyFurigana = (data && (data.replyFurigana || data.reply)) || '';
     const replyPlain = (data && data.reply) || stripFurigana(replyFurigana);
     const vi = (data && data.vi) || '';
     state.history.push({ role: 'user', text: trimmed });
     state.history.push({ role: 'model', text: replyPlain });
-    state.transcript.push({ speaker: 'partner', jp: replyFurigana, jpPlain: replyPlain, vi });
+    appendTranscript({ speaker: 'partner', jp: replyFurigana, jpPlain: replyPlain, vi });
     speak(replyPlain);
   } catch (err) {
+    if (token !== mountToken) return;
     state.error = describeError(err);
   } finally {
-    state.pending = false;
-    renderView();
+    if (token === mountToken) {
+      state.pending = false;
+      renderView();
+    }
   }
 }
 
@@ -365,10 +753,13 @@ async function endAndReview() {
     return;
   }
   releaseMic();
+  await stopLive('review');
+  persistTranscript();
   state.view = 'review';
   state.reviewPending = true;
   state.reviewError = '';
   renderView();
+  const token = mountToken;
   try {
     const transcriptText = buildTranscriptText(state.transcript);
     const data = await askJSON({
@@ -377,21 +768,23 @@ async function endAndReview() {
       user: transcriptText,
       schema: REVIEW_SCHEMA,
     });
+    if (token !== mountToken) return;
     state.review = data;
   } catch (err) {
+    if (token !== mountToken) return;
     state.reviewError = describeError(err);
   } finally {
-    state.reviewPending = false;
-    renderView();
+    if (token === mountToken) {
+      state.reviewPending = false;
+      renderView();
+    }
   }
 }
 
 function goToTopics() {
   releaseMic();
+  void stopLive('change-topic');
   state.view = 'topics';
-  state.topic = null;
-  state.history = [];
-  state.transcript = [];
   state.error = '';
   state.micDenied = false;
   state.recording = false;
@@ -418,16 +811,19 @@ function renderView() {
 }
 
 function renderTopicPicker() {
+  const savedTopic = state.transcript.find((turn) => turn.topicId)?.topicId;
+  const savedTopicLabel = VOICE_TOPICS.find((topic) => topic.id === savedTopic)?.label || state.topic?.label || '';
   rootEl.innerHTML = `
     <section class="voice-page">
-      <h2 class="section-title">🎙️ Luyện hội thoại theo chủ đề</h2>
+      <h1 class="section-title" data-route-heading>🎙️ Luyện hội thoại theo chủ đề</h1>
       <p class="vi-sentence">Chọn một chủ đề bên dưới để bắt đầu trò chuyện cùng gia sư AI bằng tiếng Nhật.</p>
+      ${state.transcript.length ? `<button type="button" class="voice-resume-btn" id="voice-resume-btn">Tiếp tục hội thoại đã lưu${savedTopicLabel ? ` · ${esc(savedTopicLabel)}` : ''}</button>` : ''}
       <div class="topic-grid">
         ${VOICE_TOPICS.map(
           (t) => `
           <button type="button" class="tab-btn voice-topic-btn" data-topic-id="${esc(t.id)}">
             <span class="voice-topic-label">${esc(t.label)}</span>
-            <span class="voice-topic-jp">${esc(t.jp)}</span>
+            <span class="voice-topic-jp" lang="ja">${esc(t.jp)}</span>
           </button>`
         ).join('')}
       </div>
@@ -436,6 +832,7 @@ function renderTopicPicker() {
   rootEl.querySelectorAll('.voice-topic-btn').forEach((btn) => {
     btn.addEventListener('click', () => startConversation(btn.getAttribute('data-topic-id')));
   });
+  rootEl.querySelector('#voice-resume-btn')?.addEventListener('click', resumeConversation);
 }
 
 function renderConversationView() {
@@ -447,11 +844,11 @@ function renderConversationView() {
       const jpHtml = renderFurigana(t.jp || '');
       const viHtml = t.vi ? `<div class="vi-sentence">${esc(t.vi)}</div>` : '';
       const ttsBtn = !isLearner
-        ? `<button type="button" class="tts-btn" data-speak="${esc(t.jpPlain || t.jp || '')}">🔊</button>`
+        ? `<button type="button" class="tts-btn" data-speak="${esc(t.jpPlain || t.jp || '')}" aria-label="Nghe lại câu tiếng Nhật">🔊</button>`
         : '';
       return `
         <div class="chat-msg ${isLearner ? 'user' : 'model'}">
-          <div class="jp-sentence">${jpHtml}${ttsBtn}</div>
+          <div class="jp-sentence" lang="ja">${jpHtml}${ttsBtn}</div>
           ${viHtml}
         </div>`;
     })
@@ -462,27 +859,39 @@ function renderConversationView() {
 
   rootEl.innerHTML = `
     <section class="voice-page">
+      <h1 class="sr-only" data-route-heading>Luyện nói trực tiếp</h1>
       <div class="lesson-toolbar">
         <button type="button" class="tts-btn back-btn" id="voice-back-btn">← Đổi chủ đề</button>
-        <span class="lesson-meta">${esc(topic.label)} · ${esc(topic.jp)}</span>
+        <span class="lesson-meta">${esc(topic.label)} · <span lang="ja">${esc(topic.jp)}</span></span>
       </div>
-      <div class="chat-wrap" id="voice-chat-wrap">
+      ${state.transport === 'live' ? `
+        <section class="live-call-panel" aria-label="Trạng thái cuộc gọi trực tiếp">
+          <span class="live-call-indicator" aria-hidden="true"></span>
+          <p id="live-call-status" role="status" aria-live="polite">${esc(state.liveStatus || 'Đang chuẩn bị Gemini Live…')}</p>
+          <div class="live-captions" aria-label="Phụ đề trực tiếp">
+            <p><strong>Bạn:</strong> <span id="live-input-caption" lang="ja">${esc(liveInputCaption)}</span></p>
+            <p><strong>AI:</strong> <span id="live-output-caption" lang="ja">${esc(liveOutputCaption)}</span></p>
+          </div>
+        </section>` : ''}
+      ${state.fallbackNotice ? `<p class="live-fallback-notice" role="status">${esc(state.fallbackNotice)}</p>` : ''}
+      <div class="chat-wrap" id="voice-chat-wrap" role="log" aria-live="polite" aria-relevant="additions text">
         ${bubbles || '<p class="vi-sentence">Đang bắt đầu hội thoại...</p>'}
-        ${state.pending ? '<div class="chat-msg model chat-loading"><em>Đang xử lý...</em></div>' : ''}
+        ${state.pending ? '<div class="chat-msg model chat-loading" role="status"><em>Đang xử lý...</em></div>' : ''}
       </div>
-      ${state.error ? `<p class="lesson-error">${esc(state.error)}</p>` : ''}
+      ${state.error ? `<p class="lesson-error" role="alert">${esc(state.error)}</p>` : ''}
       ${
-        state.micDenied
+        state.micDenied && state.transport === 'fallback'
           ? '<p class="voice-note">🎙️ Không dùng được microphone. Bạn vẫn có thể nhập văn bản để trò chuyện bên dưới.</p>'
           : ''
       }
       <div class="chat-input-row">
         ${
-          state.micDenied
+          state.micDenied || state.transport === 'live'
             ? ''
             : `<button type="button" class="study-btn record-btn${state.recording ? ' recording' : ''}" id="voice-record-btn" ${disabledAttr}>${micLabel}</button>`
         }
-        <input type="text" id="voice-text-input" placeholder="Hoặc nhập câu tiếng Nhật..." />
+        <label for="voice-text-input" class="sr-only">Nhập câu tiếng Nhật</label>
+        <input type="text" id="voice-text-input" lang="ja" placeholder="Hoặc nhập câu tiếng Nhật..." ${disabledAttr}/>
         <button type="button" class="study-btn" id="voice-send-btn" ${disabledAttr}>Gửi</button>
       </div>
       <button type="button" class="study-btn voice-end-btn" id="voice-end-btn">🔚 Kết thúc &amp; Đánh giá</button>
@@ -615,12 +1024,16 @@ function renderReviewView() {
 // ---------------------------------------------------------------------------
 
 export function renderVoice(root) {
+  const token = ++mountToken;
   rootEl = root;
   releaseMic();
+  void stopLive('remount');
+  const savedTranscript = getVoiceTranscript();
   state.view = 'topics';
-  state.topic = null;
+  const savedTopicId = savedTranscript.find((turn) => turn && turn.topicId)?.topicId;
+  state.topic = VOICE_TOPICS.find((topic) => topic.id === savedTopicId) || null;
   state.history = [];
-  state.transcript = [];
+  state.transcript = savedTranscript.filter((turn) => turn && (turn.speaker === 'learner' || turn.speaker === 'partner'));
   state.pending = false;
   state.error = '';
   state.micDenied = false;
@@ -628,5 +1041,21 @@ export function renderVoice(root) {
   state.review = null;
   state.reviewPending = false;
   state.reviewError = '';
+  state.transport = 'live';
+  state.liveActive = false;
+  state.liveStatus = '';
+  state.fallbackNotice = '';
+  liveInputCaption = '';
+  liveOutputCaption = '';
   renderView();
+
+  return {
+    cleanup() {
+      if (mountToken === token) mountToken += 1;
+      releaseMic();
+      void stopLive('route-exit');
+      if (typeof window !== 'undefined') window.speechSynthesis?.cancel();
+      if (rootEl === root) rootEl = null;
+    },
+  };
 }

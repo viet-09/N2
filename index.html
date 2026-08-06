@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://generativelanguage.googleapis.com wss://generativelanguage.googleapis.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
     <title>日本語総まとめ N2 – Học & Theo Dõi Tiến Độ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,27 +15,28 @@
 
 <header class="masthead container">
     <div class="masthead-bar">
-        <span class="masthead-brand">日本語総まとめ · N2 STUDY JOURNAL</span>
+        <span class="masthead-brand"><span lang="ja">日本語総まとめ</span> · N2 STUDY JOURNAL</span>
         <span class="masthead-date" id="current-date"></span>
     </div>
-    <h1 class="masthead-title"><span class="mt-jp">日本語総まとめ</span> <span class="mt-n2">N2</span></h1>
+    <h1 class="masthead-title"><span class="mt-jp" lang="ja">日本語総まとめ</span> <span class="mt-n2">N2</span></h1>
     <p class="masthead-sub">Học &amp; theo dõi tiến độ N2 — ngữ pháp · từ vựng · hán tự · đọc · nghe, cùng gia sư AI.</p>
-    <div class="masthead-tools"><button id="btn-settings" class="settings-btn" type="button" aria-label="Cài đặt">⚙ <span>Cài đặt</span></button></div>
+    <div class="masthead-tools"><div id="profile-mount"></div><button id="btn-settings" class="settings-btn" type="button" aria-label="Mở cài đặt">⚙ <span>Cài đặt</span></button></div>
 </header>
 
-<div id="app" class="container"></div>
+<main id="app" class="container" tabindex="-1"></main>
+<div id="route-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
 
-<nav class="bottom-nav">
-    <button class="nav-btn active" data-route="dashboard" type="button">
-        <span class="nav-btn-jp">総まとめ</span>
+<nav class="bottom-nav" aria-label="Điều hướng chính">
+    <button class="nav-btn active" data-route="dashboard" type="button" aria-current="page">
+        <span class="nav-btn-jp" lang="ja">総まとめ</span>
         <span class="nav-btn-vi">Tổng quan</span>
     </button>
     <button class="nav-btn" data-route="tutor" type="button">
-        <span class="nav-btn-jp">家庭教師AI</span>
+        <span class="nav-btn-jp" lang="ja">家庭教師AI</span>
         <span class="nav-btn-vi">Gia sư AI</span>
     </button>
     <button class="nav-btn" data-route="voice" type="button">
-        <span class="nav-btn-jp">会話練習</span>
+        <span class="nav-btn-jp" lang="ja">会話練習</span>
         <span class="nav-btn-vi">Luyện nói</span>
     </button>
 </nav>

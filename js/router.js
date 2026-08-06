@@ -4,17 +4,25 @@
 //   `#/lesson/<id>`    -> routes.lesson(rootEl, id)
 //   `#/tutor`          -> routes.tutor(rootEl)
 //   `#/voice`          -> routes.voice(rootEl)
-// After every render: sync `.nav-btn.active` to `data-route`, scroll #app to top.
+// Renderers may return `{ cleanup, preserveScroll }`. Cleanup runs before the next
+// route so microphone/audio and event resources cannot outlive their page.
 
 let _routes = null;
 let _rootEl = null;
+let _cleanup = null;
+let _currentRoute = { name: 'dashboard', params: [] };
+let _renderEpoch = 0;
 
 function parseHash(hash) {
   const raw = String(hash || '').replace(/^#/, '');
   const parts = raw.split('/').filter(Boolean); // '' | '/' -> []
 
   if (parts.length === 0) return { name: 'dashboard', params: [] };
-  if (parts[0] === 'lesson' && parts[1]) return { name: 'lesson', params: [parts[1]] };
+  if (parts[0] === 'lesson' && parts[1]) {
+    let id = parts[1];
+    try { id = decodeURIComponent(id); } catch (err) { /* keep encoded id */ }
+    return { name: 'lesson', params: [id] };
+  }
   if (parts[0] === 'tutor') return { name: 'tutor', params: [] };
   if (parts[0] === 'voice') return { name: 'voice', params: [] };
   return { name: 'dashboard', params: [] };
@@ -22,9 +30,13 @@ function parseHash(hash) {
 
 function updateActiveNav(routeName) {
   try {
+    const activeRoute = routeName === 'lesson' ? 'dashboard' : routeName;
     document.querySelectorAll('.nav-btn').forEach((btn) => {
       const route = btn.getAttribute('data-route');
-      btn.classList.toggle('active', route === routeName);
+      const active = route === activeRoute;
+      btn.classList.toggle('active', active);
+      if (active) btn.setAttribute('aria-current', 'page');
+      else btn.removeAttribute('aria-current');
     });
   } catch (err) {
     // No DOM / no nav present — ignore.
@@ -44,26 +56,64 @@ function scrollAppToTop() {
   }
 }
 
+function updateRouteMetadata(routeName) {
+  const labels = {
+    dashboard: 'Tổng quan',
+    lesson: 'Bài học',
+    tutor: 'Gia sư AI',
+    voice: 'Luyện nói',
+  };
+  const label = labels[routeName] || labels.dashboard;
+  document.title = `${label} – 日本語総まとめ N2`;
+  const status = document.getElementById('route-status');
+  if (status) status.textContent = `Đã mở ${label}`;
+}
+
+function runCleanup() {
+  if (typeof _cleanup !== 'function') return;
+  try { _cleanup(); } catch (err) { console.warn('[router] route cleanup failed:', err); }
+  _cleanup = null;
+}
+
 function render() {
   if (!_routes || !_rootEl) return;
   const { name, params } = parseHash(location.hash);
+  runCleanup();
+  _currentRoute = { name, params: [...params] };
+  _renderEpoch += 1;
+  let result = null;
+
+  _rootEl.setAttribute('aria-busy', 'true');
 
   try {
     if (name === 'lesson' && typeof _routes.lesson === 'function') {
-      _routes.lesson(_rootEl, params[0]);
+      result = _routes.lesson(_rootEl, params[0]);
     } else if (name === 'tutor' && typeof _routes.tutor === 'function') {
-      _routes.tutor(_rootEl);
+      result = _routes.tutor(_rootEl);
     } else if (name === 'voice' && typeof _routes.voice === 'function') {
-      _routes.voice(_rootEl);
+      result = _routes.voice(_rootEl);
     } else if (typeof _routes.dashboard === 'function') {
-      _routes.dashboard(_rootEl);
+      result = _routes.dashboard(_rootEl);
     }
   } catch (err) {
     console.error('[router] failed to render route:', name, err);
   }
 
+  if (typeof result === 'function') _cleanup = result;
+  else if (result && typeof result.cleanup === 'function') _cleanup = result.cleanup;
+
   updateActiveNav(name);
-  scrollAppToTop();
+  updateRouteMetadata(name);
+  _rootEl.setAttribute('aria-busy', 'false');
+
+  if (!(result && result.preserveScroll)) {
+    scrollAppToTop();
+    requestAnimationFrame(() => {
+      const target = _rootEl.querySelector('h1, h2, [data-route-heading]') || _rootEl;
+      if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+      target.focus({ preventScroll: true });
+    });
+  }
 }
 
 /**
@@ -71,10 +121,23 @@ function render() {
  * @param {HTMLElement} rootEl
  */
 export function initRouter(routes, rootEl) {
+  window.removeEventListener('hashchange', render);
+  runCleanup();
   _routes = routes || {};
   _rootEl = rootEl || document.getElementById('app');
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   window.addEventListener('hashchange', render);
   render();
+}
+
+export function getCurrentRoute() {
+  return { name: _currentRoute.name, params: [..._currentRoute.params], epoch: _renderEpoch };
+}
+
+export function isRouteActive(name, param = null, epoch = null) {
+  if (_currentRoute.name !== name) return false;
+  if (param != null && _currentRoute.params[0] !== param) return false;
+  return epoch == null || epoch === _renderEpoch;
 }
 
 /**

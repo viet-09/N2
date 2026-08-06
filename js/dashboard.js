@@ -1,193 +1,230 @@
-// js/dashboard.js — dashboard list + stats + streak (ported from original index.html)
+// js/dashboard.js — dashboard list, progress, accessible completion controls,
+// collapsible units, and return-position restoration.
 import { getLessons, countProgress, isDone, toggleDone, getStreak } from './store.js';
 import { renderFurigana } from './furigana.js';
 import { navigate } from './router.js';
+import { mountPet } from './pet.js';
 
-// Remembers the active category filter across re-renders within the session.
-let activeCategory = 'all';
+let petController = null;
+
+const dashboardState = {
+  activeCategory: 'all',
+  expandedWeeks: new Set(),
+  initialized: false,
+  windowScrollY: 0,
+  appScrollTop: 0,
+  restorePending: false,
+};
 
 function escapeHtml(value) {
   return String(value ?? '').replace(/[&<>"']/g, (ch) => ({
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;',
-    "'": '&#39;',
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
   }[ch]));
 }
 
-/**
- * Renders the dashboard (stats bar, category tabs, week cards with lessons) into rootEl.
- * @param {HTMLElement} root
- */
+function weekKey(categoryId, weekNumber) {
+  return `${categoryId}:${weekNumber}`;
+}
+
+function initializeExpandedWeeks(data) {
+  if (dashboardState.initialized) return;
+  (data.categories || []).forEach((category) => {
+    (category.weeks || []).forEach((week) => {
+      dashboardState.expandedWeeks.add(weekKey(category.id, week.week));
+    });
+  });
+  dashboardState.initialized = true;
+}
+
+export function captureDashboardState() {
+  const root = document.getElementById('app');
+  dashboardState.windowScrollY = Math.max(0, window.scrollY || 0);
+  dashboardState.appScrollTop = Math.max(0, root ? root.scrollTop : 0);
+  dashboardState.restorePending = true;
+}
+
+function restoreDashboardPosition(root) {
+  if (!dashboardState.restorePending) return false;
+  dashboardState.restorePending = false;
+  const windowY = dashboardState.windowScrollY;
+  const appY = dashboardState.appScrollTop;
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      if (root) root.scrollTop = appY;
+      window.scrollTo({ top: windowY, left: 0, behavior: 'auto' });
+    });
+  });
+  return true;
+}
+
+/** Render the dashboard and report whether the router should preserve scroll. */
 export function renderDashboard(root) {
   const data = getLessons();
-
   if (!data || !Array.isArray(data.categories)) {
-    root.innerHTML = `
-      <p class="dash-empty-state">
-        Không tải được dữ liệu bài học.
-      </p>`;
-    return;
+    root.innerHTML = '<p class="dash-empty-state" role="alert">Không tải được dữ liệu bài học.</p>';
+    return { preserveScroll: false };
   }
 
-  // Reset filter to "all" if the remembered category no longer exists in the dataset.
-  if (activeCategory !== 'all' && !data.categories.some((cat) => cat.id === activeCategory)) {
-    activeCategory = 'all';
+  initializeExpandedWeeks(data);
+  if (dashboardState.activeCategory !== 'all'
+      && !data.categories.some((cat) => cat.id === dashboardState.activeCategory)) {
+    dashboardState.activeCategory = 'all';
   }
 
   root.innerHTML = `
-    <section class="stats-bar" id="dash-stats"></section>
-    <div class="category-tabs" id="category-tabs"></div>
-    <main id="dash-main"></main>
+    <h2 class="sr-only" data-route-heading>Tổng quan học tập</h2>
+    <section class="stats-bar" id="dash-stats" aria-label="Tiến độ học"></section>
+    <div class="category-tabs" id="category-tabs" role="group" aria-label="Lọc theo kỹ năng"></div>
+    <div id="dash-main"></div>
   `;
 
   renderStats();
   renderTabs(data);
   renderCategories(data);
   bindEvents(data);
+  return {
+    preserveScroll: restoreDashboardPosition(root),
+    cleanup() {
+      petController?.destroy();
+      petController = null;
+    },
+  };
 }
 
 function renderStats() {
   const statsEl = document.getElementById('dash-stats');
   if (!statsEl) return;
 
+  petController?.destroy();
+  petController = null;
+
   const progress = countProgress() || { total: 0, done: 0 };
   const total = Number(progress.total) || 0;
   const done = Number(progress.done) || 0;
   const percent = total > 0 ? Math.round((done / total) * 100) : 0;
-  const streakInfo = getStreak() || { streak: 0 };
-  const streak = Number(streakInfo.streak) || 0;
+  const streak = Number((getStreak() || {}).streak) || 0;
 
   statsEl.innerHTML = `
     <div class="stat-item">
       <div class="stat-value">${done} / ${total}</div>
       <div class="stat-label">Bài học xong</div>
-      <div class="progress-bar-container">
-        <div class="progress-bar-fill" style="width:${percent}%"></div>
-      </div>
+      <progress class="dashboard-progress" max="100" value="${percent}" aria-label="${percent}% hoàn thành">${percent}%</progress>
     </div>
     <div class="stat-item">
       <div class="stat-value">${percent}%</div>
       <div class="stat-label">Hoàn thành</div>
     </div>
-    <div class="stat-item">
-      <div class="stat-value">${streak} Ngày</div>
+    <div class="stat-item stat-streak">
+      <div class="stat-value">${streak} ngày</div>
       <div class="stat-label">Chuỗi học</div>
     </div>
+    <div id="streak-pet" class="stats-pet-row" data-streak="${streak}"></div>
   `;
+
+  petController = mountPet('#streak-pet', { streak, showControls: true });
+  window.dispatchEvent(new CustomEvent('n2:stats-rendered', { detail: { streak } }));
 }
 
 function renderTabs(data) {
   const tabsEl = document.getElementById('category-tabs');
   if (!tabsEl) return;
-
-  const cats = data.categories || [];
-  const allTab = `<button type="button" class="tab-btn${activeCategory === 'all' ? ' active' : ''}" data-cat="all">Tất cả</button>`;
-  const catTabs = cats
-    .map((cat) => {
-      const isActive = activeCategory === cat.id;
-      return `<button type="button" class="tab-btn${isActive ? ' active' : ''}" data-cat="${escapeHtml(cat.id)}">${escapeHtml(cat.name)}</button>`;
-    })
-    .join('');
-
-  tabsEl.innerHTML = allTab + catTabs;
+  const makeTab = (id, label) => {
+    const active = dashboardState.activeCategory === id;
+    return `<button type="button" aria-pressed="${active}" class="tab-btn${active ? ' active' : ''}" data-cat="${escapeHtml(id)}">${escapeHtml(label)}</button>`;
+  };
+  tabsEl.innerHTML = makeTab('all', 'Tất cả')
+    + (data.categories || []).map((cat) => makeTab(cat.id, cat.name)).join('');
 }
 
 function renderCategories(data) {
   const mainEl = document.getElementById('dash-main');
   if (!mainEl) return;
-
-  const cats = (data.categories || []).filter(
-    (cat) => activeCategory === 'all' || cat.id === activeCategory
+  const categories = (data.categories || []).filter(
+    (cat) => dashboardState.activeCategory === 'all' || cat.id === dashboardState.activeCategory
   );
 
-  if (cats.length === 0) {
-    mainEl.innerHTML = `
-      <p class="dash-empty-state">
-        Không có bài học nào.
-      </p>`;
+  if (categories.length === 0) {
+    mainEl.innerHTML = '<p class="dash-empty-state">Không có bài học nào.</p>';
     return;
   }
-
-  mainEl.innerHTML = cats.map((cat) => renderCategoryBlock(cat)).join('');
+  mainEl.innerHTML = categories.map(renderCategoryBlock).join('');
 }
 
-function renderCategoryBlock(cat) {
-  const weeks = Array.isArray(cat.weeks) ? cat.weeks : [];
-  let catTotal = 0;
-  let catDone = 0;
-  weeks.forEach((week) => {
-    (week.lessons || []).forEach((lesson) => {
-      catTotal += 1;
-      if (isDone(lesson.id)) catDone += 1;
-    });
-  });
+function renderCategoryBlock(category) {
+  const weeks = Array.isArray(category.weeks) ? category.weeks : [];
+  let total = 0;
+  let done = 0;
+  weeks.forEach((week) => (week.lessons || []).forEach((lesson) => {
+    total += 1;
+    if (isDone(lesson.id)) done += 1;
+  }));
 
-  const nameEn = cat.nameEn ? ` (${escapeHtml(cat.nameEn)})` : '';
-
+  const nameEn = category.nameEn ? ` (${escapeHtml(category.nameEn)})` : '';
   return `
-    <div class="category-block" data-cat-id="${escapeHtml(cat.id)}">
+    <section class="category-block" data-cat-id="${escapeHtml(category.id)}" aria-labelledby="category-${escapeHtml(category.id)}">
       <div class="category-header">
-        <h3>${escapeHtml(cat.name)}${nameEn}</h3>
-        <span class="category-progress-text">${catDone}/${catTotal} Xong</span>
+        <h3 id="category-${escapeHtml(category.id)}">${escapeHtml(category.name)}${nameEn}</h3>
+        <span class="category-progress-text" aria-live="polite">${done}/${total} xong</span>
       </div>
       <div class="weeks-container">
-        ${weeks.map((week) => renderWeekCard(week)).join('')}
+        ${weeks.map((week) => renderWeekCard(category, week)).join('')}
       </div>
-    </div>
-  `;
+    </section>`;
 }
 
-function renderWeekCard(week) {
+function renderWeekCard(category, week) {
   const lessons = Array.isArray(week.lessons) ? week.lessons : [];
-  const doneCount = lessons.filter((lesson) => isDone(lesson.id)).length;
+  const done = lessons.filter((lesson) => isDone(lesson.id)).length;
+  const key = weekKey(category.id, week.week);
+  const expanded = dashboardState.expandedWeeks.has(key);
+  const panelId = `week-${category.id}-${week.week}`;
+  const unitLabel = category.unitType === 'chapter' || category.id === 'listening' ? 'Chương' : 'Tuần';
+  const title = week.title ? ` · ${renderFurigana(week.title)}` : '';
 
   return `
-    <div class="week-card">
-      <div class="week-title">
-        <span>Tuần ${escapeHtml(week.week)}</span>
-        <span class="week-count">${doneCount}/${lessons.length}</span>
+    <section class="week-card" data-week-key="${escapeHtml(key)}">
+      <h4 class="week-title">
+        <button class="week-toggle" type="button" aria-expanded="${expanded}" aria-controls="${panelId}">
+          <span>${unitLabel} ${escapeHtml(week.week)}${title}</span>
+          <span class="week-count">${done}/${lessons.length}</span>
+        </button>
+      </h4>
+      <div class="lessons-grid" id="${panelId}"${expanded ? '' : ' hidden'}>
+        ${lessons.map(renderLessonItem).join('')}
       </div>
-      <div class="lessons-grid">
-        ${lessons.map((lesson) => renderLessonItem(lesson)).join('')}
-      </div>
-    </div>
-  `;
+    </section>`;
 }
 
 function renderLessonItem(lesson) {
   const done = isDone(lesson.id);
   const typeLabel = lesson.type === 'practice' ? 'Thực chiến' : 'Bài học';
-
+  const title = String(lesson.title || '');
   return `
-    <div class="lesson-item${done ? ' completed' : ''}" data-id="${escapeHtml(lesson.id)}">
-      <div class="custom-checkbox" aria-hidden="true"></div>
+    <article class="lesson-item${done ? ' completed' : ''}" data-id="${escapeHtml(lesson.id)}">
+      <button type="button" class="custom-checkbox complete-btn" aria-pressed="${done}" aria-label="${done ? 'Đánh dấu chưa hoàn thành' : 'Đánh dấu hoàn thành'}: ${escapeHtml(title.replace(/\{([^|{}]+)\|[^{}]+\}/g, '$1'))}"></button>
       <div class="lesson-content">
         <div class="lesson-meta">Ngày ${escapeHtml(lesson.day)} • ${typeLabel}</div>
-        <div class="lesson-title">${renderFurigana(lesson.title || '')}</div>
+        <div class="lesson-title" lang="ja">${renderFurigana(title)}</div>
+        ${lesson.titleEn ? `<div class="lesson-title-en" lang="en">${escapeHtml(lesson.titleEn)}</div>` : ''}
       </div>
-      <button type="button" class="study-btn">Học</button>
-    </div>
-  `;
+      <button type="button" class="study-btn" aria-label="Học ${escapeHtml(title.replace(/\{([^|{}]+)\|[^{}]+\}/g, '$1'))}">Học</button>
+    </article>`;
 }
 
-/** Recomputes the week/category progress counters that wrap a toggled lesson item. */
 function updateAncestorCounts(item) {
   const weekCard = item.closest('.week-card');
   if (weekCard) {
-    const weekItems = weekCard.querySelectorAll('.lesson-item');
-    const weekDone = weekCard.querySelectorAll('.lesson-item.completed').length;
-    const weekCountEl = weekCard.querySelector('.week-count');
-    if (weekCountEl) weekCountEl.textContent = `${weekDone}/${weekItems.length}`;
+    const count = weekCard.querySelectorAll('.lesson-item.completed').length;
+    const total = weekCard.querySelectorAll('.lesson-item').length;
+    const output = weekCard.querySelector('.week-count');
+    if (output) output.textContent = `${count}/${total}`;
   }
-
-  const catBlock = item.closest('.category-block');
-  if (catBlock) {
-    const catItems = catBlock.querySelectorAll('.lesson-item');
-    const catDone = catBlock.querySelectorAll('.lesson-item.completed').length;
-    const catCountEl = catBlock.querySelector('.category-progress-text');
-    if (catCountEl) catCountEl.textContent = `${catDone}/${catItems.length} Xong`;
+  const category = item.closest('.category-block');
+  if (category) {
+    const count = category.querySelectorAll('.lesson-item.completed').length;
+    const total = category.querySelectorAll('.lesson-item').length;
+    const output = category.querySelector('.category-progress-text');
+    if (output) output.textContent = `${count}/${total} xong`;
   }
 }
 
@@ -195,39 +232,59 @@ function bindEvents(data) {
   const tabsEl = document.getElementById('category-tabs');
   const mainEl = document.getElementById('dash-main');
 
-  if (tabsEl) {
-    tabsEl.addEventListener('click', (event) => {
-      const btn = event.target.closest('.tab-btn');
-      if (!btn) return;
-
-      const cat = btn.getAttribute('data-cat');
-      if (!cat || cat === activeCategory) return;
-
-      activeCategory = cat;
-      tabsEl.querySelectorAll('.tab-btn').forEach((b) => b.classList.toggle('active', b === btn));
-      renderCategories(data);
+  tabsEl?.addEventListener('click', (event) => {
+    const button = event.target.closest('.tab-btn');
+    if (!button) return;
+    const category = button.dataset.cat;
+    if (!category || category === dashboardState.activeCategory) return;
+    dashboardState.activeCategory = category;
+    tabsEl.querySelectorAll('.tab-btn').forEach((tab) => {
+      const active = tab === button;
+      tab.classList.toggle('active', active);
+      tab.setAttribute('aria-pressed', String(active));
     });
-  }
+    renderCategories(data);
+  });
 
-  if (mainEl) {
-    mainEl.addEventListener('click', (event) => {
-      const item = event.target.closest('.lesson-item');
-      if (!item) return;
+  mainEl?.addEventListener('click', (event) => {
+    const weekButton = event.target.closest('.week-toggle');
+    if (weekButton) {
+      const card = weekButton.closest('.week-card');
+      const panel = card?.querySelector('.lessons-grid');
+      const key = card?.dataset.weekKey;
+      if (!panel || !key) return;
+      const expanded = weekButton.getAttribute('aria-expanded') !== 'true';
+      weekButton.setAttribute('aria-expanded', String(expanded));
+      panel.hidden = !expanded;
+      if (expanded) dashboardState.expandedWeeks.add(key);
+      else dashboardState.expandedWeeks.delete(key);
+      return;
+    }
 
-      const id = item.getAttribute('data-id');
-      if (!id) return;
+    const item = event.target.closest('.lesson-item');
+    if (!item) return;
+    const id = item.dataset.id;
+    if (!id) return;
 
-      const studyBtn = event.target.closest('.study-btn');
-      if (studyBtn) {
-        event.stopPropagation();
-        navigate(`#/lesson/${encodeURIComponent(id)}`);
-        return;
-      }
+    if (event.target.closest('.study-btn')) {
+      captureDashboardState();
+      navigate(`#/lesson/${encodeURIComponent(id)}`);
+      return;
+    }
 
-      const nowDone = toggleDone(id);
-      item.classList.toggle('completed', nowDone);
-      updateAncestorCounts(item);
-      renderStats();
-    });
-  }
+    const completionButton = event.target.closest('.complete-btn');
+    if (!completionButton) return;
+    const done = toggleDone(id);
+    item.classList.toggle('completed', done);
+    completionButton.setAttribute('aria-pressed', String(done));
+    const lessonTitle = item.querySelector('.lesson-title')?.textContent?.trim() || id;
+    completionButton.setAttribute('aria-label', `${done ? 'Đánh dấu chưa hoàn thành' : 'Đánh dấu hoàn thành'}: ${lessonTitle}`);
+    updateAncestorCounts(item);
+    renderStats();
+    if (done) {
+      window.dispatchEvent(new CustomEvent('n2:lesson-complete', {
+        detail: { id, done, streak: Number((getStreak() || {}).streak) || 0 },
+      }));
+    }
+  });
 }
