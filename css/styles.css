@@ -649,28 +649,50 @@ a {
 
 /* ==========================================================================
    Furigana / ruby
-   Some browsers collapse ruby base+rt onto baseline when ruby-position support
-   is missing — force a top-anchored rt via floating positioning.
+   The HTML5 <ruby> element is unreliable across browsers (Edge renders the
+   rt inline after the base text). Ship our own anchored overlay using
+   inline-block + absolute positioning so the lecture always reads as
+   small hira ABOVE the kanji.
    ========================================================================== */
 ruby {
+    display: inline-block !important;
+    position: relative !important;
+    line-height: 1.2;
+    text-indent: 0;
+    vertical-align: bottom;
+    padding-top: 0.95em !important;
+    margin-top: -0.95em !important;
+    text-align: center;
     ruby-position: over;
-    ruby-align: center;
+}
+
+ruby > rb {
+    display: inline-block !important;
+    line-height: 1.1;
 }
 
 ruby rt {
-    display: block;
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
     font-family: var(--font-sans);
-    font-size: .55em;
+    font-size: 0.55em;
     color: var(--text-muted);
     user-select: none;
     line-height: 1.1;
     text-align: center;
-    margin-bottom: 2px;
-    text-indent: 0;
+    pointer-events: none;
 }
 
 body.furigana-off rt {
-    display: none;
+    display: none !important;
+}
+
+body.furigana-off ruby {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
 }
 
 /* ==========================================================================
