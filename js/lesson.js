@@ -104,23 +104,117 @@ function renderImagesSection(lessonId) {
 
 function renderQuestions(questions, lessonId, title = 'Luyện tập') {
   if (!Array.isArray(questions) || !questions.length) return '';
+  const groups = groupQuestionsBySection(questions);
   return `
     <section class="quiz-block" aria-labelledby="quiz-heading">
       <h3 class="subheading" id="quiz-heading">${escapeHtml(title)}</h3>
-      ${questions.map((question, questionIndex) => {
-        const options = Array.isArray(question?.options) ? question.options : [];
-        const correct = answerIndex(question);
-        return `
-          <div class="quiz-question" data-correct-idx="${correct}">
-            ${renderQuestionHeader(lessonId, questionIndex)}
-            <div class="quiz-q-text" lang="ja">${questionIndex + 1}. ${renderFurigana(question?.prompt || question?.q || '')}</div>
-            <div class="quiz-options">
-              ${options.map((option, optionIndex) => `<button type="button" class="quiz-option" data-action="quiz-option" data-idx="${optionIndex}" lang="ja">${renderFurigana(option)}</button>`).join('')}
-            </div>
-            <div class="quiz-explain" role="status" hidden></div>
-          </div>`;
-      }).join('')}
+      ${groups.map((group) => `
+        <div class="quiz-section">
+          ${group.label ? `<h4 class="quiz-section-title" lang="ja">${escapeHtml(group.label)}</h4>` : ''}
+          ${group.items.map((item) => renderQuestionItem(item, lessonId)).join('')}
+        </div>`).join('')}
     </section>`;
+}
+
+// Grammar book splits practice into 練習I (binary a/b: choose correct form) and
+// 練習II (4-blank: ＿＿ ＿＿ ＿＿ ＿＿ — pick correct order). Each 練習II item
+// is stored as 4 sibling entries with the prompt suffix "(Chỗ trống thứ N …)";
+// we collapse them into one rendered question whose answer is the list of
+// per-blank option indexes.
+function groupQuestionsBySection(questions) {
+  const groups = [];
+  let current = { label: '', items: [] };
+  const pushCurrent = () => { if (current.items.length) groups.push(current); current = { label: '', items: [] }; };
+  for (let i = 0; i < questions.length; i++) {
+    const q = questions[i];
+    const opts = Array.isArray(q?.options) ? q.options : [];
+    const probe = stripBlankSuffix(q?.prompt || q?.q || '');
+    let k = 1;
+    while (i + k < questions.length
+      && (questions[i + k].options || []).length === opts.length
+      && stripBlankSuffix(questions[i + k].prompt || questions[i + k].q || '') === probe) {
+      k++;
+    }
+    if (k >= 2 && opts.length >= 3) {
+      const collapsed = collapseMultiBlank(questions.slice(i, i + k), i);
+      i += k - 1;
+      const isRoman = /\(a\.|（a\.|a\. +[ぁ-んァ-ン一-龯]/.test(collapsed.prompt);
+      if (isRoman && current.label !== '練習Ⅰ') {
+        pushCurrent();
+        current.label = '練習Ⅰ';
+      } else if (!isRoman && current.label === '練習Ⅰ') {
+        pushCurrent();
+        current.label = '練習Ⅱ';
+      }
+      current.items.push(collapsed);
+      continue;
+    }
+    if (opts.length === 2 && current.label !== '練習Ⅰ') {
+      pushCurrent();
+      current.label = '練習Ⅰ';
+    } else if (opts.length >= 3 && current.label !== '練習Ⅱ') {
+      pushCurrent();
+      current.label = '練習Ⅱ';
+    }
+    current.items.push(q);
+  }
+  pushCurrent();
+  return groups;
+}
+
+function stripBlankSuffix(prompt) {
+  // Strip the book's "Chỗ trống thứ N" suffix (single or nested parens).
+  return String(prompt || '')
+    .replace(/\s*[\(（]\s*Chỗ\s*trống\s*thứ\s*\d+(?:\s*[\(（][^()）]*[\)）])?\s*[\)）]\s*$/u, '')
+    .trim();
+}
+
+function collapseMultiBlank(entries, originalIndex) {
+  const first = entries[0];
+  const opts = first.options || [];
+  const basePrompt = stripBlankSuffix(first.prompt || first.q || '');
+  const blankCount = entries.length;
+  const correctFor = entries.map((e) => Number.isInteger(e.answerIndex) ? e.answerIndex : -1);
+  return {
+    prompt: basePrompt,
+    options: opts,
+    blanks: blankCount,
+    answers: correctFor,
+    multiBlank: true,
+    _originalIndex: originalIndex,
+  };
+}
+
+function renderQuestionItem(question, lessonId, questionIndex) {
+  const options = Array.isArray(question?.options) ? question.options : [];
+  const headerIndex = question?._originalIndex ?? questionIndex;
+  const header = renderQuestionHeader(lessonId, headerIndex);
+  if (question?.multiBlank) {
+    const blanks = question.blanks || question.answers.length;
+    const answersAttr = JSON.stringify(question.answers || []);
+    return `
+      <div class="quiz-question quiz-question-multiblank" data-blanks="${blanks}" data-answers='${escapeHtml(answersAttr)}'>
+        ${header}
+        <div class="quiz-q-text" lang="ja">${renderFurigana(question.prompt)}</div>
+        <div class="quiz-blanks" aria-label="Thứ tự các chỗ trống">
+          ${Array.from({ length: blanks }, (_, n) => `<span class="quiz-blank-slot" data-slot="${n}">(${n + 1})</span>`).join('')}
+        </div>
+        <div class="quiz-options">
+          ${options.map((option, optionIndex) => `<button type="button" class="quiz-option" data-action="quiz-option" data-idx="${optionIndex}" lang="ja">${renderFurigana(option)}</button>`).join('')}
+        </div>
+        <div class="quiz-explain" role="status" hidden></div>
+      </div>`;
+  }
+  const correct = answerIndex(question);
+  return `
+    <div class="quiz-question" data-correct-idx="${correct}">
+      ${header}
+      <div class="quiz-q-text" lang="ja">${renderFurigana(question?.prompt || question?.q || '')}</div>
+      <div class="quiz-options">
+        ${options.map((option, optionIndex) => `<button type="button" class="quiz-option" data-action="quiz-option" data-idx="${optionIndex}" lang="ja">${renderFurigana(option)}</button>`).join('')}
+      </div>
+      <div class="quiz-explain" role="status" hidden></div>
+    </div>`;
 }
 
 function renderKanji(lessonId, content) {
@@ -279,6 +373,9 @@ function pageHtml(found, lessonId, content) {
 function handleQuiz(button) {
   const container = button.closest('.quiz-question');
   if (!container || container.classList.contains('is-answered')) return;
+  if (container.classList.contains('quiz-question-multiblank')) {
+    return handleMultiBlankQuiz(container, button);
+  }
   container.classList.add('is-answered');
   const correct = Number(container.dataset.correctIdx);
   const selected = Number(button.dataset.idx);
@@ -295,6 +392,43 @@ function handleQuiz(button) {
     status.textContent = correct >= 0 && options[correct]
       ? `Đáp án: ${options[correct].textContent.trim()}`
       : 'Đáp án của câu này chưa được xác minh.';
+  }
+}
+
+function handleMultiBlankQuiz(container, button) {
+  const blanks = Number(container.dataset.blanks) || 0;
+  const answers = JSON.parse(container.dataset.answers || '[]');
+  const slots = [...container.querySelectorAll('.quiz-blank-slot')];
+  let nextSlot = slots.find((s) => !s.dataset.value);
+  container.classList.add('is-answered');
+  if (!nextSlot) return;
+  const selected = Number(button.dataset.idx);
+  nextSlot.dataset.value = String(selected);
+  nextSlot.textContent = `${selected + 1}`;
+  nextSlot.classList.add('is-filled');
+  const filled = slots.map((s) => Number(s.dataset.value));
+  if (filled.every((v) => Number.isInteger(v))) {
+    const correct = answers.every((a, i) => a === filled[i]);
+    const options = [...container.querySelectorAll('.quiz-option')];
+    options.forEach((option) => {
+      option.disabled = true;
+      const index = Number(option.dataset.idx);
+      const usedIn = filled.reduce((acc, v, i) => (v === index ? acc.concat(i + 1) : acc), []);
+      const isCorrect = answers.includes(index);
+      if (usedIn.length) {
+        option.classList.add(correct ? 'is-correct' : 'is-incorrect');
+        const tag = document.createElement('span');
+        tag.className = 'quiz-option-tag';
+        tag.textContent = `(${usedIn.join(',')})`;
+        option.appendChild(tag);
+      }
+    });
+    const status = container.querySelector('.quiz-explain');
+    if (status) {
+      status.hidden = false;
+      const truth = answers.map((a, i) => `${i + 1}=${a + 1}`).join(' · ');
+      status.textContent = correct ? `Đúng! ${truth}` : `Sai. Đáp án: ${truth}`;
+    }
   }
 }
 

@@ -165,6 +165,19 @@ def extract_lesson(
                         "page": page_index,
                     }
                 )
+            # Listening has no raster images — save the whole page as a "page" reference
+            # so the renderer can show the original book context.
+            if category == "listening" and not big_rects:
+                pix = page.get_pixmap(dpi=dpi, alpha=False)
+                fname = f"{lesson_id}_p{page_index}_1.png"
+                pix.save(out_dir / fname)
+                manifest.append(
+                    {
+                        "src": f"images/{category}/{fname}",
+                        "kind": "page",
+                        "page": page_index,
+                    }
+                )
     return manifest
 
 

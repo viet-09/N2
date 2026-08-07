@@ -649,16 +649,24 @@ a {
 
 /* ==========================================================================
    Furigana / ruby
+   Some browsers collapse ruby base+rt onto baseline when ruby-position support
+   is missing — force a top-anchored rt via floating positioning.
    ========================================================================== */
 ruby {
     ruby-position: over;
+    ruby-align: center;
 }
 
 ruby rt {
+    display: block;
     font-family: var(--font-sans);
     font-size: .55em;
     color: var(--text-muted);
     user-select: none;
+    line-height: 1.1;
+    text-align: center;
+    margin-bottom: 2px;
+    text-indent: 0;
 }
 
 body.furigana-off rt {
@@ -1070,6 +1078,55 @@ body.furigana-off rt {
 
 .quiz-explain[hidden] {
     display: none;
+}
+
+.quiz-section { margin-top: 18px; }
+.quiz-section + .quiz-section { margin-top: 28px; }
+.quiz-section-title {
+    margin: 0 0 12px;
+    padding: 6px 12px;
+    background: var(--paper-2);
+    border-left: 4px solid var(--accent-red);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.quiz-blanks {
+    display: flex;
+    gap: 8px;
+    margin: 10px 0 12px;
+    flex-wrap: wrap;
+}
+
+.quiz-blank-slot {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    height: 32px;
+    padding: 0 10px;
+    border: 1px dashed var(--border-color);
+    border-radius: var(--radius);
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.quiz-blank-slot.is-filled {
+    border-style: solid;
+    border-color: var(--accent-red);
+    background: var(--paper-2);
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.quiz-option-tag {
+    margin-left: auto;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: var(--paper-2);
+    font-size: 12px;
+    color: var(--text-muted);
 }
 
 .quiz-answer {
