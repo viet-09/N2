@@ -82,7 +82,7 @@ function renderQuestionHeader(lessonId, questionIndex) {
   const t = questionTypeInfo(info.type);
   const label = escapeHtml(t.label || info.type);
   const tip = t.tip ? ` title="${escapeHtml(t.tip)}" aria-label="${escapeHtml(t.tip)}"` : '';
-  return `<header class="quiz-q-header"><span class="quiz-q-type-badge" data-question-type="${escapeHtml(info.type)}"${tip}>${label}</span><span class="quiz-q-desc">${escapeHtml(info.descriptionVi)}</span></header>`;
+  return `<header class="quiz-q-header"><span class="quiz-q-type-badge" data-question-type="${escapeHtml(info.type)}"${tip}>${label}</span></header>`;
 }
 
 function renderImagesSection(lessonId) {
@@ -90,12 +90,13 @@ function renderImagesSection(lessonId) {
   if (!Array.isArray(images) || images.length === 0) return '';
   const items = images.map((entry) => {
     if (!entry || typeof entry.src !== 'string') return '';
+    const src = entry.src.startsWith('/') ? entry.src : `data/book/${entry.src}`;
     const caption = entry.captionVi ? `<figcaption class="lesson-image-caption">${escapeHtml(entry.captionVi)}</figcaption>` : '';
     const isPage = entry.kind === 'page';
     if (isPage) {
-      return `<details class="lesson-image-page"><summary>Trang sách gốc</summary><figure class="lesson-image-figure"><img loading="lazy" src="${escapeHtml(entry.src)}" alt="Trang sách">${caption}</figure></details>`;
+      return `<details class="lesson-image-page"><summary>Trang sách gốc</summary><figure class="lesson-image-figure"><img loading="lazy" src="${escapeHtml(src)}" alt="Trang sách">${caption}</figure></details>`;
     }
-    return `<figure class="lesson-image-figure"><img loading="lazy" src="${escapeHtml(entry.src)}" alt="${escapeHtml(entry.captionVi || 'Hình minh họa')}">${caption}</figure>`;
+    return `<figure class="lesson-image-figure"><img loading="lazy" src="${escapeHtml(src)}" alt="${escapeHtml(entry.captionVi || 'Hình minh họa')}">${caption}</figure>`;
   }).filter(Boolean).join('');
   if (!items) return '';
   return `<section class="lesson-images" aria-label="Hình minh họa">${items}</section>`;

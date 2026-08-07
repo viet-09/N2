@@ -515,10 +515,10 @@ function validateEnrichmentFile(category, content, lessonIds, fileLabel) {
       if (typeof item.type !== 'string' || !whitelist.includes(item.type)) {
         fail('ENRICHMENT_TYPE', `${loc}.type`, `Type "${item.type}" not in whitelist for ${category}.`);
       }
-      if (typeof item.descriptionVi !== 'string' || !item.descriptionVi.trim()) {
-        fail('ENRICHMENT_DESC_EMPTY', `${loc}.descriptionVi`, 'Must be a non-empty string.');
-      } else if (item.descriptionVi.length > 200) {
-        warn('ENRICHMENT_DESC_LONG', `${loc}.descriptionVi`, 'Description exceeds 200 chars.');
+      // descriptionVi is optional (kept in JSON for re-runs); renderer uses the original
+      // Japanese prompt from the canonical book instead.
+      if (item.descriptionVi !== undefined && (typeof item.descriptionVi !== 'string' || item.descriptionVi.length > 200)) {
+        warn('ENRICHMENT_DESC_LONG', `${loc}.descriptionVi`, 'Description must be string ≤ 200 chars.');
       }
     });
   }

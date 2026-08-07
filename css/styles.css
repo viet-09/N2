@@ -2217,12 +2217,6 @@ body.furigana-off rt {
     border: 1px solid rgba(212, 175, 55, 0.4);
     line-height: 1.4;
 }
-.quiz-q-desc {
-    font-style: italic;
-    font-size: 13px;
-    color: var(--text-muted, #6b6357);
-    flex: 1 1 100%;
-}
 
 /* --- Lesson illustrations --------------------------------------------- */
 .lesson-images {
