@@ -48,11 +48,7 @@ export function renderFurigana(text) {
 
     const base = match[1];
     const reading = match[2];
-    // <rb> wrapper is required by the HTML5 ruby spec so the base text is
-    // unmistakably the "ruby base" and not an annotation. Browsers that fall
-    // back to inline rendering (Edge legacy, some mobile) still treat the
-    // base text as the visual anchor and only float <rt> above/below it.
-    html += `<ruby><rb>${escapeHtml(base)}</rb><rt>${escapeHtml(reading)}</rt></ruby>`;
+    html += `<ruby>${escapeHtml(base)}<rt>${escapeHtml(reading)}</rt></ruby>`;
 
     lastIndex = match.index + match[0].length;
   }

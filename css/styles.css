@@ -649,65 +649,30 @@ a {
 
 /* ==========================================================================
    Furigana / ruby
-   Browsers inconsistently place <rt> above <rb>: Edge/legacy collapse it
-   inline next to the kanji. We force a stable layout by treating <ruby>
-   like a 2-line inline-block stack — a reserved top row for the reading,
-   the base row below it — using line-height + a pseudo-element spacer.
-   Toggle: body.furigana-off hides the rt row and removes the spacer.
+   Modern Chromium-based Edge handles <ruby> natively; we just style the
+   size and color of the reading. Body-level .furigana-off toggles the
+   <rt> off and the line-height collapses so the layout does not jump.
    ========================================================================== */
 ruby {
-    display: inline-block !important;
-    position: relative !important;
-    line-height: 1.1;
-    text-align: center;
     ruby-position: over;
-    vertical-align: bottom;
-    /* Reserve vertical space for the reading on top so the base text
-       always sits on the lower baseline row. */
-    padding-top: 1em;
-}
-
-/* Spacer: holds the rt row height even when rt is hidden, so the layout
-   does not jump when toggling furigana on/off. */
-ruby::before {
-    content: "";
-    display: block;
-    height: 1em;
-    margin-bottom: -1em;
+    ruby-align: center;
 }
 
 ruby > rb {
-    display: inline-block !important;
-    line-height: 1.1;
-    vertical-align: bottom;
+    unicode-bidi: isolate;
 }
 
 ruby rt {
-    display: block !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    height: 1em;
-    line-height: 1;
     font-family: var(--font-sans);
-    font-size: 0.55em;
+    font-size: 0.45em;
+    line-height: 1;
     color: var(--text-muted);
     user-select: none;
     pointer-events: none;
 }
 
 body.furigana-off rt {
-    display: none !important;
-}
-
-body.furigana-off ruby::before {
-    height: 0;
-    margin-bottom: 0;
-}
-
-body.furigana-off ruby {
-    padding-top: 0;
+    display: none;
 }
 
 /* ==========================================================================
