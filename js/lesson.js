@@ -340,7 +340,6 @@ function renderToolbar(done) {
     <div class="lesson-toolbar">
       <button type="button" class="back-btn" data-action="back">← Quay lại</button>
       <div class="lesson-toolbar-actions">
-        <button type="button" class="view-book-btn" data-action="view-book" aria-label="Xem trang sách">📖 Xem sách</button>
         <button type="button" class="furigana-toggle-btn" data-action="toggle-furigana" aria-pressed="${getFurigana()}">${getFurigana() ? 'あ' : 'ア'}<span class="sr-only">Furigana</span></button>
         <button type="button" class="complete-toggle-btn${done ? ' is-done' : ''}" data-action="toggle-complete" aria-pressed="${done}">${done ? 'Bỏ đánh dấu' : 'Đánh dấu đã học'}</button>
       </div>
@@ -357,7 +356,10 @@ function pageHtml(found, lessonId, content) {
       ${renderToolbar(isDone(lesson.id))}
       <header class="lesson-header">
         <div class="lesson-header-meta">${escapeHtml(category?.name || '')} • ${unit} ${escapeHtml(week?.week ?? '')} • Ngày ${escapeHtml(lesson.day ?? '')}</div>
-        <h1 class="lesson-header-title" data-route-heading lang="ja">${renderFurigana(title)}</h1>
+        <div class="lesson-header-title-row">
+          <h1 class="lesson-header-title" data-route-heading lang="ja">${renderFurigana(title)}</h1>
+          <button type="button" class="view-book-btn view-book-btn-header" data-action="view-book" aria-label="Xem trang sách">📖 Xem sách</button>
+        </div>
         ${titleEn ? `<p class="lesson-title-en" lang="en">${escapeHtml(titleEn)}</p>` : ''}
       </header>
       <div class="lesson-body">${renderBookContent(category?.id, content, lessonId)}</div>
@@ -604,34 +606,69 @@ export function renderLesson(root, id) {
     bookViewer = null;
   };
 
-  const openBookViewer = (trigger) => {
+  // Load a single image by URL — resolves to an HTMLImageElement (decoded).
+  const loadImage = (src) => new Promise((resolve, reject) => {
+    const img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = () => resolve(img);
+    img.onerror = () => reject(new Error(`Failed to load ${src}`));
+    img.src = src;
+  });
+
+  // Stack all page/discrete images into ONE tall canvas at native pixel
+  // resolution. The result is shown as a single full-width <img>; users
+  // scroll inside the modal to read each page in turn.
+  const stitchImages = async (entries) => {
+    const loaded = [];
+    for (const entry of entries) {
+      const url = entry.src.startsWith('/') ? entry.src : `data/book/${entry.src}`;
+      try {
+        loaded.push({ ...entry, img: await loadImage(url) });
+      } catch (err) {
+        console.warn('book viewer: skipped', url, err);
+      }
+    }
+    if (!loaded.length) return null;
+    const width = Math.max(...loaded.map((e) => e.img.naturalWidth));
+    const totalHeight = loaded.reduce((sum, e) => sum + e.img.naturalHeight, 0);
+    const canvas = document.createElement('canvas');
+    canvas.width = width;
+    canvas.height = totalHeight;
+    const ctx = canvas.getContext('2d');
+    let y = 0;
+    for (const e of loaded) {
+      ctx.drawImage(e.img, 0, y);
+      y += e.img.naturalHeight;
+    }
+    return { dataUrl: canvas.toDataURL('image/png'), width, totalHeight };
+  };
+
+  const openBookViewer = async (trigger) => {
     const images = getLessonImages(id);
-    // If we have discrete `image` entries, show those; otherwise show the page PNGs
-    // (listening lessons only have `page` entries — full-page render).
     const discrete = (images || []).filter((entry) => entry && entry.kind === 'image');
     const pages = (images || []).filter((entry) => entry && entry.kind === 'page');
     if (!discrete.length && !pages.length) {
       alert('Bài này chưa có ảnh trang sách.');
       return;
     }
+    // Order matters: discrete crops first, then full pages — keeps the
+    // lesson's visuals in reading order. Sort each bucket by `page` if set.
+    const byPage = (a, b) => (a.page ?? 0) - (b.page ?? 0);
+    const ordered = [...pages].sort(byPage).concat([...discrete].sort(byPage));
+
     closeBookViewer();
     const dialog = document.createElement('div');
     dialog.className = 'modal-overlay active book-viewer-overlay';
     dialog.setAttribute('role', 'dialog');
     dialog.setAttribute('aria-modal', 'true');
     dialog.setAttribute('aria-label', 'Xem trang sách');
-    const pageItems = (pages.length ? pages : discrete).map((entry) => {
-      const src = entry.src.startsWith('/') ? entry.src : `data/book/${entry.src}`;
-      const pageNum = entry.page != null ? ` <span class="book-viewer-page-num">p.${entry.page + 1}</span>` : '';
-      return `<figure class="book-viewer-figure"><img loading="lazy" src="${escapeHtml(src)}" alt="Trang sách">${pageNum ? `<figcaption>${pageNum}</figcaption>` : ''}</figure>`;
-    }).join('');
     dialog.innerHTML = `
       <div class="modal-card book-viewer-card">
         <div class="modal-header">
           <h3 lang="ja">📖 ${escapeHtml(plainJapanese(getBookContent(id)?.title || ''))}</h3>
           <button type="button" class="modal-close" data-book-viewer-close aria-label="Đóng">×</button>
         </div>
-        <div class="modal-body book-viewer-body">${pageItems}</div>
+        <div class="modal-body book-viewer-body"><p class="book-viewer-status">Đang ghép trang sách…</p></div>
       </div>`;
     document.body.appendChild(dialog);
     bookViewer = dialog;
@@ -639,12 +676,23 @@ export function renderLesson(root, id) {
     dialog.addEventListener('click', (event) => {
       if (event.target === dialog) closeBookViewer();
     });
-    // Click any image inside the viewer to open it fullscreen.
-    dialog.querySelectorAll('img').forEach((img) => {
-      img.addEventListener('click', () => {
-        if (document.fullscreenElement === img) document.exitFullscreen?.();
-        else img.requestFullscreen?.();
-      });
+
+    const body = dialog.querySelector('.book-viewer-body');
+    const stitched = await stitchImages(ordered);
+    if (!stitched) {
+      body.innerHTML = '<p class="book-viewer-status">Không tải được ảnh trang sách.</p>';
+      return;
+    }
+    const firstPage = ordered.find((e) => e.page != null)?.page;
+    const pageLabel = firstPage != null ? `<figcaption class="book-viewer-page-num">p.${firstPage + 1}${ordered.length > 1 ? `–${ordered[ordered.length - 1].page + 1}` : ''}</figcaption>` : '';
+    body.innerHTML = `
+      <figure class="book-viewer-figure">
+        <img class="book-viewer-stitched" src="${stitched.dataUrl}" alt="Trang sách ghép">
+        ${pageLabel}
+      </figure>`;
+    body.querySelector('img')?.addEventListener('click', () => {
+      if (document.fullscreenElement) document.exitFullscreen?.();
+      else body.querySelector('img')?.requestFullscreen?.();
     });
   };
 
