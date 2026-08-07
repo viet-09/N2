@@ -3818,7 +3818,7 @@
       {
         "form": "N向け\nN向き",
         "meaningEn": "when using N <noun>\nsuitable for N <noun>",
-        "connection": "N (名詞) - だ / に / の N\n◆N向け=Nを対象とした\nwhen using N <noun>\n以 N (名词) 为对象\nN (명사) 를 대상으로 한\n◆N向き=Nに向いている\nsuitable for N <noun>\n适合 N N에 적합하다",
+        "connection": "N (名詞) - だ / に / の N\n◆N向け=Nを対象とした\nwhen using N <noun>\n以 N (名词) 为对象\nN ()   \n◆N向き=Nに向いている\nsuitable for N <noun>\n适合 N N ",
         "examples": [
           {
             "jp": "それは、初心者向けの教科書です。(=初心者のための)",
@@ -4423,7 +4423,7 @@
         "answerIndex": 0
       },
       {
-        "prompt": "映画の公開に （a. さきだち b. わたり）、試写会※が行われた。※試写会 preview 电影试映会 시사회",
+        "prompt": "映画の公開に （a. さきだち b. わたり）、試写会※が行われた。※試写会 preview 电影试映会 ",
         "options": [
           "a. さきだち",
           "b. わたり"

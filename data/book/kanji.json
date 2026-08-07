@@ -4641,17 +4641,17 @@
           {
             "jp": "登録",
             "reading": "とうろく",
-            "en": "registration 登记 등록"
+            "en": "registration 登记 "
           },
           {
             "jp": "登場",
             "reading": "とうじょう",
-            "en": "appearance 登场 등장"
+            "en": "appearance 登场 "
           },
           {
             "jp": "登山",
             "reading": "とざん",
-            "en": "mountain climbing 爬山 등산"
+            "en": "mountain climbing 爬山 "
           },
           {
             "jp": "山登り",
@@ -4669,22 +4669,22 @@
           {
             "jp": "編集",
             "reading": "へんしゅう",
-            "en": "editing 编辑 편집"
+            "en": "editing 编辑 "
           },
           {
             "jp": "短編",
             "reading": "たんぺん",
-            "en": "short work 短篇 단편"
+            "en": "short work 短篇 "
           },
           {
             "jp": "長編",
             "reading": "ちょうへん",
-            "en": "long work 长篇 장편"
+            "en": "long work 长篇 "
           },
           {
             "jp": "編み物",
             "reading": "あみもの",
-            "en": "knitting 针织品 뜨개질"
+            "en": "knitting 针织品 "
           }
         ]
       },
@@ -4697,17 +4697,17 @@
           {
             "jp": "機能",
             "reading": "きのう",
-            "en": "a function 功能 기능"
+            "en": "a function 功能 "
           },
           {
             "jp": "能力",
             "reading": "のうりょく",
-            "en": "ability 能力 능력"
+            "en": "ability 能力 "
           },
           {
             "jp": "可能（な）",
             "reading": "かのう",
-            "en": "possible 可能 가능 可 431"
+            "en": "possible 可能  可 431"
           }
         ]
       },
@@ -4720,17 +4720,17 @@
           {
             "jp": "修正",
             "reading": "しゅうせい",
-            "en": "amendment/modification 修正 수정"
+            "en": "amendment/modification 修正 "
           },
           {
             "jp": "修士",
             "reading": "しゅうし",
-            "en": "master (holder of a masters degree) 硕士 석사"
+            "en": "master (holder of a masters degree) 硕士 "
           },
           {
             "jp": "修理",
             "reading": "しゅうり",
-            "en": "repairs/fixing 修理 수리"
+            "en": "repairs/fixing 修理 "
           }
         ]
       },
@@ -4743,17 +4743,17 @@
           {
             "jp": "完了",
             "reading": "かんりょう",
-            "en": "finishing/completion 完了 완료"
+            "en": "finishing/completion 完了 "
           },
           {
             "jp": "完備",
             "reading": "かんび",
-            "en": "being fully equipped 完备 완비"
+            "en": "being fully equipped 完备 "
           },
           {
             "jp": "完成",
             "reading": "かんせい",
-            "en": "completion/accomplishment 完成 완성"
+            "en": "completion/accomplishment 完成 "
           }
         ]
       },
@@ -4766,12 +4766,12 @@
           {
             "jp": "終了",
             "reading": "しゅうりょう",
-            "en": "end/expiration 完了 종료"
+            "en": "end/expiration 完了 "
           },
           {
             "jp": "修了",
             "reading": "しゅうりょう",
-            "en": "completion (of a course) 修完 수료"
+            "en": "completion (of a course) 修完 "
           }
         ]
       },
@@ -4784,17 +4784,17 @@
           {
             "jp": "画像",
             "reading": "がぞう",
-            "en": "a picture/image 影像 화상"
+            "en": "a picture/image 影像 "
           },
           {
             "jp": "現像",
             "reading": "げんぞう",
-            "en": "developing (a photograph) 冲洗(照片) 현상"
+            "en": "developing (a photograph) 冲洗(照片) "
           },
           {
             "jp": "映像",
             "reading": "えいぞう",
-            "en": "a reflection/image/video 映像 영상"
+            "en": "a reflection/image/video 映像 "
           }
         ]
       },
@@ -4807,17 +4807,17 @@
           {
             "jp": "書類",
             "reading": "しょるい",
-            "en": "a document 文书 서류"
+            "en": "a document 文书 "
           },
           {
             "jp": "人類",
             "reading": "じんるい",
-            "en": "the human race 人类 인류"
+            "en": "the human race 人类 "
           },
           {
             "jp": "分類",
             "reading": "ぶんるい",
-            "en": "classification 分类 분류"
+            "en": "classification 分类 "
           }
         ]
       },
@@ -4830,22 +4830,22 @@
           {
             "jp": "書式",
             "reading": "しょしき",
-            "en": "prescribed form 公文格式 서식"
+            "en": "prescribed form 公文格式 "
           },
           {
             "jp": "日本式",
             "reading": "にほんしき",
-            "en": "Japanese style 日式 일본식"
+            "en": "Japanese style 日式 "
           },
           {
             "jp": "入学式",
             "reading": "にゅうがくしき",
-            "en": "entrance ceremony 入学典礼 입학식"
+            "en": "entrance ceremony 入学典礼 "
           },
           {
             "jp": "正式（な）",
             "reading": "せいしき",
-            "en": "formal/official 正式 정식"
+            "en": "formal/official 正式 "
           }
         ]
       },
@@ -4858,7 +4858,7 @@
           {
             "jp": "中央",
             "reading": "ちゅうおう",
-            "en": "center 中央 중앙"
+            "en": "center 中央 "
           }
         ]
       },
@@ -4871,22 +4871,22 @@
           {
             "jp": "保存",
             "reading": "ほぞん",
-            "en": "preservation 保存 보존"
+            "en": "preservation 保存 "
           },
           {
             "jp": "ご存知",
             "reading": "ごぞんじ",
-            "en": "knowing (humble form) 知道 (尊敬语) 잘 아심"
+            "en": "knowing (humble form) 知道 (尊敬语)  "
           },
           {
             "jp": "生存",
             "reading": "せいそん",
-            "en": "survival 生存 생존"
+            "en": "survival 生存 "
           },
           {
             "jp": "存在",
             "reading": "そんざい",
-            "en": "existence 存在 존재 在 185"
+            "en": "existence 存在  在 185"
           }
         ]
       },
@@ -4899,17 +4899,17 @@
           {
             "jp": "認め印",
             "reading": "みとめいん",
-            "en": "a private seal (常用的) 图章、便章 막도장"
+            "en": "a private seal (常用的) 图章、便章 "
           },
           {
             "jp": "印",
             "reading": "しるし",
-            "en": "a mark/token 记号 표, 기호"
+            "en": "a mark/token 记号 , "
           },
           {
             "jp": "目印",
             "reading": "めじるし",
-            "en": "a sign/landmark 记号、标记 표지, 표시"
+            "en": "a sign/landmark 记号、标记 , "
           }
         ]
       },
@@ -4922,7 +4922,7 @@
           {
             "jp": "印刷",
             "reading": "いんさつ",
-            "en": "printing 印刷 인쇄"
+            "en": "printing 印刷 "
           }
         ]
       },
@@ -4940,7 +4940,7 @@
           {
             "jp": "縮小",
             "reading": "しゅくしょう",
-            "en": "reduction 缩小 축소"
+            "en": "reduction 缩小 "
           }
         ]
       }
@@ -6118,7 +6118,7 @@
         "answerIndex": -1
       },
       {
-        "prompt": "教科書*や参考書、(a. その他 b. 他方) 必要な本を買う。 *教科書: textbook 教科书 교과서",
+        "prompt": "教科書*や参考書、(a. その他 b. 他方) 必要な本を買う。 *教科書: textbook 教科书 ",
         "options": [
           "その他",
           "他方"
@@ -6621,17 +6621,17 @@
           {
             "jp": "必要",
             "reading": "ひつよう",
-            "en": "necessary 必要 필요"
+            "en": "necessary 必要 "
           },
           {
             "jp": "必ず",
             "reading": "かならず",
-            "en": "always/certainly 一定 반드시"
+            "en": "always/certainly 一定 "
           },
           {
             "jp": "必死",
             "reading": "ひっし",
-            "en": "desperate(ly) 拼命地 필사"
+            "en": "desperate(ly) 拼命地 "
           }
         ]
       },
@@ -6644,22 +6644,22 @@
           {
             "jp": "袋",
             "reading": "ふくろ",
-            "en": "a bag 袋子 주머니"
+            "en": "a bag 袋子 "
           },
           {
             "jp": "手袋",
             "reading": "てぶくろ",
-            "en": "a glove 手套 장갑"
+            "en": "a glove 手套 "
           },
           {
             "jp": "レジ袋",
             "reading": "れじぶくろ",
-            "en": "a plastic bag (received at the checkout counter) 塑料袋(在交款台领到的) 비닐봉지 (편의점이나 슈퍼에서 담아주는 비닐봉지)"
+            "en": "a plastic bag (received at the checkout counter) 塑料袋(在交款台领到的)  (   )"
           },
           {
             "jp": "足袋",
             "reading": "たび",
-            "en": "tabi (traditional Japanese socks worn with a kimono) 日本式布袜子 일본식 버선"
+            "en": "tabi (traditional Japanese socks worn with a kimono) 日本式布袜子  "
           }
         ]
       },
@@ -6672,22 +6672,22 @@
           {
             "jp": "ゴミ集積所",
             "reading": "ごみしゅうせきじょ",
-            "en": "a rubbish collection point 垃圾堆放处 쓰레기 집적소"
+            "en": "a rubbish collection point 垃圾堆放处  "
           },
           {
             "jp": "面積",
             "reading": "めんせき",
-            "en": "an (surface) area 面积 면적"
+            "en": "an (surface) area 面积 "
           },
           {
             "jp": "積もる",
             "reading": "つもる",
-            "en": "pile up 堆积 쌓이다"
+            "en": "pile up 堆积 "
           },
           {
             "jp": "積む",
             "reading": "つむ",
-            "en": "load 堆 쌓다"
+            "en": "load 堆 "
           }
         ]
       },
@@ -6700,7 +6700,7 @@
           {
             "jp": "燃料",
             "reading": "ねんりょう",
-            "en": "fuel 燃料 연료"
+            "en": "fuel 燃料 "
           },
           {
             "jp": "可燃",
@@ -6710,12 +6710,12 @@
           {
             "jp": "不燃",
             "reading": "ふねん",
-            "en": "nonflammable/incombustible 不可燃 불연"
+            "en": "nonflammable/incombustible 不可燃 "
           },
           {
             "jp": "燃やせる",
             "reading": "もやせる",
-            "en": "burnable 可燃、能燃烧 타는, 태울 수 있다"
+            "en": "burnable 可燃、能燃烧 ,   "
           }
         ]
       },
@@ -6728,12 +6728,12 @@
           {
             "jp": "枝",
             "reading": "えだ",
-            "en": "a branch 枝、分支 (나뭇)가지"
+            "en": "a branch 枝、分支 ()"
           },
           {
             "jp": "小枝",
             "reading": "こえだ",
-            "en": "a twig/stick 小树枝 작은 가지"
+            "en": "a twig/stick 小树枝  "
           }
         ]
       },
@@ -6746,27 +6746,27 @@
           {
             "jp": "紅葉",
             "reading": "こうよう",
-            "en": "autumn leaves 红叶、枫叶 단풍"
+            "en": "autumn leaves 红叶、枫叶 "
           },
           {
             "jp": "紅葉",
             "reading": "もみじ",
-            "en": "a maple 枫叶 단풍"
+            "en": "a maple 枫叶 "
           },
           {
             "jp": "葉",
             "reading": "は",
-            "en": "a leaf 叶 잎"
+            "en": "a leaf 叶 "
           },
           {
             "jp": "落ち葉",
             "reading": "おちば",
-            "en": "fallen leaves 落叶 낙엽"
+            "en": "fallen leaves 落叶 "
           },
           {
             "jp": "言葉",
             "reading": "ことば",
-            "en": "word/language 语言 말"
+            "en": "word/language 语言 "
           }
         ]
       },
@@ -6779,17 +6779,17 @@
           {
             "jp": "埋める",
             "reading": "うめる",
-            "en": "bury 埋 묻다"
+            "en": "bury 埋 "
           },
           {
             "jp": "埋め立てる",
             "reading": "うめたてる",
-            "en": "reclaim (land) / fill in 填平 메우다"
+            "en": "reclaim (land) / fill in 填平 "
           },
           {
             "jp": "埋まる",
             "reading": "うまると",
-            "en": "be buried 埋上 묻히다"
+            "en": "be buried 埋上 "
           }
         ]
       },
@@ -6802,12 +6802,12 @@
           {
             "jp": "製品",
             "reading": "せいひん",
-            "en": "a product 制品 제품"
+            "en": "a product 制品 "
           },
           {
             "jp": "~製",
             "reading": "せい",
-            "en": "made in/of ... ~制 ~제"
+            "en": "made in/of ... ~制 ~"
           }
         ]
       },
@@ -6820,17 +6820,17 @@
           {
             "jp": "内容",
             "reading": "ないよう",
-            "en": "contents/substance 内容 내용"
+            "en": "contents/substance 内容 "
           },
           {
             "jp": "容器",
             "reading": "ようき",
-            "en": "a container 容器 용기"
+            "en": "a container 容器 "
           },
           {
             "jp": "美容",
             "reading": "びよう",
-            "en": "beauty treatment 美容 미용"
+            "en": "beauty treatment 美容 "
           }
         ]
       },
@@ -6843,22 +6843,22 @@
           {
             "jp": "食器",
             "reading": "しょっき",
-            "en": "tableware 餐具 식기"
+            "en": "tableware 餐具 "
           },
           {
             "jp": "楽器",
             "reading": "がっき",
-            "en": "a musical instrument 乐器 악기"
+            "en": "a musical instrument 乐器 "
           },
           {
             "jp": "受話器",
             "reading": "じゅわき",
-            "en": "telephone receiver 电话听筒 수화기"
+            "en": "telephone receiver 电话听筒 "
           },
           {
             "jp": "器",
             "reading": "うつわ",
-            "en": "a container/caliber 容器 器器 그릇"
+            "en": "a container/caliber 容器 器器 "
           }
         ]
       },
@@ -6871,22 +6871,22 @@
           {
             "jp": "包装",
             "reading": "ほうそう",
-            "en": "wrapping 包装 포장"
+            "en": "wrapping 包装 "
           },
           {
             "jp": "新装開店",
             "reading": "しんそうかいてん",
-            "en": "renovated and open 装修后开店 신장개업"
+            "en": "renovated and open 装修后开店 "
           },
           {
             "jp": "服装",
             "reading": "ふくそう",
-            "en": "the style of dress / costume 服装 복장"
+            "en": "the style of dress / costume 服装 "
           },
           {
             "jp": "衣装",
             "reading": "いしょう",
-            "en": "dress / costume 服装 의상"
+            "en": "dress / costume 服装 "
           }
         ]
       },
@@ -6899,22 +6899,22 @@
           {
             "jp": "雑音",
             "reading": "ざつおん",
-            "en": "a noise 杂音 잡음"
+            "en": "a noise 杂音 "
           },
           {
             "jp": "雑用",
             "reading": "ざつよう",
-            "en": "odd jobs 各种用途 잡무"
+            "en": "odd jobs 各种用途 "
           },
           {
             "jp": "雑な",
             "reading": "ざつな",
-            "en": "miscellaneous 混杂 잡다한"
+            "en": "miscellaneous 混杂 "
           },
           {
             "jp": "雑貨",
             "reading": "ざっか",
-            "en": "sundry goods 杂货 잡화"
+            "en": "sundry goods 杂货 "
           }
         ]
       },
@@ -6927,12 +6927,12 @@
           {
             "jp": "雑誌",
             "reading": "ざっし",
-            "en": "a magazine 杂志 잡지"
+            "en": "a magazine 杂志 "
           },
           {
             "jp": "日誌",
             "reading": "にっし",
-            "en": "a journal/diary 日志 일지"
+            "en": "a journal/diary 日志 "
           }
         ]
       },
@@ -6945,24 +6945,24 @@
           {
             "jp": "資源",
             "reading": "しげん",
-            "en": "resource(s) 资源 자원"
+            "en": "resource(s) 资源 "
           },
           {
             "jp": "資料",
             "reading": "しりょう",
-            "en": "material(s)/data 资料 자료"
+            "en": "material(s)/data 资料 "
           },
           {
             "jp": "資金",
             "reading": "しきん",
-            "en": "fund(s) 资金 자금"
+            "en": "fund(s) 资金 "
           }
         ]
       }
     ],
     "practice": [
       {
-        "prompt": "雪が (a. 保って b. 積もって) 花だん※が埋まってしまった。 ※花だん: flower bed 花坛 화단",
+        "prompt": "雪が (a. 保って b. 積もって) 花だん※が埋まってしまった。 ※花だん: flower bed 花坛 ",
         "options": [
           "保って",
           "積もって"
@@ -6978,7 +6978,7 @@
         "answerIndex": 0
       },
       {
-        "prompt": "この洗剤※を使うときは必ずゴム (a. 手袋 b. 足袋) をしてください。 ※洗剤: cleansers 洗洁剂 세제",
+        "prompt": "この洗剤※を使うときは必ずゴム (a. 手袋 b. 足袋) をしてください。 ※洗剤: cleansers 洗洁剂 ",
         "options": [
           "手袋",
           "足袋"
@@ -7387,7 +7387,7 @@
         "answerIndex": -1
       },
       {
-        "prompt": "「届かないので(a. 延期 b. 延長)コードを持ってきてください。」※コード : cord 软线 코드",
+        "prompt": "「届かないので(a. 延期 b. 延長)コードを持ってきてください。」※コード : cord 软线 ",
         "options": [
           "a. 延期",
           "b. 延長"
@@ -7395,7 +7395,7 @@
         "answerIndex": -1
       },
       {
-        "prompt": "「あ!(a. 火事 b. 地震)だ!揺れてる!」※揺れる : shake 揺动, 揺摆 흔들리다",
+        "prompt": "「あ!(a. 火事 b. 地震)だ!揺れてる!」※揺れる : shake 揺动, 揺摆 ",
         "options": [
           "a. 火事",
           "b. 地震"
@@ -7458,17 +7458,17 @@
           {
             "jp": "結果",
             "reading": "けっか",
-            "en": "a result 结果 결과"
+            "en": "a result 结果 "
           },
           {
             "jp": "結ぶ",
             "reading": "むすぶ",
-            "en": "tie/connect/conclude 系,连结,建立关系 매다, 묶다"
+            "en": "tie/connect/conclude 系,连结,建立关系 , "
           },
           {
             "jp": "結局",
             "reading": "けっきょく",
-            "en": "after all 最终 결국"
+            "en": "after all 最终 "
           }
         ]
       },
@@ -7481,22 +7481,22 @@
           {
             "jp": "効果",
             "reading": "こうか",
-            "en": "effect 效果 효과"
+            "en": "effect 效果 "
           },
           {
             "jp": "果物",
             "reading": "くだもの",
-            "en": "a fruit 水果 과일"
+            "en": "a fruit 水果 "
           },
           {
             "jp": "果実",
             "reading": "かじつ",
-            "en": "a fruit 果实 과실"
+            "en": "a fruit 果实 "
           },
           {
             "jp": "果たす",
             "reading": "はたす",
-            "en": "carry out / fulfill 实现 환수하다"
+            "en": "carry out / fulfill 实现 "
           }
         ]
       },
@@ -7509,17 +7509,17 @@
           {
             "jp": "開封",
             "reading": "かいふう",
-            "en": "unsealing / opening a letter 拆封 개봉"
+            "en": "unsealing / opening a letter 拆封 "
           },
           {
             "jp": "同封",
             "reading": "どうふう",
-            "en": "enclosing (with a letter) 附在信内 동봉"
+            "en": "enclosing (with a letter) 附在信内 "
           },
           {
             "jp": "封書",
             "reading": "ふうしょ",
-            "en": "a (sealed) letter 封口的书信 봉서"
+            "en": "a (sealed) letter 封口的书信 "
           }
         ]
       },
@@ -7532,22 +7532,22 @@
           {
             "jp": "方法",
             "reading": "ほうほう",
-            "en": "a method/way 方法 방법"
+            "en": "a method/way 方法 "
           },
           {
             "jp": "作法",
             "reading": "さほう",
-            "en": "a manner 礼节 예절"
+            "en": "a manner 礼节 "
           },
           {
             "jp": "文法",
             "reading": "ぶんぽう",
-            "en": "grammar 文法 문법"
+            "en": "grammar 文法 "
           },
           {
             "jp": "法人",
             "reading": "ほうじん",
-            "en": "a corporate body 法人 법인"
+            "en": "a corporate body 法人 "
           }
         ]
       },
@@ -7560,17 +7560,17 @@
           {
             "jp": "各～",
             "reading": "かく～",
-            "en": "each/every 各～ 각～"
+            "en": "each/every 各～ ～"
           },
           {
             "jp": "各地",
             "reading": "かくち",
-            "en": "everywhere / many places 各地 각지"
+            "en": "everywhere / many places 各地 "
           },
           {
             "jp": "各自",
             "reading": "かくじ",
-            "en": "respective / each person 各自 각자"
+            "en": "respective / each person 各自 "
           }
         ]
       },
@@ -7583,22 +7583,22 @@
           {
             "jp": "~各位",
             "reading": "~かくい",
-            "en": "every one of you / whom it may concern ~各位 ~각위"
+            "en": "every one of you / whom it may concern ~各位 ~"
           },
           {
             "jp": "~位",
             "reading": "~い",
-            "en": "... place(used for ranking things) ~位(助数词) ~위"
+            "en": "... place(used for ranking things) ~位(助数词) ~"
           },
           {
             "jp": "地位",
             "reading": "ちい",
-            "en": "status 地位 지위"
+            "en": "status 地位 "
           },
           {
             "jp": "位",
             "reading": "くらい",
-            "en": "rank 地位, 职位 정도"
+            "en": "rank 地位, 职位 "
           }
         ]
       },
@@ -7611,22 +7611,22 @@
           {
             "jp": "異常(な)",
             "reading": "いじょう",
-            "en": "abnormal 异常 이상"
+            "en": "abnormal 异常 "
           },
           {
             "jp": "異変",
             "reading": "いへん",
-            "en": "an accident / unusual thing 异常变化 이변"
+            "en": "an accident / unusual thing 异常变化 "
           },
           {
             "jp": "同音異義語",
             "reading": "どうおんいぎご",
-            "en": "a homonym 同音异义字 동음이의어"
+            "en": "a homonym 同音异义字 "
           },
           {
             "jp": "異なる",
             "reading": "ことなる",
-            "en": "differ 不同 다르다"
+            "en": "differ 不同 "
           }
         ]
       },
@@ -7639,22 +7639,22 @@
           {
             "jp": "移転",
             "reading": "いてん",
-            "en": "a move/transfer 移动、搬家 이전"
+            "en": "a move/transfer 移动、搬家 "
           },
           {
             "jp": "移る",
             "reading": "うつる",
-            "en": "move/shift 迁 바뀌다"
+            "en": "move/shift 迁 "
           },
           {
             "jp": "移動",
             "reading": "いどう",
-            "en": "a move/transfer 转移 이동"
+            "en": "a move/transfer 转移 "
           },
           {
             "jp": "移す",
             "reading": "うつす",
-            "en": "move/shift (something) 移 옮기다"
+            "en": "move/shift (something) 移 "
           }
         ]
       },
@@ -7667,22 +7667,22 @@
           {
             "jp": "事務",
             "reading": "じむ",
-            "en": "office work 事务 사무"
+            "en": "office work 事务 "
           },
           {
             "jp": "任務",
             "reading": "にんむ",
-            "en": "a duty/task 任务 임무"
+            "en": "a duty/task 任务 "
           },
           {
             "jp": "事務所",
             "reading": "じむしょ",
-            "en": "an office 办公室 사무소"
+            "en": "an office 办公室 "
           },
           {
             "jp": "務める",
             "reading": "つとめる",
-            "en": "work/serve 任 근무하다"
+            "en": "work/serve 任 "
           }
         ]
       },
@@ -7695,17 +7695,17 @@
           {
             "jp": "変更",
             "reading": "へんこう",
-            "en": "a change/alteration 变更 변경"
+            "en": "a change/alteration 变更 "
           },
           {
             "jp": "更衣室",
             "reading": "こういしつ",
-            "en": "a change room 更衣室 탈의실"
+            "en": "a change room 更衣室 "
           },
           {
             "jp": "更新",
             "reading": "こうしん",
-            "en": "a renewal 更新 갱신"
+            "en": "a renewal 更新 "
           }
         ]
       },
@@ -7718,17 +7718,17 @@
           {
             "jp": "引っ越す",
             "reading": "ひっこす",
-            "en": "move house 搬家 이사하다"
+            "en": "move house 搬家 "
           },
           {
             "jp": "乗り越す",
             "reading": "のりこす",
-            "en": "go past (the correct station) 坐过站 하차역을 지나치다"
+            "en": "go past (the correct station) 坐过站  "
           },
           {
             "jp": "お越しの際",
             "reading": "おこしのさい",
-            "en": "(=来たたき) when you come 您来的时候 오셨을 때"
+            "en": "(=来たたき) when you come 您来的时候  "
           }
         ]
       },
@@ -7741,12 +7741,12 @@
           {
             "jp": "郊外",
             "reading": "こうがい",
-            "en": "the suburbs 郊外 교외"
+            "en": "the suburbs 郊外 "
           },
           {
             "jp": "近郊",
             "reading": "きんこう",
-            "en": "environs 近郊 근교"
+            "en": "environs 近郊 "
           }
         ]
       },
@@ -7759,12 +7759,12 @@
           {
             "jp": "円周",
             "reading": "えんしゅう",
-            "en": "the circumference (of a circle) 圆周 원주"
+            "en": "the circumference (of a circle) 圆周 "
           },
           {
             "jp": "周り",
             "reading": "まわり",
-            "en": "around/neighborhood 周围 둘레"
+            "en": "around/neighborhood 周围 "
           }
         ]
       },
@@ -7777,12 +7777,12 @@
           {
             "jp": "畑",
             "reading": "はたけ",
-            "en": "a (vegetable) field 旱田、田地 밭"
+            "en": "a (vegetable) field 旱田、田地 "
           },
           {
             "jp": "花畑",
             "reading": "はなばたけ",
-            "en": "a (flower) field 花田、花圃 꽃밭"
+            "en": "a (flower) field 花田、花圃 "
           }
         ]
       }
@@ -9006,12 +9006,12 @@
           {
             "jp": "浅い",
             "reading": "あさい",
-            "en": "shallow 浅的 얕다"
+            "en": "shallow 浅的 "
           },
           {
             "jp": "浅ましい",
             "reading": "あさましい",
-            "en": "shameful/sordid 卑鄙的 한심스럽다"
+            "en": "shameful/sordid 卑鄙的 "
           },
           {
             "jp": "浅草",
@@ -9029,12 +9029,12 @@
           {
             "jp": "~君",
             "reading": "~くん",
-            "en": "an honorific appended to names of males younger than oneself 接在同辈或晚辈的姓名后表示敬意 ~군"
+            "en": "an honorific appended to names of males younger than oneself 接在同辈或晚辈的姓名后表示敬意 ~"
           },
           {
             "jp": "君",
             "reading": "きみ",
-            "en": "you 你 너"
+            "en": "you 你 "
           }
         ]
       },
@@ -9052,7 +9052,7 @@
           {
             "jp": "久しぶり",
             "reading": "ひさしぶり",
-            "en": "long time no see 好久不见 오랜만"
+            "en": "long time no see 好久不见 "
           }
         ]
       },
@@ -9065,17 +9065,17 @@
           {
             "jp": "相互",
             "reading": "そうご",
-            "en": "mutual/reciprocal 相互 상호"
+            "en": "mutual/reciprocal 相互 "
           },
           {
             "jp": "お互いに",
             "reading": "おたがいに",
-            "en": "mutually 相互 서로"
+            "en": "mutually 相互 "
           },
           {
             "jp": "交互",
             "reading": "こうご",
-            "en": "alternation 轮流 번갈아"
+            "en": "alternation 轮流 "
           }
         ]
       },
@@ -9088,27 +9088,27 @@
           {
             "jp": "追加",
             "reading": "ついか",
-            "en": "an addition/supplement 追加 추가"
+            "en": "an addition/supplement 追加 "
           },
           {
             "jp": "追い越す",
             "reading": "おいこす",
-            "en": "overtake 赶超 추월하다"
+            "en": "overtake 赶超 "
           },
           {
             "jp": "追伸",
             "reading": "ついしん",
-            "en": "postscript (信) 附注 추신"
+            "en": "postscript (信) 附注 "
           },
           {
             "jp": "追う",
             "reading": "おう",
-            "en": "pursue 追求 쫓다"
+            "en": "pursue 追求 "
           },
           {
             "jp": "追い付く",
             "reading": "おいつく",
-            "en": "catch up 追上 따라잡다"
+            "en": "catch up 追上 "
           }
         ]
       },
@@ -9121,17 +9121,17 @@
           {
             "jp": "伸びる",
             "reading": "のびる",
-            "en": "grow/stretch 延长 늘어나다"
+            "en": "grow/stretch 延长 "
           },
           {
             "jp": "伸ばす",
             "reading": "のばす",
-            "en": "extend/stretch 伸展 늘이다"
+            "en": "extend/stretch 伸展 "
           },
           {
             "jp": "伸びをする",
             "reading": "のびをする",
-            "en": "stretch out 伸懒腰 기지개를 켜다"
+            "en": "stretch out 伸懒腰  "
           }
         ]
       },
@@ -9144,12 +9144,12 @@
           {
             "jp": "皆",
             "reading": "みな",
-            "en": "all 大家 모두"
+            "en": "all 大家 "
           },
           {
             "jp": "皆さん",
             "reading": "みなさん",
-            "en": "everyone (打招呼) 各位 여러분"
+            "en": "everyone (打招呼) 各位 "
           }
         ]
       },
@@ -9162,22 +9162,22 @@
           {
             "jp": "お歳暮",
             "reading": "せいぼ",
-            "en": "a year-end gift 年礼 연말선물"
+            "en": "a year-end gift 年礼 "
           },
           {
             "jp": "暮れ",
             "reading": "くれ",
-            "en": "end of the year 年底 연말"
+            "en": "end of the year 年底 "
           },
           {
             "jp": "暮らす",
             "reading": "くらす",
-            "en": "live/dwell 过日子 지내다"
+            "en": "live/dwell 过日子 "
           },
           {
             "jp": "夕暮れ",
             "reading": "ゆうぐれ",
-            "en": "dusk 傍晚 해질녘"
+            "en": "dusk 傍晚 "
           }
         ]
       },
@@ -9190,12 +9190,12 @@
           {
             "jp": "習慣",
             "reading": "しゅうかん",
-            "en": "a custom/habit 习惯 습관"
+            "en": "a custom/habit 习惯 "
           },
           {
             "jp": "慣れる",
             "reading": "なれる",
-            "en": "become accustomed to 习惯 익숙해지다"
+            "en": "become accustomed to 习惯 "
           }
         ]
       },
@@ -9208,22 +9208,22 @@
           {
             "jp": "生活",
             "reading": "せいかつ",
-            "en": "life/livelihood 生活 생활"
+            "en": "life/livelihood 生活 "
           },
           {
             "jp": "活字",
             "reading": "かつじ",
-            "en": "printing type 铅字 활자"
+            "en": "printing type 铅字 "
           },
           {
             "jp": "活用",
             "reading": "かつよう",
-            "en": "practical use 活用 활용"
+            "en": "practical use 活用 "
           },
           {
             "jp": "活発な",
             "reading": "かっぱつな",
-            "en": "activity/vivacity (lively) 活泼 활발"
+            "en": "activity/vivacity (lively) 活泼 "
           }
         ]
       },
@@ -9236,22 +9236,22 @@
           {
             "jp": "恋愛",
             "reading": "れんあい",
-            "en": "love/romance 恋爱 연애 사랑 356"
+            "en": "love/romance 恋爱   356"
           },
           {
             "jp": "恋人",
             "reading": "こいびと",
-            "en": "a lover (boy/girlfriend) 恋人 연인"
+            "en": "a lover (boy/girlfriend) 恋人 "
           },
           {
             "jp": "恋",
             "reading": "こい",
-            "en": "love 恋爱 사랑"
+            "en": "love 恋爱 "
           },
           {
             "jp": "恋しい",
             "reading": "こいしい",
-            "en": "homesick/lonely 爱慕 그리다"
+            "en": "homesick/lonely 爱慕 "
           }
         ]
       },
@@ -9264,17 +9264,17 @@
           {
             "jp": "健在",
             "reading": "けんざい",
-            "en": "being in good health 健在 건재"
+            "en": "being in good health 健在 "
           },
           {
             "jp": "健やかな",
             "reading": "すこやかな",
-            "en": "sound/healthy (身体、精神) 健康 건전함, 튼튼함"
+            "en": "sound/healthy (身体、精神) 健康 , "
           },
           {
             "jp": "健全な",
             "reading": "けんぜんな",
-            "en": "sound/wholesome 健全 건전"
+            "en": "sound/wholesome 健全 "
           }
         ]
       },
@@ -9287,12 +9287,12 @@
           {
             "jp": "健康",
             "reading": "けんこう",
-            "en": "health 健康 건강"
+            "en": "health 健康 "
           },
           {
             "jp": "健康保険証",
             "reading": "けんこうほけんしょう",
-            "en": "a health insurance card 健保卡 건강보험증"
+            "en": "a health insurance card 健保卡 "
           }
         ]
       },
@@ -9305,17 +9305,17 @@
           {
             "jp": "祈願",
             "reading": "きがん",
-            "en": "a prayer 祈祷 기원"
+            "en": "a prayer 祈祷 "
           },
           {
             "jp": "祈る",
             "reading": "いのる",
-            "en": "pray 祈祷、祝福 빌다"
+            "en": "pray 祈祷、祝福 "
           },
           {
             "jp": "祈り",
             "reading": "いのり",
-            "en": "a prayer/grace 祈祷、祷告 기도"
+            "en": "a prayer/grace 祈祷、祷告 "
           }
         ]
       }
@@ -9401,12 +9401,12 @@
           {
             "jp": "幸福",
             "reading": "こうふく",
-            "en": "Happiness 幸福 행복"
+            "en": "Happiness 幸福 "
           },
           {
             "jp": "福祉",
             "reading": "ふくし",
-            "en": "Welfare 福利 복지"
+            "en": "Welfare 福利 "
           }
         ]
       },
@@ -9419,22 +9419,22 @@
           {
             "jp": "拝見",
             "reading": "はいけん",
-            "en": "looking (humble form) 看(谦) 삼가 봄"
+            "en": "looking (humble form) 看(谦)  "
           },
           {
             "jp": "参拝者",
             "reading": "さんぱいしゃ",
-            "en": "visitor (to a shrine) 参拜的人 참배자"
+            "en": "visitor (to a shrine) 参拜的人 "
           },
           {
             "jp": "拝借",
             "reading": "はいしゃく",
-            "en": "borrowing (humble form) (谦)借 삼가 빌려 씀"
+            "en": "borrowing (humble form) (谦)借   "
           },
           {
             "jp": "拝む",
             "reading": "おが.む",
-            "en": "worship 拜 배례하다"
+            "en": "worship 拜 "
           }
         ]
       },
@@ -9447,17 +9447,17 @@
           {
             "jp": "打者",
             "reading": "だしゃ",
-            "en": "a batter/hitter (棒球)击球手 타자"
+            "en": "a batter/hitter (棒球)击球手 "
           },
           {
             "jp": "打つ",
             "reading": "う.つ",
-            "en": "strike/hit 打 치다"
+            "en": "strike/hit 打 "
           },
           {
             "jp": "打ち合わせ",
             "reading": "うちあわせ",
-            "en": "arrangement in advance 商量、磋商 미리 상의함"
+            "en": "arrangement in advance 商量、磋商  "
           }
         ]
       },
@@ -9470,7 +9470,7 @@
           {
             "jp": "伺う",
             "reading": "うかが.う",
-            "en": "visit (humble form) 拜访、打听 여쭙다"
+            "en": "visit (humble form) 拜访、打听 "
           }
         ]
       },
@@ -9483,22 +9483,22 @@
           {
             "jp": "幸運(な)",
             "reading": "こううん",
-            "en": "lucky 幸运 행운"
+            "en": "lucky 幸运 "
           },
           {
             "jp": "幸せ(な)",
             "reading": "しあわせ",
-            "en": "happy 幸福 행복함"
+            "en": "happy 幸福 "
           },
           {
             "jp": "不幸(な)",
             "reading": "ふこう",
-            "en": "unhappy/unfortunate 不幸 불행"
+            "en": "unhappy/unfortunate 不幸 "
           },
           {
             "jp": "幸い",
             "reading": "さいわい",
-            "en": "good fortune / fortunately 幸运、幸亏 다행히"
+            "en": "good fortune / fortunately 幸运、幸亏 "
           }
         ]
       },
@@ -9511,22 +9511,22 @@
           {
             "jp": "失礼(な)",
             "reading": "しつれい",
-            "en": "rude 失礼 실례"
+            "en": "rude 失礼 "
           },
           {
             "jp": "失望",
             "reading": "しつぼう",
-            "en": "despair 失望 실망"
+            "en": "despair 失望 "
           },
           {
             "jp": "失業",
             "reading": "しつぎょう",
-            "en": "unemployment 失业 실업"
+            "en": "unemployment 失业 "
           },
           {
             "jp": "失う",
             "reading": "うしな.う",
-            "en": "lose 丧失 잃어버리다"
+            "en": "lose 丧失 "
           }
         ]
       },
@@ -9539,22 +9539,22 @@
           {
             "jp": "突然",
             "reading": "とつぜん",
-            "en": "sudden 突然 갑자기"
+            "en": "sudden 突然 "
           },
           {
             "jp": "突き当たり",
             "reading": "つきあたり",
-            "en": "end of (e.g. end of the road) (通道走道的)尽头 막다른 곳"
+            "en": "end of (e.g. end of the road) (通道走道的)尽头  "
           },
           {
             "jp": "煙突",
             "reading": "えんとつ",
-            "en": "a chimney 烟囱 굴뚝"
+            "en": "a chimney 烟囱 "
           },
           {
             "jp": "突っ込む",
             "reading": "つっこ.む",
-            "en": "thrust into / plunge 深入、闯进 돌진하다"
+            "en": "thrust into / plunge 深入、闯进 "
           }
         ]
       },
@@ -9567,22 +9567,22 @@
           {
             "jp": "全然",
             "reading": "ぜんぜん",
-            "en": "(not) at all 一点也 전혀"
+            "en": "(not) at all 一点也 "
           },
           {
             "jp": "当然",
             "reading": "とうぜん",
-            "en": "of course 当然 당연"
+            "en": "of course 当然 "
           },
           {
             "jp": "自然",
             "reading": "しぜん",
-            "en": "nature/natural 自然 자연"
+            "en": "nature/natural 自然 "
           },
           {
             "jp": "天然",
             "reading": "てんねん",
-            "en": "natural/unartificial 天然 천연"
+            "en": "natural/unartificial 天然 "
           }
         ]
       },
@@ -9595,17 +9595,17 @@
           {
             "jp": "諸～",
             "reading": "しょ",
-            "en": "various 众多 여러～"
+            "en": "various 众多 ～"
           },
           {
             "jp": "諸般",
             "reading": "しょはん",
-            "en": "variety / all sorts 各种 제반"
+            "en": "variety / all sorts 各种 "
           },
           {
             "jp": "諸問題",
             "reading": "しょもんだい",
-            "en": "various problems 众多问题 여러 문제"
+            "en": "various problems 众多问题  "
           }
         ]
       },
@@ -9618,27 +9618,27 @@
           {
             "jp": "事情",
             "reading": "じじょう",
-            "en": "circumstance 情况、缘故 사정"
+            "en": "circumstance 情况、缘故 "
           },
           {
             "jp": "表情",
             "reading": "ひょうじょう",
-            "en": "a facial expression 表情 표정"
+            "en": "a facial expression 表情 "
           },
           {
             "jp": "情け",
             "reading": "なさけ",
-            "en": "sympathy/mercy 同情 인정"
+            "en": "sympathy/mercy 同情 "
           },
           {
             "jp": "友情",
             "reading": "ゆうじょう",
-            "en": "a friendship 友情 우정"
+            "en": "a friendship 友情 "
           },
           {
             "jp": "情けない",
             "reading": "なさけない",
-            "en": "woeful/disgraceful 可怜、可耻 한심하다"
+            "en": "woeful/disgraceful 可怜、可耻 "
           }
         ]
       },
@@ -9651,22 +9651,22 @@
           {
             "jp": "引退",
             "reading": "いんたい",
-            "en": "retirement 引退、隐居 은퇴"
+            "en": "retirement 引退、隐居 "
           },
           {
             "jp": "退学",
             "reading": "たいがく",
-            "en": "withdrawal from a course/school 退学 퇴학"
+            "en": "withdrawal from a course/school 退学 "
           },
           {
             "jp": "退院",
             "reading": "たいいん",
-            "en": "discharge from hospital 出院、退院 퇴원"
+            "en": "discharge from hospital 出院、退院 "
           },
           {
             "jp": "退く",
             "reading": "しりぞ.く",
-            "en": "retreat/withdraw 后退 물러나다"
+            "en": "retreat/withdraw 后退 "
           }
         ]
       },
@@ -9679,22 +9679,22 @@
           {
             "jp": "職業",
             "reading": "しょくぎょう",
-            "en": "an occupation/profession 职业 직업"
+            "en": "an occupation/profession 职业 "
           },
           {
             "jp": "退職",
             "reading": "たいしょく",
-            "en": "retirement 退职 퇴직"
+            "en": "retirement 退职 "
           },
           {
             "jp": "職場",
             "reading": "しょくば",
-            "en": "a workplace 工作地方 직장"
+            "en": "a workplace 工作地方 "
           },
           {
             "jp": "職人",
             "reading": "しょくにん",
-            "en": "an artisan 手艺师傅、工匠 장인"
+            "en": "an artisan 手艺师傅、工匠 "
           }
         ]
       },
@@ -9707,7 +9707,7 @@
           {
             "jp": "紹介",
             "reading": "しょうかい",
-            "en": "introduction 介绍 소개"
+            "en": "introduction 介绍 "
           }
         ]
       },
@@ -9720,12 +9720,12 @@
           {
             "jp": "介入",
             "reading": "かいにゅう",
-            "en": "intervention 插手、干预 개입"
+            "en": "intervention 插手、干预 "
           },
           {
             "jp": "介護",
             "reading": "かいご",
-            "en": "nursing care 护理病人、老人 간호"
+            "en": "nursing care 护理病人、老人 "
           }
         ]
       }
@@ -10228,12 +10228,12 @@
           {
             "jp": "夢中",
             "reading": "むちゅう",
-            "en": "be engrossed 着迷 열중함"
+            "en": "be engrossed 着迷 "
           },
           {
             "jp": "夢",
             "reading": "ゆめ",
-            "en": "a dream 梦 꿈"
+            "en": "a dream 梦 "
           }
         ]
       },
@@ -10246,17 +10246,17 @@
           {
             "jp": "専門",
             "reading": "せんもん",
-            "en": "specialty 专业, 专长 전공"
+            "en": "specialty 专业, 专长 "
           },
           {
             "jp": "専攻",
             "reading": "せんこう",
-            "en": "a major / specialty 专门研究, 主修 전공"
+            "en": "a major / specialty 专门研究, 主修 "
           },
           {
             "jp": "専用",
             "reading": "せんよう",
-            "en": "exclusive use 专用, 专门使用 전용"
+            "en": "exclusive use 专用, 专门使用 "
           }
         ]
       },
@@ -10269,12 +10269,12 @@
           {
             "jp": "歴史",
             "reading": "れきし",
-            "en": "history 历史 역사"
+            "en": "history 历史 "
           },
           {
             "jp": "〜史",
             "reading": "し",
-            "en": "history ~史 ~사"
+            "en": "history ~史 ~"
           }
         ]
       },
@@ -10287,12 +10287,12 @@
           {
             "jp": "区域",
             "reading": "くいき",
-            "en": "an area / zone 区域 구역"
+            "en": "an area / zone 区域 "
           },
           {
             "jp": "地域",
             "reading": "ちいき",
-            "en": "an area / region 地区 지역"
+            "en": "an area / region 地区 "
           }
         ]
       },
@@ -10305,17 +10305,17 @@
           {
             "jp": "祭日",
             "reading": "さいじつ",
-            "en": "a holiday / festival day 节日 国민의 축세일"
+            "en": "a holiday / festival day 节日 国 "
           },
           {
             "jp": "(お)祭り",
             "reading": "まつり",
-            "en": "festival 祭祀 축제"
+            "en": "festival 祭祀 "
           },
           {
             "jp": "〜祭",
             "reading": "さい",
-            "en": "festival ~节 ~제"
+            "en": "festival ~节 ~"
           }
         ]
       },
@@ -10328,17 +10328,17 @@
           {
             "jp": "検査",
             "reading": "けんさ",
-            "en": "an inspection / test 检查 검사"
+            "en": "an inspection / test 检查 "
           },
           {
             "jp": "審査",
             "reading": "しんさ",
-            "en": "examination / judgement 审查 심사"
+            "en": "examination / judgement 审查 "
           },
           {
             "jp": "調査",
             "reading": "ちょうさ",
-            "en": "an investigation / inquiry 调查 조사"
+            "en": "an investigation / inquiry 调查 "
           }
         ]
       },
@@ -10351,22 +10351,22 @@
           {
             "jp": "〜戦",
             "reading": "せん",
-            "en": "a fight / tournament ~战 ~전"
+            "en": "a fight / tournament ~战 ~"
           },
           {
             "jp": "戦争",
             "reading": "せんそう",
-            "en": "war 战争 전쟁"
+            "en": "war 战争 "
           },
           {
             "jp": "大戦",
             "reading": "たいせん",
-            "en": "a major war (e.g. First World War) 大战 대전"
+            "en": "a major war (e.g. First World War) 大战 "
           },
           {
             "jp": "戦う",
             "reading": "たたかう",
-            "en": "fight 博斗 싸우다"
+            "en": "fight 博斗 "
           }
         ]
       },
@@ -10379,12 +10379,12 @@
           {
             "jp": "競争",
             "reading": "きょうそう",
-            "en": "competition 竞争 경쟁"
+            "en": "competition 竞争 "
           },
           {
             "jp": "争う",
             "reading": "あらそう",
-            "en": "fight / dispute 争夺 다투다, 경쟁하다"
+            "en": "fight / dispute 争夺 , "
           }
         ]
       },
@@ -10397,12 +10397,12 @@
           {
             "jp": "将来",
             "reading": "しょうらい",
-            "en": "future 将来 장래"
+            "en": "future 将来 "
           },
           {
             "jp": "将棋",
             "reading": "しょうぎ",
-            "en": "shogi 日本象棋、将棋 장기"
+            "en": "shogi 日本象棋、将棋 "
           }
         ]
       },
@@ -10415,22 +10415,22 @@
           {
             "jp": "歩道橋",
             "reading": "ほどうきょう",
-            "en": "a footbridge 天桥 육교"
+            "en": "a footbridge 天桥 "
           },
           {
             "jp": "橋",
             "reading": "はし",
-            "en": "a bridge 桥梁 다리"
+            "en": "a bridge 桥梁 "
           },
           {
             "jp": "鉄橋",
             "reading": "てっきょう",
-            "en": "a railroad bridge 铁桥 철교"
+            "en": "a railroad bridge 铁桥 "
           },
           {
             "jp": "架け橋",
             "reading": "かけはし",
-            "en": "a bridge / go-between 桥梁 가교"
+            "en": "a bridge / go-between 桥梁 "
           }
         ]
       },
@@ -10443,22 +10443,22 @@
           {
             "jp": "憎い",
             "reading": "にくい",
-            "en": "detestable 憎恨、嫉妒 밉다"
+            "en": "detestable 憎恨、嫉妒 "
           },
           {
             "jp": "憎しみ",
             "reading": "にくしみ",
-            "en": "hatred / enmity 憎恨 미움"
+            "en": "hatred / enmity 憎恨 "
           },
           {
             "jp": "憎む",
             "reading": "にくむ",
-            "en": "detest 憎恨 미워하다"
+            "en": "detest 憎恨 "
           },
           {
             "jp": "憎らしい",
             "reading": "にくらしい",
-            "en": "detestable 可憎的 밉살스럽다"
+            "en": "detestable 可憎的 "
           }
         ]
       },
@@ -10471,12 +10471,12 @@
           {
             "jp": "自殺",
             "reading": "じさつ",
-            "en": "a suicide 自杀 자살"
+            "en": "a suicide 自杀 "
           },
           {
             "jp": "殺す",
             "reading": "ころす",
-            "en": "kill 杀 죽이다"
+            "en": "kill 杀 "
           }
         ]
       },
@@ -10489,17 +10489,17 @@
           {
             "jp": "悲観",
             "reading": "ひかん",
-            "en": "pessimism 悲观 비관"
+            "en": "pessimism 悲观 "
           },
           {
             "jp": "悲しい",
             "reading": "かなしい",
-            "en": "sad 悲伤的 슬프다"
+            "en": "sad 悲伤的 "
           },
           {
             "jp": "悲しむ",
             "reading": "かなしむ",
-            "en": "grieve / lament 感到悲伤、悲痛 슬퍼하다"
+            "en": "grieve / lament 感到悲伤、悲痛 "
           }
         ]
       },
@@ -10512,12 +10512,12 @@
           {
             "jp": "恥",
             "reading": "はじ",
-            "en": "shame / humiliation 丢脸、耻辱 수치, 부끄러움"
+            "en": "shame / humiliation 丢脸、耻辱 , "
           },
           {
             "jp": "恥ずかしい",
             "reading": "はずかしい",
-            "en": "be ashamed / embarrassed 羞耻、害羞 부끄럽다"
+            "en": "be ashamed / embarrassed 羞耻、害羞 "
           }
         ]
       },
@@ -10530,22 +10530,22 @@
           {
             "jp": "感じる",
             "reading": "かんじる",
-            "en": "feel 感觉 느끼다"
+            "en": "feel 感觉 "
           },
           {
             "jp": "感心(な)",
             "reading": "かんしん",
-            "en": "admirable 佩服 감탄"
+            "en": "admirable 佩服 "
           },
           {
             "jp": "感情",
             "reading": "かんじょう",
-            "en": "emotion 感情 감정"
+            "en": "emotion 感情 "
           },
           {
             "jp": "感動",
             "reading": "かんどう",
-            "en": "emotion / inspiration 感动 감동"
+            "en": "emotion / inspiration 感动 "
           }
         ]
       },
@@ -10558,22 +10558,22 @@
           {
             "jp": "地球",
             "reading": "ちきゅう",
-            "en": "the earth 地球 지구"
+            "en": "the earth 地球 "
           },
           {
             "jp": "野球",
             "reading": "やきゅう",
-            "en": "a baseball 棒球 야구"
+            "en": "a baseball 棒球 "
           },
           {
             "jp": "電球",
             "reading": "でんきゅう",
-            "en": "a light bulb 灯泡 전구"
+            "en": "a light bulb 灯泡 "
           },
           {
             "jp": "球",
             "reading": "たま",
-            "en": "a ball / sphere 球 구슬"
+            "en": "a ball / sphere 球 "
           }
         ]
       },
@@ -10586,12 +10586,12 @@
           {
             "jp": "平和",
             "reading": "へいわ",
-            "en": "peace 和平、和睦 평화"
+            "en": "peace 和平、和睦 "
           },
           {
             "jp": "和式",
             "reading": "わしき",
-            "en": "Japanese style 日本式 일본식"
+            "en": "Japanese style 日本式 "
           }
         ]
       },
@@ -10604,22 +10604,22 @@
           {
             "jp": "愛",
             "reading": "あい",
-            "en": "love 爱 사랑"
+            "en": "love 爱 "
           },
           {
             "jp": "愛情",
             "reading": "あいじょう",
-            "en": "love / affection 爱情 애정"
+            "en": "love / affection 爱情 "
           },
           {
             "jp": "愛する",
             "reading": "あいする",
-            "en": "love 疼爱 사랑하다"
+            "en": "love 疼爱 "
           },
           {
             "jp": "恋愛",
             "reading": "れんあい",
-            "en": "love / romance 恋爱 연애"
+            "en": "love / romance 恋爱 "
           }
         ]
       },
@@ -10632,12 +10632,12 @@
           {
             "jp": "仲",
             "reading": "なか",
-            "en": "relations / terms 关系、交情 사이, 관계"
+            "en": "relations / terms 关系、交情 , "
           },
           {
             "jp": "仲間",
             "reading": "なかま",
-            "en": "a friend / circle (of friends, etc) 伙伴、同事、同类 동료"
+            "en": "a friend / circle (of friends, etc) 伙伴、同事、同类 "
           }
         ]
       },
@@ -10650,12 +10650,12 @@
           {
             "jp": "改良",
             "reading": "かいりょう",
-            "en": "improvement / reform 改良 개량"
+            "en": "improvement / reform 改良 "
           },
           {
             "jp": "良い",
             "reading": "よい",
-            "en": "good 好的 좋다"
+            "en": "good 好的 "
           }
         ]
       }
@@ -11228,7 +11228,7 @@
   },
   "k5d1": {
     "title": "第5週 1日目 家庭用品(ポット・ヒーター)",
-    "titleEn": "Household Goods (thermos flask, heater) 家庭用品 (热水瓶·电炉) 가정용품 (포트·히터)",
+    "titleEn": "Household Goods (thermos flask, heater) 家庭用品 (热水瓶·电炉)  (·)",
     "kanji": [
       {
         "char": "傾",
@@ -11239,17 +11239,17 @@
           {
             "jp": "傾向",
             "reading": "けいこう",
-            "en": "a trend/tendency 倾向 경향"
+            "en": "a trend/tendency 倾向 "
           },
           {
             "jp": "傾く",
             "reading": "かたむく",
-            "en": "tilt/incline 倾斜 기울다"
+            "en": "tilt/incline 倾斜 "
           },
           {
             "jp": "傾ける",
             "reading": "かたむける",
-            "en": "(make something) tilt/incline 使倾斜 기울이다"
+            "en": "(make something) tilt/incline 使倾斜 "
           },
           {
             "jp": "傾斜",
@@ -11267,17 +11267,17 @@
           {
             "jp": "横転",
             "reading": "おうてん",
-            "en": "overturn 横倒侧下、跌倒 옆으로 넘어짐"
+            "en": "overturn 横倒侧下、跌倒  "
           },
           {
             "jp": "横",
             "reading": "よこ",
-            "en": "side 横 옆"
+            "en": "side 横 "
           },
           {
             "jp": "横断歩道",
             "reading": "おうだんほどう",
-            "en": "a pedestrian crossing 斑马线 횡단보도"
+            "en": "a pedestrian crossing 斑马线 "
           }
         ]
       },
@@ -11290,22 +11290,22 @@
           {
             "jp": "熱湯",
             "reading": "ねっとう",
-            "en": "boiling water 热水 뜨거운 물"
+            "en": "boiling water 热水  "
           },
           {
             "jp": "湯飲み",
             "reading": "ゆのみ",
-            "en": "teacup 茶杯 찻잔"
+            "en": "teacup 茶杯 "
           },
           {
             "jp": "湯",
             "reading": "ゆ",
-            "en": "hot water 热水 뜨거운 물"
+            "en": "hot water 热水  "
           },
           {
             "jp": "湯気",
             "reading": "ゆげ",
-            "en": "steam 蒸汽 김, 수증기"
+            "en": "steam 蒸汽 , "
           }
         ]
       },
@@ -11318,22 +11318,22 @@
           {
             "jp": "恐怖",
             "reading": "きょうふ",
-            "en": "fear 恐怖 공포"
+            "en": "fear 恐怖 "
           },
           {
             "jp": "恐れ",
             "reading": "おそれ",
-            "en": "fear/risk 有…的危险 두려움, 공포"
+            "en": "fear/risk 有…的危险 , "
           },
           {
             "jp": "恐ろしい",
             "reading": "おそろしい",
-            "en": "fearful/terrible 可怕的 두렵다"
+            "en": "fearful/terrible 可怕的 "
           },
           {
             "jp": "恐れ入ります",
             "reading": "おそれいります",
-            "en": "I beg your pardon. / Excuse me. 不好意思 죄송합니다"
+            "en": "I beg your pardon. / Excuse me. 不好意思 "
           }
         ]
       },
@@ -11346,17 +11346,17 @@
           {
             "jp": "原料",
             "reading": "げんりょう",
-            "en": "(raw) material 原料 원료"
+            "en": "(raw) material 原料 "
           },
           {
             "jp": "野原",
             "reading": "のはら",
-            "en": "a field 原野 들판"
+            "en": "a field 原野 "
           },
           {
             "jp": "原産",
             "reading": "げんさん",
-            "en": "origin/native 原产 원산"
+            "en": "origin/native 原产 "
           }
         ]
       },
@@ -11369,12 +11369,12 @@
           {
             "jp": "原因",
             "reading": "げんいん",
-            "en": "a cause 原因 원인"
+            "en": "a cause 原因 "
           },
           {
             "jp": "要因",
             "reading": "よういん",
-            "en": "a factor 主要原因 요인"
+            "en": "a factor 主要原因 "
           }
         ]
       },
@@ -11387,22 +11387,22 @@
           {
             "jp": "位置",
             "reading": "いち",
-            "en": "a location 位置 위치"
+            "en": "a location 位置 "
           },
           {
             "jp": "置く",
             "reading": "おく",
-            "en": "put 放置 두다"
+            "en": "put 放置 "
           },
           {
             "jp": "装置",
             "reading": "そうち",
-            "en": "device 装置 장치"
+            "en": "device 装置 "
           },
           {
             "jp": "物置",
             "reading": "ものおき",
-            "en": "a closet/storeroom 仓库小屋 광, 곳간"
+            "en": "a closet/storeroom 仓库小屋 , "
           }
         ]
       },
@@ -11415,22 +11415,22 @@
           {
             "jp": "寝室",
             "reading": "しんしつ",
-            "en": "a bedroom 寝室 침실"
+            "en": "a bedroom 寝室 "
           },
           {
             "jp": "寝る",
             "reading": "ねる",
-            "en": "sleep 睡觉 자다"
+            "en": "sleep 睡觉 "
           },
           {
             "jp": "寝坊",
             "reading": "ねぼう",
-            "en": "a late riser / getting up late 早上赖床 늦잠"
+            "en": "a late riser / getting up late 早上赖床 "
           },
           {
             "jp": "昼寝",
             "reading": "ひるね",
-            "en": "a nap 午觉 낮잠"
+            "en": "a nap 午觉 "
           }
         ]
       },
@@ -11443,22 +11443,22 @@
           {
             "jp": "熱",
             "reading": "ねつ",
-            "en": "heat/fever 热 열"
+            "en": "heat/fever 热 "
           },
           {
             "jp": "熱中",
             "reading": "ねっちゅう",
-            "en": "mania/passion/enthusiasm 热中 열중"
+            "en": "mania/passion/enthusiasm 热中 "
           },
           {
             "jp": "熱心(な)",
             "reading": "ねっしん(な)",
-            "en": "enthusiastic/zealous 热心 열심"
+            "en": "enthusiastic/zealous 热心 "
           },
           {
             "jp": "熱い",
             "reading": "あつい",
-            "en": "hot 热 뜨겁다"
+            "en": "hot 热 "
           }
         ]
       },
@@ -11471,17 +11471,17 @@
           {
             "jp": "燃焼",
             "reading": "ねんしょう",
-            "en": "combustion 燃烧 연소"
+            "en": "combustion 燃烧 "
           },
           {
             "jp": "焼く",
             "reading": "やく",
-            "en": "roast/grill 烧 태우다, 굽다"
+            "en": "roast/grill 烧 , "
           },
           {
             "jp": "焼ける",
             "reading": "やける",
-            "en": "be burnt/baked 燃烧 타다, 구워지다"
+            "en": "be burnt/baked 燃烧 , "
           }
         ]
       },
@@ -11494,22 +11494,22 @@
           {
             "jp": "接触",
             "reading": "せっしょく",
-            "en": "contact 接触 접촉"
+            "en": "contact 接触 "
           },
           {
             "jp": "触れる",
             "reading": "ふれる",
-            "en": "touch/mention 触 닿다, 접촉하다"
+            "en": "touch/mention 触 , "
           },
           {
             "jp": "感触",
             "reading": "かんしょく",
-            "en": "(the sense of) touch 感触 감촉"
+            "en": "(the sense of) touch 感触 "
           },
           {
             "jp": "触る",
             "reading": "さわる",
-            "en": "touch 摸 건드리다, 만지다"
+            "en": "touch 摸 , "
           }
         ]
       },
@@ -11522,22 +11522,22 @@
           {
             "jp": "灯油",
             "reading": "とうゆ",
-            "en": "kerosene 灯油 등유"
+            "en": "kerosene 灯油 "
           },
           {
             "jp": "蛍光灯",
             "reading": "けいこうとう",
-            "en": "a fluorescent light 日光灯 형광등"
+            "en": "a fluorescent light 日光灯 "
           },
           {
             "jp": "灯台",
             "reading": "とうだい",
-            "en": "a lighthouse 灯台 등대"
+            "en": "a lighthouse 灯台 "
           },
           {
             "jp": "電灯",
             "reading": "でんとう",
-            "en": "an electric light 电灯 전등"
+            "en": "an electric light 电灯 "
           }
         ]
       },
@@ -11550,22 +11550,22 @@
           {
             "jp": "石油",
             "reading": "せきゆ",
-            "en": "oil (petroleum) 石油 석유"
+            "en": "oil (petroleum) 石油 "
           },
           {
             "jp": "油断",
             "reading": "ゆだん",
-            "en": "negligence/inattention 疏忽大意 방심, 부주의"
+            "en": "negligence/inattention 疏忽大意 , "
           },
           {
             "jp": "原油",
             "reading": "げんゆ",
-            "en": "crude oil 原油 원유"
+            "en": "crude oil 原油 "
           },
           {
             "jp": "油",
             "reading": "あぶら",
-            "en": "oil 油 기름"
+            "en": "oil 油 "
           }
         ]
       },
@@ -11578,22 +11578,22 @@
           {
             "jp": "余分(な)",
             "reading": "よぶん(な)",
-            "en": "excessive 剩余 여분"
+            "en": "excessive 剩余 "
           },
           {
             "jp": "余裕",
             "reading": "よゆう",
-            "en": "leeway (e.g. time to spare) 余裕、从容 여유"
+            "en": "leeway (e.g. time to spare) 余裕、从容 "
           },
           {
             "jp": "余計(な)",
             "reading": "よけい(な)",
-            "en": "excessive / needless 多余 쓸데없음"
+            "en": "excessive / needless 多余 "
           },
           {
             "jp": "余る",
             "reading": "あまる",
-            "en": "be left over 剩余 남다, (수량이) 넘다"
+            "en": "be left over 剩余 , () "
           }
         ]
       }
@@ -12021,22 +12021,22 @@
           {
             "jp": "用途",
             "reading": "ようと",
-            "en": "a use 用途 용도"
+            "en": "a use 用途 "
           },
           {
             "jp": "中途",
             "reading": "ちゅうと",
-            "en": "midway/unfinished 中途 중도"
+            "en": "midway/unfinished 中途 "
           },
           {
             "jp": "途中",
             "reading": "とちゅう",
-            "en": "on the way / part way 途中 도중"
+            "en": "on the way / part way 途中 "
           },
           {
             "jp": "途端",
             "reading": "とたん",
-            "en": "just as (...something happened) 刚一…时 바로 그 순간, 하자마자"
+            "en": "just as (...something happened) 刚一…时   , "
           }
         ]
       },
@@ -12049,22 +12049,22 @@
           {
             "jp": "道具",
             "reading": "どうぐ",
-            "en": "a tool 道具 도구"
+            "en": "a tool 道具 "
           },
           {
             "jp": "家具",
             "reading": "かぐ",
-            "en": "furniture 家具 가구"
+            "en": "furniture 家具 "
           },
           {
             "jp": "具合",
             "reading": "ぐあい",
-            "en": "condition 情况 형편, 상태"
+            "en": "condition 情况 , "
           },
           {
             "jp": "雨具",
             "reading": "あまぐ",
-            "en": "rain gear 雨具 우비"
+            "en": "rain gear 雨具 "
           }
         ]
       },
@@ -12077,22 +12077,22 @@
           {
             "jp": "起床",
             "reading": "きしょう",
-            "en": "getting up 起床 기상"
+            "en": "getting up 起床 "
           },
           {
             "jp": "床屋",
             "reading": "とこや",
-            "en": "a barbershop 理发店 이발소"
+            "en": "a barbershop 理发店 "
           },
           {
             "jp": "床の間",
             "reading": "とこのま",
-            "en": "alcove (a place for traditional pictures and ornaments)\n和式房间里为挂画和陈设装饰物品而略将地板加高的地方\n일본건축에서 객실인 다다미방의 정면에, 바닥을 한층 높여 만들어 놓은 곳. 벽에는 족자를 걸고, 바닥에 도자기, 꽃병 등을 장식한다."
+            "en": "alcove (a place for traditional pictures and ornaments)\n和式房间里为挂画和陈设装饰物品而略将地板加高的地方\n   ,      .   ,  ,   ."
           },
           {
             "jp": "床",
             "reading": "ゆか",
-            "en": "floor (室内的) 地板 마루"
+            "en": "floor (室内的) 地板 "
           }
         ]
       },
@@ -12105,7 +12105,7 @@
           {
             "jp": "壁",
             "reading": "かべ",
-            "en": "wall 墙壁 벽"
+            "en": "wall 墙壁 "
           }
         ]
       },
@@ -12118,17 +12118,17 @@
           {
             "jp": "乾電池",
             "reading": "かんでんち",
-            "en": "a dry cell battery 干电池 건전지"
+            "en": "a dry cell battery 干电池 "
           },
           {
             "jp": "乾く",
             "reading": "かわく",
-            "en": "dry 干 마르다, 건조하다"
+            "en": "dry 干 , "
           },
           {
             "jp": "乾かす",
             "reading": "かわかす",
-            "en": "dry something 弄…干、晒干、烤干 말리다"
+            "en": "dry something 弄…干、晒干、烤干 "
           }
         ]
       },
@@ -12141,22 +12141,22 @@
           {
             "jp": "毛布",
             "reading": "もうふ",
-            "en": "a blanket 毛毯 毛포, 담요"
+            "en": "a blanket 毛毯 毛, "
           },
           {
             "jp": "座布団",
             "reading": "ざぶとん",
-            "en": "zabuton; square Japanese floor cushion 坐垫 방석"
+            "en": "zabuton; square Japanese floor cushion 坐垫 "
           },
           {
             "jp": "布",
             "reading": "ぬの",
-            "en": "a cloth 布 직물"
+            "en": "a cloth 布 "
           },
           {
             "jp": "分布",
             "reading": "ぶんぷ",
-            "en": "distribution 分布 분포"
+            "en": "distribution 分布 "
           }
         ]
       },
@@ -12169,12 +12169,12 @@
           {
             "jp": "電柱",
             "reading": "でんちゅう",
-            "en": "a telegraph pole 电线杆子 전신주"
+            "en": "a telegraph pole 电线杆子 "
           },
           {
             "jp": "柱",
             "reading": "はしら",
-            "en": "a pillar/post 柱子 기둥"
+            "en": "a pillar/post 柱子 "
           }
         ]
       },
@@ -12187,22 +12187,22 @@
           {
             "jp": "防虫剤",
             "reading": "ぼうちゅうざい",
-            "en": "insect repellant 防虫剂 방충제"
+            "en": "insect repellant 防虫剂 "
           },
           {
             "jp": "虫",
             "reading": "むし",
-            "en": "insect 虫 벌레"
+            "en": "insect 虫 "
           },
           {
             "jp": "殺虫剤",
             "reading": "さっちゅうざい",
-            "en": "an insecticide 杀虫剂 살충제"
+            "en": "an insecticide 杀虫剂 "
           },
           {
             "jp": "虫歯",
             "reading": "むしば",
-            "en": "a decayed tooth 蛀牙 충치"
+            "en": "a decayed tooth 蛀牙 "
           }
         ]
       },
@@ -12215,22 +12215,22 @@
           {
             "jp": "歯科",
             "reading": "しか",
-            "en": "dentistry 牙科 치과"
+            "en": "dentistry 牙科 "
           },
           {
             "jp": "歯医者",
             "reading": "はいしゃ",
-            "en": "a dentist 牙医 치과 의사"
+            "en": "a dentist 牙医  "
           },
           {
             "jp": "歯周病",
             "reading": "ししゅうびょう",
-            "en": "periodontal disease 牙周病 치주병"
+            "en": "periodontal disease 牙周病 "
           },
           {
             "jp": "歯車",
             "reading": "はぐるま",
-            "en": "a toothed wheel 齿轮 톱니바퀴"
+            "en": "a toothed wheel 齿轮 "
           }
         ]
       },
@@ -12243,22 +12243,22 @@
           {
             "jp": "予防",
             "reading": "よぼう",
-            "en": "prevention/precaution 预防 예방"
+            "en": "prevention/precaution 预防 "
           },
           {
             "jp": "防止",
             "reading": "ぼうし",
-            "en": "prevention 防止 방지"
+            "en": "prevention 防止 "
           },
           {
             "jp": "消防",
             "reading": "しょうぼう",
-            "en": "fire fighting 消防 소방"
+            "en": "fire fighting 消防 "
           },
           {
             "jp": "防ぐ",
             "reading": "ふせぐ",
-            "en": "prevent 防止 막다, 방지하다"
+            "en": "prevent 防止 , "
           }
         ]
       },
@@ -12271,12 +12271,12 @@
           {
             "jp": "磨く",
             "reading": "みがく",
-            "en": "polish/brush 磨 닦다, 광을 내다"
+            "en": "polish/brush 磨 ,  "
           },
           {
             "jp": "歯磨き",
             "reading": "はみがき",
-            "en": "tooth brushing 刷牙、牙刷 양치질"
+            "en": "tooth brushing 刷牙、牙刷 "
           }
         ]
       },
@@ -12289,22 +12289,22 @@
           {
             "jp": "抜群",
             "reading": "ばつぐん",
-            "en": "outstanding/unrivaled 出众 발군, 뛰어남"
+            "en": "outstanding/unrivaled 出众 , "
           },
           {
             "jp": "抜く",
             "reading": "ぬく",
-            "en": "remove/extract/omit 抽出 뽑다, 빼내다"
+            "en": "remove/extract/omit 抽出 , "
           },
           {
             "jp": "抜ける",
             "reading": "ぬける",
-            "en": "fall out / be missing 脱落 빠지다"
+            "en": "fall out / be missing 脱落 "
           },
           {
             "jp": "追い抜く",
             "reading": "おいぬく",
-            "en": "leave behind 赶过 추월하다"
+            "en": "leave behind 赶过 "
           }
         ]
       },
@@ -12317,12 +12317,12 @@
           {
             "jp": "悩む",
             "reading": "なやむ",
-            "en": "worry (about something) 烦恼 고민하다"
+            "en": "worry (about something) 烦恼 "
           },
           {
             "jp": "悩み",
             "reading": "なやみ",
-            "en": "a worry/distress 烦恼 고민"
+            "en": "a worry/distress 烦恼 "
           }
         ]
       },
@@ -12335,17 +12335,17 @@
           {
             "jp": "髪",
             "reading": "かみ",
-            "en": "hair 头发 머리카락"
+            "en": "hair 头发 "
           },
           {
             "jp": "白髪",
             "reading": "しらが",
-            "en": "white/gray hair 白发 백발"
+            "en": "white/gray hair 白发 "
           },
           {
             "jp": "髪の毛",
             "reading": "かみのけ",
-            "en": "a hair 头发 머리카락"
+            "en": "a hair 头发 "
           }
         ]
       }
@@ -14002,22 +14002,22 @@
           {
             "jp": "得",
             "reading": "とく",
-            "en": "a profit/benefit 有利 얻음, 이득"
+            "en": "a profit/benefit 有利 , "
           },
           {
             "jp": "得ることが",
             "reading": "え-る, う-る",
-            "en": "obtain 得到 얻다"
+            "en": "obtain 得到 "
           },
           {
             "jp": "納得",
             "reading": "なっとく",
-            "en": "assent/understanding 理解 납득"
+            "en": "assent/understanding 理解 "
           },
           {
             "jp": "心得得",
             "reading": "こころえ",
-            "en": "understand / be well aware 领会 이해하다, 터득하다"
+            "en": "understand / be well aware 领会 , "
           }
         ]
       },
@@ -14030,22 +14030,22 @@
           {
             "jp": "広告",
             "reading": "こうこく",
-            "en": "an advertisement 广告 광고"
+            "en": "an advertisement 广告 "
           },
           {
             "jp": "警告",
             "reading": "けいこく",
-            "en": "warning/caution 警告 경고"
+            "en": "warning/caution 警告 "
           },
           {
             "jp": "報告",
             "reading": "ほうこく",
-            "en": "a report 报告 보고"
+            "en": "a report 报告 "
           },
           {
             "jp": "告げる",
             "reading": "つ-げる",
-            "en": "inform 告诉 고하다, 알리다"
+            "en": "inform 告诉 , "
           }
         ]
       },
@@ -14058,22 +14058,22 @@
           {
             "jp": "税金",
             "reading": "ぜいきん",
-            "en": "a tax 税金 세금"
+            "en": "a tax 税金 "
           },
           {
             "jp": "税関",
             "reading": "ぜいかん",
-            "en": "Customs 关税 세관"
+            "en": "Customs 关税 "
           },
           {
             "jp": "消費税",
             "reading": "しょうひぜい",
-            "en": "a consumption tax 消费税 소비세"
+            "en": "a consumption tax 消费税 "
           },
           {
             "jp": "課税",
             "reading": "かぜい",
-            "en": "taxation 课税 과세 572"
+            "en": "taxation 课税  572"
           }
         ]
       },
@@ -14086,12 +14086,12 @@
           {
             "jp": "定価",
             "reading": "ていか",
-            "en": "a fixed price 定价 정가"
+            "en": "a fixed price 定价 "
           },
           {
             "jp": "物価",
             "reading": "ぶっか",
-            "en": "price / cost of living 物价 물가"
+            "en": "price / cost of living 物价 "
           }
         ]
       },
@@ -14104,12 +14104,12 @@
           {
             "jp": "価格",
             "reading": "かかく",
-            "en": "a price 价格 가격"
+            "en": "a price 价格 "
           },
           {
             "jp": "性格",
             "reading": "せいかく",
-            "en": "character/personality 性格 성격"
+            "en": "character/personality 性格 "
           }
         ]
       },
@@ -14122,22 +14122,22 @@
           {
             "jp": "超~",
             "reading": "ちょう",
-            "en": "ultra-/super- 超~ 초~"
+            "en": "ultra-/super- 超~ ~"
           },
           {
             "jp": "超える",
             "reading": "こ-える",
-            "en": "get over / go over / exceed 越过 넘다, 초과하다"
+            "en": "get over / go over / exceed 越过 , "
           },
           {
             "jp": "超過",
             "reading": "ちょうか",
-            "en": "excess/surplus 越过 초과"
+            "en": "excess/surplus 越过 "
           },
           {
             "jp": "超す",
             "reading": "こ-す",
-            "en": "cross/pass/exceed 超过 넘다, 초과하다"
+            "en": "cross/pass/exceed 超过 , "
           }
         ]
       },
@@ -14150,17 +14150,17 @@
           {
             "jp": "平均",
             "reading": "へいきん",
-            "en": "an average 平均 평균"
+            "en": "an average 平均 "
           },
           {
             "jp": "均一",
             "reading": "きんいつ",
-            "en": "uniformity 均等 균일"
+            "en": "uniformity 均等 "
           },
           {
             "jp": "均等",
             "reading": "きんとう",
-            "en": "uniformity/equality 均等 균등"
+            "en": "uniformity/equality 均等 "
           }
         ]
       },
@@ -14173,22 +14173,22 @@
           {
             "jp": "靴",
             "reading": "くつ",
-            "en": "shoes 鞋子 신발, 구두"
+            "en": "shoes 鞋子 , "
           },
           {
             "jp": "長靴",
             "reading": "ながぐつ",
-            "en": "boots 鞋子 장화"
+            "en": "boots 鞋子 "
           },
           {
             "jp": "靴下",
             "reading": "くつした",
-            "en": "socks 袜子 양말"
+            "en": "socks 袜子 "
           },
           {
             "jp": "雨靴",
             "reading": "あまぐつ",
-            "en": "rain shoes 雨靴 우화, 레인슈즈"
+            "en": "rain shoes 雨靴 , "
           }
         ]
       },
@@ -14201,12 +14201,12 @@
           {
             "jp": "提供",
             "reading": "ていきょう",
-            "en": "an offer / a tender 提供 제공"
+            "en": "an offer / a tender 提供 "
           },
           {
             "jp": "子供",
             "reading": "こども",
-            "en": "a child 小孩 아이, 어린이"
+            "en": "a child 小孩 , "
           }
         ]
       },
@@ -14219,22 +14219,22 @@
           {
             "jp": "印象",
             "reading": "いんしょう",
-            "en": "an impression 印象 인상"
+            "en": "an impression 印象 "
           },
           {
             "jp": "対象",
             "reading": "たいしょう",
-            "en": "object (e.g. of study) 对象 대상"
+            "en": "object (e.g. of study) 对象 "
           },
           {
             "jp": "現象",
             "reading": "げんしょう",
-            "en": "a phenomenon 现象 현상"
+            "en": "a phenomenon 现象 "
           },
           {
             "jp": "象",
             "reading": "ぞう",
-            "en": "an elephant 象 코끼리"
+            "en": "an elephant 象 "
           }
         ]
       },
@@ -14247,22 +14247,22 @@
           {
             "jp": "組織",
             "reading": "そしき",
-            "en": "an organization 组织 조직"
+            "en": "an organization 组织 "
           },
           {
             "jp": "組み合わせ",
             "reading": "くみあわせ",
-            "en": "combination 搭配 편성"
+            "en": "combination 搭配 "
           },
           {
             "jp": "番組",
             "reading": "ばんぐみ",
-            "en": "a (TV) program 节目 방송프로"
+            "en": "a (TV) program 节目 "
           },
           {
             "jp": "組合",
             "reading": "くみあい",
-            "en": "an association 组合 조합"
+            "en": "an association 组合 "
           }
         ]
       },
@@ -14275,22 +14275,22 @@
           {
             "jp": "価値",
             "reading": "かち",
-            "en": "value/worth 价值 가치"
+            "en": "value/worth 价值 "
           },
           {
             "jp": "値段",
             "reading": "ねだん",
-            "en": "a price 价格 가격"
+            "en": "a price 价格 "
           },
           {
             "jp": "数値",
             "reading": "すうち",
-            "en": "an numerical value 数值 수치"
+            "en": "an numerical value 数值 "
           },
           {
             "jp": "値",
             "reading": "あたい",
-            "en": "value 价值 가격, 가치"
+            "en": "value 价值 , "
           }
         ]
       },
@@ -14303,22 +14303,22 @@
           {
             "jp": "募集",
             "reading": "ぼしゅう",
-            "en": "recruitment 招募 모집"
+            "en": "recruitment 招募 "
           },
           {
             "jp": "募金",
             "reading": "ぼきん",
-            "en": "fund-raising 募捐 모금"
+            "en": "fund-raising 募捐 "
           },
           {
             "jp": "応募",
             "reading": "おうぼ",
-            "en": "an application 应募 응모 571"
+            "en": "an application 应募  571"
           },
           {
             "jp": "募る",
             "reading": "つ-のる",
-            "en": "collect/raise (money), recruit 越来越厉害 모으다, 모집하다"
+            "en": "collect/raise (money), recruit 越来越厉害 , "
           }
         ]
       },
@@ -14331,22 +14331,22 @@
           {
             "jp": "無料",
             "reading": "むりょう",
-            "en": "no charge 免费 무료"
+            "en": "no charge 免费 "
           },
           {
             "jp": "無事",
             "reading": "ぶじ",
-            "en": "unharmed/safe 平安 무사"
+            "en": "unharmed/safe 平安 "
           },
           {
             "jp": "有無",
             "reading": "うむ",
-            "en": "existence or nonexistence 有无 유무"
+            "en": "existence or nonexistence 有无 "
           },
           {
             "jp": "無し",
             "reading": "なし",
-            "en": "no... 无 없음"
+            "en": "no... 无 "
           }
         ]
       }
@@ -16127,17 +16127,17 @@
           {
             "jp": "高層",
             "reading": "こうそう",
-            "en": "the upper layers 高层 고층"
+            "en": "the upper layers 高层 "
           },
           {
             "jp": "低層",
             "reading": "ていそう",
-            "en": "the lower layers 低层 저층"
+            "en": "the lower layers 低层 "
           },
           {
             "jp": "一層",
             "reading": "いっそう",
-            "en": "more / still more 一层 한층 더 , 더욱"
+            "en": "more / still more 一层   , "
           }
         ]
       },
@@ -16150,22 +16150,22 @@
           {
             "jp": "約束",
             "reading": "やくそく",
-            "en": "promise/appointment 约定 약속"
+            "en": "promise/appointment 约定 "
           },
           {
             "jp": "束",
             "reading": "たば",
-            "en": "a bunch/bundle 束 다발, 묶음"
+            "en": "a bunch/bundle 束 , "
           },
           {
             "jp": "花束",
             "reading": "はなたば",
-            "en": "bunch of flowers 花束 꽃다발"
+            "en": "bunch of flowers 花束 "
           },
           {
             "jp": "束ねる",
             "reading": "たばねる",
-            "en": "bind in a bunch/bundle 捆、扎 묶다, 통솔하다"
+            "en": "bind in a bunch/bundle 捆、扎 , "
           }
         ]
       },
@@ -16178,17 +16178,17 @@
           {
             "jp": "甘い",
             "reading": "あまい",
-            "en": "sweet 甜 달다, 엄하지 않다"
+            "en": "sweet 甜 ,  "
           },
           {
             "jp": "甘口",
             "reading": "あまくち",
-            "en": "the sweet side 甜味的 비교적 단 맛이 강함"
+            "en": "the sweet side 甜味的    "
           },
           {
             "jp": "甘やかす",
             "reading": "あまやかす",
-            "en": "spoil (a child) 娇养 응석을 받아주다"
+            "en": "spoil (a child) 娇养  "
           }
         ]
       },
@@ -16201,12 +16201,12 @@
           {
             "jp": "辛い",
             "reading": "からい",
-            "en": "(spicy) hot 辣 맵다, 얼큰하다"
+            "en": "(spicy) hot 辣 , "
           },
           {
             "jp": "辛口",
             "reading": "からくち",
-            "en": "the dry side 辣味 매콤함"
+            "en": "the dry side 辣味 "
           }
         ]
       },
@@ -16219,22 +16219,22 @@
           {
             "jp": "皿",
             "reading": "さら",
-            "en": "plate 盘子 접시"
+            "en": "plate 盘子 "
           },
           {
             "jp": "~皿",
             "reading": "~さら",
-            "en": "...plates ~盘 ~접시"
+            "en": "...plates ~盘 ~"
           },
           {
             "jp": "大皿",
             "reading": "おおさら",
-            "en": "a big plate 大盘子 큰 접시"
+            "en": "a big plate 大盘子  "
           },
           {
             "jp": "小皿",
             "reading": "こさら",
-            "en": "a small plate 小盘子 작은 접시"
+            "en": "a small plate 小盘子  "
           }
         ]
       },
@@ -16247,17 +16247,17 @@
           {
             "jp": "綿",
             "reading": "めん",
-            "en": "cotton 棉 면, 면사"
+            "en": "cotton 棉 , "
           },
           {
             "jp": "木綿",
             "reading": "もめん",
-            "en": "cotton / cotton cloth 木棉 면화, 솜"
+            "en": "cotton / cotton cloth 木棉 , "
           },
           {
             "jp": "綿",
             "reading": "わた",
-            "en": "cotton (wool) / a cotton plant 棉花 솜"
+            "en": "cotton (wool) / a cotton plant 棉花 "
           }
         ]
       },
@@ -16270,17 +16270,17 @@
           {
             "jp": "旧館",
             "reading": "きゅうかん",
-            "en": "the older building 旧馆 구관"
+            "en": "the older building 旧馆 "
           },
           {
             "jp": "旧姓",
             "reading": "きゅうせい",
-            "en": "a maiden name 原来的姓 결혼 전의 성"
+            "en": "a maiden name 原来的姓   "
           },
           {
             "jp": "復旧",
             "reading": "ふっきゅう",
-            "en": "restoration 恢复 복구"
+            "en": "restoration 恢复 "
           }
         ]
       },
@@ -16293,22 +16293,22 @@
           {
             "jp": "厚い",
             "reading": "あつい",
-            "en": "thick 厚 두껍다"
+            "en": "thick 厚 "
           },
           {
             "jp": "厚切り",
             "reading": "あつぎり",
-            "en": "thick slice 厚片 두껍게 자름"
+            "en": "thick slice 厚片  "
           },
           {
             "jp": "厚かましい",
             "reading": "あつかましい",
-            "en": "impudent 厚颜无耻 뻔뻔하다"
+            "en": "impudent 厚颜无耻 "
           },
           {
             "jp": "厚手",
             "reading": "あつで",
-            "en": "a thickly made article 质地厚 두께가 두꺼움"
+            "en": "a thickly made article 质地厚  "
           }
         ]
       },
@@ -16321,22 +16321,22 @@
           {
             "jp": "薄い",
             "reading": "うすい",
-            "en": "thin (material) / light (color) / weak (drink) 薄 얇다, 옅다, 싱겁다"
+            "en": "thin (material) / light (color) / weak (drink) 薄 , , "
           },
           {
             "jp": "薄切り",
             "reading": "うすぎり",
-            "en": "thin slice 薄片 얇게 자름"
+            "en": "thin slice 薄片  "
           },
           {
             "jp": "薄手",
             "reading": "うすで",
-            "en": "a thinly made article 质地薄 얇음, 알팍함"
+            "en": "a thinly made article 质地薄 , "
           },
           {
             "jp": "薄める",
             "reading": "うすめる",
-            "en": "dilute 弄淡 연하게 하다, 싱겁게 하다"
+            "en": "dilute 弄淡  ,  "
           }
         ]
       },
@@ -16349,12 +16349,12 @@
           {
             "jp": "粒",
             "reading": "つぶ",
-            "en": "grain 颗粒 알"
+            "en": "grain 颗粒 "
           },
           {
             "jp": "~粒",
             "reading": "~つぶ",
-            "en": "...grains ~粒 ~알"
+            "en": "...grains ~粒 ~"
           }
         ]
       },
@@ -16367,27 +16367,27 @@
           {
             "jp": "北極",
             "reading": "ほっきょく",
-            "en": "the North Pole 北极 북극"
+            "en": "the North Pole 北极 "
           },
           {
             "jp": "南極",
             "reading": "なんきょく",
-            "en": "the South Pole 南极 남극"
+            "en": "the South Pole 南极 "
           },
           {
             "jp": "積極的",
             "reading": "せっきょくてき",
-            "en": "active/positive 积极地 적극적"
+            "en": "active/positive 积极地 "
           },
           {
             "jp": "消極的",
             "reading": "しょうきょくてき",
-            "en": "passive/negative 消极地 소극적"
+            "en": "passive/negative 消极地 "
           },
           {
             "jp": "極",
             "reading": "きわめる",
-            "en": "very/extremely 非常 극"
+            "en": "very/extremely 非常 "
           }
         ]
       },
@@ -16400,22 +16400,22 @@
           {
             "jp": "改革",
             "reading": "かいかく",
-            "en": "a reform 改革 개혁"
+            "en": "a reform 改革 "
           },
           {
             "jp": "革命",
             "reading": "かくめい",
-            "en": "a revolution 革命 혁명"
+            "en": "a revolution 革命 "
           },
           {
             "jp": "革",
             "reading": "かわ",
-            "en": "leather 皮革 가죽"
+            "en": "leather 皮革 "
           },
           {
             "jp": "革製",
             "reading": "かせい",
-            "en": "made of leather 使用皮革制作 피혁제품"
+            "en": "made of leather 使用皮革制作 "
           }
         ]
       },
@@ -16428,22 +16428,22 @@
           {
             "jp": "苦痛",
             "reading": "くつう",
-            "en": "pain/suffering 痛苦 고통"
+            "en": "pain/suffering 痛苦 "
           },
           {
             "jp": "苦い",
             "reading": "にがい",
-            "en": "bitter 味苦 (맛이) 쓰다, 괴롭다"
+            "en": "bitter 味苦 () , "
           },
           {
             "jp": "苦しい",
             "reading": "くるしい",
-            "en": "distressful/trying 痛苦 괴롭다"
+            "en": "distressful/trying 痛苦 "
           },
           {
             "jp": "苦しむ",
             "reading": "くるしむ",
-            "en": "suffer 感到痛苦 괴로워하다, 고생하다"
+            "en": "suffer 感到痛苦 , "
           }
         ]
       }
@@ -16490,7 +16490,7 @@
         "answerIndex": 0
       },
       {
-        "prompt": "(2) 「（a. 一層 b. 一粒）でお口の中がスッキリ※、さわやか！ ○○キャンディー」※スッキリ: clean/refreshing 舒畅, 畅快, 流畅 산뜻이",
+        "prompt": "(2) 「（a. 一層 b. 一粒）でお口の中がスッキリ※、さわやか！ ○○キャンディー」※スッキリ: clean/refreshing 舒畅, 畅快, 流畅 ",
         "options": [
           "a. 一層",
           "b. 一粒"
@@ -16769,22 +16769,22 @@
           {
             "jp": "求人",
             "reading": "きゅうじん",
-            "en": "'Help Wanted' 招聘人员 구인"
+            "en": "'Help Wanted' 招聘人员 "
           },
           {
             "jp": "請求書",
             "reading": "せいきゅうしょ",
-            "en": "a bill / an invoice 帐单 청구서"
+            "en": "a bill / an invoice 帐单 "
           },
           {
             "jp": "要求",
             "reading": "ようきゅう",
-            "en": "a demand/request 要求 요구"
+            "en": "a demand/request 要求 "
           },
           {
             "jp": "求める",
             "reading": "もとめる",
-            "en": "demand/request 要求 구하다"
+            "en": "demand/request 要求 "
           }
         ]
       },
@@ -16797,7 +16797,7 @@
           {
             "jp": "簡単",
             "reading": "かんたん",
-            "en": "easy 简单 간단"
+            "en": "easy 简单 "
           }
         ]
       },
@@ -16810,22 +16810,22 @@
           {
             "jp": "単語",
             "reading": "たんご",
-            "en": "a word 单词 단어"
+            "en": "a word 单词 "
           },
           {
             "jp": "単に",
             "reading": "たんに",
-            "en": "merely/simply 单 단지"
+            "en": "merely/simply 单 "
           },
           {
             "jp": "単位",
             "reading": "たんい",
-            "en": "a unit / credit 单位、学分 단위, 학점"
+            "en": "a unit / credit 单位、学分 , "
           },
           {
             "jp": "単なる",
             "reading": "たんなる",
-            "en": "mere/simple 仅仅 단순한"
+            "en": "mere/simple 仅仅 "
           }
         ]
       },
@@ -16838,17 +16838,17 @@
           {
             "jp": "許可",
             "reading": "きょか",
-            "en": "permission 允许 허가"
+            "en": "permission 允许 "
           },
           {
             "jp": "許す",
             "reading": "ゆるす",
-            "en": "permit/allow 准许 허락하다"
+            "en": "permit/allow 准许 "
           },
           {
             "jp": "免許",
             "reading": "めんきょ",
-            "en": "a permit / license 执照 면허"
+            "en": "a permit / license 执照 "
           }
         ]
       },
@@ -16861,32 +16861,32 @@
           {
             "jp": "給料",
             "reading": "きゅうりょう",
-            "en": "a wage / salary 薪水 급료"
+            "en": "a wage / salary 薪水 "
           },
           {
             "jp": "供給",
             "reading": "きょうきゅう",
-            "en": "supply/provision 供给 공급"
+            "en": "supply/provision 供给 "
           },
           {
             "jp": "週給",
             "reading": "しゅうきゅう",
-            "en": "a weekly wage 周薪 주급"
+            "en": "a weekly wage 周薪 "
           },
           {
             "jp": "支給",
             "reading": "しきゅう",
-            "en": "a payment 支付 지급"
+            "en": "a payment 支付 "
           },
           {
             "jp": "月給",
             "reading": "げっきゅう",
-            "en": "a monthly wage 月薪 월급"
+            "en": "a monthly wage 月薪 "
           },
           {
             "jp": "日給",
             "reading": "にっきゅう",
-            "en": "a daily wage 日薪 일당"
+            "en": "a daily wage 日薪 "
           }
         ]
       },
@@ -16899,12 +16899,12 @@
           {
             "jp": "給与",
             "reading": "きゅうよ",
-            "en": "an allowance 支附金钱和物品 급여"
+            "en": "an allowance 支附金钱和物品 "
           },
           {
             "jp": "与える",
             "reading": "あたえる",
-            "en": "give/present 给与 주다"
+            "en": "give/present 给与 "
           }
         ]
       },
@@ -16917,22 +16917,22 @@
           {
             "jp": "応募",
             "reading": "おうぼ",
-            "en": "an application 应募 응모"
+            "en": "an application 应募 "
           },
           {
             "jp": "一応",
             "reading": "いちおう",
-            "en": "tentatively 大略 일단"
+            "en": "tentatively 大略 "
           },
           {
             "jp": "応じる",
             "reading": "おうじる",
-            "en": "respond 接受 응하다"
+            "en": "respond 接受 "
           },
           {
             "jp": "応用",
             "reading": "おうよう",
-            "en": "putting to practical use 应用 응용"
+            "en": "putting to practical use 应用 "
           }
         ]
       },
@@ -16945,17 +16945,17 @@
           {
             "jp": "課",
             "reading": "か",
-            "en": "a lesson / section 课 과"
+            "en": "a lesson / section 课 "
           },
           {
             "jp": "日課",
             "reading": "にっか",
-            "en": "a daily lesson/task 每天必做的事情 일과"
+            "en": "a daily lesson/task 每天必做的事情 "
           },
           {
             "jp": "課長",
             "reading": "かちょう",
-            "en": "a section chief 科长 과장"
+            "en": "a section chief 科长 "
           }
         ]
       },
@@ -16968,22 +16968,22 @@
           {
             "jp": "課程",
             "reading": "かてい",
-            "en": "a course / curriculum 课程 과정"
+            "en": "a course / curriculum 课程 "
           },
           {
             "jp": "程度",
             "reading": "ていど",
-            "en": "degree/amount 程度 정도"
+            "en": "degree/amount 程度 "
           },
           {
             "jp": "過程",
             "reading": "かてい",
-            "en": "a process / course 过程 과정"
+            "en": "a process / course 过程 "
           },
           {
             "jp": "日程",
             "reading": "にってい",
-            "en": "a schedule 日程 일정"
+            "en": "a schedule 日程 "
           }
         ]
       },
@@ -16996,22 +16996,22 @@
           {
             "jp": "制度",
             "reading": "せいど",
-            "en": "a system 制度 제도"
+            "en": "a system 制度 "
           },
           {
             "jp": "制作",
             "reading": "せいさく",
-            "en": "work/production 制作 제작"
+            "en": "work/production 制作 "
           },
           {
             "jp": "制限",
             "reading": "せいげん",
-            "en": "a restriction / limitation 限制 제한"
+            "en": "a restriction / limitation 限制 "
           },
           {
             "jp": "体制",
             "reading": "たいせい",
-            "en": "a system / structure 体制 체제"
+            "en": "a system / structure 体制 "
           }
         ]
       },
@@ -17024,22 +17024,22 @@
           {
             "jp": "講座",
             "reading": "こうざ",
-            "en": "a class / course 讲座 강좌"
+            "en": "a class / course 讲座 "
           },
           {
             "jp": "講演",
             "reading": "こうえん",
-            "en": "a lecture 演讲 강연"
+            "en": "a lecture 演讲 "
           },
           {
             "jp": "講義",
             "reading": "こうぎ",
-            "en": "a lecture 讲义 강의"
+            "en": "a lecture 讲义 "
           },
           {
             "jp": "講師",
             "reading": "こうし",
-            "en": "a lecturer 讲师 강사"
+            "en": "a lecturer 讲师 "
           }
         ]
       },
@@ -17052,22 +17052,22 @@
           {
             "jp": "初級",
             "reading": "しょきゅう",
-            "en": "beginning level 初级 초급"
+            "en": "beginning level 初级 "
           },
           {
             "jp": "上級",
             "reading": "じょうきゅう",
-            "en": "advanced level 高级 상급"
+            "en": "advanced level 高级 "
           },
           {
             "jp": "中級",
             "reading": "ちゅうきゅう",
-            "en": "intermediate level 中级 중급"
+            "en": "intermediate level 中级 "
           },
           {
             "jp": "高級",
             "reading": "こうきゅう",
-            "en": "high class/grade 高级 고급"
+            "en": "high class/grade 高级 "
           }
         ]
       },
@@ -17080,22 +17080,22 @@
           {
             "jp": "基本",
             "reading": "きほん",
-            "en": "a foundation / the basics 基本 기본"
+            "en": "a foundation / the basics 基本 "
           },
           {
             "jp": "基準",
             "reading": "きじゅん",
-            "en": "a standard/criterion 基准 기준"
+            "en": "a standard/criterion 基准 "
           },
           {
             "jp": "基礎",
             "reading": "きそ",
-            "en": "a foundation / groundwork 基础 기초"
+            "en": "a foundation / groundwork 基础 "
           },
           {
             "jp": "基地",
             "reading": "きち",
-            "en": "a base 基地 기지"
+            "en": "a base 基地 "
           }
         ]
       },
@@ -17108,17 +17108,17 @@
           {
             "jp": "指導",
             "reading": "しどう",
-            "en": "leadership/guidance 指导 지도"
+            "en": "leadership/guidance 指导 "
           },
           {
             "jp": "導く",
             "reading": "みちびく",
-            "en": "lead 指引 안내하다"
+            "en": "lead 指引 "
           },
           {
             "jp": "導入",
             "reading": "どうにゅう",
-            "en": "an introduction 导入 도입"
+            "en": "an introduction 导入 "
           }
         ]
       }
@@ -18715,7 +18715,7 @@
         "answerIndex": -1
       },
       {
-        "prompt": "(a. 陸上 b. 大陸) の気候は降水量※が少ない。※降水量 precipitation 降雨量 강수량",
+        "prompt": "(a. 陸上 b. 大陸) の気候は降水量※が少ない。※降水量 precipitation 降雨量 ",
         "options": [
           "陸上",
           "大陸"
@@ -18747,7 +18747,7 @@
         "answerIndex": -1
       },
       {
-        "prompt": "(a. 理想 b. 感想) と現実にはギャップ※がある。※ギャップ: a gap (观念 ... 等的) 差距 간격",
+        "prompt": "(a. 理想 b. 感想) と現実にはギャップ※がある。※ギャップ: a gap (观念 ... 等的) 差距 ",
         "options": [
           "理想",
           "感想"
@@ -20213,17 +20213,17 @@
           {
             "jp": "武器",
             "reading": "ぶき",
-            "en": "weapon/arms 武器 무기"
+            "en": "weapon/arms 武器 "
           },
           {
             "jp": "武士",
             "reading": "ぶし",
-            "en": "a warrior/samurai 武士 무사"
+            "en": "a warrior/samurai 武士 "
           },
           {
             "jp": "武力",
             "reading": "ぶりょく",
-            "en": "military power 武力 무력"
+            "en": "military power 武力 "
           }
         ]
       },
@@ -20236,12 +20236,12 @@
           {
             "jp": "巨大(な)",
             "reading": "きょだい",
-            "en": "huge/gigantic 巨大 거대"
+            "en": "huge/gigantic 巨大 "
           },
           {
             "jp": "巨額",
             "reading": "きょがく",
-            "en": "a great sum 巨额 거액"
+            "en": "a great sum 巨额 "
           }
         ]
       },
@@ -20254,17 +20254,17 @@
           {
             "jp": "競争",
             "reading": "きょうそう",
-            "en": "a competition/contest 竞争 경쟁"
+            "en": "a competition/contest 竞争 "
           },
           {
             "jp": "競馬",
             "reading": "けいば",
-            "en": "horse racing 赛马赌博 경마"
+            "en": "horse racing 赛马赌博 "
           },
           {
             "jp": "競う",
             "reading": "きそう",
-            "en": "emulate/compete with 竞争 경쟁하다"
+            "en": "emulate/compete with 竞争 "
           }
         ]
       },
@@ -20277,17 +20277,17 @@
           {
             "jp": "失敗",
             "reading": "しっぱい",
-            "en": "a failure/mistake 失败 실패, 실수"
+            "en": "a failure/mistake 失败 , "
           },
           {
             "jp": "敗れる",
             "reading": "やぶれる",
-            "en": "be defeated 败 패하다, 지다"
+            "en": "be defeated 败 , "
           },
           {
             "jp": "連敗",
             "reading": "れんぱい",
-            "en": "a series of defeats 连败 연패"
+            "en": "a series of defeats 连败 "
           }
         ]
       },
@@ -20300,22 +20300,22 @@
           {
             "jp": "逆",
             "reading": "ぎゃく",
-            "en": "the reverse/opposite 相反 반대"
+            "en": "the reverse/opposite 相反 "
           },
           {
             "jp": "逆さ",
             "reading": "さかさ",
-            "en": "upside down / inversion 相反 거꾸로 됨"
+            "en": "upside down / inversion 相反  "
           },
           {
             "jp": "逆転",
             "reading": "ぎゃくてん",
-            "en": "a (sudden) change / reversal 逆转 역전"
+            "en": "a (sudden) change / reversal 逆转 "
           },
           {
             "jp": "逆らう",
             "reading": "さからう",
-            "en": "oppose/defy 违背 거스르다"
+            "en": "oppose/defy 违背 "
           }
         ]
       },
@@ -20328,22 +20328,22 @@
           {
             "jp": "優勝",
             "reading": "ゆうしょう",
-            "en": "a victory/championship 优胜 우승"
+            "en": "a victory/championship 优胜 "
           },
           {
             "jp": "勝敗",
             "reading": "しょうはい",
-            "en": "victory or defeat 胜败 승패"
+            "en": "victory or defeat 胜败 "
           },
           {
             "jp": "勝負",
             "reading": "しょうぶ",
-            "en": "a match/contest/game 胜负 승부"
+            "en": "a match/contest/game 胜负 "
           },
           {
             "jp": "勝つ",
             "reading": "かつ",
-            "en": "win 胜 이기다"
+            "en": "win 胜 "
           }
         ]
       },
@@ -20356,22 +20356,22 @@
           {
             "jp": "投手",
             "reading": "とうしゅ",
-            "en": "a (baseball) pitcher 投手 투수"
+            "en": "a (baseball) pitcher 投手 "
           },
           {
             "jp": "投資",
             "reading": "とうし",
-            "en": "a investment 投资 투자"
+            "en": "a investment 投资 "
           },
           {
             "jp": "投書",
             "reading": "とうしょ",
-            "en": "a letter to the editor 投稿 투서"
+            "en": "a letter to the editor 投稿 "
           },
           {
             "jp": "投げる",
             "reading": "なげる",
-            "en": "throw 投 던지다"
+            "en": "throw 投 "
           }
         ]
       },
@@ -20384,12 +20384,12 @@
           {
             "jp": "軍隊",
             "reading": "ぐんたい",
-            "en": "army/troops 军队 군대"
+            "en": "army/troops 军队 "
           },
           {
             "jp": "~軍",
             "reading": "ぐん",
-            "en": "suffix for military force -军 -군"
+            "en": "suffix for military force -军 -"
           }
         ]
       },
@@ -20402,17 +20402,17 @@
           {
             "jp": "兵士",
             "reading": "へいし",
-            "en": "a soldier 士兵 병사"
+            "en": "a soldier 士兵 "
           },
           {
             "jp": "兵隊",
             "reading": "へいたい",
-            "en": "a soldier / an army 军队、士兵 병사"
+            "en": "a soldier / an army 军队、士兵 "
           },
           {
             "jp": "~兵",
             "reading": "へい",
-            "en": "suffix for soldier ~兵 ~병"
+            "en": "suffix for soldier ~兵 ~"
           }
         ]
       },
@@ -20425,12 +20425,12 @@
           {
             "jp": "捜査",
             "reading": "そうさ",
-            "en": "a search/investigation 捜査 수사"
+            "en": "a search/investigation 捜査 "
           },
           {
             "jp": "捜す",
             "reading": "さがす",
-            "en": "search/seek 寻找 찾다"
+            "en": "search/seek 寻找 "
           }
         ]
       },
@@ -20443,22 +20443,22 @@
           {
             "jp": "転倒",
             "reading": "てんとう",
-            "en": "falling down / upset / turnover 跌倒 넘어짐; 전도됨"
+            "en": "falling down / upset / turnover 跌倒 ; "
           },
           {
             "jp": "倒れる",
             "reading": "たおれる",
-            "en": "collapse / break down 倒塌 넘어지다"
+            "en": "collapse / break down 倒塌 "
           },
           {
             "jp": "面倒",
             "reading": "めんどう",
-            "en": "①trouble/difficulty 麻烦 귀찮음, 성가심\n②care/attention 照顾、照料 돌봄, 보살핌"
+            "en": "①trouble/difficulty 麻烦 , \n②care/attention 照顾、照料 , "
           },
           {
             "jp": "倒す",
             "reading": "たおす",
-            "en": "throw down / beat 倒 넘어뜨리다"
+            "en": "throw down / beat 倒 "
           }
         ]
       },
@@ -20471,12 +20471,12 @@
           {
             "jp": "骨折",
             "reading": "こっせつ",
-            "en": "a bone fracture 骨折 골절"
+            "en": "a bone fracture 骨折 "
           },
           {
             "jp": "骨",
             "reading": "ほね",
-            "en": "a bone 骨头、骨架 뼈"
+            "en": "a bone 骨头、骨架 "
           }
         ]
       },
@@ -20489,22 +20489,22 @@
           {
             "jp": "方針",
             "reading": "ほうしん",
-            "en": "a principle/policy 方针 방침"
+            "en": "a principle/policy 方针 "
           },
           {
             "jp": "針",
             "reading": "はり",
-            "en": "a needle 针 바늘"
+            "en": "a needle 针 "
           },
           {
             "jp": "針路",
             "reading": "しんろ",
-            "en": "a course/direction 航向、前进方向 침로, 항로"
+            "en": "a course/direction 航向、前进方向 , "
           },
           {
             "jp": "針金",
             "reading": "はりがね",
-            "en": "a wire 铁丝 철사"
+            "en": "a wire 铁丝 "
           }
         ]
       },
@@ -20517,12 +20517,12 @@
           {
             "jp": "叫び",
             "reading": "さけび",
-            "en": "a shout / scream 呼喊 외침"
+            "en": "a shout / scream 呼喊 "
           },
           {
             "jp": "叫ぶ",
             "reading": "さけぶ",
-            "en": "shout / cry out 呼喊 외치다"
+            "en": "shout / cry out 呼喊 "
           }
         ]
       }

@@ -997,6 +997,40 @@ body.furigana-off rt {
     margin-bottom: 18px;
 }
 
+.passage-title-row,
+.script-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.passage-title-row .passage-title,
+.script-title-row .subheading {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin-bottom: 0;
+}
+
+/* Book-style reading passage: dialogue lines wrapped in a light grey
+   container with vertical padding between speakers, matching the
+   bordered script frames in the Somatome book. */
+.passage-line,
+.transcript-line {
+    padding: 10px 14px;
+    background: var(--paper-2);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    margin-bottom: 6px;
+    line-height: 1.7;
+}
+
+.passage-line:last-child,
+.transcript-line:last-child {
+    margin-bottom: 0;
+}
+
 .reading-vocab {
     margin-bottom: 18px;
 }
@@ -1086,6 +1120,32 @@ body.furigana-off rt {
     border-color: var(--accent-red);
     background: var(--accent-red-bg);
     color: var(--danger);
+}
+
+/* Book-style numbered list: ☐1 ☐2 ☐3 ... for reading questions. */
+.reading-section .quiz-options,
+.listening-section .quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.reading-section .quiz-option,
+.listening-section .quiz-option {
+    position: relative;
+    padding-left: 38px;
+}
+
+.reading-section .quiz-option::before,
+.listening-section .quiz-option::before {
+    content: "☐";
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    line-height: 1;
+    color: var(--text-primary);
 }
 
 .quiz-explain {

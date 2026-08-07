@@ -67,8 +67,9 @@ function wordButton(word, reading = '', label = null) {
   return `<button type="button" class="explain-word-btn" data-action="explain-word" data-word="${escapeHtml(word)}" data-reading="${escapeHtml(reading)}" lang="ja">${renderFurigana(display)}</button>`;
 }
 
-function renderJapaneseLine(text, className = 'jp-sentence') {
-  return `<div class="${className}" lang="ja"><button type="button" class="jp-text explain-word-btn" data-action="explain-sentence" data-jp="${escapeHtml(text || '')}" aria-label="Dịch câu này sang tiếng Việt">${renderFurigana(text || '')}</button>${ttsButton(text)}</div>`;
+function renderJapaneseLine(text, className = 'jp-sentence', { tts = true } = {}) {
+  const ttsMarkup = tts ? ttsButton(text) : '';
+  return `<div class="${className}" lang="ja"><button type="button" class="jp-text explain-word-btn" data-action="explain-sentence" data-jp="${escapeHtml(text || '')}" aria-label="Dịch câu này sang tiếng Việt">${renderFurigana(text || '')}</button>${ttsMarkup}</div>`;
 }
 
 function answerIndex(question) {
@@ -270,11 +271,18 @@ function renderGrammar(lessonId, content) {
 }
 
 function renderReading(lessonId, content) {
-  const passages = (Array.isArray(content.passages) ? content.passages : []).map((passage) => `
+  const passages = (Array.isArray(content.passages) ? content.passages : []).map((passage) => {
+    const lines = String(passage?.text || '').split(/\n+/).filter(Boolean);
+    const fullText = lines.join('\n');
+    const heading = passage?.heading
+      ? `<div class="passage-title-row"><h3 class="passage-title" lang="ja">${renderFurigana(passage.heading)}</h3>${ttsButton(fullText)}</div>`
+      : `<div class="passage-title-row">${ttsButton(fullText)}</div>`;
+    return `
     <article class="passage-block">
-      ${passage?.heading ? `<h3 class="passage-title" lang="ja">${renderFurigana(passage.heading)}</h3>` : ''}
-      ${String(passage?.text || '').split(/\n+/).filter(Boolean).map((line) => renderJapaneseLine(line)).join('')}
-    </article>`).join('');
+      ${heading}
+      ${lines.map((line) => renderJapaneseLine(line, 'passage-line', { tts: false })).join('')}
+    </article>`;
+  }).join('');
   return `
     <section class="content-section reading-section">
       <h2 class="section-heading">Đọc hiểu</h2>
@@ -286,7 +294,9 @@ function renderReading(lessonId, content) {
 }
 
 function renderListening(lessonId, content) {
-  const script = String(content.script || '').split(/\n+/).filter(Boolean).map((line) => renderJapaneseLine(line, 'transcript-line')).join('');
+  const scriptLines = String(content.script || '').split(/\n+/).filter(Boolean);
+  const scriptFull = scriptLines.join('\n');
+  const script = `${scriptLines.length ? `<div class="script-title-row"><h3 class="subheading" lang="ja">Bản ghi</h3>${ttsButton(scriptFull)}</div>` : ''}${scriptLines.map((line) => renderJapaneseLine(line, 'transcript-line', { tts: false })).join('')}`;
   const audioTracks = Array.isArray(content.audioTracks) ? content.audioTracks : [];
   const introTracks = Array.isArray(content.introTracks) ? content.introTracks : [];
   const coverage = content.audioCoverage && typeof content.audioCoverage === 'object'
