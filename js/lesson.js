@@ -86,28 +86,17 @@ function renderQuestionHeader(lessonId, questionIndex) {
 }
 
 function renderImagesSection(lessonId) {
-  const images = getLessonImages(lessonId);
-  if (!Array.isArray(images) || images.length === 0) return '';
-  const items = images.map((entry) => {
-    if (!entry || typeof entry.src !== 'string') return '';
-    const src = entry.src.startsWith('/') ? entry.src : `data/book/${entry.src}`;
-    const caption = entry.captionVi ? `<figcaption class="lesson-image-caption">${escapeHtml(entry.captionVi)}</figcaption>` : '';
-    const isPage = entry.kind === 'page';
-    if (isPage) {
-      return `<details class="lesson-image-page"><summary>Trang sách gốc</summary><figure class="lesson-image-figure"><img loading="lazy" src="${escapeHtml(src)}" alt="Trang sách">${caption}</figure></details>`;
-    }
-    return `<figure class="lesson-image-figure"><img loading="lazy" src="${escapeHtml(src)}" alt="${escapeHtml(entry.captionVi || 'Hình minh họa')}">${caption}</figure>`;
-  }).filter(Boolean).join('');
-  if (!items) return '';
-  return `<section class="lesson-images" aria-label="Hình minh họa">${items}</section>`;
+  // Lesson page no longer inlines images — they're all behind the "📖 Xem sách"
+  // button in the toolbar. Kept as a no-op so older callers don't break.
+  return '';
 }
 
-function renderQuestions(questions, lessonId, title = 'Luyện tập') {
+function renderQuestions(questions, lessonId, title = '練習') {
   if (!Array.isArray(questions) || !questions.length) return '';
   const groups = groupQuestionsBySection(questions);
   return `
     <section class="quiz-block" aria-labelledby="quiz-heading">
-      <h3 class="subheading" id="quiz-heading">${escapeHtml(title)}</h3>
+      <h3 class="subheading" id="quiz-heading" lang="ja">${escapeHtml(title)}</h3>
       ${groups.map((group) => `
         <div class="quiz-section">
           ${group.label ? `<h4 class="quiz-section-title" lang="ja">${escapeHtml(group.label)}</h4>` : ''}
@@ -192,15 +181,23 @@ function renderQuestionItem(question, lessonId, questionIndex) {
   if (question?.multiBlank) {
     const blanks = question.blanks || question.answers.length;
     const answersAttr = JSON.stringify(question.answers || []);
+    // Book shows options as labelled text lines ("1 候補 2 候補 3 候補 4 候補"),
+    // not as tappable buttons. Render same way; click on an option line fills
+    // the next blank slot (handled in handleMultiBlankQuiz).
+    const optionsHtml = options.map((option, optionIndex) => {
+      const optText = String(option || '');
+      const numbered = /^\s*\d+\s/.test(optText) ? optText : `${optionIndex + 1} ${optText}`;
+      return `<button type="button" class="quiz-option-line" data-action="quiz-option" data-idx="${optionIndex}" lang="ja">${renderFurigana(numbered)}</button>`;
+    }).join('');
     return `
       <div class="quiz-question quiz-question-multiblank" data-blanks="${blanks}" data-answers='${escapeHtml(answersAttr)}'>
         ${header}
         <div class="quiz-q-text" lang="ja">${renderFurigana(question.prompt)}</div>
-        <div class="quiz-blanks" aria-label="Thứ tự các chỗ trống">
-          ${Array.from({ length: blanks }, (_, n) => `<span class="quiz-blank-slot" data-slot="${n}">(${n + 1})</span>`).join('')}
+        <div class="quiz-blanks" aria-label="空欄の順番">
+          ${Array.from({ length: blanks }, (_, n) => `<span class="quiz-blank-slot" data-slot="${n}">（${n + 1}）</span>`).join('')}
         </div>
-        <div class="quiz-options">
-          ${options.map((option, optionIndex) => `<button type="button" class="quiz-option" data-action="quiz-option" data-idx="${optionIndex}" lang="ja">${renderFurigana(option)}</button>`).join('')}
+        <div class="quiz-options quiz-options-stack">
+          ${optionsHtml}
         </div>
         <div class="quiz-explain" role="status" hidden></div>
       </div>`;
@@ -237,7 +234,7 @@ function renderKanji(lessonId, content) {
       ${renderImagesSection(lessonId)}
       <div class="kanji-grid">${cards || '<p class="text-muted">Không có mục Hán tự trong bài này.</p>'}</div>
       ${review.length ? `<section class="review-kanji"><h3 class="subheading" lang="ja">よめるかな？</h3><div class="review-kanji-list">${review.map((item) => wordButton(item?.char || '', [item?.on, item?.kun].filter(Boolean).join(' / '))).join('')}</div></section>` : ''}
-      ${renderQuestions(content.practice, lessonId, '練習 · Luyện tập')}
+      ${renderQuestions(content.practice, lessonId, '練習')}
     </section>`;
 }
 
@@ -343,6 +340,7 @@ function renderToolbar(done) {
     <div class="lesson-toolbar">
       <button type="button" class="back-btn" data-action="back">← Quay lại</button>
       <div class="lesson-toolbar-actions">
+        <button type="button" class="view-book-btn" data-action="view-book" aria-label="Xem trang sách">📖 Xem sách</button>
         <button type="button" class="furigana-toggle-btn" data-action="toggle-furigana" aria-pressed="${getFurigana()}">${getFurigana() ? 'あ' : 'ア'}<span class="sr-only">Furigana</span></button>
         <button type="button" class="complete-toggle-btn${done ? ' is-done' : ''}" data-action="toggle-complete" aria-pressed="${done}">${done ? 'Bỏ đánh dấu' : 'Đánh dấu đã học'}</button>
       </div>
@@ -567,6 +565,7 @@ export function renderLesson(root, id) {
     if (action === 'back') navigate('#/');
     else if (action === 'toggle-furigana') { setFurigana(!getFurigana()); paint(); }
     else if (action === 'toggle-complete') { toggleDone(id); paint(); }
+    else if (action === 'view-book') openBookViewer(button);
     else if (action === 'speak') speak(button.dataset.jp || '');
     else if (action === 'quiz-option') handleQuiz(button);
     else if (action === 'explain-word') openExplanation(button);
@@ -596,6 +595,57 @@ export function renderLesson(root, id) {
     dialog.querySelector('[data-tutor-modal-close]')?.addEventListener('click', closeTutorModal);
     dialog.addEventListener('click', (event) => { if (event.target === dialog) closeTutorModal(); });
     tutorController = renderTutor(dialog.querySelector('.tutor-modal-body'));
+  };
+
+  let bookViewer = null;
+  const closeBookViewer = () => {
+    if (!bookViewer) return;
+    bookViewer.remove();
+    bookViewer = null;
+  };
+
+  const openBookViewer = (trigger) => {
+    const images = getLessonImages(id);
+    // If we have discrete `image` entries, show those; otherwise show the page PNGs
+    // (listening lessons only have `page` entries — full-page render).
+    const discrete = (images || []).filter((entry) => entry && entry.kind === 'image');
+    const pages = (images || []).filter((entry) => entry && entry.kind === 'page');
+    if (!discrete.length && !pages.length) {
+      alert('Bài này chưa có ảnh trang sách.');
+      return;
+    }
+    closeBookViewer();
+    const dialog = document.createElement('div');
+    dialog.className = 'modal-overlay active book-viewer-overlay';
+    dialog.setAttribute('role', 'dialog');
+    dialog.setAttribute('aria-modal', 'true');
+    dialog.setAttribute('aria-label', 'Xem trang sách');
+    const pageItems = (pages.length ? pages : discrete).map((entry) => {
+      const src = entry.src.startsWith('/') ? entry.src : `data/book/${entry.src}`;
+      const pageNum = entry.page != null ? ` <span class="book-viewer-page-num">p.${entry.page + 1}</span>` : '';
+      return `<figure class="book-viewer-figure"><img loading="lazy" src="${escapeHtml(src)}" alt="Trang sách">${pageNum ? `<figcaption>${pageNum}</figcaption>` : ''}</figure>`;
+    }).join('');
+    dialog.innerHTML = `
+      <div class="modal-card book-viewer-card">
+        <div class="modal-header">
+          <h3 lang="ja">📖 ${escapeHtml(plainJapanese(getBookContent(id)?.title || ''))}</h3>
+          <button type="button" class="modal-close" data-book-viewer-close aria-label="Đóng">×</button>
+        </div>
+        <div class="modal-body book-viewer-body">${pageItems}</div>
+      </div>`;
+    document.body.appendChild(dialog);
+    bookViewer = dialog;
+    dialog.querySelector('[data-book-viewer-close]')?.addEventListener('click', closeBookViewer);
+    dialog.addEventListener('click', (event) => {
+      if (event.target === dialog) closeBookViewer();
+    });
+    // Click any image inside the viewer to open it fullscreen.
+    dialog.querySelectorAll('img').forEach((img) => {
+      img.addEventListener('click', () => {
+        if (document.fullscreenElement === img) document.exitFullscreen?.();
+        else img.requestFullscreen?.();
+      });
+    });
   };
 
   root.addEventListener('click', onClick);

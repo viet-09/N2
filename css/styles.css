@@ -1151,6 +1151,111 @@ body.furigana-off ruby {
     color: var(--text-muted);
 }
 
+.quiz-options-stack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    margin-top: 10px;
+}
+
+.quiz-option-line {
+    display: inline-flex;
+    align-items: baseline;
+    padding: 4px 6px;
+    min-height: 32px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-page);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 15px;
+    text-align: left;
+    transition: all 0.14s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.quiz-option-line:hover:not(:disabled) {
+    border-color: var(--text-primary);
+}
+
+.quiz-option-line:disabled {
+    cursor: default;
+    opacity: 0.6;
+}
+
+/* ==========================================================================
+   "📖 Xem sách" toolbar button + book-page viewer modal
+   ========================================================================== */
+.view-book-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    min-height: 36px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-page);
+    color: var(--text-primary);
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all 0.14s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.view-book-btn:hover {
+    border-color: var(--text-primary);
+    background: var(--paper-2);
+}
+
+.book-viewer-overlay {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    background: rgba(20, 18, 16, 0.7);
+    padding: 24px;
+}
+
+.book-viewer-card {
+    max-width: 960px;
+    width: 100%;
+    max-height: calc(100vh - 48px);
+    display: flex;
+    flex-direction: column;
+}
+
+.book-viewer-body {
+    overflow: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    background: var(--paper-2);
+}
+
+.book-viewer-figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    max-width: 100%;
+}
+
+.book-viewer-figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    background: var(--bg-page);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 6px 18px rgba(20, 18, 16, 0.12);
+    cursor: zoom-in;
+}
+
+.book-viewer-page-num {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
 .quiz-answer {
     margin-bottom: 6px;
 }
