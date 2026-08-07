@@ -1031,6 +1031,118 @@ body.furigana-off rt {
     margin-bottom: 0;
 }
 
+/* Dialogue (script-frame) — bordered beige box with numbered lines. */
+.reading-section .script-frame {
+    background: #efe9da;
+    border: 1px solid var(--rule, #c8c1b2);
+    border-radius: 6px;
+    padding: 14px 18px;
+    line-height: 2.0;
+    font-family: var(--font-jp);
+}
+
+.reading-section .script-frame .line {
+    margin: 0;
+    padding: 2px 0;
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 8px;
+}
+
+.reading-section .script-frame .line + .line {
+    border-top: 1px dotted rgba(0, 0, 0, .07);
+}
+
+.reading-section .script-frame .num {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    color: var(--text-muted);
+    text-align: right;
+}
+
+.reading-section .script-frame .speaker {
+    font-weight: 700;
+    margin-right: 6px;
+}
+
+/* Document mock (DM / flyer) — bordered rectangle with heading pills. */
+.reading-section .dm-frame {
+    background: var(--bg-page);
+    border: 2px solid var(--text-primary);
+    border-radius: 4px;
+    padding: 22px 26px;
+    margin: 8px 0;
+    position: relative;
+}
+
+.reading-section .dm-row {
+    margin: 8px 0;
+    line-height: 1.7;
+}
+
+.reading-section .dm-row.heading {
+    background: var(--text-primary);
+    color: var(--bg-page);
+    padding: 4px 12px;
+    font-weight: 700;
+    display: inline-block;
+    margin: 12px 0 6px;
+    font-size: .9rem;
+    border-radius: 2px;
+}
+
+/* Price tag question — circular price pills beside the prompt. */
+.reading-section .price-tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 14px 0;
+}
+
+.reading-section .price-tag {
+    width: 96px;
+    height: 96px;
+    border: 2px solid var(--text-primary);
+    border-radius: 50%;
+    background: var(--bg-page);
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: .95rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8px;
+    line-height: 1.15;
+    transition: all .12s;
+}
+
+.reading-section .price-tag:hover:not(:disabled) {
+    background: var(--paper-2);
+    transform: scale(1.04);
+}
+
+.reading-section .price-tag:disabled {
+    cursor: default;
+}
+
+.reading-section .price-tag.is-correct {
+    background: var(--accent-green-bg);
+    border-color: var(--accent-green-border);
+    color: var(--accent-green);
+}
+
+.reading-section .price-tag.is-incorrect {
+    background: var(--accent-red-bg);
+    border-color: var(--accent-red);
+    color: var(--danger);
+}
+
+.reading-section .quiz-question-price .quiz-q-text {
+    font-weight: 600;
+}
+
 .reading-vocab {
     margin-bottom: 18px;
 }

@@ -204,11 +204,20 @@ function renderQuestionItem(question, lessonId, questionIndex) {
       </div>`;
   }
   const correct = answerIndex(question);
+  // Book-style "price tag" for reading questions whose options are amounts
+  // of money (e.g. "7,000円" / "8,000円"). Rendered as a row of circular
+  // price pills alongside the prompt.
+  const isPriceQuestion = options.length >= 2
+    && options.every((o) => /[\d,]+円/.test(String(o).replace(/\{([^|}]+)\|[^}]+\}/g, '$1')));
+  const priceTags = isPriceQuestion
+    ? `<div class="price-tag-row" aria-label="選択肢（金額）">${options.map((o, i) => `<button type="button" class="price-tag" data-action="quiz-option" data-idx="${i}" lang="ja">${renderFurigana(o)}</button>`).join('')}</div>`
+    : '';
   return `
-    <div class="quiz-question" data-correct-idx="${correct}">
+    <div class="quiz-question${isPriceQuestion ? ' quiz-question-price' : ''}" data-correct-idx="${correct}">
       ${header}
       <div class="quiz-q-text" lang="ja">${renderFurigana(question?.prompt || question?.q || '')}</div>
-      <div class="quiz-options">
+      ${priceTags}
+      <div class="quiz-options"${isPriceQuestion ? ' hidden' : ''}>
         ${options.map((option, optionIndex) => `<button type="button" class="quiz-option" data-action="quiz-option" data-idx="${optionIndex}" lang="ja">${renderFurigana(option)}</button>`).join('')}
       </div>
       <div class="quiz-explain" role="status" hidden></div>
@@ -270,17 +279,71 @@ function renderGrammar(lessonId, content) {
   return `<section class="content-section grammar-section"><h2 class="section-heading">Ngữ pháp</h2>${patterns}${renderQuestions(content.practice, lessonId, '練習 · Luyện tập')}</section>`;
 }
 
+// Detect lines that look like a speaker turn in dialogue:
+// "夫：" / "妻：" / "店の人：" / "アナウンス：" / "ナレーター：" / etc.
+// Anything before a Japanese colon (：or :) + at least one kanji.
+const SPEAKER_LINE = /^[^\s：:]{1,8}[：:]\s*/;
+
+// Detect a passage that is a "document mock" — a printed DM / flyer / form
+// with price tags, special headings, dates. Heuristic: more than 2 lines
+// contain currency symbols (円/% OFF) or full-width date patterns.
+const DOCUMENT_HINT = /(?:円|％|%|OFF|年会費|月会費|有効期限|開催期間|特典|20XX|年.{0,3}月.{0,3}日)/;
+
+function classifyPassage(lines) {
+  let dialogueHits = 0;
+  let documentHits = 0;
+  for (const line of lines) {
+    if (SPEAKER_LINE.test(line)) dialogueHits++;
+    if (DOCUMENT_HINT.test(line)) documentHits++;
+  }
+  if (dialogueHits >= 2) return 'dialogue';
+  if (documentHits >= 3) return 'document';
+  return 'plain';
+}
+
+function renderDialoguePassage(lines) {
+  return `<div class="script-frame">${lines.map((line, idx) => {
+    const m = line.match(SPEAKER_LINE);
+    if (m) {
+      const speaker = m[0].replace(/[：:]\s*$/, '');
+      const rest = line.slice(m[0].length);
+      return `<p class="line"><span class="num">${idx + 1}</span><span><span class="speaker">${escapeHtml(speaker)}</span>${renderFurigana(rest)}</span></p>`;
+    }
+    return `<p class="line"><span class="num">${idx + 1}</span><span>${renderFurigana(line)}</span></p>`;
+  }).join('')}</div>`;
+}
+
+// A document-mock passage: detect heading-like lines (text matching one
+// of a short whitelist of DM-style section headers) and render them as
+// black pills; everything else stays as plain text.
+const DOC_HEADING_WORDS = /^(開催期間|特典[12]|店名|期間|対象商品|条件|料金|サービス内容|ご注意|有効期限)$/;
+
+function renderDocumentPassage(lines) {
+  return `<div class="dm-frame">${lines.map((line) => {
+    if (DOC_HEADING_WORDS.test(line.trim())) {
+      return `<div class="dm-row heading">${escapeHtml(line.trim())}</div>`;
+    }
+    return `<div class="dm-row">${renderFurigana(line)}</div>`;
+  }).join('')}</div>`;
+}
+
 function renderReading(lessonId, content) {
   const passages = (Array.isArray(content.passages) ? content.passages : []).map((passage) => {
     const lines = String(passage?.text || '').split(/\n+/).filter(Boolean);
     const fullText = lines.join('\n');
+    const kind = classifyPassage(lines);
     const heading = passage?.heading
       ? `<div class="passage-title-row"><h3 class="passage-title" lang="ja">${renderFurigana(passage.heading)}</h3>${ttsButton(fullText)}</div>`
       : `<div class="passage-title-row">${ttsButton(fullText)}</div>`;
+    const body = kind === 'dialogue'
+      ? renderDialoguePassage(lines)
+      : kind === 'document'
+        ? renderDocumentPassage(lines)
+        : lines.map((line) => renderJapaneseLine(line, 'passage-line', { tts: false })).join('');
     return `
     <article class="passage-block">
       ${heading}
-      ${lines.map((line) => renderJapaneseLine(line, 'passage-line', { tts: false })).join('')}
+      ${body}
     </article>`;
   }).join('');
   return `
@@ -389,8 +452,12 @@ function handleQuiz(button) {
   container.classList.add('is-answered');
   const correct = Number(container.dataset.correctIdx);
   const selected = Number(button.dataset.idx);
-  const options = [...container.querySelectorAll('.quiz-option')];
-  options.forEach((option) => {
+  // Pick the selector set: price-tag questions have hidden .quiz-options
+  // and use .price-tag instead.
+  const targets = container.classList.contains('quiz-question-price')
+    ? [...container.querySelectorAll('.price-tag')]
+    : [...container.querySelectorAll('.quiz-option')];
+  targets.forEach((option) => {
     option.disabled = true;
     const index = Number(option.dataset.idx);
     if (correct >= 0 && index === correct) option.classList.add('is-correct');
@@ -399,8 +466,9 @@ function handleQuiz(button) {
   const status = container.querySelector('.quiz-explain');
   if (status) {
     status.hidden = false;
-    status.textContent = correct >= 0 && options[correct]
-      ? `Đáp án: ${options[correct].textContent.trim()}`
+    const correctTarget = targets[correct];
+    status.textContent = correct >= 0 && correctTarget
+      ? `Đáp án: ${correctTarget.textContent.trim()}`
       : 'Đáp án của câu này chưa được xác minh.';
   }
 }
