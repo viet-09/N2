@@ -14,6 +14,8 @@ import { navigate, getCurrentRoute, isRouteActive } from './router.js';
 import { renderFurigana, setFurigana, getFurigana } from './furigana.js';
 import { askText } from './gemini.js';
 import { renderTutor } from './tutor.js';
+import { getQuestionClassification, getLessonImages } from './store.js';
+import { questionTypeInfo } from './question-types.js';
 
 function escapeHtml(value) {
   return String(value ?? '').replace(/[&<>"']/g, (char) => ({
@@ -74,7 +76,32 @@ function answerIndex(question) {
   return Number.isInteger(index) ? index : -1;
 }
 
-function renderQuestions(questions, title = 'Luyện tập') {
+function renderQuestionHeader(lessonId, questionIndex) {
+  const info = getQuestionClassification(lessonId, questionIndex);
+  if (!info) return '';
+  const t = questionTypeInfo(info.type);
+  const label = escapeHtml(t.label || info.type);
+  const tip = t.tip ? ` title="${escapeHtml(t.tip)}" aria-label="${escapeHtml(t.tip)}"` : '';
+  return `<header class="quiz-q-header"><span class="quiz-q-type-badge" data-question-type="${escapeHtml(info.type)}"${tip}>${label}</span><span class="quiz-q-desc">${escapeHtml(info.descriptionVi)}</span></header>`;
+}
+
+function renderImagesSection(lessonId) {
+  const images = getLessonImages(lessonId);
+  if (!Array.isArray(images) || images.length === 0) return '';
+  const items = images.map((entry) => {
+    if (!entry || typeof entry.src !== 'string') return '';
+    const caption = entry.captionVi ? `<figcaption class="lesson-image-caption">${escapeHtml(entry.captionVi)}</figcaption>` : '';
+    const isPage = entry.kind === 'page';
+    if (isPage) {
+      return `<details class="lesson-image-page"><summary>Trang sách gốc</summary><figure class="lesson-image-figure"><img loading="lazy" src="${escapeHtml(entry.src)}" alt="Trang sách">${caption}</figure></details>`;
+    }
+    return `<figure class="lesson-image-figure"><img loading="lazy" src="${escapeHtml(entry.src)}" alt="${escapeHtml(entry.captionVi || 'Hình minh họa')}">${caption}</figure>`;
+  }).filter(Boolean).join('');
+  if (!items) return '';
+  return `<section class="lesson-images" aria-label="Hình minh họa">${items}</section>`;
+}
+
+function renderQuestions(questions, lessonId, title = 'Luyện tập') {
   if (!Array.isArray(questions) || !questions.length) return '';
   return `
     <section class="quiz-block" aria-labelledby="quiz-heading">
@@ -84,6 +111,7 @@ function renderQuestions(questions, title = 'Luyện tập') {
         const correct = answerIndex(question);
         return `
           <div class="quiz-question" data-correct-idx="${correct}">
+            ${renderQuestionHeader(lessonId, questionIndex)}
             <div class="quiz-q-text" lang="ja">${questionIndex + 1}. ${renderFurigana(question?.prompt || question?.q || '')}</div>
             <div class="quiz-options">
               ${options.map((option, optionIndex) => `<button type="button" class="quiz-option" data-action="quiz-option" data-idx="${optionIndex}" lang="ja">${renderFurigana(option)}</button>`).join('')}
@@ -94,7 +122,7 @@ function renderQuestions(questions, title = 'Luyện tập') {
     </section>`;
 }
 
-function renderKanji(content) {
+function renderKanji(lessonId, content) {
   const cards = (Array.isArray(content.kanji) ? content.kanji : []).map((item) => `
     <article class="kanji-item">
       <div class="kanji-char">${wordButton(item?.char || '', [item?.on, item?.kun].filter(Boolean).join(' / '))}</div>
@@ -111,13 +139,14 @@ function renderKanji(content) {
   return `
     <section class="content-section kanji-section">
       <h2 class="section-heading">Hán tự</h2>
+      ${renderImagesSection(lessonId)}
       <div class="kanji-grid">${cards || '<p class="text-muted">Không có mục Hán tự trong bài này.</p>'}</div>
       ${review.length ? `<section class="review-kanji"><h3 class="subheading" lang="ja">よめるかな？</h3><div class="review-kanji-list">${review.map((item) => wordButton(item?.char || '', [item?.on, item?.kun].filter(Boolean).join(' / '))).join('')}</div></section>` : ''}
-      ${renderQuestions(content.practice, '練習 · Luyện tập')}
+      ${renderQuestions(content.practice, lessonId, '練習 · Luyện tập')}
     </section>`;
 }
 
-function renderVocabulary(content) {
+function renderVocabulary(lessonId, content) {
   const sections = (Array.isArray(content.sections) ? content.sections : []).map((section) => `
     <section class="vocab-book-section">
       ${section?.heading ? `<h3 class="subheading" lang="ja">${renderFurigana(section.heading)}</h3>` : ''}
@@ -130,10 +159,10 @@ function renderVocabulary(content) {
           </article>`).join('')}
       </div>
     </section>`).join('');
-  return `<section class="content-section vocab-section"><h2 class="section-heading">Từ vựng</h2>${sections}${renderQuestions(content.practice, '練習 · Luyện tập')}</section>`;
+  return `<section class="content-section vocab-section"><h2 class="section-heading">Từ vựng</h2>${renderImagesSection(lessonId)}${sections}${renderQuestions(content.practice, lessonId, '練習 · Luyện tập')}</section>`;
 }
 
-function renderGrammar(content) {
+function renderGrammar(lessonId, content) {
   const patterns = (Array.isArray(content.patterns) ? content.patterns : []).map((pattern) => `
     <article class="grammar-point">
       <h3 class="grammar-title" lang="ja">${renderGrammarNotation(pattern?.form || '')}</h3>
@@ -145,10 +174,10 @@ function renderGrammar(content) {
           ${example?.en ? `<div class="vi-sentence" lang="en">${escapeHtml(example.en)}</div>` : ''}
         </div>`).join('')}
     </article>`).join('');
-  return `<section class="content-section grammar-section"><h2 class="section-heading">Ngữ pháp</h2>${patterns}${renderQuestions(content.practice, '練習 · Luyện tập')}</section>`;
+  return `<section class="content-section grammar-section"><h2 class="section-heading">Ngữ pháp</h2>${patterns}${renderQuestions(content.practice, lessonId, '練習 · Luyện tập')}</section>`;
 }
 
-function renderReading(content) {
+function renderReading(lessonId, content) {
   const passages = (Array.isArray(content.passages) ? content.passages : []).map((passage) => `
     <article class="passage-block">
       ${passage?.heading ? `<h3 class="passage-title" lang="ja">${renderFurigana(passage.heading)}</h3>` : ''}
@@ -158,12 +187,13 @@ function renderReading(content) {
     <section class="content-section reading-section">
       <h2 class="section-heading">Đọc hiểu</h2>
       ${content.intro ? `<p class="section-intro" lang="ja">${renderFurigana(content.intro)}</p>` : ''}
+      ${renderImagesSection(lessonId)}
       ${passages}
-      ${renderQuestions(content.questions, 'Câu hỏi đọc hiểu')}
+      ${renderQuestions(content.questions, lessonId, 'Câu hỏi đọc hiểu')}
     </section>`;
 }
 
-function renderListening(content) {
+function renderListening(lessonId, content) {
   const script = String(content.script || '').split(/\n+/).filter(Boolean).map((line) => renderJapaneseLine(line, 'transcript-line')).join('');
   const audioTracks = Array.isArray(content.audioTracks) ? content.audioTracks : [];
   const introTracks = Array.isArray(content.introTracks) ? content.introTracks : [];
@@ -193,22 +223,23 @@ function renderListening(content) {
     <section class="content-section listening-section">
       <h2 class="section-heading">Nghe hiểu</h2>
       ${coverageMarkup}${trackMarkup}${introMarkup}
+      ${renderImagesSection(lessonId)}
       ${script ? `<div class="transcript-block">${script}</div>` : ''}
-      ${renderQuestions(content.questions, 'Câu hỏi nghe hiểu')}
+      ${renderQuestions(content.questions, lessonId, 'Câu hỏi nghe hiểu')}
     </section>`;
 }
 
-function renderBookContent(categoryId, content) {
+function renderBookContent(categoryId, content, lessonId = '') {
   if (!content || typeof content !== 'object') return `
     <div class="lesson-empty-state" role="status">
       <p>Nội dung sách của bài này chưa được trích xuất và xác minh.</p>
       <p class="text-muted">Ứng dụng không tự sáng tác nội dung thay cho sách.</p>
     </div>`;
-  if (categoryId === 'kanji') return renderKanji(content);
-  if (categoryId === 'vocabulary') return renderVocabulary(content);
-  if (categoryId === 'grammar') return renderGrammar(content);
-  if (categoryId === 'reading') return renderReading(content);
-  if (categoryId === 'listening') return renderListening(content);
+  if (categoryId === 'kanji') return renderKanji(lessonId, content);
+  if (categoryId === 'vocabulary') return renderVocabulary(lessonId, content);
+  if (categoryId === 'grammar') return renderGrammar(lessonId, content);
+  if (categoryId === 'reading') return renderReading(lessonId, content);
+  if (categoryId === 'listening') return renderListening(lessonId, content);
   return '<p class="text-muted">Không có renderer cho danh mục này.</p>';
 }
 
@@ -223,7 +254,7 @@ function renderToolbar(done) {
     </div>`;
 }
 
-function pageHtml(found, content) {
+function pageHtml(found, lessonId, content) {
   const { lesson, category, week } = found;
   const unit = category?.id === 'listening' ? 'Chương' : 'Tuần';
   const title = content?.title || lesson.title || '';
@@ -236,7 +267,7 @@ function pageHtml(found, content) {
         <h1 class="lesson-header-title" data-route-heading lang="ja">${renderFurigana(title)}</h1>
         ${titleEn ? `<p class="lesson-title-en" lang="en">${escapeHtml(titleEn)}</p>` : ''}
       </header>
-      <div class="lesson-body">${renderBookContent(category?.id, content)}</div>
+      <div class="lesson-body">${renderBookContent(category?.id, content, lessonId)}</div>
       <div class="lesson-footer-actions">
         <button type="button" class="tutor-lesson-btn" data-action="ask-tutor">🎓 Hỏi gia sư AI</button>
         <button type="button" class="back-btn back-btn-bottom" data-action="back">← Quay lại tổng quan</button>
@@ -316,7 +347,7 @@ export function renderLesson(root, id) {
       root.innerHTML = '<div class="lesson-page lesson-not-found"><p role="alert">Không tìm thấy bài học.</p><button type="button" class="back-btn" data-action="back">← Quay lại</button></div>';
       return;
     }
-    root.innerHTML = pageHtml(found, getBookContent(id));
+    root.innerHTML = pageHtml(found, id, getBookContent(id));
   };
 
   // Shared popup lifecycle for both tap-a-word (definition) and tap-a-sentence
@@ -389,6 +420,12 @@ export function renderLesson(root, id) {
   };
 
   const onClick = (event) => {
+    const image = event.target.closest('.lesson-image-figure img');
+    if (image) {
+      if (document.fullscreenElement === image) document.exitFullscreen?.();
+      else image.requestFullscreen?.();
+      return;
+    }
     const button = event.target.closest('[data-action]');
     if (!button) return;
     const action = button.dataset.action;

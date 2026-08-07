@@ -1,0 +1,779 @@
+{
+  "l1d1": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "listening-imamashii",
+        "descriptionVi": "Nghe va dien am tiet co am ngat 'tsu' vao cho trong"
+      },
+      {
+        "index": 2,
+        "type": "listening-imamashii",
+        "descriptionVi": "Chon tu dung voi nhung gi nghe duoc co chu y cach viet"
+      },
+      {
+        "index": 3,
+        "type": "listening-imamashii",
+        "descriptionVi": "Nghe va viet lai tu da nghe bang hiragana va dang goc vao ngoac"
+      }
+    ]
+  },
+  "l1d2": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "listening-kadai",
+        "descriptionVi": "Nam hay nu hay Mori-san se lam gi tiep theo?"
+      },
+      {
+        "index": 1,
+        "type": "listening-kadai",
+        "descriptionVi": "Nam hay nu hay Mori-san se lien lac?"
+      },
+      {
+        "index": 2,
+        "type": "listening-kadai",
+        "descriptionVi": "Nam hay nu hay Mori-san se goi dien?"
+      },
+      {
+        "index": 3,
+        "type": "listening-kadai",
+        "descriptionVi": "Nam hay nu hay Mori-san se truyen dat?"
+      },
+      {
+        "index": 4,
+        "type": "listening-kadai",
+        "descriptionVi": "Nam hay nu hay Mori-san se giu ho?"
+      },
+      {
+        "index": 5,
+        "type": "listening-point",
+        "descriptionVi": "Nguyen nhan khien nguoi trong bai khong khoe hoac lo lang la gi?"
+      },
+      {
+        "index": 6,
+        "type": "listening-point",
+        "descriptionVi": "Hanh dong hoac tinh huong cu the trong cau chuyen la gi?"
+      },
+      {
+        "index": 7,
+        "type": "listening-point",
+        "descriptionVi": "Trang thai hoac quyet dinh cua nhan vat nam trong bai la gi?"
+      },
+      {
+        "index": 8,
+        "type": "listening-point",
+        "descriptionVi": "Muc dich hoac ly do dan den hanh dong cua nhan vat la gi?"
+      }
+    ]
+  },
+  "l1d3": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "listening-point",
+        "descriptionVi": "Hỏi về thời gian cho đến khi ăn được"
+      },
+      {
+        "index": 2,
+        "type": "listening-point",
+        "descriptionVi": "Hỏi tình hình của chồng người nghe"
+      },
+      {
+        "index": 3,
+        "type": "listening-point",
+        "descriptionVi": "Hỏi về việc có thể gặp nhau vào ngày mai hay không"
+      },
+      {
+        "index": 4,
+        "type": "listening-point",
+        "descriptionVi": "Hỏi về việc có lời nhắn hay không"
+      },
+      {
+        "index": 5,
+        "type": "listening-point",
+        "descriptionVi": "Cuộc gọi điện thoại từ Tanaka"
+      },
+      {
+        "index": 6,
+        "type": "listening-point",
+        "descriptionVi": "Người nữ đã xin lỗi người nam"
+      },
+      {
+        "index": 7,
+        "type": "listening-point",
+        "descriptionVi": "Người nữ yêu cầu người nam giải thích"
+      },
+      {
+        "index": 8,
+        "type": "listening-point",
+        "descriptionVi": "Thầy Tanaka nhớ người nữ"
+      },
+      {
+        "index": 9,
+        "type": "listening-point",
+        "descriptionVi": "Người nam định báo cáo về cuộc điều tra"
+      },
+      {
+        "index": 10,
+        "type": "listening-point",
+        "descriptionVi": "Cả người nam và người nữ đều đã xem bộ phim mang tên 'Hakuou'"
+      }
+    ]
+  },
+  "l1d4": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "listening-imamashii",
+        "descriptionVi": "Lựa chọn ý nghĩa đúng của biểu thức '～わけだ'"
+      },
+      {
+        "index": 2,
+        "type": "listening-imamashii",
+        "descriptionVi": "Lựa chọn ý nghĩa đúng của biểu thức '～わけじゃない'"
+      },
+      {
+        "index": 3,
+        "type": "listening-imamashii",
+        "descriptionVi": "Lựa chọn ý nghĩa đúng của biểu thức '～わけがない'"
+      },
+      {
+        "index": 4,
+        "type": "listening-imamashii",
+        "descriptionVi": "Lựa chọn phản hồi phù hợp với ngữ cảnh"
+      },
+      {
+        "index": 5,
+        "type": "listening-imamashii",
+        "descriptionVi": "Lựa chọn phản hồi phù hợp với ngữ cảnh hội thoại"
+      },
+      {
+        "index": 6,
+        "type": "listening-imamashii",
+        "descriptionVi": "Xác định tâm trạng của nhân vật trong đoạn hội thoại"
+      },
+      {
+        "index": 7,
+        "type": "listening-imamashii",
+        "descriptionVi": "Lựa chọn ý nghĩa đúng của biểu thức '～わけだ'"
+      },
+      {
+        "index": 8,
+        "type": "listening-imamashii",
+        "descriptionVi": "Lựa chọn ý nghĩa đúng của biểu thức '～わけじゃない'"
+      },
+      {
+        "index": 9,
+        "type": "listening-imamashii",
+        "descriptionVi": "Lựa chọn ý nghĩa đúng của biểu thức '～わけだ'"
+      },
+      {
+        "index": 10,
+        "type": "listening-imamashii",
+        "descriptionVi": "Lựa chọn ý nghĩa đúng của biểu thức '～わけじゃない'"
+      },
+      {
+        "index": 11,
+        "type": "listening-imamashii",
+        "descriptionVi": "Lựa chọn ý nghĩa đúng của biểu thức '～わけがない'"
+      }
+    ]
+  },
+  "l1d5": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "listening-imamashii",
+        "descriptionVi": "Chon tu dung voi cach phat am va bo tuc"
+      },
+      {
+        "index": 2,
+        "type": "listening-imamashii",
+        "descriptionVi": "Xac dinh doan hoi thoai dung noi dung"
+      },
+      {
+        "index": 3,
+        "type": "listening-imamashii",
+        "descriptionVi": "Nghe doan hoi thoai va dien vao cho trong"
+      },
+      {
+        "index": 4,
+        "type": "listening-imamashii",
+        "descriptionVi": "Chon hanh dong hoac phan ung phu hop trong truong hop cu the"
+      },
+      {
+        "index": 5,
+        "type": "listening-imamashii",
+        "descriptionVi": "Hieu cam xuc hoac y dinh cua nguoi noi qua cau"
+      },
+      {
+        "index": 6,
+        "type": "listening-kadai",
+        "descriptionVi": "Nghe cau hoi va chon tu, phat am chinh xac"
+      },
+      {
+        "index": 7,
+        "type": "listening-kadai",
+        "descriptionVi": "Nghe cau hoi va chon cau tra loi dung"
+      },
+      {
+        "index": 8,
+        "type": "listening-point",
+        "descriptionVi": "Nghe doan hoi thoai va xac dinh thong tin chinh"
+      },
+      {
+        "index": 9,
+        "type": "listening-gaiyou",
+        "descriptionVi": "Xac dinh noi dung chinh cua bai nghe tong hop"
+      },
+      {
+        "index": 10,
+        "type": "listening-imamashii",
+        "descriptionVi": "Nghe doan hoi thoai tong hop va chon phu an phu hop"
+      },
+      {
+        "index": 11,
+        "type": "listening-kadai",
+        "descriptionVi": "Nghe doan hoi thoai va giai quyet van de cap thiet"
+      },
+      {
+        "index": 12,
+        "type": "listening-point",
+        "descriptionVi": "Tim diem chinh trong bai phat bieu hoac thong bao"
+      },
+      {
+        "index": 13,
+        "type": "listening-gaiyou",
+        "descriptionVi": "Hieu y nghia tong quat cua doan hoi thoai dai"
+      },
+      {
+        "index": 14,
+        "type": "listening-imamashii",
+        "descriptionVi": "Nghe va dua ra quyet dinh dua tren thong tin cho truoc"
+      },
+      {
+        "index": 15,
+        "type": "listening-imamashii",
+        "descriptionVi": "Xac dinh vi tri hoac huong di dung"
+      },
+      {
+        "index": 16,
+        "type": "listening-kadai",
+        "descriptionVi": "Thuc hien nhiem vu dua tren chi dan da nghe"
+      },
+      {
+        "index": 17,
+        "type": "listening-point",
+        "descriptionVi": "Hieu ro nguyen nhan hoac ly do trong tinh the cu the"
+      },
+      {
+        "index": 18,
+        "type": "listening-gaiyou",
+        "descriptionVi": "Tong hop thong tin de dua ra ket luan chung"
+      },
+      {
+        "index": 19,
+        "type": "listening-imamashii",
+        "descriptionVi": "Nghe doan hoi thoai va chon y kien hoac danh gia dung"
+      },
+      {
+        "index": 20,
+        "type": "listening-imamashii",
+        "descriptionVi": "Giai quyet cau hoi tong hop phuc tap dua tren nhieu nguon thong tin"
+      }
+    ]
+  },
+  "l2d1": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "listening-imamashii",
+        "descriptionVi": "Cau hoi 1 trong phan Phản hồi tức thì, chon cau tra loi phu hop nhat cho doan hoi thoai ngan."
+      },
+      {
+        "index": 1,
+        "type": "listening-imamashii",
+        "descriptionVi": "Cau hoi 2 trong phan Phản hồi tức thì, chon cau tra loi phu hop nhat cho doan hoi thoai ngan."
+      },
+      {
+        "index": 2,
+        "type": "listening-imamashii",
+        "descriptionVi": "Cau hoi 3 trong phan Phản hồi tức thì, chon cau tra loi phu hop nhat cho doan hoi thoai ngan."
+      },
+      {
+        "index": 3,
+        "type": "listening-imamashii",
+        "descriptionVi": "Cau hoi 4 trong phan Phản hồi tức thì, chon cau tra loi phu hop nhat cho doan hoi thoai ngan."
+      }
+    ]
+  },
+  "l2d2": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "listening-kadai",
+        "descriptionVi": "Nghe hiểu đoạn hội thoại để xác định người nam cần làm gì tiếp theo hoặc vấn đề cần giải quyết."
+      },
+      {
+        "index": 2,
+        "type": "listening-kadai",
+        "descriptionVi": "Nghe đoạn hội thoại và xác định hành động tiếp theo của người nam trong tình huống cụ thể."
+      }
+    ]
+  },
+  "l2d3": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "listening-point",
+        "descriptionVi": "Nghe doan hoi thoai va xac dinh ly do tai sao nguoi nam lai muon den quan ramen do."
+      },
+      {
+        "index": 2,
+        "type": "listening-point",
+        "descriptionVi": "Nghe doan hoi thoai va xac dinh ly do tai sao nguoi nu khong muon vao cong ty cu nua."
+      }
+    ]
+  },
+  "l2d4": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "listening-gaiyou",
+        "descriptionVi": "Nghe doan hoi thoai va xac dinh muc dich hoac noi dung chinh cua nguoi noi"
+      },
+      {
+        "index": 2,
+        "type": "listening-gaiyou",
+        "descriptionVi": "Nghe doan hoi thoai ve mot chu de va tim hieu y chinh hoac ban chat cua van de"
+      }
+    ]
+  },
+  "l2d5": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "listening-kadai",
+        "descriptionVi": "Gia đình 3 người thảo luận và quyết định sẽ làm gì vào ngày nghỉ"
+      },
+      {
+        "index": 1,
+        "type": "listening-kadai",
+        "descriptionVi": "Nam và nữ thảo luận để chọn căn hộ muốn xem"
+      }
+    ]
+  },
+  "l2d6": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "listening-imamashii",
+        "descriptionVi": "Xac dinh cau hoi 1 cho bai l2d6 ve Chon lua - Hieu tong hop"
+      },
+      {
+        "index": 2,
+        "type": "listening-imamashii",
+        "descriptionVi": "Xac dinh cau hoi 2 cho bai l2d6 ve Chon lua - Hieu tong hop"
+      }
+    ]
+  },
+  "l2d7": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "listening-imamashii",
+        "descriptionVi": "Nghe 5 cau hoi ve phat am va tim tu phat am dung"
+      },
+      {
+        "index": 1,
+        "type": "listening-imamashii",
+        "descriptionVi": "Nghe 5 cau hoi ve nghia va cach dung tu va chon y dung"
+      },
+      {
+        "index": 2,
+        "type": "listening-imamashii",
+        "descriptionVi": "Nghe 5 cau hoi ve ai lam gi va chon cau dung"
+      },
+      {
+        "index": 3,
+        "type": "listening-imamashii",
+        "descriptionVi": "Nghe 5 cau hoi ve hanh dong cua hai nguoi va chon dap an dung"
+      },
+      {
+        "index": 4,
+        "type": "listening-imamashii",
+        "descriptionVi": "Nghe 5 cau hoi ve suy xet noi tam cua nguoi noi"
+      },
+      {
+        "index": 5,
+        "type": "listening-kadai",
+        "descriptionVi": "Nghe doan hoi thoai va tra loi cau hoi de tim viec can lam ngay"
+      },
+      {
+        "index": 6,
+        "type": "listening-point",
+        "descriptionVi": "Nghe doan hoi thoai va tim ly do hoac chi tiet quan trong"
+      },
+      {
+        "index": 7,
+        "type": "listening-gaiyou",
+        "descriptionVi": "Nghe doan hoi thoai dai va hieu tom tat chu de"
+      },
+      {
+        "index": 8,
+        "type": "listening-imamashii",
+        "descriptionVi": "Nghe 2 cau hoi ve phan ung thich hop trong giao tiep ngan"
+      },
+      {
+        "index": 9,
+        "type": "listening-imamashii",
+        "descriptionVi": "Nghe 2 cau hoi ve viec ket hop thong tin va lua chon trong"
+      },
+      {
+        "index": 10,
+        "type": "listening-imamashii",
+        "descriptionVi": "Nghe 2 cau hoi ve giai quyet van de tong hop"
+      }
+    ]
+  },
+  "l3d1": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "listening-kadai",
+        "descriptionVi": "Q1: Nghe va chon do vat ma nguoi me yeu cau dua cho khach."
+      },
+      {
+        "index": 1,
+        "type": "listening-kadai",
+        "descriptionVi": "Q2: Nghe chi dan va chon viec nu nhan vien phai lam khi cuoc hop keo dai."
+      },
+      {
+        "index": 2,
+        "type": "listening-kadai",
+        "descriptionVi": "Q3: Nghe thong tin ve can ho va tinh so tien can thanh toan ban dau."
+      }
+    ]
+  },
+  "l3d2": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "listening-gaiyou",
+        "descriptionVi": "Nghe hieu noi dung chinh cua doan hoi thoa"
+      },
+      {
+        "index": 2,
+        "type": "listening-point",
+        "descriptionVi": "Hieu moi quan he giua hai nguoi trong cuoc tro chuyen"
+      },
+      {
+        "index": 3,
+        "type": "listening-imamashii",
+        "descriptionVi": "Hieu cuoc tro chuyen dien thoai va tin nhan trong doi song"
+      }
+    ]
+  },
+  "l3d3": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "listening-kadai",
+        "descriptionVi": "Nghe doan ghi am thong bao ve viec nhap ma so va thoi gian nhan hang tren may tu dong de thuc hien thao tac dung."
+      },
+      {
+        "index": 1,
+        "type": "listening-point",
+        "descriptionVi": "Nghe doan hoi thoai de tim hieu xem nguoi nghe se giai quyet van de ra sao khi khong den cua hang."
+      },
+      {
+        "index": 2,
+        "type": "listening-imamashii",
+        "descriptionVi": "Nghe doan hoi thoai ve thoi gian lap dat dieu hoa va xac dinh lai thoi gian cu the."
+      }
+    ]
+  },
+  "l3d4": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "listening-imamashii",
+        "descriptionVi": "Hỏi về lý do người nữ không hài lòng với công việc mới."
+      },
+      {
+        "index": 2,
+        "type": "listening-imamashii",
+        "descriptionVi": "Hỏi về lý do thực sự khiến người nam không muốn đi karaoke."
+      },
+      {
+        "index": 3,
+        "type": "listening-imamashii",
+        "descriptionVi": "Hỏi suy nghĩ của người nam về việc đi tàu điện ngầm ở Tokyo."
+      }
+    ]
+  },
+  "l3d5": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "listening-imamashii",
+        "descriptionVi": "Giao tiep hang ngay - Nguoi phu nu hoi ve de tai luan van cua ban nam"
+      },
+      {
+        "index": 1,
+        "type": "listening-kadai",
+        "descriptionVi": "Giai quyet van de - Thong tin ve buoi hop va tai lieu can chuan bi"
+      },
+      {
+        "index": 2,
+        "type": "listening-point",
+        "descriptionVi": "Hieu diem chinh - Nguyen nhan ban nam den muon buoi hop"
+      },
+      {
+        "index": 3,
+        "type": "listening-gaiyou",
+        "descriptionVi": "Hieu khai quat - Noi dung chinh cua bai phat bieu ve moi truong"
+      },
+      {
+        "index": 4,
+        "type": "listening-imamashii",
+        "descriptionVi": "Phan ung thich hop - Tra loi cau hoi ve ke hoach du lich cuoi tuan"
+      },
+      {
+        "index": 5,
+        "type": "listening-gaiyou",
+        "descriptionVi": "Hieu khai quat - Tom tat noi dung cuoc hop ve chien luoc kinh doanh moi"
+      }
+    ]
+  },
+  "l4d1": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "listening-point",
+        "descriptionVi": "Xac dinh vi tri cua hang trong de-part qua thong bao trong cua hang."
+      },
+      {
+        "index": 1,
+        "type": "listening-point",
+        "descriptionVi": "Xac dinh nguyen nhan gay ra viec gian doan giao thong (tau dien) qua thong bao."
+      },
+      {
+        "index": 2,
+        "type": "listening-kadai",
+        "descriptionVi": "Xac dinh hanh dong tiep theo ma nguoi phu nu can lam khi di chuyen bang tau dien."
+      }
+    ]
+  },
+  "l4d2": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "listening-point",
+        "descriptionVi": "Nghe thong tin giao thong va chon ly do giao thong bi anh huong hoac ket xe."
+      },
+      {
+        "index": 1,
+        "type": "listening-point",
+        "descriptionVi": "Nghe thong tin ve thien tai, dong dat va xac nhan noi dung thong tin phu hop."
+      },
+      {
+        "index": 2,
+        "type": "listening-point",
+        "descriptionVi": "Nghe ban tin thoi tiet va xac nhan du kien ke hoach ngay mai cua nguoi noi."
+      }
+    ]
+  },
+  "l4d3": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "listening-kadai",
+        "descriptionVi": "Nam sinh viên hỏi thủ tục đăng ký lớp học tiếng Nhật ở văn phòng và cần làm gì tiếp theo."
+      },
+      {
+        "index": 1,
+        "type": "listening-point",
+        "descriptionVi": "Nam sinh viên hỏi tại sao không mượn được sách ở thư viện và lý do là gì."
+      },
+      {
+        "index": 2,
+        "type": "listening-gaiyou",
+        "descriptionVi": "Nghe thông báo trong trường đại học về thời gian và địa điểm diễn ra buổi hướng dẫn."
+      }
+    ]
+  },
+  "l4d4": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "listening-imamashii",
+        "descriptionVi": "Hỏi về vị trí chờ đợi của bà cô giáo trong thông báo của cửa hàng bách hóa."
+      },
+      {
+        "index": 2,
+        "type": "listening-point",
+        "descriptionVi": "Nghe thông báo tại nhà ga để tìm nguyên nhân khiến giao thông bị rối loạn."
+      },
+      {
+        "index": 3,
+        "type": "listening-kadai",
+        "descriptionVi": "Nghe thông báo trên tàu điện để hướng dẫn người phụ nữ cách đổi tuyến."
+      }
+    ]
+  },
+  "l4d5": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "listening-point",
+        "descriptionVi": "Nghe thong tin ve thoi tiet va giao thong de tim hieu tinh hinh thuc te."
+      },
+      {
+        "index": 1,
+        "type": "listening-point",
+        "descriptionVi": "Nghe hoi thoai ve cac su kien va thong tin tai cac dia diem khac nhau."
+      },
+      {
+        "index": 2,
+        "type": "listening-gaiyou",
+        "descriptionVi": "Nghe hieu noi dung tong quan cua cac thong bao va huong dan."
+      },
+      {
+        "index": 3,
+        "type": "listening-imamashii",
+        "descriptionVi": "Nghe cau tra loi cho cac tinh huong giao tiep hang ngay."
+      },
+      {
+        "index": 4,
+        "type": "listening-kadai",
+        "descriptionVi": "Nghe hoi thoai de tim giai phap va hanh dong tiep theo cho truong hop cu the."
+      }
+    ]
+  },
+  "l5d1": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "listening-kadai",
+        "descriptionVi": "Giao dich tai ngan hang, khach hang phai bam nut nao tiep theo?"
+      },
+      {
+        "index": 1,
+        "type": "listening-imamashii",
+        "descriptionVi": "Sua loi sai cua phieu va fax lai"
+      },
+      {
+        "index": 2,
+        "type": "listening-point",
+        "descriptionVi": "Thoi gian toi cua hang cua nguoi dan ong"
+      },
+      {
+        "index": 3,
+        "type": "listening-imamashii",
+        "descriptionVi": "Phan ung khi bi tre vi xe co dong"
+      },
+      {
+        "index": 4,
+        "type": "listening-kadai",
+        "descriptionVi": "Ly do nguoi dan ong tu choi thua ke cua hang cua bo"
+      },
+      {
+        "index": 5,
+        "type": "listening-point",
+        "descriptionVi": "Thoi gian cu the de tho den sua chua"
+      },
+      {
+        "index": 6,
+        "type": "listening-gaiyou",
+        "descriptionVi": "Dac diem cua le hoi bun o Nakayama"
+      },
+      {
+        "index": 7,
+        "type": "listening-gaiyou",
+        "descriptionVi": "Ly do nguoi dan ong cam thay khong hai long ve xe o to moi"
+      },
+      {
+        "index": 8,
+        "type": "listening-gaiyou",
+        "descriptionVi": "Diem chung trong so thich cua hai nguoi"
+      },
+      {
+        "index": 9,
+        "type": "listening-kadai",
+        "descriptionVi": "Nhan xet ve chuyen du lich nuoc ngoai va suy nghi ve gia ca"
+      },
+      {
+        "index": 10,
+        "type": "listening-point",
+        "descriptionVi": "Y dinh tham gia hoat dong cau lac bo cua nguoi dan ong trong tuong lai"
+      },
+      {
+        "index": 11,
+        "type": "listening-point",
+        "descriptionVi": "Quan diem cua nguoi phu nu ve van de thong bao benh cho nguoi benh"
+      },
+      {
+        "index": 12,
+        "type": "listening-point",
+        "descriptionVi": "Nhan xet va giai thich cua bo ve loai chim ma co be nhin thay"
+      },
+      {
+        "index": 13,
+        "type": "listening-imamashii",
+        "descriptionVi": "Dap lai cau hoi ve lich trinh ban ron vao chu nhat"
+      },
+      {
+        "index": 14,
+        "type": "listening-imamashii",
+        "descriptionVi": "Phan hoi khi nghe noi la bai nghe rat kho hieu"
+      },
+      {
+        "index": 15,
+        "type": "listening-imamashii",
+        "descriptionVi": "Tra loi khi bi lac duong va den tre"
+      },
+      {
+        "index": 16,
+        "type": "listening-imamashii",
+        "descriptionVi": "Nhan xet ve viec hoan thanh cong viec xuat sac"
+      },
+      {
+        "index": 17,
+        "type": "listening-imamashii",
+        "descriptionVi": "Hoi tham cong viec hoac nhac nho khi thay dong nghiep gap rac roi"
+      },
+      {
+        "index": 18,
+        "type": "listening-imamashii",
+        "descriptionVi": "Binh luan ve viec ban be lau ngay khong gap"
+      },
+      {
+        "index": 19,
+        "type": "listening-imamashii",
+        "descriptionVi": "Phan hoi khi may ban hang tu dong khong nhan tien le"
+      },
+      {
+        "index": 20,
+        "type": "listening-kadai",
+        "descriptionVi": "Lua chon may hut bui phu hop nhat cho gia dinh"
+      },
+      {
+        "index": 21,
+        "type": "listening-kadai",
+        "descriptionVi": "Thao luan va thong nhat ve qua cuoi cho dong nghiep"
+      },
+      {
+        "index": 22,
+        "type": "listening-point",
+        "descriptionVi": "Lua chon phong ky tuc xa phu hop cho tung sinh vien"
+      },
+      {
+        "index": 23,
+        "type": "listening-point",
+        "descriptionVi": "Lua chon loai phong phu hop cho nam sinh"
+      }
+    ]
+  }
+}

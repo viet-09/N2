@@ -1,0 +1,2983 @@
+{
+  "k1d1": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon giai thich dung cho bien bao cam vao khu vuc han che"
+      },
+      {
+        "index": 1,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon y nghia dung cua bien bao giu yen lang"
+      },
+      {
+        "index": 2,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu thich hop cho bien bao nguy hiem de lui xuong"
+      },
+      {
+        "index": 3,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon cach dien dat tuong duong cho bien bao giam toc do"
+      },
+      {
+        "index": 4,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon giai thich dung cho bien bao cam boi"
+      },
+      {
+        "index": 5,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon giai thich dung cho bien bao chu y da roi"
+      },
+      {
+        "index": 6,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon giai thich dung cho bien bao cam do xe"
+      }
+    ]
+  },
+  "k1d2": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi noi hut thuoc (hut thuoc = 喫煙所)"
+      },
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi vung nay (vung nay = 付近)"
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi hoi thoai hang ngay (hang ngay = 日常)"
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi y thuc thong thuong (thong thuong = 常識)"
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi nha ve sinh (nha ve sinh = お手洗い)"
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi cau thang (cau thang = 階段)"
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi hon nua / cang luc cang (cang luc cang = 一段と)"
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi su bien doi thanh phim anh (thanh = 化)"
+      }
+    ]
+  },
+  "k1d3": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu dung de doc tu vung co chua kanji."
+      },
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Xac dinh y nghia bieu tuong hoac chu thich cua bien bao."
+      },
+      {
+        "index": 2,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu vung dung de hoan thanh hoi thoai."
+      },
+      {
+        "index": 3,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu vung phu hop de dien vao cho trong."
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon bieu dat tuong duong voi y nghia cua bien bao."
+      },
+      {
+        "index": 5,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon the cua dong tu cho cau chi thi."
+      },
+      {
+        "index": 6,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu dung trang thai de dien vao cau canh bao."
+      },
+      {
+        "index": 7,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu chi hinh thuc hoat dong kinh doanh."
+      }
+    ]
+  },
+  "k1d4": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-toroku",
+        "descriptionVi": "Dien tu thich hop de chi noi thanh toan tien ve thieu"
+      },
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi cua soat ve trong cau"
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi quay thong tin hoac tiep tan tai nha ga"
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Dien tu chi so thu tu cua san ga tau hoa"
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi su thay doi ve thoi gian bieu cua tau dien"
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi khu vuc duong ray tau hoa"
+      },
+      {
+        "index": 6,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc tu kanji chi toc do nhanh cua chan"
+      }
+    ]
+  },
+  "k1d5": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu thich hop dien vao cho trong (ve phia xuong xe bus)"
+      },
+      {
+        "index": 1,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu thich hop dien vao cho trong (doi tien le)"
+      },
+      {
+        "index": 2,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu thich hop dien vao cho trong (di qua thi tran...)"
+      },
+      {
+        "index": 3,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu thich hop dien vao cho trong (di xe bus dem ve que)"
+      },
+      {
+        "index": 4,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu thich hop dien vao cho trong (ghe ngoi cho nguoi gia)"
+      },
+      {
+        "index": 5,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu thich hop dien vao cho trong (cuoc phi taxi vao ban dem)"
+      },
+      {
+        "index": 6,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu thich hop dien vao cho trong (ghe ngoi o phia loi di)"
+      },
+      {
+        "index": 7,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu thich hop dien vao cho trong (xe co tinh an toan cao)"
+      }
+    ]
+  },
+  "k1d6": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu thich hop de dien vao cho trong (ve chu de buu dien)."
+      },
+      {
+        "index": 1,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Phan biet y nghia cua cum tu tuong tu."
+      },
+      {
+        "index": 2,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Phan biet y nghia cua cum tu tuong tu."
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu thich hop de dien vao cho trong (ve benh vien)."
+      },
+      {
+        "index": 4,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Phan biet y nghia cua cum tu tuong tu."
+      },
+      {
+        "index": 5,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Phan biet y nghia cua cum tu tuong tu."
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu thich hop de dien vao cho trong."
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu thich hop de dien vao cho trong (ve phau thuat)."
+      }
+    ]
+  },
+  "k1d7": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 駐車"
+      },
+      {
+        "index": 2,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 包んで"
+      },
+      {
+        "index": 3,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 為替"
+      },
+      {
+        "index": 4,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 喫煙席"
+      },
+      {
+        "index": 5,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 準備"
+      },
+      {
+        "index": 6,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 閉店"
+      },
+      {
+        "index": 7,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 医療"
+      },
+      {
+        "index": 8,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 救急"
+      },
+      {
+        "index": 9,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 初雪"
+      },
+      {
+        "index": 10,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 精算"
+      },
+      {
+        "index": 11,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon chu kanji dung de viet tu: ていいん"
+      },
+      {
+        "index": 12,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon chu kanji dung de viet tu: せいそう"
+      },
+      {
+        "index": 13,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon chu kanji dung de viet tu: ほうそう"
+      },
+      {
+        "index": 14,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon chu kanji dung de viet tu: そくたつ"
+      },
+      {
+        "index": 15,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon chu kanji dung de viet tu: くうこう"
+      },
+      {
+        "index": 16,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien tu thich hop vao trong ngoac: 一万円（　）"
+      },
+      {
+        "index": 17,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien tu thich hop vao trong ngoac: 自由（　）"
+      },
+      {
+        "index": 18,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien tu thich hop vao trong ngoac: （　）入国手続き"
+      },
+      {
+        "index": 19,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien tu thich hop vao trong ngoac: 運（　）"
+      },
+      {
+        "index": 20,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien tu thich hop vao trong ngoac: 1（　）車"
+      },
+      {
+        "index": 21,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien tu thich hop viet bang kanji vao vi tri Q21"
+      },
+      {
+        "index": 22,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien tu thich hop viet bang kanji vao vi tri Q22"
+      },
+      {
+        "index": 23,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien tu thich hop viet bang kanji vao vi tri Q23"
+      },
+      {
+        "index": 24,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien tu thich hop viet bang kanji vao vi tri Q24"
+      },
+      {
+        "index": 25,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien tu thich hop viet bang kanji vao vi tri Q25"
+      }
+    ]
+  },
+  "k2d1": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung dien vao cau on tap noi dung da hoc"
+      },
+      {
+        "index": 1,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu chi so luong gang tay con lai"
+      },
+      {
+        "index": 2,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu chi phuong tien giao thong nhu may bay, tau dien"
+      },
+      {
+        "index": 3,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu chi thoi gian di ve trong ngay"
+      },
+      {
+        "index": 4,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu chi viec do xe theo su chi dan"
+      },
+      {
+        "index": 5,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu chi bang ghi thoi gian tau chay"
+      },
+      {
+        "index": 6,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu chi the lay o ngan hang truoc khi doi"
+      },
+      {
+        "index": 7,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu chi tinh trang suc khoe cua bung"
+      }
+    ]
+  },
+  "k2d2": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung de dien vao cho trong (ve Chieu sang/Chieu ro)."
+      },
+      {
+        "index": 1,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung de dien vao cho trong (ve Ho tro/Giup do)."
+      },
+      {
+        "index": 2,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung de dien vao cho trong (ve Ngon ngu/Bieu dat)."
+      },
+      {
+        "index": 3,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung de dien vao cho trong (ve Giao tien/Gui tien)."
+      },
+      {
+        "index": 4,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung de dien vao cho trong (ve Nghe viet/Listening)."
+      },
+      {
+        "index": 5,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung de dien vao cho trong (ve Tien xu)."
+      },
+      {
+        "index": 6,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung de dien vao cho trong (ve Su khac biet/Sai sot)."
+      },
+      {
+        "index": 7,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung de dien vao cho trong (ve Xac nhan/Kiem tra)."
+      }
+    ]
+  },
+  "k2d3": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach dung cua tu lanh luy cho mon trang mieng"
+      },
+      {
+        "index": 1,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu chi mau xanh cay hoac mau do trong khu vuc yen tinh"
+      },
+      {
+        "index": 2,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu chi viec tra lai tien trong nghia cua cash back"
+      },
+      {
+        "index": 3,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu chi loai tien giay hoac tien xu co the dung o may ban hang"
+      },
+      {
+        "index": 4,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu phan biet do tuoi duoi 18 tuoi"
+      },
+      {
+        "index": 5,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu chi khoa nhi khoa cho tre nho"
+      },
+      {
+        "index": 6,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu chi hinh thuc du lich tap the doan the"
+      },
+      {
+        "index": 7,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu chi su nguy hiem day dac trong leo nui mua dong"
+      }
+    ]
+  },
+  "k2d4": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji phu hop cho che do cua dieu hoa vao mua mua"
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji phu hop cho hanh dong chuyen tuyen tau"
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji chi viec cai dat nhiet do thiet bi"
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji phu hop cho truong hop ngoai le"
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji cho thao tac chuyen doi am thanh"
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji chi che do hen gio ghi hinh"
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji cho thao tac tua lai bang video"
+      },
+      {
+        "index": 8,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji phu hop de bieu thi xap xi"
+      }
+    ]
+  },
+  "k2d5": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong: 'Khen nay de o che do... roi tinh sau'"
+      },
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cau ve viec gui thu hoac tien bang duong buu dien"
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cau noi ve viec tra gop khoan vay mua nha hang thang"
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cau noi ve viec mua bua hoac do vat ho menh o den tho"
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cau nhac nho ca xe va nguoi phai tuan thu den tin hieu giao thong"
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cau thong bao ve viec so dien thoai di dong da thay doi"
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cau ve ket qua tuyen chon van dong vien tham gia Olympic"
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cau noi ve viec tao moi mot mail"
+      }
+    ]
+  },
+  "k2d6": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong (hien thi phim)"
+      },
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong (sua chua may)"
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong (phong co dieu hoa)"
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong (dang ky dia chi)"
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong (con dau xac nhan)"
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong (vi tri tieu de)"
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong (phan loai tai lieu)"
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong (luu file da tao)"
+      }
+    ]
+  },
+  "k2d7": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu kanji trong cau ve thoi tiet va leo nui"
+      },
+      {
+        "index": 2,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu kanji ve viec hoan tien ve"
+      },
+      {
+        "index": 3,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu kanji ve dau hieu va su huy bo"
+      },
+      {
+        "index": 4,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu kanji chi vi tri o giua phong"
+      },
+      {
+        "index": 5,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu kanji chi tre nho"
+      },
+      {
+        "index": 6,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu kanji lien quan den in an va phong to"
+      },
+      {
+        "index": 7,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu kanji ve viec chon va chuyen doi ky tu"
+      },
+      {
+        "index": 8,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu kanji chi do am"
+      },
+      {
+        "index": 9,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu kanji ve ban cong va phoi chan"
+      },
+      {
+        "index": 10,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu kanji ve viec dem so to giay"
+      },
+      {
+        "index": 11,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung cho tu ket thuc kinh doanh"
+      },
+      {
+        "index": 12,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung cho tu hoan lai va tam hoan"
+      },
+      {
+        "index": 13,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung cho viec tong ve sinh cuoi nam"
+      },
+      {
+        "index": 14,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung cho tu chinh ly va hoan thien duong xa"
+      },
+      {
+        "index": 15,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung cho viec dat muc tieu trong nam"
+      },
+      {
+        "index": 16,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien kanji hoac tu chi so quyen hoac tap cua sach"
+      },
+      {
+        "index": 17,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien kanji hoac tu chi so luong hoac trong luong gao"
+      },
+      {
+        "index": 18,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien kanji hoac tu chi kieu cach hoac phong tuc cua Nhat Ban"
+      },
+      {
+        "index": 19,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien kanji hoac tu chi hinh anh kem theo email"
+      },
+      {
+        "index": 20,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien kanji hoac tu chi tieu thuyet ngan"
+      },
+      {
+        "index": 21,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien kanji hoac tu chi viec mat dien do dong dat buoi sang"
+      },
+      {
+        "index": 22,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien cac kanji thich hop vao doan van hoan chinh"
+      }
+    ]
+  },
+  "k3d1": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung giua \"hien tai\" (genzai) va \"hien dai\" (gendai) cho cau."
+      },
+      {
+        "index": 2,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung giua \"komakai\" va \"hosoi\" de chi tien le."
+      },
+      {
+        "index": 3,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung giua \"kingaku\" (so tien) va \"kinri\" (lai suat)."
+      },
+      {
+        "index": 4,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung giua \"youyaku\" (tom tat) va \"youten\" (diem chinh) cho noi dung sach."
+      },
+      {
+        "index": 5,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon hau to xung ho dung giua \"sama\" va \"dono\" tren ten thu."
+      },
+      {
+        "index": 6,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon dang dung cua dong tu \"magaru\" (re/quay)."
+      },
+      {
+        "index": 7,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung giua \"haraikomi\" (thanh toan) va \"tobikomi\"."
+      },
+      {
+        "index": 8,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung giua \"shuushu\" (thu gom) va \"kyuushu\" (hap thu) cho viec do rac."
+      }
+    ]
+  },
+  "k3d2": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (tuan huu hay lien huu) cho ky nghi thang 5."
+      },
+      {
+        "index": 2,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (y-loi hay tai-lieu) de photocopy dung cho buoi hop."
+      },
+      {
+        "index": 3,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (so-hu hay phuong-dien) de chi sach vo can mua them."
+      },
+      {
+        "index": 4,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (dien lac hay giao-khach) khi hang hoa da ve."
+      },
+      {
+        "index": 5,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (dinh-thuong hay dinh-diem) cua ngon nui de an com hop."
+      },
+      {
+        "index": 6,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (phan-phap hay phuc-tap) tren to phat tay."
+      },
+      {
+        "index": 7,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (lanh-tang hay lanh-dong-that) de bo kem."
+      },
+      {
+        "index": 8,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (dang-thu hay duong-thu) de giai thich y nghia A = B."
+      }
+    ]
+  },
+  "k3d3": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho kanji trong cau ve thuoc hieu qua."
+      },
+      {
+        "index": 1,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho kanji trong cau ve giao luu."
+      },
+      {
+        "index": 2,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho kanji trong cau ve doi thu."
+      },
+      {
+        "index": 3,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho kanji trong cau ve gioi han."
+      },
+      {
+        "index": 4,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho kanji trong cau ve giao vien chu nhiem."
+      },
+      {
+        "index": 5,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho kanji trong cau ve su qua trinh."
+      },
+      {
+        "index": 6,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho kanji trong cau ve ganh nang."
+      },
+      {
+        "index": 7,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho kanji trong cau ve chung (toan cua hang)."
+      }
+    ]
+  },
+  "k3d4": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung dien vao cho trong (積もって)"
+      },
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung dien vao cho trong (燃やせる)"
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung dien vao cho trong (手袋)"
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung dien vao cho trong (原料)"
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung dien vao cho trong (器)"
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung dien vao cho trong (製)"
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung dien vao cho trong (雑音)"
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung dien vao cho trong (回収)"
+      }
+    ]
+  },
+  "k3d5": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung (luyen tap hay huan luyen) de dien vao cau ve bai tap khong qua kho."
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Phan biet giua 'yen ky' va 'yen chuong' trong yeu cau mang day cap den."
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi hien tuong thien tai hay hoa hoan khi nha rung chuyen."
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Phan biet giua them vao ('gia') va dong lai ('dong') khi nau an."
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi email rac (meiwaku) lam phien nguoi dung."
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi ngay thuong (heijitsu) khi duong pho dong duc."
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Phan biet tu chi cam do xe hay cam hut thuoc tren bien bao."
+      },
+      {
+        "index": 8,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi don xin nhap hoc (gansho) khi gui qua buu dien."
+      }
+    ]
+  },
+  "k3d6": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung cho tu 동封 (gui kem theo)"
+      },
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung cho tu 各地 (cac dia phuong)"
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung cho tu 貨物 (hang hoa)"
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung cho tu 結んで (buoc, cot)"
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung cho tu 事務 (cong viec hanh chinh)"
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung cho tu 更新 (gia han, cap nhat)"
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung cho tu 移り (di chuyen)"
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung cho tu 周り (xung quanh)"
+      }
+    ]
+  },
+  "k3d7": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu 領収"
+      },
+      {
+        "index": 2,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu 殿"
+      },
+      {
+        "index": 3,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu 番号"
+      },
+      {
+        "index": 4,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu 金額"
+      },
+      {
+        "index": 5,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho kanji trong cau: 千葉からお越しの田畑様、お連れ様がお待ちです。"
+      },
+      {
+        "index": 6,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho kanji trong cau: 海を埋め立てて空港を建てる。"
+      },
+      {
+        "index": 7,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho kanji trong cau: この資料は必ずご持参ください。"
+      },
+      {
+        "index": 8,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho kanji trong cau: 写真は実物とは少し異なります。"
+      },
+      {
+        "index": 9,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho kanji trong cau: 男女平等に仕事の機会があたえられる。"
+      },
+      {
+        "index": 10,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho kanji trong cau: 迷子のお知らせをいたします。"
+      },
+      {
+        "index": 11,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji viet dung cho tu in nghieng: 関係者かくいい サーバー停止のお知らせです。"
+      },
+      {
+        "index": 12,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji viet dung cho tu in nghieng: アンケートにごきょうりょくお願いします。"
+      },
+      {
+        "index": 13,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji viet dung cho tu in nghieng: 正月は多くの人々がお寺や神社におまいりする。"
+      },
+      {
+        "index": 14,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji viet dung cho tu in nghieng: このカードのゆうこう期限は1年です。"
+      },
+      {
+        "index": 15,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji viet dung cho tu in nghieng: 訓練は雨で来週にのびた。"
+      },
+      {
+        "index": 16,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien kanji hoac tu thich hop vao trong ngoac: 手紙を開（ ）する。"
+      },
+      {
+        "index": 17,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien kanji hoac tu thich hop vao trong ngoac: 試験（ ）日は駅が込むので、帰りの切符も買っておいたほうがいい。"
+      },
+      {
+        "index": 18,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien kanji hoac tu thich hop vao trong ngoac: 今朝は寒さで水道（ ）が凍っている。"
+      },
+      {
+        "index": 19,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien kanji hoac tu thich hop vao trong ngoac: これはスイス（ ）の時計です。"
+      },
+      {
+        "index": 20,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien kanji hoac tu thich hop vao trong ngoac: コンビニで「（ ）にお入れしますか。」と聞かれたので、「いえ、いいです。」と答えた。"
+      },
+      {
+        "index": 21,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien kanji hoac tu thich hop vao trong ngoac: 電話の受話（ ）を取る。"
+      },
+      {
+        "index": 22,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien kanji hoac tu thich hop vao trong ngoac: お客様のクレジットのご利用限度（ ）は80万円です。"
+      },
+      {
+        "index": 23,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien tu thich hop vao cho trong (bai doc dien khuyet phuc tap): これはさくらスーパーの（ ）です。全国の店で（ ）できて、500円までの買い物ができます。おつりも出ます。ただし、現金に（ ）はできません。"
+      }
+    ]
+  },
+  "k4d1": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cau ve mong muon."
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cau ve lich den noi."
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cau ve yeu cau giao hang."
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cau ve viec thu thap chu ky."
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung cho ho (ten ho) khi ket hon."
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung cho viec di lam (thoi gian cao diem)."
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon the khiêm nhường ngữ dung de thong bao."
+      },
+      {
+        "index": 8,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung cho viec xin cap ho chieu."
+      }
+    ]
+  },
+  "k4d3": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu thich hop de dien vao cau ve viec nuoi rau toc."
+      },
+      {
+        "index": 2,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu chi hanh vi bi cam tren duong."
+      },
+      {
+        "index": 3,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tinh tu mo ta dac diem cua con song."
+      },
+      {
+        "index": 4,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu giai thich y nghia cua ky hieu P.S."
+      },
+      {
+        "index": 5,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu chi thoi diem cuoi nam de bay to su biet on."
+      },
+      {
+        "index": 6,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu chi loai giay to tuy than khi di kham benh hoac sinh hoat."
+      },
+      {
+        "index": 7,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu chi hanh dong thuong lam truoc khi an com."
+      },
+      {
+        "index": 8,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tinh tu mo ta chat luong cua mot cuoc thao luan."
+      }
+    ]
+  },
+  "k4d4": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu 拝見 hoac お伺い trong cau hoi."
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji chinh xac giua 失業 va 失望 de dien vao cau."
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung cho tu お幸い hoac お幸せ trong loi chuc mung."
+      },
+      {
+        "index": 4,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu dung giua 参拝者 va 打者 cho ngu cảnh ve tuyet vao ngay tet."
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji phu hop giua 自然 va 天然 de chi thien nhien."
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung giua 招待 va 紹介 lien quan den viec gioi thieu."
+      },
+      {
+        "index": 7,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu dung giua 突っ込み va 突き当たり de chi vi tri re phai."
+      },
+      {
+        "index": 8,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung giua 失業 va 職業 cho hoat dong dao tao tim viec."
+      }
+    ]
+  },
+  "k4d5": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu thich hop de dien vao cau ve cuon tieu thuy."
+      },
+      {
+        "index": 2,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu thich hop de dien vao cau ve van dong."
+      },
+      {
+        "index": 3,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu thich hop de dien vao cau ve thoi tiet."
+      },
+      {
+        "index": 4,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu thich hop de dien vao cau chi dan an toan."
+      },
+      {
+        "index": 5,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu thich hop de dien vao cau ve viec xay chung cu."
+      },
+      {
+        "index": 6,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu thich hop de dien vao cau so sanh hinh thuc va noi dung."
+      },
+      {
+        "index": 7,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu thich hop de dien vao cau ve pho giam doc va giam doc."
+      },
+      {
+        "index": 8,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Chon tu thich hop de dien vao cau vi von co gai nhu hoa ly trang."
+      }
+    ]
+  },
+  "k4d7": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu: 主張した"
+      },
+      {
+        "index": 2,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu: お歳暮"
+      },
+      {
+        "index": 3,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu: お招き"
+      },
+      {
+        "index": 4,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu: 信用"
+      },
+      {
+        "index": 5,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu: 囲まれた"
+      },
+      {
+        "index": 6,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu: お互いに"
+      },
+      {
+        "index": 7,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu: 素直に"
+      },
+      {
+        "index": 8,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu: 争いを"
+      },
+      {
+        "index": 9,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu: 頼っている"
+      },
+      {
+        "index": 10,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc cach doc cua tu: 恥をかいた"
+      },
+      {
+        "index": 11,
+        "type": "kanji-toroku",
+        "descriptionVi": "Viet kanji cho tu: しゅうかん"
+      },
+      {
+        "index": 12,
+        "type": "kanji-toroku",
+        "descriptionVi": "Viet kanji cho tu: うちあわせ"
+      },
+      {
+        "index": 13,
+        "type": "kanji-toroku",
+        "descriptionVi": "Viet kanji cho tu: さいじつ"
+      },
+      {
+        "index": 14,
+        "type": "kanji-toroku",
+        "descriptionVi": "Viet kanji cho tu: ぶしょ"
+      },
+      {
+        "index": 15,
+        "type": "kanji-toroku",
+        "descriptionVi": "Viet kanji cho tu: かんしんした"
+      },
+      {
+        "index": 16,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien kanji thich hop vao cho trong"
+      },
+      {
+        "index": 17,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien kanji thich hop vao cho trong"
+      },
+      {
+        "index": 18,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien kanji thich hop vao cho trong"
+      },
+      {
+        "index": 19,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien kanji thich hop vao cho trong"
+      },
+      {
+        "index": 20,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien kanji thich hop vao cho trong"
+      },
+      {
+        "index": 21,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien kanji thich hop vao cho trong"
+      },
+      {
+        "index": 22,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien kanji thich hop vao cho trong"
+      },
+      {
+        "index": 23,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Doc va dien tu thich hop vao cho trong"
+      },
+      {
+        "index": 24,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Doc va dien tu thich hop vao cho trong"
+      },
+      {
+        "index": 25,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Doc va dien tu thich hop vao cho trong"
+      }
+    ]
+  },
+  "k5d1": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Tim tu thich hop de dien vao cau ve van de xuat hien trong ky thi."
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de bay to su lich su khi yeu cau dat do."
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Xac dinh nguon goc cua loai tra den tu chau Phi."
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Dien tu chi thiet bi an toan duoc trang bi tren xe o to."
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dien vao cau cam khong duoc cham vao tac pham."
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi su du thua thoi gian hoac du da de lam gi do."
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi trang thai say me vao tro choi dien tu."
+      },
+      {
+        "index": 8,
+        "type": "kanji-toroku",
+        "descriptionVi": "Phan biet tu chi ngon hai dang de chi vi tri cho tau thuyen."
+      }
+    ]
+  },
+  "k5d2": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu dung de doc tu 柔軟 trong cau."
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Dien chu kanji chi long (c1) vao cho trong."
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon huong lieu hoac gia vi phu hop cho my pham."
+      },
+      {
+        "index": 4,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu dung de chi mon vo thuat judo."
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon dong tu chi hanh dong son bang bang hieu."
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon hinh thuc dung cua dong tu hoa tan trong nuoc."
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Dien tu chi bun dat (dobo) khi tre em choi dua."
+      },
+      {
+        "index": 8,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon cach viet dung cho tu issho (cung nhau)."
+      }
+    ]
+  },
+  "k5d3": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cau ve viec giat chan man trong thoi tiet dep."
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi noi dat binh hoa tren cot hoac trong phong truyen thong."
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi hanh dong ghe vao cua hang tien loi tren duong ve nha."
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi bo tham hoac trai tham len san nha."
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi viec vua moi nho rang o nha si xong cam thay met."
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi viec lam kho toc de tranh bi cam lanh."
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi loai thuoc cho vao ngan keo khi cat giu ao len."
+      },
+      {
+        "index": 8,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi muc dich phong ngua benh nha chu."
+      }
+    ]
+  },
+  "k5d4": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu dung de dien vao cho trong lien quan den chuc vu tren danh thiep."
+      },
+      {
+        "index": 2,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu dung de chi than linh va Phat trong den va chua."
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji phu hop de dien vao cau chi chieu cao co the dieu chinh duoc."
+      },
+      {
+        "index": 4,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu dung dien vao cau bi con trung dot gay ngua."
+      },
+      {
+        "index": 5,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu dung dien vao cau noi ve viec do mồ hôi va muon tam voi."
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung de chi loi khuyen chinh xac tu bac si."
+      },
+      {
+        "index": 7,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon tu dung dien vao cau dem so bang cach gap ngon tay."
+      },
+      {
+        "index": 8,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung cho chuc nang say kho cua may giat."
+      }
+    ]
+  },
+  "k5d5": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu thich hop de dien vao cau ve viec san xuat ruou."
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi tien thuong hoac chi phi cua tran dau."
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi chieu cao hoac co the de dien vao phieu."
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi nha de xe hoac ket sat."
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon dang dung cua tu thuong thuc sau khi mo bao bi."
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu de chuc mung su phat trien va thinh vuong cua thi tran."
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon chu kanji dung de chi thoi gian cuoi nam."
+      },
+      {
+        "index": 8,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi bot min hoac phan hoa."
+      }
+    ]
+  },
+  "k5d6": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu 訪ねて trong cau ve nguoi ban hang den nha."
+      },
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji phu hop de dien vao cho trong khi thoi tiet chuyen tu chu y bao sang canh bao."
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung de chi viec loi noi va hanh dong khong nhat quan (ngoai mat khac trong long)."
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de bay to su goi y/thong bao lich su danh cho khach hang."
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi cua chinh (mat tien) cua toa nha."
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi thu tuc nhap hoc cho hoc sinh trung tuyen."
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi hang nguoi xep hang mua san pham moi."
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi don xin thoi viec nop cho to truong."
+      }
+    ]
+  },
+  "k5d7": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 1. 癸酲"
+      },
+      {
+        "index": 2,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 2. 包術"
+      },
+      {
+        "index": 3,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 3. 偸いさけこう"
+      },
+      {
+        "index": 4,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 4. 整備"
+      },
+      {
+        "index": 5,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 5. 視視"
+      },
+      {
+        "index": 6,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 6. 倃倡"
+      },
+      {
+        "index": 7,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 7. 木朱"
+      },
+      {
+        "index": 8,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 8. 物とん"
+      },
+      {
+        "index": 9,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 9. 指灡"
+      },
+      {
+        "index": 10,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cho tu in dam: 10. 改老"
+      },
+      {
+        "index": 11,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon cach viet kanji dung cho tu trong cau: 11. しふん"
+      },
+      {
+        "index": 12,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon cach viet kanji dung cho tu trong cau: 12. しふん"
+      },
+      {
+        "index": 13,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon cach viet kanji dung cho tu trong cau: 13. しふん"
+      },
+      {
+        "index": 14,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon cach viet kanji dung cho tu trong cau: 14. しふん"
+      },
+      {
+        "index": 15,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon cach viet kanji dung cho tu trong cau: 15. しふん"
+      },
+      {
+        "index": 16,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien tu thich hop vao trong ngoac: 16. 倡攘"
+      },
+      {
+        "index": 17,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien tu thich hop vao trong ngoac: 17. 倡攘"
+      },
+      {
+        "index": 18,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien tu thich hop vao trong ngoac: 18. 倡攘"
+      },
+      {
+        "index": 19,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien tu thich hop vao trong ngoac: 19. 倡攘"
+      },
+      {
+        "index": 20,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien tu thich hop vao trong ngoac: 20. 倡攘"
+      },
+      {
+        "index": 21,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Viet lai tu trong ngoac don bang kanji: 21. あさべも"
+      },
+      {
+        "index": 22,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Viet lai tu trong ngoac don bang kanji: 22. あさべも"
+      },
+      {
+        "index": 23,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Viet lai tu trong ngoac don bang kanji: 23. あさべも"
+      },
+      {
+        "index": 24,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Viet lai tu trong ngoac don bang kanji: 24. あさべも"
+      },
+      {
+        "index": 25,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Viet lai tu trong ngoac don bang kanji: 25. あさべも"
+      }
+    ]
+  },
+  "k6d1": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong: 'Thue tieu thu duoc danh vao hang hoa ...'."
+      },
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung: 'Quang cao khac voi thuc te, neu thay khong ... thi hay lien he'."
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung: 'So luong nguoi vao cong vien ... da dat hon mot trieu nguoi'."
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung: 'Thanh pho co ... cao nhat the gioi la o dau?'"
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de tao chuong trinh truyen hinh..."
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung: 'Gia tri ... cua cholesterol dang tang nen hay chu y'."
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung: '... thi khong co, nhung neu la giay tham nuoc thi co'."
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung: 'Chuong trinh nay do Thuc pham XX ... phat song'."
+      }
+    ]
+  },
+  "k6d2": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (a. tsumete / b. katamete) cho viec dong hang nhu rau cu vao thung."
+      },
+      {
+        "index": 2,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (a. junsui / b. tanjun) de chi cong viec tuy don gian nhung van co nguy hiem."
+      },
+      {
+        "index": 3,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (a. jitsuen / b. enshu) cho viec vua lam vua cho xem de ban hang."
+      },
+      {
+        "index": 4,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (a. zassou / b. josou) chi cong viec lam co cua nguoi dan trong vung."
+      },
+      {
+        "index": 5,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (a. shochi / b. shori) de chi viec xu ly tai nan tren duong."
+      },
+      {
+        "index": 6,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (a. uketamawaru / b. azukaru) de noi ve viec goi qua tai quay dich vu."
+      },
+      {
+        "index": 7,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (a. shoryaku / b. setsuzuku) cho viec tiet kiem nang luong."
+      },
+      {
+        "index": 8,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (a. tenji / b. hatten) chi buoi trien lam banh keo."
+      }
+    ]
+  },
+  "k6d3": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu thich hop de dien vao cho trong noi ve viec se o ryokan (nha tro) gan Nui Phu Si vao cuoi tuan."
+      },
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi hanh dong ra san bay don van dong vien Olympic tro ve."
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dien vao cho trong de mieu ta thi tran duoc bao quanh boi thien nhien va giau mau xanh."
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung chi thoi gian luu tru (dem) cho chuyen di bat dau tu ngay mai."
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi huong tiep can khac nhau de giai quyet van de."
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi don vi dien tich phong khach va phong an tong cong 12 tat (chieu)."
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung chi nganh hoc kien truc tai dai hoc."
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi hanh dong huy so tiet kiem co ky han khi can tien."
+      }
+    ]
+  },
+  "k6d4": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon kanji dung de hoan thanh tu chi con duong doc len doc"
+      },
+      {
+        "index": 2,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon kanji dung cho tu chi don vi canh sat doi dien"
+      },
+      {
+        "index": 3,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon kanji dung de chi khoa hoc ky thuat"
+      },
+      {
+        "index": 4,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon kanji dung chi van dong vien con dang thi dau"
+      },
+      {
+        "index": 5,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon kanji dung chi bo ho"
+      },
+      {
+        "index": 6,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon kanji dung chi quan dao Nhat Ban"
+      },
+      {
+        "index": 7,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon kanji dung de chi lau dai trong cong vien"
+      },
+      {
+        "index": 8,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon kanji dung de chi khu vuc bo bien hoac thung lung co rac"
+      }
+    ]
+  },
+  "k6d5": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong ve tuyen duong du lich"
+      },
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi toa nha duoc chi dinh la quoc bao"
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi buc tuong dong chu con cho o ga Shibuya"
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi so luong hoang tu o dat nuoc do"
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi ban sao cua buc tranh noi tieng"
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi viec luoc bo giai thich phuc tap"
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi an pham cua nha xuat ban"
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi nguoi dien vien xuat hien tren tivi"
+      }
+    ]
+  },
+  "k6d6": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cau ve huong vi thom hon cua hoa hong."
+      },
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi chat lieu vai ao phu hop cho nguoi da yeu."
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon don vi do luong phu hop cho so luong mi y."
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi ho cu (truoc khi cuoi)."
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi huong vi cua sup miso."
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi so luong keo giup mieng khoe khoang, san sot."
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon trang thai tham gia cai cach che do giao duc."
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi su kien cach mang Phap nam 1789."
+      }
+    ]
+  },
+  "k6d7": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc kanji cua tu \"有無\""
+      },
+      {
+        "index": 2,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc kanji cua tu \"省く\""
+      },
+      {
+        "index": 3,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc kanji cua tu \"募集\""
+      },
+      {
+        "index": 4,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc kanji cua tu \"徒歩\""
+      },
+      {
+        "index": 5,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc kanji cua tu \"富\""
+      },
+      {
+        "index": 6,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc kanji cua tu \"辺り\""
+      },
+      {
+        "index": 7,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc kanji cua tu \"木綿\""
+      },
+      {
+        "index": 8,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc kanji cua tu \"束ねて\""
+      },
+      {
+        "index": 9,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc kanji cua tu \"処分\""
+      },
+      {
+        "index": 10,
+        "type": "kanji-yomi",
+        "descriptionVi": "Doc kanji cua tu \"無事\""
+      },
+      {
+        "index": 11,
+        "type": "kanji-toroku",
+        "descriptionVi": "Viet kanji cua tu \"ゆたか\""
+      },
+      {
+        "index": 12,
+        "type": "kanji-toroku",
+        "descriptionVi": "Viet kanji cua tu \"おさら\""
+      },
+      {
+        "index": 13,
+        "type": "kanji-toroku",
+        "descriptionVi": "Viet kanji cua tu \"おかいどく\""
+      },
+      {
+        "index": 14,
+        "type": "kanji-toroku",
+        "descriptionVi": "Viet kanji cua tu \"みずうみ\""
+      },
+      {
+        "index": 15,
+        "type": "kanji-toroku",
+        "descriptionVi": "Viet kanji cua tu \"おくられます\""
+      },
+      {
+        "index": 16,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien kanji dung vao cho tro-trong"
+      },
+      {
+        "index": 17,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien kanji dung vao cho tro-trong"
+      },
+      {
+        "index": 18,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien kanji dung vao cho tro-trong"
+      },
+      {
+        "index": 19,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien kanji dung vao cho tro-trong"
+      },
+      {
+        "index": 20,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien kanji dung vao cho tro-trong"
+      },
+      {
+        "index": 21,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Viet lai tu tuong ung ra kanji trong ngu cảnh"
+      },
+      {
+        "index": 22,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Viet lai tu tuong ung ra kanji trong ngu cảnh"
+      },
+      {
+        "index": 23,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Viet lai tu tuong ung ra kanji trong ngu cảnh"
+      }
+    ]
+  },
+  "k7d1": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong lien quan den thong bao tuyen dung"
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi muc luong hoac che do phu cap cho phu hop"
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi su cho phep hoac giay phep khi do xe"
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dien vao cau noi ve thoi gian lam viec"
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi hanh dong dua may moc vao su dung"
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi cong viec hoac thoi quen hang ngay"
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi thoi gian gioi han de lam bai"
+      },
+      {
+        "index": 8,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi chuong trinh hoc qua dai luy hoac radio"
+      }
+    ]
+  },
+  "k7d2": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung de dien vao cau tim nhan"
+      },
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung de dien vao cau nuoi duong"
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung de dien vao cau gat tran"
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung de dien vao cau san truong"
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung de dien vao cau noi cong cong"
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung de dien vao cau bang qua duong"
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung de dien vao cau loai hoa"
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung de dien vao cau buoi bieu dien"
+      }
+    ]
+  },
+  "k7d3": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cau ve thoi tiet mua o"
+      },
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi vi tri con meo dang di chuyen tren mai nha"
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi quan an, quan ruou de to chuc tiec chao don nhan vien moi"
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi vat dung nhat duoc o bo bien de lam phu kien"
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon the dung cua tu chi viec thue hoac gia da bao gom thue hay chua"
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi nguyen lieu dot de nuong thit hoac ca ngon hon"
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi bo phan can loai bo khi ngam vo ốc vao nuoc muối"
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi doi tuong duoc nuoi hoac trong trong vuon"
+      }
+    ]
+  },
+  "k7d4": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (suito / tsutsu) cho thuyet minh ve do dung mang theo khi di hiking."
+      },
+      {
+        "index": 2,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (zenshutsu / kijutsu) phan biet hinh thuc bai thi."
+      },
+      {
+        "index": 3,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (konai / kousei) nhan xet ve cau truc bai luan."
+      },
+      {
+        "index": 4,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (shibou / ishi) dien ta y chi, nguyen vong."
+      },
+      {
+        "index": 5,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (saishuu / saiten) cho viec nghien cuu thuc vat."
+      },
+      {
+        "index": 6,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (karimenkyo / karsaiyou) cho xe dang tap lai."
+      },
+      {
+        "index": 7,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (hissha / kisha) chi nghe nghiep phong vien."
+      },
+      {
+        "index": 8,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung (tsukue / fude) chi vi tri de tap vo."
+      }
+    ]
+  },
+  "k7d5": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Phan biet giua 'phong thuyen' (nhieu khi cau hoi kiem tra su khac biet ky tu) - chon tu dung cho bong bay bay len cao."
+      },
+      {
+        "index": 2,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Phan biet giua hang khong va san bay."
+      },
+      {
+        "index": 3,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Phan biet giua luc dia va dai luc."
+      },
+      {
+        "index": 4,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Phan biet giua thiet hai va cong hai."
+      },
+      {
+        "index": 5,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Phan biet giua buu tong va van chuyen."
+      },
+      {
+        "index": 6,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Phan biet giua hon tap/dong duc va hon loan."
+      },
+      {
+        "index": 7,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Phan biet giua ly tuong va cam tuong."
+      },
+      {
+        "index": 8,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Phan biet giua xao tron va tron lan."
+      }
+    ]
+  },
+  "k7d6": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de viet kanji cho tu 'sotsugyou' (tot nghiep) trong cau ky niem tot nghiep."
+      },
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu kanji dung dien vao cho trong de chi thoi tiet duoc tro giup, thuan loi."
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu kanji dung chi hieu suat lam viec ('nouritsu') duoc tang len khi nghi ngoi."
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung kanji de chi kinh mat bi mo (kumotte) do hoi nuoc."
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu kanji dung chi tri tue ('chie') ma nguoi xua da su dung de sinh song."
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi nha o kieu nha rieng le ('ikkodate') o vung ngoai o."
+      }
+    ]
+  },
+  "k7d7": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu cho trong cau: 相手に考える時間を与える。"
+      },
+      {
+        "index": 2,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu cho trong cau: 濃いめのコーヒーが好きだ。"
+      },
+      {
+        "index": 3,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu cho trong cau: 人々を幸せな未来へと導く。"
+      },
+      {
+        "index": 4,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu cho trong cau: 自らの主張を明確に述べる。"
+      },
+      {
+        "index": 5,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu cho trong cau: 乱筆乱文お許しください。"
+      },
+      {
+        "index": 6,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu cho trong cau: 宇宙旅行が夢ではなくなった。"
+      },
+      {
+        "index": 7,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu cho trong cau: 率直な意見を聞かせてほしい。"
+      },
+      {
+        "index": 8,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu cho trong cau: 材料をよく混ぜます。"
+      },
+      {
+        "index": 9,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu cho trong cau: 受験の許可が出た。"
+      },
+      {
+        "index": 10,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu cho trong cau: 今夜は吹雪になりそうです。"
+      },
+      {
+        "index": 11,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon cach viet kanji dung cho tu trong ngoac: 手術でゆけつが必要となる場合があります。"
+      },
+      {
+        "index": 12,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon cach viet kanji dung cho tu trong ngoac: 結果よりもかていのほうが大切だということもある。"
+      },
+      {
+        "index": 13,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon cach viet kanji dung cho tu trong ngoac: 第一ぼうの大学に合格してうれしい。"
+      },
+      {
+        "index": 14,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon cach viet kanji dung cho tu trong ngoac: 花のたねをまく。"
+      },
+      {
+        "index": 15,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon cach viet kanji dung cho tu trong ngoac: かもめ丸は悪天候のためけっこうとなりました。"
+      },
+      {
+        "index": 16,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien tu thich hop vao cho trong (Q16)"
+      },
+      {
+        "index": 17,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien tu thich hop vao cho trong (Q17)"
+      },
+      {
+        "index": 18,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien tu thich hop vao cho trong (Q18)"
+      },
+      {
+        "index": 19,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien tu thich hop vao cho trong (Q19)"
+      },
+      {
+        "index": 20,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien tu thich hop vao cho trong (Q20)"
+      },
+      {
+        "index": 21,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Dien tu thich hop vao cho trong doan van (Q21-Q25)"
+      }
+    ]
+  },
+  "k8d1": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cau ve viec meo bat chuot"
+      },
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung ve vung khong co dien thoai hoac song"
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung cho truong hop bi nghi ngo an trom"
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi viec chu quan luon quan tam khach hang"
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi viec bo sung canxi cho co the"
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de mo ta viec nguoi dan ong say ruou quay pha"
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi dang phai hoac chinh phu"
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi vu no gas o trung tam thanh pho"
+      }
+    ]
+  },
+  "k8d2": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cau ve ngan sach cua bo giao duc vuot qua 6 nghin ty yen."
+      },
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi hoat dong thuong mai giua quoc gia cua ban va Nhat Ban tu xua."
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi viec giai quyet tu nhung van de de truoc."
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi nganh nong nghiep hoac nong ho phat trien o que huong."
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi thiet hai do thien tai nhu thuy hai hay cong hai o cac noi."
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi viec bao ve nhan quyen cua nan nhan."
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi mang song, dieu chi co mot trong doi."
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi dan so Nhat Ban khoang 1 ty 30 trieu nguoi."
+      }
+    ]
+  },
+  "k8d3": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong: Nguoi ta noi ca duoc danh bat o mot vuyen bo bien nao do."
+      },
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong: Ti so hoa khong thanh, tran dau duoc keo dai."
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong: (Dau) y kien len bao chi."
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong: Toi khong muon ... ma muon giai quyet bang cach thao luan."
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong: Canh sat dang tien hanh (dau) vu an."
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong: Xuong o cua chiec o bi (dau) do gio manh."
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong: Hay (dau) xe cap cuu."
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de dien vao cho trong: Ca con ca nay dau va (dau) deu an duoc het."
+      }
+    ]
+  },
+  "k8d4": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu thich hop de dien vao cau ve muc dich cua tran dau quoc te"
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu thich hop dien vao cau ve dieu kien du co xau the nao"
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung de chi bo nao hoac lanh dao cua cap song sinh"
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon dong tu phu hop dien vao cau hai nuoc dang gap nhieu van de"
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon dong tu thich hop khi con cho dao dat trong vuon"
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tinh tu chi tinh cach hung du cua con ngua"
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dien ta khi the manh me cua doi vo dich"
+      },
+      {
+        "index": 8,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu chi ky luat hoac luat phap trong cuoc song o ky tuc xa"
+      }
+    ]
+  },
+  "k8d5": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung giua 評価 va 評判 de dien vao cau noi ve quan an."
+      },
+      {
+        "index": 2,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung giua 賢い va 勇ましい de dien vao cau ve nguoi co the dua ra phan doan sai."
+      },
+      {
+        "index": 3,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung giua 敬語 va 敬意 de dien vao cau ve viec su dung dung cach."
+      },
+      {
+        "index": 4,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung giua 批評 va 批判 de dien vao cau ve cach nguoi dan tiep nhan phat bieu cua dai than."
+      },
+      {
+        "index": 5,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung giua 似て va 似合って de dien vao cau khen chiec mu hop voi nguoi mac."
+      },
+      {
+        "index": 6,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung giua 覚えた va 覚ました de dien vao cau thuc giac vao buoi sang nhung khong day noi."
+      },
+      {
+        "index": 7,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung giua 祖先 va 子孫 de dien vao cau ve hau duong cua vo si noi tieng."
+      },
+      {
+        "index": 8,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Chon tu dung giua 犯人 va 判人 de dien vao cau hoi ve khuon mat va trang phuc cua toi pham."
+      }
+    ]
+  },
+  "k8d6": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu dung dien vao cho trong de hoan thanh cau ve tuyen tau dien."
+      },
+      {
+        "index": 1,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu kanji dung de dien vao cau noi ve bien gioi trong hoat dong tinh nguyện."
+      },
+      {
+        "index": 2,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu kanji dung de dien vao cau mo ta bieu do tang giam dan so."
+      },
+      {
+        "index": 3,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu kanji dung de dien vao cau chi chuc vu truong co quan khi tuong."
+      },
+      {
+        "index": 4,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu kanji dung de dien vao cau hoc cac ky thuat trong vo Judo."
+      },
+      {
+        "index": 5,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu kanji dung de dien vao cau khuyen khich vuot qua suy thoai de phuc hoi kinh te."
+      },
+      {
+        "index": 6,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu kanji dung de dien vao cau noi ve cac hinh thuc dau sumo bang ngon tay hoac canh tay."
+      },
+      {
+        "index": 7,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon tu kanji dung de dien vao cau mo ta cach suy nghi mang tinh dac truong cua Nhat Bản."
+      }
+    ]
+  },
+  "k8d7": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu in dam: 1. 血所"
+      },
+      {
+        "index": 2,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu in dam: 2. 典垁的"
+      },
+      {
+        "index": 3,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu in dam: 3. 愆儒"
+      },
+      {
+        "index": 4,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu in dam: 4. 敢う"
+      },
+      {
+        "index": 5,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu in dam: 5. 補足"
+      },
+      {
+        "index": 6,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu in dam: 6. 眱庁"
+      },
+      {
+        "index": 7,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu in dam: 7. 被告"
+      },
+      {
+        "index": 8,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu in dam: 8. 犯した"
+      },
+      {
+        "index": 9,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu in dam: 9. 環境"
+      },
+      {
+        "index": 10,
+        "type": "kanji-yomi",
+        "descriptionVi": "Chon cach doc dung cua tu in dam: 10. 競い合った"
+      },
+      {
+        "index": 11,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung de dien vao tu: 11. つとめる"
+      },
+      {
+        "index": 12,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung de dien vao tu: 12. やぶれた"
+      },
+      {
+        "index": 13,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung de dien vao tu: 13. ぽうげん"
+      },
+      {
+        "index": 14,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung de dien vao tu: 14. かいこう"
+      },
+      {
+        "index": 15,
+        "type": "kanji-toroku",
+        "descriptionVi": "Chon kanji dung de dien vao tu: 15. うでまえ"
+      },
+      {
+        "index": 16,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien kanji thich hop vao trong ngoac: 16. いんふぅえん"
+      },
+      {
+        "index": 17,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien kanji thich hop vao trong ngoac: 17. せんきょう"
+      },
+      {
+        "index": 18,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien kanji thich hop vao trong ngoac: 18. すいがい"
+      },
+      {
+        "index": 19,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien kanji thich hop vao trong ngoac: 19. しゅう"
+      },
+      {
+        "index": 20,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien kanji thich hop vao trong ngoac: 20. やじ"
+      },
+      {
+        "index": 21,
+        "type": "kanji-hanbetsu",
+        "descriptionVi": "Dien kanji thich hop vao trong ngoac: 21. ばく"
+      },
+      {
+        "index": 22,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Viet kanji dung vao cho trong (cau 22): ちょうかん"
+      },
+      {
+        "index": 23,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Viet kanji dung vao cho trong (cau 23): せいふ"
+      },
+      {
+        "index": 24,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Viet kanji dung vao cho trong (cau 24): だいじん"
+      },
+      {
+        "index": 25,
+        "type": "kanji-sakubun",
+        "descriptionVi": "Viet kanji dung vao cho trong (cau 25): ちょうかん"
+      }
+    ]
+  }
+}

@@ -1,0 +1,593 @@
+{
+  "r1d1": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-shusho",
+        "descriptionVi": "Luyen tap hoi thoai ve viec su dung phieu giam gia cho banh cheesecake da qua han."
+      },
+      {
+        "index": 1,
+        "type": "reading-mix",
+        "descriptionVi": "Tim noi dung chung giua hai loai phieu giam gia khac nhau (phieu an uong va phieu mua sam)."
+      },
+      {
+        "index": 2,
+        "type": "reading-shusho",
+        "descriptionVi": "Tim diem khong dung ve thong tin cua hai loai phieu giam gia."
+      }
+    ]
+  },
+  "r1d2": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-mix",
+        "descriptionVi": "Cuoi tuan nay co dot sale keo dai 3 ngay."
+      },
+      {
+        "index": 1,
+        "type": "reading-mix",
+        "descriptionVi": "Hom nay chong co the ve nha muon."
+      },
+      {
+        "index": 2,
+        "type": "reading-mix",
+        "descriptionVi": "Vo du dinh di sale tren duong di lam ve hom nay."
+      },
+      {
+        "index": 3,
+        "type": "reading-mix",
+        "descriptionVi": "Chong co hung thu voi dot sale."
+      },
+      {
+        "index": 4,
+        "type": "reading-mix",
+        "descriptionVi": "Hai vo chong muon di sale nhung khong the di duoc."
+      },
+      {
+        "index": 5,
+        "type": "reading-mix",
+        "descriptionVi": "Cau 1: Thong tin nao khong dung su that?"
+      },
+      {
+        "index": 6,
+        "type": "reading-mix",
+        "descriptionVi": "Cau 2: Neu mua dung 1 san pham co nhan gia ben phai thi phai tra bao nhieu tien?"
+      }
+    ]
+  },
+  "r1d3": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "reading-shusho",
+        "descriptionVi": "Ca A va B deu dang tim phong khong co tien dat coc va tien le."
+      },
+      {
+        "index": 2,
+        "type": "reading-riyuu",
+        "descriptionVi": "B so di xe buyt nen muon o noi khong phai di xe buyt."
+      },
+      {
+        "index": 3,
+        "type": "reading-riyuu",
+        "descriptionVi": "A muon song o noi co the su dung ga co tau toc hanh dung lai."
+      },
+      {
+        "index": 4,
+        "type": "reading-riyuu",
+        "descriptionVi": "B khong thich di bo tham chi la 10 phut."
+      },
+      {
+        "index": 5,
+        "type": "reading-riyuu",
+        "descriptionVi": "Vi A co xe dap nen du o xa cung khong thay van de gi."
+      }
+    ]
+  },
+  "r1d4": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "reading-chikoku",
+        "descriptionVi": "Hoi ve thong tin gui xe dap va su viec suyt bi tre hoc vi bai do xe het cho."
+      }
+    ]
+  },
+  "r1d5": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-shusho",
+        "descriptionVi": "Đọc đoạn hội thoại hướng dẫn nấu ăn và chọn phát biểu đúng."
+      }
+    ]
+  },
+  "r1d6": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-mix",
+        "descriptionVi": "Hoi ve noi dung dung ve doan hoi thoai luyen tap ben trang trai."
+      },
+      {
+        "index": 1,
+        "type": "reading-mix",
+        "descriptionVi": "Hoi ve noi dung dung ve hai doi tuong A va B trong bai doc."
+      }
+    ]
+  },
+  "r1d7": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-shusho",
+        "descriptionVi": "Đọc tờ quảng cáo/hướng dẫn trực tiếp từ tiệm giặt ủi (direct mail) và trả lời câu hỏi liên quan."
+      },
+      {
+        "index": 1,
+        "type": "reading-shusho",
+        "descriptionVi": "Xác định phát biểu nào đúng theo nội dung của tờ quảng cáo dịch vụ giặt ủi."
+      },
+      {
+        "index": 2,
+        "type": "reading-shusho",
+        "descriptionVi": "Tính toán chi phí hoặc mức giảm giá cụ thể dựa trên quy định giảm giá của tiệm giặt ủi."
+      }
+    ]
+  },
+  "r2d1": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "reading-mix",
+        "descriptionVi": "Đoạn hội thoại về việc chuẩn bị nước dự trữ cho một đêm cắt nước."
+      }
+    ]
+  },
+  "r2d2": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "reading-shusho",
+        "descriptionVi": "Tim noi dung khong khop voi thong bao ve cat nuoc trong bai."
+      },
+      {
+        "index": 2,
+        "type": "reading-mix",
+        "descriptionVi": "Xac dinh dung noi dung phat bieu cua hai ben A va B trong thong bao."
+      }
+    ]
+  },
+  "r2d3": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-mix",
+        "descriptionVi": "Đọc đoạn hội thoại về việc thay đổi thời gian nhận máy in do nhà cung cấp trễ hẹn và chọn phát biểu đúng."
+      }
+    ]
+  },
+  "r2d4": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-shusho",
+        "descriptionVi": "Hoi ve mong muon nhan hang, dieu nao khong dung?"
+      },
+      {
+        "index": 1,
+        "type": "reading-mix",
+        "descriptionVi": "Dieu nao khong phu hop voi noi dung nay?"
+      }
+    ]
+  },
+  "r2d5": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-mix",
+        "descriptionVi": "Đọc đoạn hội thoại và chọn phương án đúng từ các câu sau."
+      }
+    ]
+  },
+  "r2d6": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-shusho",
+        "descriptionVi": "Hỏi về nội dung không thể biết được từ thông báo đòi tiền chưa thanh toán của công ty Exellent Coffee."
+      },
+      {
+        "index": 1,
+        "type": "reading-shusho",
+        "descriptionVi": "Hỏi về văn bản được gửi cùng với thông báo đòi tiền của công ty Exellent Coffee."
+      },
+      {
+        "index": 2,
+        "type": "reading-chikoku",
+        "descriptionVi": "Hỏi học phí hằng tháng khi học sinh tiểu học tham gia lớp học Karate tuần 2 buổi."
+      },
+      {
+        "index": 3,
+        "type": "reading-chikoku",
+        "descriptionVi": "Hỏi người phụ nữ 62 tuổi làm việc tại siêu thị ở thành phố Midori có thể học lớp nào."
+      }
+    ]
+  },
+  "r2d7": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-shusho",
+        "descriptionVi": "Hoi ve noi dung dung so voi thong bao ve lop hoc yoga."
+      },
+      {
+        "index": 1,
+        "type": "reading-josou",
+        "descriptionVi": "Hoi ve thoi han phai dong hoi phi sau khi nhan duoc thong bao."
+      }
+    ]
+  },
+  "r3d1": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-shusho",
+        "descriptionVi": "Cau hoi xac dinh noi dung can kiem tra de tranh nham lan y te."
+      },
+      {
+        "index": 1,
+        "type": "reading-riyuu",
+        "descriptionVi": "Cau hoi giai thich y nghia cua cum tu \"khong xem do la chuyen cua nguoi khac\"."
+      }
+    ]
+  },
+  "r3d2": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "reading-shusho",
+        "descriptionVi": "Chon phuong an dung nhat dua tren noi dung doan van."
+      }
+    ]
+  },
+  "r3d3": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "reading-shusho",
+        "descriptionVi": "Đoạn hội thoại về việc tận hưởng cuộc sống và góc nhìn của người chồng về tuổi trẻ."
+      }
+    ]
+  },
+  "r3d4": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-josou",
+        "descriptionVi": "Đọc hội thoại về vấn đề hút thuốc lá và các mối phiền toái liên quan trong xã hội."
+      }
+    ]
+  },
+  "r3d5": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "reading-shusho",
+        "descriptionVi": "Hội thoại bàn về việc địa cầu có các dãy núi lồi lõm không phù hợp với thực tế kích thước tỷ lệ."
+      }
+    ]
+  },
+  "r3d7": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "reading-shusho",
+        "descriptionVi": "Hoi ve y nghia cua tu itadakimasu theo cach hieu cua nguoi tham van."
+      },
+      {
+        "index": 2,
+        "type": "reading-mix",
+        "descriptionVi": "So sanh va danh gia cau tra loi cua A va B doi voi van de cua nguoi tham van."
+      },
+      {
+        "index": 3,
+        "type": "reading-riyuu",
+        "descriptionVi": "Hoi y nghia cua cum tu 'dua ra cau tra loi do' trong bai."
+      },
+      {
+        "index": 4,
+        "type": "reading-josou",
+        "descriptionVi": "Xac dinh thong diep chinh hoac dieu tac gia muon truyen dat trong bai."
+      }
+    ]
+  },
+  "r4d1": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-shusho",
+        "descriptionVi": "Hoi ve y nghia cua cum tu \"giong nhu mot loai cong viec\" trong bai doc."
+      },
+      {
+        "index": 1,
+        "type": "reading-riyuu",
+        "descriptionVi": "Xac dinh thoi diem ma tac gia thuc su cam thay thich thu voi viec doc sach."
+      }
+    ]
+  },
+  "r4d2": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-shusho",
+        "descriptionVi": "Hỏi về nội dung chính hoặc ý nghĩa của phần gạch chân thứ nhất trong bài."
+      },
+      {
+        "index": 1,
+        "type": "reading-mix",
+        "descriptionVi": "Hỏi về nội dung phù hợp với toàn bộ bài đọc."
+      },
+      {
+        "index": 2,
+        "type": "reading-riyuu",
+        "descriptionVi": "Hỏi về tâm trạng, cảm xúc hoặc suy nghĩ của tác giả đối với phần gạch chân thứ hai."
+      },
+      {
+        "index": 3,
+        "type": "reading-mix",
+        "descriptionVi": "Câu hỏi luyện tập tổng hợp cuối bài."
+      }
+    ]
+  },
+  "r4d3": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-shusho",
+        "descriptionVi": "Doc doan hoi thoai ngan va tim cau dung trong phan luyen tap ve bieu hien katakana thuoc bai Essay 4."
+      },
+      {
+        "index": 1,
+        "type": "reading-riyuu",
+        "descriptionVi": "Giai thich y nghia va tim nghia tuong duong cua cum tu trong cau van."
+      },
+      {
+        "index": 2,
+        "type": "reading-josou",
+        "descriptionVi": "Dien vao cho trong ( ) tu hoac cum tu thich hop de hoan thanh cau van."
+      }
+    ]
+  },
+  "r4d4": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "reading-shusho",
+        "descriptionVi": "Chon phat bieu dung dua tren noi dung cua doan van."
+      }
+    ]
+  },
+  "r4d5": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-shusho",
+        "descriptionVi": "Yeu cau doc doan van ve tieu thuy de tra loi cac cau hoi phia sau."
+      }
+    ]
+  },
+  "r4d7": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "reading-shusho",
+        "descriptionVi": "Hoi ve y nghia cua \"hy vong do\" ma tac gia nhac den trong bai."
+      },
+      {
+        "index": 2,
+        "type": "reading-riyuu",
+        "descriptionVi": "Hoi ly do vi sao tac gia lai quyet dinh ngoi vao toa xe hut thuoc."
+      },
+      {
+        "index": 3,
+        "type": "reading-riyuu",
+        "descriptionVi": "Hoi ly do vi sao tac gia lai cho rang nguoi dan ong trung nien la nguoi hang xom dang chon."
+      },
+      {
+        "index": 4,
+        "type": "reading-shusho",
+        "descriptionVi": "Hoi ve cam xuc cua tac gia lien quan den viec co the ngu ngon."
+      }
+    ]
+  },
+  "r5d1": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-shusho",
+        "descriptionVi": "Cau hoi ve y nghia cua tu \"Khong tuc tuc\" (doi bay tren khong) trong bai bao."
+      },
+      {
+        "index": 1,
+        "type": "reading-mix",
+        "descriptionVi": "Tim phuong an dung nhat phan anh noi dung cua bai bao."
+      }
+    ]
+  },
+  "r5d2": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "reading-mix",
+        "descriptionVi": "Đọc hội thoại về nội dung một bài viết dạng bài báo về sự kiện hoặc vấn đề thời sự, sau đó chọn đáp án đúng."
+      }
+    ]
+  },
+  "r5d3": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "reading-mix",
+        "descriptionVi": "Hội thoại giữa mẹ và con trai về đồng hồ đeo tay và các chức năng bổ sung như thông tin liên lạc và máy đếm bước đi."
+      }
+    ]
+  },
+  "r5d4": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-shusho",
+        "descriptionVi": "Tim do thi phu hop voi noi dung bai bao ve ket qua khao sat."
+      }
+    ]
+  },
+  "r5d5": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-shusho",
+        "descriptionVi": "Nguoi phu nu dang doc sach triet hoc."
+      },
+      {
+        "index": 1,
+        "type": "reading-shusho",
+        "descriptionVi": "Bai luan cua thay Tsuchiya rat thu vi."
+      },
+      {
+        "index": 2,
+        "type": "reading-shusho",
+        "descriptionVi": "Bai luan cua thay Tsuchiya co diem ky la va kho hieu."
+      },
+      {
+        "index": 3,
+        "type": "reading-shusho",
+        "descriptionVi": "Nguoi phu nu co the doc de dang bai luan cua thay Tsuchiya."
+      },
+      {
+        "index": 4,
+        "type": "reading-shusho",
+        "descriptionVi": "Nguoi dan ong khong muon doc sach triet hoc."
+      }
+    ]
+  },
+  "r5d6": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-shusho",
+        "descriptionVi": "Hoi ve su viec da xay ra trong bai viet."
+      },
+      {
+        "index": 1,
+        "type": "reading-mix",
+        "descriptionVi": "Tim phuong an dung voi noi dung bai viet."
+      }
+    ]
+  },
+  "r5d7": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-shusho",
+        "descriptionVi": "Hỏi thông tin nào có thể xác định rõ ràng từ bài báo về sự cố giao thông trên tuyến đường sắt JR Tokaido tại Kyoto."
+      },
+      {
+        "index": 1,
+        "type": "reading-chikoku",
+        "descriptionVi": "Hỏi thông tin nào không thể biết được từ bài báo về sự cố giao thông trên tuyến đường sắt JR Tokaido."
+      }
+    ]
+  },
+  "r6d2": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "reading-josou",
+        "descriptionVi": "Hỏi về nội dung chính của bài viết liên quan đến loài ong."
+      },
+      {
+        "index": 2,
+        "type": "reading-riyuu",
+        "descriptionVi": "Hỏi lý do tại sao không thể đánh đồng hoặc nói chung chung như vậy được."
+      }
+    ]
+  },
+  "r6d3": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "reading-shusho",
+        "descriptionVi": "Hỏi về chi tiết \"ngoài điều đó ra còn điều gì đáng sợ\" trong bài viết."
+      },
+      {
+        "index": 2,
+        "type": "reading-riyuu",
+        "descriptionVi": "Hỏi về biện pháp để tránh không bị ong tấn công."
+      }
+    ]
+  },
+  "r6d4": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "reading-riyuu",
+        "descriptionVi": "Hỏi ve ly do khien tac gia cho rang muc do dang so cua ghe ngoi tren tau luon sieu toc co su khac biet."
+      },
+      {
+        "index": 2,
+        "type": "reading-mix",
+        "descriptionVi": "Tim phuong an phu hop nhat voi noi dung bai doc ve cam giac khi di tau luon sieu toc."
+      }
+    ]
+  },
+  "r6d5": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "reading-josou",
+        "descriptionVi": "Hoi ve tu,cum tu hoac bieu dat phu hop de dien vao cho trong ( ) trong bai toan ve con lac."
+      },
+      {
+        "index": 2,
+        "type": "reading-shusho",
+        "descriptionVi": "Hoi ve noi dung chinh, y chinh hoac chi tiet dung/sai cua bai toan chia lac."
+      },
+      {
+        "index": 3,
+        "type": "reading-mix",
+        "descriptionVi": "Cau hoi luyen tap hoi ve y nghia cua doan hoi thoai ve bai toan chia lac."
+      }
+    ]
+  },
+  "r6d6": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-shusho",
+        "descriptionVi": "Hoi ve noi dung chinh hoac y nghia tong quat cua doan van."
+      },
+      {
+        "index": 1,
+        "type": "reading-chikoku",
+        "descriptionVi": "Hoi ve tu vung, ngu phap hoac dien giai noi dung cu the tai vi tri trong bai."
+      }
+    ]
+  },
+  "r6d7": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "reading-shusho",
+        "descriptionVi": "Hoi y nghia cua cum tu 'nhung mat rat tot trong cach ton tai cua su vat'."
+      },
+      {
+        "index": 1,
+        "type": "reading-riyuu",
+        "descriptionVi": "Hoi dieu gi la 'thuc su tuyet voi'."
+      }
+    ]
+  }
+}

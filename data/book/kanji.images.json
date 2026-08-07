@@ -1,0 +1,1314 @@
+{
+  "k1d1": [
+    {
+      "src": "images/kanji/k1d1_p12_1.png",
+      "kind": "image",
+      "page": 12
+    },
+    {
+      "src": "images/kanji/k1d1_p12_2.png",
+      "kind": "image",
+      "page": 12
+    },
+    {
+      "src": "images/kanji/k1d1_p13_1.png",
+      "kind": "image",
+      "page": 13
+    },
+    {
+      "src": "images/kanji/k1d1_p13_2.png",
+      "kind": "image",
+      "page": 13
+    }
+  ],
+  "k1d2": [
+    {
+      "src": "images/kanji/k1d2_p14_1.png",
+      "kind": "image",
+      "page": 14
+    },
+    {
+      "src": "images/kanji/k1d2_p14_2.png",
+      "kind": "image",
+      "page": 14
+    },
+    {
+      "src": "images/kanji/k1d2_p15_1.png",
+      "kind": "image",
+      "page": 15
+    },
+    {
+      "src": "images/kanji/k1d2_p15_2.png",
+      "kind": "image",
+      "page": 15
+    }
+  ],
+  "k1d3": [
+    {
+      "src": "images/kanji/k1d3_p16_1.png",
+      "kind": "image",
+      "page": 16
+    },
+    {
+      "src": "images/kanji/k1d3_p16_2.png",
+      "kind": "image",
+      "page": 16
+    },
+    {
+      "src": "images/kanji/k1d3_p17_1.png",
+      "kind": "image",
+      "page": 17
+    },
+    {
+      "src": "images/kanji/k1d3_p17_2.png",
+      "kind": "image",
+      "page": 17
+    }
+  ],
+  "k1d4": [
+    {
+      "src": "images/kanji/k1d4_p18_1.png",
+      "kind": "image",
+      "page": 18
+    },
+    {
+      "src": "images/kanji/k1d4_p18_2.png",
+      "kind": "image",
+      "page": 18
+    },
+    {
+      "src": "images/kanji/k1d4_p19_1.png",
+      "kind": "image",
+      "page": 19
+    },
+    {
+      "src": "images/kanji/k1d4_p19_2.png",
+      "kind": "image",
+      "page": 19
+    }
+  ],
+  "k1d5": [
+    {
+      "src": "images/kanji/k1d5_p20_1.png",
+      "kind": "image",
+      "page": 20
+    },
+    {
+      "src": "images/kanji/k1d5_p20_2.png",
+      "kind": "image",
+      "page": 20
+    },
+    {
+      "src": "images/kanji/k1d5_p21_1.png",
+      "kind": "image",
+      "page": 21
+    },
+    {
+      "src": "images/kanji/k1d5_p21_2.png",
+      "kind": "image",
+      "page": 21
+    }
+  ],
+  "k1d6": [
+    {
+      "src": "images/kanji/k1d6_p22_1.png",
+      "kind": "image",
+      "page": 22
+    },
+    {
+      "src": "images/kanji/k1d6_p22_2.png",
+      "kind": "image",
+      "page": 22
+    },
+    {
+      "src": "images/kanji/k1d6_p23_1.png",
+      "kind": "image",
+      "page": 23
+    },
+    {
+      "src": "images/kanji/k1d6_p23_2.png",
+      "kind": "image",
+      "page": 23
+    }
+  ],
+  "k1d7": [
+    {
+      "src": "images/kanji/k1d7_p24_1.png",
+      "kind": "image",
+      "page": 24
+    },
+    {
+      "src": "images/kanji/k1d7_p24_2.png",
+      "kind": "image",
+      "page": 24
+    },
+    {
+      "src": "images/kanji/k1d7_p25_1.png",
+      "kind": "image",
+      "page": 25
+    },
+    {
+      "src": "images/kanji/k1d7_p25_2.png",
+      "kind": "image",
+      "page": 25
+    },
+    {
+      "src": "images/kanji/k1d7_p26_1.png",
+      "kind": "image",
+      "page": 26
+    },
+    {
+      "src": "images/kanji/k1d7_p26_2.png",
+      "kind": "image",
+      "page": 26
+    }
+  ],
+  "k2d1": [
+    {
+      "src": "images/kanji/k2d1_p28_1.png",
+      "kind": "image",
+      "page": 28
+    },
+    {
+      "src": "images/kanji/k2d1_p28_2.png",
+      "kind": "image",
+      "page": 28
+    },
+    {
+      "src": "images/kanji/k2d1_p29_1.png",
+      "kind": "image",
+      "page": 29
+    },
+    {
+      "src": "images/kanji/k2d1_p29_2.png",
+      "kind": "image",
+      "page": 29
+    }
+  ],
+  "k2d2": [
+    {
+      "src": "images/kanji/k2d2_p30_1.png",
+      "kind": "image",
+      "page": 30
+    },
+    {
+      "src": "images/kanji/k2d2_p30_2.png",
+      "kind": "image",
+      "page": 30
+    },
+    {
+      "src": "images/kanji/k2d2_p31_1.png",
+      "kind": "image",
+      "page": 31
+    },
+    {
+      "src": "images/kanji/k2d2_p31_2.png",
+      "kind": "image",
+      "page": 31
+    }
+  ],
+  "k2d3": [
+    {
+      "src": "images/kanji/k2d3_p32_1.png",
+      "kind": "image",
+      "page": 32
+    },
+    {
+      "src": "images/kanji/k2d3_p32_2.png",
+      "kind": "image",
+      "page": 32
+    },
+    {
+      "src": "images/kanji/k2d3_p33_1.png",
+      "kind": "image",
+      "page": 33
+    },
+    {
+      "src": "images/kanji/k2d3_p33_2.png",
+      "kind": "image",
+      "page": 33
+    }
+  ],
+  "k2d4": [
+    {
+      "src": "images/kanji/k2d4_p34_1.png",
+      "kind": "image",
+      "page": 34
+    },
+    {
+      "src": "images/kanji/k2d4_p34_2.png",
+      "kind": "image",
+      "page": 34
+    },
+    {
+      "src": "images/kanji/k2d4_p35_1.png",
+      "kind": "image",
+      "page": 35
+    },
+    {
+      "src": "images/kanji/k2d4_p35_2.png",
+      "kind": "image",
+      "page": 35
+    }
+  ],
+  "k2d5": [
+    {
+      "src": "images/kanji/k2d5_p36_1.png",
+      "kind": "image",
+      "page": 36
+    },
+    {
+      "src": "images/kanji/k2d5_p36_2.png",
+      "kind": "image",
+      "page": 36
+    },
+    {
+      "src": "images/kanji/k2d5_p37_1.png",
+      "kind": "image",
+      "page": 37
+    },
+    {
+      "src": "images/kanji/k2d5_p37_2.png",
+      "kind": "image",
+      "page": 37
+    }
+  ],
+  "k2d6": [
+    {
+      "src": "images/kanji/k2d6_p38_1.png",
+      "kind": "image",
+      "page": 38
+    },
+    {
+      "src": "images/kanji/k2d6_p38_2.png",
+      "kind": "image",
+      "page": 38
+    },
+    {
+      "src": "images/kanji/k2d6_p39_1.png",
+      "kind": "image",
+      "page": 39
+    },
+    {
+      "src": "images/kanji/k2d6_p39_2.png",
+      "kind": "image",
+      "page": 39
+    }
+  ],
+  "k2d7": [
+    {
+      "src": "images/kanji/k2d7_p40_1.png",
+      "kind": "image",
+      "page": 40
+    },
+    {
+      "src": "images/kanji/k2d7_p40_2.png",
+      "kind": "image",
+      "page": 40
+    },
+    {
+      "src": "images/kanji/k2d7_p41_1.png",
+      "kind": "image",
+      "page": 41
+    },
+    {
+      "src": "images/kanji/k2d7_p41_2.png",
+      "kind": "image",
+      "page": 41
+    },
+    {
+      "src": "images/kanji/k2d7_p42_1.png",
+      "kind": "image",
+      "page": 42
+    },
+    {
+      "src": "images/kanji/k2d7_p42_2.png",
+      "kind": "image",
+      "page": 42
+    }
+  ],
+  "k3d1": [
+    {
+      "src": "images/kanji/k3d1_p44_1.png",
+      "kind": "image",
+      "page": 44
+    },
+    {
+      "src": "images/kanji/k3d1_p44_2.png",
+      "kind": "image",
+      "page": 44
+    },
+    {
+      "src": "images/kanji/k3d1_p45_1.png",
+      "kind": "image",
+      "page": 45
+    },
+    {
+      "src": "images/kanji/k3d1_p45_2.png",
+      "kind": "image",
+      "page": 45
+    }
+  ],
+  "k3d2": [
+    {
+      "src": "images/kanji/k3d2_p46_1.png",
+      "kind": "image",
+      "page": 46
+    },
+    {
+      "src": "images/kanji/k3d2_p46_2.png",
+      "kind": "image",
+      "page": 46
+    },
+    {
+      "src": "images/kanji/k3d2_p47_1.png",
+      "kind": "image",
+      "page": 47
+    },
+    {
+      "src": "images/kanji/k3d2_p47_2.png",
+      "kind": "image",
+      "page": 47
+    }
+  ],
+  "k3d3": [
+    {
+      "src": "images/kanji/k3d3_p48_1.png",
+      "kind": "image",
+      "page": 48
+    },
+    {
+      "src": "images/kanji/k3d3_p48_2.png",
+      "kind": "image",
+      "page": 48
+    },
+    {
+      "src": "images/kanji/k3d3_p49_1.png",
+      "kind": "image",
+      "page": 49
+    },
+    {
+      "src": "images/kanji/k3d3_p49_2.png",
+      "kind": "image",
+      "page": 49
+    }
+  ],
+  "k3d4": [
+    {
+      "src": "images/kanji/k3d4_p50_1.png",
+      "kind": "image",
+      "page": 50
+    },
+    {
+      "src": "images/kanji/k3d4_p50_2.png",
+      "kind": "image",
+      "page": 50
+    },
+    {
+      "src": "images/kanji/k3d4_p51_1.png",
+      "kind": "image",
+      "page": 51
+    },
+    {
+      "src": "images/kanji/k3d4_p51_2.png",
+      "kind": "image",
+      "page": 51
+    }
+  ],
+  "k3d5": [
+    {
+      "src": "images/kanji/k3d5_p52_1.png",
+      "kind": "image",
+      "page": 52
+    },
+    {
+      "src": "images/kanji/k3d5_p52_2.png",
+      "kind": "image",
+      "page": 52
+    },
+    {
+      "src": "images/kanji/k3d5_p53_1.png",
+      "kind": "image",
+      "page": 53
+    },
+    {
+      "src": "images/kanji/k3d5_p53_2.png",
+      "kind": "image",
+      "page": 53
+    }
+  ],
+  "k3d6": [
+    {
+      "src": "images/kanji/k3d6_p54_1.png",
+      "kind": "image",
+      "page": 54
+    },
+    {
+      "src": "images/kanji/k3d6_p54_2.png",
+      "kind": "image",
+      "page": 54
+    },
+    {
+      "src": "images/kanji/k3d6_p55_1.png",
+      "kind": "image",
+      "page": 55
+    },
+    {
+      "src": "images/kanji/k3d6_p55_2.png",
+      "kind": "image",
+      "page": 55
+    }
+  ],
+  "k3d7": [
+    {
+      "src": "images/kanji/k3d7_p56_1.png",
+      "kind": "image",
+      "page": 56
+    },
+    {
+      "src": "images/kanji/k3d7_p56_2.png",
+      "kind": "image",
+      "page": 56
+    },
+    {
+      "src": "images/kanji/k3d7_p57_1.png",
+      "kind": "image",
+      "page": 57
+    },
+    {
+      "src": "images/kanji/k3d7_p57_2.png",
+      "kind": "image",
+      "page": 57
+    },
+    {
+      "src": "images/kanji/k3d7_p58_1.png",
+      "kind": "image",
+      "page": 58
+    },
+    {
+      "src": "images/kanji/k3d7_p58_2.png",
+      "kind": "image",
+      "page": 58
+    }
+  ],
+  "k4d1": [
+    {
+      "src": "images/kanji/k4d1_p60_1.png",
+      "kind": "image",
+      "page": 60
+    },
+    {
+      "src": "images/kanji/k4d1_p60_2.png",
+      "kind": "image",
+      "page": 60
+    },
+    {
+      "src": "images/kanji/k4d1_p61_1.png",
+      "kind": "image",
+      "page": 61
+    },
+    {
+      "src": "images/kanji/k4d1_p61_2.png",
+      "kind": "image",
+      "page": 61
+    }
+  ],
+  "k4d2": [
+    {
+      "src": "images/kanji/k4d2_p62_1.png",
+      "kind": "image",
+      "page": 62
+    },
+    {
+      "src": "images/kanji/k4d2_p62_2.png",
+      "kind": "image",
+      "page": 62
+    },
+    {
+      "src": "images/kanji/k4d2_p63_1.png",
+      "kind": "image",
+      "page": 63
+    },
+    {
+      "src": "images/kanji/k4d2_p63_2.png",
+      "kind": "image",
+      "page": 63
+    }
+  ],
+  "k4d3": [
+    {
+      "src": "images/kanji/k4d3_p64_1.png",
+      "kind": "image",
+      "page": 64
+    },
+    {
+      "src": "images/kanji/k4d3_p64_2.png",
+      "kind": "image",
+      "page": 64
+    },
+    {
+      "src": "images/kanji/k4d3_p65_1.png",
+      "kind": "image",
+      "page": 65
+    },
+    {
+      "src": "images/kanji/k4d3_p65_2.png",
+      "kind": "image",
+      "page": 65
+    }
+  ],
+  "k4d4": [
+    {
+      "src": "images/kanji/k4d4_p66_1.png",
+      "kind": "image",
+      "page": 66
+    },
+    {
+      "src": "images/kanji/k4d4_p66_2.png",
+      "kind": "image",
+      "page": 66
+    },
+    {
+      "src": "images/kanji/k4d4_p67_1.png",
+      "kind": "image",
+      "page": 67
+    },
+    {
+      "src": "images/kanji/k4d4_p67_2.png",
+      "kind": "image",
+      "page": 67
+    }
+  ],
+  "k4d5": [
+    {
+      "src": "images/kanji/k4d5_p68_1.png",
+      "kind": "image",
+      "page": 68
+    },
+    {
+      "src": "images/kanji/k4d5_p68_2.png",
+      "kind": "image",
+      "page": 68
+    },
+    {
+      "src": "images/kanji/k4d5_p69_1.png",
+      "kind": "image",
+      "page": 69
+    },
+    {
+      "src": "images/kanji/k4d5_p69_2.png",
+      "kind": "image",
+      "page": 69
+    }
+  ],
+  "k4d6": [
+    {
+      "src": "images/kanji/k4d6_p70_1.png",
+      "kind": "image",
+      "page": 70
+    },
+    {
+      "src": "images/kanji/k4d6_p70_2.png",
+      "kind": "image",
+      "page": 70
+    },
+    {
+      "src": "images/kanji/k4d6_p71_1.png",
+      "kind": "image",
+      "page": 71
+    },
+    {
+      "src": "images/kanji/k4d6_p71_2.png",
+      "kind": "image",
+      "page": 71
+    }
+  ],
+  "k4d7": [
+    {
+      "src": "images/kanji/k4d7_p72_1.png",
+      "kind": "image",
+      "page": 72
+    },
+    {
+      "src": "images/kanji/k4d7_p72_2.png",
+      "kind": "image",
+      "page": 72
+    },
+    {
+      "src": "images/kanji/k4d7_p73_1.png",
+      "kind": "image",
+      "page": 73
+    },
+    {
+      "src": "images/kanji/k4d7_p73_2.png",
+      "kind": "image",
+      "page": 73
+    },
+    {
+      "src": "images/kanji/k4d7_p74_1.png",
+      "kind": "image",
+      "page": 74
+    },
+    {
+      "src": "images/kanji/k4d7_p74_2.png",
+      "kind": "image",
+      "page": 74
+    }
+  ],
+  "k5d1": [
+    {
+      "src": "images/kanji/k5d1_p76_1.png",
+      "kind": "image",
+      "page": 76
+    },
+    {
+      "src": "images/kanji/k5d1_p76_2.png",
+      "kind": "image",
+      "page": 76
+    },
+    {
+      "src": "images/kanji/k5d1_p77_1.png",
+      "kind": "image",
+      "page": 77
+    },
+    {
+      "src": "images/kanji/k5d1_p77_2.png",
+      "kind": "image",
+      "page": 77
+    }
+  ],
+  "k5d2": [
+    {
+      "src": "images/kanji/k5d2_p78_1.png",
+      "kind": "image",
+      "page": 78
+    },
+    {
+      "src": "images/kanji/k5d2_p78_2.png",
+      "kind": "image",
+      "page": 78
+    },
+    {
+      "src": "images/kanji/k5d2_p79_1.png",
+      "kind": "image",
+      "page": 79
+    },
+    {
+      "src": "images/kanji/k5d2_p79_2.png",
+      "kind": "image",
+      "page": 79
+    }
+  ],
+  "k5d3": [
+    {
+      "src": "images/kanji/k5d3_p80_1.png",
+      "kind": "image",
+      "page": 80
+    },
+    {
+      "src": "images/kanji/k5d3_p80_2.png",
+      "kind": "image",
+      "page": 80
+    },
+    {
+      "src": "images/kanji/k5d3_p81_1.png",
+      "kind": "image",
+      "page": 81
+    },
+    {
+      "src": "images/kanji/k5d3_p81_2.png",
+      "kind": "image",
+      "page": 81
+    }
+  ],
+  "k5d4": [
+    {
+      "src": "images/kanji/k5d4_p82_1.png",
+      "kind": "image",
+      "page": 82
+    },
+    {
+      "src": "images/kanji/k5d4_p82_2.png",
+      "kind": "image",
+      "page": 82
+    },
+    {
+      "src": "images/kanji/k5d4_p83_1.png",
+      "kind": "image",
+      "page": 83
+    },
+    {
+      "src": "images/kanji/k5d4_p83_2.png",
+      "kind": "image",
+      "page": 83
+    }
+  ],
+  "k5d5": [
+    {
+      "src": "images/kanji/k5d5_p84_1.png",
+      "kind": "image",
+      "page": 84
+    },
+    {
+      "src": "images/kanji/k5d5_p84_2.png",
+      "kind": "image",
+      "page": 84
+    },
+    {
+      "src": "images/kanji/k5d5_p85_1.png",
+      "kind": "image",
+      "page": 85
+    },
+    {
+      "src": "images/kanji/k5d5_p85_2.png",
+      "kind": "image",
+      "page": 85
+    }
+  ],
+  "k5d6": [
+    {
+      "src": "images/kanji/k5d6_p86_1.png",
+      "kind": "image",
+      "page": 86
+    },
+    {
+      "src": "images/kanji/k5d6_p86_2.png",
+      "kind": "image",
+      "page": 86
+    },
+    {
+      "src": "images/kanji/k5d6_p87_1.png",
+      "kind": "image",
+      "page": 87
+    },
+    {
+      "src": "images/kanji/k5d6_p87_2.png",
+      "kind": "image",
+      "page": 87
+    }
+  ],
+  "k5d7": [
+    {
+      "src": "images/kanji/k5d7_p88_1.png",
+      "kind": "image",
+      "page": 88
+    },
+    {
+      "src": "images/kanji/k5d7_p88_2.png",
+      "kind": "image",
+      "page": 88
+    },
+    {
+      "src": "images/kanji/k5d7_p89_1.png",
+      "kind": "image",
+      "page": 89
+    },
+    {
+      "src": "images/kanji/k5d7_p89_2.png",
+      "kind": "image",
+      "page": 89
+    },
+    {
+      "src": "images/kanji/k5d7_p90_1.png",
+      "kind": "image",
+      "page": 90
+    },
+    {
+      "src": "images/kanji/k5d7_p90_2.png",
+      "kind": "image",
+      "page": 90
+    }
+  ],
+  "k6d1": [
+    {
+      "src": "images/kanji/k6d1_p92_1.png",
+      "kind": "image",
+      "page": 92
+    },
+    {
+      "src": "images/kanji/k6d1_p92_2.png",
+      "kind": "image",
+      "page": 92
+    },
+    {
+      "src": "images/kanji/k6d1_p93_1.png",
+      "kind": "image",
+      "page": 93
+    },
+    {
+      "src": "images/kanji/k6d1_p93_2.png",
+      "kind": "image",
+      "page": 93
+    }
+  ],
+  "k6d2": [
+    {
+      "src": "images/kanji/k6d2_p94_1.png",
+      "kind": "image",
+      "page": 94
+    },
+    {
+      "src": "images/kanji/k6d2_p94_2.png",
+      "kind": "image",
+      "page": 94
+    },
+    {
+      "src": "images/kanji/k6d2_p95_1.png",
+      "kind": "image",
+      "page": 95
+    },
+    {
+      "src": "images/kanji/k6d2_p95_2.png",
+      "kind": "image",
+      "page": 95
+    }
+  ],
+  "k6d3": [
+    {
+      "src": "images/kanji/k6d3_p96_1.png",
+      "kind": "image",
+      "page": 96
+    },
+    {
+      "src": "images/kanji/k6d3_p96_2.png",
+      "kind": "image",
+      "page": 96
+    },
+    {
+      "src": "images/kanji/k6d3_p97_1.png",
+      "kind": "image",
+      "page": 97
+    },
+    {
+      "src": "images/kanji/k6d3_p97_2.png",
+      "kind": "image",
+      "page": 97
+    }
+  ],
+  "k6d4": [
+    {
+      "src": "images/kanji/k6d4_p98_1.png",
+      "kind": "image",
+      "page": 98
+    },
+    {
+      "src": "images/kanji/k6d4_p98_2.png",
+      "kind": "image",
+      "page": 98
+    },
+    {
+      "src": "images/kanji/k6d4_p99_1.png",
+      "kind": "image",
+      "page": 99
+    },
+    {
+      "src": "images/kanji/k6d4_p99_2.png",
+      "kind": "image",
+      "page": 99
+    }
+  ],
+  "k6d5": [
+    {
+      "src": "images/kanji/k6d5_p100_1.png",
+      "kind": "image",
+      "page": 100
+    },
+    {
+      "src": "images/kanji/k6d5_p100_2.png",
+      "kind": "image",
+      "page": 100
+    },
+    {
+      "src": "images/kanji/k6d5_p101_1.png",
+      "kind": "image",
+      "page": 101
+    },
+    {
+      "src": "images/kanji/k6d5_p101_2.png",
+      "kind": "image",
+      "page": 101
+    }
+  ],
+  "k6d6": [
+    {
+      "src": "images/kanji/k6d6_p102_1.png",
+      "kind": "image",
+      "page": 102
+    },
+    {
+      "src": "images/kanji/k6d6_p102_2.png",
+      "kind": "image",
+      "page": 102
+    },
+    {
+      "src": "images/kanji/k6d6_p103_1.png",
+      "kind": "image",
+      "page": 103
+    },
+    {
+      "src": "images/kanji/k6d6_p103_2.png",
+      "kind": "image",
+      "page": 103
+    }
+  ],
+  "k6d7": [
+    {
+      "src": "images/kanji/k6d7_p104_1.png",
+      "kind": "image",
+      "page": 104
+    },
+    {
+      "src": "images/kanji/k6d7_p104_2.png",
+      "kind": "image",
+      "page": 104
+    },
+    {
+      "src": "images/kanji/k6d7_p105_1.png",
+      "kind": "image",
+      "page": 105
+    },
+    {
+      "src": "images/kanji/k6d7_p105_2.png",
+      "kind": "image",
+      "page": 105
+    },
+    {
+      "src": "images/kanji/k6d7_p106_1.png",
+      "kind": "image",
+      "page": 106
+    },
+    {
+      "src": "images/kanji/k6d7_p106_2.png",
+      "kind": "image",
+      "page": 106
+    }
+  ],
+  "k7d1": [
+    {
+      "src": "images/kanji/k7d1_p108_1.png",
+      "kind": "image",
+      "page": 108
+    },
+    {
+      "src": "images/kanji/k7d1_p108_2.png",
+      "kind": "image",
+      "page": 108
+    },
+    {
+      "src": "images/kanji/k7d1_p109_1.png",
+      "kind": "image",
+      "page": 109
+    },
+    {
+      "src": "images/kanji/k7d1_p109_2.png",
+      "kind": "image",
+      "page": 109
+    }
+  ],
+  "k7d2": [
+    {
+      "src": "images/kanji/k7d2_p110_1.png",
+      "kind": "image",
+      "page": 110
+    },
+    {
+      "src": "images/kanji/k7d2_p110_2.png",
+      "kind": "image",
+      "page": 110
+    },
+    {
+      "src": "images/kanji/k7d2_p111_1.png",
+      "kind": "image",
+      "page": 111
+    },
+    {
+      "src": "images/kanji/k7d2_p111_2.png",
+      "kind": "image",
+      "page": 111
+    }
+  ],
+  "k7d3": [
+    {
+      "src": "images/kanji/k7d3_p112_1.png",
+      "kind": "image",
+      "page": 112
+    },
+    {
+      "src": "images/kanji/k7d3_p112_2.png",
+      "kind": "image",
+      "page": 112
+    },
+    {
+      "src": "images/kanji/k7d3_p113_1.png",
+      "kind": "image",
+      "page": 113
+    },
+    {
+      "src": "images/kanji/k7d3_p113_2.png",
+      "kind": "image",
+      "page": 113
+    }
+  ],
+  "k7d4": [
+    {
+      "src": "images/kanji/k7d4_p114_1.png",
+      "kind": "image",
+      "page": 114
+    },
+    {
+      "src": "images/kanji/k7d4_p114_2.png",
+      "kind": "image",
+      "page": 114
+    },
+    {
+      "src": "images/kanji/k7d4_p115_1.png",
+      "kind": "image",
+      "page": 115
+    },
+    {
+      "src": "images/kanji/k7d4_p115_2.png",
+      "kind": "image",
+      "page": 115
+    }
+  ],
+  "k7d5": [
+    {
+      "src": "images/kanji/k7d5_p116_1.png",
+      "kind": "image",
+      "page": 116
+    },
+    {
+      "src": "images/kanji/k7d5_p116_2.png",
+      "kind": "image",
+      "page": 116
+    },
+    {
+      "src": "images/kanji/k7d5_p117_1.png",
+      "kind": "image",
+      "page": 117
+    },
+    {
+      "src": "images/kanji/k7d5_p117_2.png",
+      "kind": "image",
+      "page": 117
+    }
+  ],
+  "k7d6": [
+    {
+      "src": "images/kanji/k7d6_p118_1.png",
+      "kind": "image",
+      "page": 118
+    },
+    {
+      "src": "images/kanji/k7d6_p118_2.png",
+      "kind": "image",
+      "page": 118
+    },
+    {
+      "src": "images/kanji/k7d6_p119_1.png",
+      "kind": "image",
+      "page": 119
+    },
+    {
+      "src": "images/kanji/k7d6_p119_2.png",
+      "kind": "image",
+      "page": 119
+    }
+  ],
+  "k7d7": [
+    {
+      "src": "images/kanji/k7d7_p120_1.png",
+      "kind": "image",
+      "page": 120
+    },
+    {
+      "src": "images/kanji/k7d7_p120_2.png",
+      "kind": "image",
+      "page": 120
+    },
+    {
+      "src": "images/kanji/k7d7_p121_1.png",
+      "kind": "image",
+      "page": 121
+    },
+    {
+      "src": "images/kanji/k7d7_p121_2.png",
+      "kind": "image",
+      "page": 121
+    },
+    {
+      "src": "images/kanji/k7d7_p122_1.png",
+      "kind": "image",
+      "page": 122
+    },
+    {
+      "src": "images/kanji/k7d7_p122_2.png",
+      "kind": "image",
+      "page": 122
+    }
+  ],
+  "k8d1": [
+    {
+      "src": "images/kanji/k8d1_p124_1.png",
+      "kind": "image",
+      "page": 124
+    },
+    {
+      "src": "images/kanji/k8d1_p124_2.png",
+      "kind": "image",
+      "page": 124
+    },
+    {
+      "src": "images/kanji/k8d1_p125_1.png",
+      "kind": "image",
+      "page": 125
+    },
+    {
+      "src": "images/kanji/k8d1_p125_2.png",
+      "kind": "image",
+      "page": 125
+    }
+  ],
+  "k8d2": [
+    {
+      "src": "images/kanji/k8d2_p126_1.png",
+      "kind": "image",
+      "page": 126
+    },
+    {
+      "src": "images/kanji/k8d2_p126_2.png",
+      "kind": "image",
+      "page": 126
+    },
+    {
+      "src": "images/kanji/k8d2_p127_1.png",
+      "kind": "image",
+      "page": 127
+    },
+    {
+      "src": "images/kanji/k8d2_p127_2.png",
+      "kind": "image",
+      "page": 127
+    }
+  ],
+  "k8d3": [
+    {
+      "src": "images/kanji/k8d3_p128_1.png",
+      "kind": "image",
+      "page": 128
+    },
+    {
+      "src": "images/kanji/k8d3_p128_2.png",
+      "kind": "image",
+      "page": 128
+    },
+    {
+      "src": "images/kanji/k8d3_p129_1.png",
+      "kind": "image",
+      "page": 129
+    },
+    {
+      "src": "images/kanji/k8d3_p129_2.png",
+      "kind": "image",
+      "page": 129
+    }
+  ],
+  "k8d4": [
+    {
+      "src": "images/kanji/k8d4_p130_1.png",
+      "kind": "image",
+      "page": 130
+    },
+    {
+      "src": "images/kanji/k8d4_p130_2.png",
+      "kind": "image",
+      "page": 130
+    },
+    {
+      "src": "images/kanji/k8d4_p131_1.png",
+      "kind": "image",
+      "page": 131
+    },
+    {
+      "src": "images/kanji/k8d4_p131_2.png",
+      "kind": "image",
+      "page": 131
+    }
+  ],
+  "k8d5": [
+    {
+      "src": "images/kanji/k8d5_p132_1.png",
+      "kind": "image",
+      "page": 132
+    },
+    {
+      "src": "images/kanji/k8d5_p132_2.png",
+      "kind": "image",
+      "page": 132
+    },
+    {
+      "src": "images/kanji/k8d5_p133_1.png",
+      "kind": "image",
+      "page": 133
+    },
+    {
+      "src": "images/kanji/k8d5_p133_2.png",
+      "kind": "image",
+      "page": 133
+    }
+  ],
+  "k8d6": [
+    {
+      "src": "images/kanji/k8d6_p134_1.png",
+      "kind": "image",
+      "page": 134
+    },
+    {
+      "src": "images/kanji/k8d6_p134_2.png",
+      "kind": "image",
+      "page": 134
+    },
+    {
+      "src": "images/kanji/k8d6_p135_1.png",
+      "kind": "image",
+      "page": 135
+    },
+    {
+      "src": "images/kanji/k8d6_p135_2.png",
+      "kind": "image",
+      "page": 135
+    }
+  ],
+  "k8d7": [
+    {
+      "src": "images/kanji/k8d7_p136_1.png",
+      "kind": "image",
+      "page": 136
+    },
+    {
+      "src": "images/kanji/k8d7_p136_2.png",
+      "kind": "image",
+      "page": 136
+    },
+    {
+      "src": "images/kanji/k8d7_p137_1.png",
+      "kind": "image",
+      "page": 137
+    },
+    {
+      "src": "images/kanji/k8d7_p137_2.png",
+      "kind": "image",
+      "page": 137
+    },
+    {
+      "src": "images/kanji/k8d7_p138_1.png",
+      "kind": "image",
+      "page": 138
+    },
+    {
+      "src": "images/kanji/k8d7_p138_2.png",
+      "kind": "image",
+      "page": 138
+    }
+  ]
+}

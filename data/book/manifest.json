@@ -63,7 +63,8 @@
         "k8d6",
         "k8d7"
       ],
-      "complete": true
+      "complete": true,
+      "enrichmentFiles": ["classification.json", "images.json"]
     },
     "vocabulary": {
       "file": "vocabulary.json",
@@ -126,7 +127,8 @@
         "v8d6",
         "v8d7"
       ],
-      "complete": true
+      "complete": true,
+      "enrichmentFiles": ["classification.json", "images.json"]
     },
     "grammar": {
       "file": "grammar.json",
@@ -189,7 +191,8 @@
         "g8d6",
         "g8d7"
       ],
-      "complete": true
+      "complete": true,
+      "enrichmentFiles": ["classification.json", "images.json"]
     },
     "reading": {
       "file": "reading.json",
@@ -238,7 +241,8 @@
         "r6d6",
         "r6d7"
       ],
-      "complete": true
+      "complete": true,
+      "enrichmentFiles": ["classification.json", "images.json"]
     },
     "listening": {
       "file": "listening.json",
@@ -268,7 +272,8 @@
         "l4d5",
         "l5d1"
       ],
-      "complete": true
+      "complete": true,
+      "enrichmentFiles": ["classification.json", "images.json"]
     }
   }
 }

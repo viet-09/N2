@@ -1,0 +1,2987 @@
+{
+  "g1d1": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon phuong an dung giua っぽくて va 気味で de hoan thanh cau ve sua"
+      },
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Phan biet っぽい va がち trong cau noi ve dong ho chay cham"
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon giua げ va がち de dien ta cach noi chuyen than mat"
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Dien cau truc chi trieu chung cam va sot vao vi tri thich hop"
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon dang dung cua tu 忘れっぽく de hoan thanh cau ve me"
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh cho vi tri 1"
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh cho vi tri 2"
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh cho vi tri 3"
+      },
+      {
+        "index": 8,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh cho vi tri 4"
+      },
+      {
+        "index": 9,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de tao cau hoan chinh ve nguoi dan ong cho vi tri 1"
+      },
+      {
+        "index": 10,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de tao cau hoan chinh ve nguoi dan ong cho vi tri 2"
+      },
+      {
+        "index": 11,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de tao cau hoan chinh ve nguoi dan ong cho vi tri 3"
+      },
+      {
+        "index": 12,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de tao cau hoan chinh ve nguoi dan ong cho vi tri 4"
+      }
+    ]
+  },
+  "g1d2": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung dien vao hoi thoai ve viec xem lai video"
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung de dien vao truong hop gia dinh"
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dien ta viec da mua nhung khong biet cach dung"
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau giai thich ly do vi troi lanh"
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dien ta ly do vi gia dat nen khong mua duoc"
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep vi tri so 1 trong cau ve viec di hoc day du nhung van khong theo kịp"
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep vi tri so 2 trong cau ve viec di hoc day du nhung van khong theo kip"
+      },
+      {
+        "index": 8,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep vi tri so 3 trong cau ve viec di hoc day du nhung van khong theo kip"
+      },
+      {
+        "index": 9,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep vi tri so 4 trong cau ve viec di hoc day du nhung van khong theo kip"
+      },
+      {
+        "index": 10,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep vi tri so 1 trong cau ly do ve nha som vi suc khoe khong tot"
+      },
+      {
+        "index": 11,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep vi tri so 2 trong cau ly do ve nha som vi suc khoe khong tot"
+      },
+      {
+        "index": 12,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep vi tri so 3 trong cau ly do ve nha som vi suc khoe khong tot"
+      },
+      {
+        "index": 13,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep vi tri so 4 trong cau ly do ve nha som vi suc khoe khong tot"
+      }
+    ]
+  },
+  "g1d3": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau phu hop giua もとより va ともかく"
+      },
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau phu hop giua もとより va ともかく"
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau phu hop giua ぬきで va ぬきでは"
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau phu hop giua ぬきで va ぬきに"
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau phu hop giua まだしも va ぬきにして"
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung cho vi tri dau tien cua cau ve do dac"
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung cho vi tri thu hai cua cau ve do dac"
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung cho vi tri thu ba cua cau ve do dac"
+      },
+      {
+        "index": 8,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung cho vi tri cuoi cung cua cau ve do dac"
+      },
+      {
+        "index": 9,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung cho vi tri dau tien cua cau ve viec mat tien"
+      },
+      {
+        "index": 10,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung cho vi tri thu hai cua cau ve viec mat tien"
+      },
+      {
+        "index": 11,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung cho vi tri thu ba cua cau ve viec mat tien"
+      },
+      {
+        "index": 12,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung cho vi tri cuoi cung cua cau ve viec mat tien"
+      }
+    ]
+  },
+  "g1d4": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dung cho cau ve ket qua thi"
+      },
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dung cho cau ve su co don va co the"
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dung cho cau ve tieng on"
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dung cho cau ve cam xuc buon buc"
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dung cho cau ve lo lang bat an"
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung cho cau 6, cho trong 1"
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung cho cau 6, cho trong 2"
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung cho cau 6, cho trong 3"
+      },
+      {
+        "index": 8,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung cho cau 6, cho trong 4"
+      },
+      {
+        "index": 9,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung cho cau 7, cho trong 1"
+      },
+      {
+        "index": 10,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung cho cau 7, cho trong 2"
+      },
+      {
+        "index": 11,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung cho cau 7, cho trong 3"
+      },
+      {
+        "index": 12,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung cho cau 7, cho trong 4"
+      }
+    ]
+  },
+  "g1d5": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung: V-(r)u ni irarenai / V-nai dewa irarenai (Khong the khong lam gi do)"
+      },
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung: V-(r)u koto wa nai (Khong phai la khong...)"
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung: V-nai koto wa nai (Khong phai la khong...)"
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung: V-zuni wa irarenai / V-nai dewa irarenai (Khong the khong...)"
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung: V-(r)u koto wa nai (Van co kha nang, van co the...)"
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cau: Tu dau tien trong cau hoan chinh"
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cau: Tu thu hai trong cau hoan chinh"
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cau: Tu thu ba trong cau hoan chinh"
+      },
+      {
+        "index": 8,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cau: Tu cuoi cung trong cau hoan chinh"
+      },
+      {
+        "index": 9,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cau: Tu dau tien cua cau hoi van dung mau cau"
+      },
+      {
+        "index": 10,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cau: Tu thu hai cua cau hoi van dung mau cau"
+      },
+      {
+        "index": 11,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cau: Tu thu ba cua cau hoi van dung mau cau"
+      },
+      {
+        "index": 12,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cau: Tu cuoi cung cua cau hoi van dung mau cau"
+      }
+    ]
+  },
+  "g1d6": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap thich hop de dien vao cho trong: Kokumin wa mou sukoshi seiji ni kanshin o nebanai naranai."
+      },
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap thich hop de dien vao cho trong: Senpai ni bakari wa irarenai."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap thich hop de dien vao cho trong: Kaze ga tsuyokute, tatte hodo desu."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap thich hop de dien vao cho trong: Houritsu o naranai."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap thich hop de dien vao cho trong: Socchi e iccha dame. Doushite, jitto."
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de hoan thien cau ve viec gay phien phuc cho nguoi khac (Cho trong 1)."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de hoan thien cau ve viec gay phien phuc cho nguoi khac (Cho trong 2)."
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de hoan thien cau ve viec gay phien phuc cho nguoi khac (Cho trong 3)."
+      },
+      {
+        "index": 8,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de hoan thien cau ve viec gay phien phuc cho nguoi khac (Cho trong 4)."
+      },
+      {
+        "index": 9,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de hoan thien cau voi chu de xau ho (Cho trong 1)."
+      },
+      {
+        "index": 10,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de hoan thien cau voi chu de xau ho (Cho trong 2)."
+      },
+      {
+        "index": 11,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de hoan thien cau voi chu de xau ho (Cho trong 3)."
+      },
+      {
+        "index": 12,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de hoan thien cau voi chu de xau ho (Cho trong 4)."
+      }
+    ]
+  },
+  "g1d7": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop dien vao cau ve nguy co thieu rau do an ngoai."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien vao cau dien ta su that la doc nhung khong hieu gi."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien vao cau dien ta xu huong gan day hay bi beo len."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon hau to hoac mau ngu phap dien ta ve mat co ve nhu tu tin."
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien ta uoc muon thay the cho nguoi khac."
+      },
+      {
+        "index": 6,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon hau to dien ta tinh trang hay noi gian gan day."
+      },
+      {
+        "index": 7,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien ta ly do vi qua yen tinh nen nghi khong co ai."
+      },
+      {
+        "index": 8,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien ta su ngac nhien khi de quen do quan trong."
+      },
+      {
+        "index": 9,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien ta pham vi khong chi trong nuoc ma ca nuoc ngoai."
+      },
+      {
+        "index": 10,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien ta su danh doi hay lua chon bo di do cu."
+      },
+      {
+        "index": 11,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien ta su kien quyet khong chiu nghi lam du co theu cot."
+      },
+      {
+        "index": 12,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon cau tra loi phu hop cho hoi thoai ve viec khong dung dien thoai di dong."
+      },
+      {
+        "index": 13,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien ta kha nang co the nhung chon cach tien hon."
+      },
+      {
+        "index": 14,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien ta trang thai khong the ngung buon ngu du da uong tra dac."
+      },
+      {
+        "index": 15,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien ta viec bo qua cac thu tuc de bat tay vao lam."
+      },
+      {
+        "index": 16,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sap xep cac thanh phan de hoan thanh cau noi ve tinh trang co the."
+      },
+      {
+        "index": 17,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sap xep cac thanh phan de hoan thanh cau mo ta anh mat nhin chau."
+      },
+      {
+        "index": 18,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sap xep cac thanh phan de hoan thanh cau ve y dinh mua hay khong."
+      },
+      {
+        "index": 19,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sap xep cac thanh phan de hoan thanh cau ve viec doi bong vo dich la khong the nao."
+      },
+      {
+        "index": 20,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sap xep cac thanh phan de hoan thanh cau dien ta su khong the nhin hut thuoc."
+      }
+    ]
+  },
+  "g2d1": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dung voi '...kai ga atte' (nho cong suc bo ra ma dat duoc ket qua)."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien vao cho trong voi '...made' (den muc, tham chi)."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien vao cho trong voi '...ga aru' (dang de lam gi, co y nghia gi)."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien vao cho trong voi '...kai ga nai' (uong cong, khong bu lai duoc cong suc)."
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien vao cho trong voi '...wo kaete' (thay doi/bien doi cai gi do)."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan trong cau sao cho dung ngap phap voi '...kai ga atte'."
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep vi tri cua dau sao trong cau voi '...kai ga atte'."
+      },
+      {
+        "index": 8,
+        "type": "grammar-tadose",
+        "descriptionVi": "Xac dinh vi tri dung cho dau sao trong cau on tap."
+      },
+      {
+        "index": 9,
+        "type": "grammar-tadose",
+        "descriptionVi": "Hoan thanh cau sap xep ngap phap voi cau truc '...kai ga atte'."
+      },
+      {
+        "index": 10,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan cau voi mau cau '...made shite' (lam den muc nao do)."
+      },
+      {
+        "index": 11,
+        "type": "grammar-tadose",
+        "descriptionVi": "Dat dau sao vao vi tri thich hop trong cau on tap ve mau '...made shite'."
+      },
+      {
+        "index": 12,
+        "type": "grammar-tadose",
+        "descriptionVi": "Tim vi tri dung cho dau sao trong cau hoi sap xep tu."
+      },
+      {
+        "index": 13,
+        "type": "grammar-tadose",
+        "descriptionVi": "Hoan thanh cau hoi sap xep tu cuoi cung cua bai."
+      }
+    ]
+  },
+  "g2d2": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Phan biet cach su dung giua ゃりかけた va ゃりぬいた trong cau."
+      },
+      {
+        "index": 1,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon mau cau dung giua きた va かけた."
+      },
+      {
+        "index": 2,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Kiem tra mau cau chi kha nang co the xay ra (ありえない hay ありうない)."
+      },
+      {
+        "index": 3,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Xac dinh hinh thuc dung cua える hoac うる."
+      },
+      {
+        "index": 4,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon mau cau chi muc do hoan tat hoac qua muc (きった hay かけた)."
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cau voi vi tri dau tien cua cu phap."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cau voi vi tri thu hai cua cu phap."
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cau voi vi tri thu ba cua cu phap."
+      },
+      {
+        "index": 8,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cau voi vi tri cuoi cung cua cu phap."
+      },
+      {
+        "index": 9,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu cho bai tap sap xep cau (vi tri 1)."
+      },
+      {
+        "index": 10,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu cho bai tap sap xep cau (vi tri 2)."
+      },
+      {
+        "index": 11,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu cho bai tap sap xep cau (vi tri 3)."
+      },
+      {
+        "index": 12,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu cho bai tap sap xep cau (vi tri 4)."
+      }
+    ]
+  },
+  "g2d3": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung voi ~uchi ni (trong khi con...)"
+      },
+      {
+        "index": 1,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon mau cau dung voi ~ni kagiri (chi rieng cho...)"
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung voi ~uchi ni (tranh thu truoc khi...)"
+      },
+      {
+        "index": 3,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon mau cau dung voi ~kagiri (trong gioi han...)"
+      },
+      {
+        "index": 4,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon mau cau dung voi ~ni kagirazu (khong chi... ma con...)"
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh dung ngu phap"
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh dung ngu phap"
+      }
+    ]
+  },
+  "g2d5": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn cấu trúc ngữ pháp phù hợp điền vào chỗ trống liên quan đến việc sử dụng với tư cách là/như là."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn trợ từ hoặc cấu trúc ngữ pháp thích hợp xét từ lập trường của một người."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn cấu trúc ngữ pháp diễn tả giả định, nếu làm việc gì đó."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Điền cấu trúc ngữ pháp biểu thị mục đích của sự việc."
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn cấu trúc giả định trong câu điều kiện giả thiết."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sắp xếp các từ theo thứ tự đúng để tạo thành câu hoàn chỉnh với cấu trúc giả định."
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sắp xếp các từ theo thứ tự đúng để tạo thành câu hoàn chỉnh với cấu trúc giả định."
+      },
+      {
+        "index": 8,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sắp xếp các từ theo thứ tự đúng để tạo thành câu hoàn chỉnh với cấu trúc giả định."
+      },
+      {
+        "index": 9,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sắp xếp các từ theo thứ tự đúng để tạo thành câu hoàn chỉnh với cấu trúc giả định."
+      },
+      {
+        "index": 10,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sắp xếp từ để hoàn thành câu với cấu trúc diễn đạt mục đích hoặc tư cách."
+      },
+      {
+        "index": 11,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sắp xếp từ để hoàn thành câu với cấu trúc diễn đạt mục đích hoặc tư cách."
+      },
+      {
+        "index": 12,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sắp xếp từ để hoàn thành câu với cấu trúc diễn đạt mục đích hoặc tư cách."
+      },
+      {
+        "index": 13,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sắp xếp từ để hoàn thành câu với cấu trúc diễn đạt mục đích hoặc tư cách."
+      }
+    ]
+  },
+  "g2d6": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon mau dung giua とともに va につれて de dien ta su thayDoi dong thoi."
+      },
+      {
+        "index": 2,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon mau dung giua につれて va にともない trong cau ve su thayDoi."
+      },
+      {
+        "index": 3,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Phan biet とともに va にしたがって khi suDung voi ngoai ngu."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon hinh thuc dung cua tu 変化 di voi mau に伴って."
+      },
+      {
+        "index": 5,
+        "type": "grammar-hyougen",
+        "descriptionVi": "XacDinh cach dung phu hop cho dong tu trong cau co につれて."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh dung ngu phap N2."
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de tao cau menh lenh lich su."
+      }
+    ]
+  },
+  "g2d7": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn ngữ pháp điền vào chỗ trống: マフラーを編み（　）、途中でやめてしまった。"
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn ngữ pháp điền vào chỗ trống: そのスポーツは、もともと身を守ることを目的（　）考え出されたものだ。"
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn ngữ pháp điền vào chỗ trống: スープ、（　）うちに召し上がってください。"
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn ngữ pháp điền vào chỗ trống: 悩み（　）、結局、彼は真実を話した。"
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn ngữ pháp điền vào chỗ trống: 生徒がやる気を出さない（　）、いくら先生が一生懸命教えても上達しないでしょう。"
+      },
+      {
+        "index": 6,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn ngữ pháp điền vào chỗ trống: 勉強していないところ（　）、試験に出る。"
+      },
+      {
+        "index": 7,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn ngữ pháp điền vào chỗ trống: まだ古いのが残っているから、使い（　）から新しいのを使おう。"
+      },
+      {
+        "index": 8,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn ngữ pháp điền vào chỗ trống: 夜が明けるか明けないか（　）、彼らは働き始める。"
+      },
+      {
+        "index": 9,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn ngữ pháp điền vào chỗ trống: 小学生以下のお子さん（　）、プレゼントをさしあげます。"
+      },
+      {
+        "index": 10,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn ngữ pháp điền vào chỗ trống: あなたの健康を考える（　）お酒を飲ませないのです。"
+      },
+      {
+        "index": 11,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn ngữ pháp điền vào chỗ trống: 体（　）元気なら、なんとか生活していけるだろう。"
+      },
+      {
+        "index": 12,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn ngữ pháp điền vào chỗ trống: 無料体験レッスンは1回（　）です。"
+      },
+      {
+        "index": 13,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn ngữ pháp điền vào chỗ trống: あんなにいい人が悪いことをするなんて、あり（　）。"
+      },
+      {
+        "index": 14,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn ngữ pháp điền vào chỗ trống: これは1週間分の食事のメニューです。このメニュー（　）、料理を作ってください。"
+      },
+      {
+        "index": 15,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn ngữ pháp điền vào chỗ trống: 明日は首相がこの町を訪問します。それに（　）この道路は混雑が予想されます。"
+      },
+      {
+        "index": 16,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sắp xếp các từ để hoàn thành câu với dấu sao ở vị trí đúng."
+      },
+      {
+        "index": 17,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sắp xếp các từ để hoàn thành câu với dấu sao ở vị trí đúng."
+      },
+      {
+        "index": 18,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sắp xếp các từ để hoàn thành câu với dấu sao ở vị trí đúng."
+      },
+      {
+        "index": 19,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sắp xếp các từ để hoàn thành câu với dấu sao ở vị trí đúng."
+      },
+      {
+        "index": 20,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sắp xếp các từ để hoàn thành câu với dấu sao ở vị trí đúng."
+      }
+    ]
+  },
+  "g3d1": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dung de dien vao cho trong: 'Hoi nghi duoc toan hanh theo dung du kien.'"
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien vao cho trong de dien ta cam xuc ngac nhien hoac bat ngo."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien ta muc do qua muc, den muc mat ca y thuc."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien ta su tu do theo y muon trong tranh anh."
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap bieu thi su that vong khi lai thua cuoc."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac cum tu thanh cau hoan chinh: 'Da lam that bai...'"
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep vi tri dau sao trong cau: 'Dua vao sach nau an, da lam that bai...'"
+      },
+      {
+        "index": 8,
+        "type": "grammar-tadose",
+        "descriptionVi": "Xac dinh vi tri dung cua dau sao cho cau noi ve viec nau an theo sach."
+      },
+      {
+        "index": 9,
+        "type": "grammar-tadose",
+        "descriptionVi": "Hoan thanh cau sap xep vi tri dau sao lien quan den viec nau an bi hong."
+      },
+      {
+        "index": 10,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan cau cho nguoi da chung kien hien truong vu an."
+      },
+      {
+        "index": 11,
+        "type": "grammar-tadose",
+        "descriptionVi": "Tim vi tri cho dau sao trong cau mo ta tam trang chung kien hien truong."
+      },
+      {
+        "index": 12,
+        "type": "grammar-tadose",
+        "descriptionVi": "Dien vao vi tri dau sao phu hop cho cau ve nguoi thay hien truong."
+      },
+      {
+        "index": 13,
+        "type": "grammar-tadose",
+        "descriptionVi": "Hoan thanh cau sap xep vi tri dau sao cho nguoi da nhin thay su viec tai hien truong."
+      }
+    ]
+  },
+  "g3d2": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau phu hop dien vao cho trong: o_naka ga suku wake (da / dewa)"
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau phu hop dien vao cho trong: shiken no kekka ga ii wake (dewa / ga nai)"
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau phu hop dien vao cho trong: dekakenai wake niha (ikanai / ikenai)"
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau phu hop dien vao cho trong: suki na wake (dewa / ga nai)"
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau phu hop dien vao cho trong: ugoku wake (dewa / ga nai)"
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu de tao thanh cau hoan chinh cho cau 6"
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu de tao thanh cau hoan chinh cho cau 7"
+      }
+    ]
+  },
+  "g3d3": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-tadose",
+        "descriptionVi": "Xac dinh dung sai cau su dung ngu phap 〜たとに"
+      },
+      {
+        "index": 1,
+        "type": "grammar-tadose",
+        "descriptionVi": "Xac dinh dung sai cau su dung ngu phap 〜たとに"
+      },
+      {
+        "index": 2,
+        "type": "grammar-tadose",
+        "descriptionVi": "Xac dinh dung sai cau su dung ngu phap 〜末に"
+      },
+      {
+        "index": 3,
+        "type": "grammar-tadose",
+        "descriptionVi": "Xac dinh dung sai cau su dung ngu phap 〜あげくに"
+      },
+      {
+        "index": 4,
+        "type": "grammar-tadose",
+        "descriptionVi": "Xac dinh dung sai cau su dung ngu phap 〜あげくに"
+      },
+      {
+        "index": 5,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Sap xep trat tu cau de hoan thanh cau dung voi ngu phap 〜かと思ったら"
+      },
+      {
+        "index": 6,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Sap xep trat tu cau de hoan thanh cau dung voi ngu phap 〜かと思ったら"
+      },
+      {
+        "index": 7,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Sap xep trat tu cau de hoan thanh cau dung voi ngu phap 〜かと思ったら"
+      },
+      {
+        "index": 8,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Sap xep trat tu cau de hoan thanh cau dung voi ngu phap 〜かと思ったら"
+      },
+      {
+        "index": 9,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Sap xep trat tu cau de hoan thanh cau dung voi ngu phap 〜あげくに"
+      },
+      {
+        "index": 10,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Sap xep trat tu cau de hoan thanh cau dung voi ngu phap 〜あげくに"
+      },
+      {
+        "index": 11,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Sap xep trat tu cau de hoan thanh cau dung voi ngu phap 〜あげくに"
+      },
+      {
+        "index": 12,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Sap xep trat tu cau de hoan thanh cau dung voi ngu phap 〜あげくに"
+      }
+    ]
+  },
+  "g3d4": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung voi ~ta tokoro (vua moi lam gi do)"
+      },
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung voi ~tyuu no tokoro (trong luc dang lam gi do)"
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung voi ~dokoro dewa nai (khong phai luc de lam gi do)"
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung voi ~tokoro (khi dang lam gi thi phat hien ra dieu gi)"
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung voi ~dokoro ka (ngay ca... con chua noi den...)"
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de tao thanh cau hoan chinh dung ngu phap voi ~tyoudo ... tokoro nan desu"
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de tao thanh cau hoan chinh dung ngu phap voi cau truc ~dokoro dewa nai"
+      }
+    ]
+  },
+  "g3d5": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Kiem tra ngu phap ve ~darake trong cau ve tre em dang choi dua"
+      },
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Kiem tra ngu phap ve ~kiri trong cau ve chuyen di Hokkaido"
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Kiem tra ngu phap ve ~darake trong cau ve can phong day rac"
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Kiem tra ngu phap ve ~darake trong cau ve du lich nuoc ngoai toan nguoi Nhat"
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Kiem tra ngu phap ve ~kiri trong cau ve viec khong gap lai ban gai tu khi tot nghiep"
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep trat tu tu de hoan thanh cau ve viec bo uong ruou vao ngay cuoi cung nay"
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep trat tu tu de hoan thanh cau ve viec de nguyen cua so mo gay cam lanh"
+      }
+    ]
+  },
+  "g3d6": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon mau cau dung giua hanco va hanmen (u tien cho y trai nguoc trong cau)"
+      },
+      {
+        "index": 2,
+        "type": "grammar-tadose",
+        "descriptionVi": "Phan biet ippou de va hanco trong cau chi su doi lap"
+      },
+      {
+        "index": 3,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon mau cau phu hop voi y nghia trai lai ky vong (hanco)"
+      },
+      {
+        "index": 4,
+        "type": "grammar-tadose",
+        "descriptionVi": "Dien dung hanmen de chi mat trai cua van de"
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Xac dinh mau cau bieu thi xu the tang len (ippou da)"
+      },
+      {
+        "index": 6,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Sap xep tu vung de hoan thanh cau dung ngu phap ve chu de urokusa"
+      },
+      {
+        "index": 7,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Sap xep cau voi mau ngu phap bieu dat y kien hoac danh gia"
+      }
+    ]
+  },
+  "g3d7": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dung de dien vao cho trong ve so lan den lop cua nguoi do."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien ta muc do qua muc dan den hanh dong keu len."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap bieu thi cam xuc, trang thai dang tiec khi chu tho da chet."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap chi trang thai do chuyen nha nhieu lan nen do dac bi xuoc xat khap noi."
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap chi viec lam dung theo loi bac si dan."
+      },
+      {
+        "index": 6,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien ta ket qua buc xoi sau khi bi bat cho doi suot 1 tieng."
+      },
+      {
+        "index": 7,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap bieu thi day la ket luan sau khi da suy nghi ky ve viec dong cua tiem."
+      },
+      {
+        "index": 8,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap bieu thi vi noi so hai ma co ay khong the cuu dong duoc."
+      },
+      {
+        "index": 9,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien ta su an han vi lam ban cuon sach di muon."
+      },
+      {
+        "index": 10,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap bieu thi ket qua bat ngo khi thu do nhiet do co the."
+      },
+      {
+        "index": 11,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien ta tinh trang cho nguoi khac muon sach nhung chua duoc tra lai."
+      },
+      {
+        "index": 12,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap chi hanh dong xay ra trai nguoi lai voi y chi cua nguoi dan."
+      },
+      {
+        "index": 13,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap chi xu huong mat dan rung cay do phat trien do thi."
+      },
+      {
+        "index": 14,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap bieu thi su khong the nhan mon qua dat tien nhu vay."
+      },
+      {
+        "index": 15,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap lam ro rang viec xin nghi tam thoi nhung khong co y dinh thoi viec."
+      },
+      {
+        "index": 16,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de hoan chinh cau noi ve dua tre vua ve nha da di choi."
+      },
+      {
+        "index": 17,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de dien ta chenh lech mui gio giua hai noi."
+      },
+      {
+        "index": 18,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan dien ta thoi tiet mua he ma van cam thay lanh."
+      },
+      {
+        "index": 19,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan dien ta buoi sang co dong dat nen tinh hinh rat hoang loan."
+      },
+      {
+        "index": 20,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan dien ta su no luc tim kiem nhung khong thay ngoi nha."
+      }
+    ]
+  },
+  "g4d1": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Phan biet giua \"ue wa\" va \"no ue\" trong cau tinh toan kha thi nhung van con van de thuc te."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon giua \"ue de\" va \"ue ni\" khi xay ra loi cong viec dan den cai nhau voi ban."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Dien vao cho trong \"ue\" hoac \"no ue\" de xac nhan so tien truoc khi ky ten."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Phan biet \"ue wa\" va \"ue de wa\" sau khi thu tuc du thi da hoan tat de quyet tam het suc."
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon giua \"ue ni\" va \"ue de wa\" trong cau ve quan he vo chong tren giay to ho so."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh: May moc nay du thao tac cung kho hieu."
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu de hoan thien cau: Anh ay lo lang ve phan phong van."
+      }
+    ]
+  },
+  "g4d2": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon dang dung voi cau hoi su dung cau truc ~次第です"
+      },
+      {
+        "index": 2,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon dang dung voi cau hoi su dung cau truc ~次第で"
+      },
+      {
+        "index": 3,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon dang dung voi cau hoi su dung cau truc ~次第"
+      },
+      {
+        "index": 4,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon dang dung voi cau hoi su dung cau truc ~向けに"
+      },
+      {
+        "index": 5,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon dang dung voi cau hoi su dung cau truc ~次第"
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh su dung cau truc ~次第です"
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh su dung cau truc ~向きだ"
+      }
+    ]
+  },
+  "g4d3": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon Ngu Phap phu hop ve nguyen nhan do su co"
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon Ngu Phap chi doi tuong huong den cua bat man"
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon Ngu Phap dien dat y dap lai ky vong"
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon Ngu Phap the hien su tuong phan giua hai ve"
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon Ngu Phap lien quan den van de rieng tu"
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan cau bieu thi su lien quan den su kien"
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan cau the hien su danh gia thanh tich"
+      }
+    ]
+  },
+  "g4d4": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Phan biet va chon dung cau truc ngu phap phu hop cho cau ve viec chua lam bai tap."
+      },
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon dung cau truc ngu phap dien ta su bien doi thoi tiet dang dan hoi phuc."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Kiem tra kha nang su dung dung mau cau ngu phap trong hoan canh di mua sam."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon cau truc ngu phap danh gia hoac chi trich ve tu cach la nguoi Nhat."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Xac dinh mau cau ngu phap bieu thi su khen ngoi doi thu nhung van mang tinh doi lap."
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan cau de tao thanh cau hoan chinh ve ke hoach chinh tri."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung va cu phap de dien ta dac diem cua ngoi nha moi sap chuyen den."
+      }
+    ]
+  },
+  "g4d5": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung de hoan thanh cau ve viec phai tuan thu, giu loi hua."
+      },
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon dang dung cua cau truc noi ve viec khong the khong noi dieu gi do."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau phu hop dien vao cho trong de chi muc do chi la ly tuong."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung de dien ta quy dinh hoac su that khong duoc mang de thi ve."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau chi su khuyen cao hoac dieu khong nen lam ve su an toan."
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh noi ve dia diem va trang thai cua cuoc hop ngay mai."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh trinh bay suy nghi ve luat phap."
+      }
+    ]
+  },
+  "g4d6": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Phan biet giua にあたって va にわたって de chi thoi gian le hoi keo dai 3 ngay."
+      },
+      {
+        "index": 1,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon giua にそって va にさきだって de lap keo hoach theo phuong cham cua cong ty."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Dien cau truc chi thoi gian hoac hanh dong truoc mot su kien chieu phim."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Su dung cau truc にあたり khi viet tai lieu va can chu y cac diem tiep theo."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Lua chon cau truc chi su xuyen suot hoac pham vi thoi gian 400 nam."
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep trat tu cau de tao thanh cau hoan chinh dung ngu phap N2."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de tao cau hoan chinh cho truong hop nay."
+      }
+    ]
+  },
+  "g4d7": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop di voi \"受験に\" de chi pham vi hoac thoi diem."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap chi huong hoac doi tuong phu hop voi \"B国から日本\"."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap chi thoi diem ngay sau khi co thong tin \"( )次第\"."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap noi hai ly do \"簡単な（ ）材料費も安い\"."
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien ta cam xuc trai nguoc hoac hon hop \"驚き（ ）うれしそうだった\"."
+      },
+      {
+        "index": 6,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap chi su kien dien ra song song hoac lien quan \"会議（ ）、...\"."
+      },
+      {
+        "index": 7,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap \"数字（ ）では\" de chi xet ve mat so lieu."
+      },
+      {
+        "index": 8,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap tuy thuoc vao cach nghi \"考え方（ ）幸せにも...\"."
+      },
+      {
+        "index": 9,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap \"～形式（ ）作られている\" de noi ve hinh thuc."
+      },
+      {
+        "index": 10,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap chi khoang thoi gian keo dai \"6年間（ ）観測データ\"."
+      },
+      {
+        "index": 11,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap \"実物を（ ）上で\" de chi dieu kien tien quyet truoc khi quyet dinh."
+      },
+      {
+        "index": 12,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap chi su trai nguoc giua loi noi va hanh dong \"( )つつ、大人が勉強しない\"."
+      },
+      {
+        "index": 13,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap chi quy tac, thoi quen hoac nghia vu \"入ってはいけない（ ）\"."
+      },
+      {
+        "index": 14,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap chi dac trung hoac danh cho nguoi Nhat \"日本人に（ ）\"."
+      },
+      {
+        "index": 15,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu dinh de khang dinh khong chi la nhat thoi \"流行（ ）\"."
+      },
+      {
+        "index": 16,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sap xep cau voi vi tri ngoi sao de dien dat y khong muon noi doi."
+      },
+      {
+        "index": 17,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sap xep cau voi vi tri ngoi sao de dien dat y tim kiem so thich moi khi khong con choi tennis duoc."
+      },
+      {
+        "index": 18,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sap xep cau voi vi tri ngoi sao ve viec chuan bi muon."
+      },
+      {
+        "index": 19,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sap xep cau voi vi tri ngoi sao de keu goi su hop suc cua moi nguoi."
+      },
+      {
+        "index": 20,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sap xep cau voi vi tri ngoi sao de chi doi tuong duoc hoac khong duoc ung ho."
+      }
+    ]
+  },
+  "g5d1": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dung de dien vao cho trong: lai xay ra chuyen gi"
+      },
+      {
+        "index": 1,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon mau dien dat y nghia kho long chap nhan"
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Phan biet mau ngu phapchi nguy co xay ra su viec tieu cuc"
+      },
+      {
+        "index": 3,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon mau ngu phap chi su tuyet doi khong the"
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap tu choi lich su voi y nghia kho long"
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de tao thanh cau hoan chinh dung ngu phap"
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung va cum tu de hoan thien cau phu dinh"
+      }
+    ]
+  },
+  "g5d2": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau phu hop dien vao cho trong voi Cau 1: N neu chua lam thi khong the bat dau."
+      },
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau phu hop dien vao cho trong voi Cau 2: Vi la tinh cach cua co ay nen chac chan se den som."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau phu hop dien vao cho trong voi Cau 3: Vi ngoi canh nhau trong lop nen da tro thanh ban."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau phu hop dien vao cho trong voi Cau 4: Neu chua hoan thanh cong viec nay thi khong the lam tiep."
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu vao vi tri sao cho tao thanh cau hoan chinh cho Cau 6."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau phu hop dien vao cho trong voi Cau 5: Ong ay qua doi ma khong biet rang tac pham duoc cong nhan."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu vao vi tri sao cho tao thanh cau hoan chinh cho Cau 7."
+      }
+    ]
+  },
+  "g5d3": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon dap an dung giua dan da va-mashita cho cau vao nham vuon nha nguoi khac."
+      },
+      {
+        "index": 1,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon mau cau thich hop dien vao cau ve y kien mong muon tien thue su dung hop ly."
+      },
+      {
+        "index": 2,
+        "type": "grammar-tadose",
+        "descriptionVi": "Phan biet 2 mau bieu dat dogen va touzen khi noi ve quan he than thiet nhu nguoi nha."
+      },
+      {
+        "index": 3,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon cum tu chi su duong nhien khi noi ve viec khong lam duoc dieu binh thuong."
+      },
+      {
+        "index": 4,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon mau cau phu hop dien vao cau ve thoi tiet lanh nhung tuyet khong roi duoc."
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu thanh cau hoan chinh cho truong hop lam them trong bai."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu de tao cau hoan chinh ve viec co phieu cong ty rot gia."
+      }
+    ]
+  },
+  "g5d4": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong giua hai ve cau."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong giua hai ve cau."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong giua hai ve cau."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong giua hai ve cau."
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong giua hai ve cau."
+      },
+      {
+        "index": 6,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Sap xep cac thanh phan trong cau de tao thanh cau hoan chinh."
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan trong cau de tao thanh cau hoan chinh."
+      }
+    ]
+  },
+  "g5d5": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung ngu phap de dien vao cho trong: '...y ga nai' (khong the lam gi do)."
+      },
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon hinh thuc dung ngu phap cua dong tu ket hop voi 'ka no yoni' (nhu the la...)."
+      },
+      {
+        "index": 2,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon mau cau bieu dat y de xuat hoac hoi y kien: '...dewa nai ka' (hay la chung ta... nhi)."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Phan biet giua 'sou ni nai' va 'sou ja nai' de dien ta kha nang xay ra su viec."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon the cua dong tu dung truoc mau cau '...ka no yoni' de dien ta su giong nhau."
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan trong cau sao cho tao thanh cau hoan chinh bieu dat trang thai cua co the."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep lai cac tu de hoan thanh cau noi ve tam trang hoac cam xuc hien tai."
+      }
+    ]
+  },
+  "g5d6": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon giua 'motode' va 'ni motoite' de hoan thanh cau noi ve viec chuong trinh duoc cau thanh dua tren y kien cua moi nguoi."
+      },
+      {
+        "index": 2,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon giua 'ouji' va 'jishi' de dien vao truoc diem can chu y khi giao ket hop dong."
+      },
+      {
+        "index": 3,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon giua 'oujite' va 'jishite' cho cau gia ca giam xuong tuy theo so luong mua."
+      },
+      {
+        "index": 4,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon giua 'jishita' va 'oujita' cho cau noi ve phan doan phu hop theo tinh huong."
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon giua 'oujita' va 'motoita' de noi ve viec che tao do dac dua theo cong thai hoc."
+      },
+      {
+        "index": 6,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Bai tap dien khuyet ve chu de nuoi cho dan duong va qua trinh huan luyen."
+      }
+    ]
+  },
+  "g5d7": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong trong cau ve ngoi chua noi tieng."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong trong cau noi ve chieu cao."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong trong cau noi ve ngan sach."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong trong cau ve ly do."
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong trong cau ve quy dinh cua ky tuc xa."
+      },
+      {
+        "index": 6,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong trong cau ve tinh cach."
+      },
+      {
+        "index": 7,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong trong cau ve cach tinh thue."
+      },
+      {
+        "index": 8,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong trong cau ve tai nan khi lai xe."
+      },
+      {
+        "index": 9,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong trong cau ve giao duc tre em."
+      },
+      {
+        "index": 10,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong trong cau ve hanh vi cua co ay."
+      },
+      {
+        "index": 11,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong trong cau ve hoa vang tren dong."
+      },
+      {
+        "index": 12,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong trong cau co vu tran dau bong da."
+      },
+      {
+        "index": 13,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong trong cau ve loi hua."
+      },
+      {
+        "index": 14,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong trong cau ve thong tin ca nhan."
+      },
+      {
+        "index": 15,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop de dien vao cho trong trong cau ve suc khoe cua nguoi chi."
+      },
+      {
+        "index": 16,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sap xep cac tu de hoan thanh cau noi ve loai chim."
+      },
+      {
+        "index": 17,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sap xep cac tu de hoan thanh cau noi ve su hieu biet ve nuoc Y."
+      },
+      {
+        "index": 18,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sap xep cac tu de hoan thanh cau noi ve viec muon gio hen."
+      },
+      {
+        "index": 19,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sap xep cac tu de hoan thanh cau noi ve su kien tri luyen tap."
+      },
+      {
+        "index": 20,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sap xep cac tu de hoan thanh cau noi ve cam xuc va suy nghi."
+      }
+    ]
+  },
+  "g6d1": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Kiem tra ngu phap ve ieu kien hoac muc do lien quan en u hoa (Lop 6 Ngay 1)"
+      },
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Kiem tra ngu phap ve thoi gian tu khi hanh o nao o (Lop 6 Ngay 1)"
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Kiem tra cau truc ngu phap dien ta y chi quyet tam (Lop 6 Ngay 1)"
+      },
+      {
+        "index": 3,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Kiem tra bieu dat ton kinh khi noi chuyen trong cong viec"
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Kiem tra bieu thuc ly do, nguyen nhan hoac tinh tat yeu (Lop 6 Ngay 1)"
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Cau hoi trac nghiem nhieu lua chon ve ngu phap bai 6 ngay 1"
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Cau hoi trac nghiem bo sung cu phap cho hoan chinh cau"
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Cau hoi trac nghiem kiem tra hieu biet ve mau cau N2"
+      }
+    ]
+  },
+  "g6d2": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon giua kara iu to va kara shite de dien vao cau chi dua vao cach cuoi cua dua tre giong me."
+      },
+      {
+        "index": 2,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon giua kara ieba va kara shite de dien vao cau danh gia nang luc tieng Nhat qua bai van."
+      },
+      {
+        "index": 3,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon giua kara miru to va kara shite de dien vao cau suy doan con voi to lon qua dau vet chan."
+      },
+      {
+        "index": 4,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon giua kara miru to va kara shite de dien vao cau neu goc nhin cua nguoi khong choi golf."
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon giua kara suru to va kara ni wa de dien vao cau suy doan do an ngon qua cach an."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon giua kara shite va kara suru to de dien vao cau hoi thoan suy doan A dan dau qua ket qua thi viet."
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon giua kara miru to va kara shite de dien vao cau hoi thoan neu goc nhin ca nhan ve A."
+      },
+      {
+        "index": 8,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon giua kara miru to va kara shite de dien vao cau hoi thoan danh gia ve su yeu duoi qua cach noi chuyen."
+      },
+      {
+        "index": 9,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon giua kara ieba va kara shite de dien vao cau hoi thoan xet tren phuong dien B tot hon."
+      }
+    ]
+  },
+  "g6d3": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dung voi ~ni kakete (suot tu... den...)"
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dung voi ~nakereba (neu khong...)"
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dung voi ~to itte (chi vi ly do...)"
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dung voi ~ni kakete wa (xet ve mat...)"
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dung voi ~dakarato itte (chi vi...) de noi ve ly do"
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung tao thanh cau hoan chinh ve viec du tot den may nhung an nhieu qua thi khong tot"
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep tu vung tao thanh cau hoan chinh ve viec phai nhan thuc ro su that moi co the binh luan"
+      }
+    ]
+  },
+  "g6d4": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Dien vao cau hoi ve mau cau ~to ka dou ka / ~to ka no koto desu (nghe noi la...)"
+      },
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Dien vao cau hoi ve mau cau ~mai (co le khong, quyet tam khong lam gi)"
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Dien vao cau hoi ve mau cau ~to ka (nghe noi la...)"
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Dien vao cau hoi ve mau cau ~you ka ~mai ka (co nen lam hay khong nen lam gi)"
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Dien vao cau hoi ve mau cau ~you ka ~iki mai ka (phan van co nen lam gi hay khong)"
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cau dung voi mau cau ~mai"
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cau dung voi mau cau ~you ka ~mai ka"
+      }
+    ]
+  },
+  "g6d5": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau chi con cach duy nhat la di bo vi khong con phuong phap nao khac."
+      },
+      {
+        "index": 2,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon mau cau chi su that tat yeu, rang hero trong phim nhat dinh se khong chet."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau the hien viec buoc phai lam cong viec du la kho chiu vi ke sinh nhai."
+      },
+      {
+        "index": 4,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon mau cau khang dinh chac chan rang thu tuong chac co suy nghi nao do."
+      },
+      {
+        "index": 5,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon mau cau nhan manh viec truot thi chinh la trach nhiem cua ban than chu khong ai khac."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Dien tu thich hop vao cho trong de chi viec phai dung vi ghe tu do da kin."
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Dien tu thich hop vao cho trong de chi viec chac chan co ly do nao do khien anh ay khong den."
+      }
+    ]
+  },
+  "g6d6": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon phuong an dung giua 'ni oite' va 'wo megutte' de dien vao cau to chuc le khai giang tai the thao quan."
+      },
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon giua 'wo hajime' va 'wo megutte' cho cau ve phat hanh san pham moi tai Tokyo va cac do thi."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Phan biet giua 'ni okeru' va 'wo meguru' trong cau thao luan ve vai tro nam nu trong xa hoi."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon giua 'wo meguru' va 'ni oite' cho cau tiep nhan tu van ve tranh chap xoay quanh hop dong."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon giua 'wo hajimete' va 'wo hajime to suru' trong cau nghien cuu ve van de moi truong nhu nong len toan cau."
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Bai tap dien vao cho trong (vi tri 6, 7, 8) trong doan van ve hoi nghi the gioi to chuc tai Tokyo."
+      }
+    ]
+  },
+  "g6d7": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop voi cau"
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop voi cau"
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop voi cau"
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop voi cau"
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop voi cau"
+      },
+      {
+        "index": 6,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop voi cau"
+      },
+      {
+        "index": 7,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop voi cau"
+      },
+      {
+        "index": 8,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop voi cau"
+      },
+      {
+        "index": 9,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop voi cau"
+      },
+      {
+        "index": 10,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop voi cau"
+      },
+      {
+        "index": 11,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop voi cau"
+      },
+      {
+        "index": 12,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop voi cau"
+      },
+      {
+        "index": 13,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop voi cau"
+      },
+      {
+        "index": 14,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop voi cau"
+      },
+      {
+        "index": 15,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop voi cau"
+      },
+      {
+        "index": 16,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Sap xep tu vung cho cau dung ngu phap"
+      },
+      {
+        "index": 17,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Sap xep tu vung cho cau dung ngu phap"
+      },
+      {
+        "index": 18,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Sap xep tu vung cho cau dung ngu phap"
+      },
+      {
+        "index": 19,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Sap xep tu vung cho cau dung ngu phap"
+      },
+      {
+        "index": 20,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Sap xep tu vung cho cau dung ngu phap"
+      }
+    ]
+  },
+  "g7d1": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung de chi su khong phan biet nam nu khi tuyen dung"
+      },
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung dien ta y bat chap viec ban ron ma van den"
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dien ta viec tiep tuc di bat chap viec bi uot mua"
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau chi y nghia khong phan biet dau rot, ket qua van duoc thong bao"
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dien ta viec thuong ngoanh canh dep o Kyoto khong phan biet mua"
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh: Khong the noi that ra duoc"
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh: Tiep tuc hat mac ke xung quanh"
+      }
+    ]
+  },
+  "g7d2": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap phu hop voi cau ve nhieu viec o ngan hang va buu dien (yarai...yarai)"
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Dien tu thich hop cho cau khong co ca depat va sieu thi (mo...mo)"
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap dien dat du luc vui hay buon (ni tsuke...ni tsuke)"
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Dien mau ngu phap du co th gian hay khong (ni shiro...ni shiro)"
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau dien ta vua dau vua xau ho (yarai...yarai)"
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan thanh cau hoan chinh voi mau an se (ni shiro)"
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cau voi mau ngu phap nhan duoc su giup do (ni natte iru)"
+      }
+    ]
+  },
+  "g7d3": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon mau cau dung cho cau du thua: 'Duong thi ngot'."
+      },
+      {
+        "index": 1,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon mau cau dung: 'Hoc 20 tieng mot ngay la qua suc'."
+      },
+      {
+        "index": 2,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon mau cau dung khi noi ve viec viet vao sach muon."
+      },
+      {
+        "index": 3,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon mau cau dung: 'Du chi mot lan cung muon thu song cuoc song do'."
+      },
+      {
+        "index": 4,
+        "type": "grammar-tadose",
+        "descriptionVi": "Chon mau cau dung: 'Tieng Nhat cua ban gioi nhi'."
+      },
+      {
+        "index": 5,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Dien tu thich hop vao cau: 'Khong nen uong tra hay ca phe truoc khi ngu'."
+      },
+      {
+        "index": 6,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Dien tu thich hop vao hoi thoai ve viec dat hang va giao trong ngay."
+      },
+      {
+        "index": 7,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Dien tu thich hop vao cau: 'Lam sao co chuyen noi chuyen that le nhu the chu'."
+      }
+    ]
+  },
+  "g7d4": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon giua 'を通じて' va '中心に' de dien dat phuong thuc ket noi."
+      },
+      {
+        "index": 1,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon dung bieu thuc '中心に' hoac '中心とした' cho cau ve ngu phap."
+      },
+      {
+        "index": 2,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Phan biet 'こめて' va 'を通じて' de dien ta su gui gam tinh cam."
+      },
+      {
+        "index": 3,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Lua chon giua 'を通じて' va '通して' de noi ve su xuyen suốt trong mot khoang thoi gian."
+      },
+      {
+        "index": 4,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon '中心に' hoac '中心とした' trong cau chi vi tri trung tam."
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu vao vi tri dung cho cau lien quan den viec hoc khi nhap vien."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cau chuc mung thi do cua con trai vao vi tri chinh xac."
+      }
+    ]
+  },
+  "g7d5": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung: phan biet \"ものがある\" va \"ものでもない\"."
+      },
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung dien vao cho trong ve tac pham cua anh ay."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung: phan biet \"ものだ\" va \"ものでもない\"."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon dang dung cua dong tu \"かんがえる\" ket hop voi \"ものがある\"."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau dung: phan biet \"おそれ\" va \"もの\" trong truong hop thien tai."
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Dien vao o trong ⑥: cau noi ve su sau sac va khong don gian cua viec hoc ngoai ngu."
+      },
+      {
+        "index": 6,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Dien vao o trong ⑦: dien dat quan diem ve viec \"chi can ngu phap la tot\"."
+      },
+      {
+        "index": 7,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Dien vao o trong ⑧: dien dat hau qua cua viec dung bieu dat khong phu hop ve van hoa."
+      }
+    ]
+  },
+  "g7d6": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn cấu trúc ngữ pháp phù hợp điền vào câu về sự phát minh ra đời dựa trên thất bại."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn ngữ pháp chỉ nguyên nhân/cơ hội dẫn đến việc hệ thống kiểm tra sản phẩm được xem xét lại."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn ngữ pháp biểu thị việc lấy sự kiện sinh con làm cơ hội để suy nghĩ lại cách sống."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn mẫu ngữ pháp diễn tả bộ phim được làm dựa trên câu chuyện có thật."
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Phân biệt cách dùng giữa \"sai-chuu\" (đang lúc) và \"sai\" (khi) khi lái xe cần bằng lái."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sắp xếp các từ ngữ để tạo thành câu hoàn chỉnh mang ý nghĩa chú ý không để quên đồ khi ra về."
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sắp xếp trật tự các từ để tạo thành câu thông báo đoạn đường phía trước đang thi công đi chung một làn."
+      }
+    ]
+  },
+  "g7d7": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn cấu trúc ngữ pháp phù hợp để hoàn thành câu về việc mua hoặc mượn sách."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Điền cấu trúc ngữ pháp chỉ mục đích vào câu nói về việc mua bảo hiểm khi nhập viện."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn cấu trúc thể hiện ý nghĩa của món quà xuất phát từ tấm lòng."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Điền cấu trúc ngữ pháp dùng để liệt kê hoặc phủ định đồng thời nhiều bộ phận."
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn cấu trúc ngữ pháp biểu thị sự bất chấp việc quần áo bị bẩn."
+      },
+      {
+        "index": 6,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Điền cấu trúc ngữ pháp diễn tả ý nghĩa bất kể trong hay ngoài nước."
+      },
+      {
+        "index": 7,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn cấu trúc ngữ pháp chỉ phương tiện, cách thức đóng góp cho xã hội."
+      },
+      {
+        "index": 8,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Điền cấu trúc liệt kê hiện tượng bất thường như sấm chớp hay động đất."
+      },
+      {
+        "index": 9,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn cấu trúc diễn tả tính chất tự nhiên, đương nhiên của con người."
+      },
+      {
+        "index": 10,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Điền cấu trúc ngữ pháp diễn tả sự liên tưởng khi mặc bộ trang phục này."
+      },
+      {
+        "index": 11,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn cấu trúc ngữ pháp chỉ khả năng hoặc nguy cơ lây truyền bệnh từ động vật."
+      },
+      {
+        "index": 12,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Điền cấu trúc phủ định một nhận định chung chung về việc ăn nhiều."
+      },
+      {
+        "index": 13,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn cấu trúc ngữ pháp phù hợp miêu tả cảnh quan thị trấn làm dịu tâm hồn."
+      },
+      {
+        "index": 14,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Điền cấu trúc ngữ pháp chỉ căn cứ hoặc dựa trên tài liệu thực tế."
+      },
+      {
+        "index": 15,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn cấu trúc ngữ pháp mang tính trang trọng khi đặt chỗ trên internet."
+      },
+      {
+        "index": 16,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sắp xếp các từ để hoàn thành câu với cấu trúc không có lý do để hiểu."
+      },
+      {
+        "index": 17,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sắp xếp các từ để hoàn thành câu với cấu trúc không phải là vấn đề của người khác."
+      },
+      {
+        "index": 18,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sắp xếp các từ để hoàn thành câu về việc thường xuyên nhận catalog bán hàng."
+      },
+      {
+        "index": 19,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sắp xếp các từ để hoàn thành câu về việc cho mượn sách và kết quả."
+      },
+      {
+        "index": 20,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Sắp xếp các từ để hoàn thành câu về việc hút thuốc hoặc hành động thất bại."
+      }
+    ]
+  },
+  "g8d1": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon giua 'sorede' va 'soredemo' cho cau hoi ve su khac biet do dong tau xe khi nghi xuan."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon giua 'sorede' va 'sorena' de dien ta viec tiet kiem nhung tien van khong tang."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon giua 'soredemo' va 'sorena' khi quyet dinh thi dai du bi noi la khong the."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon giua 'sorena' va 'soredemo' de dua ra loi khuyen muon sach o thuc vien."
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cau voi mau ngu phap ve su mau thuan 'sorena' va 'toi iu no wa'."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cau voi mau phan tich tinh huong 'sorena' va 'to omou koto da'."
+      }
+    ]
+  },
+  "g8d2": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon tu thich hop giua そこで va それが trong cau ve tinh trang giao thong va viec xay dung con duong moi."
+      },
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Dien tu thich hop giua そこで va それが vao doan hoi thoai ve chuyen du lich bi huy do gia dinh."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Phan biet そういえば va それはそうと trong cau noi ve ngay mai la le Valentine."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon giua そういえば va それはそうと de chuyen chu de hoi ve tai lieu da nho truoc do."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Dien tu thich hop giua そこで va それなら khi quen do tren tau va lien he van phong ga."
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de tao cau hoan chinh ve van de nguoi gia va luu hoc sinh."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de hoan thanh cau ve viec ong Tanaka neu y kien ve san bay."
+      }
+    ]
+  },
+  "g8d3": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn từ nối thích hợp điền vào chỗ trống để hoàn thành câu."
+      },
+      {
+        "index": 1,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Phân biệt biểu hiện ngữ pháp diễn đạt lý do/nguyên nhân."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn từ nối mang ý nghĩa giải thích tương đương."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chọn từ nối biểu thị sự tương phản hoặc bổ sung ý."
+      },
+      {
+        "index": 4,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chọn từ biểu thị ý nghĩa kết luận hoặc tóm lại."
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sắp xếp các thành phần câu sao cho đúng ngữ pháp."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sắp xếp các từ theo đúng trật tự để hoàn chỉnh câu."
+      }
+    ]
+  },
+  "g8d4": {
+    "questions": [
+      {
+        "index": 0,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Phan biet giua `tada` va `datte` trong cau phan nan phong cach tro chuyen ve viec phong o qua xa ga."
+      },
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau cau `to iu no wa` hay `to iu koto wa` de giai thich nguyen nhan an chay."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon lien tu thich hop `tadashi` hoac `shitagatte` de chi ket qua khong duoc du thi."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Dien mau cau giai thich hoac suy luan `to iu no wa` hay `to iu koto wa` trong hoi thoai dat giai tu."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Phan biet `shitagatte` va `tadashi` trong thong bao ve thoi gian hoat dong ngoai tru dip Tet."
+      },
+      {
+        "index": 5,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh mang y nghia khong phai la duoc hoc bai ban ma la tu hoc."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac thanh phan de dien ta tinh trang met moi tich tu nhung van khong the ngu duoc."
+      }
+    ]
+  },
+  "g8d5": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon tu thich hop (a. suruto b. sate) dien vao cau hoi ve gia dinh."
+      },
+      {
+        "index": 2,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Phan biet suruto va mottomo khi noi ve viec di chau Au."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon lien tu nao (nao hay sate) phu hop cho thong bao."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon lien tu chuyen doi de tai (sate hoac soko)."
+      },
+      {
+        "index": 5,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Dien tu chi ket qua bat ngo khi bat radio."
+      },
+      {
+        "index": 6,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh ve chu de hom nay."
+      },
+      {
+        "index": 7,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cau voi mau cau su dung 'oisogashii'."
+      }
+    ]
+  },
+  "g8d6": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chọn liên từ phù hợp điền vào chỗ trống trong đoạn văn miêu tả tính cách và công việc."
+      },
+      {
+        "index": 2,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chọn liên từ và từ nối phù hợp điền vào đoạn văn miêu tả thời tiết và tình huống."
+      },
+      {
+        "index": 3,
+        "type": "grammar-tadose",
+        "descriptionVi": "Điền từ thích hợp vào đoạn văn giải thích về tên gọi của công việc thuộc nhóm 3K."
+      }
+    ]
+  },
+  "g8d7": {
+    "questions": [
+      {
+        "index": 1,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap hoac tu noi phu hop de dien vao cho trong."
+      },
+      {
+        "index": 2,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon bieu dat hoac tu noi phu hop cho hoi thoai."
+      },
+      {
+        "index": 3,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap hoac tro tu phu hop de dien vao cho trong."
+      },
+      {
+        "index": 4,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap hoac tu noi phu hop de dien vao cho trong."
+      },
+      {
+        "index": 5,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon bieu dat hoac tu noi phu hop cho hoi thoai."
+      },
+      {
+        "index": 6,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap hoac tro tu phu hop de dien vao cho trong."
+      },
+      {
+        "index": 7,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon bieu dat hoac tu noi phu hop cho hoi thoai."
+      },
+      {
+        "index": 8,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon bieu dat hoac tu noi phu hop cho hoi thoai."
+      },
+      {
+        "index": 9,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap hoac tu noi phu hop de dien vao cho trong."
+      },
+      {
+        "index": 10,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap hoac tu noi phu hop de dien vao cho trong."
+      },
+      {
+        "index": 11,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon bieu dat hoac tu noi phu hop cho hoi thoai."
+      },
+      {
+        "index": 12,
+        "type": "grammar-hyougen",
+        "descriptionVi": "Chon bieu dat hoac tu noi phu hop cho hoi thoai."
+      },
+      {
+        "index": 13,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap hoac tu noi phu hop de dien vao cho trong."
+      },
+      {
+        "index": 14,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap hoac tu noi phu hop de dien vao cho trong."
+      },
+      {
+        "index": 15,
+        "type": "grammar-bunpou",
+        "descriptionVi": "Chon mau ngu phap hoac tu noi phu hop de dien vao cho trong."
+      },
+      {
+        "index": 16,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh va chon tu dung o vi tri sao."
+      },
+      {
+        "index": 17,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh va chon tu dung o vi tri sao."
+      },
+      {
+        "index": 18,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh va chon tu dung o vi tri sao."
+      },
+      {
+        "index": 19,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh va chon tu dung o vi tri sao."
+      },
+      {
+        "index": 20,
+        "type": "grammar-tadose",
+        "descriptionVi": "Sap xep cac tu thanh cau hoan chinh va chon tu dung o vi tri sao."
+      }
+    ]
+  }
+}

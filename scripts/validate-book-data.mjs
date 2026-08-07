@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { readFileSync, readdirSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { basename, dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -485,6 +485,79 @@ function validateListeningLesson(value, _id, location) {
   validateQuestions(value.questions, `${location}.questions`);
 }
 
+const ENRICHMENT_TYPE_WHITELIST = Object.freeze({
+  kanji: ['kanji-yomi', 'kanji-toroku', 'kanji-hanbetsu', 'kanji-sakubun'],
+  vocabulary: ['vocab-fukugougo', 'vocab-rentai', 'vocab-yougo'],
+  grammar: ['grammar-bunpou', 'grammar-hyougen', 'grammar-tadose'],
+  reading: ['reading-shusho', 'reading-riyuu', 'reading-chikoku', 'reading-josou', 'reading-mix'],
+  listening: ['listening-kadai', 'listening-point', 'listening-gaiyou', 'listening-imamashii'],
+});
+
+function validateEnrichmentFile(category, content, lessonIds, fileLabel) {
+  if (!isRecord(content)) {
+    fail('TYPE_OBJECT', fileLabel, 'Expected an object keyed by lesson ID.');
+    return;
+  }
+  const whitelist = ENRICHMENT_TYPE_WHITELIST[category] || [];
+  for (const [id, body] of Object.entries(content)) {
+    if (!lessonIds.has(id)) {
+      fail('ENRICHMENT_UNKNOWN_LESSON', `${fileLabel}.${id}`, 'Lesson ID not in canonical book.');
+      continue;
+    }
+    if (!isRecord(body) || !requireArray(body.questions, `${fileLabel}.${id}.questions`)) continue;
+    const seenIdx = new Set();
+    body.questions.forEach((item, qIdx) => {
+      const loc = `${fileLabel}.${id}.questions[${qIdx}]`;
+      if (!isRecord(item)) { fail('TYPE_OBJECT', loc, 'Expected an object.'); return; }
+      if (!requireInteger(item.index, `${loc}.index`, { min: 0 })) return;
+      if (seenIdx.has(item.index)) fail('ENRICHMENT_DUP_INDEX', `${loc}.index`, `Duplicate index ${item.index} in lesson ${id}.`);
+      seenIdx.add(item.index);
+      if (typeof item.type !== 'string' || !whitelist.includes(item.type)) {
+        fail('ENRICHMENT_TYPE', `${loc}.type`, `Type "${item.type}" not in whitelist for ${category}.`);
+      }
+      if (typeof item.descriptionVi !== 'string' || !item.descriptionVi.trim()) {
+        fail('ENRICHMENT_DESC_EMPTY', `${loc}.descriptionVi`, 'Must be a non-empty string.');
+      } else if (item.descriptionVi.length > 200) {
+        warn('ENRICHMENT_DESC_LONG', `${loc}.descriptionVi`, 'Description exceeds 200 chars.');
+      }
+    });
+  }
+}
+
+function validateImagesFile(category, content, lessonIds, fileLabel) {
+  if (!isRecord(content)) {
+    fail('TYPE_OBJECT', fileLabel, 'Expected an object keyed by lesson ID.');
+    return;
+  }
+  const imgRoot = resolve(BOOK_DIR, 'images', category);
+  for (const [id, entries] of Object.entries(content)) {
+    if (!lessonIds.has(id)) {
+      fail('IMAGES_UNKNOWN_LESSON', `${fileLabel}.${id}`, 'Lesson ID not in canonical book.');
+      continue;
+    }
+    if (!Array.isArray(entries)) { fail('TYPE_ARRAY', `${fileLabel}.${id}`, 'Expected an array.'); continue; }
+    entries.forEach((entry, itemIdx) => {
+      const loc = `${fileLabel}.${id}[${itemIdx}]`;
+      if (!isRecord(entry)) { fail('TYPE_OBJECT', loc, 'Expected an object.'); return; }
+      if (typeof entry.src !== 'string' || entry.src.includes('..') || entry.src.includes('\\')
+          || !entry.src.startsWith(`images/${category}/`)) {
+        fail('IMAGES_SRC_PATH', `${loc}.src`, `Expected forward-slash path under images/${category}/ with no traversal.`);
+      } else {
+        const abs = resolve(BOOK_DIR, entry.src);
+        if (!abs.startsWith(imgRoot)) {
+          fail('IMAGES_SRC_TRAVERSAL', `${loc}.src`, 'Path resolves outside category image dir.');
+        }
+      }
+      if (entry.kind !== undefined && entry.kind !== 'image' && entry.kind !== 'page') {
+        fail('IMAGES_KIND', `${loc}.kind`, 'Expected "image" or "page".');
+      }
+      if (entry.captionVi !== undefined && (typeof entry.captionVi !== 'string' || entry.captionVi.length > 200)) {
+        warn('IMAGES_CAPTION', `${loc}.captionVi`, 'Caption must be string ≤ 200 chars.');
+      }
+    });
+  }
+}
+
 const SCHEMA_VALIDATORS = Object.freeze({
   kanji: validateKanjiLesson,
   vocabulary: validateVocabularyLesson,
@@ -688,6 +761,26 @@ const lessons = parseJsonFile(LESSONS_PATH, 'data/lessons.json');
 const lessonIdsByCategory = validateLessonsIndex(lessons);
 const manifest = parseJsonFile(MANIFEST_PATH, 'data/book/manifest.json');
 validateManifest(manifest, lessonIdsByCategory);
+
+// Validate enrichment files (optional, only when present).
+const enrichmentFiles = [
+  { suffix: 'classification.json', fn: validateEnrichmentFile },
+  { suffix: 'images.json', fn: validateImagesFile },
+];
+for (const [category, entry] of Object.entries(manifest?.categories || {})) {
+  if (!isRecord(entry)) continue;
+  const declared = Array.isArray(entry.enrichmentFiles) ? entry.enrichmentFiles : [];
+  const lessonIds = new Set(lessonIdsByCategory.get(category) || []);
+  for (const file of declared) {
+    if (typeof file !== 'string') continue;
+    if (!enrichmentFiles.some((e) => e.suffix === file)) continue;
+    const path = join(BOOK_DIR, `${category}.${file}`);
+    if (!existsSync(path)) continue;
+    const content = parseJsonFile(path, `data/book/${category}.${file}`);
+    const validator = enrichmentFiles.find((e) => e.suffix === file);
+    if (content) validator.fn(category, content, lessonIds, `data/book/${category}.${file}`);
+  }
+}
 
 for (const item of warnings) {
   console.warn(`WARN  [${item.code}] ${item.location}: ${item.message}`);

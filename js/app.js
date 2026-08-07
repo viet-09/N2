@@ -1,7 +1,7 @@
 // js/app.js — application bootstrap
 // Loads lesson data, wires the header/nav controls, and starts the hash router.
 
-import { setLessons, resetBookContent, mergeBookContent, setTutorContext } from './store.js';
+import { setLessons, resetBookContent, mergeBookContent, setTutorContext, setQuestionClassification, setLessonImages } from './store.js';
 import { initRouter, navigate } from './router.js';
 import { initFuriganaToggle } from './furigana.js';
 import { openSettings } from './gemini.js';
@@ -67,15 +67,18 @@ async function loadBookContent() {
         const manifestResponse = await fetch('data/book/manifest.json');
         if (!manifestResponse.ok) throw new Error(`HTTP ${manifestResponse.status}`);
         const manifest = await manifestResponse.json();
+        const categories = manifest.categories && typeof manifest.categories === 'object' ? manifest.categories : {};
         const files = Array.isArray(manifest.files)
             ? manifest.files
-            : Object.values(manifest.categories || {}).map((entry) => entry && entry.file).filter(Boolean);
+            : Object.values(categories).map((entry) => entry && entry.file).filter(Boolean);
         const payloads = await Promise.all(files.map(async (file) => {
             const response = await fetch(`data/book/${encodeURIComponent(file)}`);
             if (!response.ok) throw new Error(`${file}: HTTP ${response.status}`);
             return response.json();
         }));
         payloads.forEach(mergeBookContent);
+        // Load optional enrichment files (classification + images) per category.
+        await loadEnrichment(categories);
     } catch (err) {
         // The checked-in W1 proof remains a useful development fallback while a
         // manifest is being regenerated, but production uses manifest.json only.
@@ -86,6 +89,31 @@ async function loadBookContent() {
             console.warn('Không thể nạp dữ liệu sách:', err);
         }
     }
+}
+
+async function loadEnrichment(categories) {
+    await Promise.all(Object.entries(categories).map(async ([category, entry]) => {
+        if (!entry || typeof entry !== 'object') return;
+        const files = Array.isArray(entry.enrichmentFiles) ? entry.enrichmentFiles : [];
+        for (const suffix of files) {
+            try {
+                const response = await fetch(`data/book/${encodeURIComponent(category)}.${encodeURIComponent(suffix)}`);
+                if (!response.ok) continue;
+                const data = await response.json();
+                if (suffix === 'classification.json' && data && typeof data === 'object') {
+                    for (const [lessonId, body] of Object.entries(data)) {
+                        if (body && Array.isArray(body.questions)) setQuestionClassification(lessonId, body.questions);
+                    }
+                } else if (suffix === 'images.json' && data && typeof data === 'object') {
+                    for (const [lessonId, list] of Object.entries(data)) {
+                        if (Array.isArray(list)) setLessonImages(lessonId, list);
+                    }
+                }
+            } catch (_err) {
+                // enrichment is optional; skip silently
+            }
+        }
+    }));
 }
 
 async function bootstrap() {

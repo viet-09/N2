@@ -62,6 +62,40 @@ export function getLessons() {
 /** Clear book content before a fresh manifest load. */
 export function resetBookContent() {
   _bookById.clear();
+  _classificationById.clear();
+  _imagesById.clear();
+}
+
+// ---------------------------------------------------------------------------
+// Enrichment (classification.json + images.json) — read-only in-memory caches.
+// ---------------------------------------------------------------------------
+
+const _classificationById = new Map();
+const _imagesById = new Map();
+
+export function setQuestionClassification(lessonId, entries) {
+  if (typeof lessonId !== 'string' || !lessonId) return;
+  if (Array.isArray(entries)) _classificationById.set(lessonId, entries);
+}
+
+/** @returns {{type:string, descriptionVi:string}|null} */
+export function getQuestionClassification(lessonId, index) {
+  const list = _classificationById.get(String(lessonId || ''));
+  if (!Array.isArray(list)) return null;
+  const item = list.find((it) => Number(it?.index) === Number(index));
+  return item && typeof item.type === 'string' && typeof item.descriptionVi === 'string'
+    ? { type: item.type, descriptionVi: item.descriptionVi }
+    : null;
+}
+
+export function setLessonImages(lessonId, entries) {
+  if (typeof lessonId !== 'string' || !lessonId) return;
+  if (Array.isArray(entries)) _imagesById.set(lessonId, entries);
+}
+
+/** @returns {Array<{src:string, kind?:string, captionVi?:string}>|null} */
+export function getLessonImages(lessonId) {
+  return _imagesById.get(String(lessonId || '')) || null;
 }
 
 /**
