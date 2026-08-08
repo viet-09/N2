@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -Force scripts/fill-missing-answers.mjs)",
+      "Bash(rm -f scripts/fill-missing-answers.mjs)",
+      "Bash(vercel --version)",
+      "Bash(npx vercel *)",
+      "WebFetch(domain:n2-two-sooty.vercel.app)",
+      "Bash(curl -s https://n2-two-sooty.vercel.app/index.html)",
+      "Bash(cd \"C:\\\\Users\\\\UYTIN\\\\Downloads\\\\個人\\\\N2_web\" && sed -i 's/const sb = getClient\\(\\);/const sb = await getClient\\(\\);/g' js/sync.js && grep -n \"getClient\" js/sync.js)",
+      "Bash(awk '/^export \\(async \\)?function/{fn=$NF} /await getClient/{print NR\": \"$0\" <in: \"fn}' js/sync.js)"
+    ]
+  }
+}

@@ -114,6 +114,10 @@ create view public.leaderboard as
     up.user_id,
     up.display_name,
     up.avatar_type,
+    -- Uploaded photos are local-only by design (see js/profile.js) and are
+    -- never synced to the server; null them here too as defense-in-depth so
+    -- a future sync bug can never leak one through this broadly-readable view.
+    case when up.avatar_type = 'upload' then null else up.avatar_data end as avatar_data,
     up.streak,
     up.total_score,
     up.ai_level,

@@ -11,6 +11,22 @@ import {
   clearVoiceTranscript,
 } from './store.js';
 import { createLiveSession, getLiveSupport } from './live.js';
+import { getClient } from './supabase.js';
+
+/** Mint a short-lived Gemini Live access token via the mint-live-token Edge
+ *  Function — the real GEMINI_API_KEY never reaches this file. Throws if
+ *  the user isn't signed in, is rate-limited, or the mint call fails; the
+ *  caller already falls back to turn-based (record → send) mode on error. */
+async function mintLiveAccessToken(model) {
+  const sb = await getClient();
+  if (!sb) throw new Error('Chưa đăng nhập — vui lòng đăng nhập để dùng luyện nói trực tiếp.');
+  const { data, error } = await sb.functions.invoke('mint-live-token', { body: { model } });
+  if (error) throw new Error(error.message || 'Không thể tạo access token cho Gemini Live.');
+  if (!data || typeof data.accessToken !== 'string' || !data.accessToken) {
+    throw new Error((data && data.error) || 'Gemini trả về token rỗng.');
+  }
+  return data.accessToken;
+}
 
 // ---------------------------------------------------------------------------
 // Gemini response schemas
@@ -127,7 +143,7 @@ function stripFurigana(text) {
 
 function describeError(err) {
   const msg = err && err.message ? err.message : String(err);
-  return `Đã có lỗi xảy ra: ${msg}. Vui lòng kiểm tra API key trong phần Cài đặt (⚙).`;
+  return `Đã có lỗi xảy ra: ${msg}. Nếu chưa đăng nhập, hãy đăng nhập rồi thử lại.`;
 }
 
 function buildSystemPrompt(topic) {
@@ -558,65 +574,68 @@ async function startLiveConversation() {
   liveTextTargetTurn = 0;
   renderView();
 
-  const session = createLiveSession({
-    apiKey: settings.apiKey,
-    model: settings.liveModel,
-    systemInstruction: `${buildSystemPrompt(state.topic)} Trò chuyện bằng âm thanh tự nhiên. Không đọc bản dịch tiếng Việt thành tiếng.`,
-    contextWindowCompression: { slidingWindow: {} },
-    callbacks: {
-      onInputTranscript: ({ text }) => {
-        if (token !== mountToken) return;
-        liveInputCaption = mergeCaption(liveInputCaption, text);
-        updateLiveCaptionDom();
-      },
-      onOutputTranscript: ({ text }) => {
-        if (token !== mountToken) return;
-        liveOutputCaption = mergeCaption(liveOutputCaption, text);
-        updateLiveCaptionDom();
-      },
-      onTranscript: (fragment) => {
-        if (token === mountToken) upsertLiveTranscript(fragment);
-      },
-      onTranscriptSettled: ({ snapshot }) => {
-        if (token === mountToken) settleLiveTranscript(snapshot);
-      },
-      onActivityStart: () => {
-        if (token !== mountToken) return;
-        allocateLiveLearnerTurn();
-      },
-      onTurnComplete: ({ transcriptSnapshot } = {}) => {
-        if (token !== mountToken) return;
-        const observed = Number(transcriptSnapshot?.turnCompleteCount) || 0;
-        liveObservedTurnCount = Math.max(liveObservedTurnCount, observed);
-        liveHighestRequestedTurn = Math.max(liveHighestRequestedTurn, liveObservedTurnCount);
-        if (liveTextPending && liveObservedTurnCount >= liveTextTargetTurn) {
-          liveTextPending = false;
-          liveTextTargetTurn = 0;
-          state.pending = false;
-          renderView();
-        }
-      },
-      onInterruption: () => {
-        if (token === mountToken) {
-          state.liveStatus = 'Đã ngắt lời — đang nghe bạn…';
+  try {
+    const accessToken = await mintLiveAccessToken(settings.liveModel);
+    if (token !== mountToken) return;
+
+    const session = createLiveSession({
+      accessToken,
+      model: settings.liveModel,
+      systemInstruction: `${buildSystemPrompt(state.topic)} Trò chuyện bằng âm thanh tự nhiên. Không đọc bản dịch tiếng Việt thành tiếng.`,
+      contextWindowCompression: { slidingWindow: {} },
+      callbacks: {
+        onInputTranscript: ({ text }) => {
+          if (token !== mountToken) return;
+          liveInputCaption = mergeCaption(liveInputCaption, text);
+          updateLiveCaptionDom();
+        },
+        onOutputTranscript: ({ text }) => {
+          if (token !== mountToken) return;
+          liveOutputCaption = mergeCaption(liveOutputCaption, text);
+          updateLiveCaptionDom();
+        },
+        onTranscript: (fragment) => {
+          if (token === mountToken) upsertLiveTranscript(fragment);
+        },
+        onTranscriptSettled: ({ snapshot }) => {
+          if (token === mountToken) settleLiveTranscript(snapshot);
+        },
+        onActivityStart: () => {
+          if (token !== mountToken) return;
+          allocateLiveLearnerTurn();
+        },
+        onTurnComplete: ({ transcriptSnapshot } = {}) => {
+          if (token !== mountToken) return;
+          const observed = Number(transcriptSnapshot?.turnCompleteCount) || 0;
+          liveObservedTurnCount = Math.max(liveObservedTurnCount, observed);
+          liveHighestRequestedTurn = Math.max(liveHighestRequestedTurn, liveObservedTurnCount);
+          if (liveTextPending && liveObservedTurnCount >= liveTextTargetTurn) {
+            liveTextPending = false;
+            liveTextTargetTurn = 0;
+            state.pending = false;
+            renderView();
+          }
+        },
+        onInterruption: () => {
+          if (token === mountToken) {
+            state.liveStatus = 'Đã ngắt lời — đang nghe bạn…';
+            const status = rootEl?.querySelector('#live-call-status');
+            if (status) status.textContent = state.liveStatus;
+          }
+        },
+        onMicrophoneState: ({ active }) => {
+          if (token !== mountToken) return;
+          state.liveStatus = active ? 'Đang nghe liên tục · có thể ngắt lời AI' : 'Microphone đã dừng';
           const status = rootEl?.querySelector('#live-call-status');
           if (status) status.textContent = state.liveStatus;
-        }
+        },
+        onFallback: ({ error }) => {
+          if (token === mountToken) void startFallbackOpening(error);
+        },
       },
-      onMicrophoneState: ({ active }) => {
-        if (token !== mountToken) return;
-        state.liveStatus = active ? 'Đang nghe liên tục · có thể ngắt lời AI' : 'Microphone đã dừng';
-        const status = rootEl?.querySelector('#live-call-status');
-        if (status) status.textContent = state.liveStatus;
-      },
-      onFallback: ({ error }) => {
-        if (token === mountToken) void startFallbackOpening(error);
-      },
-    },
-  });
-  liveSession = session;
+    });
+    liveSession = session;
 
-  try {
     await session.start();
     if (token !== mountToken || state.view !== 'conversation') {
       await session.stop({ reason: 'stale-route' });

@@ -9,9 +9,17 @@ import { renderDashboard } from './dashboard.js';
 import { renderLesson } from './lesson.js';
 import { renderTutor } from './tutor.js';
 import { renderVoice } from './voice.js';
-import { mountProfile } from './profile.js';
-import { onAuthChange, ready as supabaseReady } from './supabase.js';
-import { maybeMigrateLocalData, pullFromCloud } from './sync.js';
+import { renderLeaderboard } from './leaderboard.js';
+import {
+    mountProfile,
+    openProfileDialog,
+    hasSeenProfilePrompt,
+    markProfilePromptSeen,
+    PROFILE_UPDATED_EVENT,
+} from './profile.js';
+import { openSignInGate } from './auth.js';
+import { onAuthChange, ready as supabaseReady, currentUser } from './supabase.js';
+import { maybeMigrateLocalData, maybeSeedProfileFromGoogle, pullFromCloud, pushProfile } from './sync.js';
 
 function setCurrentDate() {
     const el = document.getElementById('current-date');
@@ -47,6 +55,7 @@ function wireBottomNav() {
                 navigate('#/tutor');
             }
             else if (route === 'voice') navigate('#/voice');
+            else if (route === 'leaderboard') navigate('#/leaderboard');
         });
     });
 }
@@ -118,30 +127,77 @@ async function loadEnrichment(categories) {
     }));
 }
 
+/** Trigger for dialogs opened from bootstrap — the profile button once mounted. */
+function profileButton(profileController) {
+    return profileController?.element?.querySelector('.profile-button') || undefined;
+}
+
 async function bootstrap() {
     setCurrentDate();
     initFuriganaToggle();
     wireSettingsButton();
     wireBottomNav();
-    mountProfile('#profile-mount', { promptOnFirstVisit: true });
+    // First-visit choice is now gated explicitly below (sign-in vs. offline
+    // name/avatar prompt), so mountProfile never auto-opens on its own.
+    const profileController = mountProfile('#profile-mount', { promptOnFirstVisit: false });
 
-    // Auth sync — pull config, listen for sign-in, migrate legacy localStorage
-    // once, then pull cloud state into the in-memory store. No-op when
-    // Supabase is not configured (offline / no credentials yet).
+    // Auth sync — pull config, decide the first-visit gate, listen for
+    // sign-in, migrate legacy localStorage once, then pull cloud state into
+    // the in-memory store. Degrades gracefully when Supabase isn't
+    // configured (offline / no credentials yet).
     setTimeout(async () => {
         const sb = await supabaseReady();
+        const user = sb ? await currentUser() : null;
+
+        if (!hasSeenProfilePrompt()) {
+            if (user) {
+                // Already signed in (restored session) — nothing to ask.
+                markProfilePromptSeen();
+            } else {
+                openSignInGate({
+                    trigger: profileButton(profileController),
+                    onSkip: () => {
+                        markProfilePromptSeen();
+                        openProfileDialog({ firstVisit: true, trigger: profileButton(profileController) });
+                    },
+                });
+            }
+        }
+
         if (!sb) return;
-        onAuthChange(async (user) => {
-            if (!user) return;
+
+        onAuthChange(async (authedUser) => {
+            if (!authedUser) return;
+            markProfilePromptSeen();
             try {
                 const migrated = await maybeMigrateLocalData();
                 if (migrated) console.info('[sync] localStorage migrated to Supabase');
-                await pullFromCloud(user.id);
+                await maybeSeedProfileFromGoogle(authedUser);
+                await pullFromCloud(authedUser.id);
             } catch (err) {
                 console.warn('[sync] bootstrap sync failed:', err);
             }
-            // Refresh dashboard if we're on it so leaderboard / streak update.
+            // Refresh the current route so streak / leaderboard update.
             navigate(location.hash || '#/');
+        });
+
+        // Keep the leaderboard's display name/avatar current whenever the
+        // profile dialog is saved while signed in. Uploaded photos are never
+        // forwarded — see pushProfile in js/sync.js.
+        window.addEventListener(PROFILE_UPDATED_EVENT, async (event) => {
+            const profile = event.detail?.profile;
+            if (!profile) return;
+            const authedUser = await currentUser();
+            if (!authedUser) return;
+            try {
+                await pushProfile(authedUser.id, {
+                    displayName: profile.name,
+                    avatarType: profile.avatarType,
+                    avatarData: profile.avatarData,
+                });
+            } catch (err) {
+                console.warn('[app] pushProfile failed:', err);
+            }
         });
     }, 0);
 
@@ -154,6 +210,7 @@ async function bootstrap() {
             lesson: renderLesson,
             tutor: renderTutor,
             voice: renderVoice,
+            leaderboard: renderLeaderboard,
         },
         rootEl
     );

@@ -12,6 +12,7 @@ import {
   writeStreak,
   writeContentMapExternal,
 } from './store.js';
+import { normalizeProfile, saveProfile } from './profile.js';
 
 const MIGRATION_FLAG_KEY = 'n2_migrated_v1';
 
@@ -46,6 +47,20 @@ const LEGACY_KEYS = {
           ? value.lastDate
           : null,
       };
+    },
+  },
+  n2_profile_v2: {
+    table: 'user_profiles',
+    map(value, userId) {
+      // Uploaded photos stay local-only (see js/profile.js) — only the
+      // display name and, for preset avatars, the preset id are migrated.
+      const profile = normalizeProfile(value);
+      const patch = { user_id: userId, display_name: profile.name };
+      if (profile.avatarType === 'preset') {
+        patch.avatar_type = 'preset';
+        patch.avatar_data = profile.avatarData;
+      }
+      return patch;
     },
   },
   n2_settings_v2: {
@@ -184,7 +199,7 @@ export async function pullFromCloud(userId) {
   if (!sb || !userId) return;
 
   const [profileRes, progressRes, contentRes] = await Promise.all([
-    sb.from('user_profiles').select('streak,last_study_date,furigana,total_score,ai_level').eq('user_id', userId).maybeSingle(),
+    sb.from('user_profiles').select('display_name,avatar_type,avatar_data,streak,last_study_date,furigana,total_score,ai_level').eq('user_id', userId).maybeSingle(),
     sb.from('learning_progress').select('lesson_id').eq('user_id', userId),
     sb.from('lesson_content_cache').select('lesson_id,payload').eq('user_id', userId),
   ]);
@@ -195,12 +210,19 @@ export async function pullFromCloud(userId) {
       lastDate: profileRes.data.last_study_date ?? '',
     });
     if (typeof profileRes.data.furigana === 'boolean') {
-      // Settings: only furigana migrated; apiKey dropped intentionally.
       try {
-        const { getSettings, setSettings } = await import('./store.js');
-        const current = getSettings();
-        setSettings({ furigana: profileRes.data.furigana, apiKey: current.apiKey });
+        const { setSettings } = await import('./store.js');
+        setSettings({ furigana: profileRes.data.furigana });
       } catch { /* ignore */ }
+    }
+    // Mirror the server's name/avatar locally so a second device (or a
+    // fresh browser profile) shows the same identity without re-asking.
+    if (typeof profileRes.data.display_name === 'string' && profileRes.data.display_name) {
+      saveProfile({
+        name: profileRes.data.display_name,
+        avatarType: profileRes.data.avatar_type,
+        avatarData: profileRes.data.avatar_data,
+      });
     }
   }
   if (progressRes.data) {
@@ -213,6 +235,29 @@ export async function pullFromCloud(userId) {
     for (const row of contentRes.data) cache[row.lesson_id] = row.payload;
     writeContentMapExternal(cache);
   }
+}
+
+/**
+ * If the server profile has no display name yet, seed it from the Google
+ * OAuth profile (user_metadata.full_name / name) so a first-time Google
+ * sign-in shows a real name on the leaderboard without a manual prompt.
+ * Never overwrites an existing name — call before pullFromCloud so the
+ * seeded value gets mirrored locally in the same pass.
+ */
+export async function maybeSeedProfileFromGoogle(user) {
+  const sb = await getClient();
+  if (!sb || !user?.id) return;
+
+  const { data } = await sb.from('user_profiles').select('display_name').eq('user_id', user.id).maybeSingle();
+  if (data && data.display_name) return;
+
+  const meta = user.user_metadata || {};
+  const googleName = (typeof meta.full_name === 'string' && meta.full_name.trim())
+    || (typeof meta.name === 'string' && meta.name.trim())
+    || '';
+  if (!googleName) return;
+
+  await pushProfile(user.id, { displayName: googleName });
 }
 
 /**
@@ -252,6 +297,12 @@ export async function pushTouchStreak(userId) {
  * Push the user's profile (display_name + avatar) to Supabase.
  * `user_id` is always derived from the authed session — never trusted
  * from the caller. The trigger + RLS WITH CHECK still guards writes.
+ *
+ * Uploaded photos are local-only by design (see js/profile.js's own promise
+ * to the user that a chosen photo never leaves the device) — avatar_data is
+ * only forwarded for the 'preset' type, which is just an emoji id, never the
+ * image bytes. The leaderboard view nulls avatar_data for 'upload' rows too
+ * as defense-in-depth.
  */
 export async function pushProfile(userId, { displayName, avatarType, avatarData }) {
   const sb = await getClient();
@@ -260,7 +311,9 @@ export async function pushProfile(userId, { displayName, avatarType, avatarData 
   const patch = {};
   if (typeof displayName === 'string') patch.display_name = displayName.slice(0, 40);
   if (avatarType === 'preset' || avatarType === 'upload') patch.avatar_type = avatarType;
-  if (typeof avatarData === 'string' && avatarData.length <= 2_100_000) patch.avatar_data = avatarData;
+  if (avatarType === 'preset' && typeof avatarData === 'string' && avatarData.length <= 64) {
+    patch.avatar_data = avatarData;
+  }
   if (Object.keys(patch).length === 0) return;
   const { error } = await sb
     .from('user_profiles')

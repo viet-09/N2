@@ -1,5 +1,5 @@
 // scripts/deploy-edge-function.mjs
-// Deploy the Edge Function (assumes supabase link already done).
+// Deploy all Edge Functions (assumes supabase link already done).
 // Reads SUPABASE_PAT from .env.local.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -37,9 +37,12 @@ if (gemini) {
   console.log(`  supabase secrets set GEMINI_API_KEY=<key> --project-ref ${ref}`);
 }
 
-// 3. Deploy function. Supabase defaults to verify-jwt=true since 2024, so
+// 3. Deploy functions. Supabase defaults to verify-jwt=true since 2024, so
 // no flag needed; explicit --verify-jwt would be defensive but the CLI
 // rejects the boolean-negation form `--no-verify-jwt=false` on some versions.
-sh('supabase', ['functions', 'deploy', 'evaluate-ai', '--project-ref', ref]);
+const FUNCTIONS = ['evaluate-ai', 'gemini-proxy', 'mint-live-token'];
+for (const fn of FUNCTIONS) {
+  sh('supabase', ['functions', 'deploy', fn, '--project-ref', ref]);
+}
 
 console.log('DONE.');

@@ -16,10 +16,11 @@ Mở `http://127.0.0.1:8000/`. Không mở bằng `file://`, vì trình duyệt 
 - Renderer sách với furigana, nghĩa tiếng Anh nguyên bản, bài tập và TTS.
 - Gia sư Gemini được seed bằng đúng ngữ cảnh của bài đang học.
 - Giải thích từ/Hán tự ngắn bằng tiếng Việt, lưu cache cục bộ.
-- Hồ sơ tên/avatar cục bộ và thú cưng streak cat/dog/dragon.
+- Hồ sơ tên/avatar (avatar tải lên chỉ lưu cục bộ, không đồng bộ) và thú cưng streak cat/dog/dragon.
 - Gemini Live: mic PCM16 16 kHz, audio 24 kHz, barge-in, phụ đề và transcript; tự chuyển sang ghi-rồi-gửi nếu Live không dùng được.
+- Đăng nhập Google OAuth hoặc Email/Password (Supabase Auth) để đồng bộ tiến độ/streak/điểm và xem bảng xếp hạng cùng bạn bè.
 
-Mở **Cài đặt** để nhập API key, model thường và Live model. Với site tĩnh, API key luôn có thể bị người truy cập xem thấy; hãy giới hạn key theo API/referrer hoặc tự host riêng.
+Mọi lời gọi Gemini (gia sư, giải thích Hán tự, luyện nói) đi qua Supabase Edge Functions (`gemini-proxy`, `mint-live-token`) — key thật chỉ nằm trong `supabase secrets`, không có trong mã nguồn client. Vì vậy các tính năng AI cần đăng nhập; mở **Cài đặt** chỉ để chọn model, không cần nhập key.
 
 ## Dữ liệu sách
 

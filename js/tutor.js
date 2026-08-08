@@ -329,7 +329,7 @@ function errorBubble(message) {
     <div class="chat-msg model chat-error" role="alert">
       <div class="chat-msg-bubble">
         ⚠️ Rất tiếc, đã có lỗi xảy ra: ${escapeHtml(message)}<br>
-        Vui lòng kiểm tra API key trong phần cài đặt (⚙) rồi thử lại.
+        Nếu chưa đăng nhập, hãy đăng nhập rồi thử lại — trợ lý AI cần tài khoản để hoạt động.
       </div>
     </div>
   `;

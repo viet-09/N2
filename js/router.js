@@ -4,6 +4,7 @@
 //   `#/lesson/<id>`    -> routes.lesson(rootEl, id)
 //   `#/tutor`          -> routes.tutor(rootEl)
 //   `#/voice`          -> routes.voice(rootEl)
+//   `#/leaderboard`    -> routes.leaderboard(rootEl)
 // Renderers may return `{ cleanup, preserveScroll }`. Cleanup runs before the next
 // route so microphone/audio and event resources cannot outlive their page.
 
@@ -25,6 +26,7 @@ function parseHash(hash) {
   }
   if (parts[0] === 'tutor') return { name: 'tutor', params: [] };
   if (parts[0] === 'voice') return { name: 'voice', params: [] };
+  if (parts[0] === 'leaderboard') return { name: 'leaderboard', params: [] };
   return { name: 'dashboard', params: [] };
 }
 
@@ -62,6 +64,7 @@ function updateRouteMetadata(routeName) {
     lesson: 'Bài học',
     tutor: 'Gia sư AI',
     voice: 'Luyện nói',
+    leaderboard: 'Bảng xếp hạng',
   };
   const label = labels[routeName] || labels.dashboard;
   document.title = `${label} – 日本語総まとめ N2`;
@@ -92,6 +95,8 @@ function render() {
       result = _routes.tutor(_rootEl);
     } else if (name === 'voice' && typeof _routes.voice === 'function') {
       result = _routes.voice(_rootEl);
+    } else if (name === 'leaderboard' && typeof _routes.leaderboard === 'function') {
+      result = _routes.leaderboard(_rootEl);
     } else if (typeof _routes.dashboard === 'function') {
       result = _routes.dashboard(_rootEl);
     }
@@ -117,7 +122,7 @@ function render() {
 }
 
 /**
- * @param {{dashboard:Function, lesson:Function, tutor:Function, voice:Function}} routes
+ * @param {{dashboard:Function, lesson:Function, tutor:Function, voice:Function, leaderboard:Function}} routes
  * @param {HTMLElement} rootEl
  */
 export function initRouter(routes, rootEl) {

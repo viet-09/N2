@@ -18,18 +18,18 @@ export const STORAGE = {
 
 export const GEMINI_BASE = 'https://generativelanguage.googleapis.com/v1beta/models';
 
-// Split so GitHub's push-protection pattern scanner doesn't block commits on sight.
-// This is NOT a secrecy measure — the joined value still ships in the deployed JS and is
-// visible to anyone via devtools/network tab. Real protection is an HTTP-referrer + API
-// restriction on this key in Google Cloud Console (see the in-app settings modal warning).
-const GEMINI_DEFAULT_KEY_PARTS = ['AQ.Ab8RN6Jt7_xKnmg', 'AVzZw6Tbi1S9L2E8Rz', 's2VAAcKV4EU-WlSiQ'];
-
+// No default key ships in client code — a hardcoded key here is public to
+// anyone via devtools/network tab regardless of any obfuscation. Each user
+// supplies their own key via the ⚙ Settings modal (see js/gemini.js).
 export const DEFAULT_SETTINGS = {
-  apiKey: GEMINI_DEFAULT_KEY_PARTS.join(''),
+  apiKey: '',
   model: 'gemini-3.5-flash-lite',
   liveModel: 'gemini-3.1-flash-live-preview',
   furigana: true,
 };
+
+// Points awarded/revoked when a lesson is marked done/undone while signed in.
+export const LESSON_COMPLETE_SCORE = 10;
 
 // EXACT tutor system prompt — do not alter wording.
 export const TUTOR_SYSTEM_PROMPT = `Act as my expert Japanese language teacher and memory coach. My current level is JLPT N3/N2. Follow these rules for our interaction: Give me one vocabulary word or short sentence at my level at a time. Provide the Vietnamese translation. Include kanji/kana and furigana if necessary. Wait for me to reply with my translation or attempt to use the word in a sentence. Critique my response, correct my mistakes gently, explain the nuance of the particles or grammar used, and then give me the next challenge.

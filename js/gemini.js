@@ -1,93 +1,64 @@
 // js/gemini.js
-// Gemini REST client (no SDK) + a settings modal for editing apiKey/model.
-// Endpoint: POST {GEMINI_BASE}/{model}:generateContent?key={apiKey}
+// Gemini client + a settings modal for editing the model choice.
+// The raw API key never reaches this file (or the browser) at all — every
+// call is proxied through the `gemini-proxy` Supabase Edge Function, which
+// holds GEMINI_API_KEY as a server-side secret and forwards the request.
+// This means AI features (tutor chat, tap-kanji gloss, voice review) now
+// require the user to be signed in — there is no anonymous/free-for-all key.
 
-import { GEMINI_BASE } from './config.js';
 import { getSettings, setSettings } from './store.js';
+import { getClient } from './supabase.js';
 
 // ---------------------------------------------------------------------------
 // Internal helpers
 // ---------------------------------------------------------------------------
 
-/**
- * Map stored chat history `{role:'user'|'model', text}` items to Gemini
- * `contents` turns.
- * @param {Array<{role?:string, text?:string}>} history
- * @returns {Array<{role:string, parts:Array<{text:string}>}>}
- */
-function historyToContents(history) {
-  const contents = [];
-  if (!Array.isArray(history)) return contents;
-  for (const turn of history) {
-    if (!turn || turn.text === undefined || turn.text === null || turn.text === '') continue;
-    contents.push({
-      role: turn.role === 'model' ? 'model' : 'user',
-      parts: [{ text: String(turn.text) }],
-    });
+/** Best-effort extraction of the `{error}` JSON body a non-2xx gemini-proxy
+ *  response attaches to `error.context` (a Response). Falls back to the
+ *  generic supabase-js message across client versions that shape this
+ *  differently. */
+async function extractFunctionError(error) {
+  try {
+    const ctx = error && error.context;
+    if (ctx && typeof ctx.clone === 'function' && typeof ctx.json === 'function') {
+      const body = await ctx.clone().json();
+      if (body && typeof body.error === 'string' && body.error) return body.error;
+    }
+  } catch {
+    // fall through to the generic message below
   }
-  return contents;
+  return (error && error.message) || 'Gemini request failed';
 }
 
 /**
- * POST a generateContent request and return the concatenated text of the
- * first candidate. Throws a readable Error on any failure (network, non-200
- * HTTP status, blocked content, or an empty response).
- * @param {string} model
- * @param {string} apiKey
- * @param {object} body
+ * Call the gemini-proxy Edge Function and return the raw response text.
+ * Throws a readable Vietnamese Error on any failure (not signed in, rate
+ * limited, network, or an empty/blocked Gemini response).
+ * @param {{system?:string, history?:Array, user?:string, schema?:object, audio?:{base64:string,mimeType:string}}} body
  * @returns {Promise<string>}
  */
-async function callGemini(model, apiKey, body) {
-  const url = `${GEMINI_BASE}/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey)}`;
+async function callGeminiProxy(body) {
+  const sb = await getClient();
+  if (!sb) {
+    throw new Error('Chưa đăng nhập. Vui lòng đăng nhập để dùng trợ lý AI.');
+  }
 
-  let res;
+  const { model } = getSettings();
+  let data;
+  let error;
   try {
-    res = await fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(body),
-    });
+    ({ data, error } = await sb.functions.invoke('gemini-proxy', { body: { ...body, model } }));
   } catch (networkErr) {
-    throw new Error(`Không thể kết nối tới Gemini API: ${networkErr && networkErr.message ? networkErr.message : networkErr}`);
+    throw new Error(`Không thể kết nối tới máy chủ AI: ${networkErr && networkErr.message ? networkErr.message : networkErr}`);
   }
 
-  let data = null;
-  try {
-    data = await res.json();
-  } catch (parseErr) {
-    data = null;
+  if (error) {
+    throw new Error(await extractFunctionError(error));
   }
-
-  if (!res.ok) {
-    const apiMsg = data && data.error && data.error.message ? data.error.message : null;
-    throw new Error(apiMsg ? `Gemini API lỗi: ${apiMsg}` : `Gemini API lỗi: HTTP ${res.status}`);
+  if (!data || typeof data.text !== 'string' || !data.text) {
+    throw new Error((data && data.error) || 'Gemini trả về nội dung trống.');
   }
-
-  const blockReason = data && data.promptFeedback && data.promptFeedback.blockReason;
-  const candidate = data && Array.isArray(data.candidates) ? data.candidates[0] : null;
-
-  if (!candidate) {
-    throw new Error(blockReason ? `Nội dung bị chặn bởi Gemini (${blockReason}).` : 'Gemini không trả về kết quả nào.');
-  }
-
-  if (candidate.finishReason === 'SAFETY' || candidate.finishReason === 'RECITATION') {
-    throw new Error(`Nội dung bị chặn bởi Gemini (${candidate.finishReason}).`);
-  }
-
-  const parts = (candidate.content && Array.isArray(candidate.content.parts)) ? candidate.content.parts : [];
-  const text = parts.map((p) => (p && typeof p.text === 'string' ? p.text : '')).join('');
-
-  if (!text) {
-    throw new Error('Gemini trả về nội dung trống.');
-  }
-
-  return text;
-}
-
-function requireApiKey(apiKey) {
-  if (!apiKey || !String(apiKey).trim()) {
-    throw new Error('Chưa cấu hình API key Gemini. Vui lòng mở ⚙ Cài đặt để nhập key.');
-  }
+  return data.text;
 }
 
 // ---------------------------------------------------------------------------
@@ -100,19 +71,7 @@ function requireApiKey(apiKey) {
  * @returns {Promise<string>}
  */
 export async function askText({ system, history = [], user }) {
-  const { apiKey, model } = getSettings();
-  requireApiKey(apiKey);
-
-  const contents = historyToContents(history);
-  contents.push({ role: 'user', parts: [{ text: String(user || '') }] });
-
-  const body = {
-    system_instruction: { parts: [{ text: String(system || '') }] },
-    contents,
-    generationConfig: { temperature: 0.7 },
-  };
-
-  return callGemini(model, apiKey, body);
+  return callGeminiProxy({ system, history, user: String(user || '') });
 }
 
 /**
@@ -121,22 +80,7 @@ export async function askText({ system, history = [], user }) {
  * @returns {Promise<object>}
  */
 export async function askJSON({ system, history = [], user, schema }) {
-  const { apiKey, model } = getSettings();
-  requireApiKey(apiKey);
-
-  const contents = historyToContents(history);
-  contents.push({ role: 'user', parts: [{ text: String(user || '') }] });
-
-  const generationConfig = { temperature: 0.7, responseMimeType: 'application/json' };
-  if (schema) generationConfig.responseSchema = schema;
-
-  const body = {
-    system_instruction: { parts: [{ text: String(system || '') }] },
-    contents,
-    generationConfig,
-  };
-
-  const text = await callGemini(model, apiKey, body);
+  const text = await callGeminiProxy({ system, history, user: String(user || ''), schema });
   try {
     return JSON.parse(text);
   } catch (parseErr) {
@@ -152,32 +96,17 @@ export async function askJSON({ system, history = [], user, schema }) {
  * @returns {Promise<object|string>}
  */
 export async function askAudio({ system, history = [], audioBase64, mimeType, promptText, schema }) {
-  const { apiKey, model } = getSettings();
-  requireApiKey(apiKey);
-
   if (!audioBase64) {
     throw new Error('Thiếu dữ liệu âm thanh để gửi tới Gemini.');
   }
 
-  const contents = historyToContents(history);
-  const userParts = [];
-  if (promptText) userParts.push({ text: String(promptText) });
-  userParts.push({ inline_data: { mime_type: mimeType || 'audio/webm', data: audioBase64 } });
-  contents.push({ role: 'user', parts: userParts });
-
-  const generationConfig = { temperature: 0.7 };
-  if (schema) {
-    generationConfig.responseMimeType = 'application/json';
-    generationConfig.responseSchema = schema;
-  }
-
-  const body = {
-    system_instruction: { parts: [{ text: String(system || '') }] },
-    contents,
-    generationConfig,
-  };
-
-  const text = await callGemini(model, apiKey, body);
+  const text = await callGeminiProxy({
+    system,
+    history,
+    user: promptText ? String(promptText) : undefined,
+    schema,
+    audio: { base64: audioBase64, mimeType: mimeType || 'audio/webm' },
+  });
 
   if (schema) {
     try {
@@ -191,7 +120,8 @@ export async function askAudio({ system, history = [], audioBase64, mimeType, pr
 }
 
 // ---------------------------------------------------------------------------
-// Settings modal
+// Settings modal — model choice only. No API key field: the key lives only
+// in `supabase secrets` on the server (see supabase/functions/gemini-proxy).
 // ---------------------------------------------------------------------------
 
 const MODAL_ID = 'gemini-settings-overlay';
@@ -212,7 +142,7 @@ function closeExistingSettingsModal() {
 
 /**
  * Build and show a modal (reusing the `.modal-overlay`/`.modal-card` look)
- * to edit the Gemini `apiKey` and `model` settings. Saves via
+ * to edit the Gemini `model`/`liveModel` settings. Saves via
  * `store.setSettings` and closes on backdrop click, Escape, or the close
  * button.
  */
@@ -231,7 +161,6 @@ export function openSettings() {
   card.setAttribute('role', 'dialog');
   card.setAttribute('aria-modal', 'true');
   card.setAttribute('aria-labelledby', 'gemini-settings-title');
-  card.setAttribute('aria-describedby', 'gemini-settings-warning');
 
   // Header ------------------------------------------------------------
   const header = document.createElement('div');
@@ -239,7 +168,7 @@ export function openSettings() {
 
   const title = document.createElement('h2');
   title.id = 'gemini-settings-title';
-  title.textContent = '⚙ Cài đặt Gemini AI';
+  title.textContent = '⚙ Cài đặt AI';
 
   const closeBtn = document.createElement('button');
   closeBtn.type = 'button';
@@ -255,26 +184,8 @@ export function openSettings() {
   body.className = 'modal-body';
 
   const help = document.createElement('p');
-  help.className = 'settings-warning';
-  help.id = 'gemini-settings-warning';
-  help.textContent = 'Cảnh báo: API key dùng trong ứng dụng tĩnh và WebSocket đều công khai cho người truy cập. Hãy giới hạn key theo API/referrer, hoặc tự host riêng nếu cần bảo mật.';
-
-  const keyLabel = document.createElement('label');
-  keyLabel.setAttribute('for', 'gemini-settings-key');
-  keyLabel.textContent = 'Gemini API key';
-
-  const keyInput = document.createElement('input');
-  keyInput.type = 'password';
-  keyInput.id = 'gemini-settings-key';
-  keyInput.autocomplete = 'off';
-  keyInput.spellcheck = false;
-  keyInput.value = current.apiKey || '';
-
-  const toggleKey = document.createElement('button');
-  toggleKey.type = 'button';
-  toggleKey.className = 'settings-toggle-key';
-  toggleKey.textContent = 'Hiện key';
-  toggleKey.setAttribute('aria-controls', keyInput.id);
+  help.className = 'settings-help';
+  help.textContent = 'Trợ lý AI (gia sư, luyện nói, giải nghĩa hán tự) chạy qua máy chủ nên bạn cần đăng nhập để dùng. Ở đây bạn chỉ chọn model — không cần nhập API key.';
 
   const modelLabel = document.createElement('label');
   modelLabel.setAttribute('for', 'gemini-settings-model');
@@ -319,9 +230,6 @@ export function openSettings() {
   });
 
   body.appendChild(help);
-  body.appendChild(keyLabel);
-  body.appendChild(keyInput);
-  body.appendChild(toggleKey);
   body.appendChild(modelLabel);
   body.appendChild(modelInput);
   body.appendChild(datalist);
@@ -385,17 +293,10 @@ export function openSettings() {
   closeBtn.addEventListener('click', close);
   document.addEventListener('keydown', onKeydown);
 
-  toggleKey.addEventListener('click', () => {
-    const visible = keyInput.type === 'text';
-    keyInput.type = visible ? 'password' : 'text';
-    toggleKey.textContent = visible ? 'Hiện key' : 'Ẩn key';
-    toggleKey.setAttribute('aria-pressed', String(!visible));
-  });
-
   saveBtn.addEventListener('click', () => {
     const nextModel = modelInput.value.trim() || current.model;
     const nextLiveModel = liveInput.value.trim() || current.liveModel;
-    setSettings({ apiKey: keyInput.value.trim(), model: nextModel, liveModel: nextLiveModel });
+    setSettings({ model: nextModel, liveModel: nextLiveModel });
     status.textContent = 'Đã lưu!';
     status.classList.add('ok');
     setTimeout(close, 600);

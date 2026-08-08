@@ -2356,12 +2356,29 @@ body.furigana-off rt {
 .profile-status.is-error { color: var(--danger); }
 .profile-skip-btn { min-height: 44px; padding: 8px 16px; border: 1px solid var(--border-dark); background: transparent; cursor: pointer; }
 
+/* Sign-in gate (Google or skip) — reuses .modal-*, .profile-status */
+.auth-modal__card { max-width: 420px; }
+.auth-modal__google { display: flex; width: 100%; justify-content: center; margin: 4px 0 4px; }
+.auth-modal__link-btn {
+    min-height: 44px;
+    padding: 4px 0;
+    border: 0;
+    background: transparent;
+    color: var(--text-muted);
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 13px;
+    text-align: left;
+}
+.auth-modal__footer { flex-wrap: wrap; }
+
 .settings-modal .modal-body { display: flex; flex-direction: column; gap: 6px; }
-.settings-modal .settings-warning {
+.settings-modal .settings-help {
     margin-bottom: 10px;
     padding: 12px;
-    border-left: 4px solid var(--accent-red);
-    background: var(--accent-red-bg);
+    border-left: 4px solid var(--border-dark);
+    background: var(--paper-2);
+    color: var(--text-muted);
     font-family: var(--font-sans);
     font-size: 13px;
 }
@@ -2382,15 +2399,6 @@ body.furigana-off rt {
     background: var(--bg-page);
     color: var(--text-primary);
     font: 15px var(--font-sans);
-}
-.settings-toggle-key {
-    align-self: flex-start;
-    min-height: 44px;
-    padding: 4px 0;
-    border: 0;
-    background: transparent;
-    text-decoration: underline;
-    cursor: pointer;
 }
 .settings-status { font-family: var(--font-sans); font-size: 12px; }
 .settings-status.ok { color: var(--accent-green); }
@@ -2646,6 +2654,10 @@ body.furigana-off rt {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
+}
+
+.leaderboard-page {
+    margin-top: 0;
 }
 
 .lb-head {

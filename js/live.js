@@ -1,8 +1,9 @@
 // Gemini Live API transport for browser voice conversations.
 //
-// Usage from voice.js:
+// Usage from voice.js: mint a short-lived ephemeral token via the
+// mint-live-token Edge Function (see js/voice.js), then:
 //   const live = createLiveSession({
-//     apiKey: settings.apiKey,
+//     accessToken,
 //     model: settings.liveModel,
 //     systemInstruction,
 //     callbacks: {
@@ -24,8 +25,11 @@ export const LIVE_OUTPUT_SAMPLE_RATE = 24000;
 
 const LIVE_ENDPOINT =
   'wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContent';
+// Ephemeral access tokens are only supported on v1alpha (unlike the rest of
+// this app's Gemini calls, which stay on v1beta) — see
+// https://ai.google.dev/gemini-api/docs/ephemeral-tokens
 const LIVE_CONSTRAINED_ENDPOINT =
-  'wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContentConstrained';
+  'wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1alpha.GenerativeService.BidiGenerateContentConstrained';
 const SOCKET_OPEN = 1;
 const SOCKET_CONNECTING = 0;
 const DEFAULT_SETUP_TIMEOUT_MS = 15000;
