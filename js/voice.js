@@ -35,22 +35,24 @@ async function mintLiveAccessToken(model) {
 const OPENING_SCHEMA = {
   type: 'OBJECT',
   properties: {
+    correction: { type: 'STRING' },
     reply: { type: 'STRING' },
     replyFurigana: { type: 'STRING' },
     vi: { type: 'STRING' },
   },
-  required: ['reply', 'replyFurigana', 'vi'],
+  required: ['correction', 'reply', 'replyFurigana', 'vi'],
 };
 
 const TURN_SCHEMA = {
   type: 'OBJECT',
   properties: {
     heard: { type: 'STRING' },
+    correction: { type: 'STRING' },
     reply: { type: 'STRING' },
     replyFurigana: { type: 'STRING' },
     vi: { type: 'STRING' },
   },
-  required: ['heard', 'reply', 'replyFurigana', 'vi'],
+  required: ['heard', 'correction', 'reply', 'replyFurigana', 'vi'],
 };
 
 const REVIEW_SCHEMA = {
@@ -146,8 +148,29 @@ function describeError(err) {
   return `Đã có lỗi xảy ra: ${msg}. Nếu chưa đăng nhập, hãy đăng nhập rồi thử lại.`;
 }
 
-function buildSystemPrompt(topic) {
-  return `Bạn là người Nhật, đang trò chuyện tự nhiên với người học N2 về chủ đề "${topic.jp}". Nói bằng tiếng Nhật tự nhiên, câu ngắn, mỗi lượt hỏi 1 câu để duy trì hội thoại. Trả về JSON {reply, replyFurigana, vi} — reply = câu tiếng Nhật, replyFurigana = cùng câu nhưng chú {漢字|かんじ}, vi = dịch tiếng Việt.`;
+/**
+ * @param {{jp:string}} topic
+ * @param {{spoken?:boolean}} [options] `spoken: true` targets the Live audio
+ *   session (no JSON schema exists there — the model must say everything
+ *   out loud); omitted/false targets the JSON-schema turn-based fallback.
+ */
+function buildSystemPrompt(topic, { spoken = false } = {}) {
+  const workflow = [
+    `Bạn là gia sư AI luyện nói tiếng Nhật — kiên nhẫn, nhiệt tình, luôn động viên — đang trò chuyện với người học N2 về chủ đề "${topic.jp}".`,
+    'Làm đúng quy trình này ở mỗi lượt:',
+    '1) Sửa & hướng dẫn: nếu câu vừa nói của người học bị vỡ câu, sai ngữ pháp hoặc không tự nhiên, đưa ngay phiên bản tự nhiên/đúng mà người Nhật thật sự dùng, rồi mời người học lặp lại.',
+    '2) Tiếp tục hội thoại: sau đó hỏi ĐÚNG MỘT câu hỏi ngắn, đơn giản, liên quan chủ đề để duy trì hội thoại tự nhiên.',
+    '3) Tổng hợp: khoảng mỗi 2–3 lượt trao đổi (tự ước lượng dựa trên lịch sử hội thoại), thay vì hỏi câu mới hãy gộp lại ý chính vừa trao đổi thành MỘT câu hoàn chỉnh, trau chuốt, và mời người học lặp lại câu đó để ghi nhớ ngữ cảnh/từ vựng.',
+    'Câu tiếng Nhật ngắn, rõ, dễ nhại lại theo.',
+  ];
+
+  if (spoken) {
+    workflow.push('Đây là hội thoại bằng âm thanh trực tiếp — nói tất cả nội dung trên thành lời tự nhiên (câu sửa + mời lặp lại, rồi câu hỏi hoặc câu tổng hợp), không cần theo format JSON. Không đọc bản dịch tiếng Việt thành tiếng.');
+  } else {
+    workflow.push('Trả về JSON {correction, reply, replyFurigana, vi} — correction = phiên bản sửa tự nhiên/đúng của câu người học vừa nói, chú furigana dạng {漢字|かんじ}, để trống "" nếu không cần sửa; reply = câu nói chính của bạn (câu hỏi tiếp theo, hoặc câu tổng hợp mời lặp lại); replyFurigana = đúng câu reply nhưng chú {漢字|かんじ} cho mỗi từ có kanji; vi = dịch tiếng Việt của reply.');
+  }
+
+  return workflow.join(' ');
 }
 
 function buildTranscriptText(transcript) {
@@ -350,6 +373,7 @@ async function onRecordingStop() {
 
 function applyAudioTurnResult(data) {
   const heard = (data && data.heard) || '';
+  const correction = (data && data.correction) || '';
   const replyFurigana = (data && (data.replyFurigana || data.reply)) || '';
   const replyPlain = (data && data.reply) || stripFurigana(replyFurigana);
   const vi = (data && data.vi) || '';
@@ -357,9 +381,9 @@ function applyAudioTurnResult(data) {
     appendTranscript({ speaker: 'learner', jp: heard, jpPlain: heard, vi: '' });
     state.history.push({ role: 'user', text: heard });
   }
-  appendTranscript({ speaker: 'partner', jp: replyFurigana, jpPlain: replyPlain, vi });
+  appendTranscript({ speaker: 'partner', jp: replyFurigana, jpPlain: replyPlain, vi, correction });
   state.history.push({ role: 'model', text: replyPlain });
-  speak(replyPlain);
+  speak(correction ? `${correction}。${replyFurigana}` : replyFurigana);
 }
 
 // ---------------------------------------------------------------------------
@@ -533,12 +557,13 @@ async function startFallbackOpening(error = null) {
       schema: OPENING_SCHEMA,
     });
     if (token !== mountToken || state.view !== 'conversation') return;
+    const correction = (data && data.correction) || '';
     const replyFurigana = (data && (data.replyFurigana || data.reply)) || '';
     const replyPlain = (data && data.reply) || stripFurigana(replyFurigana);
     const vi = (data && data.vi) || '';
     state.history.push({ role: 'model', text: replyPlain });
-    appendTranscript({ speaker: 'partner', jp: replyFurigana, jpPlain: replyPlain, vi });
-    speak(replyPlain);
+    appendTranscript({ speaker: 'partner', jp: replyFurigana, jpPlain: replyPlain, vi, correction });
+    speak(correction ? `${correction}。${replyFurigana}` : replyFurigana);
   } catch (fallbackError) {
     if (token === mountToken) state.error = describeError(fallbackError);
   } finally {
@@ -581,7 +606,7 @@ async function startLiveConversation() {
     const session = createLiveSession({
       accessToken,
       model: settings.liveModel,
-      systemInstruction: `${buildSystemPrompt(state.topic)} Trò chuyện bằng âm thanh tự nhiên. Không đọc bản dịch tiếng Việt thành tiếng.`,
+      systemInstruction: buildSystemPrompt(state.topic, { spoken: true }),
       contextWindowCompression: { slidingWindow: {} },
       callbacks: {
         onInputTranscript: ({ text }) => {
@@ -746,13 +771,14 @@ async function sendTextTurn(rawText) {
       schema: OPENING_SCHEMA,
     });
     if (token !== mountToken) return;
+    const correction = (data && data.correction) || '';
     const replyFurigana = (data && (data.replyFurigana || data.reply)) || '';
     const replyPlain = (data && data.reply) || stripFurigana(replyFurigana);
     const vi = (data && data.vi) || '';
     state.history.push({ role: 'user', text: trimmed });
     state.history.push({ role: 'model', text: replyPlain });
-    appendTranscript({ speaker: 'partner', jp: replyFurigana, jpPlain: replyPlain, vi });
-    speak(replyPlain);
+    appendTranscript({ speaker: 'partner', jp: replyFurigana, jpPlain: replyPlain, vi, correction });
+    speak(correction ? `${correction}。${replyFurigana}` : replyFurigana);
   } catch (err) {
     if (token !== mountToken) return;
     state.error = describeError(err);
@@ -862,11 +888,18 @@ function renderConversationView() {
       const isLearner = t.speaker === 'learner';
       const jpHtml = renderFurigana(t.jp || '');
       const viHtml = t.vi ? `<div class="vi-sentence">${esc(t.vi)}</div>` : '';
+      const spokenText = t.correction ? `${t.correction}。${t.jpPlain || t.jp || ''}` : (t.jpPlain || t.jp || '');
       const ttsBtn = !isLearner
-        ? `<button type="button" class="tts-btn" data-speak="${esc(t.jpPlain || t.jp || '')}" aria-label="Nghe lại câu tiếng Nhật">🔊</button>`
+        ? `<button type="button" class="tts-btn" data-speak="${esc(spokenText)}" aria-label="Nghe lại câu tiếng Nhật">🔊</button>`
         : '';
+      const correctionHtml = !isLearner && t.correction ? `
+        <div class="voice-correction">
+          <span class="voice-correction-label">✏️ Nói thế này (lặp lại nhé!)</span>
+          <div class="jp-sentence" lang="ja">${renderFurigana(t.correction)}</div>
+        </div>` : '';
       return `
         <div class="chat-msg ${isLearner ? 'user' : 'model'}">
+          ${correctionHtml}
           <div class="jp-sentence" lang="ja">${jpHtml}${ttsBtn}</div>
           ${viHtml}
         </div>`;

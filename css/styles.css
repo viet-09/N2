@@ -1749,6 +1749,29 @@ body.furigana-off rt {
     color: rgba(252, 251, 247, 0.7);
 }
 
+.voice-correction {
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    background: var(--accent-green-bg);
+    border-left: 3px solid var(--accent-green);
+    border-radius: var(--radius);
+}
+
+.voice-correction-label {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--accent-green);
+    margin-bottom: 3px;
+}
+
+.voice-correction .jp-sentence {
+    margin-bottom: 0;
+}
+
 .section-title {
     font-family: var(--font-display);
     font-weight: 900;
