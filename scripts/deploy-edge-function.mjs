@@ -37,7 +37,9 @@ if (gemini) {
   console.log(`  supabase secrets set GEMINI_API_KEY=<key> --project-ref ${ref}`);
 }
 
-// 3. Deploy function
-sh('supabase', ['functions', 'deploy', 'evaluate-ai', '--project-ref', ref, '--no-verify-jwt=false']);
+// 3. Deploy function. Supabase defaults to verify-jwt=true since 2024, so
+// no flag needed; explicit --verify-jwt would be defensive but the CLI
+// rejects the boolean-negation form `--no-verify-jwt=false` on some versions.
+sh('supabase', ['functions', 'deploy', 'evaluate-ai', '--project-ref', ref]);
 
 console.log('DONE.');

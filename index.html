@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://generativelanguage.googleapis.com wss://generativelanguage.googleapis.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; media-src 'self' data: blob:; connect-src 'self' https://*.supabase.co wss://*.supabase.co; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
     <title>日本語総まとめ N2 – Học & Theo Dõi Tiến Độ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,11 +42,21 @@
 </nav>
 
 <script>
-// Supabase project credentials — anon key is public (safe to ship in client bundle;
-// row-level security keeps data locked). For production deployments inject via
-// build-time replace or runtime config endpoint instead of hardcoding here.
-window.__SUPABASE_URL__ = window.__SUPABASE_URL__ || 'https://kqxocuzwkzdsrghnhavd.supabase.co';
-window.__SUPABASE_ANON_KEY__ = window.__SUPABASE_ANON_KEY__ || 'sb_publishable_jw3ybIrysOC4tqV51yFZdQ_EZ7CSd02';
+// Supabase project credentials are loaded at runtime from /config.json so
+// the anon key isn't hardcoded into the source bundle (and therefore
+// doesn't leak into git history / CI logs). The anon key is PUBLIC —
+// row-level security keeps every per-user table locked to its owner.
+window.__SUPABASE_URL__ = '';
+window.__SUPABASE_ANON_KEY__ = '';
+fetch('./config.json', { cache: 'no-store' })
+  .then((r) => r.ok ? r.json() : null)
+  .then((cfg) => {
+    if (!cfg) return;
+    if (typeof cfg.url === 'string') window.__SUPABASE_URL__ = cfg.url;
+    if (typeof cfg.anonKey === 'string') window.__SUPABASE_ANON_KEY__ = cfg.anonKey;
+    window.dispatchEvent(new CustomEvent('n2:config-ready', { detail: cfg }));
+  })
+  .catch(() => { /* offline / no config — supabase.js will no-op */ });
 </script>
 <script type="module" src="js/app.js"></script>
 </body>

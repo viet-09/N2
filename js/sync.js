@@ -250,15 +250,22 @@ export async function pushTouchStreak(userId) {
 
 /**
  * Push the user's profile (display_name + avatar) to Supabase.
+ * `user_id` is always derived from the authed session — never trusted
+ * from the caller. The trigger + RLS WITH CHECK still guards writes.
  */
 export async function pushProfile(userId, { displayName, avatarType, avatarData }) {
   const sb = getClient();
   if (!sb) return;
-  const patch = { user_id: userId };
+  if (typeof userId !== 'string' || !userId) return;
+  const patch = {};
   if (typeof displayName === 'string') patch.display_name = displayName.slice(0, 40);
   if (avatarType === 'preset' || avatarType === 'upload') patch.avatar_type = avatarType;
   if (typeof avatarData === 'string' && avatarData.length <= 2_100_000) patch.avatar_data = avatarData;
-  const { error } = await sb.from('user_profiles').upsert(patch);
+  if (Object.keys(patch).length === 0) return;
+  const { error } = await sb
+    .from('user_profiles')
+    .update(patch)
+    .eq('user_id', userId);
   if (error) console.warn('[sync] pushProfile failed:', error.message);
 }
 

@@ -27,8 +27,14 @@ declare const Deno: {
 const SUPABASE_URL = Deno.env.get('SUPABASE_URL') ?? '';
 const SUPABASE_ANON_KEY = Deno.env.get('SUPABASE_ANON_KEY') ?? '';
 const GEMINI_API_KEY = Deno.env.get('GEMINI_API_KEY') ?? '';
+const GEMINI_MODEL = Deno.env.get('GEMINI_MODEL') ?? 'gemini-2.0-flash';
 
 const ALLOWED_LEVELS = new Set(['N5', 'N4', 'N3', 'N2', 'N1']);
+const COOLDOWN_MS = 60_000; // per-user rate-limit window
+
+// Tiny in-memory cooldown map. Replaced per isolate cold-start but that's
+// fine — at worst a user can hit the limit once per isolate lifetime.
+const lastCallByUser = new Map<string, number>();
 
 const SYSTEM = [
   'Bạn là chuyên gia đánh giá trình độ JLPT.',
@@ -50,18 +56,54 @@ function jsonResponse(body: unknown, status = 200) {
   });
 }
 
-function safeParseLevel(text: string): { level: string; reasoning: string } {
-  const fallback = { level: 'N3', reasoning: 'Fallback do AI response invalid' };
+/** Coerce a value to a non-negative integer within an optional bound. */
+function clampInt(value: unknown, min: number, max: number, fallback = 0): number {
+  const n = Math.floor(Number(value));
+  if (!Number.isFinite(n)) return fallback;
+  return Math.min(Math.max(n, min), max);
+}
+
+/** Coerce a string map of {correct, attempted} objects. Caps both
+ *  the number of keys and the per-key value range. */
+function clampCategoryMap(value: unknown): Record<string, { correct: number; attempted: number }> {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return {};
+  const entries = Object.entries(value as Record<string, unknown>).slice(0, 20);
+  const out: Record<string, { correct: number; attempted: number }> = {};
+  for (const [key, entry] of entries) {
+    if (typeof key !== 'string' || !/^[a-zA-Z0-9_-]{1,32}$/.test(key)) continue;
+    if (!entry || typeof entry !== 'object') continue;
+    const e = entry as { correct?: unknown; attempted?: unknown };
+    out[key] = {
+      correct: clampInt(e.correct, 0, 100000),
+      attempted: clampInt(e.attempted, 0, 100000),
+    };
+  }
+  return out;
+}
+
+/** Cap lesson-id strings to alphanumeric to keep prompt-injection payloads
+ *  out of the Gemini prompt. */
+function clampLessonIds(value: unknown): string[] {
+  if (!Array.isArray(value)) return [];
+  return value
+    .filter((v): v is string => typeof v === 'string')
+    .map((v) => v.slice(0, 64))
+    .filter((v) => /^[a-zA-Z0-9_-]{1,64}$/.test(v))
+    .slice(0, 20);
+}
+
+function safeParseLevel(text: string): { level: string; reasoning: string } | null {
   try {
     const cleaned = text.replace(/```json|```/g, '').trim();
     const parsed = JSON.parse(cleaned);
+    if (typeof parsed !== 'object' || parsed === null) return null;
     const level = typeof parsed.level === 'string' && ALLOWED_LEVELS.has(parsed.level)
       ? parsed.level
-      : 'N3';
+      : null;
     const reasoning = typeof parsed.reasoning === 'string' ? parsed.reasoning.slice(0, 200) : '';
-    return { level, reasoning };
+    return level ? { level, reasoning } : null;
   } catch {
-    return fallback;
+    return null;
   }
 }
 
@@ -87,22 +129,32 @@ Deno.serve(async (req) => {
   const { data: { user }, error: userErr } = await sb.auth.getUser();
   if (userErr || !user) return jsonResponse({ error: 'Invalid session' }, 401);
 
-  let metrics: {
-    totalCorrect?: number;
-    totalAttempted?: number;
-    byCategory?: Record<string, { correct?: number; attempted?: number }>;
-    recentLessonIds?: string[];
-  } = {};
+  // Per-user cooldown. Cheap protection against repeated Gemini calls.
+  const last = lastCallByUser.get(user.id) ?? 0;
+  if (Date.now() - last < COOLDOWN_MS) {
+    const retryIn = Math.ceil((COOLDOWN_MS - (Date.now() - last)) / 1000);
+    return jsonResponse({ error: 'Cooldown active', retryInSeconds: retryIn }, 429);
+  }
+  lastCallByUser.set(user.id, Date.now());
+
+  let raw: { metrics?: unknown } = {};
   try {
-    metrics = await req.json();
+    raw = await req.json();
   } catch {
     return jsonResponse({ error: 'Body must be JSON' }, 400);
   }
 
-  const totalCorrect = Number(metrics.totalCorrect) || 0;
-  const totalAttempted = Number(metrics.totalAttempted) || 0;
-  const byCategory = metrics.byCategory ?? {};
-  const recent = Array.isArray(metrics.recentLessonIds) ? metrics.recentLessonIds.slice(0, 20) : [];
+  const metrics = (raw.metrics && typeof raw.metrics === 'object' ? raw.metrics : {}) as {
+    totalCorrect?: unknown;
+    totalAttempted?: unknown;
+    byCategory?: unknown;
+    recentLessonIds?: unknown;
+  };
+
+  const totalCorrect = clampInt(metrics.totalCorrect, 0, 100000);
+  const totalAttempted = clampInt(metrics.totalAttempted, 0, 100000);
+  const byCategory = clampCategoryMap(metrics.byCategory);
+  const recent = clampLessonIds(metrics.recentLessonIds);
   const accuracy = totalAttempted > 0 ? totalCorrect / totalAttempted : 0;
 
   const prompt = [
@@ -114,9 +166,9 @@ Deno.serve(async (req) => {
     `Recent lesson IDs: ${recent.join(', ') || '(none)'}`,
   ].join('\n');
 
-  const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
+  const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(GEMINI_MODEL)}:generateContent?key=${GEMINI_API_KEY}`;
 
-  let result = { level: 'N3', reasoning: 'AI evaluation unavailable' };
+  let result: { level: string; reasoning: string } | null = null;
   try {
     const geminiRes = await fetch(geminiUrl, {
       method: 'POST',
@@ -139,6 +191,12 @@ Deno.serve(async (req) => {
     }
   } catch (err) {
     console.error('Gemini call failed:', err);
+  }
+
+  // On parse failure, refuse to persist and tell the client to retry. We
+  // never silently write the wrong level.
+  if (!result) {
+    return jsonResponse({ error: 'AI returned an unparseable response' }, 502);
   }
 
   const { error: updateErr } = await sb

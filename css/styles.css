@@ -2738,7 +2738,7 @@ body.furigana-off rt {
 }
 
 .lb-self {
-    background: var(--accent-g);
+    background: var(--accent-green-bg);
 }
 
 .lb-self td {

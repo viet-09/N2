@@ -1,0 +1,10 @@
+{
+  "_comment": "Local Supabase config. Override per environment:",
+  "_comment_2": "  - Vercel: paste via Dashboard → Settings → Environment Variables, then",
+  "_comment_3": "    serve a config.json at runtime that reads those env vars",
+  "_comment_4": "  - Local dev: copy this file to config.json (which is .gitignored) and edit",
+  "_comment_5": "    url + anonKey to match your Supabase project.",
+  "_comment_6": "Both fields are PUBLIC (anon key + project URL). RLS keeps data locked.",
+  "url": "",
+  "anonKey": ""
+}

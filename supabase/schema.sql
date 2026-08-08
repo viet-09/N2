@@ -104,14 +104,16 @@ create table if not exists public.kanji_gloss_cache (
 );
 
 -- ---------------------------------------------------------------------------
--- 7. leaderboard view — public, ordered by total_score then streak
+-- 7. leaderboard view — public projection (no avatar blob, gated to authenticated)
 -- ---------------------------------------------------------------------------
-create or replace view public.leaderboard as
+-- Drop with CASCADE because the view has dependent GRANTs / future policies.
+drop view if exists public.leaderboard cascade;
+
+create view public.leaderboard as
   select
     up.user_id,
     up.display_name,
     up.avatar_type,
-    up.avatar_data,
     up.streak,
     up.total_score,
     up.ai_level,
@@ -122,42 +124,53 @@ create or replace view public.leaderboard as
   where up.total_score > 0 or up.streak > 0
   order by up.total_score desc, up.streak desc, up.created_at asc;
 
-grant select on public.leaderboard to anon, authenticated;
+-- Leaderboard requires sign-in (anon traffic cannot pull user data).
+grant select on public.leaderboard to authenticated;
 
 -- ---------------------------------------------------------------------------
--- 8. touch_user_streak — atomic day-bump streak (Asia/Tokyo timezone)
+-- 8. touch_user_streak — atomic day-bump streak (Asia/Tokyo timezone).
+-- Always operates on auth.uid(); the parameter is kept for backwards
+-- compatibility but is silently overridden so a malicious caller cannot
+-- touch another user's streak.
 -- ---------------------------------------------------------------------------
 create or replace function public.touch_user_streak(p_user_id uuid)
 returns table(streak int, last_date date)
 language plpgsql security definer set search_path = public as $$
 declare
-  v_today        date := (now() at time zone 'Asia/Tokyo')::date;
-  v_yesterday    date := v_today - 1;
-  v_cur_streak   int;
-  v_cur_last     date;
+  v_target     uuid := coalesce(p_user_id, auth.uid());
+  v_today      date := (now() at time zone 'Asia/Tokyo')::date;
+  v_yesterday  date := v_today - 1;
+  v_cur_streak int;
+  v_cur_last   date;
 begin
+  -- Enforce that the target equals the caller. SECURITY DEFINER + RLS bypass
+  -- would otherwise let an authed user mutate any row.
+  if v_target <> auth.uid() then
+    raise exception 'touch_user_streak: target must equal auth.uid()';
+  end if;
+
   select up.streak, up.last_study_date
     into v_cur_streak, v_cur_last
     from public.user_profiles up
-    where up.user_id = p_user_id
+    where up.user_id = v_target
     for update;
 
   if v_cur_last is null then
     update public.user_profiles
       set streak = 1, last_study_date = v_today, updated_at = now()
-      where user_id = p_user_id;
+      where user_id = v_target;
     return query select 1, v_today;
   elsif v_cur_last = v_today then
     return query select v_cur_streak, v_cur_last;
   elsif v_cur_last = v_yesterday then
     update public.user_profiles
       set streak = v_cur_streak + 1, last_study_date = v_today, updated_at = now()
-      where user_id = p_user_id;
+      where user_id = v_target;
     return query select v_cur_streak + 1, v_today;
   else
     update public.user_profiles
       set streak = 1, last_study_date = v_today, updated_at = now()
-      where user_id = p_user_id;
+      where user_id = v_target;
     return query select 1, v_today;
   end if;
 end;
@@ -166,16 +179,30 @@ $$;
 grant execute on function public.touch_user_streak(uuid) to authenticated;
 
 -- ---------------------------------------------------------------------------
--- 9. bump_score — atomic score increment
+-- 9. bump_score — atomic score increment, clamped.
+-- Same auth.uid() enforcement as touch_user_streak.
 -- ---------------------------------------------------------------------------
 create or replace function public.bump_score(p_user_id uuid, p_delta int)
 returns int
-language sql security definer set search_path = public as $$
+language plpgsql security definer set search_path = public as $$
+declare
+  v_target uuid := coalesce(p_user_id, auth.uid());
+  v_new    int;
+begin
+  if v_target <> auth.uid() then
+    raise exception 'bump_score: target must equal auth.uid()';
+  end if;
+  if p_delta is null or p_delta < -1000 or p_delta > 1000 then
+    raise exception 'bump_score: delta out of range (-1000..1000)';
+  end if;
+
   update public.user_profiles
     set total_score = greatest(total_score + p_delta, 0),
         updated_at = now()
-    where user_id = p_user_id
-    returning total_score;
+    where user_id = v_target
+    returning total_score into v_new;
+  return v_new;
+end;
 $$;
 
 grant execute on function public.bump_score(uuid, int) to authenticated;
@@ -190,10 +217,12 @@ alter table public.tutor_messages       enable row level security;
 alter table public.voice_messages       enable row level security;
 alter table public.kanji_gloss_cache    enable row level security;
 
--- user_profiles: leaderboard needs public read, but only self can write
+-- user_profiles: only the row owner can read the raw row (including
+-- avatar_data). Leaderboard view provides the public projection for everyone.
 drop policy if exists "profile read self or public" on public.user_profiles;
-create policy "profile read self or public"
-  on public.user_profiles for select using (true);
+drop policy if exists "profile read self" on public.user_profiles;
+create policy "profile read self"
+  on public.user_profiles for select using (auth.uid() = user_id);
 
 drop policy if exists "profile write self" on public.user_profiles;
 create policy "profile write self"
