@@ -359,7 +359,11 @@ function renderReading(lessonId, content) {
 function renderListening(lessonId, content) {
   const scriptLines = String(content.script || '').split(/\n+/).filter(Boolean);
   const scriptFull = scriptLines.join('\n');
-  const script = `${scriptLines.length ? `<div class="script-title-row"><h3 class="subheading" lang="ja">Bản ghi</h3>${ttsButton(scriptFull)}</div>` : ''}${scriptLines.map((line) => renderJapaneseLine(line, 'transcript-line', { tts: false })).join('')}`;
+  const scriptKind = classifyPassage(scriptLines);
+  const scriptBody = scriptKind === 'dialogue'
+    ? renderDialoguePassage(scriptLines)
+    : scriptLines.map((line) => renderJapaneseLine(line, 'transcript-line', { tts: false })).join('');
+  const script = `${scriptLines.length ? `<div class="script-title-row"><h3 class="subheading" lang="ja">Bản ghi</h3>${ttsButton(scriptFull)}</div>` : ''}${scriptBody}`;
   const audioTracks = Array.isArray(content.audioTracks) ? content.audioTracks : [];
   const introTracks = Array.isArray(content.introTracks) ? content.introTracks : [];
   const coverage = content.audioCoverage && typeof content.audioCoverage === 'object'

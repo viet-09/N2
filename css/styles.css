@@ -1032,7 +1032,8 @@ body.furigana-off rt {
 }
 
 /* Dialogue (script-frame) — bordered beige box with numbered lines. */
-.reading-section .script-frame {
+.reading-section .script-frame,
+.listening-section .script-frame {
     background: #efe9da;
     border: 1px solid var(--rule, #c8c1b2);
     border-radius: 6px;
@@ -1041,7 +1042,8 @@ body.furigana-off rt {
     font-family: var(--font-jp);
 }
 
-.reading-section .script-frame .line {
+.reading-section .script-frame .line,
+.listening-section .script-frame .line {
     margin: 0;
     padding: 2px 0;
     display: grid;
@@ -1049,18 +1051,21 @@ body.furigana-off rt {
     gap: 8px;
 }
 
-.reading-section .script-frame .line + .line {
+.reading-section .script-frame .line + .line,
+.listening-section .script-frame .line + .line {
     border-top: 1px dotted rgba(0, 0, 0, .07);
 }
 
-.reading-section .script-frame .num {
+.reading-section .script-frame .num,
+.listening-section .script-frame .num {
     font-family: var(--font-sans);
     font-weight: 700;
     color: var(--text-muted);
     text-align: right;
 }
 
-.reading-section .script-frame .speaker {
+.reading-section .script-frame .speaker,
+.listening-section .script-frame .speaker {
     font-weight: 700;
     margin-right: 6px;
 }
@@ -1092,14 +1097,14 @@ body.furigana-off rt {
 }
 
 /* Price tag question — circular price pills beside the prompt. */
-.reading-section .price-tag-row {
+.content-section .price-tag-row {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin: 14px 0;
 }
 
-.reading-section .price-tag {
+.content-section .price-tag {
     width: 96px;
     height: 96px;
     border: 2px solid var(--text-primary);
@@ -1118,28 +1123,28 @@ body.furigana-off rt {
     transition: all .12s;
 }
 
-.reading-section .price-tag:hover:not(:disabled) {
+.content-section .price-tag:hover:not(:disabled) {
     background: var(--paper-2);
     transform: scale(1.04);
 }
 
-.reading-section .price-tag:disabled {
+.content-section .price-tag:disabled {
     cursor: default;
 }
 
-.reading-section .price-tag.is-correct {
+.content-section .price-tag.is-correct {
     background: var(--accent-green-bg);
     border-color: var(--accent-green-border);
     color: var(--accent-green);
 }
 
-.reading-section .price-tag.is-incorrect {
+.content-section .price-tag.is-incorrect {
     background: var(--accent-red-bg);
     border-color: var(--accent-red);
     color: var(--danger);
 }
 
-.reading-section .quiz-question-price .quiz-q-text {
+.content-section .quiz-question-price .quiz-q-text {
     font-weight: 600;
 }
 
