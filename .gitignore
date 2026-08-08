@@ -22,3 +22,10 @@ node_modules/
 # Resumable Gemini extraction checkpoints; canonical JSON is tracked instead
 data/book/*.draft.json
 data/book/*.tmp
+
+# Local secrets (Supabase project keys, DB password). Never commit.
+.env
+.env.local
+.env.*.local
+supabase/.branches
+supabase/.temp
