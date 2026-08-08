@@ -10,6 +10,8 @@ import { renderLesson } from './lesson.js';
 import { renderTutor } from './tutor.js';
 import { renderVoice } from './voice.js';
 import { mountProfile } from './profile.js';
+import { onAuthChange, isConfigured } from './supabase.js';
+import { maybeMigrateLocalData, pullFromCloud } from './sync.js';
 
 function setCurrentDate() {
     const el = document.getElementById('current-date');
@@ -122,6 +124,24 @@ async function bootstrap() {
     wireSettingsButton();
     wireBottomNav();
     mountProfile('#profile-mount', { promptOnFirstVisit: true });
+
+    // Auth sync — listen for sign-in, migrate legacy localStorage once,
+    // pull cloud state into the in-memory store. No-op when Supabase is
+    // not configured (offline / no credentials yet).
+    if (isConfigured()) {
+        onAuthChange(async (user) => {
+            if (!user) return;
+            try {
+                const migrated = await maybeMigrateLocalData();
+                if (migrated) console.info('[sync] localStorage migrated to Supabase');
+                await pullFromCloud(user.id);
+            } catch (err) {
+                console.warn('[sync] bootstrap sync failed:', err);
+            }
+            // Refresh dashboard if we're on it so leaderboard / streak update.
+            navigate(location.hash || '#/');
+        });
+    }
 
     await Promise.all([loadLessons(), loadBookContent()]);
 

@@ -4,6 +4,7 @@ import { getLessons, countProgress, isDone, toggleDone, getStreak } from './stor
 import { renderFurigana } from './furigana.js';
 import { navigate } from './router.js';
 import { mountPet } from './pet.js';
+import { fetchLeaderboard, signInWithGoogle, currentUser } from './supabase.js';
 
 let petController = null;
 
@@ -76,11 +77,13 @@ export function renderDashboard(root) {
     <section class="stats-bar" id="dash-stats" aria-label="Tiến độ học"></section>
     <div class="category-tabs" id="category-tabs" role="group" aria-label="Lọc theo kỹ năng"></div>
     <div id="dash-main"></div>
+    <section class="leaderboard" id="dash-leaderboard" aria-label="Bảng xếp hạng"></section>
   `;
 
   renderStats();
   renderTabs(data);
   renderCategories(data);
+  renderLeaderboard();
   bindEvents(data);
   return {
     preserveScroll: restoreDashboardPosition(root),
@@ -287,4 +290,64 @@ function bindEvents(data) {
       }));
     }
   });
+}
+
+// ---------------------------------------------------------------------------
+// Leaderboard (Supabase public view)
+// ---------------------------------------------------------------------------
+
+const PRESET_SYMBOLS = {
+  neko: '🐱', kitsune: '🦊', usagi: '🐰', sakura: '🌸',
+};
+
+function avatarCell(row) {
+  if (row?.avatar_type === 'preset') {
+    const sym = PRESET_SYMBOLS[row.avatar_data] || '🐱';
+    return `<span class="lb-avatar">${escapeHtml(sym)}</span>`;
+  }
+  if (row?.avatar_type === 'upload' && typeof row.avatar_data === 'string') {
+    return `<img class="lb-avatar lb-avatar-img" alt="" src="${escapeHtml(row.avatar_data)}">`;
+  }
+  return `<span class="lb-avatar">👤</span>`;
+}
+
+async function renderLeaderboard() {
+  const el = document.getElementById('dash-leaderboard');
+  if (!el) return;
+  const user = await currentUser();
+  const authBlock = user
+    ? `<p class="lb-signedin">Đã đăng nhập: <strong>${escapeHtml(user.email || user.id)}</strong></p>`
+    : `<button type="button" class="auth-pill" data-action="sign-in-google">Đăng nhập bằng Google để đồng bộ</button>`;
+
+  const rows = await fetchLeaderboard(50);
+  const body = rows.length === 0
+    ? '<tr><td colspan="5" class="lb-empty">Chưa có ai trên bảng xếp hạng.</td></tr>'
+    : rows.map((row) => `
+        <tr${user && row.user_id === user.id ? ' class="lb-self"' : ''}>
+          <td class="lb-rank">${escapeHtml(String(row.rank ?? '—'))}</td>
+          <td class="lb-id">
+            <div class="lb-id-cell">${avatarCell(row)}<span>${escapeHtml(row.display_name || 'Học viên')}</span></div>
+          </td>
+          <td class="lb-score">${escapeHtml(String(row.total_score ?? 0))}</td>
+          <td class="lb-streak">${escapeHtml(String(row.streak ?? 0))} 🔥</td>
+          <td class="lb-level">${escapeHtml(row.ai_level || '—')}</td>
+        </tr>
+      `).join('');
+
+  el.innerHTML = `
+    <header class="lb-head">
+      <h3 class="subheading">Bảng xếp hạng</h3>
+      <div class="lb-auth">${authBlock}</div>
+    </header>
+    <div class="lb-table-wrap">
+      <table class="lb-table">
+        <thead>
+          <tr><th>#</th><th>Học viên</th><th>Điểm</th><th>Streak</th><th>Level</th></tr>
+        </thead>
+        <tbody>${body}</tbody>
+      </table>
+    </div>
+  `;
+  const btn = el.querySelector('[data-action="sign-in-google"]');
+  if (btn) btn.addEventListener('click', () => signInWithGoogle().catch((err) => console.warn(err)));
 }

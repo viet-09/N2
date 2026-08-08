@@ -225,6 +225,11 @@ function writeProgressMap(map) {
   writeJSON(STORAGE.progress, map);
 }
 
+/** Replace the entire done-map. Used by sync layer after pulling from cloud. */
+export function writeProgressMapExternal(map) {
+  writeProgressMap(map && typeof map === 'object' ? map : {});
+}
+
 export function isDone(id) {
   try {
     return !!readProgressMap()[id];
@@ -300,6 +305,15 @@ export function getStreak() {
   return current;
 }
 
+/** Replace streak entirely. Used by sync layer after pulling from cloud. */
+export function writeStreak(value) {
+  const safe = {
+    streak: Number.isFinite(value?.streak) ? Math.max(0, Math.floor(value.streak)) : 0,
+    lastDate: typeof value?.lastDate === 'string' ? value.lastDate : '',
+  };
+  writeJSON(STORAGE.streak, safe);
+}
+
 // ---------------------------------------------------------------------------
 // Per-lesson AI-generated content cache
 // ---------------------------------------------------------------------------
@@ -326,6 +340,11 @@ export function setContent(id, obj) {
   } catch (err) {
     // ignore
   }
+}
+
+/** Replace the entire AI content cache. Used by sync layer. */
+export function writeContentMapExternal(map) {
+  writeJSON(STORAGE.content, map && typeof map === 'object' ? map : {});
 }
 
 // ---------------------------------------------------------------------------
