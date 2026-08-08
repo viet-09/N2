@@ -1,43 +1,60 @@
 // js/supabase.js
 // Supabase client + auth glue.
-// Anonymous key is intentionally public — Supabase row-level security
-// (see supabase/schema.sql) keeps every per-user table locked to its owner.
+// Public anon key is shipped to the browser; row-level security keeps every
+// per-user table locked to its owner (see supabase/schema.sql).
 
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.0/+esm';
 
-// Fill these from your Supabase project settings (Project URL + anon public key).
-// Both values are safe to ship in the client bundle.
-const SUPABASE_URL = window.__SUPABASE_URL__ || '';
-const SUPABASE_ANON_KEY = window.__SUPABASE_ANON_KEY__ || '';
-
 let _client = null;
+let _readyPromise = null;
 
-export function getClient() {
+/** Fetch /config.json and lazily build the Supabase client. Resolves the
+ *  client on success, or `null` if config is missing / fetch failed. */
+async function init() {
+  if (_client || _readyPromise) return _readyPromise;
+  _readyPromise = (async () => {
+    let cfg = null;
+    try {
+      const res = await fetch('./config.json', { cache: 'no-store' });
+      if (res.ok) cfg = await res.json();
+    } catch {
+      cfg = null;
+    }
+    if (!cfg || typeof cfg.url !== 'string' || typeof cfg.anonKey !== 'string') {
+      console.warn('[supabase] URL/anon key not configured — running offline-only.');
+      _client = null;
+      return null;
+    }
+    _client = createClient(cfg.url, cfg.anonKey, {
+      auth: {
+        persistSession: true,
+        autoRefreshToken: true,
+        storage: localStorage,
+        storageKey: 'n2_sb_session',
+        detectSessionInUrl: true,
+      },
+    });
+    return _client;
+  })();
+  return _readyPromise;
+}
+
+/** Resolve the Supabase client once credentials are available. */
+export async function getClient() {
   if (_client) return _client;
-  if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
-    console.warn('[supabase] URL/anon key not configured — running offline-only.');
-    return null;
-  }
-  _client = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
-    auth: {
-      persistSession: true,
-      autoRefreshToken: true,
-      storage: localStorage,
-      storageKey: 'n2_sb_session',
-      detectSessionInUrl: true,
-    },
-  });
-  return _client;
+  return init();
 }
 
-/** True when project credentials are present. */
-export function isConfigured() {
-  return Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
+/** Resolve to true once the client has been built (or init has determined
+ *  we're offline). Use this before calling dashboard / auth flows that need
+ *  to know whether Supabase is reachable. */
+export async function ready() {
+  return init();
 }
 
-/** Trigger Google OAuth flow. Resolves to the redirect URL the browser will navigate to. */
+/** Trigger Google OAuth flow. Resolves once the redirect has been initiated. */
 export async function signInWithGoogle() {
-  const sb = getClient();
+  const sb = await getClient();
   if (!sb) throw new Error('Supabase not configured');
   const redirectTo = `${location.origin}${location.pathname}`;
   const { error } = await sb.auth.signInWithOAuth({
@@ -48,13 +65,13 @@ export async function signInWithGoogle() {
 }
 
 export async function signOut() {
-  const sb = getClient();
+  const sb = await getClient();
   if (!sb) return;
   await sb.auth.signOut();
 }
 
 export async function currentUser() {
-  const sb = getClient();
+  const sb = await getClient();
   if (!sb) return null;
   const { data, error } = await sb.auth.getUser();
   if (error) return null;
@@ -62,8 +79,8 @@ export async function currentUser() {
 }
 
 /** Subscribe to auth state changes. Returns the subscription handle. */
-export function onAuthChange(handler) {
-  const sb = getClient();
+export async function onAuthChange(handler) {
+  const sb = await getClient();
   if (!sb) {
     handler(null);
     return { data: { subscription: { unsubscribe: () => {} } } };
@@ -73,7 +90,7 @@ export function onAuthChange(handler) {
 
 /** Look up the public leaderboard view. Public read — no JWT required. */
 export async function fetchLeaderboard(limit = 50) {
-  const sb = getClient();
+  const sb = await getClient();
   if (!sb) return [];
   const { data, error } = await sb
     .from('leaderboard')

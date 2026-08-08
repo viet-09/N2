@@ -142,7 +142,7 @@ function finalizeMigration(userId) {
  * pushed, false if nothing to do ( no legacy data or already migrated ).
  */
 export async function maybeMigrateLocalData() {
-  const sb = getClient();
+  const sb = await getClient();
   if (!sb) return false;
   const user = await currentUser();
   if (!user) return false;
@@ -180,7 +180,7 @@ export async function maybeMigrateLocalData() {
  * so the rest of the app can keep reading from store.js as before.
  */
 export async function pullFromCloud(userId) {
-  const sb = getClient();
+  const sb = await getClient();
   if (!sb || !userId) return;
 
   const [profileRes, progressRes, contentRes] = await Promise.all([
@@ -219,7 +219,7 @@ export async function pullFromCloud(userId) {
  * Push a single done-flag toggle to the server. Fire-and-forget.
  */
 export async function pushProgressToggle(userId, lessonId, categoryId, isDone) {
-  const sb = getClient();
+  const sb = await getClient();
   if (!sb) return;
   if (isDone) {
     const { error } = await sb
@@ -241,7 +241,7 @@ export async function pushProgressToggle(userId, lessonId, categoryId, isDone) {
  * or null on failure / no auth.
  */
 export async function pushTouchStreak(userId) {
-  const sb = getClient();
+  const sb = await getClient();
   if (!sb) return null;
   const { data, error } = await sb.rpc('touch_user_streak', { p_user_id: userId });
   if (error || !Array.isArray(data) || !data[0]) return null;
@@ -254,7 +254,7 @@ export async function pushTouchStreak(userId) {
  * from the caller. The trigger + RLS WITH CHECK still guards writes.
  */
 export async function pushProfile(userId, { displayName, avatarType, avatarData }) {
-  const sb = getClient();
+  const sb = await getClient();
   if (!sb) return;
   if (typeof userId !== 'string' || !userId) return;
   const patch = {};
@@ -273,7 +273,7 @@ export async function pushProfile(userId, { displayName, avatarType, avatarData 
  * Increment total_score on the server (atomic via bump_score RPC).
  */
 export async function pushScore(userId, delta) {
-  const sb = getClient();
+  const sb = await getClient();
   if (!sb) return null;
   const { data, error } = await sb.rpc('bump_score', { p_user_id: userId, p_delta: delta });
   if (error) {
@@ -287,7 +287,7 @@ export async function pushScore(userId, delta) {
  * Push a single AI content-cache row for a lesson.
  */
 export async function pushLessonContent(userId, lessonId, payload) {
-  const sb = getClient();
+  const sb = await getClient();
   if (!sb) return;
   const { error } = await sb
     .from('lesson_content_cache')
@@ -300,7 +300,7 @@ export async function pushLessonContent(userId, lessonId, payload) {
  * cache remains the source-of-truth for fast startup reads.
  */
 export async function pushTutorMessage(userId, role, text) {
-  const sb = getClient();
+  const sb = await getClient();
   if (!sb) return;
   const { error } = await sb.from('tutor_messages').insert({
     user_id: userId,
@@ -311,7 +311,7 @@ export async function pushTutorMessage(userId, role, text) {
 }
 
 export async function pushVoiceMessage(userId, topic, role, text) {
-  const sb = getClient();
+  const sb = await getClient();
   if (!sb) return;
   const { error } = await sb.from('voice_messages').insert({
     user_id: userId,
@@ -326,7 +326,7 @@ export async function pushVoiceMessage(userId, topic, role, text) {
  * Persist a single tap-kanji gloss.
  */
 export async function pushKanjiGloss(userId, key, payload) {
-  const sb = getClient();
+  const sb = await getClient();
   if (!sb) return;
   const { error } = await sb.from('kanji_gloss_cache').upsert({
     user_id: userId,
@@ -340,7 +340,7 @@ export async function pushKanjiGloss(userId, key, payload) {
  * Update the rolling tutor-memory note.
  */
 export async function pushTutorMemory(userId, note) {
-  const sb = getClient();
+  const sb = await getClient();
   if (!sb) return;
   const { error } = await sb
     .from('user_profiles')
@@ -354,7 +354,7 @@ export async function pushTutorMemory(userId, note) {
  * based on local stats; the function validates the JWT and persists ai_level.
  */
 export async function evaluateAiLevel(metrics) {
-  const sb = getClient();
+  const sb = await getClient();
   if (!sb) return null;
   const { data, error } = await sb.functions.invoke('evaluate-ai', { body: { metrics } });
   if (error) {

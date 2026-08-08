@@ -10,7 +10,7 @@ import { renderLesson } from './lesson.js';
 import { renderTutor } from './tutor.js';
 import { renderVoice } from './voice.js';
 import { mountProfile } from './profile.js';
-import { onAuthChange, isConfigured } from './supabase.js';
+import { onAuthChange, ready as supabaseReady } from './supabase.js';
 import { maybeMigrateLocalData, pullFromCloud } from './sync.js';
 
 function setCurrentDate() {
@@ -125,10 +125,12 @@ async function bootstrap() {
     wireBottomNav();
     mountProfile('#profile-mount', { promptOnFirstVisit: true });
 
-    // Auth sync — listen for sign-in, migrate legacy localStorage once,
-    // pull cloud state into the in-memory store. No-op when Supabase is
-    // not configured (offline / no credentials yet).
-    if (isConfigured()) {
+    // Auth sync — pull config, listen for sign-in, migrate legacy localStorage
+    // once, then pull cloud state into the in-memory store. No-op when
+    // Supabase is not configured (offline / no credentials yet).
+    setTimeout(async () => {
+        const sb = await supabaseReady();
+        if (!sb) return;
         onAuthChange(async (user) => {
             if (!user) return;
             try {
@@ -141,7 +143,7 @@ async function bootstrap() {
             // Refresh dashboard if we're on it so leaderboard / streak update.
             navigate(location.hash || '#/');
         });
-    }
+    }, 0);
 
     await Promise.all([loadLessons(), loadBookContent()]);
 

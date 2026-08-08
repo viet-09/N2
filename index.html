@@ -41,23 +41,6 @@
     </button>
 </nav>
 
-<script>
-// Supabase project credentials are loaded at runtime from /config.json so
-// the anon key isn't hardcoded into the source bundle (and therefore
-// doesn't leak into git history / CI logs). The anon key is PUBLIC —
-// row-level security keeps every per-user table locked to its owner.
-window.__SUPABASE_URL__ = '';
-window.__SUPABASE_ANON_KEY__ = '';
-fetch('./config.json', { cache: 'no-store' })
-  .then((r) => r.ok ? r.json() : null)
-  .then((cfg) => {
-    if (!cfg) return;
-    if (typeof cfg.url === 'string') window.__SUPABASE_URL__ = cfg.url;
-    if (typeof cfg.anonKey === 'string') window.__SUPABASE_ANON_KEY__ = cfg.anonKey;
-    window.dispatchEvent(new CustomEvent('n2:config-ready', { detail: cfg }));
-  })
-  .catch(() => { /* offline / no config — supabase.js will no-op */ });
-</script>
 <script type="module" src="js/app.js"></script>
 </body>
 </html>

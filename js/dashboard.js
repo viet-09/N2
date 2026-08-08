@@ -4,7 +4,7 @@ import { getLessons, countProgress, isDone, toggleDone, getStreak } from './stor
 import { renderFurigana } from './furigana.js';
 import { navigate } from './router.js';
 import { mountPet } from './pet.js';
-import { fetchLeaderboard, signInWithGoogle, currentUser } from './supabase.js';
+import { fetchLeaderboard, signInWithGoogle, currentUser, ready as supabaseReady } from './supabase.js';
 
 let petController = null;
 
@@ -314,6 +314,7 @@ function avatarCell(row) {
 async function renderLeaderboard() {
   const el = document.getElementById('dash-leaderboard');
   if (!el) return;
+  await supabaseReady();  // let config fetch settle so the auth button renders
   const user = await currentUser();
   const authBlock = user
     ? `<p class="lb-signedin">Đã đăng nhập: <strong>${escapeHtml(user.email || user.id)}</strong></p>`
