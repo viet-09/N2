@@ -29,4 +29,5 @@ data/book/*.tmp
 .env.*.local
 supabase/.branches
 supabase/.temp
-config.json
+# config.json is tracked: it holds only PUBLIC Supabase credentials
+# (anon key + project URL). RLS keeps the data locked. Secret keys live in .env.local.
